@@ -1,0 +1,390 @@
+# Rufus Homepage.
+# Copyright (C) 2014 Pete Batard
+# This file is distributed under the same license as the Rufus package.
+# Pete Batard <pete@akeo.ie>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Rufus Homepage 1.1\n"
+"Report-Msgid-Bugs-To: pete@akeo.ie\n"
+"POT-Creation-Date: 2014-07-18 10:22+0100\n"
+"PO-Revision-Date: 2014-07-18 10:38-0000\n"
+"Last-Translator: Pete Batard <pete@akeo.ie>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:56
+msgid "Version"
+msgstr "Versioon"
+
+#: index.php:76 index.php:176
+msgid "Create bootable USB drives the easy way"
+msgstr "Looge bootiv USB seade lihtsalt"
+
+#: index.php:155
+msgid "Want to improve this translation?"
+msgstr ""
+
+#. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
+#: index.php:178
+msgid "rufus_en.png"
+msgstr ""
+
+#: index.php:179
+msgid ""
+"Rufus is a utility that helps format and create bootable USB flash drives, "
+"such as USB keys/pendrives, memory sticks, etc."
+msgstr "Rufus abistab USB seadmete: kettad mäluseadmed jms. formateerimisel."
+
+#: index.php:180
+msgid "It can be especially useful for cases where:"
+msgstr "Osutub eriti vajalikuks kui:"
+
+#: index.php:182
+msgid ""
+"you need to create USB installation media from bootable ISOs (Windows, "
+"Linux, UEFI, etc.)"
+msgstr ""
+"Soovite luua installatsiooni meediat sisaldava USB seadme (Windows, Linux, "
+"UEFI, jne.) bootivatest ISO failidest "
+
+#: index.php:183
+msgid "you need to work on a system that doesn't have an OS installed"
+msgstr "Soovite töötada arvutiga, millel puudub operatsoonisüsteem."
+
+#: index.php:184
+msgid "you need to flash a BIOS or other firmware from DOS"
+msgstr "Soovite uuendada BIOSi või mõnda muud püsivara DOSis."
+
+#: index.php:185
+msgid "you want to run a low-level utility"
+msgstr "Soovite taastad tehases sooritatud kõvaketta vorminduse "
+
+#: index.php:188
+msgid "Despite its small size, Rufus provides everything you need!"
+msgstr "Hoolima väikesest mahust, võimaldab Rufus sooritada kõike mida vajad!"
+
+#: index.php:189
+#, php-format
+msgid ""
+"Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
+"%s>UNetbootin</a>, <a %s>Universal USB Installer</a> or <a %s>Windows 7 USB "
+"download tool</a>, on the creation of a Windows 7 USB installation drive "
+"from an ISO. It is also marginally faster on the creation of Linux bootable "
+"USB from ISOs."
+msgstr ""
+"Jah, Rufus on <b>kiire</b>. Näiteks kaks korda kiirem, kui <a %s>UNetbootin</"
+"a>, <a %s>Universal USB Installer</a> või <a %s>Windows 7 USB download tool</"
+"a>, luues Windows 7 ISOst USBlt installeerimiseks vajalikku kompositsiooni.  "
+"USB from ISOs. Ning samuti on see marginaalselt kiirem Linuxi bootiva USB "
+"loomisel ISO failist."
+
+#: index.php:190
+msgid ""
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
+"of this page."
+msgstr ""
+"Pidevalt täeindatav Rufuse poolt toetatavate ISO failide nimekiri asub "
+"lehekülje allosas. "
+
+#: index.php:194
+msgid "Download"
+msgstr "Allalaadimine"
+
+#: index.php:195
+#, php-format
+msgid "Last updated %s:"
+msgstr "Viimati uuendatud %s:"
+
+#. Abbreviation for KiloByte
+#: index.php:196
+msgid "KB"
+msgstr "KB"
+
+#: index.php:197 index.php:281
+msgid "Other versions"
+msgstr "Teised versioonid"
+
+#: index.php:199
+msgid "Supported Languages:"
+msgstr "Toetatud keeled:"
+
+#: index.php:235
+msgid "System Requirements:"
+msgstr "Nõuded süsteemile:"
+
+#: index.php:236
+msgid ""
+"Windows XP or later, 32 or 64 bit doesn't matter. Once downloaded, the "
+"application is ready to use."
+msgstr ""
+"Windows XP või uuem, 32 või 64 bit vahet pole. Antud tarkvara on peale "
+"allalaadimist kohe kasutusvalmis."
+
+#: index.php:237
+msgid ""
+"I will take this opportunity to express my gratitude to the translators who "
+"made it possible for Rufus, as well as this webpage, to be translated in "
+"various languages. If you find that you can use Rufus in your own language, "
+"you should really thank them!"
+msgstr ""
+"Kasutage võimalust avaldada tänu kõikile tõlkijatele, kes on teinud "
+"võimalikuks Teile Rufuse ja selle veebilehe mitmekeelsed tõlked. Kui Sa "
+"leiad Rufuse oma emakeeles, peaksid tõesti neid tänama?"
+
+#: index.php:238
+msgid "Usage"
+msgstr "Kasutamine"
+
+#: index.php:239
+msgid ""
+"Download the executable and run it &ndash; no installation is necessary."
+msgstr ""
+"Laadige alla ja käivitage file &ndash; eraldi installerimine pole vajalik. "
+
+#: index.php:240
+msgid "The executable is digitally signed and the signature should state:"
+msgstr ""
+"Kõik käivitufiled omavad digitaalset allkirja (digitally signed) ning nende "
+"versioonid peavad olema"
+
+#: index.php:241
+msgid "(v1.3.0 or later)"
+msgstr "(v1.3.0 või hilisem)"
+
+#: index.php:242
+msgid "(v1.2.0 or earlier)"
+msgstr "(v1.2.0 või varasem)"
+
+#: index.php:243
+msgid "Notes on DOS support:"
+msgstr "DOSi toe tugi: "
+
+#: index.php:244
+#, php-format
+msgid ""
+"If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
+"attempt to select a keyboard layout according to the locale of your system. "
+"In that case, <a %s>FreeDOS</a>, which is the default selection, is "
+"recommended over MS-DOS, as it supports more keyboard layouts."
+msgstr ""
+"Et luua DOS buutketast ja kasutada muud klaviatuuripaigutust, kui ameerika "
+"(US), Rufus proovib leida Klaviatuuri paigutust, mis vastab Teie süsteemi "
+"lokaalsetale sätetele. Sel juhul on, <a %s>FreeDOS</a>, mis on soovitav MS-"
+"DOSi peale, kuna toetab enamust Kraviatuuride paigutusi. "
+
+#: index.php:245
+msgid "Notes on ISO Support:"
+msgstr "ISO failide tugi:"
+
+#: index.php:246
+#, php-format
+msgid ""
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
+"an <a %s>ISO image</a> (.iso)."
+msgstr ""
+"Rufuse versioonid alates v1.1.0 võimaldavad luua bootivaid USB seadmeid  <a "
+"%s>ISO image</a> (.iso)."
+
+#: index.php:247
+#, php-format
+msgid ""
+"Creating an ISO image from a physical disc or from a set of files is very "
+"easy to do however, through the use of a CD burning application, such as the "
+"freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
+msgstr ""
+"ISO faili loomine füüsilisest kettast või nende kogumist on lihtne nagu "
+"eikunagi, kasutades CD kirjutamise tarkvara nagu vabalsaadavaid: <a "
+"%s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
+
+#: index.php:248
+msgid "Notes on UEFI & GPT support:"
+msgstr "Märked UEFI & GPT toe kohta: "
+
+#: index.php:249
+msgid ""
+"Since version 1.3.2, Rufus support UEFI as well as GPT for installation "
+"media, meaning that it will allow you to install Windows 7, Windows 8 or "
+"Linux in full EFI mode."
+msgstr ""
+"Alates versioonist 1.3.2, toetab Rufus UEFI ja GPT kasutamist "
+"installeermismeediaks , mis tähendab, et Windows 7, Windows 8 või Linux "
+"paigaldus täisversioonis on EFI režiimis võimalik."
+
+#: index.php:250
+msgid ""
+"However, Windows Vista or later is required for full UEFI/GPT support. "
+"Because of OS limitations, Windows XP restricts the creation of UEFI "
+"bootable drives to MBR mode."
+msgstr ""
+"Siiski, Windows Vista ja hilisemad vajavad täielikku UEFI/GPT tuge. See on "
+"seotud operatsioonisüsteemi (OS) piirangutega, Windows XP keelab MBR "
+"töörežiimis UEFI bootaseadmete loomist ."
+
+#: index.php:252
+msgid "Frequently Asked Questions (FAQ)"
+msgstr "Korduma Kippuvad Küsimused (FAQ)"
+
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:253
+#, php-format
+msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
+msgstr ""
+"Rufus'e küsimused ja vastused (FAQ)  on saadaval <b><a %s>siin</a></b>."
+
+#: index.php:254
+#, php-format
+msgid ""
+"To provide feedback, report a bug or request an enhancement, please use the "
+"github <a %s>issue tracker</a>. Or you can <a %s>send an e-mail</a>."
+msgstr ""
+"Et kindlustada tagasisidet tekkinud tarkvaravea kohta või soovid programmi "
+"täiustamist, palume kasutada  <a %s>issue tracker</a>. või võid saata <a "
+"%s>e.kirja e-mail</a>."
+
+#: index.php:255
+msgid "License"
+msgstr "Litsents"
+
+#: index.php:256
+#, php-format
+msgid "<a %s>GNU General Public License (GPL) version 3</a> or later."
+msgstr "<a %s>GNU General Public License (GPL) version 3</a> või hilisem."
+
+#: index.php:256
+msgid ""
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
+msgstr ""
+"IgaÜks võib käesolevast tarkvarast valmistada koopiaid ning valmistatud "
+"vastavalt GPLv3 litsensile koopiaid levitada. "
+
+#: index.php:257
+#, php-format
+msgid ""
+"Rufus is produced in a 100%% transparent manner, from its <a %s>public "
+"source</a>, using a <a %s>MinGW32</a> environment."
+msgstr ""
+"Rufus on toodetud 100%% avatult, selle <a %s> avalik allikas </a>, kasutades "
+"<a %s>MinGW32</a> keskkonda."
+
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:259
+msgid "Changelog"
+msgstr "Muudatused:"
+
+#: index.php:284
+msgid "Source Code"
+msgstr "Lähtekood"
+
+#. Abbreviation for MegaByte
+#: index.php:285
+msgid "MB"
+msgstr "MB"
+
+#: index.php:286
+#, php-format
+msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
+msgstr "Alternatiivina võite kloonida <a %s>git</a> andmeladu, kasutades:"
+
+#: index.php:288
+#, php-format
+msgid "For more information, see the <a %s>github project</a>."
+msgstr "Lisateavet saate <a %s>github projekt</a>."
+
+#: index.php:289
+msgid ""
+"If you are a developer, you are very much encouraged to tinker with Rufus "
+"and submit patches."
+msgstr ""
+"Kui oled arendaja, siis on väga ootame Rufuse arvustust ja paranduste "
+"esitamist."
+
+#: index.php:291
+msgid "Donations"
+msgstr "Annetused"
+
+#: index.php:292
+msgid ""
+"Since I'm getting asked about this on regular basis, there is <b>no</b> "
+"donation button on this page."
+msgstr ""
+"Kuna minult on korduvalt küsitud, siin see on <b>no</b> leheküljel annetamis "
+"nupp."
+
+#: index.php:293
+msgid ""
+"The main reason is that I feel that the donation system doesn't actually "
+"help software development and worse, can be guilt-inducing for users who "
+"choose not to donate."
+msgstr ""
+"Peamine põhjus on see, et ma tunnen, et annetamise süsteem ei aita "
+"tegelikult tarkvaraarendust ja mis veel hullem, tekitab süütunnet "
+"kasutajatele, kes ei soovi või ei oma võimalust annetada."
+
+#: index.php:296
+#, php-format
+msgid ""
+"If you really insist, you can always make a donation to the <a %s>Free "
+"Software Foundation</a>, as they are the main reason software like Rufus is "
+"possible."
+msgstr ""
+"Kui te tõesti soovite, siis on alati võimalik teha annetus <a %s>Free "
+"Software Foundation</a>, sest need on peamine põhjus,  kuidas tarkvara nagu "
+"Rufus on võimalik."
+
+#: index.php:297
+msgid ""
+"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
+"your continuing support and enthusiasm about this little program: it is much "
+"appreciated!"
+msgstr ""
+"Igal juhul, ma kasutan seda võimalust, et öelda <i><u>suur aitäh</u></i> "
+"Teie katkematu toe ja entusiasmi eest hoida see väike programm - hinnatud "
+"programmide nimistus!"
+
+#: index.php:298
+msgid ""
+"But please continue to feel free to use Rufus without any guilt about not "
+"contributing for it financially &ndash; you should never have to!"
+msgstr ""
+"Aga jätkake julgelt Rufuse kasutamist, ilma süütundeta:  ei toeta rahaliselt "
+"- ei peagi!"
+
+#: index.php:300
+msgid "Speed comparison between Rufus and other applications"
+msgstr "Kiirue võrdlus Rufuse  ja teiste aplikatsioonide vahel"
+
+#: index.php:301
+#, php-format
+msgid ""
+"The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
+"platform, with an USB 3.0 controller and a <a %s>16 GB USB 3.0 ADATA S102 "
+"flash drive</a>."
+msgstr ""
+"Järgmised katsed on teostatud arvutil Windows 7 x64 Core 2 duo / 4 GB RAM ,"
+"USB 3.0 kontroller ja kasutades <a %s>16 GB USB 3.0 ADATA S102 mälupulk</a>."
+
+#: index.php:326
+msgid "Non exhaustive list of ISOs Rufus is known to work with"
+msgstr "Mittetäielik loetelu ISOdele, millega on tõestatud  Rufuse töötamine"
+
+#. Please insert your language and name here.
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
+#: index.php:372
+msgid "English translation by Pete Batard"
+msgstr "Eestikeelne tõlge Jaak Espe"
+
+#: index.php:373
+msgid "USB icon by"
+msgstr "USB ikoon"
+
+#: index.php:374
+msgid "Hosting by"
+msgstr "Sisumajutus"

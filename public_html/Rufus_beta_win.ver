@@ -1,0 +1,21 @@
+version = 2.11.994
+platform_min = 5.1
+download_url = http://rufus.akeo.ie/downloads/rufus-2.11_BETA2.exe
+release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 2.11 BETA #2 (2016.09.06)\fs10\b0\par
+\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Do not download BIOS related files unless BIOS boot is selected\par
+{\pntext\f2\'B7\tab}Improve support for Arch Linux derivatives\par
+{\pntext\f2\'B7\tab}Add a cheat mode to disable drive indexing on format (Alt-Q)\par
+{\pntext\f2\'B7\tab}Fix handling of 'Super Floppy Disk' formatted drives\par
+{\pntext\f2\'B7\tab}Fix handling of misleading short write reports, for drives larger than 1 TB\par
+{\pntext\f2\'B7\tab}Fix an issue that enabled FAT32 file system selection on some Windows images\par
+{\pntext\f2\'B7\tab}Fix broken UI font for XP users\par
+{\pntext\f2\'B7\tab}Fix sanitizing of exFAT labels\par
+
+\pard\ltrpar\sl276\slmult1\par
+\b\fs24\tab REMEMBER: IF YOU ENCOUNTER ANY ISSUE WITH\par
+\tab THIS BETA, PLEASE \ul REPORT\ulnone  IT!!!\par
+}

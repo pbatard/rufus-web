@@ -1,0 +1,52 @@
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Doubleclik.com: The Best Search Links on the Net</title>
+            <script type="text/javascript">;
+        if(self != top) top.location.href = 'http://'+location.hostname+'/?redir=frame&uid=www51d1738104aee8.64444125';
+        </script>
+        <script type="text/javascript" src="http://return.bs.domainnamesales.com/return_js.php?d=doubleclik.com&s=1372681089"></script>
+
+    <script type="text/javascript">var abp = true;</script>
+    <script type="text/javascript" src="/js/detectABP.js?adType=banner&blantantlyAnAdUrl=1"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        function GetParam(name) {
+            var match = new RegExp(name +  
+                "=*([^&]+)*", "i").exec(location.search);   
+            if (match == null)             
+                match = new RegExp(name + "=(.+)", "i").exec(location.search);  
+            if (match == null) return null;             
+                match = match + "";           
+            //**convert match to a string       
+            result = match.split(",");          
+            return decodeURIComponent(result[1]);     
+        }  
+
+        function logStatus(type) {   
+            $.ajax({         
+                cache: false, 
+                global: false,  
+                async: true,    
+                type: "POST",  
+                url: '/logpstatus.php',
+                data: {uid: GetParam('uid'), type: type}  
+            });                
+        }        
+        
+        // If adblock pro is installed (from our check), log it.
+        if (typeof abp !== "undefined" && abp == true) {
+            logStatus("ABP");
+        }
+    </script>
+
+    </head>
+    <frameset cols="1,*,1" border=0>
+        <frame name="top" src="tg.php?uid=www51d1738104aee8.64444125" scrolling=no frameborder=0 noresize framespacing=0 marginwidth=0 marginheight=0>
+        <frame src="search_caf.php?uid=www51d1738104aee8.64444125&src=linencafexp" scrolling="auto" framespacing=0 marginwidth=0 marginheight=0 noresize>
+        <frame src="page.php?www51d1738104aee8.64444125"></frame>
+    </frameset>
+    <noframes>
+            </noframes>
+</html>
+

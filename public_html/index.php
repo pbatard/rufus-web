@@ -212,7 +212,7 @@ case "he":
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 	<hr style="width:728px;">
-	<h1><img border="0" src="rufus-128.png" srcset="rufus-128.png 1x, rufus-256.png 2x" alt="[rufus icon]"/>
+	<h1><img border="0" src="pics/rufus-128.png" srcset="pics/rufus-128.png 1x, pics/rufus-256.png 2x" alt="[rufus icon]"/>
 	<a href="https://github.com/pbatard/rufus">Rufus</a></h1>
 	<div class="tagline">
 		<?= _("Create bootable USB drives the easy way");?>

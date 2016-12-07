@@ -11,6 +11,7 @@ $src_size = 2.3;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
   'ar_SA' => array('ar', 'Arabic (العربية)'),
+  'hy_AM' => array('hy', 'Armenian (Հայերեն)'),
   'az_AZ' => array('az', 'Azerbaijani (Azərbaycan)'),
   'bs_BA' => array('bs', 'Bosnian (Bosánski)'),
   'bg_BG' => array('bg', 'Bulgarian (Български)'),

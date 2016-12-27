@@ -390,7 +390,7 @@ case "he":
 			<td><a href="http://www.gentoo.org/">Gentoo</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a href="http://gparted.org/">GParted</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a href="http://www.gnewsense.org/">gNewSense</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a href="http://www.hiren.info/pages/bootcd">Hiren's&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a href="http://www.hirensbootcd.org/">Hiren's&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a href="http://reboot.pro/forum/52/">LiveXP</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a href="http://knoppix.net/">Knoppix</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a href="http://kolibrios.org">KolibriOS</a></td><td><?=$comma;?>&nbsp;</td>

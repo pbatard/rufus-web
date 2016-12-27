@@ -28,6 +28,7 @@ $langs = array(
   'gl_ES' => array('gl', 'Galician (Galego)'),
   'de_DE' => array('de', 'German (Deutsch)'),
   'el_GR' => array('el', 'Greek (Ελληνικά)'),
+  'he_IL' => array('he', 'Hebrew (עברית)'),
   'hu_HU' => array('hu', 'Hungarian (Magyar)'),
   'id_ID' => array('id', 'Indonesian (Bahasa Indonesia)'),
   'it_IT' => array('it', 'Italian (Italiano)'),
@@ -208,7 +209,7 @@ case "he":
 	<center><ins class="adsbygoogle"
 	     style="display:inline-block;width:728px;height:90px;text-decoration:none"
 	     data-ad-client="ca-pub-8924382055379825"
-	     data-ad-slot="7142613500"><small>(Placeholder for ads &mdash; I too wish this site could exist without them...)</small></ins></center>
+	     data-ad-slot="7142613500"><span dir="ltr"><small>(Placeholder for ads &mdash; I too wish this site could exist without them...)</small></span></ins></center>
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>

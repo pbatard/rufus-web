@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2016-12-24 18:14+0200\n"
-"PO-Revision-Date: 2016-12-27 22:46+0000\n"
+"PO-Revision-Date: 2017-01-27 21:18+0000\n"
 "Language-Team: Michael Afanasiev <earthcitizen@tutanota.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,7 +34,7 @@ msgstr "רוצה לשפר את התרגום?"
 #. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
 #: index.php:220
 msgid "rufus_en.png"
-msgstr "rufus_en.png"
+msgstr "rufus_he.png"
 
 #: index.php:221
 msgid ""

@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 
 <?
-$latest_version = "2.11";
+$latest_version = "2.12";
 $previous_version = "";
-$latest_date = "2016.09.08";
+$latest_date = "2017.01.27";
 $previous_date = "";
 $bugfix = false;
-$exe_size = 916;
-$src_size = 2.3;
+$exe_size = 928;
+$src_size = 2.4;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
   'ar_SA' => array('ar', 'Arabic (العربية)'),
@@ -284,6 +284,7 @@ case "he":
 			<td>한국어</td><td><?=$comma;?>&nbsp;</td>
 			<td>ไทย</td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td>עברית</td><td><?=$comma;?>&nbsp;</td>
 			<td>العربية</td><td><?=$comma;?>&nbsp;</td>
 			<td>فارسی</td><td>.</td>
 		</tr></table></p>
@@ -315,14 +316,14 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Do not download BIOS related files unless BIOS boot is selected</span></li>
-				<li><span dir="ltr">Improve support for Arch Linux derivatives</span></li>
-				<li><span dir="ltr">Add a cheat mode to disable drive indexing on format (<div class="kbd">Alt</div>-<div class="kbd">Q</div>)</span></li>
-				<li><span dir="ltr">Fix handling of 'Super Floppy Disk' formatted drives</span></li>
-				<li><span dir="ltr">Fix handling of misleading short write reports, for drives larger than 1 TB</span></li>
-				<li><span dir="ltr">Fix an issue that enabled FAT32 file system selection on some Windows images</span></li>
-				<li><span dir="ltr">Fix broken UI font for XP users</span></li>
-				<li><span dir="ltr">Fix sanitizing of exFAT labels</span></li>
+				<li><span dir="ltr">Add Hebrew translation, courtesy of <b>NSBuilder</b> and <b>פלוני אלמוני</b></span></li>
+				<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div>-<div class="kbd">O</div>) to create an ISO from the first optical media found</span></li>
+				<li><span dir="ltr">Enable target system selection for Windows To Go</span></li>
+				<li><span dir="ltr">Enable NTFS selection for Syslinux 6.x (EXPERIMENTAL)</span></li>
+				<li><span dir="ltr">Fix an issue that allowed BIOS target selection with pure UEFI images</span></li>
+				<li><span dir="ltr">Fix license display for RTL languages</span></li>
+				<li><span dir="ltr">Update Grub4DOS and FreeDOS to latest</span></li>
+				<li><span dir="ltr">Additional fixes and improvements</span></li>
                         </ul></li>
 <!--			<br />
 			<li><?= $prev_version;?><ul>

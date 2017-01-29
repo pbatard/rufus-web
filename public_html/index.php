@@ -415,16 +415,16 @@ case "he":
 			<td><a href="http://www.ubuntu.com/">Ubuntu</a></td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><a href="http://www.ultimatebootcd.com/">Ultimate&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=140&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=146&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;Vista</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=140&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=146&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;Vista</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=351&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;Server&nbsp;2008</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=350&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;7</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=350&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;7</a></td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=481&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;8</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a href="http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=524&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;8.1</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a href="http://www.microsoft.com/en/server-cloud/products/windows-server-2012-r2/">Windows&nbsp;Server&nbsp;2012</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=481&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;8</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=524&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;8.1</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=483&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;Server&nbsp;2012</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a href="https://www.microsoft.com/en-us/software-download/windows10ISO/">Windows&nbsp;10</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-technical-preview">Windows&nbsp;Server&nbsp;2016</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=665&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;Server&nbsp;2016</a></td><td><?=$comma;?>&nbsp;</td>
 
 			<td>&hellip;</td>
 		</tr></table></p>

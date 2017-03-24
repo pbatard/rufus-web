@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <?
 $latest_version = "2.12";
 $previous_version = "";
@@ -176,6 +175,11 @@ case "he":
 	.treeView li.collapsibleListClosed{ list-style-image:url('button-closed.png'); cursor:pointer; }
 	.treeView li.collapsibleListItem{ padding-left:1.5em; }
 	.treeView li li{ padding-left:1.5em; }
+	@media screen and (max-width: 1002px) {
+	  .hide_on_small_screens {
+	    display:none;
+	  }
+	}
 </style>
 </head>
 
@@ -188,8 +192,9 @@ case "he":
 </option>
 <? endforeach; ?>
 </select>
-<? if (substr($locale,0,2) == "en") echo "<br/><a href=\"https://github.com/pbatard/rufus/wiki/Localization#wiki-Translating_the_Rufus_Homepage\">Want your language here?</a>";
-  else if (substr($locale,0,2) != "fr") echo "<br/><a href=\"https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation\"><span dir=\"ltr\">" . _("Want to improve this translation?") . "</span></a>" ?>
+<div class="hide_on_small_screens">
+<? if (substr($locale,0,2) == "en") echo "<a href=\"https://github.com/pbatard/rufus/wiki/Localization#wiki-Translating_the_Rufus_Homepage\">Want your language here?</a>";
+  else if (substr($locale,0,2) != "fr") echo "<a href=\"https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation\"><span dir=\"ltr\">" . _("Want to improve this translation?") . "</span></a>" ?>
 &nbsp;<br />
 &nbsp;<br />
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -201,6 +206,7 @@ case "he":
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+</div>
 </div>
 <div id="container">
 	<hr style="width:728px;">

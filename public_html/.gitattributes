@@ -1,0 +1,5 @@
+*.html          eol=lf
+*.php           eol=lf
+*.sh            eol=lf
+*.txt           eol=lf
+

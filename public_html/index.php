@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <?
 $latest_version = "2.12";
 $previous_version = "";

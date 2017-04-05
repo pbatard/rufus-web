@@ -6,6 +6,3 @@ Redirect 301 /not_detected https://github.com/pbatard/rufus/wiki/FAQ#wiki-Help_m
 Redirect 301 /FAQ https://github.com/pbatard/rufus/wiki/FAQ
 Redirect 301 /test /downloads
 Redirect 301 /translators /downloads
-Redirect 301 /fuck-your-sysadmin-sorry /your-UUID-crap-sucks
-RedirectMatch 301 /.*/.*/from /your-UUID-crap-sucks
-#RedirectMatch 301 /.{8}-.{4}-.{4}-.{4}-.{12}/ /your-UUID-crap-sucks

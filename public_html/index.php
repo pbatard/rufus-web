@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <?
-$latest_version = "2.12";
+$latest_version = "2.13";
 $previous_version = "";
-$latest_date = "2017.01.27";
+$latest_date = "2017.04.06";
 $previous_date = "";
 $bugfix = false;
-$exe_size = 928;
+$exe_size = 929;
 $src_size = 2.4;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
@@ -322,14 +322,14 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Add Hebrew translation, courtesy of <b>NSBuilder</b> and <b>פלוני אלמוני</b></span></li>
-				<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div>-<div class="kbd">O</div>) to create an ISO from the first optical media found</span></li>
-				<li><span dir="ltr">Enable target system selection for Windows To Go</span></li>
-				<li><span dir="ltr">Enable NTFS selection for Syslinux 6.x (EXPERIMENTAL)</span></li>
-				<li><span dir="ltr">Fix an issue that allowed BIOS target selection with pure UEFI images</span></li>
-				<li><span dir="ltr">Fix license display for RTL languages</span></li>
-				<li><span dir="ltr">Update Grub4DOS and FreeDOS to latest</span></li>
-				<li><span dir="ltr">Additional fixes and improvements</span></li>
+				<li><span dir="ltr">Preserve 'GPT for UEFI' option if the user changed it before selecting an ISO</span></li>
+				<li><span dir="ltr">Fix unwanted notification sound when closing with the X button</span></li>
+				<li><span dir="ltr">Fix inability to restore the minimized application after a popup is displayed</span></li>
+				<li><span dir="ltr">Fix an issue when trying to install Syslinux/NTFS twice in a row</span></li>
+				<li><span dir="ltr">Work around Microsoft's inconsistent casing of device IDs during device enumeration</span></li>
+				<li><span dir="ltr">Work around Microsoft's aggressive locking of partitions in Windows 10 Creators Update</span></li>
+				<li><span dir="ltr">Restrict write sharing permissions when accessing a device</span></li>
+				<li><span dir="ltr">Update libcdio and GRUB 2.0 to latest</span></li>
                         </ul></li>
 <!--			<br />
 			<li><?= $prev_version;?><ul>
@@ -435,7 +435,7 @@ case "he":
 			<td>&hellip;</td>
 		</tr></table></p>
 		<div class="footer"><table align="center" dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2017&nbsp;</td><td><a href="http://pete.akeo.ie">Pete&nbsp;Batard/Akeo</a></td></tr></table>
+			<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2017&nbsp;</td><td><a href="http://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
 			<? /* Please insert your language and name here.
 If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a> */ $tr = _("English translation by Pete Batard"); if (substr($tr,0,4) != "Engl") echo $tr . "<br/>";?>

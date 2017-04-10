@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "2.13";
-$previous_version = "";
-$latest_date = "2017.04.06";
-$previous_date = "";
-$bugfix = false;
+$latest_version = "2.14";
+$previous_version = "2.13";
+$latest_date = "2017.04.10";
+$previous_date = "2017.04.06";
+$bugfix = true;
 $exe_size = 929;
 $src_size = 2.4;
 $langs = array(
@@ -322,6 +322,10 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
+				<li><span dir="ltr">Fix inability to create BIOS-bootable drives, in some circumstances, due to write sharing permissions</span></li>
+			</ul></li>
+			<br />
+			<li><?= $prev_version;?><ul>
 				<li><span dir="ltr">Preserve 'GPT for UEFI' option if the user changed it before selecting an ISO</span></li>
 				<li><span dir="ltr">Fix unwanted notification sound when closing with the X button</span></li>
 				<li><span dir="ltr">Fix inability to restore the minimized application after a popup is displayed</span></li>
@@ -330,13 +334,7 @@ case "he":
 				<li><span dir="ltr">Work around Microsoft's aggressive locking of partitions in Windows 10 Creators Update</span></li>
 				<li><span dir="ltr">Restrict write sharing permissions when accessing a device</span></li>
 				<li><span dir="ltr">Update libcdio and GRUB 2.0 to latest</span></li>
-                        </ul></li>
-<!--			<br />
-			<li><?= $prev_version;?><ul>
-				<li><span dir="ltr">Fix formatting of drives with a large sector size (2K, 4K)</span></li>
-				<li><span dir="ltr">Other improvements</span></li>
 			</ul></li>
-			</li> -->
 			&nbsp;
 			<li><b><a href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt"><?= _("Other versions");?></a></b></li>
 		</ul>

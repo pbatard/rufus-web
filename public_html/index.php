@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "2.14";
-$previous_version = "2.13";
-$latest_date = "2017.04.10";
-$previous_date = "2017.04.06";
-$bugfix = true;
-$exe_size = 929;
+$latest_version = "2.15";
+$previous_version = "2.14";
+$latest_date = "2017.05.16";
+$previous_date = "2017.04.10";
+$bugfix = false;
+$exe_size = 932;
 $src_size = 2.4;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
@@ -322,8 +322,14 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Fix inability to create BIOS-bootable drives, in some circumstances, due to write sharing permissions</span></li>
+				<li><span dir="ltr">Fix non-listing of drives that are opened for write access by another process</span></li>
+				<li><span dir="ltr">Report external processes that may be preventing disk access (in the log)</span></li>
+				<li><span dir="ltr">Improve Windows To Go support for Windows 10 Creators Update</span></li>
+				<li><span dir="ltr">Don't report an error on checkdisk failure</span></li>
+				<li><span dir="ltr">Update GRUB 2.0 and Grub4DOS to latest</span></li>
+				<li><span dir="ltr">Other fixes and improvements</span></li>
 			</ul></li>
+			<? if($bugfix):?>
 			<br />
 			<li><?= $prev_version;?><ul>
 				<li><span dir="ltr">Preserve 'GPT for UEFI' option if the user changed it before selecting an ISO</span></li>
@@ -335,6 +341,7 @@ case "he":
 				<li><span dir="ltr">Restrict write sharing permissions when accessing a device</span></li>
 				<li><span dir="ltr">Update libcdio and GRUB 2.0 to latest</span></li>
 			</ul></li>
+			<? endif;?>
 			&nbsp;
 			<li><b><a href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt"><?= _("Other versions");?></a></b></li>
 		</ul>

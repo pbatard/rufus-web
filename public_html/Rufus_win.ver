@@ -1,25 +1,17 @@
-version = 2.14.1086
+version = 2.15.1117
 platform_min = 5.1
-download_url = http://rufus.akeo.ie/downloads/rufus-2.14.exe
+download_url = http://rufus.akeo.ie/downloads/rufus-2.15.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 {\*\generator Riched20 6.3.9600}\viewkind4\uc1 
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 2.14 (2017.04.10) [BUGFIX RELEASE]\fs10\b0\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 2.15 (2017.05.16)\fs10\b0\par
 \fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix inability to create BIOS-bootable drives, in some circumstances, due to write sharing permissions\par
-
-\pard\sl276\slmult1\b\fs22\par
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Also, from Rufus 2.13 (2017.04.06)\fs10\b0\par
-\fs22\par
-
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Preserve 'GPT for UEFI' option if the user changed it before selecting an ISO\par
-{\pntext\f2\'B7\tab}Fix unwanted notification sound when closing with the X button\par
-{\pntext\f2\'B7\tab}Fix inability to restore the minimized application after a popup is displayed\par
-{\pntext\f2\'B7\tab}Fix an issue when trying to install Syslinux/NTFS twice in a row\par
-{\pntext\f2\'B7\tab}Work around Microsoft's inconsistent casing of device IDs during device enumeration\par
-{\pntext\f2\'B7\tab}Work around Microsoft's aggressive locking of partitions in Windows 10 Creators Update\par
-{\pntext\f2\'B7\tab}Restrict write sharing permissions when accessing a device\par
-{\pntext\f2\'B7\tab}Update libcdio and GRUB 2.0 to latest\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix non-listing of drives that are opened for write access by another process\par
+{\pntext\f2\'B7\tab}Report external processes that may be preventing disk access (in the log)\par
+{\pntext\f2\'B7\tab}Improve Windows To Go support for Windows 10 Creators Update\par
+{\pntext\f2\'B7\tab}Don't report an error on checkdisk failure\par
+{\pntext\f2\'B7\tab}Update GRUB 2.0 and Grub4DOS to latest\par
+{\pntext\f2\'B7\tab}Other fixes and improvements\par
 
 }

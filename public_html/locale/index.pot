@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2017-04-05 11:16+0100\n"
+"POT-Creation-Date: 2017-05-26 14:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,7 +100,7 @@ msgstr ""
 msgid "Portable"
 msgstr ""
 
-#: index.php:249 index.php:341
+#: index.php:249 index.php:346
 msgid "Other versions"
 msgstr ""
 
@@ -241,49 +241,49 @@ msgstr ""
 msgid "Changelog"
 msgstr ""
 
-#: index.php:344
+#: index.php:349
 msgid "Source Code"
 msgstr ""
 
 #. Abbreviation for MegaByte
-#: index.php:345
+#: index.php:350
 msgid "MB"
 msgstr ""
 
-#: index.php:346
+#: index.php:351
 #, php-format
 msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
 msgstr ""
 
-#: index.php:348
+#: index.php:353
 #, php-format
 msgid "For more information, see the <a %s>github project</a>."
 msgstr ""
 
-#: index.php:349
+#: index.php:354
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
 msgstr ""
 
-#: index.php:351
+#: index.php:356
 msgid "Donations"
 msgstr ""
 
-#: index.php:352
+#: index.php:357
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr ""
 
-#: index.php:353
+#: index.php:358
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
 "choose not to donate."
 msgstr ""
 
-#: index.php:356
+#: index.php:361
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a %s>Free "
@@ -291,24 +291,24 @@ msgid ""
 "possible."
 msgstr ""
 
-#: index.php:357
+#: index.php:362
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much "
 "appreciated!"
 msgstr ""
 
-#: index.php:358
+#: index.php:363
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
 
-#: index.php:360
+#: index.php:365
 msgid "Speed comparison between Rufus and other applications"
 msgstr ""
 
-#: index.php:361
+#: index.php:366
 #, php-format
 msgid ""
 "The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
@@ -316,21 +316,21 @@ msgid ""
 "flash drive</a>."
 msgstr ""
 
-#: index.php:386
+#: index.php:391
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr ""
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:441
+#: index.php:446
 msgid "English translation by Pete Batard"
 msgstr ""
 
-#: index.php:442
+#: index.php:447
 msgid "USB icon by"
 msgstr ""
 
-#: index.php:443
+#: index.php:448
 msgid "Hosting by"
 msgstr ""

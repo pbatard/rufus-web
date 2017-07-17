@@ -9,6 +9,7 @@ $exe_size = 932;
 $src_size = 2.4;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
+  'sq_AL' => array('sq', 'Albanian (Shqip)'),
   'ar_SA' => array('ar', 'Arabic (العربية)'),
   'hy_AM' => array('hy', 'Armenian (Հայերեն)'),
   'az_AZ' => array('az', 'Azerbaijani (Azərbaycan)'),

@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "2.15";
+$latest_version = "2.16";
 $previous_version = "2.14";
-$latest_date = "2017.05.16";
+$latest_date = "2017.07.31";
 $previous_date = "2017.04.10";
 $bugfix = false;
-$exe_size = 932;
+$exe_size = 939;
 $src_size = 2.4;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
@@ -239,8 +239,8 @@ case "he":
 		<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
 		<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a %s>UNetbootin</a>, <a %s>Universal USB Installer</a> or <a %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"http://wudt.codeplex.com\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
 		<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
-		<? if (substr($locale,0,2) == "xx" || substr($locale,0,2) == "xx" || substr($locale,0,2) == "xx") echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/Japan.png\" srcset=\"/pics/Japan.png 1x, /pics/Japan-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b><!-- &nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/Thailand.png\" srcset=\"pics/Thailand.png 1x, pics/Thailand-64px 2x\" alt=\"\"/> --></p>
-		<p dir=\"ltr\">The Rufus application can use <b>your</b> help with its translations, and the project is currently looking for volunteers that would be kind enough to update the localization for <b><i>Japanese</i></b><!-- and <b><i>Thai</i></b>-->.</p>
+		<? if (substr($locale,0,2) == "en" || substr($locale,0,2) == "ar" || substr($locale,0,2) == "dk") echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/Algeria.png\" srcset=\"/pics/Algeria.png 1x, /pics/Algeria-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/Denmark.png\" srcset=\"pics/Denmark.png 1x, pics/Denmark-64px 2x\" alt=\"\"/></p>
+		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a href=\"https://github.com/pbatard/rufus/blob/master/res/localization/ChangeLog.txt#L18-L66\">update the localization</a> for <b><i>Arabic</i></b> and <b><i>Danish</i></b>.</p>
 		<p dir=\"ltr\">If you think you are up to the task, please have a look <a href=\"https://github.com/pbatard/rufus/wiki/Localization\">here</a>.</p>";?>
 		<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
@@ -323,11 +323,12 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Fix non-listing of drives that are opened for write access by another process</span></li>
-				<li><span dir="ltr">Report external processes that may be preventing disk access (in the log)</span></li>
-				<li><span dir="ltr">Improve Windows To Go support for Windows 10 Creators Update</span></li>
-				<li><span dir="ltr">Don't report an error on checkdisk failure</span></li>
-				<li><span dir="ltr">Update GRUB 2.0 and Grub4DOS to latest</span></li>
+				<li><span dir="ltr">Add an audiovisual cue on completion/error</span></li>
+				<li><span dir="ltr">Add a workaround for ISOs using nonstandard Rock Ridge extensions (looking at you Kali Linux!)</span></li>
+				<li><span dir="ltr">Notify user when an ISO is broken or truncated</span></li>
+				<li><span dir="ltr">Notify user if other processes are accessing the drive before format</span></li>
+				<li><span dir="ltr">List processes that are locking a drive on failure</span></li>
+				<li><span dir="ltr">Improve verbosity of the Windows To Go process</span></li>
 				<li><span dir="ltr">Other fixes and improvements</span></li>
 			</ul></li>
 			<? if($bugfix):?>

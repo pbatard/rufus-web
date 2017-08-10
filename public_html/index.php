@@ -13,6 +13,7 @@ $langs = array(
   'ar_SA' => array('ar', 'Arabic (العربية)'),
   'hy_AM' => array('hy', 'Armenian (Հայերեն)'),
   'az_AZ' => array('az', 'Azerbaijani (Azərbaycan)'),
+  'bn_BD' => array('bn', 'Bangla (বাংলা)'),
   'bs_BA' => array('bs', 'Bosnian (Bosánski)'),
   'bg_BG' => array('bg', 'Bulgarian (Български)'),
   'ca_ES' => array('ca', 'Catalan (Català)'),

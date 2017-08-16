@@ -217,7 +217,7 @@ case "he":
 	<center><ins class="adsbygoogle"
 	     style="display:inline-block;width:728px;height:90px;text-decoration:none"
 	     data-ad-client="ca-pub-8924382055379825"
-	     data-ad-slot="7142613500"><span dir="ltr"><small>(Placeholder for ads &mdash; I too wish this site could exist without them...)</small></span></ins></center>
+	     data-ad-slot="7142613500"><span dir="ltr"><small>(<?= _("Placeholder for ads &mdash; I too wish this site could exist without them...");?>)</small></span></ins></center>
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
@@ -240,8 +240,8 @@ case "he":
 		<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
 		<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a %s>UNetbootin</a>, <a %s>Universal USB Installer</a> or <a %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"http://wudt.codeplex.com\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
 		<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
-		<? if (substr($locale,0,2) == "en" || substr($locale,0,2) == "ar" || substr($locale,0,2) == "dk") echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/Algeria.png\" srcset=\"/pics/Algeria.png 1x, /pics/Algeria-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/Denmark.png\" srcset=\"pics/Denmark.png 1x, pics/Denmark-64px 2x\" alt=\"\"/></p>
-		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a href=\"https://github.com/pbatard/rufus/blob/master/res/localization/ChangeLog.txt#L18-L66\">update the localization</a> for <b><i>Arabic</i></b> and <b><i>Danish</i></b>.</p>
+		<? if (substr($locale,0,2) == "en" || substr($locale,0,2) == "ar" || substr($locale,0,2) == "dk") echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/Malaysia.png\" srcset=\"/pics/Malaysia.png 1x, /pics/Malaysia-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/Denmark.png\" srcset=\"pics/Denmark.png 1x, pics/Denmark-64px 2x\" alt=\"\"/></p>
+		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a href=\"https://github.com/pbatard/rufus/blob/master/res/localization/ChangeLog.txt#L18-L66\">update the localization</a> for <b><i>Malay</i></b> and <b><i>Danish</i></b>.</p>
 		<p dir=\"ltr\">If you think you are up to the task, please have a look <a href=\"https://github.com/pbatard/rufus/wiki/Localization\">here</a>.</p>";?>
 		<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>

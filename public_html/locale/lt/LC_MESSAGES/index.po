@@ -2,79 +2,87 @@
 # Copyright (C) 2014 Pete Batard
 # This file is distributed under the same license as the Rufus package.
 # Pete Batard <pete@akeo.ie>, 2014.
-#
+# Gintaras Venslovas <gintaras.venslovas@gmail.com>.
+# <opensuse.lietuviu.kalba@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2014-07-18 10:22+0100\n"
-"PO-Revision-Date: 2014-07-18 16:45-0000\n"
-"Last-Translator: Pete Batard <pete@akeo.ie>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2017-09-10 20:34+0100\n"
+"PO-Revision-Date: 2017-09-10 20:42+0100\n"
+"Last-Translator: opensuse.lietuviu.kalba@gmail.com\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt_LT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.6\n"
+"X-Generator: Poedit 2.0.3\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:56
+#: index.php:80
 msgid "Version"
 msgstr "Versija"
 
-#: index.php:76 index.php:176
+#: index.php:101 index.php:231
 msgid "Create bootable USB drives the easy way"
 msgstr "Sukurk įkelties USB diskus - lengvai"
 
-#: index.php:155
+#: index.php:202
 msgid "Want to improve this translation?"
+msgstr "Norėtumėte patobulinti vertimą?"
+
+#: index.php:223
+msgid ""
+"Placeholder for ads &mdash; Just like you, I wish this site could exist "
+"without them..."
 msgstr ""
 
 #. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
-#: index.php:178
+#: index.php:233
 msgid "rufus_en.png"
 msgstr "rufus_lt.png"
 
-#: index.php:179
+#: index.php:234
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
 msgstr ""
-"Rufus - tai programa, skirta formatuoti ir sukurti įkelties USB \"flash\" "
-"diskus, kaip pvz. USB raktus, atmintukus ir pan."
+"Rufus programa leidžia suženklinti ir sukurti sistemų paleidimo laikmenas, "
+"kaip pvz. USB atmintukus, atminties korteles ir pan."
 
-#: index.php:180
+#: index.php:235
 msgid "It can be especially useful for cases where:"
 msgstr "Ji gali būti ypač naudinga tais atvejais, kai:"
 
-#: index.php:182
+#: index.php:237
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
 msgstr ""
-"jums reikia sukurti USB įdiegimo laikmeną iš įkelties ISO atvaizdų (Windows, "
-"Linux, UEFI ir kt.)"
+"reikia pasidaryti diegimo laikmeną iš ISO atvaizdžių (Windows, Linux, UEFI "
+"ir kt.)"
 
-#: index.php:183
+#: index.php:238
 msgid "you need to work on a system that doesn't have an OS installed"
-msgstr "jums reikia dirbti su sistema, kurioje nėra įdiegtos OS"
+msgstr "reikia dirbti su sistema, kurioje nėra įdiegtos operacinės sistemos"
 
-#: index.php:184
+#: index.php:239
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr ""
-"jums reikia perrašyti BIOS ar kitokią įrangos programą (\"firmware\") DOS "
-"aplinkoje"
+"reikia perrašyti BIOS ar kitokią programinę aparatinę įrangą (angl. "
+"\"firmware\") DOS aplinkoje"
 
-#: index.php:185
+#: index.php:240
 msgid "you want to run a low-level utility"
-msgstr "jūs norite vykdyti aparatinės prieigos programą"
+msgstr "norite paleisti aparatinės prieigos programą"
 
-#: index.php:188
+#: index.php:243
 msgid "Despite its small size, Rufus provides everything you need!"
-msgstr "Nepaisant savo mažo dydžio, Rufus suteikia viską, ko jums reikia!"
+msgstr "Nors mažo dydžio, Rufus suteikia viską, ko jums reikia!"
 
-#: index.php:189
+#: index.php:244
 #, php-format
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
@@ -83,94 +91,96 @@ msgid ""
 "from an ISO. It is also marginally faster on the creation of Linux bootable "
 "USB from ISOs."
 msgstr ""
-"Beje, Rufus yra <b>greitas</b>. Pavyzdžiui, jis maždaug dvigubai greitesnis "
-"už <a %s>UNetbootin</a>, <a %s>Universal USB Installer</a> ar <a %s>Windows "
-"7 USB download tool</a>, sukuriant Windows 7 USB įdiegimo diską iš ISO "
-"atvaizdo. Jis taip pat šiek tiek greičiau sukuria Linux įkelties USB iš ISO "
-"atvaizdų."
+"Beje, Rufus veikia <b>greitai</b>. Pavyzdžiui, jis maždaug dvigubai greičiau "
+"sukuria Windows 7 USB diegimo diską iš ISO nei <a %s>UNetbootin</a>, <a "
+"%s>Universal USB Installer</a> ar <a %s>Windows 7 USB download tool</a>. "
+"Rufus taip pat šiek tiek greičiau sukuria Linux įkelties USB iš ISO "
+"atvaizdžių."
 
-#: index.php:190
+#: index.php:245
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
 "of this page."
 msgstr ""
-"Nebaigtinis Rufus palaikomų ISO atvaizdų sąrašas yra pateiktas šio puslapio "
-"apačioje."
+"Negalutinis Rufus palaikomų ISO atvaizdžių sąrašas yra pateiktas šio "
+"puslapio apačioje."
 
-#: index.php:194
+#: index.php:250
 msgid "Download"
 msgstr "Atsisiųsti"
 
-#: index.php:195
+#: index.php:251
 #, php-format
 msgid "Last updated %s:"
-msgstr "Vėliausiai atnaujintas %s:"
+msgstr "Paskiausiai atnaujinta %s:"
 
 #. Abbreviation for KiloByte
-#: index.php:196
+#: index.php:252 index.php:253
 msgid "KB"
 msgstr "KB"
 
-#: index.php:197 index.php:281
+#: index.php:253
+msgid "Portable"
+msgstr ""
+
+#: index.php:254 index.php:352
 msgid "Other versions"
 msgstr "Kitos versijos"
 
-#: index.php:199
+#: index.php:256
 msgid "Supported Languages:"
 msgstr "Palaikomos kalbos:"
 
-#: index.php:235
+#: index.php:302
 msgid "System Requirements:"
 msgstr "Reikalavimai sistemai:"
 
-#: index.php:236
+#: index.php:303
 msgid ""
 "Windows XP or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
 msgstr ""
-"Windows XP ar vėlesnis, gali būti tiek 32, tiek 64 bitų. Atsisiuntus, "
-"programa paruošta naudoti."
+"Windows XP ar vėlesnė, gali būti tiek 32, tiek 64 bitų. Atsisiųstoji "
+"programa jau paruošta naudoti."
 
-#: index.php:237
+#: index.php:304
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
 "various languages. If you find that you can use Rufus in your own language, "
 "you should really thank them!"
 msgstr ""
-"Pasinaudosiu šia proga išreikšti savo dėkingumui vertėjams, kurių dėka "
-"Rufus, o taip pat ir ši svetainė, buvo išversta į įvairias kalbas. Jei "
-"galite naudotis Rufus savo kalba, turėtumėte būti dėkingi jiems!"
+"Pasinaudosiu šia proga išreikšti savo dėkingumą vertėjams, kurių dėka Rufus, "
+"o taip pat ir ši svetainė, buvo išversta į įvairias kalbas. Jei galite "
+"naudotis Rufus savo kalba, turėtumėte būti dėkingi jiems!"
 
-#: index.php:238
+#: index.php:305
 msgid "Usage"
 msgstr "Naudojimas"
 
-#: index.php:239
+#: index.php:306
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
-msgstr ""
-"Atsisiųskite vykdomąjį failą ir jį paleiskite &ndash; įdiegimo nereikia."
+msgstr "Atsisiųskite vykdomąjį failą ir jį paleiskite &ndash; dieti nereikia."
 
-#: index.php:240
+#: index.php:307
 msgid "The executable is digitally signed and the signature should state:"
 msgstr ""
-"Vykdomasis failas yra pasirašytas skaitmeniniu parašu, kuris turėtų "
-"įvardinti:"
+"Vykdomasis failas pasirašytas skaitmeniniu parašu, kuris turėtų įvardinti:"
 
-#: index.php:241
+#: index.php:308
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 ar vėlesnė)"
 
-#: index.php:242
+#: index.php:309
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 ar ankstensė)"
 
-#: index.php:243
+#: index.php:310
 msgid "Notes on DOS support:"
 msgstr "Pastabos DOS palaikymui:"
 
-#: index.php:244
+#: index.php:311
 #, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
@@ -178,89 +188,90 @@ msgid ""
 "In that case, <a %s>FreeDOS</a>, which is the default selection, is "
 "recommended over MS-DOS, as it supports more keyboard layouts."
 msgstr ""
-"Jei kursite DOS įkelties diską ir naudosite ne Jungtinių Valstijų (US) "
-"klaviatūrą, Rufus mėgins parinkti klaviatūros išdėstymą pagal jūsų sistemoje "
-"nustatytą vietą (šalį). Tuo atveju <a %s>FreeDOS</a>, kuri yra numatytoji "
-"parinktis, yra rekomenduojama vietoje MS-DOS, kadangi ji palaiko daugiau "
-"klaviatūros išdėstymų."
+"Jei kursite DOS paleidimo diską ir naudosite ne JAV klaviatūrą, Rufus mėgins "
+"parinkti klaviatūros išdėstymą pagal jūsų sistemoje nustatytą lokalę (šalį). "
+"Tuo atveju <a %s>FreeDOS</a>, kuri yra numatytoji parinktis, yra "
+"rekomenduojama vietoje MS-DOS, kadangi ji palaiko daugiau klaviatūros "
+"išdėstymų."
 
-#: index.php:245
+#: index.php:312
 msgid "Notes on ISO Support:"
 msgstr "Pastabos dėl ISO palaikymo:"
 
-#: index.php:246
+#: index.php:313
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
 "an <a %s>ISO image</a> (.iso)."
 msgstr ""
-"Visos Rufus versijos nuo v1.1.0 leidžia kurti įkelties USB diskus iš <a "
-"%s>ISO atvaizdo</a> (.iso)."
+"Visos Rufus versijos nuo v1.1.0 leidžia kurti USB paleidimo laikmenas iš <a "
+"%s>ISO atvaizdžio</a> (.iso)."
 
-#: index.php:247
+#: index.php:314
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
 "easy to do however, through the use of a CD burning application, such as the "
 "freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
 msgstr ""
-"Sukurti ISO atvaizdą iš fizinio disko ar iš failų grupės yra visai nesunku, "
-"naudojant CD įrašymo programą, kaip pvz., nemokamai prieinamos <a "
+"Sukurti ISO atvaizdį iš fizinio disko ar iš failų grupės yra visai nesunku "
+"naudojant įrašymo į CD programas, kaip pvz., nemokamai prieinamas <a "
 "%s>CDBurnerXP</a> arba <a %s>ImgBurn</a>."
 
-#: index.php:248
+#: index.php:315
 msgid "Notes on UEFI & GPT support:"
 msgstr "Pastabos dėl UEFI ir GPT palaikymo:"
 
-#: index.php:249
+#: index.php:316
 msgid ""
 "Since version 1.3.2, Rufus support UEFI as well as GPT for installation "
 "media, meaning that it will allow you to install Windows 7, Windows 8 or "
 "Linux in full EFI mode."
 msgstr ""
 "Nuo versijos 1.3.2 Rufus palaiko UEFI bei GPT metodus įdiegimo laikmenoms, "
-"tai reiškia, kad tai leis jums įdiegti Window 7, Windows 8 ar Linux pilnu "
-"EFI režimu."
+"tai reiškia, kad galite įdiegti Window 7, Windows 8 ar Linux su pilna EFI "
+"veiksena."
 
-#: index.php:250
+#: index.php:317
 msgid ""
 "However, Windows Vista or later is required for full UEFI/GPT support. "
 "Because of OS limitations, Windows XP restricts the creation of UEFI "
 "bootable drives to MBR mode."
 msgstr ""
-"Tačiau pilnam UEFI/GPT palaikymui reikia Windows Vista ar vėlesnės. Dėl OS "
-"apribojimų, Windows XP leidžia kurit UEFI įkelties diskus tik MBR režime."
+"Tačiau pilnam UEFI/GPT palaikymui reikia Windows Vista ar vėlesnės "
+"operacinės sistemos (OS). Dėl OS apribojimų, Windows XP leidžia kurti "
+"paleidimo diskus tik su MBR veiksena."
 
-#: index.php:252
+#: index.php:319
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Dažniausiai užduodami klausimai (DUK)"
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:253
+#: index.php:320
 #, php-format
 msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
 msgstr "Rufus DUK rasite <b><a %s>ČIA</a></b>."
 
-#: index.php:254
+#: index.php:321
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
 "github <a %s>issue tracker</a>. Or you can <a %s>send an e-mail</a>."
 msgstr ""
-"Norėdami pateikti atsiliepimus, pranešti apie klaidas ar užsakyti "
-"patobulinimą, prašome naudotis GitHub <a %s>klausimų skiltimi</a>. Arba "
-"galite <a %s>siųsti el. laišką</a>."
+"Norėdami pateikti atsiliepimus, pranešti apie klaidas ar siūlyti "
+"patobulinimus, naudokitės GitHub <a %s>klausimų skiltimi</a>. Arba galite <a "
+"%s>parašyti el. laišką</a>."
 
-#: index.php:255
+#: index.php:323
 msgid "License"
 msgstr "Licencija"
 
-#: index.php:256
+#: index.php:324
 #, php-format
 msgid "<a %s>GNU General Public License (GPL) version 3</a> or later."
 msgstr "<a %s>Bendroji viešoji licencija (GPL), versija 3</a> ar vėlesnė."
 
-#: index.php:256
+#: index.php:324
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you "
 "respect the GPLv3 license."
@@ -268,7 +279,7 @@ msgstr ""
 "Jūs turite teisę  platinti, keisti ar net parduoti šią programą, tol kol "
 "vadovaujatės GPLv3 licencija."
 
-#: index.php:257
+#: index.php:325
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a %s>public "
@@ -278,50 +289,48 @@ msgstr ""
 "a>, naudojantis <a %s>MinGW32</a> aplinka."
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:259
+#: index.php:327
 msgid "Changelog"
-msgstr "Pokyčių sąrašas"
+msgstr "Pakeitimų sąrašas"
 
-#: index.php:284
+#: index.php:355
 msgid "Source Code"
 msgstr "Išeities kodas"
 
 #. Abbreviation for MegaByte
-#: index.php:285
+#: index.php:356
 msgid "MB"
 msgstr "MB"
 
-#: index.php:286
+#: index.php:357
 #, php-format
 msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
 msgstr "Arba jūs galite klonuoti <a %s>git</a> saugyklą, naudodami:"
 
-#: index.php:288
+#: index.php:359
 #, php-format
 msgid "For more information, see the <a %s>github project</a>."
 msgstr "Daugiau informacijos rasite <a %s>GitHub projekte</a>."
 
-#: index.php:289
+#: index.php:360
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
-msgstr ""
-"Jei esate kūrėjas, norime jus paskatinti \"krapštytis\" su Rufus bei "
-"pateikti pataisas."
+msgstr "Jei programuojate, raginame pakrapštyti Rufus ir teikti pataisas."
 
-#: index.php:291
+#: index.php:362
 msgid "Donations"
 msgstr "Aukos"
 
-#: index.php:292
+#: index.php:363
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr ""
-"Kadangi manęs kartas nuo karto vis klausia - šiame puslapyje nėra aukojimo "
-"mygtuko."
+"Kadangi manęs kartas nuo karto to paklausia – šiame puslapyje <b>nėra</b> "
+"aukojimo mygtuko."
 
-#: index.php:293
+#: index.php:364
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -331,7 +340,7 @@ msgstr ""
 "nepadeda programų kūrimui, netgi blogiau, ji gali sukelti kaltės jausmą "
 "tiems, kas neketina aukoti."
 
-#: index.php:296
+#: index.php:367
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a %s>Free "
@@ -340,19 +349,19 @@ msgid ""
 msgstr ""
 "Jei jūs iš tiesų norite, jūs visada galite paaukoti <a %s>Laisvosios "
 "programinės įrangos fondui</a>, nes jie yra pagrindinė priežastis, kad "
-"programos kaip Rufus yra įmanomos."
+"tokios programos kaip Rufus yra įmanomos."
 
-#: index.php:297
+#: index.php:368
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much "
 "appreciated!"
 msgstr ""
-"Bet kuriuo atveju, aš pasinaudosiu šia proga ištarti <i><u>ačiū jums</u></i> "
-"už jūsų nuolatinę paramą ir susidomėjimą šia maža programa: aš tai labai "
+"Bet kuriuo atveju, pasinaudosiu proga ištarti <i><u>ačiū jums</u></i> už "
+"jūsų nuolatinę paramą ir susidomėjimą šia maža programa: aš tai labai "
 "vertinu!"
 
-#: index.php:298
+#: index.php:369
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -360,37 +369,39 @@ msgstr ""
 "Tačiau, prašau, toliau jauskitės laisvi naudoti Rufus be jokios kaltės dėl "
 "to, kad neprisidedate finansiškai, &ndash; jūs tikrai neprivalote!"
 
-#: index.php:300
+#: index.php:371
 msgid "Speed comparison between Rufus and other applications"
 msgstr "Spartos palyginimas tarp Rufus ir kitų programų"
 
-#: index.php:301
+#: index.php:372
 #, php-format
 msgid ""
 "The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
 "platform, with an USB 3.0 controller and a <a %s>16 GB USB 3.0 ADATA S102 "
 "flash drive</a>."
 msgstr ""
-"Šie testai atlikti Windows 7 x64 Core 2 duo/4 GB RAM platformoje, su USB 3.0 "
-"valdikliu ir <a %s>16 GB USB 3.0 ADATA S102 \"flash\" disku</a>."
+"Tolesni testai atlikti Windows 7 x64 Core 2 duo/4 GB RAM platformoje, su USB "
+"3.0 valdikliu ir <a %s>16 GB USB 3.0 ADATA S102 atmintuku</a>."
 
-#: index.php:326
+#: index.php:397
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
-msgstr "ISO atvaizdų, su kuriais žinomai dirba Rufus, nebaigtinis sąrašas"
+msgstr "ISO atvaizdžiai, su kuriais veikia Rufus (sąrašas nėra baigtinis)"
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:372
+#: index.php:452
 msgid "English translation by Pete Batard"
 msgstr ""
 "Lietuviškas vertimas: <a href=\"mailto:gintaras.venslovas@gmail.com?"
-"Subject=Rufus%20Homepage%20translation\">Gintaras Venslovas</a>"
+"Subject=Rufus%20puslapio%20vertimas\">Gintaras Venslovas</a>, <a href="
+"\"mailto:opensuse.lietuviu.kalba@gmail.com?Subject=Rufus%20puslapio"
+"%20vertimas\">opensuse lietuviu kalba</a>"
 
-#: index.php:373
+#: index.php:453
 msgid "USB icon by"
-msgstr "USB piktograma"
+msgstr "USB ženkliukas"
 
-#: index.php:374
+#: index.php:454
 msgid "Hosting by"
 msgstr "Svetainės talpinimas"

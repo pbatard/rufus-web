@@ -220,7 +220,7 @@ case "he":
 	<center><ins class="adsbygoogle"
 	     style="display:inline-block;width:728px;height:90px;text-decoration:none"
 	     data-ad-client="ca-pub-8924382055379825"
-	     data-ad-slot="7142613500"><span dir="ltr"><small>(<?= _("Placeholder for ads &mdash; I too wish this site could exist without them...");?>)</small></span></ins></center>
+	     data-ad-slot="7142613500"><span dir="ltr"><small>(<?= _("Placeholder for ads &mdash; Just like you, I wish this site could exist without them...");?>)</small></span></ins></center>
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>

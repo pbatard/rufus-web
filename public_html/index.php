@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "2.16";
+$latest_version = "2.17";
 $previous_version = "2.14";
-$latest_date = "2017.07.31";
+$latest_date = "2017.09.12";
 $previous_date = "2017.04.10";
+$lang1 = array('da', 'Danish', 'Denmark');
+$lang2 = array('', 'Malay', 'Malaysia');
 $bugfix = false;
-$exe_size = 939;
+$exe_size = 944;
 $src_size = 2.4;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
@@ -243,8 +245,8 @@ case "he":
 		<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
 		<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a %s>UNetbootin</a>, <a %s>Universal USB Installer</a> or <a %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"http://wudt.codeplex.com\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
 		<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
-		<? if (substr($locale,0,2) == "xx" || substr($locale,0,2) == "xx") echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/Malaysia.png\" srcset=\"/pics/Malaysia.png 1x, /pics/Malaysia-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b> <!--&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/Denmark.png\" srcset=\"pics/Denmark.png 1x, pics/Denmark-64px 2x\" alt=\"\"/>--></p>
-		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a href=\"https://github.com/pbatard/rufus/blob/master/res/localization/ChangeLog.txt#L18-L66\">update the localization</a> for <b><i>Malay</i></b><!-- and <b><i>Danish</i></b>-->.</p>
+		<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/" . $lang2[2] . ".png\" srcset=\"pics/" . $lang2[2] . ".png 1x, pics/" . $lang2[2] . "-64px 2x\" alt=\"\"/>" : "") . "</p>
+		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a href=\"https://github.com/pbatard/rufus/blob/master/res/localization/ChangeLog.txt#L18-L66\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
 		<p dir=\"ltr\">If you think you are up to the task, please have a look <a href=\"https://github.com/pbatard/rufus/wiki/Localization\">here</a>.</p>";?>
 		<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
@@ -327,13 +329,14 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Add an audiovisual cue on completion/error</span></li>
-				<li><span dir="ltr">Add a workaround for ISOs using nonstandard Rock Ridge extensions (looking at you Kali Linux!)</span></li>
-				<li><span dir="ltr">Notify user when an ISO is broken or truncated</span></li>
-				<li><span dir="ltr">Notify user if other processes are accessing the drive before format</span></li>
-				<li><span dir="ltr">List processes that are locking a drive on failure</span></li>
-				<li><span dir="ltr">Improve verbosity of the Windows To Go process</span></li>
-				<li><span dir="ltr">Other fixes and improvements</span></li>
+				<li><span dir="ltr">Add support for Debian 9 live ISOs in UEFI mode</span></li>
+				<li><span dir="ltr">Add support for Super Floppy Disk "partitioning" mode</span></li>
+				<li><span dir="ltr">Add support for more non-USB card readers</span></li>
+				<li><span dir="ltr">Strengthen download update checks, to prevent attack scenarios that leverage user unawareness</span></li>
+				<li><span dir="ltr">Fix an issue with Spanish translation prompts not displaying properly</span></li>
+				<li><span dir="ltr">Fix an issue with Windows To Go support on some non-official Windows ISOs</span></li>
+				<li><span dir="ltr">Fix an issue with log autoscrolling</span></li>
+				<li><span dir="ltr">Fix an issue when using <code>A:</code> or <code>B:</code> as drive letters</span></li>
 			</ul></li>
 			<? if($bugfix):?>
 			<br />

@@ -1,18 +1,19 @@
-version = 2.16.1170
+version = 2.17.1198
 platform_min = 5.1
-download_url = http://rufus.akeo.ie/downloads/rufus-2.16.exe
+download_url = http://rufus.akeo.ie/downloads/rufus-2.17.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 {\*\generator Riched20 6.3.9600}\viewkind4\uc1 
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 2.16 (2017.07.31)\fs10\b0\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 2.17 (2017.09.12)\fs10\b0\par
 \fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add an audiovisual cue on completion/error\par
-{\pntext\f2\'B7\tab}Add a workaround for ISOs using nonstandard Rock Ridge extensions (looking at you Kali Linux!)\par
-{\pntext\f2\'B7\tab}Notify user when an ISO is broken or truncated\par
-{\pntext\f2\'B7\tab}Notify user if other processes are accessing the drive before format\par
-{\pntext\f2\'B7\tab}List processes that are locking a drive on failure\par
-{\pntext\f2\'B7\tab}Improve verbosity of the Windows To Go process\par
-{\pntext\f2\'B7\tab}Other fixes and improvements\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add support for Debian 9 live ISOs in UEFI mode\par
+{\pntext\f2\'B7\tab}Add support for Super Floppy Disk "partitioning" mode\par
+{\pntext\f2\'B7\tab}Add support for more non-USB card readers\par
+{\pntext\f2\'B7\tab}Strengthen download update checks, to prevent attack scenarios that leverage user unawareness\par
+{\pntext\f2\'B7\tab}Fix an issue with Spanish translation prompts not displaying properly\par
+{\pntext\f2\'B7\tab}Fix an issue with Windows To Go support on some non-official Windows ISOs\par
+{\pntext\f2\'B7\tab}Fix an issue with log autoscrolling\par
+{\pntext\f2\'B7\tab}Fix an issue when using A: or B: as drive letters\par
 
 }

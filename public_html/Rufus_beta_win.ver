@@ -1,21 +1,21 @@
-version = 2.17.1193
+version = 2.18.1210
 platform_min = 5.1
-download_url = http://rufus.akeo.ie/downloads/rufus-2.17_BETA2.exe
+download_url = http://rufus.akeo.ie/downloads/rufus-2.18_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 {\*\generator Riched20 6.3.9600}\viewkind4\uc1
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 2.17 BETA #2 (2017.09.07)\fs10\b0\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 2.18 BETA (2017.11.01)\fs10\b0\par
 \fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add support for Debian 9 live ISOs in UEFI mode\par
-{\pntext\f2\'B7\tab}Add support for Super Floppy Disk "partitioning" mode\par
-{\pntext\f2\'B7\tab}Add support for more non-USB card readers\par
-{\pntext\f2\'B7\tab}Strengthen download update checks, to prevent attack scenarios that leverage user unawareness\par
-{\pntext\f2\'B7\tab}Fix an issue with Spanish translation prompts not displaying properly\par
-{\pntext\f2\'B7\tab}Fix an issue with Windows To Go support on some non-official Windows ISOs\par
-{\pntext\f2\'B7\tab}Fix an issue with log autoscrolling\par
-{\pntext\f2\'B7\tab}Fix an issue when using A: or B: as drive letters\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Ensure that the same drive is reselected on device refresh\par
+{\pntext\f2\'B7\tab}Add a cheat mode to cycle the USB port of currently selected device\par
+{\pntext\f2\'B7\tab}Make lookup for updatable .cfg file more generic (e.g. ESET SysRescue)\par
+{\pntext\f2\'B7\tab}Fix handling of multiextent ISOs (e.g. BlackArch Linux)\par
+{\pntext\f2\'B7\tab}Fix propagation of image decompression errors\par
 
 \pard\ltrpar\sl276\slmult1\par
-\b\fs24\tab REMEMBER: IF YOU ENCOUNTER ANY ISSUE WITH\par
-\tab THIS BETA, PLEASE \ul REPORT\ulnone  IT!!!\par
+\b\fs24 IMPORTANT: THIS WILL BE THE LAST RELEASE TO SUPPORT\par
+WINDOWS XP AND WINDOWS VISTA.\par
+
+\pard\ltrpar\sl276\slmult1\par
+\b\fs24\IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par
 }

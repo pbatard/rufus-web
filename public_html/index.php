@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "2.17";
+$latest_version = "2.18";
 $previous_version = "2.14";
-$latest_date = "2017.09.12";
+$latest_date = "2017.11.07";
 $previous_date = "2017.04.10";
-$lang1 = array('da', 'Danish', 'Denmark');
+$lang1 = array('', 'Danish', 'Denmark');
 $lang2 = array('', 'Malay', 'Malaysia');
 $bugfix = false;
-$exe_size = 944;
+$exe_size = 945;
 $src_size = 2.4;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
@@ -329,15 +329,14 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Add support for Debian 9 live ISOs in UEFI mode</span></li>
-				<li><span dir="ltr">Add support for Super Floppy Disk "partitioning" mode</span></li>
-				<li><span dir="ltr">Add support for more non-USB card readers</span></li>
-				<li><span dir="ltr">Strengthen download update checks, to prevent attack scenarios that leverage user unawareness</span></li>
-				<li><span dir="ltr">Fix an issue with Spanish translation prompts not displaying properly</span></li>
-				<li><span dir="ltr">Fix an issue with Windows To Go support on some non-official Windows ISOs</span></li>
-				<li><span dir="ltr">Fix an issue with log autoscrolling</span></li>
-				<li><span dir="ltr">Fix an issue when using <code>A:</code> or <code>B:</code> as drive letters</span></li>
+				<li><span dir="ltr">Ensure that the same drive is reselected on device refresh</span></li>
+				<li><span dir="ltr">Add a cheat mode to cycle the USB port of currently selected device</span></li>
+				<li><span dir="ltr">Make lookup for updatable .cfg file more generic (e.g. ESET SysRescue)</span></li>
+				<li><span dir="ltr">Fix handling of multiextent ISOs (e.g. BlackArch Linux)</span></li>
+				<li><span dir="ltr">Fix propagation of image decompression errors</span></li>
+				<li><span dir="ltr">Update grub4dos to latest</span></li>
 			</ul></li>
+			<p><font color="#ffa520"><b>RUFUS 2.18 IS THE LAST RELEASE TO SUPPORT <i>WINDOWS XP</i> AND <i>WINDOWS VISTA</i>.<br/>FUTURE RELEASES WILL <u>NO LONGER</u> BE COMPATIBLE WITH THESE PLATFORMS!</b></font></p>
 			<? if($bugfix):?>
 			<br />
 			<li><?= $prev_version;?><ul>

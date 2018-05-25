@@ -91,7 +91,8 @@ case "he":
   $app_name = "<span dir=\"ltr\">" . $latest_version . " Rufus</span>";
   $full_version = "<span dir=\"ltr\">" . ($bugfix?"[BUGFIX RELEASE] (":"(") . $latest_date . ") <b>" . $latest_version . " " . $tr_version . "</b></span>";
   $prev_version = "<span dir=\"ltr\">(" . $previous_date . ") <b>" . $previous_version . " " . $tr_version . "</b></span>";
-  $comma = "،";
+  if(substr($locale,0,2) != "he")
+    $comma = "،";
   break;
 }
 ?>
@@ -201,7 +202,7 @@ case "he":
 </select>
 <div class="hide_on_small_screens">
 <? if (substr($locale,0,2) == "en") echo "<a href=\"https://github.com/pbatard/rufus/wiki/Localization#wiki-Translating_the_Rufus_Homepage\">Want your language here?</a>";
-  else if (substr($locale,0,2) != "fr") echo "<a href=\"https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation\"><span dir=\"ltr\">" . _("Want to improve this translation?") . "</span></a>" ?>
+  else if (substr($locale,0,2) != "fr") echo "<a href=\"https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation\">" . _("Want to improve this translation?") . "</a>" ?>
 &nbsp;<br />
 &nbsp;<br />
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -336,7 +337,7 @@ case "he":
 				<li><span dir="ltr">Fix propagation of image decompression errors</span></li>
 				<li><span dir="ltr">Update grub4dos to latest</span></li>
 			</ul></li>
-			<p><font color="#ffa520"><b>RUFUS 2.18 IS THE LAST RELEASE TO SUPPORT <i>WINDOWS XP</i> AND <i>WINDOWS VISTA</i>.<br/>FUTURE RELEASES WILL <u>NO LONGER</u> BE COMPATIBLE WITH THESE PLATFORMS!</b></font></p>
+			<p><font color="#ffa520"><b><span dir="ltr">RUFUS 2.18 IS THE LAST RELEASE TO SUPPORT <i>WINDOWS XP</i> AND <i>WINDOWS VISTA</i>.<br/>FUTURE RELEASES WILL <u>NO LONGER</u> BE COMPATIBLE WITH THESE PLATFORMS!</span></b></font></p>
 			<? if($bugfix):?>
 			<br />
 			<li><?= $prev_version;?><ul>

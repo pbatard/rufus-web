@@ -7,36 +7,42 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2014-07-18 10:22+0100\n"
-"PO-Revision-Date: 2015-05-08 09:00+0200\n"
+"POT-Creation-Date: 2018-05-29 15:55+0100\n"
+"PO-Revision-Date: 2018-05-29 16:25+0100\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
+"Language-Team: \n"
 "Language: lv_LV\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 2.0.7\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"Language-Team: \n"
 
-#: index.php:56
+#: index.php:82
 msgid "Version"
 msgstr "Versija"
 
-#: index.php:76 index.php:176
+#: index.php:104 index.php:234
 msgid "Create bootable USB drives the easy way"
 msgstr "Viegls veids kā izveidot OS ielādes USB ierīci"
 
-#: index.php:155
+#: index.php:205
 msgid "Want to improve this translation?"
 msgstr ""
 
+#: index.php:226
+msgid ""
+"Placeholder for ads &mdash; Just like you, I wish this site could exist "
+"without them..."
+msgstr ""
+
 #. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
-#: index.php:178
+#: index.php:236
 msgid "rufus_en.png"
 msgstr "rufus_lv.png"
 
-#: index.php:179
+#: index.php:237
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -45,11 +51,11 @@ msgstr ""
 "operētājsistēmas ielādes ierīci uz tādiem nesējiem, kā USB pieslēguma "
 "zibatmiņas, atmiņas kartes u.c."
 
-#: index.php:180
+#: index.php:238
 msgid "It can be especially useful for cases where:"
 msgstr "To var pielietot piemēram šādos gadījumos:"
 
-#: index.php:182
+#: index.php:240
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -57,23 +63,23 @@ msgstr ""
 "jums nepieciešams izveidot USB instalācijas nesēju no ISO formāta (Windows, "
 "Linux, UEFI, u.c.)"
 
-#: index.php:183
+#: index.php:241
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "jums nepieciešams strādāt ar datoru uz kura nav instalēta OS"
 
-#: index.php:184
+#: index.php:242
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "jums jāpārprogrammē BIOS vai jebkādu citu mikroprogrammu no DOS"
 
-#: index.php:185
+#: index.php:243
 msgid "you want to run a low-level utility"
 msgstr "jums jāpiestartē zema līmeņa OS programma"
 
-#: index.php:188
+#: index.php:246
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Neskatoties uz mazo svaru, <b>Rufus</b> dod jums visu nepieciešamo!"
 
-#: index.php:189
+#: index.php:247
 #, php-format
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
@@ -88,7 +94,7 @@ msgstr ""
 "Tāpat pamanāma ātrdarbīguma atšķirība veidojot Linux ielādes ierīci no ISO "
 "formāta."
 
-#: index.php:190
+#: index.php:248
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
 "of this page."
@@ -96,41 +102,45 @@ msgstr ""
 "Daļējs ISO atbalstāmo formātu saraksts, ar kuriem strādā <b>Rufus</b>, ir "
 "uzrādīts lapas apakšā."
 
-#: index.php:194
+#: index.php:253
 msgid "Download"
 msgstr "Lejuplādēt"
 
-#: index.php:195
+#: index.php:254
 #, php-format
 msgid "Last updated %s:"
 msgstr "Pēdējais atjauninājums %s:"
 
 #. Abbreviation for KiloByte
-#: index.php:196
+#: index.php:255 index.php:256
 msgid "KB"
 msgstr "KB"
 
-#: index.php:197 index.php:281
+#: index.php:256
+msgid "Portable"
+msgstr ""
+
+#: index.php:257 index.php:355
 msgid "Other versions"
 msgstr "Citas versijas"
 
-#: index.php:199
+#: index.php:259
 msgid "Supported Languages:"
 msgstr "Atbalstītās valodas:"
 
-#: index.php:235
+#: index.php:305
 msgid "System Requirements:"
 msgstr "Prasības datoram:"
 
-#: index.php:236
+#: index.php:306
 msgid ""
-"Windows XP or later, 32 or 64 bit doesn't matter. Once downloaded, the "
+"Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
 msgstr ""
-"Windows XP vai jaunāka OS (nav nozīmes 32 vai 64 bitu). Uzreiz pēc "
+"Windows 7 vai jaunāka OS (nav nozīmes 32 vai 64 bitu). Uzreiz pēc "
 "lejupielādes <b>Rufus</b> ir gatavs lietošanai."
 
-#: index.php:237
+#: index.php:307
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -141,33 +151,33 @@ msgstr ""
 "un šo mājaslapu ir tulkojuši vairākās valodās. Ja jūs ievērojāt, ka varat "
 "<b>Rufus</b> izmantot savā dzimtajā valodā, jāizsaka pateicība tieši viņiem!"
 
-#: index.php:238
+#: index.php:308
 msgid "Usage"
 msgstr "Izmantošana"
 
-#: index.php:239
+#: index.php:309
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr ""
 "Lejuplādējiet failu un palaidiet to &ndash; instalācija nav nepieciešama."
 
-#: index.php:240
+#: index.php:310
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "Palaišanas fails ir elektroniski parakstīts, kurš satur:"
 
-#: index.php:241
+#: index.php:311
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 vai jaunāka versija)"
 
-#: index.php:242
+#: index.php:312
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 vai agrāka versija)"
 
-#: index.php:243
+#: index.php:313
 msgid "Notes on DOS support:"
 msgstr "Piezīmes DOS atbalstam:"
 
-#: index.php:244
+#: index.php:314
 #, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
@@ -180,11 +190,11 @@ msgstr ""
 "Šādā gadījumā MS-DOS vietā tiks izmantota <a %s>FreeDOS</a>, kura atbalsta "
 "plašāku tastatūru izvietojumu izvēli."
 
-#: index.php:245
+#: index.php:315
 msgid "Notes on ISO Support:"
 msgstr "Piezīmes ISO atbalstam:"
 
-#: index.php:246
+#: index.php:316
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
@@ -193,7 +203,7 @@ msgstr ""
 "Sākot no versijas 1.1.0, <b>Rufus</b> ļauj izveidot OS ielādes disku no <a "
 "%s>ISO formāta</a> failiem (faili ar paplašinājumu .iso)."
 
-#: index.php:247
+#: index.php:317
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
@@ -204,42 +214,18 @@ msgstr ""
 "toties jums būs jāizmanto kāda no brīvi pieejamām (<i>Freeware</i>) "
 "programmām - <a %s>CDBurnerXP</a> vai <a %s>ImgBurn</a>."
 
-#: index.php:248
-msgid "Notes on UEFI & GPT support:"
-msgstr "Piezīmes UEFI un GPT atbalstam:"
-
-#: index.php:249
-msgid ""
-"Since version 1.3.2, Rufus support UEFI as well as GPT for installation "
-"media, meaning that it will allow you to install Windows 7, Windows 8 or "
-"Linux in full EFI mode."
-msgstr ""
-"Sākot ar versiju 1.3.2, <b>Rufus</b> atbalsta UEFI, kā arī GPT instalācijas "
-"nesējus, tas nozīmē ka jūs varat instalēt Windows 7, Windows 8 vai Linux "
-"pilnīgā EFI režīmā."
-
-#: index.php:250
-msgid ""
-"However, Windows Vista or later is required for full UEFI/GPT support. "
-"Because of OS limitations, Windows XP restricts the creation of UEFI "
-"bootable drives to MBR mode."
-msgstr ""
-"Ņemot vērā UEFI/GPT īpatnības, šādas ielādes ierīces izveidei nepieciešams "
-"izmantot OS ne vecāku par Windows Vista, jo Windows XP MBR ierobežojumu dēļ "
-"nevar izveidot pilnvērtīgu OS ielādes ierīci."
-
-#: index.php:252
+#: index.php:319
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Bieži uzdotie jautājumi (BUJ)"
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:253
+#: index.php:320
 #, php-format
 msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
 msgstr ""
 "Saistītie BUJ ar <b>Rufus</b> atrodas <b><a %s>ŠEIT</a></b> (angliski)."
 
-#: index.php:254
+#: index.php:321
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -249,16 +235,16 @@ msgstr ""
 "izmantojiet <i>github</i> <a %s>problēmu novēršana</a>. Tāpat jūs varat "
 "sazināties <a %s>sūtot e-pastu</a>."
 
-#: index.php:255
+#: index.php:323
 msgid "License"
 msgstr "Licenze"
 
-#: index.php:256
+#: index.php:324
 #, php-format
 msgid "<a %s>GNU General Public License (GPL) version 3</a> or later."
 msgstr "<a %s>GNU General Public License (GPL) versija 3</a> vai jaunāka."
 
-#: index.php:256
+#: index.php:324
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you "
 "respect the GPLv3 license."
@@ -266,7 +252,7 @@ msgstr ""
 "Jūs varat brīvi izplatīt, mainīt, vai pat pārdot <b>Rufus</b> "
 "programmnodrošinājumu ievērojot GPLv3 nosacījumus un noteikumus."
 
-#: index.php:257
+#: index.php:325
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a %s>public "
@@ -276,30 +262,30 @@ msgstr ""
 "izmantojot <a %s>MinGW32</a> vidi."
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:259
+#: index.php:327
 msgid "Changelog"
 msgstr "Izmaiņas (angliski)"
 
-#: index.php:284
+#: index.php:358
 msgid "Source Code"
 msgstr "Pirmkods"
 
 #. Abbreviation for MegaByte
-#: index.php:285
+#: index.php:359
 msgid "MB"
 msgstr "MB"
 
-#: index.php:286
+#: index.php:360
 #, php-format
 msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
 msgstr "Jūs varat veidot <a %s>git</a> repozitorijas klonu izmantojot:"
 
-#: index.php:288
+#: index.php:362
 #, php-format
 msgid "For more information, see the <a %s>github project</a>."
 msgstr "Papildinformācijai skatieties <a %s>github project</a>."
 
-#: index.php:289
+#: index.php:363
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -307,11 +293,11 @@ msgstr ""
 "Ja esat izstrādātājs, jūs varat palīdzēt projektam atsūtot savus <b>Rufus</"
 "b> labojumus, papildinājumus, u.c."
 
-#: index.php:291
+#: index.php:365
 msgid "Donations"
 msgstr "Ziedojumi"
 
-#: index.php:292
+#: index.php:366
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -319,7 +305,7 @@ msgstr ""
 "Bieži saņemu jautājumu, kāpēc <b>Rufus</b> mājaslapā <b>nav</b> ziedojumu "
 "linka."
 
-#: index.php:293
+#: index.php:367
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -330,7 +316,7 @@ msgstr ""
 "bet tikai rada vainas apziņu tiem lietotājiem, kuri jebkādu iemeslu dēļ nav "
 "ziedojuši konkrētam projektam."
 
-#: index.php:296
+#: index.php:370
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a %s>Free "
@@ -341,7 +327,7 @@ msgstr ""
 "veikt zidojumus <a %s>Free Software Foundation</a>, jo tieši pateicoties FSF "
 "ir iespējams programmu <b>Rufus</b> attīstīt."
 
-#: index.php:297
+#: index.php:371
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much "
@@ -351,7 +337,7 @@ msgstr ""
 "atbalstu un entuziasmu, kuri saistīti ar programmu <b>Rufus</b>. Man tas ir "
 "ļoti svarīgi!"
 
-#: index.php:298
+#: index.php:372
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -359,11 +345,11 @@ msgstr ""
 "Turpiniet rīkoties ar šo programmnodrošinājumu neuztraucoties par "
 "ziedojumiem."
 
-#: index.php:300
+#: index.php:374
 msgid "Speed comparison between Rufus and other applications"
 msgstr "Ātrdarbīguma salīdzinājums <b>Rufus</b> ar citām programmām"
 
-#: index.php:301
+#: index.php:375
 #, php-format
 msgid ""
 "The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
@@ -374,7 +360,7 @@ msgstr ""
 "x64 ar CPU Core 2 duo, 4 GB RAM, izmantojot USB 3.0 un <a %s>USB zibatmiņu "
 "3.0 ADATA S102 16 GB</a>."
 
-#: index.php:326
+#: index.php:400
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr ""
 "Nepilnīgs ISO atbalstāmo formātu saraksts ar kādiem strādā programma "
@@ -383,16 +369,37 @@ msgstr ""
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:372
+#: index.php:455
 msgid "English translation by Pete Batard"
 msgstr ""
 "Latviski tulkojis <a href=\"mailto:alibaba@inbox.lv?Subject=Rufus%20Homepage"
 "%20translation\">Aldis Tutins / alibaba</a>"
 
-#: index.php:373
+#: index.php:456
 msgid "USB icon by"
 msgstr "USB nozīmīte"
 
-#: index.php:374
+#: index.php:457
 msgid "Hosting by"
 msgstr "Mājaslapas uzturētājs"
+
+#~ msgid "Notes on UEFI & GPT support:"
+#~ msgstr "Piezīmes UEFI un GPT atbalstam:"
+
+#~ msgid ""
+#~ "Since version 1.3.2, Rufus support UEFI as well as GPT for installation "
+#~ "media, meaning that it will allow you to install Windows 7, Windows 8 or "
+#~ "Linux in full EFI mode."
+#~ msgstr ""
+#~ "Sākot ar versiju 1.3.2, <b>Rufus</b> atbalsta UEFI, kā arī GPT "
+#~ "instalācijas nesējus, tas nozīmē ka jūs varat instalēt Windows 7, Windows "
+#~ "8 vai Linux pilnīgā EFI režīmā."
+
+#~ msgid ""
+#~ "However, Windows Vista or later is required for full UEFI/GPT support. "
+#~ "Because of OS limitations, Windows XP restricts the creation of UEFI "
+#~ "bootable drives to MBR mode."
+#~ msgstr ""
+#~ "Ņemot vērā UEFI/GPT īpatnības, šādas ielādes ierīces izveidei "
+#~ "nepieciešams izmantot OS ne vecāku par Windows Vista, jo Windows XP MBR "
+#~ "ierobežojumu dēļ nevar izveidot pilnvērtīgu OS ielādes ierīci."

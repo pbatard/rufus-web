@@ -1,20 +1,23 @@
-version = 2.18.1213
-platform_min = 5.1
-download_url = http://rufus.akeo.ie/downloads/rufus-2.18.exe
+version = 3.0.1304
+platform_min = 6.1
+download_url = https://rufus.ie/downloads/rufus-3.0.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 {\*\generator Riched20 6.3.9600}\viewkind4\uc1 
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab\tab\tab Rufus 2.18 (2017.11.07)\fs10\b0\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab\tab\tab Rufus 3.0 (2018.05.29)\fs10\b0\par
 \fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Ensure that the same drive is reselected on device refresh\par
-{\pntext\f2\'B7\tab}Add a cheat mode to cycle the USB port of currently selected device\par
-{\pntext\f2\'B7\tab}Make lookup for updatable .cfg file more generic (e.g. ESET SysRescue)\par
-{\pntext\f2\'B7\tab}Fix handling of multiextent ISOs (e.g. BlackArch Linux)\par
-{\pntext\f2\'B7\tab}Fix propagation of image decompression errors\par
-{\pntext\f2\'B7\tab}Update grub4dos to latest\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 UI redesign to follow the flow of user operations (with thanks to \b Fahad Al-Riyami\b0  for the concept)\par
+{\pntext\f2\'B7\tab}Drop Windows XP and Windows Vista platform support\par
+{\pntext\f2\'B7\tab}Switch all downloads to SSL and use https://rufus.ie as the new base URL\par
+{\pntext\f2\'B7\tab}Add ARM64 support for UEFI:NTFS\par
+{\pntext\f2\'B7\tab}Fix delays when querying floppy drives during device enumeration\par
+{\pntext\f2\'B7\tab}Improve support of efi.img files on Linux ISOs\par
+{\pntext\f2\'B7\tab}Improve support for non-ISO9660 compliant openSUSE Leap ISOs\par
+{\pntext\f2\'B7\tab}Improve translation support and remove manual positioning\par
+{\pntext\f2\'B7\tab}Internal fixes and improvements\par
 
 \pard\ltrpar\sl276\slmult1\par
-\b\fs24   LAST EVER RELEASE WITH SUPPORT FOR XP AND VISTA!\par
 
 }

@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "2.18";
+$latest_version = "3.0";
 $previous_version = "2.14";
-$latest_date = "2017.11.07";
+$latest_date = "2018.05.29";
 $previous_date = "2017.04.10";
 $lang1 = array('', 'Danish', 'Denmark');
 $lang2 = array('', 'Malay', 'Malaysia');
 $bugfix = false;
-$exe_size = 945;
-$src_size = 2.4;
+$exe_size = 993;
+$src_size = 2.8;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
   'sq_AL' => array('sq', 'Albanian (Shqip)'),
@@ -303,7 +303,7 @@ case "he":
 			<td>فارسی</td><td>.</td>
 		</tr></table></p>
 		<h4><?= _("System Requirements:");?></h4>
-		<p><?= _("Windows XP or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.");?></p>
+		<p><?= _("Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.");?></p>
 		<p><?= _("I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!");?></p>
 		<h2><?= _("Usage");?></h2>
 		<p><?= _("Download the executable and run it &ndash; no installation is necessary.");?></p>
@@ -315,9 +315,6 @@ case "he":
 		<h4><?= _("Notes on ISO Support:");?></h4>
 		<p><? printf(_("All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a %s>ISO image</a> (.iso)."), "href=\"http://en.wikipedia.org/wiki/ISO_image\"");?></p>
 		<p><? printf(_("Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."), "href=\"http://cdburnerxp.se/\"", "href=\"http://www.imgburn.com/\"");?></p>
-		<h4><?= _("Notes on UEFI & GPT support:");?></h4>
-		<p><?= _("Since version 1.3.2, Rufus support UEFI as well as GPT for installation media, meaning that it will allow you to install Windows 7, Windows 8 or Linux in full EFI mode.");?><br/>
-		<?= _("However, Windows Vista or later is required for full UEFI/GPT support. Because of OS limitations, Windows XP restricts the creation of UEFI bootable drives to MBR mode.");?></p>
 		<a name="FAQ"></a>
 		<h2><?= _("Frequently Asked Questions (FAQ)");?></h2>
 		<p><? /* You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English */ printf(_("A Rufus FAQ is available <b><a %s>HERE</a></b>."), "href=\"https://github.com/pbatard/rufus/wiki/FAQ\"");?><br/></p>
@@ -330,14 +327,17 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Ensure that the same drive is reselected on device refresh</span></li>
-				<li><span dir="ltr">Add a cheat mode to cycle the USB port of currently selected device</span></li>
-				<li><span dir="ltr">Make lookup for updatable .cfg file more generic (e.g. ESET SysRescue)</span></li>
-				<li><span dir="ltr">Fix handling of multiextent ISOs (e.g. BlackArch Linux)</span></li>
-				<li><span dir="ltr">Fix propagation of image decompression errors</span></li>
-				<li><span dir="ltr">Update grub4dos to latest</span></li>
+				<li><span dir="ltr">UI redesign to follow the flow of user operations (with thanks to <b>Fahad Al-Riyami</b> for the concept)</span></li>
+				<li><span dir="ltr">Drop Windows XP and Windows Vista platform support</span></li>
+				<li><span dir="ltr">Switch all downloads to SSL and use <a href="https://rufus.ie">https://rufus.ie</a> as the new base URL</span></li>
+				<li><span dir="ltr">Add ARM64 support for UEFI:NTFS</span></li>
+				<li><span dir="ltr">Fix delays when querying floppy drives during device enumeration</span></li>
+				<li><span dir="ltr">Improve support of efi.img files on Linux ISOs</span></li>
+				<li><span dir="ltr">Improve support for non-ISO9660 compliant openSUSE Leap ISOs</span></li>
+				<li><span dir="ltr">Improve translation support and remove manual positioning</span></li>
+				<li><span dir="ltr">Internal fixes and improvements</span></li>
 			</ul></li>
-			<p><font color="#ffa520"><b><span dir="ltr">RUFUS 2.18 IS THE LAST RELEASE TO SUPPORT <i>WINDOWS XP</i> AND <i>WINDOWS VISTA</i>.<br/>FUTURE RELEASES WILL <u>NO LONGER</u> BE COMPATIBLE WITH THESE PLATFORMS!</span></b></font></p>
+			<p><font color="#ffa520"><b><span dir="ltr">NOTE: THIS VERSION IS <u>NOT</u> COMPATIBLE WITH <i>WINDOWS XP</i> AND <i>WINDOWS VISTA</i>.</span></b></font></p>
 			<? if($bugfix):?>
 			<br />
 			<li><?= $prev_version;?><ul>

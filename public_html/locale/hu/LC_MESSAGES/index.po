@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.2\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2015-09-26 21:26+0200\n"
-"PO-Revision-Date: 2015-09-26 21:27+0200\n"
+"POT-Creation-Date: 2018-05-29 15:55+0100\n"
+"PO-Revision-Date: 2018-05-29 16:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: Bokor Tibor <bokor.tibor@invitel.hu>\n"
 "Language: hu_HU\n"
@@ -11,27 +11,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 2.0.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:65
+#: index.php:82
 msgid "Version"
 msgstr "Verzió"
 
-#: index.php:86 index.php:186
+#: index.php:104 index.php:234
 msgid "Create bootable USB drives the easy way"
-msgstr "Készíts bootolható USB eszközöket könnyedén!"
+msgstr "Készíts bootolható USB eszközöket könnyedén"
 
-#: index.php:165
+#: index.php:205
 msgid "Want to improve this translation?"
 msgstr "Jobbá szeretnéd tenni ezt a fordítást?"
 
+#: index.php:226
+msgid ""
+"Placeholder for ads &mdash; Just like you, I wish this site could exist "
+"without them..."
+msgstr ""
+
 #. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
-#: index.php:188
+#: index.php:236
 msgid "rufus_en.png"
 msgstr "rufus_hu.png"
 
-#: index.php:189
+#: index.php:237
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -40,11 +46,11 @@ msgstr ""
 "az olyan USB-s eszközöket, mint pl. USB kulcsok/pendrive-ok, memóriakártyák, "
 "stb."
 
-#: index.php:190
+#: index.php:238
 msgid "It can be especially useful for cases where:"
 msgstr "Nagyon hasznos lehet ha:"
 
-#: index.php:192
+#: index.php:240
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -52,25 +58,25 @@ msgstr ""
 "USB-s telepítő eszközt készíthetsz, bootolható ISO fájl(ok)ból (Windows, "
 "Linux, UEFI, stb.)"
 
-#: index.php:193
+#: index.php:241
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr ""
 "Olyan rendszeren dolgozhatsz, amit merevlemezre való telepítés nélkül is "
 "használhatsz."
 
-#: index.php:194
+#: index.php:242
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "egy BIOS-t vagy más kezelőfelületet kell flashelned DOS-ról"
 
-#: index.php:195
+#: index.php:243
 msgid "you want to run a low-level utility"
 msgstr "alacsony erőforrás igényű eszközt szeretnél futtatni"
 
-#: index.php:198
+#: index.php:246
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "A kicsi mérete mellett, a Rufus mindent megad, amire szükséged van!"
 
-#: index.php:199
+#: index.php:247
 #, php-format
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
@@ -85,52 +91,52 @@ msgstr ""
 "a>. Még bootolható Linux eszközök készítésében is gyorsabb a konkurens "
 "programoknál."
 
-#: index.php:200
+#: index.php:248
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
 "of this page."
 msgstr ""
 "Egy kis lista a Rufus által támogatott ISO-król az oldal alján található."
 
-#: index.php:204
+#: index.php:253
 msgid "Download"
 msgstr "Letöltés"
 
-#: index.php:205
+#: index.php:254
 #, php-format
 msgid "Last updated %s:"
 msgstr "Utolsó frissítés %s:"
 
 #. Abbreviation for KiloByte
-#: index.php:206 index.php:207
+#: index.php:255 index.php:256
 msgid "KB"
 msgstr "KB"
 
-#: index.php:207
+#: index.php:256
 msgid "Portable"
 msgstr "Hordozható"
 
-#: index.php:208 index.php:292
+#: index.php:257 index.php:355
 msgid "Other versions"
 msgstr "Régebbi verziók"
 
-#: index.php:210
+#: index.php:259
 msgid "Supported Languages:"
 msgstr "Támogatott nyelvek:"
 
-#: index.php:250
+#: index.php:305
 msgid "System Requirements:"
 msgstr "Gépigény:"
 
-#: index.php:251
+#: index.php:306
 msgid ""
-"Windows XP or later, 32 or 64 bit doesn't matter. Once downloaded, the "
+"Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
 msgstr ""
-"Az, hogy Windows XP vagy későbbi rendszer, vagy az, hogy 32- vagy 64-bites, "
+"Az, hogy Windows 7 vagy későbbi rendszer, vagy az, hogy 32- vagy 64-bites, "
 "nem számít!  Amint letöltötted a programot, már készen is áll a használatra!"
 
-#: index.php:252
+#: index.php:307
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -140,32 +146,32 @@ msgstr ""
 "Szeretnék köszönetet mondani azoknak a fordítóknak, akik  segítettek abban "
 "nekem, hogy minél több nyelven elérhető legyen a Rufus program."
 
-#: index.php:253
+#: index.php:308
 msgid "Usage"
 msgstr "Használat"
 
-#: index.php:254
+#: index.php:309
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "Töltsd le a fájlt, és futtasd &ndash; nincs szükség telepítésre!"
 
-#: index.php:255
+#: index.php:310
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "A fájl digitálisan alá van írva:"
 
-#: index.php:256
+#: index.php:311
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 vagy későbbi)"
 
-#: index.php:257
+#: index.php:312
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 vagy korábbi)"
 
-#: index.php:258
+#: index.php:313
 msgid "Notes on DOS support:"
 msgstr "Megjegyzések a DOS támogatással kapcsolatban:"
 
-#: index.php:259
+#: index.php:314
 #, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
@@ -179,11 +185,11 @@ msgstr ""
 "alapértelmezett választás, mivel ez jobban ajánlott mint az MS-DOS, és még "
 "több billentyűzet kiosztást is támogat. "
 
-#: index.php:260
+#: index.php:315
 msgid "Notes on ISO Support:"
 msgstr "Megjegyzések az ISO támogatással kapcsolatban:"
 
-#: index.php:261
+#: index.php:316
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
@@ -192,7 +198,7 @@ msgstr ""
 "Az v1.1.0-s verzió óta a Rufus-al lehetséges bootolható USB eszközt "
 "készíteni egy <a %s>ISO fájlból</a> (.iso)."
 
-#: index.php:262
+#: index.php:317
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
@@ -203,41 +209,17 @@ msgstr ""
 "egyszerű, és ingyenes programok mint a  <a %s>CDBurnerXP</a> vagy az <a "
 "%s>ImgBurn</a>."
 
-#: index.php:263
-msgid "Notes on UEFI & GPT support:"
-msgstr "Megjegyzések az UEFI és GPT támogatással kapcsolatban:"
-
-#: index.php:264
-msgid ""
-"Since version 1.3.2, Rufus support UEFI as well as GPT for installation "
-"media, meaning that it will allow you to install Windows 7, Windows 8 or "
-"Linux in full EFI mode."
-msgstr ""
-"Az 1.3.2-s verzió óta a Rufus az UEFI-t és a GPT-is támogat, ami annyit "
-"jelent, hogy Windows 7-et, Windows 8-at, vagy  Linuxot is tudsz telepíteni "
-"teljes EFI módban."
-
-#: index.php:265
-msgid ""
-"However, Windows Vista or later is required for full UEFI/GPT support. "
-"Because of OS limitations, Windows XP restricts the creation of UEFI "
-"bootable drives to MBR mode."
-msgstr ""
-"Azonban Windows Vista vagy későbbi szükséges a teljes UEFI/GPT támogatáshoz. "
-"Az operációsrendszer korlátozásai miatt, a Windows XP lekorlátozza az UEFI-s "
-"készítését MBR módra."
-
-#: index.php:267
+#: index.php:319
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Gyakran Ismételt Kérdések (GYIK)"
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:268
+#: index.php:320
 #, php-format
 msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
 msgstr "A GYIK <b><a %s>ITT</a></b> elérhető (angolul!)."
 
-#: index.php:269
+#: index.php:321
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -247,16 +229,16 @@ msgstr ""
 "ötleted van) használd a github <a %s>issue tracker-jét</a>. Vagy <a "
 "%s>küldhetsz egy e-mailt is!</a>. Kérlek angol nyelven írj."
 
-#: index.php:270
+#: index.php:323
 msgid "License"
 msgstr "Licensz"
 
-#: index.php:271
+#: index.php:324
 #, php-format
 msgid "<a %s>GNU General Public License (GPL) version 3</a> or later."
 msgstr "<a %s>GNU General Public License (GPL) verzió 3</a> vagy későbbi."
 
-#: index.php:271
+#: index.php:324
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you "
 "respect the GPLv3 license."
@@ -264,7 +246,7 @@ msgstr ""
 "Nyugodtan terjeszheted, módosíthatod, vagy akár el is adhatod ezt a "
 "szoftvert, de tiszteletben tartva a GPLv3 licenszében foglaltakat!"
 
-#: index.php:272
+#: index.php:325
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a %s>public "
@@ -274,30 +256,30 @@ msgstr ""
 "és a <a %s>MinGW32</a> segítségével."
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:274
+#: index.php:327
 msgid "Changelog"
 msgstr "Változások (angolul)"
 
-#: index.php:295
+#: index.php:358
 msgid "Source Code"
 msgstr "Forráskód"
 
 #. Abbreviation for MegaByte
-#: index.php:296
+#: index.php:359
 msgid "MB"
 msgstr "MB"
 
-#: index.php:297
+#: index.php:360
 #, php-format
 msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
 msgstr "Le is másolhatod a <a %s>git</a> \"gyűjteményt\" ezzel:"
 
-#: index.php:299
+#: index.php:362
 #, php-format
 msgid "For more information, see the <a %s>github project</a>."
 msgstr "Több információért látogasd meg a <a %s>github project</a>-et."
 
-#: index.php:300
+#: index.php:363
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -305,11 +287,11 @@ msgstr ""
 "Ha egy fejlesztő vagy, akkor arra szeretnélek ösztönözni, hogy segíts a "
 "Rufus javításában!"
 
-#: index.php:302
+#: index.php:365
 msgid "Donations"
 msgstr "Támogatás"
 
-#: index.php:303
+#: index.php:366
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -317,7 +299,7 @@ msgstr ""
 "Már régóta kérdezgetnek róla és most válaszolok:  <b>nincs</b> támogatás "
 "ezen az oldalon."
 
-#: index.php:304
+#: index.php:367
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -327,7 +309,7 @@ msgstr ""
 "túlságosan a program gyártást. Illetve nem szeretnék bűntudatot kelteni "
 "azoikban, akik nem adományoztak."
 
-#: index.php:307
+#: index.php:370
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a %s>Free "
@@ -338,7 +320,7 @@ msgstr ""
 "Software Foundation</a>-nél, akik nélkül az olyan programok, mint a Rufus, "
 "nem jöhettek volna létre."
 
-#: index.php:308
+#: index.php:371
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much "
@@ -347,7 +329,7 @@ msgstr ""
 "Szeretnék itt <i><u>köszönetet</u></i>  mondani a támogatásokért és a "
 "lelkesedésekért ezen kis program kapcsán: ezeket nagyon értékelem!"
 
-#: index.php:309
+#: index.php:372
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -355,11 +337,11 @@ msgstr ""
 "Használd továbbra is a Rufust bűntudat érzés nélkül &ndash; sosem lesz "
 "szükség a támogatásra!"
 
-#: index.php:311
+#: index.php:374
 msgid "Speed comparison between Rufus and other applications"
 msgstr "Sebesség összehasonlítás a Rufus és más programok között"
 
-#: index.php:312
+#: index.php:375
 #, php-format
 msgid ""
 "The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
@@ -370,7 +352,7 @@ msgstr ""
 "processzorral és 4GB RAM-al, egy USB 3.0-s csatlakozóval, és egy <a %s>16 GB "
 "USB 3.0 ADATA S102</a>-vel lettek elvégezve."
 
-#: index.php:337
+#: index.php:400
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr ""
 "Egy kis lista azokról az ISO fájlokról, melyekkel a Rufus biztosan működik:"
@@ -378,16 +360,37 @@ msgstr ""
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:390
+#: index.php:455
 msgid "English translation by Pete Batard"
 msgstr ""
 "A magyar fordítást készítette <a href=\"mailto:familyguyfan79@gmail.com?"
 "Subject=Rufus%20Homepage%20translation\">[HUN]DeadMan</a>"
 
-#: index.php:391
+#: index.php:456
 msgid "USB icon by"
 msgstr "USB ikon:"
 
-#: index.php:392
+#: index.php:457
 msgid "Hosting by"
 msgstr "Tárhely:"
+
+#~ msgid "Notes on UEFI & GPT support:"
+#~ msgstr "Megjegyzések az UEFI és GPT támogatással kapcsolatban:"
+
+#~ msgid ""
+#~ "Since version 1.3.2, Rufus support UEFI as well as GPT for installation "
+#~ "media, meaning that it will allow you to install Windows 7, Windows 8 or "
+#~ "Linux in full EFI mode."
+#~ msgstr ""
+#~ "Az 1.3.2-s verzió óta a Rufus az UEFI-t és a GPT-is támogat, ami annyit "
+#~ "jelent, hogy Windows 7-et, Windows 8-at, vagy  Linuxot is tudsz "
+#~ "telepíteni teljes EFI módban."
+
+#~ msgid ""
+#~ "However, Windows Vista or later is required for full UEFI/GPT support. "
+#~ "Because of OS limitations, Windows XP restricts the creation of UEFI "
+#~ "bootable drives to MBR mode."
+#~ msgstr ""
+#~ "Azonban Windows Vista vagy későbbi szükséges a teljes UEFI/GPT "
+#~ "támogatáshoz. Az operációsrendszer korlátozásai miatt, a Windows XP "
+#~ "lekorlátozza az UEFI-s készítését MBR módra."

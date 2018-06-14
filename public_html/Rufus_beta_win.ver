@@ -1,19 +1,17 @@
-version = 3.0.1292
+version = 3.1.1317
 platform_min = 6.1
-download_url = https://rufus.ie/downloads/rufus-3.0_BETA2.exe
+download_url = https://rufus.ie/downloads/rufus-3.1_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 {\*\generator Riched20 6.3.9600}\viewkind4\uc1
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.0 BETA #2 (2018.05.21)\fs10\b0\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.1 BETA (2018.06.14)\fs10\b0\par
 \fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 UI redesign to follow the flow of user operations (with thanks to \b Fahad Al-Riyami\b0  for the concept)\par
-{\pntext\f2\'B7\tab}Drop XP and Vista platform support\par
-{\pntext\f2\'B7\tab}Switch all downloads to SSL and use https://rufus.ie as the new base URL\par
-{\pntext\f2\'B7\tab}Improve support of efi.img files on Linux ISOs\par
-{\pntext\f2\'B7\tab}Add ARM64 support for UEFI:NTFS\par
-{\pntext\f2\'B7\tab}Fix delays when querying floppy drives during device enumeration\par
-{\pntext\f2\'B7\tab}Improve translation support and remove manual positioning\par
-{\pntext\f2\'B7\tab}Internal fixes and improvements\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix extraction of ISO content for GRUB based ISOs (Manjaro, Kaspersky, etc.)\par
+{\pntext\f2\'B7\tab}Fix text being truncated on some dialogs (mostly Russian and Thai)\par
+{\pntext\f2\'B7\tab}Add detection & warning about the 'Controlled Folder Access' Windows 10 feature\par
+{\pntext\f2\'B7\tab}Improve retry attempts for transient errors\par
+{\pntext\f2\'B7\tab}Update GRUB 2.0 and Grub4DOS to latest\par
+{\pntext\f2\'B7\tab}Update libcdio to latest\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24\IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

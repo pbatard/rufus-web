@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.0";
+$latest_version = "3.1";
 $previous_version = "2.14";
-$latest_date = "2018.05.29";
+$latest_date = "2018.06.19";
 $previous_date = "2017.04.10";
 $lang1 = array('', 'Danish', 'Denmark');
 $lang2 = array('', 'Malay', 'Malaysia');
 $bugfix = false;
-$exe_size = 993;
+$exe_size = 995;
 $src_size = 2.8;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
@@ -327,17 +327,15 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">UI redesign to follow the flow of user operations (with thanks to <b>Fahad Al-Riyami</b> for the concept)</span></li>
-				<li><span dir="ltr">Drop Windows XP and Windows Vista platform support</span></li>
-				<li><span dir="ltr">Switch all downloads to SSL and use <a href="https://rufus.ie">https://rufus.ie</a> as the new base URL</span></li>
-				<li><span dir="ltr">Add ARM64 support for UEFI:NTFS</span></li>
-				<li><span dir="ltr">Fix delays when querying floppy drives during device enumeration</span></li>
-				<li><span dir="ltr">Improve support of efi.img files on Linux ISOs</span></li>
-				<li><span dir="ltr">Improve support for non-ISO9660 compliant openSUSE Leap ISOs</span></li>
-				<li><span dir="ltr">Improve translation support and remove manual positioning</span></li>
-				<li><span dir="ltr">Internal fixes and improvements</span></li>
+				<li><span dir="ltr">Fix extraction of ISO content for GRUB based ISOs (Manjaro, Kaspersky, etc.)</span></li>
+				<li><span dir="ltr">Fix text being truncated on some dialogs (mostly Russian and Thai)</span></li>
+				<li><span dir="ltr">Add detection & warning about the 'Controlled Folder Access' Windows 10 feature</span></li>
+				<li><span dir="ltr">Improve retry attempts for transient errors</span></li>
+				<li><span dir="ltr">Increase size of the ESP to 300MB, for Windows To Go drives partitioned as GPT</span></li>
+				<li><span dir="ltr">Update GRUB 2.0 and Grub4DOS to latest</span></li>
+				<li><span dir="ltr">Update libcdio to latest</span></li>
 			</ul></li>
-			<p><font color="#ffa520"><b><span dir="ltr">NOTE: THIS VERSION IS <u>NOT</u> COMPATIBLE WITH <i>WINDOWS XP</i> AND <i>WINDOWS VISTA</i>.</span></b></font></p>
+			<p><font color="#ffa520"><b><span dir="ltr">NOTE: THIS VERSION IS <u>NOT</u> COMPATIBLE WITH <i>WINDOWS XP</i> OR <i>WINDOWS VISTA</i>.</span></b></font></p>
 			<? if($bugfix):?>
 			<br />
 			<li><?= $prev_version;?><ul>
@@ -351,7 +349,6 @@ case "he":
 				<li><span dir="ltr">Update libcdio and GRUB 2.0 to latest</span></li>
 			</ul></li>
 			<? endif;?>
-			&nbsp;
 			<li><b><a href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt"><?= _("Other versions");?></a></b></li>
 		</ul>
 		

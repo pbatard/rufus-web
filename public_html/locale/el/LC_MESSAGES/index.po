@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.7\n"
 
 #: index.php:82
 msgid "Version"
@@ -35,7 +35,11 @@ msgid ""
 "without them..."
 msgstr ""
 
-#. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
+#. This is used display a screenshot of Rufus in your language (if available).
+#. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
+#. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
+#. displayed then. Or you can leave the string untranslated to have the
+#. English version displayed. Please make sure to keep the .png extension.
 #: index.php:236
 msgid "rufus_en.png"
 msgstr "rufus_el.png"
@@ -94,13 +98,13 @@ msgstr ""
 "%s>UNetbootin</a>, <a %s>Universal USB Installer</a> ή το <a %s>Windows 7 "
 "USB download tool</a>, στην δημιουργία ενός USB εγκατάστασης των Windows 7 "
 "από ένα είδωλο ISO. Επίσης το Rufus είναι οριακά πιο γρήγορο και στις "
-"περιπτώσεις δημιουργίας USB με δυνατότατα εκκίνησης για Linux από ένα είδωλο "
-"ISO."
+"περιπτώσεις δημιουργίας USB με δυνατότατα εκκίνησης για Linux από ένα είδωλο"
+" ISO."
 
 #: index.php:248
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
-"of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
+" of this page."
 msgstr ""
 "Ο κατάλογος των μορφών ISO που υποστηρίζονται απο το Rufus μπορεί να βρεθεί "
 "στο κάτω μέρος της σελίδας."
@@ -123,7 +127,7 @@ msgstr "KB"
 msgid "Portable"
 msgstr ""
 
-#: index.php:257 index.php:355
+#: index.php:257 index.php:352
 msgid "Other versions"
 msgstr "Άλλες εκδόσεις"
 
@@ -208,35 +212,36 @@ msgstr "Σημειώσεις σχετικά με την υποστήριξη ε�
 #: index.php:316
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
-"an <a %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
+" an <a %s>ISO image</a> (.iso)."
 msgstr ""
-"Όλες οι εκδόσεις του Rufus από v1.1.0 και μετά επιτρέπουν τη δημιουργία ενός "
-"USB με δυνατότητα εκκίνησης από ένα <a %s>είδωλο ISO</a> (.iso)."
+"Όλες οι εκδόσεις του Rufus από v1.1.0 και μετά επιτρέπουν τη δημιουργία ενός"
+" USB με δυνατότητα εκκίνησης από ένα <a %s>είδωλο ISO</a> (.iso)."
 
 #: index.php:317
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the "
-"freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
+"easy to do however, through the use of a CD burning application, such as the"
+" freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
 msgstr ""
 "Η δημιουργία ενός ειδώλου ISO από ένα φυσικό δίσκο ή από ένα σύνολο αρχείων "
-"είναι πολύ εύκολο να πραγματοποιηθεί. Παρόλα αυτά, μόνο μέσω της χρήσης μιας "
-"εφαρμογής εγγραφής CD, όπως τα ελεύθερα διαθέσιμα προγράμματα <a "
+"είναι πολύ εύκολο να πραγματοποιηθεί. Παρόλα αυτά, μόνο μέσω της χρήσης μιας"
+" εφαρμογής εγγραφής CD, όπως τα ελεύθερα διαθέσιμα προγράμματα <a "
 "%s>CDBurnerXP</a> ή <a %s>ImgBurn</a>."
 
 #: index.php:319
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Συχνές Ερωτήσεις (FAQ)"
 
-#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#. You are encouraged to add the translation for " (in English)." after
+#. "HERE</a></b>" as the FAQ is only available in English
 #: index.php:320
 #, php-format
 msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
 msgstr ""
-"Οι συχνές ερωτήσεις περί του Rufus (FAQ) είναι διαθέσιμες <b><a %s>εδώ</a></"
-"b>."
+"Οι συχνές ερωτήσεις περί του Rufus (FAQ) είναι διαθέσιμες <b><a "
+"%s>εδώ</a></b>."
 
 #: index.php:321
 #, php-format
@@ -246,8 +251,8 @@ msgid ""
 msgstr ""
 "Για να παρέχετε καποια εποικοδομητική κριτική, να αναφέρετε κάποιο σφάλμα ή "
 "να ζητήσετε κάποια βελτίωση, παρακαλούμε να χρησιμοποιήσετε τον <a  "
-"%s>tracker του github</a>. Ή μπορείτε να στείλετε κάποιο <a %s>e-mail εδώ</"
-"a>."
+"%s>tracker του github</a>. Ή μπορείτε να στείλετε κάποιο <a %s>e-mail "
+"εδώ</a>."
 
 #: index.php:323
 msgid "License"
@@ -260,11 +265,11 @@ msgstr "<a %s>Γενική Άδεια Δημόσιας Χρήσης GNU έκδο
 
 #: index.php:324
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you "
-"respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you"
+" respect the GPLv3 license."
 msgstr ""
-"Έχετε το δικαίωμα να διανείμετε, να τροποποιήσετε ή ακόμη και να πωλήσετε το "
-"παρών λογισμικό, στο βαθμό που θα σέβεται την άδεια GPLv3."
+"Έχετε το δικαίωμα να διανείμετε, να τροποποιήσετε ή ακόμη και να πωλήσετε το"
+" παρών λογισμικό, στο βαθμό που θα σέβεται την άδεια GPLv3."
 
 #: index.php:325
 #, php-format
@@ -275,33 +280,34 @@ msgstr ""
 "Το Rufus παράγεται με 100%% διαφανή τρόπο, από το <a %s>δημόσιο πηγαίο "
 "κώδικα</a>, εντός ενός <a %s>MinGW32</a> περιβάλλοντος."
 
-#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#. You are encouraged to append the translation for "(in English)" after
+#. "Changelog" as it is only available in English
 #: index.php:327
 msgid "Changelog"
 msgstr "Αρχείο καταγραφής αλλαγών"
 
-#: index.php:358
+#: index.php:355
 msgid "Source Code"
 msgstr "Πηγαίος κώδικας"
 
 #. Abbreviation for MegaByte
-#: index.php:359
+#: index.php:356
 msgid "MB"
 msgstr "MB"
 
-#: index.php:360
+#: index.php:357
 #, php-format
 msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
 msgstr ""
 "Εναλλακτικά, μπορείτε να κλωνοποιήσετε το <a %s>git</a> αποθετήριο "
 "χρησιμοποιώντας:"
 
-#: index.php:362
+#: index.php:359
 #, php-format
 msgid "For more information, see the <a %s>github project</a>."
 msgstr "Για περισσότερες πληροφορίες, δείτε τη <a %s>σελίδα στο github</a>."
 
-#: index.php:363
+#: index.php:360
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -309,11 +315,11 @@ msgstr ""
 "Εάν είστε προγραμματιστής, είστε ευπρόσδεκτος/η να δοκιμάσετε το Rufus και "
 "να υποβάλετε patches."
 
-#: index.php:365
+#: index.php:362
 msgid "Donations"
 msgstr "Δωρεές"
 
-#: index.php:366
+#: index.php:363
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -321,7 +327,7 @@ msgstr ""
 "Επειδή λαμβάνω αυτή την ερώτηση σε τακτική βάση, <b>δεν</b> υπάρχει κουμπί "
 "δωρεάς σε αυτή τη σελίδα."
 
-#: index.php:367
+#: index.php:364
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -331,44 +337,44 @@ msgstr ""
 "πραγματικά την ανάπτυξη λογισμικού, αλλά χειρότερα μπορεί να προκαλέσει "
 "ενοχές στους χρήστες που επιλέγουν να μη δωρίσουν."
 
-#: index.php:370
+#: index.php:367
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a %s>Free "
 "Software Foundation</a>, as they are the main reason software like Rufus is "
 "possible."
 msgstr ""
-"Αν πραγματικά επιμένετε, μπορείτε πάντα να κάνετε μια δωρεά στο <a %s>Ίδρυμα "
-"Ελεύθερου Λογισμικού</a>, δεδομένου ότι είναι ο κύριος λόγος που λογισμικό "
+"Αν πραγματικά επιμένετε, μπορείτε πάντα να κάνετε μια δωρεά στο <a %s>Ίδρυμα"
+" Ελεύθερου Λογισμικού</a>, δεδομένου ότι είναι ο κύριος λόγος που λογισμικό "
 "όπως το Rufus είναι διαθέσιμο."
 
-#: index.php:371
+#: index.php:368
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much "
-"appreciated!"
+"your continuing support and enthusiasm about this little program: it is much"
+" appreciated!"
 msgstr ""
 "Εν πάση περιπτώσει, θα επωφεληθώ αυτής της ευκαιρίας για να σας "
 "<i><u>ευχαριστήσω</u></i> για τη συνεχή υποστήριξη και τον ενθουσιασμό σας "
 "σχετικά με αυτό το πρόγραμμα: το εκτιμούμε πάρα πολύ!"
 
-#: index.php:372
+#: index.php:369
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
-"Αλλά σας παρακαλώ να συνεχίσετε να αισθάνεστε ελεύθεροι να χρησιμοποιείτε το "
-"Rufus χωρίς καμία ενοχή για τη μη οικονομική συνεισφορά σε αυτό &ndash; δεν "
-"ειναι απαιτούμενη απο εσάς!"
+"Αλλά σας παρακαλώ να συνεχίσετε να αισθάνεστε ελεύθεροι να χρησιμοποιείτε το"
+" Rufus χωρίς καμία ενοχή για τη μη οικονομική συνεισφορά σε αυτό &ndash; δεν"
+" ειναι απαιτούμενη απο εσάς!"
 
-#: index.php:374
+#: index.php:371
 msgid "Speed comparison between Rufus and other applications"
 msgstr "Σύγκριση ταχύτητας μεταξύ του Rufus και άλλων εφαρμογών"
 
-#: index.php:375
+#: index.php:372
 #, php-format
 msgid ""
-"The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
+"The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
 "platform, with an USB 3.0 controller and a <a %s>16 GB USB 3.0 ADATA S102 "
 "flash drive</a>."
 msgstr ""
@@ -376,26 +382,29 @@ msgstr ""
 "Core 2 duo / 4 GB RAM, με USB 3.0 και μία <a %s>16 GB USB 3.0 ADATA S102 "
 "μονάδα flash</a>."
 
-#: index.php:400
+#: index.php:397
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Κατάλογος των ειδώλων ISO που είναι γνωστό ότι λειτουγούν με το Rufus"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:455
+#. If you want people to be able to e-mail you directly about this
+#. translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
+#. Batard</a>
+#: index.php:452
 msgid "English translation by Pete Batard"
 msgstr ""
-"Μετάφραση στα ελληνικά: <a href=\"mailto:kotsos.marga@gmail.com?Subject=Rufus"
-"%20Homepage%20translation\">Μαργαρίτης Κωνσταντίνος</a> και <a href=\"mailto:"
-"marga.nikos@gmail.com?Subject=Rufus%20Homepage%20translation\">Μαργαρίτης "
-"Νικόλαος</a>"
+"Μετάφραση στα ελληνικά: <a "
+"href=\"mailto:kotsos.marga@gmail.com?Subject=Rufus%20Homepage%20translation\">Μαργαρίτης"
+" Κωνσταντίνος</a> και <a "
+"href=\"mailto:marga.nikos@gmail.com?Subject=Rufus%20Homepage%20translation\">Μαργαρίτης"
+" Νικόλαος</a>"
 
-#: index.php:456
+#: index.php:453
 msgid "USB icon by"
 msgstr "Εικονίδιο USB από"
 
-#: index.php:457
+#: index.php:454
 msgid "Hosting by"
 msgstr "Η σελίδα \"φιλοξενείται\" στο"
 
@@ -407,16 +416,16 @@ msgstr "Η σελίδα \"φιλοξενείται\" στο"
 #~ "media, meaning that it will allow you to install Windows 7, Windows 8 or "
 #~ "Linux in full EFI mode."
 #~ msgstr ""
-#~ "Από την έκδοση 1.3.2, το Rufus υποστηρίζει τους τύπους UEFI και GPT ώς "
-#~ "μέσα εγκατάστασης, πράγμα που σημαίνει ότι θα σας επιτραπεί η εγκατάσταση "
-#~ "των Windows 7, των Windows 8 ή των Linux σε πλήρη λειτουργία EFI. "
+#~ "Από την έκδοση 1.3.2, το Rufus υποστηρίζει τους τύπους UEFI και GPT ώς μέσα "
+#~ "εγκατάστασης, πράγμα που σημαίνει ότι θα σας επιτραπεί η εγκατάσταση των "
+#~ "Windows 7, των Windows 8 ή των Linux σε πλήρη λειτουργία EFI. "
 
 #~ msgid ""
 #~ "However, Windows Vista or later is required for full UEFI/GPT support. "
 #~ "Because of OS limitations, Windows XP restricts the creation of UEFI "
 #~ "bootable drives to MBR mode."
 #~ msgstr ""
-#~ "Ωστόσο, απαιτείται η χρήση των Windows Vista ή νεότερων εκδόσεων των "
-#~ "Windows για την πλήρη υποστήριξη UEFI / GPT. Λόγω των περιορισμών του "
-#~ "λειτουργικού συστήματος, τα Windows XP περιορίζουν τη δημιουργία δίσκων "
-#~ "με δυνατότητα εκκίνησης UEFI σε λειτουργία MBR."
+#~ "Ωστόσο, απαιτείται η χρήση των Windows Vista ή νεότερων εκδόσεων των Windows"
+#~ " για την πλήρη υποστήριξη UEFI / GPT. Λόγω των περιορισμών του λειτουργικού "
+#~ "συστήματος, τα Windows XP περιορίζουν τη δημιουργία δίσκων με δυνατότητα "
+#~ "εκκίνησης UEFI σε λειτουργία MBR."

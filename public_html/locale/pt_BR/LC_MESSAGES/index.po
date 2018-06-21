@@ -1,3 +1,4 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
@@ -30,7 +31,11 @@ msgid ""
 "without them..."
 msgstr ""
 
-#. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
+#. This is used display a screenshot of Rufus in your language (if available).
+#. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
+#. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
+#. displayed then. Or you can leave the string untranslated to have the
+#. English version displayed. Please make sure to keep the .png extension.
 #: index.php:236
 msgid "rufus_en.png"
 msgstr "rufus_pt_BR.png"
@@ -83,16 +88,17 @@ msgid ""
 "USB from ISOs."
 msgstr ""
 "Ah, e Rufus é <b>rápido</b>. Ele chega, por exemplo, a ser 2 vezes mais "
-"rápido que <a%s>Unetbootin</a>, <a%s>Universal USB Installer</a> e <a"
-"%s>Windows 7 USB download tool</a> na criação de um pendrive de instalação "
-"do Windows 7 a partir de uma ISO. E também é mais rápido na criação de um "
+"rápido que <a%s>Unetbootin</a>, <a%s>Universal USB Installer</a> e "
+"<a%s>Windows 7 USB download tool</a> na criação de um pendrive de instalação"
+" do Windows 7 a partir de uma ISO. E também é mais rápido na criação de um "
 "pendrive bootavel com linux a partir de uma ISO."
 
 #: index.php:248
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
-"of this page."
-msgstr "Mais abaixo se encontra uma breve lista das ISOs suportadas por Rufus."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
+" of this page."
+msgstr ""
+"Mais abaixo se encontra uma breve lista das ISOs suportadas por Rufus."
 
 #: index.php:253
 msgid "Download"
@@ -112,7 +118,7 @@ msgstr "KB"
 msgid "Portable"
 msgstr ""
 
-#: index.php:257 index.php:355
+#: index.php:257 index.php:352
 msgid "Other versions"
 msgstr "Outras versões"
 
@@ -139,8 +145,8 @@ msgid ""
 "various languages. If you find that you can use Rufus in your own language, "
 "you should really thank them!"
 msgstr ""
-"Aproveito esta oportunidade para expressar minha gratidão aos tradutores que "
-"tornaram possível, tanto para Rufus quanto para esta página, serem "
+"Aproveito esta oportunidade para expressar minha gratidão aos tradutores que"
+" tornaram possível, tanto para Rufus quanto para esta página, serem "
 "traduzidos para vários idiomas. Se você pode usar Rufus em sua própria "
 "língua deve agradecer a eles."
 
@@ -190,21 +196,21 @@ msgstr "Notas sobre o suporte de ISOs:"
 #: index.php:316
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
-"an <a %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
+" an <a %s>ISO image</a> (.iso)."
 msgstr ""
-"Todas as versões de Rufus desde V1.1.0 permitem a criação de um USB bootavel "
-"a partir de uma <a %s>imagem ISO</a> (.iso)."
+"Todas as versões de Rufus desde V1.1.0 permitem a criação de um USB bootavel"
+" a partir de uma <a %s>imagem ISO</a> (.iso)."
 
 #: index.php:317
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the "
-"freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
+"easy to do however, through the use of a CD burning application, such as the"
+" freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
 msgstr ""
-"Criar uma imagem ISO através de um disco físico ou de um grupo de arquivos é "
-"algo fácil de fazer, mas através de um aplicativo de gravação de CDs, como "
+"Criar uma imagem ISO através de um disco físico ou de um grupo de arquivos é"
+" algo fácil de fazer, mas através de um aplicativo de gravação de CDs, como "
 "<a %s>CDBurnerXP</a> ou <a %s>ImgBurn</a> que são disponibilizados "
 "gratuitamente."
 
@@ -212,7 +218,8 @@ msgstr ""
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Perguntas frequentes:"
 
-#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#. You are encouraged to add the translation for " (in English)." after
+#. "HERE</a></b>" as the FAQ is only available in English
 #: index.php:320
 #, php-format
 msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
@@ -226,8 +233,8 @@ msgid ""
 "github <a %s>issue tracker</a>. Or you can <a %s>send an e-mail</a>."
 msgstr ""
 "Para enviar um feedback, reportar um erro ou solicitar melhoras, favor usar "
-"o github <a %s>issue tracker</a> . Ou você pode <a %s>enviar-me um e-mail</"
-"a>."
+"o github <a %s>issue tracker</a> . Ou você pode <a %s>enviar-me um "
+"e-mail</a>."
 
 #: index.php:323
 msgid "License"
@@ -240,8 +247,8 @@ msgstr "<a %s>GNU General Public License (GPL) versão 3</a> ou superior."
 
 #: index.php:324
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you "
-"respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you"
+" respect the GPLv3 license."
 msgstr ""
 "Você está livre para distribuir, modificar ou até vender o software, desde "
 "que respeite a licença GPLv3."
@@ -255,31 +262,32 @@ msgstr ""
 "Rufus é produzido de modo 100%% transparente, através de seu <a %s>código-"
 "fonte</a>, usando um ambiente <a %s>MinGW32</a>."
 
-#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#. You are encouraged to append the translation for "(in English)" after
+#. "Changelog" as it is only available in English
 #: index.php:327
 msgid "Changelog"
 msgstr "Alterações"
 
-#: index.php:358
+#: index.php:355
 msgid "Source Code"
 msgstr "Código-fonte"
 
 #. Abbreviation for MegaByte
-#: index.php:359
+#: index.php:356
 msgid "MB"
 msgstr "MB"
 
-#: index.php:360
+#: index.php:357
 #, php-format
 msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
 msgstr "Alternativamente você pode clonar o <a %s>git</a> repositório usando:"
 
-#: index.php:362
+#: index.php:359
 #, php-format
 msgid "For more information, see the <a %s>github project</a>."
 msgstr "Para mais informações veja: <a %s>github project</a>."
 
-#: index.php:363
+#: index.php:360
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -287,11 +295,11 @@ msgstr ""
 "Se você é desenvolvedor sinta-se encorajado a contribuir com Rufus e enviar "
 "patches."
 
-#: index.php:365
+#: index.php:362
 msgid "Donations"
 msgstr "Doações"
 
-#: index.php:366
+#: index.php:363
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -299,7 +307,7 @@ msgstr ""
 "Tenho sido perguntado constantemente a respeito disso. <b>Não</b> há botão "
 "de doações nesta página."
 
-#: index.php:367
+#: index.php:364
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -309,27 +317,28 @@ msgstr ""
 "no desenvolvimento do software, e pior, pode se tornar um indutor de culpa "
 "para usuários que preferem não doar."
 
-#: index.php:370
+#: index.php:367
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a %s>Free "
 "Software Foundation</a>, as they are the main reason software like Rufus is "
 "possible."
 msgstr ""
-"Se você faz questão, pode então doar para a <a %s>Free Software Fundation</"
-"a>. Eles são a razão principal pela qual softwares como Rufus são possíveis ."
+"Se você faz questão, pode então doar para a <a %s>Free Software "
+"Fundation</a>. Eles são a razão principal pela qual softwares como Rufus são"
+" possíveis ."
 
-#: index.php:371
+#: index.php:368
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much "
-"appreciated!"
+"your continuing support and enthusiasm about this little program: it is much"
+" appreciated!"
 msgstr ""
 "De qualquer forma, aproveito esta oportunidade para dizer <i><u>muito "
 "obrigado</u></i>  pelo seu contínuo suporte e pelo entusiasmo para com este "
 "programa, eles são muito apreciados. "
 
-#: index.php:372
+#: index.php:369
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -338,37 +347,39 @@ msgstr ""
 "alguma a respeito de não contribuir financeiramente &ndash; isso nunca será "
 "necessário!"
 
-#: index.php:374
+#: index.php:371
 msgid "Speed comparison between Rufus and other applications"
 msgstr "Comparação de velocidade entre Rufus e outras aplicações"
 
-#: index.php:375
+#: index.php:372
 #, php-format
 msgid ""
-"The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
+"The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
 "platform, with an USB 3.0 controller and a <a %s>16 GB USB 3.0 ADATA S102 "
 "flash drive</a>."
 msgstr ""
 "Os testes a seguir foram realizados em um computador Core 2 duo/ 4GB RAM "
-"Windows 7 x64. Com um controlador USB 3.0 e um pen drive <a %s>16 GB USB 3.0 "
-"ADATA  S102 flash drive</a>."
+"Windows 7 x64. Com um controlador USB 3.0 e um pen drive <a %s>16 GB USB 3.0"
+" ADATA  S102 flash drive</a>."
 
-#: index.php:400
+#: index.php:397
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Breve lista de ISOs que sabe-se que funcionam com Rufus."
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:455
+#. If you want people to be able to e-mail you directly about this
+#. translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
+#. Batard</a>
+#: index.php:452
 msgid "English translation by Pete Batard"
 msgstr "Traduzido para português por Guilherme Hastenreiter"
 
-#: index.php:456
+#: index.php:453
 msgid "USB icon by"
 msgstr "Ícone USB criado por"
 
-#: index.php:457
+#: index.php:454
 msgid "Hosting by"
 msgstr "Hospedado por"
 

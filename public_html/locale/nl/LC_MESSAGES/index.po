@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.7\n"
 
 #: index.php:82
 msgid "Version"
@@ -36,7 +36,11 @@ msgid ""
 "without them..."
 msgstr ""
 
-#. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
+#. This is used display a screenshot of Rufus in your language (if available).
+#. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
+#. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
+#. displayed then. Or you can leave the string untranslated to have the
+#. English version displayed. Please make sure to keep the .png extension.
 #: index.php:236
 msgid "rufus_en.png"
 msgstr "rufus_nl.png"
@@ -96,8 +100,8 @@ msgstr ""
 
 #: index.php:248
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
-"of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
+" of this page."
 msgstr ""
 "Er staat een uitputtende lijst van door Rufus ondersteunde ISO's onderaan "
 "deze pagina."
@@ -120,7 +124,7 @@ msgstr "KB"
 msgid "Portable"
 msgstr "Portable"
 
-#: index.php:257 index.php:355
+#: index.php:257 index.php:352
 msgid "Other versions"
 msgstr "Andere versies"
 
@@ -149,8 +153,8 @@ msgid ""
 msgstr ""
 "Ik wil bij deze mijn dank betuigen aan de vertalers die Rufus mede mogelijk "
 "hebben gemaakt in andere talen, evenals de vertalers die deze website in "
-"diverse talen hebben vertaald. Als je het handig vindt Rufus te gebruiken in "
-"je eigen taal, wees ze dan dankbaar."
+"diverse talen hebben vertaald. Als je het handig vindt Rufus te gebruiken in"
+" je eigen taal, wees ze dan dankbaar."
 
 #: index.php:308
 msgid "Usage"
@@ -202,8 +206,8 @@ msgstr "Opmerkingen over ISO-ondersteuning:"
 #: index.php:316
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
-"an <a %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
+" an <a %s>ISO image</a> (.iso)."
 msgstr ""
 "Alle versies van Rufus (vanaf v1.1.0) kunnen een opstartbaar USB-medium "
 "maken van een <a %s>ISO-image</a> (.iso)."
@@ -212,18 +216,19 @@ msgstr ""
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the "
-"freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
+"easy to do however, through the use of a CD burning application, such as the"
+" freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
 msgstr ""
 "Een ISO-bestand maken van een disk of van een set bestanden is echter heel "
-"gemakkelijk m.b.v. gratis CD-brandprogramma's als <a %s>CDBurnerXP</a> of <a "
-"%s>ImgBurn</a>."
+"gemakkelijk m.b.v. gratis CD-brandprogramma's als <a %s>CDBurnerXP</a> of <a"
+" %s>ImgBurn</a>."
 
 #: index.php:319
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Veel gestelde vragen (FAQ)"
 
-#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#. You are encouraged to add the translation for " (in English)." after
+#. "HERE</a></b>" as the FAQ is only available in English
 #: index.php:320
 #, php-format
 msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
@@ -235,8 +240,8 @@ msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
 "github <a %s>issue tracker</a>. Or you can <a %s>send an e-mail</a>."
 msgstr ""
-"Wil je feedback, een fout of verbeteringen doorgeven, gebruik dan de github-"
-"<a %s>issue tracker</a> of <a %s>stuur me een e-mail</a>."
+"Wil je feedback, een fout of verbeteringen doorgeven, gebruik dan de "
+"github-<a %s>issue tracker</a> of <a %s>stuur me een e-mail</a>."
 
 #: index.php:323
 msgid "License"
@@ -249,8 +254,8 @@ msgstr "<a %s>GNU General Public License (GPL) versie 3</a> of later."
 
 #: index.php:324
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you "
-"respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you"
+" respect the GPLv3 license."
 msgstr ""
 "Je bent vrij de software te distribueren, aan te passen of zelfs te "
 "verkopen, voorzover je de GPLv3-licentie respecteert."
@@ -264,33 +269,34 @@ msgstr ""
 "Rufus is op een 100%% transparante wijze gemaakt uit z'n <a %s>public "
 "source</a>, gebruikmakend van een <a %s>MinGW32</a>-omgeving."
 
-#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#. You are encouraged to append the translation for "(in English)" after
+#. "Changelog" as it is only available in English
 #: index.php:327
 msgid "Changelog"
 msgstr "Wijzigingslog"
 
-#: index.php:358
+#: index.php:355
 msgid "Source Code"
 msgstr "Broncode"
 
 #. Abbreviation for MegaByte
-#: index.php:359
+#: index.php:356
 msgid "MB"
 msgstr "MB"
 
-#: index.php:360
+#: index.php:357
 #, php-format
 msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
 msgstr ""
 "Als alternatief kun je de <a %s>git</a>-repository op de volgende manier "
 "klonen:"
 
-#: index.php:362
+#: index.php:359
 #, php-format
 msgid "For more information, see the <a %s>github project</a>."
 msgstr "Voor meer informatie, zie het <a %s>github project</a>."
 
-#: index.php:363
+#: index.php:360
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -298,19 +304,19 @@ msgstr ""
 "Als je een developer bent, wil ik je aanmoedigen aan Rufus te sleutelen en "
 "patches voor te leggen."
 
-#: index.php:365
+#: index.php:362
 msgid "Donations"
 msgstr "Donaties"
 
-#: index.php:366
+#: index.php:363
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr ""
-"Omdat ik hierover regelmatig vragen krijg: er is <b>geen </b> donatieknop op "
-"deze pagina."
+"Omdat ik hierover regelmatig vragen krijg: er is <b>geen </b> donatieknop op"
+" deze pagina."
 
-#: index.php:367
+#: index.php:364
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -320,7 +326,7 @@ msgstr ""
 "softwareontwikkeling eigenlijk niet helpt. Sterker nog, het kan "
 "schuldgevoelens opwekken bij  gebruikers die ervoor kiezen niet te doneren."
 
-#: index.php:370
+#: index.php:367
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a %s>Free "
@@ -331,17 +337,17 @@ msgstr ""
 "Software Foundation</a>, omdat zij de belangrijkste reden zijn dat software "
 "zoals Rufus mogelijk is."
 
-#: index.php:371
+#: index.php:368
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much "
-"appreciated!"
+"your continuing support and enthusiasm about this little program: it is much"
+" appreciated!"
 msgstr ""
 "In ieder geval wil ik van de gelegenheid gebruik maken om jullie te "
 "<i><u>bedanken</u></i> voor jullie continue steun en enthousiasme voor dit "
 "kleine programma. Het wordt zeer gewaardeerd."
 
-#: index.php:372
+#: index.php:369
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -350,14 +356,14 @@ msgstr ""
 "over het leveren van een financiële bijdrage &ndash; dat is beslist niet "
 "nodig."
 
-#: index.php:374
+#: index.php:371
 msgid "Speed comparison between Rufus and other applications"
 msgstr "Snelheidsvergelijking tussen Rufus en andere applicaties"
 
-#: index.php:375
+#: index.php:372
 #, php-format
 msgid ""
-"The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
+"The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
 "platform, with an USB 3.0 controller and a <a %s>16 GB USB 3.0 ADATA S102 "
 "flash drive</a>."
 msgstr ""
@@ -365,25 +371,29 @@ msgstr ""
 "4 GB RAM) met een USB3.0-controller en een  <a %s>16 GB USB 3.0 ADATA S102 "
 "flash drive</a>."
 
-#: index.php:400
+#: index.php:397
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Uitputtende lijst met ISO's waarvan bekend is dat ze werken met Rufus"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:455
+#. If you want people to be able to e-mail you directly about this
+#. translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
+#. Batard</a>
+#: index.php:452
 msgid "English translation by Pete Batard"
 msgstr ""
-"Nederlandse vertaling door <a href=\"mailto:rcpac@ziggo.nl?Subject=Rufus"
-"%20Homepage%20translation\">Roberto Pino</a>, <a href=\"mailto:a."
-"voogt@hccnet.nl?Subject=Rufus%20Homepage%20translation\">At Voogt</a>"
+"Nederlandse vertaling door <a "
+"href=\"mailto:rcpac@ziggo.nl?Subject=Rufus%20Homepage%20translation\">Roberto"
+" Pino</a>, <a "
+"href=\"mailto:a.voogt@hccnet.nl?Subject=Rufus%20Homepage%20translation\">At "
+"Voogt</a>"
 
-#: index.php:456
+#: index.php:453
 msgid "USB icon by"
 msgstr "USB-icoon gemaakt door"
 
-#: index.php:457
+#: index.php:454
 msgid "Hosting by"
 msgstr "Hosting door"
 
@@ -396,8 +406,8 @@ msgstr "Hosting door"
 #~ "Linux in full EFI mode."
 #~ msgstr ""
 #~ "Vanaf versie 1.3.2. ondersteunt Rufus UEFI evenals GPT voor "
-#~ "installatiemedia. Dit betekent dat het je in staat stelt Windows7, "
-#~ "Windows8 of Linux in volledige UEFI-modus te installeren."
+#~ "installatiemedia. Dit betekent dat het je in staat stelt Windows7, Windows8 "
+#~ "of Linux in volledige UEFI-modus te installeren."
 
 #~ msgid ""
 #~ "However, Windows Vista or later is required for full UEFI/GPT support. "
@@ -405,5 +415,5 @@ msgstr "Hosting door"
 #~ "bootable drives to MBR mode."
 #~ msgstr ""
 #~ "Echter, Windows-Vista of later is vereist voor volledige UEFI/GPT-"
-#~ "ondersteuning. Door beperkingen in het besturingssysteem is  het creëren "
-#~ "van UEFI- bootable drives in Windows-XP beperkt tot de MBR-modus."
+#~ "ondersteuning. Door beperkingen in het besturingssysteem is  het creëren van"
+#~ " UEFI- bootable drives in Windows-XP beperkt tot de MBR-modus."

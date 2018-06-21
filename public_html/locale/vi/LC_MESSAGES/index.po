@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: index.php:82
@@ -37,7 +37,11 @@ msgid ""
 "without them..."
 msgstr ""
 
-#. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
+#. This is used display a screenshot of Rufus in your language (if available).
+#. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
+#. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
+#. displayed then. Or you can leave the string untranslated to have the
+#. English version displayed. Please make sure to keep the .png extension.
 #: index.php:236
 msgid "rufus_en.png"
 msgstr "rufus_vi.png"
@@ -94,8 +98,8 @@ msgstr ""
 
 #: index.php:248
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
-"of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
+" of this page."
 msgstr ""
 "Một danh sách chưa đầy đủ của các tệp ISO được hỗ trợ cũng được cung cấp ở "
 "cuối trang này."
@@ -118,7 +122,7 @@ msgstr "KB"
 msgid "Portable"
 msgstr "Phiên bản di động"
 
-#: index.php:257 index.php:355
+#: index.php:257 index.php:352
 msgid "Other versions"
 msgstr "Phiên bản khác"
 
@@ -147,8 +151,8 @@ msgid ""
 msgstr ""
 "Tôi sẽ tận dụng cơ hội này để bày tỏ lòng biết ơn đến các dịch giả - những "
 "người đã tham gia phiên dịch Rufus - cũng như trang web này để hỗ trợ nhiều "
-"ngôn ngữ khác nhau. Nếu bạn thấy rằng mình có thể sử dụng Rufus với ngôn ngữ "
-"của bạn, bạn thật sự phải cảm ơn họ!"
+"ngôn ngữ khác nhau. Nếu bạn thấy rằng mình có thể sử dụng Rufus với ngôn ngữ"
+" của bạn, bạn thật sự phải cảm ơn họ!"
 
 #: index.php:308
 msgid "Usage"
@@ -186,8 +190,8 @@ msgstr ""
 "Nếu bạn tạo đĩa có khả năng khởi động DOS và dùng bàn phím không phải bàn "
 "phím bố cục Hoa Kỳ, Rufus sẽ thử chọn bố cục bàn phím tùy theo khu vực nơi "
 "hệ thống của bạn được đặt. Trong trường hợp đó, lựa chọn mặc định là <a "
-"%s>FreeDOS</a> được khuyến cáo thay vì MS-DOS, vì nó hỗ trợ nhiều bố cục bàn "
-"phím hơn."
+"%s>FreeDOS</a> được khuyến cáo thay vì MS-DOS, vì nó hỗ trợ nhiều bố cục bàn"
+" phím hơn."
 
 #: index.php:315
 msgid "Notes on ISO Support:"
@@ -196,8 +200,8 @@ msgstr "Ghi chú về hỗ trợ ISO:"
 #: index.php:316
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
-"an <a %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
+" an <a %s>ISO image</a> (.iso)."
 msgstr ""
 "Tất cả phiên bản của Rufus từ v1.1.0 cho phéo tạo USB khởi động từ một <a "
 "%s>ảnh ISO</a> (.iso)."
@@ -206,18 +210,19 @@ msgstr ""
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the "
-"freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
+"easy to do however, through the use of a CD burning application, such as the"
+" freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
 msgstr ""
-"Tạo một ảnh ISO từ đĩa vật lý hoặc một tập hợp các tập tin rất dễ dàng thông "
-"qua ứng dụng ghi CD, một số ứng dụng miễn phí sẵn có như <a %s>CDBurnerXP</"
-"a> hoặc <a %s>ImgBurn</a>."
+"Tạo một ảnh ISO từ đĩa vật lý hoặc một tập hợp các tập tin rất dễ dàng thông"
+" qua ứng dụng ghi CD, một số ứng dụng miễn phí sẵn có như <a "
+"%s>CDBurnerXP</a> hoặc <a %s>ImgBurn</a>."
 
 #: index.php:319
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Câu hỏi thường gặp (FAQ)"
 
-#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#. You are encouraged to add the translation for " (in English)." after
+#. "HERE</a></b>" as the FAQ is only available in English
 #: index.php:320
 #, php-format
 msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
@@ -245,8 +250,8 @@ msgstr ""
 
 #: index.php:324
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you "
-"respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you"
+" respect the GPLv3 license."
 msgstr ""
 "Bạn có quyền phân phối, thay đổi hoặc kể cả bán phần mềm, chừng nào bạn còn "
 "tôn trọng giấy phép GPLv3."
@@ -260,31 +265,32 @@ msgstr ""
 "Rufus được tạo ra với 100%% thuần khiết, từ <a %s>mã nguồn mở</a>, bằng môi "
 "trường <a %s>MinGW32</a>."
 
-#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#. You are encouraged to append the translation for "(in English)" after
+#. "Changelog" as it is only available in English
 #: index.php:327
 msgid "Changelog"
 msgstr "Nhật ký thay đổi"
 
-#: index.php:358
+#: index.php:355
 msgid "Source Code"
 msgstr "Mã nguồn"
 
 #. Abbreviation for MegaByte
-#: index.php:359
+#: index.php:356
 msgid "MB"
 msgstr "MB"
 
-#: index.php:360
+#: index.php:357
 #, php-format
 msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
 msgstr "Theo cách khác, bạn có thể sao chép kho <a %s>git</a> bằng lệnh:"
 
-#: index.php:362
+#: index.php:359
 #, php-format
 msgid "For more information, see the <a %s>github project</a>."
 msgstr "Để có thêm thông tin, hãy xem <a %s>dự án github</a>."
 
-#: index.php:363
+#: index.php:360
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -292,11 +298,11 @@ msgstr ""
 "Nếu bạn là một nhà phát triển, bạn được khuyến kích giúp đỡ tìm và gửi các "
 "bản khắc phục cho Rufus."
 
-#: index.php:365
+#: index.php:362
 msgid "Donations"
 msgstr "Quyên góp"
 
-#: index.php:366
+#: index.php:363
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -304,7 +310,7 @@ msgstr ""
 "Tôi thường xuyên được hỏi về điều này, nhưng <b>không</b> có nút quyên góp "
 "nào trên trang này cả."
 
-#: index.php:367
+#: index.php:364
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -314,69 +320,72 @@ msgstr ""
 "phát triển phần mềm và tồi tệ hơn, nó có thể tạo nên cảm giác tội lỗi cho "
 "những người dùng không quyên góp."
 
-#: index.php:370
+#: index.php:367
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a %s>Free "
 "Software Foundation</a>, as they are the main reason software like Rufus is "
 "possible."
 msgstr ""
-"Nếu bạn vẫn muốn quyên góp, bạn luôn có thể quyên góp cho <a %s>Quỹ phần mềm "
-"miễn phí</a>, họ là nguyên nhân chính giúp phần mềm như Rufus được tạo ra."
+"Nếu bạn vẫn muốn quyên góp, bạn luôn có thể quyên góp cho <a %s>Quỹ phần mềm"
+" miễn phí</a>, họ là nguyên nhân chính giúp phần mềm như Rufus được tạo ra."
 
-#: index.php:371
+#: index.php:368
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much "
-"appreciated!"
+"your continuing support and enthusiasm about this little program: it is much"
+" appreciated!"
 msgstr ""
 "Dù ở mức nào, tôi sẽ tận dụng cơ hội này để nói <i><u>cảm ơn</u></i> vì bạn "
 "đã tiếp tục hỗ trợ và nhiệt tình về chương trình nhỏ này: tôi thật sự đánh "
 "giá cao điều đó!"
 
-#: index.php:372
+#: index.php:369
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
-"Nhưng hãy tiếp tục sử dụng Rufus thoải mái và đừng tự cảm thấy tội lỗi gì về "
-"việc bạn không có đóng góp tài chính nào &ndash; bạn không cần phải làm thế!"
+"Nhưng hãy tiếp tục sử dụng Rufus thoải mái và đừng tự cảm thấy tội lỗi gì về"
+" việc bạn không có đóng góp tài chính nào &ndash; bạn không cần phải làm "
+"thế!"
 
-#: index.php:374
+#: index.php:371
 msgid "Speed comparison between Rufus and other applications"
 msgstr "So sánh tốc độ giữ Rufus và các ứng dụng khác"
 
-#: index.php:375
+#: index.php:372
 #, php-format
 msgid ""
-"The following tests carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
+"The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
 "platform, with an USB 3.0 controller and a <a %s>16 GB USB 3.0 ADATA S102 "
 "flash drive</a>."
 msgstr ""
 "Các bài thử nghiệm dưới đây được thực hiện trên nền tảng Windows 7 x64 Core "
-"2 duo/RAM 4 GB, với một bộ điều khiển USB 3.0 và một đĩa di động <a %s>16 GB "
-"USB 3.0 ADATA S102</a>."
+"2 duo/RAM 4 GB, với một bộ điều khiển USB 3.0 và một đĩa di động <a %s>16 GB"
+" USB 3.0 ADATA S102</a>."
 
-#: index.php:400
+#: index.php:397
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Danh sách ISO chưa đầy đủ mà Rufus có thể làm việc được"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:455
+#. If you want people to be able to e-mail you directly about this
+#. translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
+#. Batard</a>
+#: index.php:452
 msgid "English translation by Pete Batard"
 msgstr ""
-"Bản dịch tiếng Việt tạo bởi <a href=\"mailto:thanhtai2009@outlook.com?"
-"Subject=Rufus%20Homepage%20translation\">thanhtai2009@tekcafe.vn</a> & <a "
-"href=\"mailto:honguyenminh@outlook.com?Subject=Rufus%20Homepage%20translation"
-"\">honguyenminh@outlook.com</a>"
+"Bản dịch tiếng Việt tạo bởi <a "
+"href=\"mailto:thanhtai2009@outlook.com?Subject=Rufus%20Homepage%20translation\">thanhtai2009@tekcafe.vn</a>"
+" & <a "
+"href=\"mailto:honguyenminh@outlook.com?Subject=Rufus%20Homepage%20translation\">honguyenminh@outlook.com</a>"
 
-#: index.php:456
+#: index.php:453
 msgid "USB icon by"
 msgstr "Biểu tượng USB tạo bởi"
 
-#: index.php:457
+#: index.php:454
 msgid "Hosting by"
 msgstr "Máy chủ tài trợ bởi"
 
@@ -388,9 +397,9 @@ msgstr "Máy chủ tài trợ bởi"
 #~ "media, meaning that it will allow you to install Windows 7, Windows 8 or "
 #~ "Linux in full EFI mode."
 #~ msgstr ""
-#~ "Từ phiên bản 1.3.2, Rufus hỗ trợ UEFI cũng như GPT đối với phương tiện "
-#~ "cài đặt, điều này có nghĩa rằng nó sẽ cho phép bạn cài đặt Windows 7, "
-#~ "Windows 8 hoặc Linux trong chế độ EFI hoàn chỉnh."
+#~ "Từ phiên bản 1.3.2, Rufus hỗ trợ UEFI cũng như GPT đối với phương tiện cài "
+#~ "đặt, điều này có nghĩa rằng nó sẽ cho phép bạn cài đặt Windows 7, Windows 8 "
+#~ "hoặc Linux trong chế độ EFI hoàn chỉnh."
 
 #~ msgid ""
 #~ "However, Windows Vista or later is required for full UEFI/GPT support. "

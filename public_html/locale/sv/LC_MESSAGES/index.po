@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2018-05-29 15:55+0100\n"
-"PO-Revision-Date: 2018-05-29 16:33+0100\n"
+"POT-Creation-Date: 2018-06-20 22:34+0100\n"
+"PO-Revision-Date: 2018-07-09 21:08+0100\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: index.php:82
 msgid "Version"
@@ -28,19 +28,17 @@ msgstr "Skapa enkelt startbara USB-enheter"
 
 #: index.php:205
 msgid "Want to improve this translation?"
-msgstr ""
+msgstr "Vill du förbättra översättningen?"
 
 #: index.php:226
 msgid ""
 "Placeholder for ads &mdash; Just like you, I wish this site could exist "
 "without them..."
 msgstr ""
+"Placeholder for ads &mdash; Just like you, I wish this site could exist "
+"without them..."
 
-#. This is used display a screenshot of Rufus in your language (if available).
-#. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
-#. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
-#. displayed then. Or you can leave the string untranslated to have the
-#. English version displayed. Please make sure to keep the .png extension.
+#. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
 #: index.php:236
 msgid "rufus_en.png"
 msgstr "rufus_sv.png"
@@ -80,8 +78,7 @@ msgstr "du vill köra ett lågnivåverktyg"
 
 #: index.php:246
 msgid "Despite its small size, Rufus provides everything you need!"
-msgstr ""
-"Även om Rufus är ett litet program, klarar den utföra allt du behöver!"
+msgstr "Även om Rufus är ett litet program, klarar den utföra allt du behöver!"
 
 #: index.php:247
 #, php-format
@@ -100,15 +97,15 @@ msgstr ""
 
 #: index.php:248
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
+"of this page."
 msgstr ""
 "En ofullständig lista över ISO-filer som Rufus fungerar ihop med finns "
 "längst ner på sidan."
 
 #: index.php:253
 msgid "Download"
-msgstr "Ladda ned"
+msgstr "Ladda ner"
 
 #: index.php:254
 #, php-format
@@ -122,7 +119,7 @@ msgstr "KB"
 
 #: index.php:256
 msgid "Portable"
-msgstr ""
+msgstr "Portabel"
 
 #: index.php:257 index.php:352
 msgid "Other versions"
@@ -141,8 +138,8 @@ msgid ""
 "Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
 msgstr ""
-"Windows 7 eller senare, 32- eller 64-bitars spelare ingen roll. När du är "
-"klar med nedladdningen är det bara att starta programmet."
+"Windows 7 eller senare, 32- eller 64-bitars spelar ingen roll. När du är "
+"klar med nerladdningen är det bara att starta programmet."
 
 #: index.php:307
 msgid ""
@@ -164,7 +161,7 @@ msgstr "Användning"
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr ""
-"Ladda ned den körbara filen och kör den &ndash; du behöver inte ens "
+"Ladda ner den körbara filen och kör den &ndash; du behöver inte ens "
 "installera programmet."
 
 #: index.php:310
@@ -193,8 +190,8 @@ msgid ""
 msgstr ""
 "När du skapar en startbar DOS-disk och du inte använder en amerikansk "
 "teckenuppsättning, försöker då Rufus att välja en teckenuppsättning som "
-"motsvarar din dators regioninställningar. I så fall är <a %s>FreeDOS</a> att"
-" rekommendera i stället för MS-DOS, då det har stöd för fler "
+"motsvarar din dators regioninställningar. I så fall är <a %s>FreeDOS</a> att "
+"rekommendera i stället för MS-DOS, då det har stöd för fler "
 "tangentbordsuppsättningar."
 
 #: index.php:315
@@ -204,29 +201,28 @@ msgstr "Anmärkningar om ISO-stödet:"
 #: index.php:316
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
+"an <a %s>ISO image</a> (.iso)."
 msgstr ""
-"Alla versioner av Rufus sen version 1.1.0 tillåter dig att skapa en startbar"
-" USB från en <a %s>ISO-avbild</a> (.iso)."
+"Alla versioner av Rufus sen version 1.1.0 tillåter dig att skapa en startbar "
+"USB från en <a %s>ISO-avbild</a> (.iso)."
 
 #: index.php:317
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
+"easy to do however, through the use of a CD burning application, such as the "
+"freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
 msgstr ""
 "Att skapa en ISO-avbild av en fysisk disk eller från en bunt filer är "
-"väldigt enkelt att göra med hjälp utav gratisprogrammen  <a "
-"%s>CDBurnerXP</a> eller <a %s>ImgBurn</a>."
+"väldigt enkelt att göra med hjälp utav gratisprogrammen  <a %s>CDBurnerXP</"
+"a> eller <a %s>ImgBurn</a>."
 
 #: index.php:319
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Frequently Asked Questions (FAQ)"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
 #: index.php:320
 #, php-format
 msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
@@ -239,8 +235,8 @@ msgid ""
 "github <a %s>issue tracker</a>. Or you can <a %s>send an e-mail</a>."
 msgstr ""
 "För att lämna synpunkter, rapportera ett fel eller komma med förslag på nya "
-"funktioner, använd då github <a %s>issue tracker</a> eller så skicka mig ett"
-" <a %s>epostmeddelande</a>."
+"funktioner, använd då github <a %s>issue tracker</a> eller så skicka mig ett "
+"<a %s>epostmeddelande</a>."
 
 #: index.php:323
 msgid "License"
@@ -253,8 +249,8 @@ msgstr "<a %s>GNU General Public License (GPL) version 3</a> eller senare."
 
 #: index.php:324
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr ""
 "Du är fri att distribuera, ändra och till och med sälja programmet, i den "
 "mån som du respekterar GPLv3 licensen."
@@ -268,8 +264,7 @@ msgstr ""
 "Rufus är producerad på ett 100%%-ig transparent sätt, från sin <a %s>public "
 "source</a>, med hjälp av <a %s>MinGW32</a> miljö."
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
 #: index.php:327
 msgid "Changelog"
 msgstr "Ändringslogg (endast på Engelska)"
@@ -337,8 +332,8 @@ msgstr ""
 #: index.php:368
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
+"your continuing support and enthusiasm about this little program: it is much "
+"appreciated!"
 msgstr ""
 "Hur som helst, jag ska passa på att säga <i><u>tack</u></i> för ditt "
 "fortsatta stöd och entusiasm för detta lilla program, det är mycket "
@@ -363,25 +358,23 @@ msgid ""
 "platform, with an USB 3.0 controller and a <a %s>16 GB USB 3.0 ADATA S102 "
 "flash drive</a>."
 msgstr ""
-"Följande test utfördes på en Windows 7 x64 Core 2 duo/4 GB RAM platform, med"
-" en USB 3.0-kontroller och en <a %s>16 GB USB 3.0 ADATA S102-minne</a>."
+"Följande test utfördes på en Windows 7 x64 Core 2 duo/4 GB RAM platform, med "
+"en USB 3.0-kontroller och en <a %s>16 GB USB 3.0 ADATA S102-minne</a>."
 
 #: index.php:397
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Lista över fungerande ISO-filer som Rufus borde fungera med"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
 #: index.php:452
 msgid "English translation by Pete Batard"
 msgstr "Svensk översättning av Sopor"
 
 #: index.php:453
 msgid "USB icon by"
-msgstr "USB-ikon"
+msgstr "USB-ikon av"
 
 #: index.php:454
 msgid "Hosting by"
@@ -395,15 +388,15 @@ msgstr "Webbhotell"
 #~ "media, meaning that it will allow you to install Windows 7, Windows 8 or "
 #~ "Linux in full EFI mode."
 #~ msgstr ""
-#~ "Från version 1.3.2, har Rufus stöd för UEFI och GPT för installationsmedia, "
-#~ "vilket menas med att du kan installera Windows 7, Windows 8 eller Linux i "
-#~ "fullt EFI-läge."
+#~ "Från version 1.3.2, har Rufus stöd för UEFI och GPT för "
+#~ "installationsmedia, vilket menas med att du kan installera Windows 7, "
+#~ "Windows 8 eller Linux i fullt EFI-läge."
 
 #~ msgid ""
 #~ "However, Windows Vista or later is required for full UEFI/GPT support. "
 #~ "Because of OS limitations, Windows XP restricts the creation of UEFI "
 #~ "bootable drives to MBR mode."
 #~ msgstr ""
-#~ "Däremot, Windows Vista eller senare krävs för full UEFI/GPT-stöd. På grund "
-#~ "av OS-begränsningar begränsar Windows XP skapandet av startbara UEFI-diskar "
-#~ "till MBR-läge."
+#~ "Däremot, Windows Vista eller senare krävs för full UEFI/GPT-stöd. På "
+#~ "grund av OS-begränsningar begränsar Windows XP skapandet av startbara "
+#~ "UEFI-diskar till MBR-läge."

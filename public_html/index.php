@@ -70,6 +70,7 @@ foreach($langs as $code => $lang) {
     break;
   }
 }
+$bcp47_locale = str_replace("_", "-", $locale);
 // Must append ".utf8" suffix here, else languages such as Azerbaijani won't work
 setlocale(LC_MESSAGES, $locale . ".utf8");
 bindtextdomain("index", "./locale");
@@ -97,10 +98,13 @@ case "he":
 }
 ?>
 
-<html <?= "lang=\"$locale\" dir=\"$dir\"";?>>
+<html <?= "lang=\"$bcp47_locale\" dir=\"$dir\"";?>>
 <head profile="http://www.w3.org/2005/10/profile">
 <meta charset='utf-8'>
-<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="description" content="Rufus: Create bootable USB drives the easy way">
+<meta name="keywords" content="Application,BIOS,Boot,Bootable,DOS,Download,Drive,Fast,Flash,Formatting,FreeDOS,Linux,Portable,Rufus,Small,Standlone,UEFI,USB,Utility,Windows">
+<meta name="author" content="Pete Batard">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rufus - <?= _("Create bootable USB drives the easy way");?></title>
 <script type="text/javascript">
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -193,7 +197,7 @@ case "he":
 
 <body>
 <div id="right_column">
-<select onchange="self.location='?locale='+this.options[this.selectedIndex].value">
+<label for="lang_select"><?=_("Change language:");?></label><select name="lang_select" id="lang_select" onchange="self.location='?locale='+this.options[this.selectedIndex].value">
 <? foreach($langs as $code => $lang): ?>
   <option dir="ltr" <? if(substr($locale,0,strlen($lang[0])) == $lang[0]) echo "selected=\"selected\"";?> value="<?= $code;?>">
   <?= $lang[1]; ?>
@@ -251,6 +255,7 @@ case "he":
 		<p dir=\"ltr\">If you think you are up to the task, please have a look <a href=\"https://github.com/pbatard/rufus/wiki/Localization\">here</a>.</p>";?>
 		<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
+			<!-- <p><font color="#ffa520"><b><span dir="ltr">IMPORTANT: Once again Windows Defender (starting with definition update 1.269.1834.0) is erroneously reporting that Rufus 3.1 may contain <code>Trojan:Win32/Plutruption!ARXep</code>. We have <a href="https://www.microsoft.com/en-us/wdsi/submission/b617cf91-4d99-409d-b5b4-4ebcba610237">reported</a> this to Microsoft, who have confirmed that this is yet another <u>false positive</u> and have updated their definitions to clear it. If you are affected, you are invited to re-download Rufus 3.1, as we have put a new version online that shouldn't trigger the antivirus.</span></b></font></p>-->
 			<p><b><? printf(_("Last updated %s:"), $latest_date);?></b></p>
 			<p><ul><li><span style="font-size: 133%"><b><?= /* Abbreviation for KiloByte */ "<a href=\"/downloads/rufus-" . $latest_version . ".exe\">" . $app_name . "</a>";?></b></span> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("KB");?>)</span></li>
 			<li><?= "<a href=\"/downloads/rufus-" . $latest_version . "p.exe\">" . $app_name . " " . _("Portable") . "</a>";?> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("KB");?>)</span></li>

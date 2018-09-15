@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.1";
+$latest_version = "3.2";
 $previous_version = "2.14";
-$latest_date = "2018.06.19";
+$latest_date = "2018.09.11";
 $previous_date = "2017.04.10";
-$lang1 = array('', 'Danish', 'Denmark');
+$lang1 = array('', 'Vietnamese', 'Vietnam');
 $lang2 = array('', 'Malay', 'Malaysia');
 $bugfix = false;
-$exe_size = 995;
+$exe_size = 1.0;
 $src_size = 2.8;
 $langs = array(
   'en_US' => array('en', 'English (International)'),
@@ -32,6 +32,7 @@ $langs = array(
   'de_DE' => array('de', 'German (Deutsch)'),
   'el_GR' => array('el', 'Greek (Ελληνικά)'),
   'he_IL' => array('he', 'Hebrew (עברית)'),
+  'hi_IN' => array('hi', 'Hindi (हिंदी)'),
   'hu_HU' => array('hu', 'Hungarian (Magyar)'),
   'id_ID' => array('id', 'Indonesian (Bahasa Indonesia)'),
   'it_IT' => array('it', 'Italian (Italiano)'),
@@ -251,14 +252,13 @@ case "he":
 		<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a %s>UNetbootin</a>, <a %s>Universal USB Installer</a> or <a %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
 		<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
 		<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/" . $lang2[2] . ".png\" srcset=\"pics/" . $lang2[2] . ".png 1x, pics/" . $lang2[2] . "-64px 2x\" alt=\"\"/>" : "") . "</p>
-		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a href=\"https://github.com/pbatard/rufus/blob/master/res/localization/ChangeLog.txt#L18-L66\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
-		<p dir=\"ltr\">If you think you are up to the task, please have a look <a href=\"https://github.com/pbatard/rufus/wiki/Localization\">here</a>.</p>";?>
+		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L9-L83\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
+		<p dir=\"ltr\">If you think you are up to the task, please have a look <a href=\"https://github.com/pbatard/rufus/wiki/Localization#Editing_an_existing_translation\">here</a>.</p>";?>
 		<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
-			<!-- <p><font color="#ffa520"><b><span dir="ltr">IMPORTANT: Once again Windows Defender (starting with definition update 1.269.1834.0) is erroneously reporting that Rufus 3.1 may contain <code>Trojan:Win32/Plutruption!ARXep</code>. We have <a href="https://www.microsoft.com/en-us/wdsi/submission/b617cf91-4d99-409d-b5b4-4ebcba610237">reported</a> this to Microsoft, who have confirmed that this is yet another <u>false positive</u> and have updated their definitions to clear it. If you are affected, you are invited to re-download Rufus 3.1, as we have put a new version online that shouldn't trigger the antivirus.</span></b></font></p>-->
 			<p><b><? printf(_("Last updated %s:"), $latest_date);?></b></p>
-			<p><ul><li><span style="font-size: 133%"><b><?= /* Abbreviation for KiloByte */ "<a href=\"/downloads/rufus-" . $latest_version . ".exe\">" . $app_name . "</a>";?></b></span> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("KB");?>)</span></li>
-			<li><?= "<a href=\"/downloads/rufus-" . $latest_version . "p.exe\">" . $app_name . " " . _("Portable") . "</a>";?> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("KB");?>)</span></li>
+			<p><ul><li><span style="font-size: 133%"><b><?= /* Abbreviation for MegaByte */ "<a href=\"/downloads/rufus-" . $latest_version . ".exe\">" . $app_name . "</a>";?></b></span> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
+			<li><?= "<a href=\"/downloads/rufus-" . $latest_version . "p.exe\">" . $app_name . " " . _("Portable") . "</a>";?> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
 			<li><a href="/downloads/"><?= _("Other versions");?></a></li>
 			</ul></p>
 		<h4><?= _("Supported Languages:");?></h4>
@@ -332,13 +332,14 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Fix extraction of ISO content for GRUB based ISOs (Manjaro, Kaspersky, etc.)</span></li>
-				<li><span dir="ltr">Fix text being truncated on some dialogs (mostly Russian and Thai)</span></li>
-				<li><span dir="ltr">Add detection & warning about the 'Controlled Folder Access' Windows 10 feature</span></li>
-				<li><span dir="ltr">Improve retry attempts for transient errors</span></li>
-				<li><span dir="ltr">Increase size of the ESP to 300MB, for Windows To Go drives partitioned as GPT</span></li>
-				<li><span dir="ltr">Update GRUB 2.0 and Grub4DOS to latest</span></li>
-				<li><span dir="ltr">Update libcdio to latest</span></li>
+				<li><span dir="ltr">Add RSA-2048 signature validation on all the server downloads</span></li>
+				<li><span dir="ltr">Add "Fast zeroing" cheat mode (courtesy of <b>René van der Zee</b>)</span></li>
+				<li><span dir="ltr">Add support for XP/Server 2003 x64 ISOs (courtesy of <b>Mattiwatti</b>)</span></li>
+				<li><span dir="ltr">Improve ISO extraction performance by preallocating files (courtesy of <b>Mattiwatti</b>)</span></li>
+				<li><span dir="ltr">Improve bad blocks check algorithm (from suggestions by <b>AL.Skywalker</b>)</span></li>
+				<li><span dir="ltr">Fix progress not being displayed for Sylinux or GRUB downloads</span></li>
+				<li><span dir="ltr">Fix unwanted application close when cancelling an image scan</span></li>
+				<li><span dir="ltr">Fix an issue where FAT32 could still be selected for ISOs containing a >4GB file</span></li>
 			</ul></li>
 			<p><font color="#ffa520"><b><span dir="ltr">NOTE: THIS VERSION IS <u>NOT</u> COMPATIBLE WITH <i>WINDOWS XP</i> OR <i>WINDOWS VISTA</i>.</span></b></font></p>
 			<? if($bugfix):?>

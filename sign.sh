@@ -29,3 +29,5 @@ openssl dgst -sha256 -sign $PRIVATE_KEY -passin pass:$PASSWORD $DUMMY_FILE >/dev
 find ~/public_html -maxdepth 1 -name "*.ver" | while read FILE; do sign_file; done
 find ~/public_html/downloads -name "*.exe" -type f | while read FILE; do sign_file; done
 find ~/public_html/files -not -name "*.txt" -not -name "*.sh" -not -name "*.sig" -not -name "*pre*" -type f | while read FILE; do sign_file; done
+# Clear the PASSWORD variable just in case
+PASSWORD=`head -c 50 /dev/random | base64`

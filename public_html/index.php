@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.2";
-$previous_version = "2.14";
-$latest_date = "2018.09.11";
-$previous_date = "2017.04.10";
+$latest_version = "3.3";
+$previous_version = "3.2";
+$latest_date = "2018.09.17";
+$previous_date = "2018.09.11";
 $lang1 = array('', 'Vietnamese', 'Vietnam');
 $lang2 = array('', 'Malay', 'Malaysia');
-$bugfix = false;
+$bugfix = true;
 $exe_size = 1.0;
 $src_size = 2.8;
 $langs = array(
@@ -332,6 +332,12 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
+				<li><span dir="ltr">Fix a regression when processing uncompressed bootable DD images</span></li>
+				<li><span dir="ltr">Fix Windows To Go drive creation for ARM64 Windows ISOs</span></li>
+			</ul></li>
+			<? if($bugfix):?>
+			<br />
+			<li><?= $prev_version;?><ul>
 				<li><span dir="ltr">Add RSA-2048 signature validation on all the server downloads</span></li>
 				<li><span dir="ltr">Add "Fast zeroing" cheat mode (courtesy of <b>René van der Zee</b>)</span></li>
 				<li><span dir="ltr">Add support for XP/Server 2003 x64 ISOs (courtesy of <b>Mattiwatti</b>)</span></li>
@@ -341,20 +347,8 @@ case "he":
 				<li><span dir="ltr">Fix unwanted application close when cancelling an image scan</span></li>
 				<li><span dir="ltr">Fix an issue where FAT32 could still be selected for ISOs containing a >4GB file</span></li>
 			</ul></li>
-			<p><font color="#ffa520"><b><span dir="ltr">NOTE: THIS VERSION IS <u>NOT</u> COMPATIBLE WITH <i>WINDOWS XP</i> OR <i>WINDOWS VISTA</i>.</span></b></font></p>
-			<? if($bugfix):?>
-			<br />
-			<li><?= $prev_version;?><ul>
-				<li><span dir="ltr">Preserve 'GPT for UEFI' option if the user changed it before selecting an ISO</span></li>
-				<li><span dir="ltr">Fix unwanted notification sound when closing with the X button</span></li>
-				<li><span dir="ltr">Fix inability to restore the minimized application after a popup is displayed</span></li>
-				<li><span dir="ltr">Fix an issue when trying to install Syslinux/NTFS twice in a row</span></li>
-				<li><span dir="ltr">Work around Microsoft's inconsistent casing of device IDs during device enumeration</span></li>
-				<li><span dir="ltr">Work around Microsoft's aggressive locking of partitions in Windows 10 Creators Update</span></li>
-				<li><span dir="ltr">Restrict write sharing permissions when accessing a device</span></li>
-				<li><span dir="ltr">Update libcdio and GRUB 2.0 to latest</span></li>
-			</ul></li>
 			<? endif;?>
+			<p><font color="#ffa520"><b><span dir="ltr">NOTE: THIS VERSION IS <u>NOT</u> COMPATIBLE WITH <i>WINDOWS XP</i> OR <i>WINDOWS VISTA</i>.</span></b></font></p>
 			<li><b><a href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt"><?= _("Other versions");?></a></b></li>
 		</ul>
 		

@@ -42,6 +42,7 @@ $langs = array(
   'lt_LT' => array('lt', 'Lithuanian (Lietuvių)'),
   'ms_MY' => array('ms', 'Malay (Bahasa Malaysia)'),
   'nb_NO' => array('nb', 'Norwegian (Norsk)'),
+  'or_IN' => array('or', 'Odia (ଓଡ଼ିଆ)'),
   'fa_IR' => array('fa', 'Persian (فارسی)'),
   'pl_PL' => array('pl', 'Polish (Polski)'),
   'pt_BR' => array('pt_BR', 'Portuguese [BR] (Português [BR])'),

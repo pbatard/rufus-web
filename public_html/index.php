@@ -185,9 +185,6 @@ case "he":
 	.treeView{ -moz-user-select:none; position:relative; }
 	.treeView ul{ margin:0 0 0 -1.5em; padding:0 0 0 1.5em; }
 	.treeView li{ margin:0; padding:0; list-style-position:inside; list-style-image:none; cursor:auto; }
-	.treeView li.collapsibleListOpen{ list-style-image:url('button-open.png'); cursor:pointer; }
-	.treeView li.collapsibleListClosed{ list-style-image:url('button-closed.png'); cursor:pointer; }
-	.treeView li.collapsibleListItem{ padding-left:1.5em; }
 	.treeView li li{ padding-left:1.5em; }
 	@media screen and (max-width: 1002px) {
 	  .hide_on_small_screens {
@@ -363,7 +360,7 @@ case "he":
 		<h2><?= _("Donations");?></h2>
 			<p><?= _("Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this page.");?></p>
 			<p><?= _("The main reason is that I feel that the donation system doesn't actually help software development and worse, can be guilt-inducing for users who choose not to donate.");?></p>
-			<p><? if (substr($locale,0,2) == "en") echo "Instead, I think that <span lang=\"fr\"><i>\"<a href=\"http://french.about.com/od/vocabulary/g/mecenat.htm\">mécénat</a>\"</i></span>; or developer patronage, from <b>companies</b> which benefit most from a healthy <a href=\"http://en.wikipedia.org/wiki/Free_and_open_source_software\">FLOSS</a> ecosystem, is what we should be aiming for. This is because, unless they are backed by a company, developers who want to provide quality Open Source software cannot realistically sustain full time development, no matter how generous their software users are.</p>
+			<p><? if (substr($locale,0,2) == "en") echo "Instead, I think that <span lang=\"fr\"><i>\"<a href=\"https://en.wiktionary.org/wiki/m%C3%A9c%C3%A9nat\">mécénat</a>\"</i></span>; or developer patronage, from <b>companies</b> which benefit most from a healthy <a href=\"http://en.wikipedia.org/wiki/Free_and_open_source_software\">FLOSS</a> ecosystem, is what we should be aiming for. This is because, unless they are backed by a company, developers who want to provide quality Open Source software cannot realistically sustain full time development, no matter how generous their software users are.</p>
 			<p>Also, unless you are <a href=\"http://winhelp2002.mvps.org/hosts.htm\">blocking them</a> (hint, hint), you'll notice that there are ads on this page, which I consider sufficient revenue enough.</p>
 			<p>Finally the fact that I have the freedom to develop <a href=\"http://en.wikipedia.org/wiki/Free_software\">Free Software</a> in my spare time should indicate that I'm well-off enough, and therefore that you should direct your generosity towards people who need it a lot more than I do. "; printf(_("If you really insist, you can always make a donation to the <a %s>Free Software Foundation</a>, as they are the main reason software like Rufus is possible."), "href=\"http://www.fsf.org/\"");?></p>
 			<p><?= _("At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm about this little program: it is much appreciated!");?></p>
@@ -451,7 +448,7 @@ case "he":
 			<? /* Please insert your language and name here.
 If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a> */ $tr = _("English translation by Pete Batard"); if (substr($tr,0,4) != "Engl") echo $tr . "<br/>";?>
-			<?= _("USB icon by");?> <a href="http://pcunleashed.com/">PC Unleashed</a><br/>
+			<?= _("USB icon by");?> PC Unleashed<br/>
 			<?= _("Hosting by");?> <a href="http://neosurge.com">Neosurge</a>
 			</div>
 		</div>

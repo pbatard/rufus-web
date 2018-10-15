@@ -75,6 +75,8 @@ foreach($langs as $code => $lang) {
 $bcp47_locale = str_replace("_", "-", $locale);
 // Must append ".utf8" suffix here, else languages such as Azerbaijani won't work
 setlocale(LC_MESSAGES, $locale . ".utf8");
+// Also set the LANGUAGE variable, which may be needed on some systems
+putenv("LANGUAGE=" . $locale);
 bindtextdomain("index", "./locale");
 bind_textdomain_codeset("index", "UTF-8");
 textdomain("index");

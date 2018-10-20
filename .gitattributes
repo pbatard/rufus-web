@@ -1,6 +1,7 @@
 *.sh            eol=lf
 *.po            eol=lf
 *.pot           eol=lf
+*.html          eol=lf
 .gitattributes  export-ignore
 .gitignore      export-ignore
 

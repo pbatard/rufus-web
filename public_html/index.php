@@ -10,7 +10,7 @@ $bugfix = true;
 $exe_size = 1.0;
 $src_size = 2.8;
 $langs = array(
-  'en_US' => array('en', 'English (International)'),
+  'en_IE' => array('en', 'English (International)'),
   'sq_AL' => array('sq', 'Albanian (Shqip)'),
   'ar_SA' => array('ar', 'Arabic (العربية)'),
   'hy_AM' => array('hy', 'Armenian (Հայերեն)'),
@@ -59,7 +59,7 @@ $langs = array(
   'uk_UA' => array('uk', 'Ukrainian (Українська)'),
   'vi_VN' => array('vi', 'Vietnamese (Tiếng Việt)'),
 );
-$locale = "en_US";
+$locale = "en_IE";
 if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
   $locale = locale_accept_from_http($_SERVER["HTTP_ACCEPT_LANGUAGE"]);
 if (isSet($_GET["locale"])) {
@@ -109,6 +109,12 @@ case "he":
 <meta name="keywords" content="Application,BIOS,Boot,Bootable,DOS,Download,Drive,Fast,Flash,Formatting,FreeDOS,Linux,Portable,Rufus,Small,Standlone,UEFI,USB,Utility,Windows">
 <meta name="author" content="Pete Batard">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="application-name" content="Rufus"/>
+<meta name="msapplication-square70x70logo" content="pics/rufus-72.png"/>
+<meta name="msapplication-square150x150logo" content="pics/rufus-150.png"/>
+<meta name="msapplication-wide310x150logo" content="pics/rufus-150.png"/>
+<meta name="msapplication-square310x310logo" content="pics/rufus-256.png"/>
+<meta name="msapplication-TileColor" content="#3f4555"/>
 <title>Rufus - <?= _("Create bootable USB drives the easy way");?></title>
 <script type="text/javascript">
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -451,7 +457,7 @@ case "he":
 If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a> */ $tr = _("English translation by Pete Batard"); if (substr($tr,0,4) != "Engl") echo $tr . "<br/>";?>
 			<?= _("USB icon by");?> PC Unleashed<br/>
-			<?= _("Hosting by");?> <a href="http://neosurge.com">Neosurge</a>
+			<?= _("Hosting by");?> <a href="https://pages.github.com/">GitHub</a>
 			</div>
 		</div>
 	</div>

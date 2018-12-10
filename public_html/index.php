@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.3";
+$latest_version = "3.4";
 $previous_version = "3.2";
-$latest_date = "2018.09.17";
+$latest_date = "2018.12.05";
 $previous_date = "2018.09.11";
 $lang1 = array('', 'Vietnamese', 'Vietnam');
 $lang2 = array('', 'Malay', 'Malaysia');
-$bugfix = true;
+$bugfix = false;
 $exe_size = 1.0;
 $src_size = 2.8;
 $langs = array(
@@ -173,7 +173,7 @@ case "he":
 	.tagline { font-size: 1.6em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
 	.download { float: right; }
 	pre { background: #000; color: #fff; padding: 15px;}
-	code { display:inline-block; padding:3px 3px 2px 1px; color:#555; background-color:#ececec; font-family:monospace, monospace; line-height:10px; font-size:15px; vertical-align:middle; }
+	code { display:inline-block; padding:3px 3px 4px 1px; color:#ececec; font-family:monospace, monospace; line-height:10px; font-size:16px; vertical-align:middle; }
 	hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 	.kbd{
 		display:inline-block;
@@ -263,8 +263,8 @@ case "he":
 		<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
 			<p><b><? printf(_("Last updated %s:"), $latest_date);?></b></p>
-			<p><ul><li><span style="font-size: 133%"><b><?= /* Abbreviation for MegaByte */ "<a href=\"/downloads/rufus-" . $latest_version . ".exe\">" . $app_name . "</a>";?></b></span> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
-			<li><?= "<a href=\"/downloads/rufus-" . $latest_version . "p.exe\">" . $app_name . " " . _("Portable") . "</a>";?> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
+			<p><ul><li><span style="font-size: 133%"><b><?= /* Abbreviation for MegaByte */ "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . ".exe\">" . $app_name . "</a>";?></b></span> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
+			<li><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "p.exe\">" . $app_name . " " . _("Portable") . "</a>";?> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
 			<li><a href="/downloads/"><?= _("Other versions");?></a></li>
 			</ul></p>
 		<h4><?= _("Supported Languages:");?></h4>
@@ -338,8 +338,14 @@ case "he":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Fix a regression when processing uncompressed bootable DD images</span></li>
-				<li><span dir="ltr">Fix Windows To Go drive creation for ARM64 Windows ISOs</span></li>
+				<li><span dir="ltr">Set the default image selection directory to <code>Downloads\</code> instead of <code>My Documents\</code></span></li>
+				<li><span dir="ltr">Add ARM/ARM64 automatic update support</span></li>
+				<li><span dir="ltr">Improve <a href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> compatibility</span></li>
+				<li><span dir="ltr">Improve access issues by using <a href="https://docs.microsoft.com/en-us/windows/desktop/vds/about-vds">VDS</a> to delete all partitions</span></li>
+				<li><span dir="ltr">Update the <code>.appx</code> to include all architectures as well as request elevation</span></li>
+				<li><span dir="ltr">Fix broken detection of some EFI based images</span></li>
+				<li><span dir="ltr">Fix broken update check due to server switch</span></li>
+				<li><span dir="ltr">UI and accessibility fixes and improvements</span></li>
 			</ul></li>
 			<? if($bugfix):?>
 			<br />
@@ -349,7 +355,7 @@ case "he":
 				<li><span dir="ltr">Add support for XP/Server 2003 x64 ISOs (courtesy of <b>Mattiwatti</b>)</span></li>
 				<li><span dir="ltr">Improve ISO extraction performance by preallocating files (courtesy of <b>Mattiwatti</b>)</span></li>
 				<li><span dir="ltr">Improve bad blocks check algorithm (from suggestions by <b>AL.Skywalker</b>)</span></li>
-				<li><span dir="ltr">Fix progress not being displayed for Sylinux or GRUB downloads</span></li>
+				<li><span dir="ltr">Fix progress not being displayed for Syslinux or GRUB downloads</span></li>
 				<li><span dir="ltr">Fix unwanted application close when cancelling an image scan</span></li>
 				<li><span dir="ltr">Fix an issue where FAT32 could still be selected for ISOs containing a >4GB file</span></li>
 			</ul></li>

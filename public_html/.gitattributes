@@ -1,8 +1,0 @@
-*.html          eol=lf
-*.php           eol=lf
-*.sh            eol=lf
-*.txt           eol=lf
-*.ver           eol=lf
-.gitattributes  export-ignore
-.gitignore      export-ignore
-

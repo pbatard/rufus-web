@@ -1,3 +1,4 @@
+*.conf          eol=lf
 *.html          eol=lf
 *.php           eol=lf
 *.po            eol=lf

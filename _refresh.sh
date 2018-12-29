@@ -1,5 +1,5 @@
 #!/bin/bash
-url=pi3
+url=nano
 add_else=
 cat >index.html<<EOF
 <!DOCTYPE html>

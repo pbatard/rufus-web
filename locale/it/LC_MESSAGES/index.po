@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.0\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2018-07-25 15:05+0100\n"
-"PO-Revision-Date: 2018-07-27 13:03+0100\n"
+"PO-Revision-Date: 2018-12-29 15:32+0000\n"
 "Last-Translator: bovirus <bovirus@gmail.com>\n"
 "Language-Team: bovirus <bovirus@gmail.com>\n"
 "Language: it_IT\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: index.php:83
@@ -124,7 +124,7 @@ msgstr "KB"
 
 #: index.php:261
 msgid "Portable"
-msgstr ""
+msgstr "Portatile"
 
 #: index.php:262 index.php:357
 msgid "Other versions"
@@ -159,7 +159,7 @@ msgstr ""
 
 #: index.php:313
 msgid "Usage"
-msgstr "Uso"
+msgstr "Utilizzo"
 
 #: index.php:314
 msgid ""
@@ -376,7 +376,7 @@ msgstr "Elenco non esaustivo di immagini ISO compatibili con Rufus"
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
 #: index.php:457
 msgid "English translation by Pete Batard"
-msgstr "Traduzione italiano di Roberto Boriotti e Lorenzo Milesi"
+msgstr "Traduzione italiano di Roberto Boriotti, Lorenzo Milesi, garf02"
 
 #: index.php:458
 msgid "USB icon by"

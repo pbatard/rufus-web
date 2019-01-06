@@ -2,61 +2,65 @@
 <html>
 <head>
 <title>Rufus</title>
-<meta http-equiv="refresh" content="0;URL=en_IE.html">
+<style type="text/css">
+body { margin:0; padding:0; }
+.frame { display:block; width:100vw; height:100vh; max-width:100%; margin:0; padding:0; border:0; box-sizing:border-box; }
+</style>
 </head>
-<body>
+<body style="margin:0px;padding:0px;overflow:hidden">
 <script type="text/javascript">
+var localized_index = "en_IE.html";
 var lang = window.navigator.userLanguage || window.navigator.language;
-if (lang.substr(0,2) == "en") window.location = "en_IE.html";
-else if (lang.substr(0,2) == "sq") window.location = "sq_AL.html";
-else if (lang.substr(0,2) == "ar") window.location = "ar_SA.html";
-else if (lang.substr(0,2) == "hy") window.location = "hy_AM.html";
-else if (lang.substr(0,2) == "az") window.location = "az_AZ.html";
-else if (lang.substr(0,2) == "bn") window.location = "bn_BD.html";
-else if (lang.substr(0,2) == "bs") window.location = "bs_BA.html";
-else if (lang.substr(0,2) == "bg") window.location = "bg_BG.html";
-else if (lang.substr(0,2) == "ca") window.location = "ca_ES.html";
-else if (lang == "zh_CN") window.location = "zh_CN.html";
-else if (lang == "zh_TW") window.location = "zh_TW.html";
-else if (lang.substr(0,2) == "hr") window.location = "hr_HR.html";
-else if (lang.substr(0,2) == "cs") window.location = "cs_CZ.html";
-else if (lang.substr(0,2) == "da") window.location = "da_DK.html";
-else if (lang.substr(0,2) == "nl") window.location = "nl_NL.html";
-else if (lang.substr(0,2) == "et") window.location = "et_EE.html";
-else if (lang.substr(0,2) == "fi") window.location = "fi_FI.html";
-else if (lang.substr(0,2) == "fr") window.location = "fr_FR.html";
-else if (lang.substr(0,2) == "gl") window.location = "gl_ES.html";
-else if (lang.substr(0,2) == "de") window.location = "de_DE.html";
-else if (lang.substr(0,2) == "el") window.location = "el_GR.html";
-else if (lang.substr(0,2) == "he") window.location = "he_IL.html";
-else if (lang.substr(0,2) == "hi") window.location = "hi_IN.html";
-else if (lang.substr(0,2) == "hu") window.location = "hu_HU.html";
-else if (lang.substr(0,2) == "id") window.location = "id_ID.html";
-else if (lang.substr(0,2) == "it") window.location = "it_IT.html";
-else if (lang.substr(0,2) == "ja") window.location = "ja_JP.html";
-else if (lang.substr(0,2) == "ko") window.location = "ko_KR.html";
-else if (lang.substr(0,2) == "lv") window.location = "lv_LV.html";
-else if (lang.substr(0,2) == "lt") window.location = "lt_LT.html";
-else if (lang.substr(0,2) == "ms") window.location = "ms_MY.html";
-else if (lang.substr(0,2) == "nb") window.location = "nb_NO.html";
-else if (lang.substr(0,2) == "or") window.location = "or_IN.html";
-else if (lang.substr(0,2) == "fa") window.location = "fa_IR.html";
-else if (lang.substr(0,2) == "pl") window.location = "pl_PL.html";
-else if (lang == "pt_BR") window.location = "pt_BR.html";
-else if (lang == "pt_PT") window.location = "pt_PT.html";
-else if (lang.substr(0,2) == "ro") window.location = "ro_RO.html";
-else if (lang.substr(0,2) == "ru") window.location = "ru_RU.html";
-else if (lang.substr(0,2) == "sr") window.location = "sr_RS.html";
-else if (lang.substr(0,2) == "sk") window.location = "sk_SK.html";
-else if (lang.substr(0,2) == "sl") window.location = "sl_SI.html";
-else if (lang.substr(0,2) == "es") window.location = "es_ES.html";
-else if (lang.substr(0,2) == "sv") window.location = "sv_SE.html";
-else if (lang.substr(0,2) == "th") window.location = "th_TH.html";
-else if (lang.substr(0,2) == "tr") window.location = "tr_TR.html";
-else if (lang.substr(0,2) == "uk") window.location = "uk_UA.html";
-else if (lang.substr(0,2) == "vi") window.location = "vi_VN.html";
-else window.location = "en_IE.html";
+if (lang.substr(0,2) == "en") localized_index = "en_IE.html";
+else if (lang.substr(0,2) == "sq") localized_index = "sq_AL.html";
+else if (lang.substr(0,2) == "ar") localized_index = "ar_SA.html";
+else if (lang.substr(0,2) == "hy") localized_index = "hy_AM.html";
+else if (lang.substr(0,2) == "az") localized_index = "az_AZ.html";
+else if (lang.substr(0,2) == "bn") localized_index = "bn_BD.html";
+else if (lang.substr(0,2) == "bs") localized_index = "bs_BA.html";
+else if (lang.substr(0,2) == "bg") localized_index = "bg_BG.html";
+else if (lang.substr(0,2) == "ca") localized_index = "ca_ES.html";
+else if (lang == "zh_CN") localized_index = "zh_CN.html";
+else if (lang == "zh_TW") localized_index = "zh_TW.html";
+else if (lang.substr(0,2) == "hr") localized_index = "hr_HR.html";
+else if (lang.substr(0,2) == "cs") localized_index = "cs_CZ.html";
+else if (lang.substr(0,2) == "da") localized_index = "da_DK.html";
+else if (lang.substr(0,2) == "nl") localized_index = "nl_NL.html";
+else if (lang.substr(0,2) == "et") localized_index = "et_EE.html";
+else if (lang.substr(0,2) == "fi") localized_index = "fi_FI.html";
+else if (lang.substr(0,2) == "fr") localized_index = "fr_FR.html";
+else if (lang.substr(0,2) == "gl") localized_index = "gl_ES.html";
+else if (lang.substr(0,2) == "de") localized_index = "de_DE.html";
+else if (lang.substr(0,2) == "el") localized_index = "el_GR.html";
+else if (lang.substr(0,2) == "he") localized_index = "he_IL.html";
+else if (lang.substr(0,2) == "hi") localized_index = "hi_IN.html";
+else if (lang.substr(0,2) == "hu") localized_index = "hu_HU.html";
+else if (lang.substr(0,2) == "id") localized_index = "id_ID.html";
+else if (lang.substr(0,2) == "it") localized_index = "it_IT.html";
+else if (lang.substr(0,2) == "ja") localized_index = "ja_JP.html";
+else if (lang.substr(0,2) == "ko") localized_index = "ko_KR.html";
+else if (lang.substr(0,2) == "lv") localized_index = "lv_LV.html";
+else if (lang.substr(0,2) == "lt") localized_index = "lt_LT.html";
+else if (lang.substr(0,2) == "ms") localized_index = "ms_MY.html";
+else if (lang.substr(0,2) == "nb") localized_index = "nb_NO.html";
+else if (lang.substr(0,2) == "or") localized_index = "or_IN.html";
+else if (lang.substr(0,2) == "fa") localized_index = "fa_IR.html";
+else if (lang.substr(0,2) == "pl") localized_index = "pl_PL.html";
+else if (lang == "pt_BR") localized_index = "pt_BR.html";
+else if (lang == "pt_PT") localized_index = "pt_PT.html";
+else if (lang.substr(0,2) == "ro") localized_index = "ro_RO.html";
+else if (lang.substr(0,2) == "ru") localized_index = "ru_RU.html";
+else if (lang.substr(0,2) == "sr") localized_index = "sr_RS.html";
+else if (lang.substr(0,2) == "sk") localized_index = "sk_SK.html";
+else if (lang.substr(0,2) == "sl") localized_index = "sl_SI.html";
+else if (lang.substr(0,2) == "es") localized_index = "es_ES.html";
+else if (lang.substr(0,2) == "sv") localized_index = "sv_SE.html";
+else if (lang.substr(0,2) == "th") localized_index = "th_TH.html";
+else if (lang.substr(0,2) == "tr") localized_index = "tr_TR.html";
+else if (lang.substr(0,2) == "uk") localized_index = "uk_UA.html";
+else if (lang.substr(0,2) == "vi") localized_index = "vi_VN.html";
 </script>
-<div><a href="en_IE.html">Rufus</a></div>
+<iframe id="frame" class="frame"></iframe>
+<script>document.getElementById("frame").src = localized_index;</script>	
 </body>
 </html>

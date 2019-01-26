@@ -57,6 +57,7 @@ $langs = array(
   'th_TH' => array('th', 'Thai (ไทย)'),
   'tr_TR' => array('tr', 'Turkish (Türkçe)'),
   'uk_UA' => array('uk', 'Ukrainian (Українська)'),
+  'ur_PK' => array('ur', 'Urdu (اُردُو)'),
   'vi_VN' => array('vi', 'Vietnamese (Tiếng Việt)'),
 );
 $locale = "en_IE";
@@ -92,6 +93,7 @@ switch (substr($locale,0,2)) {
 case "ar":
 case "fa":
 case "he":
+case "ur":
   $dir = "rtl";
   $app_name = "<span dir=\"ltr\">" . $latest_version . " Rufus</span>";
   $full_version = "<span dir=\"ltr\">" . ($bugfix?"[BUGFIX RELEASE] (":"(") . $latest_date . ") <b>" . $latest_version . " " . $tr_version . "</b></span>";

@@ -19,19 +19,19 @@ msgstr ""
 "X-Generator: Poedit 2.0.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:82
+#: index.php:88
 msgid "Version"
 msgstr "Version"
 
-#: index.php:104 index.php:234
+#: index.php:120 index.php:255
 msgid "Create bootable USB drives the easy way"
 msgstr "Opret startbare USB-drev på den nemme måde"
 
-#: index.php:205
+#: index.php:226
 msgid "Want to improve this translation?"
 msgstr "Ønsker du at forbedre denne oversættelse?"
 
-#: index.php:226
+#: index.php:247
 msgid ""
 "Placeholder for ads &mdash; Just like you, I wish this site could exist "
 "without them..."
@@ -42,11 +42,11 @@ msgstr ""
 #. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
 #. displayed then. Or you can leave the string untranslated to have the
 #. English version displayed. Please make sure to keep the .png extension.
-#: index.php:236
+#: index.php:257
 msgid "rufus_en.png"
 msgstr "rufus_da.png"
 
-#: index.php:237
+#: index.php:258
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -54,11 +54,11 @@ msgstr ""
 "Rufus er et værktøj, der hjælper med at formatere og skabe startbare USB-"
 "flashdrev, såsom USB-nøgler/USB-pinde, USB-stik, osv."
 
-#: index.php:238
+#: index.php:259
 msgid "It can be especially useful for cases where:"
 msgstr "Det kan især være brugbart i tilfælde, hvor:"
 
-#: index.php:240
+#: index.php:261
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -66,39 +66,40 @@ msgstr ""
 "du vil oprette USB-installationsmedier fra startbare ISO'er (Windows, Linux,"
 " UEFI, osv.)"
 
-#: index.php:241
+#: index.php:262
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr ""
 "du vil arbejde på et system, der ikke har et operativsystem installeret"
 
-#: index.php:242
+#: index.php:263
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "du vil opdatere en BIOS eller anden firmware fra DOS"
 
-#: index.php:243
+#: index.php:264
 msgid "you want to run a low-level utility"
 msgstr "du ønsker at køre et low-level-værktøj"
 
-#: index.php:246
+#: index.php:267
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Trods sin lille størrelse leverer Rufus alt hvad du behøver!"
 
-#: index.php:247
+#: index.php:268
 #, php-format
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
-"%s>UNetbootin</a>, <a %s>Universal USB Installer</a> or <a %s>Windows 7 USB "
-"download tool</a>, on the creation of a Windows 7 USB installation drive "
-"from an ISO. It is also marginally faster on the creation of Linux bootable "
-"USB from ISOs."
+"target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
+"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
+" the creation of a Windows 7 USB installation drive from an ISO. It is also "
+"marginally faster on the creation of Linux bootable USB from ISOs."
 msgstr ""
 "Rufus er forresten <b>hurtig</b>. For eksempel er Rufus omkring dobbelt så "
-"hurtig som <a %s>UNetbootin</a>, <a %s>Universal USB Installer</a> eller <a "
-"%s>Windows 7 USB download tool</a> ved oprettelse af en Windows 7-USB-"
-"installationsdisk fra en ISO. Rufus er også marginalt hurtigere ved "
-"oprettelse af startbare USB'er med Linux fra ISO'er."
+"hurtig som <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" "
+"%s>Universal USB Installer</a> eller <a target=\"_blank\" %s>Windows 7 USB "
+"download tool</a> ved oprettelse af en Windows 7-USB-installationsdisk fra "
+"en ISO. Rufus er også marginalt hurtigere ved oprettelse af startbare USB'er"
+" med Linux fra ISO'er."
 
-#: index.php:248
+#: index.php:269
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
 " of this page."
@@ -106,37 +107,32 @@ msgstr ""
 "En ufuldstændig liste over Rufus-understøttede ISO'er er også angivet "
 "nederst på siden."
 
-#: index.php:253
+#: index.php:274
 msgid "Download"
 msgstr "Hent"
 
-#: index.php:254
+#: index.php:275
 #, php-format
 msgid "Last updated %s:"
 msgstr "Senest opdateret %s:"
 
-#. Abbreviation for KiloByte
-#: index.php:255 index.php:256
-msgid "KB"
-msgstr "KB"
-
-#: index.php:256
+#: index.php:277
 msgid "Portable"
 msgstr "Portabel"
 
-#: index.php:257 index.php:352
+#: index.php:278 index.php:374
 msgid "Other versions"
 msgstr "Andre versioner"
 
-#: index.php:259
+#: index.php:280
 msgid "Supported Languages:"
 msgstr "Understøttede sprog:"
 
-#: index.php:305
+#: index.php:326
 msgid "System Requirements:"
 msgstr "Systemkrav:"
 
-#: index.php:306
+#: index.php:327
 msgid ""
 "Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
@@ -144,7 +140,7 @@ msgstr ""
 "Windows 7 eller senere, 32 eller 64 bit er ligegyldigt. Når det er hentet, "
 "er programmet klar til brug."
 
-#: index.php:307
+#: index.php:328
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -156,101 +152,109 @@ msgstr ""
 "oversat til forskellige sprog. Hvis du kan bruge Rufus på dit eget sprog, er"
 " det virkelig dem, du bør takke!"
 
-#: index.php:308
+#: index.php:329
 msgid "Usage"
 msgstr "Anvendelse"
 
-#: index.php:309
+#: index.php:330
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr ""
 "Hent den eksekverbare fil og kør den &ndash; ingen installation er "
 "nødvendig."
 
-#: index.php:310
+#: index.php:331
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "Den eksekverbare fil er digitalt signeret og signaturen bør angive:"
 
-#: index.php:311
+#: index.php:332
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 eller senere)"
 
-#: index.php:312
+#: index.php:333
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 eller tidligere)"
 
-#: index.php:313
+#: index.php:334
 msgid "Notes on DOS support:"
 msgstr "Noter angående DOS-understøttelse:"
 
-#: index.php:314
+#: index.php:335
 #, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system. "
-"In that case, <a %s>FreeDOS</a>, which is the default selection, is "
-"recommended over MS-DOS, as it supports more keyboard layouts."
+"In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default "
+"selection, is recommended over MS-DOS, as it supports more keyboard layouts."
 msgstr ""
 "Hvis du opretter en startbar disk med DOS og benytter et ikke-amerikansk "
 "tastatur, vil Rufus forsøge at vælge et tastaturlayout i overensstemmelse "
 "med regionsindstillingerne på dit system. I så fald anbefales <a "
-"%s>FreeDOS</a> frem for MS-DOS, da det understøtter flere tastaturlayouts."
+"target=\"_blank\" %s>FreeDOS</a> frem for MS-DOS, da det understøtter flere "
+"tastaturlayouts."
 
-#: index.php:315
+#: index.php:336
 msgid "Notes on ISO Support:"
 msgstr "Noter angående ISO-understøttelse:"
 
-#: index.php:316
+#: index.php:337
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a %s>ISO image</a> (.iso)."
+" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "Alle versioner af Rufus siden v1.1.0 tilbyder oprettelse af en startbar USB-"
-"disk fra en <a %s>ISO-fil</a> (.iso)."
+"disk fra en <a target=\"_blank\" %s>ISO-fil</a> (.iso)."
 
-#: index.php:317
+#: index.php:338
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
 "easy to do however, through the use of a CD burning application, such as the"
-" freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
+" freely available <a target=\"_blank\" %s>CDBurnerXP</a> or <a "
+"target=\"_blank\" %s>ImgBurn</a>."
 msgstr ""
 "Oprettelse af en ISO-fil fra en fysisk disk eller fra en samling filer er "
 "dog nemt, ved hjælp af et cd-brænderprogram, som de frit tilgængelige <a "
-"%s>CDBurnerXP</a> eller <a %s>ImgBurn</a>."
+"target=\"_blank\" %s>CDBurnerXP</a> eller <a target=\"_blank\" "
+"%s>ImgBurn</a>."
 
-#: index.php:319
+#: index.php:340
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Ofte stillede spørgsmål (FAQ)"
 
 #. You are encouraged to add the translation for " (in English)." after
 #. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:320
+#: index.php:341
 #, php-format
-msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
-msgstr "En Rufus-FAQ er tilgængelig <b><a %s>HER</a></b>."
+msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+msgstr "En Rufus-FAQ er tilgængelig <b><a target=\"_blank\" %s>HER</a></b>."
 
-#: index.php:321
+#: index.php:342
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a %s>issue tracker</a>. Or you can <a %s>send an e-mail</a>."
+"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
-"Benyt venligst Githubs <a %s>issue-tracker</a> for at give tilbagemeldinger,"
-" rapportere om fejl eller anmode om forbedringer. Du kan også <a %s>sende en"
-" e-mail</a>."
+"Benyt venligst Githubs <a target=\"_blank\" %s>issue-tracker</a> for at give"
+" tilbagemeldinger, rapportere om fejl eller anmode om forbedringer. Du kan "
+"også <a target=\"_blank\" %s>sende en e-mail</a>."
 
-#: index.php:323
+#: index.php:344
 msgid "License"
 msgstr "Licens"
 
-#: index.php:324
+#: index.php:345
 #, php-format
-msgid "<a %s>GNU General Public License (GPL) version 3</a> or later."
-msgstr "<a %s>GNU General Public License (GPL) version 3</a> eller senere."
+msgid ""
+"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
+"later."
+msgstr ""
+"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> eller"
+" senere."
 
-#: index.php:324
+#: index.php:345
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you"
 " respect the GPLv3 license."
@@ -258,41 +262,45 @@ msgstr ""
 "Du er velkommen til at distribuere, ændre eller endda sælge softwaren, så "
 "længe du respekterer GPLv3-licensen."
 
-#: index.php:325
+#: index.php:346
 #, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a %s>public "
-"source</a>, using a <a %s>MinGW32</a> environment."
+"Rufus is produced in a 100%% transparent manner, from its <a "
+"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
+"%s>MinGW32</a> environment."
 msgstr ""
-"Rufus er produceret på en 100 %% gennemskuelig vis fra sin <a %s>åbne "
-"kildekode</a>, ved hjælp af et <a %s>MinGW32</a>-miljø."
+"Rufus er produceret på en 100 %% gennemskuelig vis fra sin <a "
+"target=\"_blank\" %s>åbne kildekode</a>, ved hjælp af et <a "
+"target=\"_blank\" %s>MinGW32</a>-miljø."
 
 #. You are encouraged to append the translation for "(in English)" after
 #. "Changelog" as it is only available in English
-#: index.php:327
+#: index.php:348
 msgid "Changelog"
 msgstr "Programændringer (på Engelsk)"
 
-#: index.php:355
+#: index.php:377
 msgid "Source Code"
 msgstr "Kildekode"
 
 #. Abbreviation for MegaByte
-#: index.php:356
+#: index.php:276 index.php:277 index.php:378
 msgid "MB"
 msgstr "MB"
 
-#: index.php:357
+#: index.php:379
 #, php-format
-msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
-msgstr "Alternativt kan du klone <a %s>git</a>-arkivet med:"
+msgid ""
+"Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
+"using:"
+msgstr "Alternativt kan du klone <a target=\"_blank\" %s>git</a>-arkivet med:"
 
-#: index.php:359
+#: index.php:381
 #, php-format
-msgid "For more information, see the <a %s>github project</a>."
-msgstr "Se <a %s>github-projektet</a> for mere information."
+msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgstr "Se <a target=\"_blank\" %s>github-projektet</a> for mere information."
 
-#: index.php:360
+#: index.php:382
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -300,11 +308,11 @@ msgstr ""
 "Hvis du er en programudvikler, er du meget velkommen til at pille ved Rufus "
 "og indsende programrettelser."
 
-#: index.php:362
+#: index.php:384
 msgid "Donations"
 msgstr "Donationer"
 
-#: index.php:363
+#: index.php:385
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -312,7 +320,7 @@ msgstr ""
 "Siden jeg tit bliver spurgt om dette: der er <b>ingen</b> donationsknap på "
 "denne side."
 
-#: index.php:364
+#: index.php:386
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -322,18 +330,18 @@ msgstr ""
 "hjælper softwareudvikling og, hvad værre er, kan være skyld-inducerende for "
 "brugere, der vælger ikke at donere."
 
-#: index.php:367
+#: index.php:389
 #, php-format
 msgid ""
-"If you really insist, you can always make a donation to the <a %s>Free "
-"Software Foundation</a>, as they are the main reason software like Rufus is "
-"possible."
+"If you really insist, you can always make a donation to the <a "
+"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
+"reason software like Rufus is possible."
 msgstr ""
 "Hvis du virkelig insisterer, kan du altid foretage en donation til <a "
-"%s>Free Software Foundation</a>, da de er den vigtigste årsag til at "
-"software som Rufus er muligt."
+"target=\"_blank\" %s>Free Software Foundation</a>, da de er den vigtigste "
+"årsag til at software som Rufus er muligt."
 
-#: index.php:368
+#: index.php:390
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much"
@@ -343,7 +351,7 @@ msgstr ""
 "<i><u>tak</u></i> for din fortsatte støtte og din entusiasme for dette lille"
 " program: Det er meget værdsat!"
 
-#: index.php:369
+#: index.php:391
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -351,22 +359,22 @@ msgstr ""
 "Men fortsæt endelig med at bruge Rufus helt gratis uden at føle skyld over "
 "at du ikke bidrager financielt &ndash; det manglede da bare!"
 
-#: index.php:371
+#: index.php:393
 msgid "Speed comparison between Rufus and other applications"
 msgstr "Sammenligning af hastighed mellem Rufus og andre programmer"
 
-#: index.php:372
+#: index.php:394
 #, php-format
 msgid ""
 "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-"platform, with an USB 3.0 controller and a <a %s>16 GB USB 3.0 ADATA S102 "
-"flash drive</a>."
+"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
+" 3.0 ADATA S102 flash drive</a>."
 msgstr ""
 "De følgene tests blev udført på en Windows 7 x64 Core 2 duo/4 GB RAM-"
-"platform, med en USB 3.0-controller og et <a %s>16 GB USB 3.0 ADATA "
-"S102-flashdrev</a>."
+"platform, med en USB 3.0-controller og et <a target=\"_blank\" %s>16 GB USB "
+"3.0 ADATA S102-flashdrev</a>."
 
-#: index.php:397
+#: index.php:419
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Ufuldstændig liste over ISO'er, Rufus virker med"
 
@@ -375,7 +383,7 @@ msgstr "Ufuldstændig liste over ISO'er, Rufus virker med"
 #. translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
 #. Batard</a>
-#: index.php:452
+#: index.php:474
 msgid "English translation by Pete Batard"
 msgstr ""
 "Dansk oversættelse af <a "
@@ -386,13 +394,20 @@ msgstr ""
 "href=\"mailto:jesper.hertel@gmail.com?Subject=Rufus%20Homepage%20translation\">Jesper"
 " Hertel</a>"
 
-#: index.php:453
+#: index.php:475
 msgid "USB icon by"
 msgstr "USB-ikon af"
 
-#: index.php:454
+#: index.php:476
 msgid "Hosting by"
 msgstr "Hosting af"
+
+#: index.php:217
+msgid "Change language:"
+msgstr ""
+
+#~ msgid "KB"
+#~ msgstr "KB"
 
 #~ msgid "Notes on UEFI & GPT support:"
 #~ msgstr "Noter angående UEFI- & GPT-understøttelse:"

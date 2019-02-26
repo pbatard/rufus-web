@@ -20,19 +20,19 @@ msgstr ""
 "X-Generator: Poedit 2.0.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:82
+#: index.php:88
 msgid "Version"
 msgstr "Versi"
 
-#: index.php:104 index.php:234
+#: index.php:120 index.php:255
 msgid "Create bootable USB drives the easy way"
 msgstr "Membuat perangkat USB bootable dengan mudah"
 
-#: index.php:205
+#: index.php:226
 msgid "Want to improve this translation?"
 msgstr "Ingin memperbaiki terjemahan ini?"
 
-#: index.php:226
+#: index.php:247
 msgid ""
 "Placeholder for ads &mdash; Just like you, I wish this site could exist "
 "without them..."
@@ -43,11 +43,11 @@ msgstr ""
 #. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
 #. displayed then. Or you can leave the string untranslated to have the
 #. English version displayed. Please make sure to keep the .png extension.
-#: index.php:236
+#: index.php:257
 msgid "rufus_en.png"
 msgstr "rufus_id.png"
 
-#: index.php:237
+#: index.php:258
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -55,11 +55,11 @@ msgstr ""
 "Rufus adalah alat yang membantu untuk memformat dan membuat perangkat USB "
 "flash menjadi bootable, seperti flashdisk, kartu memori, dll."
 
-#: index.php:238
+#: index.php:259
 msgid "It can be especially useful for cases where:"
 msgstr "Rufus sangat berguna bagi kasus dimana:"
 
-#: index.php:240
+#: index.php:261
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -67,38 +67,39 @@ msgstr ""
 "Anda perlu membuat media instalasi USB dari ISO bootable (Windows, Linux, "
 "UEFI, dll.)"
 
-#: index.php:241
+#: index.php:262
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "Anda perlu bekerja pada sistem yang tidak memiliki OS yang terinstal"
 
-#: index.php:242
+#: index.php:263
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "Anda perlu melakukan flash BIOS atau firmware lain dari DOS"
 
-#: index.php:243
+#: index.php:264
 msgid "you want to run a low-level utility"
 msgstr "Anda ingin menjalankan utilitas tingkat-rendah"
 
-#: index.php:246
+#: index.php:267
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Meskipun ukurannya kecil, Rufus menyediakan semua yang Anda butuhkan!"
 
-#: index.php:247
+#: index.php:268
 #, php-format
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
-"%s>UNetbootin</a>, <a %s>Universal USB Installer</a> or <a %s>Windows 7 USB "
-"download tool</a>, on the creation of a Windows 7 USB installation drive "
-"from an ISO. It is also marginally faster on the creation of Linux bootable "
-"USB from ISOs."
+"target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
+"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
+" the creation of a Windows 7 USB installation drive from an ISO. It is also "
+"marginally faster on the creation of Linux bootable USB from ISOs."
 msgstr ""
 "Satu lagi, Rufus sangatlah <b>cepat</b>. Buktinya, Rufus kurang lebih dua "
-"kali lebih cepat dibanding <a %s>UNetbootin</a>, <a %s>Universal USB "
-"Installer</a> atau <a %s>Windows 7 USB download tool</a>, dalam membuat "
-"media instalasi USB Windows 7 dari sebuah ISO. Rufus juga sedikit lebih "
-"cepat dalam membuat USB bootable Linux dari berkas ISO."
+"kali lebih cepat dibanding <a target=\"_blank\" %s>UNetbootin</a>, <a "
+"target=\"_blank\" %s>Universal USB Installer</a> atau <a target=\"_blank\" "
+"%s>Windows 7 USB download tool</a>, dalam membuat media instalasi USB "
+"Windows 7 dari sebuah ISO. Rufus juga sedikit lebih cepat dalam membuat USB "
+"bootable Linux dari berkas ISO."
 
-#: index.php:248
+#: index.php:269
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
 " of this page."
@@ -106,37 +107,32 @@ msgstr ""
 "Daftar beberapa ISO yang didukung oleh Rufus juga disediakan di bawah "
 "halaman ini."
 
-#: index.php:253
+#: index.php:274
 msgid "Download"
 msgstr "Unduh"
 
-#: index.php:254
+#: index.php:275
 #, php-format
 msgid "Last updated %s:"
 msgstr "Terakhir diperbarui %s:"
 
-#. Abbreviation for KiloByte
-#: index.php:255 index.php:256
-msgid "KB"
-msgstr "KB"
-
-#: index.php:256
+#: index.php:277
 msgid "Portable"
 msgstr "Portable"
 
-#: index.php:257 index.php:352
+#: index.php:278 index.php:374
 msgid "Other versions"
 msgstr "Versi lain"
 
-#: index.php:259
+#: index.php:280
 msgid "Supported Languages:"
 msgstr "Bahasa yang didukung:"
 
-#: index.php:305
+#: index.php:326
 msgid "System Requirements:"
 msgstr "Persyaratan Sistem:"
 
-#: index.php:306
+#: index.php:327
 msgid ""
 "Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
@@ -144,7 +140,7 @@ msgstr ""
 "Windows 7 atau setelahnya, 32 atau 64 bit tidak masalah. Setelah diunduh, "
 "aplikasi ini siap digunakan."
 
-#: index.php:307
+#: index.php:328
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -156,102 +152,109 @@ msgstr ""
 " dalam berbagai bahasa. Jika Anda dapat menggunakan Rufus dalam bahasa Anda,"
 " berterima kasihlah kepada mereka!"
 
-#: index.php:308
+#: index.php:329
 msgid "Usage"
 msgstr "Penggunaan"
 
-#: index.php:309
+#: index.php:330
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "Unduh berkas .exe dan jalankan &ndash; instalasi tidak diperlukan."
 
-#: index.php:310
+#: index.php:331
 msgid "The executable is digitally signed and the signature should state:"
 msgstr ""
 "Berkas .exe telah ditandatangai secara digital dan tandatangan harus "
 "menyatakan:"
 
-#: index.php:311
+#: index.php:332
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 atau setelahnya)"
 
-#: index.php:312
+#: index.php:333
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 atau sebelumnya)"
 
-#: index.php:313
+#: index.php:334
 msgid "Notes on DOS support:"
 msgstr "Catatan untuk dukungan DOS:"
 
-#: index.php:314
+#: index.php:335
 #, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system. "
-"In that case, <a %s>FreeDOS</a>, which is the default selection, is "
-"recommended over MS-DOS, as it supports more keyboard layouts."
+"In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default "
+"selection, is recommended over MS-DOS, as it supports more keyboard layouts."
 msgstr ""
 "Jika Anda membuat perangkat bootable DOS dan menggunakan keyboard non-US, "
 "Rufus akan mencoba untuk memilih tata letak keyboard sesuai dengan locale "
-"sistem Anda. Dalam hal ini, <a %s>FreeDOS</a> yang merupakan pilihan standar"
-" dan lebih direkomendasikan daripada MS-DOS, karena mendukung lebih banyak "
-"tata letak keyboard."
+"sistem Anda. Dalam hal ini, <a target=\"_blank\" %s>FreeDOS</a> yang "
+"merupakan pilihan standar dan lebih direkomendasikan daripada MS-DOS, karena"
+" mendukung lebih banyak tata letak keyboard."
 
-#: index.php:315
+#: index.php:336
 msgid "Notes on ISO Support:"
 msgstr "Catatan pada dukungan ISO:"
 
-#: index.php:316
+#: index.php:337
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a %s>ISO image</a> (.iso)."
+" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "Semua versi Rufus sejak versi v1.1.0 memungkinkan pembuatan USB bootable "
-"dari sebuah <a %s>ISO image</a> (.iso)."
+"dari sebuah <a target=\"_blank\" %s>ISO image</a> (.iso)."
 
-#: index.php:317
+#: index.php:338
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
 "easy to do however, through the use of a CD burning application, such as the"
-" freely available <a %s>CDBurnerXP</a> or <a %s>ImgBurn</a>."
+" freely available <a target=\"_blank\" %s>CDBurnerXP</a> or <a "
+"target=\"_blank\" %s>ImgBurn</a>."
 msgstr ""
 "Membuat ISO image dari cakram fisik atau dari kumpulan berkas sangat mudah "
 "dilakukan, namun memerlukan aplikasi pembakar CD, misalnya yang tersedia "
-"secara gratis: <a %s>CDBurnerXP</a> atau <a %s>ImgBurn</a>."
+"secara gratis: <a target=\"_blank\" %s>CDBurnerXP</a> atau <a "
+"target=\"_blank\" %s>ImgBurn</a>."
 
-#: index.php:319
+#: index.php:340
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Pertanyaan yang sering diajukan (FAQ)"
 
 #. You are encouraged to add the translation for " (in English)." after
 #. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:320
+#: index.php:341
 #, php-format
-msgid "A Rufus FAQ is available <b><a %s>HERE</a></b>."
-msgstr "FAQ Rufus tersedia <b><a %s>DISINI</a></b>."
+msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+msgstr "FAQ Rufus tersedia <b><a target=\"_blank\" %s>DISINI</a></b>."
 
-#: index.php:321
+#: index.php:342
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a %s>issue tracker</a>. Or you can <a %s>send an e-mail</a>."
+"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Untuk menyediakan umpan balik, laporan bug atau permintaan perbaikan, "
-"silakan gunakan <a %s>pelacak masalah</a> di github. Atau Anda dapat <a "
-"%s>mengirimkan e-mail</a>."
+"silakan gunakan <a target=\"_blank\" %s>pelacak masalah</a> di github. Atau "
+"Anda dapat <a target=\"_blank\" %s>mengirimkan e-mail</a>."
 
-#: index.php:323
+#: index.php:344
 msgid "License"
 msgstr "Lisensi"
 
-#: index.php:324
+#: index.php:345
 #, php-format
-msgid "<a %s>GNU General Public License (GPL) version 3</a> or later."
-msgstr "<a %s>Lisensi Publik Umum GNU (GPL) versi 3</a> atau yang lebih baru."
+msgid ""
+"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
+"later."
+msgstr ""
+"<a target=\"_blank\" %s>Lisensi Publik Umum GNU (GPL) versi 3</a> atau yang "
+"lebih baru."
 
-#: index.php:324
+#: index.php:345
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you"
 " respect the GPLv3 license."
@@ -259,43 +262,48 @@ msgstr ""
 "Anda bebas mendistrubusikan, memodifikasi atau bahkan menjual software ini, "
 "selama Anda menghormati lisensi GPLv3."
 
-#: index.php:325
+#: index.php:346
 #, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a %s>public "
-"source</a>, using a <a %s>MinGW32</a> environment."
+"Rufus is produced in a 100%% transparent manner, from its <a "
+"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
+"%s>MinGW32</a> environment."
 msgstr ""
-"Rufus diproduksi secara transparan 100%% dari <a %s>sumber publik</a>, "
-"menggunakan lingkungan <a %s>MingW32</a>."
+"Rufus diproduksi secara transparan 100%% dari <a target=\"_blank\" %s>sumber"
+" publik</a>, menggunakan lingkungan <a target=\"_blank\" %s>MingW32</a>."
 
 #. You are encouraged to append the translation for "(in English)" after
 #. "Changelog" as it is only available in English
-#: index.php:327
+#: index.php:348
 msgid "Changelog"
 msgstr "Catatan perubahan"
 
-#: index.php:355
+#: index.php:377
 msgid "Source Code"
 msgstr "Kode Sumber"
 
 #. Abbreviation for MegaByte
-#: index.php:356
+#: index.php:276 index.php:277 index.php:378
 msgid "MB"
 msgstr "MB"
 
-#: index.php:357
+#: index.php:379
 #, php-format
-msgid "Alternatively, you can clone the <a %s>git</a> repository using:"
+msgid ""
+"Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
+"using:"
 msgstr ""
-"Alternatif lain, Anda dapat melakukan clone repositori <a %s>git</a> ini "
-"menggunakan:"
+"Alternatif lain, Anda dapat melakukan clone repositori <a target=\"_blank\" "
+"%s>git</a> ini menggunakan:"
 
-#: index.php:359
+#: index.php:381
 #, php-format
-msgid "For more information, see the <a %s>github project</a>."
-msgstr "Untuk informasi lebih lanjut, lihat <a %s>proyek github</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgstr ""
+"Untuk informasi lebih lanjut, lihat <a target=\"_blank\" %s>proyek "
+"github</a>."
 
-#: index.php:360
+#: index.php:382
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -303,11 +311,11 @@ msgstr ""
 "Jika Anda seorang pengembang, Anda sangat disarankan untuk memperbaiki Rufus"
 " dan mengirimkan patch."
 
-#: index.php:362
+#: index.php:384
 msgid "Donations"
 msgstr "Donasi"
 
-#: index.php:363
+#: index.php:385
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -315,7 +323,7 @@ msgstr ""
 "Karena saya sering ditanya tentang hal ini, saya katakan bahwa <b>tidak</b> "
 "ada tombol donasi pada halaman ini."
 
-#: index.php:364
+#: index.php:386
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -325,18 +333,18 @@ msgstr ""
 " membantu pengembangan software dan lebih buruknya dapat memberi rasa "
 "bersalah bagi pengguna yang memilih tidak memberi donasi."
 
-#: index.php:367
+#: index.php:389
 #, php-format
 msgid ""
-"If you really insist, you can always make a donation to the <a %s>Free "
-"Software Foundation</a>, as they are the main reason software like Rufus is "
-"possible."
+"If you really insist, you can always make a donation to the <a "
+"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
+"reason software like Rufus is possible."
 msgstr ""
 "Jika Anda benar-benar bersikeras, Anda dapat memberikan donasi kepada <a "
-"%s>Free Software Foundation</a>, karena mereka-lah alasan utama software "
-"seperti Rufus ada."
+"target=\"_blank\" %s>Free Software Foundation</a>, karena mereka-lah alasan "
+"utama software seperti Rufus ada."
 
-#: index.php:368
+#: index.php:390
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much"
@@ -346,7 +354,7 @@ msgstr ""
 "<i><u>terima kasih</u></i> untuk dukungan dan antusias Anda terhadap program"
 " kecil ini: itu sangat saya hargai!"
 
-#: index.php:369
+#: index.php:391
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -355,22 +363,22 @@ msgstr ""
 "bersalah, walaupun Anda tidak berkontribusi secara finansial &ndash; Anda "
 "seharusnya jangan merasa demikian!"
 
-#: index.php:371
+#: index.php:393
 msgid "Speed comparison between Rufus and other applications"
 msgstr "Perbandingan kecepatan antara Rufus dan aplikasi lain"
 
-#: index.php:372
+#: index.php:394
 #, php-format
 msgid ""
 "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-"platform, with an USB 3.0 controller and a <a %s>16 GB USB 3.0 ADATA S102 "
-"flash drive</a>."
+"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
+" 3.0 ADATA S102 flash drive</a>."
 msgstr ""
 "Berikut ini ujicoba pada platform Windows 7 x64 Core 2 duo/4 GB RAM, dengan "
-"USB 3.0 controller dan sebuah <a %s>16 GB USB 3.0 ADATA S102 flash "
-"drive</a>."
+"USB 3.0 controller dan sebuah <a target=\"_blank\" %s>16 GB USB 3.0 ADATA "
+"S102 flash drive</a>."
 
-#: index.php:397
+#: index.php:419
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Daftar beberapa ISO yang diketahui didukung oleh Rufus"
 
@@ -379,7 +387,7 @@ msgstr "Daftar beberapa ISO yang diketahui didukung oleh Rufus"
 #. translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
 #. Batard</a>
-#: index.php:452
+#: index.php:474
 msgid "English translation by Pete Batard"
 msgstr ""
 "Terjamahan Bahasa Indonesia oleh <a "
@@ -388,13 +396,20 @@ msgstr ""
 "href=\"mailto:aydanjr1000@gmail.com?Subject=Terjemahan%20Halaman%20Depan%20Rufus\">Aydan"
 " J. Rancakbudi</a>"
 
-#: index.php:453
+#: index.php:475
 msgid "USB icon by"
 msgstr "Ikon USB oleh"
 
-#: index.php:454
+#: index.php:476
 msgid "Hosting by"
 msgstr "Hosting oleh"
+
+#: index.php:217
+msgid "Change language:"
+msgstr ""
+
+#~ msgid "KB"
+#~ msgstr "KB"
 
 #~ msgid "Notes on UEFI & GPT support:"
 #~ msgstr "Catatan pada dukungan UEFI & GPT:"

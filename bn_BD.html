@@ -253,9 +253,9 @@
 		এই পৃষ্ঠার নীচের অংশে Rufus সমর্থিত ISO গুলির একটি অসম্পূর্ণ তালিকাও দেয়া আছে। <a href="#ref2"><sup>(2)</sup></a></p>
 				<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">ডাউনলোড</span></h2>
-			<p><b>সর্বশেষ আপডেট হয়েছে 2018.12.05:</b></p>
-			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.4/rufus-3.4.exe">Rufus 3.4</a></b></span> <span dir="ltr">(1 মেগাবাইট)</span></li>
-			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.4/rufus-3.4p.exe">Rufus 3.4 বহনযোগ্য</a> <span dir="ltr">(1 মেগাবাইট)</span></li>
+			<p><b>সর্বশেষ আপডেট হয়েছে 2019.03.28:</b></p>
+			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe">Rufus 3.5</a></b></span> <span dir="ltr">(1 মেগাবাইট)</span></li>
+			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5p.exe">Rufus 3.5 বহনযোগ্য</a> <span dir="ltr">(1 মেগাবাইট)</span></li>
 			<li><a href="/downloads/">অন্য সংস্করণ</a></li>
 			</ul></p>
 		<h4>সমর্থিত ভাষা:</h4>
@@ -327,22 +327,23 @@
 		<a name="changelog"></a>
 		<h2>পরিবর্তন তালিকা</h2>
 		<ul dir="ltr">
-			<li><b>সংস্করণ 3.4</b> (2018.12.05)<ul>
-				<li><span dir="ltr">Set the default image selection directory to <code>Downloads\</code> instead of <code>My Documents\</code></span></li>
-				<li><span dir="ltr">Add ARM/ARM64 automatic update support</span></li>
-				<li><span dir="ltr">Improve <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> compatibility</span></li>
-				<li><span dir="ltr">Improve access issues by using <a target="_blank" href="https://docs.microsoft.com/en-us/windows/desktop/vds/about-vds">VDS</a> to delete all partitions</span></li>
-				<li><span dir="ltr">Update the <code>.appx</code> to include all architectures as well as request elevation</span></li>
-				<li><span dir="ltr">Fix broken detection of some EFI based images</span></li>
-				<li><span dir="ltr">Fix broken update check due to server switch</span></li>
-				<li><span dir="ltr">UI and accessibility fixes and improvements</span></li>
+			<li><b>সংস্করণ 3.5</b> (2019.03.28)<ul>
+				<li><span dir="ltr">Add a <a href="https://github.com/pbatard/Fido">feature</a> to download official retail Windows 8.1 or Windows 10 ISOs<br/>(Note: '<i>Check for updates</i>' must be enabled for the above to be active)</span></li>
+				<li><span dir="ltr">Add Windows To Go support for MCT generated Windows ISOs</span></li>
+				<li><span dir="ltr">Add a notice about the <code>WppRecorder.sys</code> <a href="https://github.com/pbatard/rufus/wiki/FAQ#BSODs_with_Windows_To_Go_drives_created_from_Windows_10_1809_ISOs">Microsoft bug</a> for Windows 10 1809 ISOs</span></li>
+				<li><span dir="ltr">Add a notice about trying to format a drive larger than 2 TB in MBR mode</span></li>
+				<li><span dir="ltr">Add a notice about Legacy boot when trying to boot UEFI-only media in Legacy mode</span></li>
+				<li><span dir="ltr">Report the full PID and command line of potentially blocking processes in the log</span></li>
+				<li><span dir="ltr">Fix a potential silent abort when the drive is in use</span></li>
+				<li><span dir="ltr">Fix '<i>Quick Format</i>' option always being activated</span></li>
+				<li><span dir="ltr">Fix potential change of the selected file system after an ISO has been loaded</span></li>
+				<li><span dir="ltr">Fix Win7 x64 EFI bootloader not being extracted in dual BIOS+UEFI mode (<div class="kbd">Alt</div>-<div class="kbd">E</div>)</span></li>
 			</ul></li>
-						<p><font color="#ffa520"><b><span dir="ltr">NOTE: THIS VERSION IS <u>NOT</u> COMPATIBLE WITH <i>WINDOWS XP</i> OR <i>WINDOWS VISTA</i>.</span></b></font></p>
-			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">অন্য সংস্করণ</a></b></li>
+						<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">অন্য সংস্করণ</a></b></li>
 		</ul>
 		
 		<h2>উৎস কোড</h2>
-			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.4.zip">Rufus 3.4</a> <span dir="ltr">(2.8 মেগাবাইট)</span></li>
+			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.5.zip">Rufus 3.5</a> <span dir="ltr">(2.9 মেগাবাইট)</span></li>
 			<li>অন্যথ্যায়, আপনি চাইলে <a target="_blank" href="http://git-scm.com">গিট</a> রিপোজটোরি ব্যবহার করে এটাকে ক্লোন করতে পারেন:			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
 			<li>বিস্তারিত তথ্যের জন্য <a target="_blank" href="https://github.com/pbatard/rufus">গিটহাব প্রজেক্ট</a> দেখুন।</li></ul>
 			আপনি যদি ডেভেলপার হোন, আপনাকে অধিক উৎসাহ দেয়া হচ্ছে Rufus এর সাথে সংশোধনে অংশ নেয়া ও প্যাচ জমা দেয়ায়।</p>

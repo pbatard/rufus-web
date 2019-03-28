@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.4";
+$latest_version = "3.5";
 $previous_version = "3.2";
-$latest_date = "2018.12.05";
+$latest_date = "2019.03.28";
 $previous_date = "2018.09.11";
-$lang1 = array('', 'Vietnamese', 'Vietnam');
-$lang2 = array('', 'Malay', 'Malaysia');
+$lang1 = array('nb', 'Norwegian', 'Norway');
+$lang2 = array('hr', 'Croatian', 'Croatia');
 $bugfix = false;
 $exe_size = 1.0;
-$src_size = 2.8;
+$src_size = 2.9;
 $langs = array(
   'en_IE' => array('en', 'English (International)'),
   'sq_AL' => array('sq', 'Albanian (Shqip)'),
@@ -267,7 +267,7 @@ case "ur":
 		<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
 		<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
 		<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
-		<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/" . $lang2[2] . ".png\" srcset=\"pics/" . $lang2[2] . ".png 1x, pics/" . $lang2[2] . "-64px 2x\" alt=\"\"/>" : "") . "</p>
+		<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/" . $lang2[2] . ".png\" srcset=\"pics/" . $lang2[2] . ".png 1x, pics/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
 		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L9-L83\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
 		<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#Editing_an_existing_translation\">here</a>.</p>";?>
 		<a name="download"></a>
@@ -348,14 +348,16 @@ case "ur":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Set the default image selection directory to <code>Downloads\</code> instead of <code>My Documents\</code></span></li>
-				<li><span dir="ltr">Add ARM/ARM64 automatic update support</span></li>
-				<li><span dir="ltr">Improve <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> compatibility</span></li>
-				<li><span dir="ltr">Improve access issues by using <a target="_blank" href="https://docs.microsoft.com/en-us/windows/desktop/vds/about-vds">VDS</a> to delete all partitions</span></li>
-				<li><span dir="ltr">Update the <code>.appx</code> to include all architectures as well as request elevation</span></li>
-				<li><span dir="ltr">Fix broken detection of some EFI based images</span></li>
-				<li><span dir="ltr">Fix broken update check due to server switch</span></li>
-				<li><span dir="ltr">UI and accessibility fixes and improvements</span></li>
+				<li><span dir="ltr">Add a <a href="https://github.com/pbatard/Fido">feature</a> to download official retail Windows 8.1 or Windows 10 ISOs<br/>(Note: '<i>Check for updates</i>' must be enabled for the above to be active)</span></li>
+				<li><span dir="ltr">Add Windows To Go support for MCT generated Windows ISOs</span></li>
+				<li><span dir="ltr">Add a notice about the <code>WppRecorder.sys</code> <a href="https://github.com/pbatard/rufus/wiki/FAQ#BSODs_with_Windows_To_Go_drives_created_from_Windows_10_1809_ISOs">Microsoft bug</a> for Windows 10 1809 ISOs</span></li>
+				<li><span dir="ltr">Add a notice about trying to format a drive larger than 2 TB in MBR mode</span></li>
+				<li><span dir="ltr">Add a notice about Legacy boot when trying to boot UEFI-only media in Legacy mode</span></li>
+				<li><span dir="ltr">Report the full PID and command line of potentially blocking processes in the log</span></li>
+				<li><span dir="ltr">Fix a potential silent abort when the drive is in use</span></li>
+				<li><span dir="ltr">Fix '<i>Quick Format</i>' option always being activated</span></li>
+				<li><span dir="ltr">Fix potential change of the selected file system after an ISO has been loaded</span></li>
+				<li><span dir="ltr">Fix Win7 x64 EFI bootloader not being extracted in dual BIOS+UEFI mode (<div class="kbd">Alt</div>-<div class="kbd">E</div>)</span></li>
 			</ul></li>
 			<? if($bugfix):?>
 			<br />
@@ -370,7 +372,6 @@ case "ur":
 				<li><span dir="ltr">Fix an issue where FAT32 could still be selected for ISOs containing a >4GB file</span></li>
 			</ul></li>
 			<? endif;?>
-			<p><font color="#ffa520"><b><span dir="ltr">NOTE: THIS VERSION IS <u>NOT</u> COMPATIBLE WITH <i>WINDOWS XP</i> OR <i>WINDOWS VISTA</i>.</span></b></font></p>
 			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt"><?= _("Other versions");?></a></b></li>
 		</ul>
 		

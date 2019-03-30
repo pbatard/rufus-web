@@ -4,7 +4,7 @@ $latest_version = "3.5";
 $previous_version = "3.2";
 $latest_date = "2019.03.28";
 $previous_date = "2018.09.11";
-$lang1 = array('bg', 'Bulgarian', 'Bulgaria');
+$lang1 = array('az', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('hr', 'Croatian', 'Croatia');
 $bugfix = false;
 $exe_size = 1.0;
@@ -168,7 +168,7 @@ case "ur":
 	padding:3px;
 	vertical-align:top;
 	}
-	table.reference td 
+	table.reference td
 	{
 	border:1px solid #c3c3c3;
 	padding:3px;
@@ -268,7 +268,7 @@ case "ur":
 		<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
 		<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
 		<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/" . $lang2[2] . ".png\" srcset=\"pics/" . $lang2[2] . ".png 1x, pics/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
-		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L9-L83\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
+		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L70\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
 		<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#Editing_an_existing_translation\">here</a>.</p>";?>
 		<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
@@ -374,7 +374,7 @@ case "ur":
 			<? endif;?>
 			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt"><?= _("Other versions");?></a></b></li>
 		</ul>
-		
+
 		<h2><?= _("Source Code");?></h2>
 			<p><ul><li><?= /* Abbreviation for MegaByte */ "<a target=\"_blank\" href=\"https://github.com/pbatard/rufus/archive/v" . $latest_version . ".zip\">" . $app_name . "</a> <span dir=\"" . $dir . "\">(" . $src_size . " " . _("MB") . ")";?></span></li>
 			<li><? printf(_("Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"), "href=\"http://git-scm.com\"");?>
@@ -389,7 +389,7 @@ case "ur":
 			<p>Also, unless you are <a target=\"_blank\" href=\"http://winhelp2002.mvps.org/hosts.htm\">blocking them</a> (hint, hint), you'll notice that there are ads on this page, which I consider sufficient revenue enough.</p>
 			<p>Finally the fact that I have the freedom to develop <a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Free_software\">Free Software</a> in my spare time should indicate that I'm well-off enough, and therefore that you should direct your generosity towards people who need it a lot more than I do. "; printf(_("If you really insist, you can always make a donation to the <a target=\"_blank\" %s>Free Software Foundation</a>, as they are the main reason software like Rufus is possible."), "href=\"http://www.fsf.org/\"");?></p>
 			<p><?= _("At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm about this little program: it is much appreciated!");?></p>
-			<p><?= _("But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!");?></p> 
+			<p><?= _("But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!");?></p>
 		<a name="ref1">&nbsp;</a>
 		<h2>(1) <?= _("Speed comparison between Rufus and other applications");?></h2>
 		<p><? printf(_("The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB 3.0 ADATA S102 flash drive</a>."), "href=\"http://www.adata-group.com/index.php?action=product_feature&cid=1&piid=145&lan=en\"");?></p>
@@ -426,7 +426,7 @@ case "ur":
 			<td><a target="_blank" href="http://www.damnsmalllinux.org/">Damn&nbsp;Small&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a target="_blank" href="https://www.debian.org/">Debian</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a target="_blank" href="http://fedoraproject.org/">Fedora</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.freedos.org/">FreeDOS</a></td><td><?=$comma;?>&nbsp;</td> 
+			<td><a target="_blank" href="http://www.freedos.org/">FreeDOS</a></td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><a target="_blank" href="http://www.freenas.org/">FreeNAS</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a target="_blank" href="http://www.gentoo.org/">Gentoo</a></td><td><?=$comma;?>&nbsp;</td>

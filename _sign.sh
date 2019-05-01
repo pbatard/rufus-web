@@ -25,8 +25,8 @@ echo
 # Confirm that the pass phrase is valid by trying to sign a dummy file
 openssl dgst -sha256 -sign $PRIVATE_KEY -passin pass:$PASSWORD $PUBLIC_KEY >/dev/null 2>&1 || { echo Invalid pass phrase; exit 1; }
 
-find ~/public_html -maxdepth 1 -name "*.ver" | while read FILE; do sign_file; done
-find ~/public_html/downloads -name "*.exe" -type f | while read FILE; do sign_file; done
-find ~/public_html/files -not -name "*.txt" -not -name "*.sh" -not -name "*.sig" -not -name "*pre*" -type f | while read FILE; do sign_file; done
+find ./ -maxdepth 1 -name "*.ver" | while read FILE; do sign_file; done
+find ./downloads -name "*.exe" -type f | while read FILE; do sign_file; done
+find ./files -not -name "*.txt" -not -name "*.sh" -not -name "*.sig" -not -name "*pre*" -type f | while read FILE; do sign_file; done
 # Clear the PASSWORD variable just in case
 PASSWORD=`head -c 50 /dev/random | base64`

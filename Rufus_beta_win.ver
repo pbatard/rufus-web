@@ -1,21 +1,24 @@
-version = 3.5.1488
+version = 3.6.1548
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.5_BETA2/rufus-3.5_BETA2.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.6_BETA/rufus-3.6_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 {\*\generator Riched20 6.3.9600}\viewkind4\uc1
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.5 BETA 2 (2019.03.23)\fs10\b0\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.6 BETA (2019.07.08)\fs10\b0\par
 \fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add a feature to download official retail Windows 8.1 or Windows 10 ISOs  (Note: Check for updates must be enabled for this feature to be active)\par
-{\pntext\f2\'B7\tab}Add Windows To Go support for MCT generated Windows ISOs\par
-{\pntext\f2\'B7\tab}Add a notice about the 'WppRecorder.sys' Microsoft bug for Windows 10 1809 ISOs\par
-{\pntext\f2\'B7\tab}Add a notice about trying to format a drive larger than 2 TB in MBR mode\par
-{\pntext\f2\'B7\tab}Add a notice about Legacy boot when trying to boot UEFI-only media in Legacy mode\par
-{\pntext\f2\'B7\tab}Report the full PID and command line of potentially blocking processes in the log\par
-{\pntext\f2\'B7\tab}Fix a potential silent abort when the drive is in use\par
-{\pntext\f2\'B7\tab}Fix 'Quick Format' option always being activated\par
-{\pntext\f2\'B7\tab}Fix potential change of the selected file system after an ISO has been loaded\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add support for persistent partitions [EXPERIMENTAL]  (Note: The above won't work with Ubuntu until Ubuntu bug #1489855 is fixed)\par
+{\pntext\f2\'B7\tab}Add a mode to use VDS when partitioning/formatting (Alt-V) [EXPERIMENTAL]\par
+{\pntext\f2\'B7\tab}Add full extraction support for efi.img (Solus)\par
+{\pntext\f2\'B7\tab}Fix listing of potentially blocking processes\par
+{\pntext\f2\'B7\tab}Fix NTFS not being selectable when using Grub4DOS\par
+{\pntext\f2\'B7\tab}Fix download script not being launched when the user name contains a space\par
+{\pntext\f2\'B7\tab}Fix translated messages potentially being truncated (e.g. Thai)\par
+{\pntext\f2\'B7\tab}Fix progress bar report for screen readers (Accessibility issue)\par
+{\pntext\f2\'B7\tab}Fix a regression where Windows format prompts would not be suppressed\par
+{\pntext\f2\'B7\tab}Improve(?) Windows To Go support by following Microsoft's recommended partition order\par
+{\pntext\f2\'B7\tab}Disable ISO mode when Manjaro ISOHybrids are being used\par
+{\pntext\f2\'B7\tab}Update embedded GRUB to version 2.04\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24\IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

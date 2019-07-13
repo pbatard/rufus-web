@@ -279,15 +279,14 @@ case "ur":
 			</ul></p>
 		<h4><?= _("Supported Languages:");?></h4>
 		<p><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><i>Azərbaycanca</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Bahasa Indonesia</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Bahasa Malaysia</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Български</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Čeština</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Dansk</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Deutsch</i></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>Ελληνικά</i></td><td><?=$comma;?>&nbsp;</td>
+		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>English</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Español</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Français</i></td><td><?=$comma;?>&nbsp;</td>
@@ -297,8 +296,8 @@ case "ur":
 			<td><i>Lietuvių</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Magyar</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Nederlands</i></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>Norsk</i></td><td><?=$comma;?>&nbsp;</td>
+		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>Polski</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Português</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Português do Brasil</i></td><td><?=$comma;?>&nbsp;</td>

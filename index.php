@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.5";
+$latest_version = "3.6";
 $previous_version = "3.2";
-$latest_date = "2019.03.28";
+$latest_date = "2019.07.18";
 $previous_date = "2018.09.11";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
 $bugfix = false;
-$exe_size = 1.0;
-$src_size = 2.9;
+$exe_size = 1.1;
+$src_size = 3.2;
 $langs = array(
   'en_IE' => array('en', 'English (International)'),
   'sq_AL' => array('sq', 'Albanian (Shqip)'),
@@ -347,16 +347,19 @@ case "ur":
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Add a <a href="https://github.com/pbatard/Fido">feature</a> to download official retail Windows 8.1 or Windows 10 ISOs<br/>(Note: '<i>Check for updates</i>' must be enabled for the above to be active)</span></li>
-				<li><span dir="ltr">Add Windows To Go support for MCT generated Windows ISOs</span></li>
-				<li><span dir="ltr">Add a notice about the <code>WppRecorder.sys</code> <a href="https://github.com/pbatard/rufus/wiki/FAQ#BSODs_with_Windows_To_Go_drives_created_from_Windows_10_1809_ISOs">Microsoft bug</a> for Windows 10 1809 ISOs</span></li>
-				<li><span dir="ltr">Add a notice about trying to format a drive larger than 2 TB in MBR mode</span></li>
-				<li><span dir="ltr">Add a notice about Legacy boot when trying to boot UEFI-only media in Legacy mode</span></li>
-				<li><span dir="ltr">Report the full PID and command line of potentially blocking processes in the log</span></li>
-				<li><span dir="ltr">Fix a potential silent abort when the drive is in use</span></li>
-				<li><span dir="ltr">Fix '<i>Quick Format</i>' option always being activated</span></li>
-				<li><span dir="ltr">Fix potential change of the selected file system after an ISO has been loaded</span></li>
-				<li><span dir="ltr">Fix Win7 x64 EFI bootloader not being extracted in dual BIOS+UEFI mode (<div class="kbd">Alt</div>-<div class="kbd">E</div>)</span></li>
+				<li><span dir="ltr">Add support for persistent partitions <b>[EXPERIMENTAL]</b><br/>(Note: The above won't work with Ubuntu until <a href="https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1489855">Ubuntu bug #1489855</a> is properly fixed)</span></li>
+				<li><span dir="ltr">Add a mode to use <a href="https://docs.microsoft.com/en-us/windows/win32/vds/about-vds">VDS</a> when partitioning/formatting (<div class="kbd">Alt</div>-<div class="kbd">V</div>) <b>[EXPERIMENTAL]</b></span></li>
+				<li><span dir="ltr">Add full extraction support for <code>efi.img</code> (Solus)</span></li>
+				<li><span dir="ltr">Fix listing of potentially blocking processes</span></li>
+				<li><span dir="ltr">Fix NTFS not being selectable when using Grub4DOS</span></li>
+				<li><span dir="ltr">Fix download script not being launched when the user name contains a space</span></li>
+				<li><span dir="ltr">Fix translated messages potentially being truncated (e.g. Thai)</span></li>
+				<li><span dir="ltr">Fix progress bar report for screen readers (Accessibility issue)</span></li>
+				<li><span dir="ltr">Fix a regression where Windows format prompts would not be suppressed</span></li>
+				<li><span dir="ltr">Improve(?) Windows To Go support by following Microsoft's recommended partition order</span></li>
+				<li><span dir="ltr">Don't enumerate <a href="https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849">Windows Sandbox</a> VHDs</span></li>
+				<li><span dir="ltr">Disable ISO mode when Manjaro ISOHybrids are being used</span></li>
+				<li><span dir="ltr">Update embedded GRUB to version 2.04</span></li>
 			</ul></li>
 			<? if($bugfix):?>
 			<br />

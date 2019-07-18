@@ -253,9 +253,9 @@
 		Rufus는 이 페이지 하단 목록에 있는 ISO파일들과 완벽하게 호환이 됩니다. <a href="#ref2"><sup>(2)</sup></a></p>
 				<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">다운로드</span></h2>
-			<p><b>마지막으로 갱신된 일자 2019.03.28:</b></p>
-			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe">Rufus 3.5</a></b></span> <span dir="ltr">(1 MB)</span></li>
-			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5p.exe">Rufus 3.5 Portable</a> <span dir="ltr">(1 MB)</span></li>
+			<p><b>마지막으로 갱신된 일자 2019.07.18:</b></p>
+			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.6/rufus-3.6.exe">Rufus 3.6</a></b></span> <span dir="ltr">(1.1 MB)</span></li>
+			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.6/rufus-3.6p.exe">Rufus 3.6 Portable</a> <span dir="ltr">(1.1 MB)</span></li>
 			<li><a href="/downloads/">다른 버전</a></li>
 			</ul></p>
 		<h4>지원되는 언어:</h4>
@@ -326,23 +326,26 @@
 		<a name="changelog"></a>
 		<h2>업데이트 사항 (영문)</h2>
 		<ul dir="ltr">
-			<li><b>버전 3.5</b> (2019.03.28)<ul>
-				<li><span dir="ltr">Add a <a href="https://github.com/pbatard/Fido">feature</a> to download official retail Windows 8.1 or Windows 10 ISOs<br/>(Note: '<i>Check for updates</i>' must be enabled for the above to be active)</span></li>
-				<li><span dir="ltr">Add Windows To Go support for MCT generated Windows ISOs</span></li>
-				<li><span dir="ltr">Add a notice about the <code>WppRecorder.sys</code> <a href="https://github.com/pbatard/rufus/wiki/FAQ#BSODs_with_Windows_To_Go_drives_created_from_Windows_10_1809_ISOs">Microsoft bug</a> for Windows 10 1809 ISOs</span></li>
-				<li><span dir="ltr">Add a notice about trying to format a drive larger than 2 TB in MBR mode</span></li>
-				<li><span dir="ltr">Add a notice about Legacy boot when trying to boot UEFI-only media in Legacy mode</span></li>
-				<li><span dir="ltr">Report the full PID and command line of potentially blocking processes in the log</span></li>
-				<li><span dir="ltr">Fix a potential silent abort when the drive is in use</span></li>
-				<li><span dir="ltr">Fix '<i>Quick Format</i>' option always being activated</span></li>
-				<li><span dir="ltr">Fix potential change of the selected file system after an ISO has been loaded</span></li>
-				<li><span dir="ltr">Fix Win7 x64 EFI bootloader not being extracted in dual BIOS+UEFI mode (<div class="kbd">Alt</div>-<div class="kbd">E</div>)</span></li>
+			<li><b>버전 3.6</b> (2019.07.18)<ul>
+				<li><span dir="ltr">Add support for persistent partitions <b>[EXPERIMENTAL]</b><br/>(Note: The above won't work with Ubuntu until <a href="https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1489855">Ubuntu bug #1489855</a> is properly fixed)</span></li>
+				<li><span dir="ltr">Add a mode to use <a href="https://docs.microsoft.com/en-us/windows/win32/vds/about-vds">VDS</a> when partitioning/formatting (<div class="kbd">Alt</div>-<div class="kbd">V</div>) <b>[EXPERIMENTAL]</b></span></li>
+				<li><span dir="ltr">Add full extraction support for <code>efi.img</code> (Solus)</span></li>
+				<li><span dir="ltr">Fix listing of potentially blocking processes</span></li>
+				<li><span dir="ltr">Fix NTFS not being selectable when using Grub4DOS</span></li>
+				<li><span dir="ltr">Fix download script not being launched when the user name contains a space</span></li>
+				<li><span dir="ltr">Fix translated messages potentially being truncated (e.g. Thai)</span></li>
+				<li><span dir="ltr">Fix progress bar report for screen readers (Accessibility issue)</span></li>
+				<li><span dir="ltr">Fix a regression where Windows format prompts would not be suppressed</span></li>
+				<li><span dir="ltr">Improve(?) Windows To Go support by following Microsoft's recommended partition order</span></li>
+				<li><span dir="ltr">Don't enumerate <a href="https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849">Windows Sandbox</a> VHDs</span></li>
+				<li><span dir="ltr">Disable ISO mode when Manjaro ISOHybrids are being used</span></li>
+				<li><span dir="ltr">Update embedded GRUB to version 2.04</span></li>
 			</ul></li>
 						<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">다른 버전</a></b></li>
 		</ul>
 
 		<h2>소스코드</h2>
-			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.5.zip">Rufus 3.5</a> <span dir="ltr">(2.9 MB)</span></li>
+			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.6.zip">Rufus 3.6</a> <span dir="ltr">(3.2 MB)</span></li>
 			<li>또한 <a target="_blank" href="http://git-scm.com">git</a> 저장소를 이용해서 프로그램을 다운받으실 수 있습니다 :			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
 			<li>더 많은 정보를 얻고 싶으시면 <a target="_blank" href="https://github.com/pbatard/rufus">깃헙 프로젝트</a>를 참고해 주세요.</li></ul>
 			만일 개발자 분이시라면, Rufus를 수정하시고 패치파일을 보내주시면 굉장히 도움이 될 것입니다.</p>

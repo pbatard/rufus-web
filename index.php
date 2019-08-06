@@ -59,6 +59,7 @@ $langs = array(
   'uk_UA' => array('uk', 'Ukrainian (Українська)'),
   'ur_PK' => array('ur', 'Urdu (اُردُو)'),
   'vi_VN' => array('vi', 'Vietnamese (Tiếng Việt)'),
+  'cy_GB' => array('cy', 'Welsh (Cymraeg)'),
 );
 $locale = "en_IE";
 if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))

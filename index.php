@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.6";
+$latest_version = "3.7";
 $previous_version = "3.2";
-$latest_date = "2019.07.18";
+$latest_date = "2019.09.09";
 $previous_date = "2018.09.11";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -347,21 +347,27 @@ case "ur":
 		<a name="changelog"></a>
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
-			<li><?= $full_version;?><ul>
-				<li><span dir="ltr">Add support for persistent partitions <b>[EXPERIMENTAL]</b><br/>(Note: The above won't work with Ubuntu until <a target="_blank" href="https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1489855">Ubuntu bug #1489855</a> is properly fixed)</span></li>
-				<li><span dir="ltr">Add a mode to use <a target="_blank" href="https://docs.microsoft.com/en-us/windows/win32/vds/about-vds">VDS</a> when partitioning/formatting (<div class="kbd">Alt</div>-<div class="kbd">V</div>) <b>[EXPERIMENTAL]</b></span></li>
-				<li><span dir="ltr">Add full extraction support for <code>efi.img</code> (Solus)</span></li>
-				<li><span dir="ltr">Fix listing of potentially blocking processes</span></li>
-				<li><span dir="ltr">Fix NTFS not being selectable when using Grub4DOS</span></li>
-				<li><span dir="ltr">Fix download script not being launched when the user name contains a space</span></li>
-				<li><span dir="ltr">Fix translated messages potentially being truncated (e.g. Thai)</span></li>
-				<li><span dir="ltr">Fix progress bar report for screen readers (Accessibility issue)</span></li>
-				<li><span dir="ltr">Fix a regression where Windows format prompts would not be suppressed</span></li>
-				<li><span dir="ltr">Improve(?) Windows To Go support by following Microsoft's recommended partition order</span></li>
-				<li><span dir="ltr">Don't enumerate <a target="_blank" href="https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849">Windows Sandbox</a> VHDs</span></li>
-				<li><span dir="ltr">Disable ISO mode when Manjaro ISOHybrids are being used</span></li>
-				<li><span dir="ltr">Update embedded GRUB to version 2.04</span></li>
-			</ul></li>
+			<li><?= $full_version;?>
+				<ul dir="<?= $dir;?>">
+					<li><span dir="ltr">Finalize persistent partition support for Debian and Ubuntu:
+						<ul dir="<?= $dir;?>">
+							<li><span dir="ltr">Debian with persistence should work out of the box with any recent <a target="_blank" href="https://www.debian.org/CD/live/">Debian Live</a> ISO.</span></li>
+							<li><span dir="ltr">Ubuntu with persistence should also work <b>IF</b> using a post 2019.08.01 ISO (such as <a target="_blank" href="http://cdimage.ubuntu.com/daily-live/current/">daily-live</a>).<br />
+								Note that, because of <a target="_blank" href="https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1489855">bug #1489855</a>, trying to use persistence with Ubuntu ISOs that were released before August 2019 will only result in rescue mode during boot - You have been warned!</span></li>
+							<li><span dir="ltr">Other distros may work with persistence as long as they use a Debian-like or Ubuntu-like method, and, in the case of Ubuntu-like, if they use casper with the #1489855 bugfix.</span></li>
+						</ul>
+					</span></li>
+					<li><span dir="ltr">Add cheat mode (<div class="kbd">Alt</div>) to switch between percent/speed/ETA on <b>some</b> operations <b>[EXPERIMENTAL]</b></span></li>
+					<li><span dir="ltr">Report SuperSpeed+ devices in the log (Come on <a target="_blank" href="https://www.usb.org/about">USB-IF</a>, just add <i>"Ludicrous Speed"</i> already!)</span></li>
+					<li><span dir="ltr">Fix UI checkboxes (<i>Extended label</i>, <i>Fixes for old BIOSes</i>) being cleared on <i>START</i></span></li>
+					<li><span dir="ltr">Fix <i>Can't mount GUID volume</i> regression when creating Windows To Go drives</span></li>
+					<li><span dir="ltr">Fix <i>Volume label is invalid</i> error with empty labels on Windows 7</span></li>
+					<li><span dir="ltr">Fix stale progress bar during standalone <code>ext2</code>/<code>ext3</code> formatting</span></li>
+					<li><span dir="ltr">Fix an extraction failure with R-Drive Image bootable ISOs</span></li>
+					<li><span dir="ltr">Disable ISO mode for Pop!_OS</span></li>
+					<li><span dir="ltr">Other cosmetic and internal improvements</span></li>
+				</ul>
+			</li>
 			<? if($bugfix):?>
 			<br />
 			<li><?= $prev_version;?><ul>

@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.7";
-$previous_version = "3.2";
-$latest_date = "2019.09.09";
-$previous_date = "2018.09.11";
+$latest_version = "3.8";
+$previous_version = "3.7";
+$latest_date = "2019.09.16";
+$previous_date = "2019.09.09";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
-$bugfix = false;
+$bugfix = true;
 $exe_size = 1.1;
 $src_size = 3.2;
 $langs = array(
@@ -349,6 +349,14 @@ case "ur":
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
+					<li><span dir="ltr">Fix regression where some ISOs (Debian) would produce a Syslinux error when booting in BIOS mode</span></li>
+					<li><span dir="ltr">Fix potential <code>0xC0030057</code> errors when trying to create a persistent partitions on a non-FIXED drive</span></li>
+				</ul>
+			</li>
+			<? if($bugfix):?>
+			<br />
+			<li><?= $prev_version;?>
+				<ul dir="<?= $dir;?>">
 					<li><span dir="ltr">Finalize persistent partition support for Debian and Ubuntu:
 						<ul dir="<?= $dir;?>">
 							<li><span dir="ltr">Debian with persistence should work out of the box with any recent <a target="_blank" href="https://www.debian.org/CD/live/">Debian Live</a> ISO.</span></li>
@@ -368,18 +376,7 @@ case "ur":
 					<li><span dir="ltr">Other cosmetic and internal improvements</span></li>
 				</ul>
 			</li>
-			<? if($bugfix):?>
 			<br />
-			<li><?= $prev_version;?><ul>
-				<li><span dir="ltr">Add RSA-2048 signature validation on all the server downloads</span></li>
-				<li><span dir="ltr">Add "Fast zeroing" cheat mode (courtesy of <b>René van der Zee</b>)</span></li>
-				<li><span dir="ltr">Add support for XP/Server 2003 x64 ISOs (courtesy of <b>Mattiwatti</b>)</span></li>
-				<li><span dir="ltr">Improve ISO extraction performance by preallocating files (courtesy of <b>Mattiwatti</b>)</span></li>
-				<li><span dir="ltr">Improve bad blocks check algorithm (from suggestions by <b>AL.Skywalker</b>)</span></li>
-				<li><span dir="ltr">Fix progress not being displayed for Syslinux or GRUB downloads</span></li>
-				<li><span dir="ltr">Fix unwanted application close when cancelling an image scan</span></li>
-				<li><span dir="ltr">Fix an issue where FAT32 could still be selected for ISOs containing a >4GB file</span></li>
-			</ul></li>
 			<? endif;?>
 			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt"><?= _("Other versions");?></a></b></li>
 		</ul>

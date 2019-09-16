@@ -255,9 +255,9 @@
 		Rufus対応ISOファイルのリストはこのページの末尾にも一部記載しています。 <a href="#ref2"><sup>(2)</sup></a></p>
 				<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">ダウンロード</span></h2>
-			<p><b>最新のアップデート 2019.09.09</b></p>
-			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.7/rufus-3.7.exe">Rufus 3.7</a></b></span> <span dir="ltr">(1.1 MB)</span></li>
-			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.7/rufus-3.7p.exe">Rufus 3.7 Portable</a> <span dir="ltr">(1.1 MB)</span></li>
+			<p><b>最新のアップデート 2019.09.16</b></p>
+			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.8/rufus-3.8.exe">Rufus 3.8</a></b></span> <span dir="ltr">(1.1 MB)</span></li>
+			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.8/rufus-3.8p.exe">Rufus 3.8 Portable</a> <span dir="ltr">(1.1 MB)</span></li>
 			<li><a href="/downloads/">他のバージョン</a></li>
 			</ul></p>
 		<h4>選択可能な言語</h4>
@@ -328,6 +328,12 @@
 		<a name="changelog"></a>
 		<h2>変更履歴 (英語)</h2>
 		<ul dir="ltr">
+			<li><b>バージョン 3.8</b> (2019.09.16) [BUGFIX RELEASE]				<ul dir="ltr">
+					<li><span dir="ltr">Fix regression where some ISOs (Debian) would produce a Syslinux error when booting in BIOS mode</span></li>
+					<li><span dir="ltr">Fix potential <code>0xC0030057</code> errors when trying to create a persistent partitions on a non-FIXED drive</span></li>
+				</ul>
+			</li>
+						<br />
 			<li><b>バージョン 3.7</b> (2019.09.09)				<ul dir="ltr">
 					<li><span dir="ltr">Finalize persistent partition support for Debian and Ubuntu:
 						<ul dir="ltr">
@@ -348,11 +354,12 @@
 					<li><span dir="ltr">Other cosmetic and internal improvements</span></li>
 				</ul>
 			</li>
+			<br />
 						<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">他のバージョン</a></b></li>
 		</ul>
 
 		<h2>ソースコード</h2>
-			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.7.zip">Rufus 3.7</a> <span dir="ltr">(3.2 MB)</span></li>
+			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.8.zip">Rufus 3.8</a> <span dir="ltr">(3.2 MB)</span></li>
 			<li>次のコマンドで<a target="_blank" href="http://git-scm.com">git</a> レポジトリをクローン (ダウンロード) することもできます。			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
 			<li>詳細については、<a target="_blank" href="https://github.com/pbatard/rufus">GitHubのプロジェクトページ</a>をご参照ください。</li></ul>
 			あなたが開発者であれば、ぜひRufusをさらに改善してアップデートのためのパッチを送ってください。</p>

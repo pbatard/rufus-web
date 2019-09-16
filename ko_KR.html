@@ -255,9 +255,9 @@
 		Rufus는 이 페이지 하단 목록에 있는 ISO파일들과 완벽하게 호환이 됩니다. <a href="#ref2"><sup>(2)</sup></a></p>
 				<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">다운로드</span></h2>
-			<p><b>마지막으로 갱신된 일자 2019.09.09:</b></p>
-			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.7/rufus-3.7.exe">Rufus 3.7</a></b></span> <span dir="ltr">(1.1 MB)</span></li>
-			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.7/rufus-3.7p.exe">Rufus 3.7 Portable</a> <span dir="ltr">(1.1 MB)</span></li>
+			<p><b>마지막으로 갱신된 일자 2019.09.16:</b></p>
+			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.8/rufus-3.8.exe">Rufus 3.8</a></b></span> <span dir="ltr">(1.1 MB)</span></li>
+			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.8/rufus-3.8p.exe">Rufus 3.8 Portable</a> <span dir="ltr">(1.1 MB)</span></li>
 			<li><a href="/downloads/">다른 버전</a></li>
 			</ul></p>
 		<h4>지원되는 언어:</h4>
@@ -328,6 +328,12 @@
 		<a name="changelog"></a>
 		<h2>업데이트 사항 (영문)</h2>
 		<ul dir="ltr">
+			<li><b>버전 3.8</b> (2019.09.16) [BUGFIX RELEASE]				<ul dir="ltr">
+					<li><span dir="ltr">Fix regression where some ISOs (Debian) would produce a Syslinux error when booting in BIOS mode</span></li>
+					<li><span dir="ltr">Fix potential <code>0xC0030057</code> errors when trying to create a persistent partitions on a non-FIXED drive</span></li>
+				</ul>
+			</li>
+						<br />
 			<li><b>버전 3.7</b> (2019.09.09)				<ul dir="ltr">
 					<li><span dir="ltr">Finalize persistent partition support for Debian and Ubuntu:
 						<ul dir="ltr">
@@ -348,11 +354,12 @@
 					<li><span dir="ltr">Other cosmetic and internal improvements</span></li>
 				</ul>
 			</li>
+			<br />
 						<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">다른 버전</a></b></li>
 		</ul>
 
 		<h2>소스코드</h2>
-			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.7.zip">Rufus 3.7</a> <span dir="ltr">(3.2 MB)</span></li>
+			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.8.zip">Rufus 3.8</a> <span dir="ltr">(3.2 MB)</span></li>
 			<li>또한 <a target="_blank" href="http://git-scm.com">git</a> 저장소를 이용해서 프로그램을 다운받으실 수 있습니다 :			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
 			<li>더 많은 정보를 얻고 싶으시면 <a target="_blank" href="https://github.com/pbatard/rufus">깃헙 프로젝트</a>를 참고해 주세요.</li></ul>
 			만일 개발자 분이시라면, Rufus를 수정하시고 패치파일을 보내주시면 굉장히 도움이 될 것입니다.</p>

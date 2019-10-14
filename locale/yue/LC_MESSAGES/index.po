@@ -8,12 +8,12 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2019-02-26 13:14+0000\n"
-"PO-Revision-Date: 2019-10-08 09:03+0100\n"
+"PO-Revision-Date: 2019-10-14 19:39+0100\n"
 "Language-Team: Hon Fai\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.4\n"
 "Last-Translator: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Language: yue_HK\n"
@@ -75,7 +75,7 @@ msgstr "細還細，齊還齊 - Rufus 樣樣都有齊！"
 #: index.php:268
 #, php-format
 msgid "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."
-msgstr "仲有，Boot 機邊使九秒九，Rufus 實情<b>快</b>過保特！其實 <a target=\"_blank\" %s>UNetbootin</a>、<a target=\"_blank\" %s>Universal USB Installer</a>、<a target=\"_blank\" %s>Windows 7 USB download tool</a> 佢咃入 Win7 ISO 落手指已經夠快㗎喇，Rufus 仲要快成倍咁多！用 Rufus 入 Linux ISO 落手指，就仲快多幾錢重！"
+msgstr "仲有，Boot 機邊使九秒九，Rufus 實情<b>快</b>過保特！其實 <a target=\"_blank\" %s>UNetbootin</a>、<a target=\"_blank\" %s>Universal USB Installer</a>、<a target=\"_blank\" %s>Windows 7 USB download tool</a> 佢咃入 Win7 ISO 落手指到已經夠快㗎喇，Rufus 仲要快成倍咁多！用 Rufus 入 Linux ISO 落手指到，就仲快多幾錢重！"
 
 #: index.php:269
 msgid "A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page."
@@ -117,7 +117,7 @@ msgstr "Windows 7（或者更加新）；32、64位元唔拘。Down 完唔使裝
 
 #: index.php:328
 msgid "I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!"
-msgstr "Rufus 作者謝意：「I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!」"
+msgstr "Rufus 作者謝意：「我想借今次機會多謝咁多位有份翻譯嘅義工 - 冇佢哋就冇今日嘅 Rufus。就算係個網頁本身，都係一手一腳譯返嚟，先累積到今日廿靈隻語言咁多。用 Rufus 嗰陣睇得到平時嘅語言，相信都係值得感恩嘅！」"
 
 #: index.php:329
 msgid "Usage"
@@ -125,7 +125,7 @@ msgstr "點用"
 
 #: index.php:330
 msgid "Download the executable and run it &ndash; no installation is necessary."
-msgstr "Down 完就就即刻用得，唔使裝。"
+msgstr "Down 完就即刻用得，唔使裝。"
 
 #: index.php:331
 msgid "The executable is digitally signed and the signature should state:"
@@ -193,7 +193,7 @@ msgstr "即管自自由由咁拎 Rufus 去分發、改造，甚至做牟利用�
 #: index.php:346
 #, php-format
 msgid "Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" %s>MinGW32</a> environment."
-msgstr "（詳情請參閱 <a target=\"_blank\" %s>程式原始碼</a>）Rufus 係絕對透明而且公開，喺 <a target=\"_blank\" %s>MinGW32</a>環境開發。"
+msgstr "（詳情請參閱 <a target=\"_blank\" %s>程式原始碼</a>）Rufus 係絕對透明而且公開，喺 <a target=\"_blank\" %s>MinGW32</a> 環境開發。"
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
 #: index.php:348
@@ -207,7 +207,7 @@ msgstr "程式原始碼"
 #: index.php:379
 #, php-format
 msgid "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"
-msgstr "除此之外，亦都打指令 <a target=\"_blank\" %s>Clone Git</a>："
+msgstr "除此之外，亦都畀打指令 <a target=\"_blank\" %s>Clone Git</a>："
 
 #: index.php:381
 #, php-format
@@ -224,7 +224,7 @@ msgstr "籌錢"
 
 #: index.php:385
 msgid "Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this page."
-msgstr "成日有人問有冇得捐錢畀我，可惜個答案係 - <b>冇得/</b>。"
+msgstr "成日有人問有冇得捐錢畀我，可惜個答案係 - <b>冇得</b>。"
 
 #: index.php:386
 msgid "The main reason is that I feel that the donation system doesn't actually help software development and worse, can be guilt-inducing for users who choose not to donate."
@@ -241,7 +241,7 @@ msgstr "點都好，我想借今次機會，同大家誠心講聲，<i><u>唔該
 
 #: index.php:391
 msgid "But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!"
-msgstr "最後，請繼續自由自在咁用 Rufus 呢個程式仔，冇心要感到一分內疚。就算冇用錢銀撐我都好，更何況你哋本身冇必要咁做。"
+msgstr "最後，請繼續自由自在咁用 Rufus 呢個程式仔，冇必要感到一分內疚。就算冇用錢銀撐我都好，更何況你哋本身冇必要咁做。"
 
 #: index.php:393
 msgid "Speed comparison between Rufus and other applications"
@@ -263,11 +263,11 @@ msgstr "Rufus 明確行到邊類型系統嘅 ISO 檔（包括並唔單止）－"
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
 #: index.php:474
 msgid "English translation by Pete Batard"
-msgstr "由 <a href=\"https://www.facebook.com/fai.hon.1\">Hon Fai</a> 響 2019年尾聲 譯做 香港粵文，此記 （還望更多人繼續講粵語、寫粵文、撐粵字，為廣東語文創立標準）"
+msgstr "由 <a href=\"https://www.facebook.com/fai.hon.1\">Hon Fai</a> 響 2019年尾聲 譯做 香港粵文，此記<br/>（還望更多人繼續講粵語、寫粵文、撐粵字，為廣東語文創立標準）"
 
 #: index.php:475
 msgid "USB icon by"
-msgstr "USB 手指圖標設計者"
+msgstr "USB 手指圖標設計者係"
 
 #: index.php:476
 msgid "Hosting by"

@@ -277,7 +277,8 @@ case "ur":
 			<p><b><? printf(_("Last updated %s:"), $latest_date);?></b></p>
 			<p><ul><li><span style="font-size: 133%"><b><?= /* Abbreviation for MegaByte */ "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . ".exe\">" . $app_name . "</a>";?></b></span> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
 			<li><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "p.exe\">" . $app_name . " " . _("Portable") . "</a>";?> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
-			<li><a href="/downloads/"><?= _("Other versions");?></a></li>
+			<li><a href="/downloads/"><?= _("Other versions");?> (GitHub)</a></li>
+			<li><a target="_blank" href="https://www.fosshub.com/Rufus.html"><?= _("Other versions");?> (FossHub)</a></li>
 			</ul></p>
 		<h4><?= _("Supported Languages:");?></h4>
 		<p><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>

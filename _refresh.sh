@@ -5,6 +5,28 @@ cat >index.html<<EOF
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset='utf-8'>
+<meta name="description" content="Rufus: Create bootable USB drives the easy way">
+<meta name="keywords" content="Application,BIOS,Boot,Bootable,DOS,Download,Drive,Fast,Flash,Formatting,FreeDOS,Linux,Portable,Rufus,Small,Standlone,UEFI,USB,Utility,Windows">
+<meta name="author" content="Pete Batard">
+<meta name="application-name" content="Rufus"/>
+<!-- This madness about trying to satisfy everyone with an icon has got to stop. W3C, aren't you supposed to standardize this crap?!? -->
+<link rel="apple-touch-icon" href="pics/rufus-150.png" />
+<link rel="apple-touch-icon-precomposed" href="pics/rufus-150.png" />
+<link rel="icon" href="pics/rufus-32.png" sizes="32x32" />
+<link rel="icon" href="pics/rufus-64.png" sizes="64x64" />
+<link rel="icon" href="pics/rufus-72.png" sizes="72x72" />
+<link rel="icon" href="pics/rufus-128.png" sizes="128x128" />
+<link rel="icon" href="pics/rufus-150.png" sizes="150x150" />
+<link rel="icon" href="pics/rufus-192.png" sizes="192x192" />
+<link rel="icon" href="pics/rufus-256.png" sizes="256x256" />
+<link rel="icon" href="pics/rufus-512.png" sizes="512x512" />
+<meta name="msapplication-square70x70logo" content="pics/rufus-72.png"/>
+<meta name="msapplication-square150x150logo" content="pics/rufus-150.png"/>
+<meta name="msapplication-wide310x150logo" content="pics/rufus-150.png"/>
+<meta name="msapplication-square310x310logo" content="pics/rufus-256.png"/>
+<meta name="msapplication-TileImage" content="pics/rufus-256.png" />
+<meta name="msapplication-TileColor" content="#3f4555"/>
 <title>Rufus</title>
 <style type="text/css">
 body { margin:0; padding:0; }

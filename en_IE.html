@@ -338,12 +338,13 @@
 			</li>
 						<br />
 			<li><b>Version 3.7</b> (2019.09.09)				<ul dir="ltr">
-					<li><span dir="ltr">Finalize persistent partition support for Debian and Ubuntu:
+					<li><span dir="ltr">Finalize persistent partition support for Debian and Ubuntu <b>[EXPERIMENTAL]</b>:
 						<ul dir="ltr">
 							<li><span dir="ltr">Debian with persistence should work out of the box with any recent <a target="_blank" href="https://www.debian.org/CD/live/">Debian Live</a> ISO.</span></li>
 							<li><span dir="ltr">Ubuntu with persistence should also work <b>IF</b> using a post 2019.08.01 ISO (such as <a target="_blank" href="http://cdimage.ubuntu.com/daily-live/current/">daily-live</a>).<br />
 								Note that, because of <a target="_blank" href="https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1489855">bug #1489855</a>, trying to use persistence with Ubuntu ISOs that were released before August 2019 will only result in rescue mode during boot - You have been warned!</span></li>
 							<li><span dir="ltr">Other distros may work with persistence as long as they use a Debian-like or Ubuntu-like method, and, in the case of Ubuntu-like, if they use casper with the #1489855 bugfix.</span></li>
+						<li><span dir="ltr">Important: Persistence and <code>ext</code> formatting support should still be considered <b>EXPERIMENTAL</b> at this stage.</span></li>
 						</ul>
 					</span></li>
 					<li><span dir="ltr">Add cheat mode (<div class="kbd">Alt</div>) to switch between percent/speed/ETA on <b>some</b> operations <b>[EXPERIMENTAL]</b></span></li>

@@ -44,7 +44,7 @@ $langs = array(
   'ms_MY' => array('ms', 'Malay (Bahasa Malaysia)'),
   'nb_NO' => array('nb', 'Norwegian (Norsk)'),
   'or_IN' => array('or', 'Odia (ଓଡ଼ିଆ)'),
-  'fa_IR' => array('fa', 'Persian (فارسی)'),
+  'fa_IR' => array('fa', 'Persian (پارسی)'),
   'pl_PL' => array('pl', 'Polish (Polski)'),
   'pt_BR' => array('pt_BR', 'Portuguese [BR] (Português [BR])'),
   'pt_PT' => array('pt_PT', 'Portuguese [PT] (Português [PT])'),
@@ -323,7 +323,7 @@ case "ur":
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td>עברית</td><td><?=$comma;?>&nbsp;</td>
 			<td>العربية</td><td><?=$comma;?>&nbsp;</td>
-			<td>فارسی</td><td>.</td>
+			<td>پارسی</td><td>.</td>
 		</tr></table></p>
 		<h4><?= _("System Requirements:");?></h4>
 		<p><?= _("Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.");?></p>

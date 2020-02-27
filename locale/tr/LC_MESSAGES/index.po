@@ -10,7 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2019-02-26 13:14+0000\n"
 "PO-Revision-Date: 2020-02-27 13:14+0000\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
-"Language-Team: RufusTR <mehmetalikuran@gmail.com>\n"
+"Language-Team: RufusTR <mehmetalikuran@gmail.com> <ilhamitugral@gmail.com>\n"
 "Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +32,7 @@ msgstr "Dil Değiştir:"
 
 #: index.php:226
 msgid "Want to improve this translation?"
-msgstr ""
+msgstr "Bu çeviriyi geliştirmek ister misiniz?"
 
 #: index.php:247
 msgid ""
@@ -121,7 +121,7 @@ msgstr "MB"
 
 #: index.php:277
 msgid "Portable"
-msgstr ""
+msgstr "Taşınabilir"
 
 #: index.php:278 index.php:374
 msgid "Other versions"
@@ -383,7 +383,8 @@ msgstr "Rufus'un çalıştırdığı bilinen ISO'ların ayrıntılı olmayan lis
 msgid "English translation by Pete Batard"
 msgstr ""
 "Türkçe çeviri <a href=\"mailto:mehmetalikuran@gmail.com?Subject=Rufus"
-"%20Homepage%20translation\">Mehmetali KURAN</a>"
+"%20Homepage%20translation\">Mehmetali KURAN</a>, <a href=\"mailto:ilhamitugral@gmail.com?Subject=Rufus"
+"%20Homepage%20translation\">İlhami TUĞRAL</a>"
 
 #: index.php:475
 msgid "USB icon by"

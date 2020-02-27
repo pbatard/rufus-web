@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2018-05-29 15:55+0100\n"
-"PO-Revision-Date: 2018-05-29 16:34+0100\n"
+"POT-Creation-Date: 2019-02-26 13:14+0000\n"
+"PO-Revision-Date: 2020-02-27 13:14+0000\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
 "Language-Team: RufusTR <mehmetalikuran@gmail.com>\n"
 "Language: tr_TR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.3\n"
 
 #: index.php:88
 msgid "Version"
@@ -25,6 +25,10 @@ msgstr "Versiyon"
 #: index.php:120 index.php:255
 msgid "Create bootable USB drives the easy way"
 msgstr "Önyüklemeli USB sürücü oluşturmanın en kolay yolu"
+
+#: index.php:217
+msgid "Change language:"
+msgstr "Dil Değiştir:"
 
 #: index.php:226
 msgid "Want to improve this translation?"
@@ -36,11 +40,7 @@ msgid ""
 "without them..."
 msgstr ""
 
-#. This is used display a screenshot of Rufus in your language (if available).
-#. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
-#. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
-#. displayed then. Or you can leave the string untranslated to have the
-#. English version displayed. Please make sure to keep the .png extension.
+#. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
 #: index.php:257
 msgid "rufus_en.png"
 msgstr "rufus_tr.png"
@@ -87,23 +87,23 @@ msgstr "Rufus, küçük boyutuna rağmen ihtiyaç duyduğunuz herşeyi sağlar!"
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
 "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
-" the creation of a Windows 7 USB installation drive from an ISO. It is also "
+"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on "
+"the creation of a Windows 7 USB installation drive from an ISO. It is also "
 "marginally faster on the creation of Linux bootable USB from ISOs."
 msgstr ""
-"Evet, Rufus <b>hızlıdır</b>. Örneğin, ISO'dan Windows 7 USB yükleme sürücüsü"
-" oluşturmada, <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" "
+"Evet, Rufus <b>hızlıdır</b>. Örneğin, ISO'dan Windows 7 USB yükleme sürücüsü "
+"oluşturmada, <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" "
 "%s>Universal USB Installer</a> ya da <a target=\"_blank\" %s>Windows 7 USB "
 "download tool</a> araçlarından yaklaşık iki kat daha hızlıdır. Üstelik "
 "ISO'dan Linux önyüklemeli USB oluşturmada da en uç hızlardadır."
 
 #: index.php:269
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
+"of this page."
 msgstr ""
-"Rufus'un desteklediği ISO'ların ayrıntılı olmayan bir listesine sayfanın alt"
-" kısmından ulaşabilirsiniz."
+"Rufus'un desteklediği ISO'ların ayrıntılı olmayan bir listesine sayfanın alt "
+"kısmından ulaşabilirsiniz."
 
 #: index.php:274
 msgid "Download"
@@ -113,6 +113,11 @@ msgstr "İndir"
 #, php-format
 msgid "Last updated %s:"
 msgstr "Son güncelleme %s:"
+
+#. Abbreviation for MegaByte
+#: index.php:276 index.php:277 index.php:378
+msgid "MB"
+msgstr "MB"
 
 #: index.php:277
 msgid "Portable"
@@ -146,9 +151,9 @@ msgid ""
 "you should really thank them!"
 msgstr ""
 "Hem Rufus'un hemde bu web sayfasının farklı dillere çevrilmesini mümkün "
-"kılan çevirmenlere minnettarlığımı ifade etmek istiyorum. Eğer Rufus'u kendi"
-" dilinizde kullanma şansını bulduysanız, onlara gerçekten bir teşekkürü borç"
-" bilmelisiniz!"
+"kılan çevirmenlere minnettarlığımı ifade etmek istiyorum. Eğer Rufus'u kendi "
+"dilinizde kullanma şansını bulduysanız, onlara gerçekten bir teşekkürü borç "
+"bilmelisiniz!"
 
 #: index.php:329
 msgid "Usage"
@@ -197,8 +202,8 @@ msgstr "ISO desteği notları:"
 #: index.php:337
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
+"an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "v1.1.0 sürümünden itibaren Rufus'un tüm sürümleri <a target=\"_blank\" "
 "%s>ISO yansımasından</a> (.iso) önyüklenebilir USB oluşturmaya izin "
@@ -208,9 +213,9 @@ msgstr ""
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>CDBurnerXP</a> or <a "
-"target=\"_blank\" %s>ImgBurn</a>."
+"easy to do however, through the use of a CD burning application, such as the "
+"freely available <a target=\"_blank\" %s>CDBurnerXP</a> or <a target=\"_blank"
+"\" %s>ImgBurn</a>."
 msgstr ""
 "Ücretsiz olarak erişebileceğiniz <a target=\"_blank\" %s>CDBurnerXP</a> ya "
 "da <a target=\"_blank\" %s>ImgBurn</a> gibi CD yazdırma uygulamalarını "
@@ -221,8 +226,7 @@ msgstr ""
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Sık Sorulan Sorular (SSS)"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
 #: index.php:341
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
@@ -232,8 +236,8 @@ msgstr "Rufus SSS <b><a target=\"_blank\" %s>BURADA</a></b>."
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
-"target=\"_blank\" %s>send an e-mail</a>."
+"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target="
+"\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Geribildirim gönderimi, hata raporlaması ya da geliştirme istekleri için "
 "lütfen github <a target=\"_blank\" %s>issue tracker (sorun takipçisi)</a>'ı "
@@ -249,13 +253,13 @@ msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
 msgstr ""
-"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> ya da"
-" sonrası."
+"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> ya da "
+"sonrası."
 
 #: index.php:345
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr ""
 "GPLv3 lisansına saygı duyduğunuz sürece, yazılımı dağıtmakta, değiştirmekte "
 "hatta satmakta özgürsünüz."
@@ -263,16 +267,14 @@ msgstr ""
 #: index.php:346
 #, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a "
-"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
-"%s>MinGW32</a> environment."
+"Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank"
+"\" %s>public source</a>, using a <a target=\"_blank\" %s>MinGW32</a> "
+"environment."
 msgstr ""
-"Rufus %%100 şeffaf bir anlayışla ve <a target=\"_blank\" %s>açık "
-"kaynak</a>la, <a target=\"_blank\" %s>MinGW32</a> ortamı kullanılarak "
-"üretilmiştir."
+"Rufus %%100 şeffaf bir anlayışla ve <a target=\"_blank\" %s>açık kaynak</"
+"a>la, <a target=\"_blank\" %s>MinGW32</a> ortamı kullanılarak üretilmiştir."
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
 #: index.php:348
 msgid "Changelog"
 msgstr "Sürüm Geçmişi"
@@ -280,11 +282,6 @@ msgstr "Sürüm Geçmişi"
 #: index.php:377
 msgid "Source Code"
 msgstr "Kaynak Kodu"
-
-#. Abbreviation for MegaByte
-#: index.php:276 index.php:277 index.php:378
-msgid "MB"
-msgstr "MB"
 
 #: index.php:379
 #, php-format
@@ -297,8 +294,10 @@ msgstr ""
 
 #: index.php:381
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
-msgstr "Daha fazla bilgi için <a target=\"_blank\" %s>github projesine</a> bakın."
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgstr ""
+"Daha fazla bilgi için <a target=\"_blank\" %s>github projesine</a> bakın."
 
 #: index.php:382
 msgid ""
@@ -332,9 +331,9 @@ msgstr ""
 #: index.php:389
 #, php-format
 msgid ""
-"If you really insist, you can always make a donation to the <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
-"reason software like Rufus is possible."
+"If you really insist, you can always make a donation to the <a target="
+"\"_blank\" %s>Free Software Foundation</a>, as they are the main reason "
+"software like Rufus is possible."
 msgstr ""
 "Yine de ısrar ediyorsanız,  Rufus gibi yazılımların varoluşunu mümkün kılan "
 "<a target=\"_blank\" %s>Free Software Foundation</a>'a bağış yapabilirsiniz."
@@ -342,8 +341,8 @@ msgstr ""
 #: index.php:390
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
+"your continuing support and enthusiasm about this little program: it is much "
+"appreciated!"
 msgstr ""
 "Ne olursa olsun, bu küçük program ile ilgili olarak devamlı desteğiniz ve "
 "heveslendiriciliğiniz için <i><u>teşekkür ederim</u></i> demeyi borç "
@@ -366,8 +365,8 @@ msgstr "Rufus ve diğer uygulamalar arasındaki hız karşılaştırması"
 #, php-format
 msgid ""
 "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
-" 3.0 ADATA S102 flash drive</a>."
+"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB "
+"3.0 ADATA S102 flash drive</a>."
 msgstr ""
 "Aşağıdaki testler, Windows 7 x64, Core 2 duo/4 GB RAM, USB 3.0 kontrolcülü "
 "ve <a target=\"_blank\" %s>16 GB USB 3.0 ADATA S102 flash sürücü</a> ile "
@@ -378,16 +377,13 @@ msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Rufus'un çalıştırdığı bilinen ISO'ların ayrıntılı olmayan listesi"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
 #: index.php:474
 msgid "English translation by Pete Batard"
 msgstr ""
-"Türkçe çeviri <a "
-"href=\"mailto:mehmetalikuran@gmail.com?Subject=Rufus%20Homepage%20translation\">Mehmetali"
-" KURAN</a>"
+"Türkçe çeviri <a href=\"mailto:mehmetalikuran@gmail.com?Subject=Rufus"
+"%20Homepage%20translation\">Mehmetali KURAN</a>"
 
 #: index.php:475
 msgid "USB icon by"
@@ -396,10 +392,6 @@ msgstr "USB simgesi"
 #: index.php:476
 msgid "Hosting by"
 msgstr "Barındırma Hizmeti"
-
-#: index.php:217
-msgid "Change language:"
-msgstr ""
 
 #~ msgid "KB"
 #~ msgstr "KB"

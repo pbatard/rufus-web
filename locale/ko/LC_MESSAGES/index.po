@@ -52,7 +52,7 @@ msgstr "rufus_ko.png"
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
-msgstr "Rufus는 USB 메모리/USB 플래시 드라이브를 포맷하고 부팅 가능하도록 만들 수 있는 도구입니다."
+msgstr "Rufus는 USB 메모리 및 플래시 드라이브를 포맷하고 부팅할 수 있도록 만드는 도구입니다."
 
 #: index.php:259
 msgid "It can be especially useful for cases where:"
@@ -130,7 +130,7 @@ msgid ""
 "Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
 msgstr ""
-"Windows 7 이상의 운영 체제. 32비트/64비트 여부와는 무관합니다. 단지 다운로드하기만 하면 바로 사용할 수 있습니다."
+"32비트/64비트 여부와는 무관하게 Windows 7 이상의 운영 체제에서 동작합니다. 다운로드만 하면 바로 사용할 수 있습니다."
 
 #: index.php:328
 msgid ""
@@ -176,9 +176,9 @@ msgid ""
 "that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default "
 "selection, is recommended over MS-DOS, as it supports more keyboard layouts."
 msgstr ""
-"DOS 부팅 USB 드라이브에서 미국 영어가 아닌 키보드를 사용해야 한다면, Rufus에서는 USB 드라이브를 만드는 시스템의 로캘에"
-" 따라서 키보드 레이아웃을 선택합니다. 미국 영어 이외의 키보드를 사용해야 하는 경우에는 MS-DOS 대신 더 많은 키보드 레이아웃을"
-" 지원하는 <a target=\"_blank\" %s>FreeDOS</a>(기본값) 사용을 권장합니다."
+"DOS 부팅 USB 드라이브에서 미국 영어가 아닌 키보드를 사용해야 한다면, Rufus에서는 USB 드라이브를 만드는 시스템의 지역 설정에"
+" 따라서 키보드 레이아웃을 선택합니다. 미국 영어 이외의 키보드를 사용해야 하는 경우에는 MS-DOS 대신 "
+"<a target=\"_blank\" %s>FreeDOS</a>(기본값) 사용을 권장합니다. FreeDOS에서는 더 많은 키보드 레이아웃을 지원하기 때문입니다."
 
 #: index.php:336
 msgid "Notes on ISO Support:"
@@ -204,7 +204,7 @@ msgid ""
 "%s>ImgBurn</a>."
 msgstr ""
 "무료로 사용 가능한 <a target=\"_blank\" %s>CDBurnerXP</a>, <a target=\"_blank\" %s"
-">ImgBurn</a> 등 CD 작성 프로그램을 사용하여 광 디스크에서 ISO 이미지를 생성하거나 필요한 파일이 들어 있는 ISO 이미지를"
+">ImgBurn</a> 등 CD/DVD 제작 프로그램을 사용해 CD/DVD에서 ISO 이미지를 생성하거나 필요한 파일이 들어 있는 ISO 이미지를"
 " 쉽게 생성할 수 있습니다."
 
 #: index.php:340

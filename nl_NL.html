@@ -257,9 +257,9 @@
 		Er staat een niet-uitputtende lijst van door Rufus ondersteunde ISO's onderaan deze pagina. <a href="#ref2"><sup>(2)</sup></a></p>
 				<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Downloaden</span></h2>
-			<p><b>Laatst bijgewerkt op 2019.09.16:</b></p>
-			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.8/rufus-3.8.exe">Rufus 3.8</a></b></span> <span dir="ltr">(1.1 MB)</span></li>
-			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.8/rufus-3.8p.exe">Rufus 3.8 Portable</a> <span dir="ltr">(1.1 MB)</span></li>
+			<p><b>Laatst bijgewerkt op 2020.02.29:</b></p>
+			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.9/rufus-3.9.exe">Rufus 3.9</a></b></span> <span dir="ltr">(1.1 MB)</span></li>
+			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.9/rufus-3.9p.exe">Rufus 3.9 Portable</a> <span dir="ltr">(1.1 MB)</span></li>
 			<li><a href="/downloads/">Andere versies (GitHub)</a></li>
 			<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">Andere versies (FossHub)</a></li>
 			</ul></p>
@@ -331,39 +331,26 @@
 		<a name="changelog"></a>
 		<h2>Wijzigingslog</h2>
 		<ul dir="ltr">
-			<li><b>Versie 3.8</b> (2019.09.16) [BUGFIX RELEASE]				<ul dir="ltr">
-					<li><span dir="ltr">Fix regression where some ISOs (Debian) would produce a Syslinux error when booting in BIOS mode</span></li>
-					<li><span dir="ltr">Fix potential <code>0xC0030057</code> errors when trying to create a persistent partitions on a non-FIXED drive</span></li>
+			<li><b>Versie 3.9</b> (2020.02.29)				<ul dir="ltr">
+					<li><span dir="ltr">Add <code>exFAT</code> support when creating blank <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> drives <b>[EXPERIMENTAL]</b></span></li>
+					<li><span dir="ltr">Fix <code>ext2</code>/<code>ext3</code> corruption for partitions larger than 4 GB</span></li>
+					<li><span dir="ltr">Fix early boot files not being usable on compressed <code>NTFS</code> partitions</span></li>
+					<li><span dir="ltr">Fix writing of compressed streams that don't end on sector boundary</span></li>
+					<li><span dir="ltr">Fix percent not being displayed on slow format</span></li>
+					<li><span dir="ltr">Improve file preallocation and speed up ISO extraction (courtesy of <b>Mattiwatti</b>)</span></li>
+					<li><span dir="ltr">Improve <code>ext2</code>/<code>ext3</code> formatting speed</span></li>
+					<li><span dir="ltr">Improve protective MBR message for GPT partitioned drives</span></li>
+					<li><span dir="ltr">Improve reporting of Syslinux/GRUB download errors</span></li>
+					<li><span dir="ltr">Improve reporting of partition types and of Windows' version</span></li>
+					<li><span dir="ltr">Report the usage of <code>UDF</code> symbolic links</span></li>
+					<li><span dir="ltr">Update embedded Syslinux to 6.04-pre1</span></li>
 				</ul>
 			</li>
-						<br />
-			<li><b>Versie 3.7</b> (2019.09.09)				<ul dir="ltr">
-					<li><span dir="ltr">Finalize persistent partition support for Debian and Ubuntu <b>[EXPERIMENTAL]</b>:
-						<ul dir="ltr">
-							<li><span dir="ltr">Debian with persistence should work out of the box with any recent <a target="_blank" href="https://www.debian.org/CD/live/">Debian Live</a> ISO.</span></li>
-							<li><span dir="ltr">Ubuntu with persistence should also work <b>IF</b> using a post 2019.08.01 ISO (such as <a target="_blank" href="http://cdimage.ubuntu.com/daily-live/current/">daily-live</a>).<br />
-								Note that, because of <a target="_blank" href="https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1489855">bug #1489855</a>, trying to use persistence with Ubuntu ISOs that were released before August 2019 will only result in rescue mode during boot - You have been warned!</span></li>
-							<li><span dir="ltr">Other distros may work with persistence as long as they use a Debian-like or Ubuntu-like method, and, in the case of Ubuntu-like, if they use casper with the #1489855 bugfix.</span></li>
-						<li><span dir="ltr">Important: Persistence and <code>ext</code> formatting support should still be considered <b>EXPERIMENTAL</b> at this stage.</span></li>
-						</ul>
-					</span></li>
-					<li><span dir="ltr">Add cheat mode (<div class="kbd">Alt</div>) to switch between percent/speed/ETA on <b>some</b> operations <b>[EXPERIMENTAL]</b></span></li>
-					<li><span dir="ltr">Report SuperSpeed+ devices in the log (Come on <a target="_blank" href="https://www.usb.org/about">USB-IF</a>, just add <i>"Ludicrous Speed"</i> already!)</span></li>
-					<li><span dir="ltr">Fix UI checkboxes (<i>Extended label</i>, <i>Fixes for old BIOSes</i>) being cleared on <i>START</i></span></li>
-					<li><span dir="ltr">Fix <i>Can't mount GUID volume</i> regression when creating Windows To Go drives</span></li>
-					<li><span dir="ltr">Fix <i>Volume label is invalid</i> error with empty labels on Windows 7</span></li>
-					<li><span dir="ltr">Fix stale progress bar during standalone <code>ext2</code>/<code>ext3</code> formatting</span></li>
-					<li><span dir="ltr">Fix an extraction failure with R-Drive Image bootable ISOs</span></li>
-					<li><span dir="ltr">Disable ISO mode for Pop!_OS</span></li>
-					<li><span dir="ltr">Other cosmetic and internal improvements</span></li>
-				</ul>
-			</li>
-			<br />
 						<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Andere versies</a></b></li>
 		</ul>
 
 		<h2>Broncode</h2>
-			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.8.zip">Rufus 3.8</a> <span dir="ltr">(3.2 MB)</span></li>
+			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.9.zip">Rufus 3.9</a> <span dir="ltr">(3.2 MB)</span></li>
 			<li>Als alternatief kunt u de <a target="_blank" href="http://git-scm.com">git</a>-repository op de volgende manier klonen:			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
 			<li>Zie het <a target="_blank" href="https://github.com/pbatard/rufus">github-project</a> voor meer informatie.</li></ul>
 			Als ontwikkelaar wordt u sterk aangemoedigd om aan Rufus te knutselen en patches in te dienen.</p>

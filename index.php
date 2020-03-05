@@ -36,6 +36,7 @@ $langs = array(
   'hi_IN' => array('hi', 'Hindi (हिंदी)'),
   'hu_HU' => array('hu', 'Hungarian (Magyar)'),
   'id_ID' => array('id', 'Indonesian (Bahasa Indonesia)'),
+  'ga_IE' => array('ga', 'Irish (Gaeilge)'),
   'it_IT' => array('it', 'Italian (Italiano)'),
   'ja_JP' => array('ja', 'Japanese (日本語)'),
   'ko_KR' => array('ko', 'Korean (한국어)'),

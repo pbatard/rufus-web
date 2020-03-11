@@ -27,7 +27,7 @@ cat >index.html<<EOF
 <meta name="msapplication-square310x310logo" content="pics/rufus-256.png"/>
 <meta name="msapplication-TileImage" content="pics/rufus-256.png" />
 <meta name="msapplication-TileColor" content="#3f4555"/>
-<title>Rufus</title>
+<title>Rufus - The Official Website (Download, New Releases)</title>
 <style type="text/css">
 body { margin:0; padding:0; }
 .frame { display:block; width:100vw; height:100vh; max-width:100%; margin:0; padding:0; border:0; box-sizing:border-box; }

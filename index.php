@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.9";
+$latest_version = "3.10";
 $previous_version = "3.7";
-$latest_date = "2020.02.29";
+$latest_date = "2020.04.22";
 $previous_date = "2019.09.09";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -352,18 +352,15 @@ case "ur":
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Add <code>exFAT</code> support when creating blank <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> drives <b>[EXPERIMENTAL]</b></span></li>
-					<li><span dir="ltr">Fix <code>ext2</code>/<code>ext3</code> corruption for partitions larger than 4 GB</span></li>
-					<li><span dir="ltr">Fix early boot files not being usable on compressed <code>NTFS</code> partitions</span></li>
-					<li><span dir="ltr">Fix writing of compressed streams that don't end on sector boundary</span></li>
-					<li><span dir="ltr">Fix percent not being displayed on slow format</span></li>
-					<li><span dir="ltr">Improve file preallocation and speed up ISO extraction (courtesy of <b>Mattiwatti</b>)</span></li>
-					<li><span dir="ltr">Improve <code>ext2</code>/<code>ext3</code> formatting speed</span></li>
-					<li><span dir="ltr">Improve protective MBR message for GPT partitioned drives</span></li>
-					<li><span dir="ltr">Improve reporting of Syslinux/GRUB download errors</span></li>
-					<li><span dir="ltr">Improve reporting of partition types and of Windows' version</span></li>
-					<li><span dir="ltr">Report the usage of <code>UDF</code> symbolic links</span></li>
-					<li><span dir="ltr">Update embedded Syslinux to 6.04-pre1</span></li>
+					<li><span dir="ltr">Improve support for Ubuntu 20.04</span></li>
+					<li><span dir="ltr">Improve detection of FIXED drives with no mounted partitions</span></li>
+					<li><span dir="ltr">Improve <code>extfs</code> formatting (courtesy of <b>Marcos Mello</b>)</span></li>
+					<li><span dir="ltr">Update UEFI:NTFS file system drivers to v1.5</span></li>
+					<li><span dir="ltr">Fix progress not being updated when using the German localization</span></li>
+					<li><span dir="ltr">Fix primary GPT being overwritten when adding the protective MBR message</span></li>
+					<li><span dir="ltr">Fix a regression with lousy security solutions that prevent the creation of an <code>autorun.inf</code></span></li>
+					<li><span dir="ltr">Fix an assert during FreeDOS drive creation when the Windows system locale is set to UTF-8</span></li>
+					<li><span dir="ltr">Fix invalid label errors when using a non-Western locale</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>

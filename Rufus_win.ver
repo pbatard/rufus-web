@@ -1,23 +1,20 @@
-version = 3.9.1624
+version = 3.10.1647
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.9/rufus-3.9.exe
-download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.9/rufus-3.9_arm.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.9/rufus-3.9_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.10/rufus-3.10.exe
+download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.10/rufus-3.10_arm.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.10/rufus-3.10_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.9 (2020.02.29)\b0\par\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.10 (2020.04.22)\b0\par\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add exFAT support when creating blank UEFI:NTFS drives [EXPERIMENTAL]\par
-{\pntext\f2\'B7\tab}Fix ext2/ext3 corruption for partitions larger than 4 GB\par
-{\pntext\f2\'B7\tab}Fix early boot files not being usable on compressed NTFS partitions\par
-{\pntext\f2\'B7\tab}Fix writing of compressed streams that don't end on sector boundary\par
-{\pntext\f2\'B7\tab}Fix percent not being displayed on slow format\par
-{\pntext\f2\'B7\tab}Improve file preallocation and speed up ISO extraction (courtesy of \b Mattiwatti\b0)\par
-{\pntext\f2\'B7\tab}Improve ext2/ext3 formatting speed\par
-{\pntext\f2\'B7\tab}Improve protective MBR message for GPT partitioned drives\par
-{\pntext\f2\'B7\tab}Improve reporting of Syslinux/GRUB download errors\par
-{\pntext\f2\'B7\tab}Improve reporting of partition types and of Windows' version\par
-{\pntext\f2\'B7\tab}Report the usage of UDF symbolic links\par
-{\pntext\f2\'B7\tab}Update embedded Syslinux to 6.04-pre1\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Improve support for Ubuntu 20.04\par
+{\pntext\f2\'B7\tab}Improve detection of FIXED drives with no mounted partitions\par
+{\pntext\f2\'B7\tab}Improve extfs formatting (courtesy of \b Marcos Mello\b0)\par
+{\pntext\f2\'B7\tab}Update UEFI:NTFS file system drivers to v1.5\par
+{\pntext\f2\'B7\tab}Fix progress not being updated when using the German localization\par
+{\pntext\f2\'B7\tab}Fix primary GPT being overwritten when adding the protective MBR message\par
+{\pntext\f2\'B7\tab}Fix a regression with lousy security solutions that prevent the creation of an 'autorun.inf'\par
+{\pntext\f2\'B7\tab}Fix an assert during FreeDOS drive creation when the Windows system locale is set to UTF-8\par
+{\pntext\f2\'B7\tab}Fix invalid label errors when using a non-Western locale\par
 
 \pard\ltrpar\sl276\slmult1\par}

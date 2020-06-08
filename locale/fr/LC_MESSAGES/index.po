@@ -24,7 +24,7 @@ msgstr "Version"
 
 #: index.php:120 index.php:255
 msgid "Create bootable USB drives the easy way"
-msgstr "Créez une clé USB démarrable de manière facile"
+msgstr "Créez une clé USB démarrable facilement"
 
 #: index.php:217
 msgid "Change language:"
@@ -32,7 +32,7 @@ msgstr "Changer de langue :"
 
 #: index.php:226
 msgid "Want to improve this translation?"
-msgstr "Voulez-vous améliorer cette traduction?"
+msgstr "Voulez-vous améliorer cette traduction ?"
 
 #: index.php:247
 msgid ""
@@ -157,7 +157,7 @@ msgid ""
 msgstr ""
 "Je profite de cette occasion pour exprimer ma gratitude aux traducteurs qui "
 "permettent à Rufus, ainsi que cette page web, d'être traduits dans plusieurs"
-" langues. Si vous pouvez désormais utiliser Rufus dans votre langage, c'est "
+" langues. Si vous pouvez désormais utiliser Rufus dans votre langue, c'est "
 "eux qu'il faut remercier !"
 
 #: index.php:329
@@ -174,7 +174,7 @@ msgstr ""
 #: index.php:331
 msgid "The executable is digitally signed and the signature should state:"
 msgstr ""
-"Le fichier exécutable est signé de manière digitale, et la signature doit "
+"Le fichier exécutable est signé numériquement, et la signature doit "
 "indiquer :"
 
 #: index.php:332
@@ -201,7 +201,7 @@ msgstr ""
 "de sélectionner une disposition de clavier qui correspond à la langue de "
 "votre système. Dans ce cas, <a target=\"_blank\" %s>FreeDOS</a>, qui est la "
 "sélection par défaut, est recommandé vis-à-vis de MS-DOS, car il supporte "
-"plus de dispositions internationales de clavier."
+"plus de dispositions de clavier."
 
 #: index.php:336
 msgid "Notes on ISO Support:"
@@ -226,8 +226,8 @@ msgid ""
 "target=\"_blank\" %s>ImgBurn</a>."
 msgstr ""
 "Si vous n'avez pas de fichier ISO, la création d'une telle image, à partir "
-"d'un disque optique ou depuis un ensemble de fichier, est facile à "
-"effectuer. Vous pouvez juste utilisez l'une des nombreuses applications "
+"d'un disque optique ou depuis un ensemble de fichiers, est facile à "
+"effectuer. Vous pouvez juste utiliser l'une des nombreuses applications "
 "gratuites de gravure CD ou DVD, telles que <a target=\"_blank\" "
 "%s>CDBurnerXP</a> ou <a target=\"_blank\" %s>ImgBurn</a>."
 
@@ -309,7 +309,7 @@ msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr ""
-"Alternativement, vous pouvez cloner le répertoire <a target=\"_blank\" "
+"Sinon, vous pouvez cloner le répertoire <a target=\"_blank\" "
 "%s>git</a> en utilisant :"
 
 #: index.php:381
@@ -325,7 +325,7 @@ msgid ""
 "and submit patches."
 msgstr ""
 "Si vous êtes développeur, vous êtes cordialement invité à modifier Rufus et "
-"soumettre un patch."
+"soumettre des patchs."
 
 #: index.php:384
 msgid "Donations"
@@ -381,7 +381,7 @@ msgstr ""
 
 #: index.php:393
 msgid "Speed comparison between Rufus and other applications"
-msgstr "Tests de vitesse entre Rufus et autres applications"
+msgstr "Tests de vitesse entre Rufus et d'autres applications"
 
 #: index.php:394
 #, php-format
@@ -437,4 +437,4 @@ msgstr "Hébergement par"
 #~ msgstr ""
 #~ "Sachez cependant que Windows Vista ou ultérieur est requis pour le support "
 #~ "UEFI/GPT. Les limitations de Windows XP contraignent la création d'un "
-#~ "périphérique démarrable EFI en mode MBR seulement, sous ce système ."
+#~ "périphérique démarrable EFI en mode MBR seulement, sous ce système."

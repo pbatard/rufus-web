@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.10";
+$latest_version = "3.11";
 $previous_version = "3.7";
-$latest_date = "2020.04.22";
+$latest_date = "2020.06.18";
 $previous_date = "2019.09.09";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -352,15 +352,16 @@ case "ur":
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Improve support for Ubuntu 20.04</span></li>
-					<li><span dir="ltr">Improve detection of FIXED drives with no mounted partitions</span></li>
-					<li><span dir="ltr">Improve <code>extfs</code> formatting (courtesy of <b>Marcos Mello</b>)</span></li>
-					<li><span dir="ltr">Update UEFI:NTFS file system drivers to v1.5</span></li>
-					<li><span dir="ltr">Fix progress not being updated when using the German localization</span></li>
-					<li><span dir="ltr">Fix primary GPT being overwritten when adding the protective MBR message</span></li>
-					<li><span dir="ltr">Fix a regression with lousy security solutions that prevent the creation of an <code>autorun.inf</code></span></li>
-					<li><span dir="ltr">Fix an assert during FreeDOS drive creation when the Windows system locale is set to UTF-8</span></li>
-					<li><span dir="ltr">Fix invalid label errors when using a non-Western locale</span></li>
+					<li><span dir="ltr">Add <a target="_blank" href="https://en.wikipedia.org/wiki/Rock_Ridge">Rock Ridge deep directory</a> support</span></li>
+					<li><span dir="ltr">Add an option to write small ISOs to an <a target="_blank" href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a> (<a target="_blank" href="https://en.wikipedia.org/wiki/GUID_Partition_Table">GPT</a> only)</span></li>
+					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Ctrl</div>-<div class="kbd">SELECT</div>) to extract content from an additional zip archive on top of the ISO</span></li>
+					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div>-<div class="kbd">G</div>) to disable Virtual Hard Disk listing</span></li>
+					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div>-<div class="kbd">P</div>) to toggle a GPT <a target="_blank" href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a> to Basic Data (Windows 10 only)</span></li>
+					<li><span dir="ltr">Fix improper x86 32-bit NTFS driver being used for <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a></span></li>
+					<li><span dir="ltr">Improve <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> compatibility with older UEFI firmwares</span></li>
+					<li><span dir="ltr">Improve startup time by running the ISO download feature check in the background</span></li>
+					<li><span dir="ltr">Remove Ubuntu's splash screen for persistent UEFI drives</span></li>
+					<li><span dir="ltr">Enable <a  target="_blank" href="https://en.wikipedia.org/wiki/Address_space_layout_randomization">ASLR</a> for the Rufus executable</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>

@@ -1,20 +1,21 @@
-version = 3.10.1647
+version = 3.11.1678
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.10/rufus-3.10.exe
-download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.10/rufus-3.10_arm.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.10/rufus-3.10_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.11/rufus-3.11.exe
+download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.11/rufus-3.11_arm.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.11/rufus-3.11_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.10 (2020.04.22)\b0\par\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.11 (2020.06.19)\b0\par\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Improve support for Ubuntu 20.04\par
-{\pntext\f2\'B7\tab}Improve detection of FIXED drives with no mounted partitions\par
-{\pntext\f2\'B7\tab}Improve extfs formatting (courtesy of \b Marcos Mello\b0)\par
-{\pntext\f2\'B7\tab}Update UEFI:NTFS file system drivers to v1.5\par
-{\pntext\f2\'B7\tab}Fix progress not being updated when using the German localization\par
-{\pntext\f2\'B7\tab}Fix primary GPT being overwritten when adding the protective MBR message\par
-{\pntext\f2\'B7\tab}Fix a regression with lousy security solutions that prevent the creation of an 'autorun.inf'\par
-{\pntext\f2\'B7\tab}Fix an assert during FreeDOS drive creation when the Windows system locale is set to UTF-8\par
-{\pntext\f2\'B7\tab}Fix invalid label errors when using a non-Western locale\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add Rock Ridge deep directory support\par
+{\pntext\f2\'B7\tab}Add an option to write small ISOs to an ESP (GPT only)\par
+{\pntext\f2\'B7\tab}Add a cheat mode (Ctrl-SELECT) to extract content from an additional zip archive on top of the ISO\par
+{\pntext\f2\'B7\tab}Add a cheat mode (Alt-G) to disable Virtual Hard Disk listing\par
+{\pntext\f2\'B7\tab}Add a cheat mode (Alt-P) to toggle a GPT ESP to Basic Data (Windows 10 only)\par
+{\pntext\f2\'B7\tab}Fix improper x86 32-bit NTFS driver being used for UEFI:NTFS\par
+{\pntext\f2\'B7\tab}Improve UEFI:NTFS compatibility with older UEFI firmwares\par
+{\pntext\f2\'B7\tab}Improve startup time by running the ISO download feature check in the background\par
+{\pntext\f2\'B7\tab}Remove Ubuntu's splash screen for persistent UEFI drives\par
+{\pntext\f2\'B7\tab}Enable ASLR for the Rufus executable\par
 
 \pard\ltrpar\sl276\slmult1\par}

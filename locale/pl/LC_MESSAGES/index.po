@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2020-06-14 14:07+0100\n"
-"PO-Revision-Date: 2020-06-25 16:21+0100\n"
+"PO-Revision-Date: 2020-07-01 23:45+0100\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -40,7 +40,7 @@ msgid ""
 "Placeholder for ads &mdash; Just like you, I wish this site could exist "
 "without them..."
 msgstr ""
-"Miejsce na reklamę &mdash Tak jak i Ty, chciałbym, aby ta strona mogła "
+"Miejsce na reklamę &mdash; Tak jak i Ty, chciałbym, aby ta strona mogła "
 "istnieć bez nich..."
 
 #. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
@@ -53,12 +53,12 @@ msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
 msgstr ""
-"Rufus to narzędzie pomagające formatować i tworzyć nośniki rozruchowe, takie "
-"jak klucze USB/pendrivy, karty pamięci itp."
+"Rufus to narzędzie pomagające formatować i tworzyć nośniki rozruchowe USB, "
+"takie jak dyski flash USB/pendrive, karty pamięci itp."
 
 #: index.php:262
 msgid "It can be especially useful for cases where:"
-msgstr "Może być szczególnie użyteczny w przypadku gdy:"
+msgstr "Może Ci się szczególnie przydać. gdy:"
 
 #: index.php:264
 msgid ""
@@ -76,7 +76,7 @@ msgstr ""
 
 #: index.php:266
 msgid "you need to flash a BIOS or other firmware from DOS"
-msgstr "chcesz wgrywać BIOS lub inne oprogramowanie przez DOS"
+msgstr "chcesz wgrać nowy BIOS lub inne oprogramowanie przez DOS"
 
 #: index.php:267
 msgid "you want to run a low-level utility"
@@ -101,7 +101,7 @@ msgstr ""
 "%s>Universal USB Installer</a> lub <a target=\"_blank\" %s>Windows 7 USB "
 "Download Tool</a>, podczas tworzenia nośnika instalacyjnego USB systemu "
 "Windows 7 z obrazu ISO. Jest także trochę szybszy podczas tworzenia nośników "
-"rozruchowych USB systemu Linux z obrazu ISO."
+"rozruchowych USB systemu Linux z obrazów ISO."
 
 #: index.php:272
 msgid ""
@@ -117,7 +117,7 @@ msgstr "Pobieranie"
 #: index.php:278
 #, php-format
 msgid "Last updated %s:"
-msgstr "Ostatnia aktualizacja %s:"
+msgstr "Najnowsza aktualizacja %s:"
 
 #. Abbreviation for MegaByte
 #: index.php:279 index.php:280 index.php:380
@@ -126,7 +126,7 @@ msgstr ""
 
 #: index.php:280
 msgid "Portable"
-msgstr "Przenośna"
+msgstr ""
 
 #: index.php:281 index.php:282 index.php:376
 msgid "Other versions"
@@ -145,7 +145,7 @@ msgid ""
 "Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
 msgstr ""
-"Windows 7 lub nowszy, zarówno 32 jak i 64 bitowy. Po pobraniu, aplikacja "
+"Windows 7 lub nowszy, zarówno 32- jak i 64-bitowy. Po pobraniu, aplikacja "
 "jest gotowa do użycia."
 
 #: index.php:331
@@ -168,11 +168,11 @@ msgstr "Użycie"
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr ""
-"Pobierz plik rozruchowy i uruchom go &ndash; instalacja nie jest wymagana."
+"Pobierz i uruchom plik wykonywalny &ndash; instalacja nie jest wymagana."
 
 #: index.php:334
 msgid "The executable is digitally signed and the signature should state:"
-msgstr "Plik rozruchowy jest podpisany cyfrowo, a sygnatura powinna zawierać:"
+msgstr "Plik wykonywalny jest podpisany cyfrowo, a sygnatura powinna zawierać:"
 
 #: index.php:335
 msgid "(v1.3.0 or later)"
@@ -202,7 +202,7 @@ msgstr ""
 
 #: index.php:339
 msgid "Notes on ISO Support:"
-msgstr "Uwagi do wsparcia dla ISO:"
+msgstr "Uwagi do wsparcia dla obrazów ISO:"
 
 #: index.php:340
 #, php-format
@@ -211,7 +211,7 @@ msgid ""
 "an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "Wszystkie wersje Rufusa począwszy od v1.1.0 umożliwiają tworzenie nośnika "
-"rozruchowego z <a target=\"_blank\" %s>obrazu ISO</a> (.iso)."
+"rozruchowego USB z <a target=\"_blank\" %s>obrazu ISO</a> (.iso)."
 
 #: index.php:341
 #, php-format
@@ -222,8 +222,8 @@ msgid ""
 "\" %s>ImgBurn</a>."
 msgstr ""
 "Jednak tworzenie obrazu ISO z fizycznego nośnika lub zestawu plików jest "
-"bardzo łatwe z pomocą aplikacji do wypalania płyt CD takimi jak bezpłatne "
-"programy <a target=\"_blank\" %s>CDBurnerXP</a> lub <a target=\"_blank\" "
+"bardzo łatwe z pomocą aplikacji do nagrywania płyt CD takimi jak bezpłatne "
+"dostępne <a target=\"_blank\" %s>CDBurnerXP</a> lub <a target=\"_blank\" "
 "%s>ImgBurn</a>."
 
 #: index.php:343
@@ -278,7 +278,7 @@ msgid ""
 "environment."
 msgstr ""
 "Rufus jest tworzony w 100%% otwarcie, począwszy od swojego <a target=\"_blank"
-"\" %s>publicznego źródła</a>, używając środowiska <a target=\"_blank\" "
+"\" %s>otwartego źródła</a>, używając środowiska <a target=\"_blank\" "
 "%s>MinGW32</a>."
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
@@ -344,8 +344,8 @@ msgid ""
 "\"_blank\" %s>Free Software Foundation</a>, as they are the main reason "
 "software like Rufus is possible."
 msgstr ""
-"Jeśli naprawdę chcesz, możesz złożyć dotację na rzecz <a target=\"_blank\" "
-"%s>Fundacji Wolnego Oprogramowania</a>, ponieważ to dzięki niej "
+"Jeśli naprawdę chcesz, możesz przekazać dotację na rzecz <a target=\"_blank"
+"\" %s>Fundacji Wolnego Oprogramowania</a>, ponieważ to dzięki niej "
 "oprogramowanie takie jak Rufus może istnieć."
 
 #: index.php:392
@@ -363,7 +363,7 @@ msgid ""
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
 "Mimo wszystko, korzystaj z Rufusa do woli i nie miej poczucia winy, że nie "
-"udzieliłeś wsparcia finansowego  &ndash; nigdy nie powinieneś się tak czuć!"
+"udzieliłeś wsparcia finansowego &ndash; nigdy nie powinieneś się tak czuć!"
 
 #: index.php:395
 msgid "Speed comparison between Rufus and other applications"
@@ -382,7 +382,7 @@ msgstr ""
 
 #: index.php:421
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
-msgstr "Kilka sprawdzonych obrazów ISO, z którymi działa Rufus"
+msgstr "Kilka sprawdzonych obrazów ISO działających z Rufusem"
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
@@ -390,8 +390,8 @@ msgstr "Kilka sprawdzonych obrazów ISO, z którymi działa Rufus"
 #: index.php:476
 msgid "English translation by Pete Batard"
 msgstr ""
-"Polskie tłumaczenie: <a href=\"http://halamix2.cba.pl/\">Piotr Halama</a><br/"
-">Poprawki: Maciej Junior Niewiarowski"
+"Polskie tłumaczenie: Piotr Halama<br/>Poprawki: Maciej Junior Niewiarowski, "
+"<a href=\"https://crowdin.com/profile/PrinceNorris\">Sebastian Jasiński</a>"
 
 #: index.php:477
 msgid "USB icon by"

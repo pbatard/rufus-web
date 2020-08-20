@@ -19,19 +19,19 @@ msgstr ""
 "X-Generator: Poedit 2.0.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:88
+#: index.php:91
 msgid "Version"
 msgstr "Phiên bản"
 
-#: index.php:120 index.php:255
+#: index.php:123 index.php:258
 msgid "Create bootable USB drives the easy way"
 msgstr "Cách tạo USB khởi động dễ dàng nhất"
 
-#: index.php:226
+#: index.php:229
 msgid "Want to improve this translation?"
 msgstr "Muốn cải thiện bản dịch này?"
 
-#: index.php:247
+#: index.php:250
 msgid ""
 "Placeholder for ads &mdash; Just like you, I wish this site could exist "
 "without them..."
@@ -42,11 +42,11 @@ msgstr ""
 #. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
 #. displayed then. Or you can leave the string untranslated to have the
 #. English version displayed. Please make sure to keep the .png extension.
-#: index.php:257
+#: index.php:260
 msgid "rufus_en.png"
 msgstr "rufus_vi.png"
 
-#: index.php:258
+#: index.php:261
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -54,11 +54,11 @@ msgstr ""
 "Rufus là một tiện ích giúp định dạng và tạo khả năng khởi động cho USB, "
 "chẳng hạn như thẻ USB/đĩa di động, thẻ nhớ, vv."
 
-#: index.php:259
+#: index.php:262
 msgid "It can be especially useful for cases where:"
 msgstr "Rufus đặc biệt hữu dụng trong những trường hợp:"
 
-#: index.php:261
+#: index.php:264
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -66,23 +66,23 @@ msgstr ""
 "bạn cần phải tạo USB chứa trình cài đặt từ ISO có khả năng khởi động "
 "(Windows, Linux, UEFI,...)"
 
-#: index.php:262
+#: index.php:265
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "bạn cần làm việc trên hệ thống chưa cài đặt HĐH"
 
-#: index.php:263
+#: index.php:266
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "bạn cần nạp BIOS hoặc phần mềm lõi khác từ DOS"
 
-#: index.php:264
+#: index.php:267
 msgid "you want to run a low-level utility"
 msgstr "bạn muốn chạy tiện ích cấp thấp"
 
-#: index.php:267
+#: index.php:270
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Mặc dù có kích thước nhỏ, Rufus có thể cung cấp mọi thứ bạn cần!"
 
-#: index.php:268
+#: index.php:271
 #, php-format
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
@@ -97,7 +97,7 @@ msgstr ""
 "khi tạo đĩa USB cài đặt Windows 7. Rufus cũng tạo USB khởi động Linux từ các"
 " tệp ISO rất nhanh."
 
-#: index.php:269
+#: index.php:272
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
 " of this page."
@@ -105,32 +105,32 @@ msgstr ""
 "Một danh sách chưa đầy đủ của các tệp ISO được hỗ trợ cũng được cung cấp ở "
 "cuối trang này."
 
-#: index.php:274
+#: index.php:277
 msgid "Download"
 msgstr "Tải xuống"
 
-#: index.php:275
+#: index.php:278
 #, php-format
 msgid "Last updated %s:"
 msgstr "Lần cập nhật gần nhất %s:"
 
-#: index.php:277
+#: index.php:280
 msgid "Portable"
 msgstr "Phiên bản di động"
 
-#: index.php:278 index.php:374
+#: index.php:281 index.php:282 index.php:377
 msgid "Other versions"
 msgstr "Phiên bản khác"
 
-#: index.php:280
+#: index.php:284
 msgid "Supported Languages:"
 msgstr "Ngôn ngữ hỗ trợ:"
 
-#: index.php:326
+#: index.php:329
 msgid "System Requirements:"
 msgstr "Yêu cầu hệ thống:"
 
-#: index.php:327
+#: index.php:330
 msgid ""
 "Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
@@ -138,7 +138,7 @@ msgstr ""
 "Windows 7 hoặc mới hơn, không quan trọng 32 hay 64 bit. Chỉ cần một lần tải "
 "xuống là ứng dụng đã sẵn sàng để sử dụng."
 
-#: index.php:328
+#: index.php:331
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -150,32 +150,32 @@ msgstr ""
 "ngôn ngữ khác nhau. Nếu bạn thấy rằng mình có thể sử dụng Rufus với ngôn ngữ"
 " của bạn, bạn thật sự phải cảm ơn họ!"
 
-#: index.php:329
+#: index.php:332
 msgid "Usage"
 msgstr "Sử dụng"
 
-#: index.php:330
+#: index.php:333
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "Tải xuống tập tin exe và chạy nó &ndash; không cần phải cài đặt."
 
-#: index.php:331
+#: index.php:334
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "Tập tin thực thi đã được ký dạng kỹ thuật số và thông tin chữ ký là:"
 
-#: index.php:332
+#: index.php:335
 msgid "(v1.3.0 or later)"
 msgstr "(Phiên bản 1.3.0 hoặc mới hơn)"
 
-#: index.php:333
+#: index.php:336
 msgid "(v1.2.0 or earlier)"
 msgstr "(Phiên bản 1.2.0 hoặc cũ hơn)"
 
-#: index.php:334
+#: index.php:337
 msgid "Notes on DOS support:"
 msgstr "Ghi chú về hỗ trợ DOS:"
 
-#: index.php:335
+#: index.php:338
 #, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
@@ -189,11 +189,11 @@ msgstr ""
 "target=\"_blank\" %s>FreeDOS</a> được khuyến cáo thay vì MS-DOS, vì nó hỗ "
 "trợ nhiều bố cục bàn phím hơn."
 
-#: index.php:336
+#: index.php:339
 msgid "Notes on ISO Support:"
 msgstr "Ghi chú về hỗ trợ ISO:"
 
-#: index.php:337
+#: index.php:340
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
@@ -202,31 +202,31 @@ msgstr ""
 "Tất cả phiên bản của Rufus từ v1.1.0 cho phéo tạo USB khởi động từ một <a "
 "target=\"_blank\" %s>ảnh ISO</a> (.iso)."
 
-#: index.php:338
+#: index.php:341
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
 "easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>CDBurnerXP</a> or <a "
-"target=\"_blank\" %s>ImgBurn</a>."
+" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
+"target=\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
 "Tạo một ảnh ISO từ đĩa vật lý hoặc một tập hợp các tập tin rất dễ dàng thông"
 " qua ứng dụng ghi CD, một số ứng dụng miễn phí sẵn có như <a "
-"target=\"_blank\" %s>CDBurnerXP</a> hoặc <a target=\"_blank\" "
-"%s>ImgBurn</a>."
+"target=\"_blank\" %s>InfraRecorder</a> hoặc <a target=\"_blank\" "
+"%s>CDBurnerXP</a>."
 
-#: index.php:340
+#: index.php:343
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Câu hỏi thường gặp (FAQ)"
 
 #. You are encouraged to add the translation for " (in English)." after
 #. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:341
+#: index.php:344
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr "FAQ về Rufus có tại <b><a target=\"_blank\" %s>ĐÂY</a></b>."
 
-#: index.php:342
+#: index.php:345
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -237,11 +237,11 @@ msgstr ""
 "target=\"_blank\" %s>bộ theo dõi vấn đề</a> trên github. Hoặc bạn có thể <a "
 "target=\"_blank\" %s>gửi e-mail</a>."
 
-#: index.php:344
+#: index.php:347
 msgid "License"
 msgstr "Giấy phép"
 
-#: index.php:345
+#: index.php:348
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
@@ -250,7 +250,7 @@ msgstr ""
 "<a target=\"_blank\" %s>Giấy phép Công cộng Thông thường GNU (GPL) phiên bản"
 " 3</a> hoặc mới hơn."
 
-#: index.php:345
+#: index.php:348
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you"
 " respect the GPLv3 license."
@@ -258,7 +258,7 @@ msgstr ""
 "Bạn có quyền phân phối, thay đổi hoặc kể cả bán phần mềm, chừng nào bạn còn "
 "tôn trọng giấy phép GPLv3."
 
-#: index.php:346
+#: index.php:349
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
@@ -270,20 +270,20 @@ msgstr ""
 
 #. You are encouraged to append the translation for "(in English)" after
 #. "Changelog" as it is only available in English
-#: index.php:348
+#: index.php:351
 msgid "Changelog"
 msgstr "Nhật ký thay đổi"
 
-#: index.php:377
+#: index.php:380
 msgid "Source Code"
 msgstr "Mã nguồn"
 
 #. Abbreviation for MegaByte
-#: index.php:276 index.php:277 index.php:378
+#: index.php:279 index.php:280 index.php:381
 msgid "MB"
 msgstr "MB"
 
-#: index.php:379
+#: index.php:382
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
@@ -292,12 +292,12 @@ msgstr ""
 "Theo cách khác, bạn có thể sao chép kho <a target=\"_blank\" %s>git</a> bằng"
 " lệnh:"
 
-#: index.php:381
+#: index.php:384
 #, php-format
 msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
 msgstr "Để có thêm thông tin, hãy xem <a target=\"_blank\" %s>dự án github</a>."
 
-#: index.php:382
+#: index.php:385
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -305,11 +305,11 @@ msgstr ""
 "Nếu bạn là một nhà phát triển, bạn được khuyến kích giúp đỡ tìm và gửi các "
 "bản khắc phục cho Rufus."
 
-#: index.php:384
+#: index.php:387
 msgid "Donations"
 msgstr "Quyên góp"
 
-#: index.php:385
+#: index.php:388
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -317,7 +317,7 @@ msgstr ""
 "Tôi thường xuyên được hỏi về điều này, nhưng <b>không</b> có nút quyên góp "
 "nào trên trang này cả."
 
-#: index.php:386
+#: index.php:389
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -327,7 +327,7 @@ msgstr ""
 "phát triển phần mềm và tồi tệ hơn, nó có thể tạo nên cảm giác tội lỗi cho "
 "những người dùng không quyên góp."
 
-#: index.php:389
+#: index.php:392
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -338,7 +338,7 @@ msgstr ""
 "target=\"_blank\" %s>Quỹ phần mềm miễn phí</a>, họ là nguyên nhân chính giúp"
 " phần mềm như Rufus được tạo ra."
 
-#: index.php:390
+#: index.php:393
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much"
@@ -348,7 +348,7 @@ msgstr ""
 "đã tiếp tục hỗ trợ và nhiệt tình về chương trình nhỏ này: tôi thật sự đánh "
 "giá cao điều đó!"
 
-#: index.php:391
+#: index.php:394
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -357,11 +357,11 @@ msgstr ""
 " việc bạn không có đóng góp tài chính nào &ndash; bạn không cần phải làm "
 "thế!"
 
-#: index.php:393
+#: index.php:396
 msgid "Speed comparison between Rufus and other applications"
 msgstr "So sánh tốc độ giữ Rufus và các ứng dụng khác"
 
-#: index.php:394
+#: index.php:397
 #, php-format
 msgid ""
 "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
@@ -372,7 +372,7 @@ msgstr ""
 "2 duo/RAM 4 GB, với một bộ điều khiển USB 3.0 và một đĩa di động <a "
 "target=\"_blank\" %s>16 GB USB 3.0 ADATA S102</a>."
 
-#: index.php:419
+#: index.php:422
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Danh sách ISO chưa đầy đủ mà Rufus có thể làm việc được"
 
@@ -381,7 +381,7 @@ msgstr "Danh sách ISO chưa đầy đủ mà Rufus có thể làm việc đư�
 #. translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
 #. Batard</a>
-#: index.php:474
+#: index.php:477
 msgid "English translation by Pete Batard"
 msgstr ""
 "Bản dịch tiếng Việt tạo bởi <a "
@@ -389,38 +389,14 @@ msgstr ""
 " & <a "
 "href=\"mailto:honguyenminh@outlook.com?Subject=Rufus%20Homepage%20translation\">honguyenminh@outlook.com</a>"
 
-#: index.php:475
+#: index.php:478
 msgid "USB icon by"
 msgstr "Biểu tượng USB tạo bởi"
 
-#: index.php:476
+#: index.php:479
 msgid "Hosting by"
 msgstr "Máy chủ tài trợ bởi"
 
-#: index.php:217
+#: index.php:220
 msgid "Change language:"
 msgstr ""
-
-#~ msgid "KB"
-#~ msgstr "KB"
-
-#~ msgid "Notes on UEFI & GPT support:"
-#~ msgstr "Ghi chú về hỗ trợ UEFI & GPT:"
-
-#~ msgid ""
-#~ "Since version 1.3.2, Rufus support UEFI as well as GPT for installation "
-#~ "media, meaning that it will allow you to install Windows 7, Windows 8 or "
-#~ "Linux in full EFI mode."
-#~ msgstr ""
-#~ "Từ phiên bản 1.3.2, Rufus hỗ trợ UEFI cũng như GPT đối với phương tiện cài "
-#~ "đặt, điều này có nghĩa rằng nó sẽ cho phép bạn cài đặt Windows 7, Windows 8 "
-#~ "hoặc Linux trong chế độ EFI hoàn chỉnh."
-
-#~ msgid ""
-#~ "However, Windows Vista or later is required for full UEFI/GPT support. "
-#~ "Because of OS limitations, Windows XP restricts the creation of UEFI "
-#~ "bootable drives to MBR mode."
-#~ msgstr ""
-#~ "Tuy nhiên, Windows Vista hoặc mới hơn yêu cầu hỗ trợ UEFI/GPT đầy đủ. Vì "
-#~ "giới hạn của hệ điều hành, Windows XP không thể tạo đĩa khởi động UEFI và "
-#~ "chỉ dùng được chế độ MBR."

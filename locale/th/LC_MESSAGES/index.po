@@ -19,19 +19,19 @@ msgstr ""
 "X-Generator: Poedit 2.0.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:88
+#: index.php:91
 msgid "Version"
 msgstr "เวอร์ชั่น"
 
-#: index.php:120 index.php:255
+#: index.php:123 index.php:258
 msgid "Create bootable USB drives the easy way"
 msgstr "สร้างไดรฟ์บูตUSBอย่างง่ายดาย"
 
-#: index.php:226
+#: index.php:229
 msgid "Want to improve this translation?"
 msgstr "ต้องการที่จะปรับปรุงการแปลนี้?"
 
-#: index.php:247
+#: index.php:250
 msgid ""
 "Placeholder for ads &mdash; Just like you, I wish this site could exist "
 "without them..."
@@ -42,11 +42,11 @@ msgstr ""
 #. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
 #. displayed then. Or you can leave the string untranslated to have the
 #. English version displayed. Please make sure to keep the .png extension.
-#: index.php:257
+#: index.php:260
 msgid "rufus_en.png"
 msgstr "rufus_th.png"
 
-#: index.php:258
+#: index.php:261
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -54,11 +54,11 @@ msgstr ""
 "Rufusคือโปรแกรมที่ช่วยฟอร์แมทและสร้างUSBแฟลชไดรฟ์ที่สามารถบูทได้ เช่นคีย์ "
 "USB / pendrives, Memory Sticks, ฯลฯ"
 
-#: index.php:259
+#: index.php:262
 msgid "It can be especially useful for cases where:"
 msgstr "Rufus อาจจะเป็นประโยชน์อย่างยิ่งในกรณีที่:"
 
-#: index.php:261
+#: index.php:264
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -66,24 +66,24 @@ msgstr ""
 "คุณจำเป็นต้องสร้างสื่อการติดตั้ง USB จาก ISOs ที่สามารถบูตได้ (Windows, "
 "Linux, UEFI ฯลฯ )"
 
-#: index.php:262
+#: index.php:265
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr ""
 "คุณจำเป็นต้องทำงานในระบบที่ไม่ได้มีการติดตั้งระบบปฏิบัติการไว้ก่อนหน้า"
 
-#: index.php:263
+#: index.php:266
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "คุณจำเป็นต้องแฟลชไบออสหรือเฟิร์มแวร์อื่น ๆ จาก DOS"
 
-#: index.php:264
+#: index.php:267
 msgid "you want to run a low-level utility"
 msgstr "คุณต้องการเรียกใช้ยูทิลิตี้ระดับต่ำ"
 
-#: index.php:267
+#: index.php:270
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "แม้จะมีขนาดที่เล็กแต่Rufusมีทุกสิ่งที่คุณต้องการ!"
 
-#: index.php:268
+#: index.php:271
 #, php-format
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
@@ -100,39 +100,39 @@ msgstr ""
 "นอกจากนี้Rufusยังเร็วกว่าเล็กน้อยในการสร้างระบบปฏิบัติการLinuxที่สามารถบูทได้จากUSB"
 " จากISOs"
 
-#: index.php:269
+#: index.php:272
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
 " of this page."
 msgstr ""
 "รายการ ISOs ที่Rufusสนับสนุนอย่างคร่าวๆ สามารถดูได้จากด้านล่างของหน้านี้"
 
-#: index.php:274
+#: index.php:277
 msgid "Download"
 msgstr "ดาวน์โหลด"
 
-#: index.php:275
+#: index.php:278
 #, php-format
 msgid "Last updated %s:"
 msgstr "การอัพเดทล่าสุด %s:"
 
-#: index.php:277
+#: index.php:280
 msgid "Portable"
 msgstr "แบบพกพา"
 
-#: index.php:278 index.php:374
+#: index.php:281 index.php:282 index.php:377
 msgid "Other versions"
 msgstr "เวอร์ชั่นอื่นๆ"
 
-#: index.php:280
+#: index.php:284
 msgid "Supported Languages:"
 msgstr "ภาษาที่ได้รับการสนับสนุน:"
 
-#: index.php:326
+#: index.php:329
 msgid "System Requirements:"
 msgstr "ข้อกำหนดขั้นต่ำของระบบ:"
 
-#: index.php:327
+#: index.php:330
 msgid ""
 "Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
@@ -140,7 +140,7 @@ msgstr ""
 "Windows 7 32หรือ 64บิท หรือระบบปฏิบัติการที่ใหม่กว่า "
 "เมื่อติดตั้งแล้วโปรแกรมจะสามารถใช้งานได้ทันที"
 
-#: index.php:328
+#: index.php:331
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -151,32 +151,32 @@ msgstr ""
 " และรวมถึงผู้แปลเว็บไซต์ในหลากหลายภาษา "
 "หากคุณพบว่าคุณสามารถใช้Rufusในภาษาของคุณเอง คุณควรจะขอบคุณพวกเขา!"
 
-#: index.php:329
+#: index.php:332
 msgid "Usage"
 msgstr "วิธีการใช้งาน"
 
-#: index.php:330
+#: index.php:333
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "ดาวน์โหลดและเรียกใช้ &ndash; ไม่จำเป็นต้องติดตั้งโปรแกรม"
 
-#: index.php:331
+#: index.php:334
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "โปรแกรมมีลายเซ็นและลายเซ็นควรระบุ:"
 
-#: index.php:332
+#: index.php:335
 msgid "(v1.3.0 or later)"
 msgstr "(v.1.3.0 หรือเวอร์ชั่นที่สูงกว่า)"
 
-#: index.php:333
+#: index.php:336
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 หรือเวอร์ชั่นที่ต่ำกว่า)"
 
-#: index.php:334
+#: index.php:337
 msgid "Notes on DOS support:"
 msgstr "หมายเหตุเกี่ยวกับการสนับสนุน DOS:"
 
-#: index.php:335
+#: index.php:338
 #, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
@@ -190,11 +190,11 @@ msgstr ""
 "ซึ่งเป็นตัวเลือกเริ่มต้นจะเหมาะสมกว่า MS-DOS "
 "เนื่องจากการสนับสนุนรูปแบบแป้นพิมพ์ที่หลากหลายกว่า"
 
-#: index.php:336
+#: index.php:339
 msgid "Notes on ISO Support:"
 msgstr "หมายเหตุเกี่ยวกับการสนับสนุน ISO:"
 
-#: index.php:337
+#: index.php:340
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
@@ -203,33 +203,33 @@ msgstr ""
 "ทุกรุ่นของRufus ตั้งแต่ v1.1.0 สามารถสร้างUSBที่บูทได้จาก <a "
 "target=\"_blank\" %s>ISO</a> (.iso)"
 
-#: index.php:338
+#: index.php:341
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
 "easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>CDBurnerXP</a> or <a "
-"target=\"_blank\" %s>ImgBurn</a>."
+" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
+"target=\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
 "การสร้าง ISO จากแผ่นดิสก์ หรือจากไฟล์เป็นเรื่องง่ายมาก "
 "อย่างไรก็ตามคุณจะต้องใช้งานผ่านโปรแกรมเบิร์นCDที่มีสามารถดาวน์โหลดได้ฟรี "
-"เช่น <a target=\"_blank\" %s>CDBurnerXP</a> หรือ <a target=\"_blank\" "
-"%s>ImgBurn</a>"
+"เช่น <a target=\"_blank\" %s>InfraRecorder</a> หรือ <a target=\"_blank\" "
+"%s>CDBurnerXP</a>"
 
-#: index.php:340
+#: index.php:343
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "คำถามที่ถูกถามบ่อย (FAQ)"
 
 #. You are encouraged to add the translation for " (in English)." after
 #. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:341
+#: index.php:344
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
 "สามารถดูคำถามที่ถูกถามบ่อยเดี่ยวกับRufusได้ <b><a target=\"_blank\" "
 "%s>ที่นี่</a></b>"
 
-#: index.php:342
+#: index.php:345
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -239,11 +239,11 @@ msgstr ""
 "หากต้องการให้ข้อเสนอแนะ รายงานข้อผิดพลาด หรือ\n"
 "เพื่อให้ข้อเสนอแนะรายงานข้อผิดพลาดหรือขอให้มีการเพิ่มประสิทธิภาพโปรดใช้ GitHub <a target=\"_blank\" %s>ติดตามปัญหา</a> หรือคุณสามารถ <a target=\"_blank\" %s>ส่ง e-mail</a>"
 
-#: index.php:344
+#: index.php:347
 msgid "License"
 msgstr "สิทธิ์การใช้งาน"
 
-#: index.php:345
+#: index.php:348
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
@@ -252,7 +252,7 @@ msgstr ""
 "<a target=\"_blank\" %s>ใบอนุญาตสาธารณะทั่วไป (GPL) เวอร์ชั่น 3</a> "
 "หรือสูงกว่า"
 
-#: index.php:345
+#: index.php:348
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you"
 " respect the GPLv3 license."
@@ -260,7 +260,7 @@ msgstr ""
 "คุณสามารถแจกจ่าย แก้ไข หรือแม้กระทั่งขายซอฟต์แวร์ได้ "
 "ตราบเท่าที่คุณเคารพใบอนุญาต GPLv3"
 
-#: index.php:346
+#: index.php:349
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
@@ -272,20 +272,20 @@ msgstr ""
 
 #. You are encouraged to append the translation for "(in English)" after
 #. "Changelog" as it is only available in English
-#: index.php:348
+#: index.php:351
 msgid "Changelog"
 msgstr "การเปลี่ยนแปลง"
 
-#: index.php:377
+#: index.php:380
 msgid "Source Code"
 msgstr "ซอร์สโค๊ด (คำสั่งในการเขียนโปรแกรม)"
 
 #. Abbreviation for MegaByte
-#: index.php:276 index.php:277 index.php:378
+#: index.php:279 index.php:280 index.php:381
 msgid "MB"
 msgstr "MB"
 
-#: index.php:379
+#: index.php:382
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
@@ -294,23 +294,23 @@ msgstr ""
 "นอกจากนี้แล้ว คุณสามารถโคลน <a target=\"_blank\" %s>Git repository</a> "
 "โดยใช้:"
 
-#: index.php:381
+#: index.php:384
 #, php-format
 msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
 msgstr ""
 "หากต้องการข้อมูลเพิ่มเติม โปรดดู <a target=\"_blank\" %s>github project</a>."
 
-#: index.php:382
+#: index.php:385
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
 msgstr "หากคุณเป็นนักพัฒนา คุณสามารถทดสอบและส่งแพทช์ของRufusได้"
 
-#: index.php:384
+#: index.php:387
 msgid "Donations"
 msgstr "การบริจาคเพื่อสนับสนุน"
 
-#: index.php:385
+#: index.php:388
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -318,7 +318,7 @@ msgstr ""
 "เนื่องจากมีการสอบถามเข้ามาเป็นจำนวนมาก ปุ่มบริจาคเงินจะ<b>ไม่มี</b> "
 "ในหน้านี้"
 
-#: index.php:386
+#: index.php:389
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -328,7 +328,7 @@ msgstr ""
 "และที่แย่ไปกว่านั้นคือ "
 "ระบบบริจาคอาจจะทำให้ผู้ที่เลือกที่จะไม่บริจาครู้สึกผิดกับการที่ตัดสินใจแบบนั้น"
 
-#: index.php:389
+#: index.php:392
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -339,7 +339,7 @@ msgstr ""
 "target=\"_blank\" %s>Free Software Foundation</a> "
 "เนื่องจากพวกเขาเป็นเหตุผลหลักที่ทำให้Rufusเกิดขึ้นได้"
 
-#: index.php:390
+#: index.php:393
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much"
@@ -349,7 +349,7 @@ msgstr ""
 "สำหรับการสนับสนุนอย่างต่อเนื่องและล้นหลามในโปรแกรมเล็กๆโปรแกรมนี้ "
 "ผมรู้สึกซาบซึ้งจริงๆ"
 
-#: index.php:391
+#: index.php:394
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -358,11 +358,11 @@ msgstr ""
 "Rufusได้อย่างเสรีและสบายใจแม้ว่าคุณจะไม่ได้สนับสนุนใดๆเลยทางด้านการเงิน "
 "คุณไม่ควรจะเลยที่จะรู้สึกแย่"
 
-#: index.php:393
+#: index.php:396
 msgid "Speed comparison between Rufus and other applications"
 msgstr "การเปรียบเทียบอย่างคร่าวๆระหว่าง Rufus และโปรแกรมอื่นๆ"
 
-#: index.php:394
+#: index.php:397
 #, php-format
 msgid ""
 "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
@@ -373,7 +373,7 @@ msgstr ""
 "duo/ 4 GB RAM โดยผ่านพอร์ทUSB 3.0 และ <a target=\"_blank\" %s>16 GB USB 3.0 "
 "ADATA S102 แฟลชไดรฟ์</a>."
 
-#: index.php:419
+#: index.php:422
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "รายการ ISOsอย่างคร่าวๆที่สามารถใช้งานได้กับ Rufus"
 
@@ -382,43 +382,18 @@ msgstr "รายการ ISOsอย่างคร่าวๆที่สา�
 #. translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
 #. Batard</a>
-#: index.php:474
+#: index.php:477
 msgid "English translation by Pete Batard"
 msgstr "แปลเป็นภาษาไทยโดย วชิรวิทย์ ศรีมนัส"
 
-#: index.php:475
+#: index.php:478
 msgid "USB icon by"
 msgstr "ไอคอนUSBโดย"
 
-#: index.php:476
+#: index.php:479
 msgid "Hosting by"
 msgstr "โฮสติ้งโดย"
 
-#: index.php:217
+#: index.php:220
 msgid "Change language:"
 msgstr ""
-
-#~ msgid "KB"
-#~ msgstr "KB"
-
-#~ msgid "Notes on UEFI & GPT support:"
-#~ msgstr "หมายเหตุเกี่ยวกับการสนับสนุน UEFI & GPT:"
-
-#~ msgid ""
-#~ "Since version 1.3.2, Rufus support UEFI as well as GPT for installation "
-#~ "media, meaning that it will allow you to install Windows 7, Windows 8 or "
-#~ "Linux in full EFI mode."
-#~ msgstr ""
-#~ "ตั้งแต่เวอร์ชั่น 1.3.2, Rufus สนับสนุนUEFI และ GPT สำหรับสื่อการติดตั้ง "
-#~ "ซึ่งหมายความว่ามันจะช่วยให้คุณติดตั้ง Windows 7, Windows 8 หรือLinuxในโหมด "
-#~ "EFI อย่างสมบูรณ์"
-
-#~ msgid ""
-#~ "However, Windows Vista or later is required for full UEFI/GPT support. "
-#~ "Because of OS limitations, Windows XP restricts the creation of UEFI "
-#~ "bootable drives to MBR mode."
-#~ msgstr ""
-#~ "อย่างไรก็ตาม Windows Vista "
-#~ "หรือระบบปฏิบัติการที่ใหม่กว่านั้นจำเป็นสำหรับการสนับสนุน UEFI/GPT "
-#~ "เต็มรูปแบบเนื่องจากข้อจำกัดของระบบปฏิบัติการ Windows XP "
-#~ "จำกัดการสร้างไดรฟ์ที่สามารถบูต UEFI ไว้ที่โหมด MBR"

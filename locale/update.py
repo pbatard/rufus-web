@@ -21,10 +21,12 @@ def main():
         filename = os.path.join(path, name)
         print("Processing '" + filename + "'...")
         po = polib.pofile(filename)
-        # Fix hrefs
+        # Replace and reorder CD burning apps
         for entry in po.translated_entries():
-          entry.msgid = entry.msgid.replace('<a %s>', '<a target="_blank" %s>')
-          entry.msgstr = entry.msgstr.replace('<a %s>', '<a target="_blank" %s>')
+          entry.msgid = entry.msgid.replace('CDBurnerXP', 'InfraRecorder')
+          entry.msgstr = entry.msgstr.replace('CDBurnerXP', 'InfraRecorder')
+          entry.msgid = entry.msgid.replace('ImgBurn', 'CDBurnerXP')
+          entry.msgstr = entry.msgstr.replace('ImgBurn', 'CDBurnerXP')
         po.merge(pot)
         # Uncomment to create a backup
         # os.replace(filename, filename + '.old')

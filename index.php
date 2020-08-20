@@ -338,7 +338,7 @@ case "ur":
 		<p><? printf(_("If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system. In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default selection, is recommended over MS-DOS, as it supports more keyboard layouts."), "href=\"http://www.freedos.org\"");?></p>
 		<h4><?= _("Notes on ISO Support:");?></h4>
 		<p><? printf(_("All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target=\"_blank\" %s>ISO image</a> (.iso)."), "href=\"http://en.wikipedia.org/wiki/ISO_image\"");?></p>
-		<p><? printf(_("Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target=\"_blank\" %s>CDBurnerXP</a> or <a target=\"_blank\" %s>ImgBurn</a>."), "href=\"http://cdburnerxp.se/\"", "href=\"http://www.imgburn.com/\"");?></p>
+		<p><? printf(_("Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a target=\"_blank\" %s>CDBurnerXP</a>."), "href=\"http://infrarecorder.org/\"", "href=\"http://cdburnerxp.se/\"");?></p>
 		<a name="FAQ"></a>
 		<h2><?= _("Frequently Asked Questions (FAQ)");?></h2>
 		<p><? /* You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English */ printf(_("A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."), "href=\"https://github.com/pbatard/rufus/wiki/FAQ\"");?><br/></p>

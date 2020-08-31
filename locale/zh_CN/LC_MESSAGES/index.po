@@ -28,7 +28,7 @@ msgstr "轻松创建USB启动盘"
 
 #: index.php:229
 msgid "Want to improve this translation?"
-msgstr ""
+msgstr "想改善此翻译？"
 
 #: index.php:250
 msgid ""
@@ -108,7 +108,7 @@ msgstr "最后更新于 %s："
 
 #: index.php:280
 msgid "Portable"
-msgstr ""
+msgstr "便携版"
 
 #: index.php:281 index.php:282 index.php:377
 msgid "Other versions"
@@ -363,4 +363,4 @@ msgstr "主机提供："
 
 #: index.php:220
 msgid "Change language:"
-msgstr ""
+msgstr "更改语言："

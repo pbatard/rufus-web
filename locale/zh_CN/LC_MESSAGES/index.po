@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2018-05-29 15:55+0100\n"
-"PO-Revision-Date: 2018-05-29 16:35+0100\n"
+"POT-Creation-Date: 2020-08-20 11:13+0100\n"
+"PO-Revision-Date: 2020-09-01 12:43+0100\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: index.php:91
 msgid "Version"
@@ -26,21 +26,21 @@ msgstr "版本"
 msgid "Create bootable USB drives the easy way"
 msgstr "轻松创建USB启动盘"
 
+#: index.php:220
+msgid "Change language:"
+msgstr "更改语言："
+
 #: index.php:229
 msgid "Want to improve this translation?"
-msgstr ""
+msgstr "想改善此翻译？"
 
 #: index.php:250
 msgid ""
 "Placeholder for ads &mdash; Just like you, I wish this site could exist "
 "without them..."
-msgstr ""
+msgstr "广告占位符 &mdash; 就像你一样， 我希望这个网站可以存在没有他们..."
 
-#. This is used display a screenshot of Rufus in your language (if available).
-#. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
-#. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
-#. displayed then. Or you can leave the string untranslated to have the
-#. English version displayed. Please make sure to keep the .png extension.
+#. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
 #: index.php:260
 msgid "rufus_en.png"
 msgstr "rufus_zh_CN.png"
@@ -49,7 +49,9 @@ msgstr "rufus_zh_CN.png"
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
-msgstr "Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。"
+msgstr ""
+"Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆"
+"棒等等。"
 
 #: index.php:262
 msgid "It can be especially useful for cases where:"
@@ -59,7 +61,9 @@ msgstr "在如下场景中会非常有用："
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
-msgstr "你需要把一些可引导的ISO格式的镜像（Windows，Linux，UEFI等）创建成USB安装盘的时候"
+msgstr ""
+"你需要把一些可引导的ISO格式的镜像（Windows，Linux，UEFI等）创建成USB安装盘的"
+"时候"
 
 #: index.php:265
 msgid "you need to work on a system that doesn't have an OS installed"
@@ -82,19 +86,19 @@ msgstr "Rufus 麻雀虽小，五脏俱全，体积虽小，功能全面。"
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
 "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
-" the creation of a Windows 7 USB installation drive from an ISO. It is also "
+"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on "
+"the creation of a Windows 7 USB installation drive from an ISO. It is also "
 "marginally faster on the creation of Linux bootable USB from ISOs."
 msgstr ""
-"哦，对了，Rufus 还 <b>非常快</b>，比如，在从ISO镜像创建 Windows 7 USB安装盘的时候，他比 <a "
-"target=\"_blank\" %s>UNetbootin</a>，<a target=\"_blank\" %s>Universal USB "
-"Installer</a> 或者 <a target=\"_blank\" %s>Windows 7 USB download tool</a> "
-"大约快2倍。当然，在创建 Linux 可引导USB设备的时候也比较快。"
+"哦，对了，Rufus 还 <b>非常快</b>，比如，在从ISO镜像创建 Windows 7 USB安装盘的"
+"时候，他比 <a target=\"_blank\" %s>UNetbootin</a>，<a target=\"_blank\" "
+"%s>Universal USB Installer</a> 或者 <a target=\"_blank\" %s>Windows 7 USB "
+"download tool</a> 大约快2倍。当然，在创建 Linux 可引导USB设备的时候也比较快。"
 
 #: index.php:272
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
+"of this page."
 msgstr "页面底部也粗略列举了一些 Rufus 支持的ISO镜像。"
 
 #: index.php:277
@@ -106,9 +110,14 @@ msgstr "下载"
 msgid "Last updated %s:"
 msgstr "最后更新于 %s："
 
+#. Abbreviation for MegaByte
+#: index.php:279 index.php:280 index.php:381
+msgid "MB"
+msgstr ""
+
 #: index.php:280
 msgid "Portable"
-msgstr ""
+msgstr "便携版"
 
 #: index.php:281 index.php:282 index.php:377
 msgid "Other versions"
@@ -135,8 +144,8 @@ msgid ""
 "various languages. If you find that you can use Rufus in your own language, "
 "you should really thank them!"
 msgstr ""
-"在这里我要借这个机会表达对那些把 Rufus 和这个网页翻译成各种语言的翻译者们的谢意。如果你发现 Rufus "
-"可以支持你们使用的语言，你也应该感谢他们。"
+"在这里我要借这个机会表达对那些把 Rufus 和这个网页翻译成各种语言的翻译者们的谢"
+"意。如果你发现 Rufus 可以支持你们使用的语言，你也应该感谢他们。"
 
 #: index.php:332
 msgid "Usage"
@@ -171,8 +180,9 @@ msgid ""
 "In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default "
 "selection, is recommended over MS-DOS, as it supports more keyboard layouts."
 msgstr ""
-"如果你创建了一个DOS启动盘，但是没有使用美式键盘，Rufus 会尝试根据设备选择一个键盘布局，在那种情况下推荐使用 <a "
-"target=\"_blank\" %s>FreeDOS</a>（默认选项）而不是 MS-DOS，因为前者支持更多的键盘布局。"
+"如果你创建了一个DOS启动盘，但是没有使用美式键盘，Rufus 会尝试根据设备选择一个"
+"键盘布局，在那种情况下推荐使用 <a target=\"_blank\" %s>FreeDOS</a>（默认选"
+"项）而不是 MS-DOS，因为前者支持更多的键盘布局。"
 
 #: index.php:339
 msgid "Notes on ISO Support:"
@@ -181,29 +191,29 @@ msgstr "对ISO支持的说明："
 #: index.php:340
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
+"an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
-"Rufus v1.10 及其以后的所有版本都支持从 <a target=\"_blank\" %s>ISO 镜像</a> (.iso) "
-"创建可引导USB。"
+"Rufus v1.10 及其以后的所有版本都支持从 <a target=\"_blank\" %s>ISO 镜像</a> "
+"(.iso) 创建可引导USB。"
 
 #: index.php:341
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
-"target=\"_blank\" %s>CDBurnerXP</a>."
+"easy to do however, through the use of a CD burning application, such as the "
+"freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a target="
+"\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
-"通过使用类似 <a target=\"_blank\" %s>InfraRecorder</a> 或者 <a target=\"_blank\" "
-"%s>CDBurnerXP</a> 之类的免费CD镜像烧录程序，可以非常方便的从实体光盘或者一系列文件中创建 ISO 镜像。"
+"通过使用类似 <a target=\"_blank\" %s>InfraRecorder</a> 或者 <a target="
+"\"_blank\" %s>CDBurnerXP</a> 之类的免费CD镜像烧录程序，可以非常方便的从实体光"
+"盘或者一系列文件中创建 ISO 镜像。"
 
 #: index.php:343
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "常见问题（FAQ）"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
 #: index.php:344
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
@@ -213,11 +223,12 @@ msgstr "Rufus 的常见问题（FAQ）<b><a target=\"_blank\" %s>在此</a></b>�
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
-"target=\"_blank\" %s>send an e-mail</a>."
+"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target="
+"\"_blank\" %s>send an e-mail</a>."
 msgstr ""
-"您可以使用 github 的 <a target=\"_blank\" %s>issue tracker</a> 来提供反馈，报告 "
-"BUG，或者提交功能需求。当然也可以直接发 <a target=\"_blank\" %s>电子邮件</a>。"
+"您可以使用 github 的 <a target=\"_blank\" %s>issue tracker</a> 来提供反馈，报"
+"告 BUG，或者提交功能需求。当然也可以直接发 <a target=\"_blank\" %s>电子邮件</"
+"a>。"
 
 #: index.php:347
 msgid "License"
@@ -229,26 +240,26 @@ msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
 msgstr ""
-"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> 或更新版本"
+"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> 或更新"
+"版本"
 
 #: index.php:348
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr "在尊重 GPLv3 许可证的前提下，你可以随意分发，修改或者出售此软件。"
 
 #: index.php:349
 #, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a "
-"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
-"%s>MinGW32</a> environment."
+"Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank"
+"\" %s>public source</a>, using a <a target=\"_blank\" %s>MinGW32</a> "
+"environment."
 msgstr ""
-"Rufus 项目使用 100%% 透明的方式进行开发，对公众开放 <a target=\"_blank\" %s>源代码</a>，使用 <a "
-"target=\"_blank\" %s>MinGW32</a> 环境。"
+"Rufus 项目使用 100%% 透明的方式进行开发，对公众开放 <a target=\"_blank\" %s>"
+"源代码</a>，使用 <a target=\"_blank\" %s>MinGW32</a> 环境。"
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
 #: index.php:351
 msgid "Changelog"
 msgstr "更新日志（英文）"
@@ -257,23 +268,18 @@ msgstr "更新日志（英文）"
 msgid "Source Code"
 msgstr "源代码"
 
-#. Abbreviation for MegaByte
-# this  abbreviation  doesn't to be translated
-# Everyone knows what it meanes
-#: index.php:279 index.php:280 index.php:381
-msgid "MB"
-msgstr ""
-
 #: index.php:382
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
-msgstr "当然，你也可以使用如下方式克隆 <a target=\"_blank\" %s>git</a> 源代码库："
+msgstr ""
+"当然，你也可以使用如下方式克隆 <a target=\"_blank\" %s>git</a> 源代码库："
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>github project</a>."
 msgstr "更多详情请查看 <a target=\"_blank\" %s>github 项目主页</a> 。"
 
 #: index.php:385
@@ -297,30 +303,37 @@ msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
 "choose not to donate."
-msgstr "主要原因是我认为捐助模式不能真正帮助软件发展，相反的，会对没有捐助的用户产生一种无意的诱导性的愧疚歧视感。"
+msgstr ""
+"主要原因是我认为捐助模式不能真正帮助软件发展，相反的，会对没有捐助的用户产生"
+"一种无意的诱导性的愧疚歧视感。"
 
 #: index.php:392
 #, php-format
 msgid ""
-"If you really insist, you can always make a donation to the <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
-"reason software like Rufus is possible."
+"If you really insist, you can always make a donation to the <a target="
+"\"_blank\" %s>Free Software Foundation</a>, as they are the main reason "
+"software like Rufus is possible."
 msgstr ""
 "当然，如果你非要坚持，你可以捐给 <a target=\"_blank\" %s>Free Software "
-"Foundation（自由软件基金会）</a>，他们才是无数类似 Rufus 的软件得以存在的原因。"
+"Foundation（自由软件基金会）</a>，他们才是无数类似 Rufus 的软件得以存在的原"
+"因。"
 
 #: index.php:393
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
-msgstr "不管如何，我都要在此对你们说  <i><u>谢谢你们</u></i> 对这个小程序持续的支持和热情：非常非常感谢。"
+"your continuing support and enthusiasm about this little program: it is much "
+"appreciated!"
+msgstr ""
+"不管如何，我都要在此对你们说  <i><u>谢谢你们</u></i> 对这个小程序持续的支持和"
+"热情：非常非常感谢。"
 
 #: index.php:394
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
-msgstr "但是无论怎样也请你随意使用 Rufus ，无需介怀对此项目没有付出任何经济上的贡献 &ndash;  因为你本来就不需要嘛。"
+msgstr ""
+"但是无论怎样也请你随意使用 Rufus ，无需介怀对此项目没有付出任何经济上的贡献 "
+"&ndash;  因为你本来就不需要嘛。"
 
 #: index.php:396
 msgid "Speed comparison between Rufus and other applications"
@@ -330,28 +343,25 @@ msgstr "Rufus 与其他同类软件的速度对比"
 #, php-format
 msgid ""
 "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
-" 3.0 ADATA S102 flash drive</a>."
+"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB "
+"3.0 ADATA S102 flash drive</a>."
 msgstr ""
-"如下测试在一台安装了64位Windows7操作系统的配备了酷睿2双核，4GB内存的平台上进行，主板USB支持 USB 3.0 ，使用了 <a "
-"target=\"_blank\" %s> 16GB的 USB 3.0 ADATA S102 闪存盘</a>."
+"如下测试在一台安装了64位Windows7操作系统的配备了酷睿2双核，4GB内存的平台上进"
+"行，主板USB支持 USB 3.0 ，使用了 <a target=\"_blank\" %s> 16GB的 USB 3.0 "
+"ADATA S102 闪存盘</a>."
 
 #: index.php:422
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Rufus  目前已知（但不限于）的支持的ISO镜像如下"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
-# I don't whant to put my E-mail address on internet directly，so I replaced
-# the email with my Twitter home page。You can remove it，incase you mind。
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
 #: index.php:477
 msgid "English translation by Pete Batard"
 msgstr ""
-"简体中文 由  <a  target=\"_blank\" href=\"https://twitter.com/ihipop\">ihipop</a>"
-"  翻译"
+"简体中文 由  <a  target=\"_blank\" href=\"https://twitter.com/ihipop"
+"\">ihipop</a> 翻译"
 
 #: index.php:478
 msgid "USB icon by"
@@ -360,7 +370,3 @@ msgstr "USB 图标设计："
 #: index.php:479
 msgid "Hosting by"
 msgstr "主机提供："
-
-#: index.php:220
-msgid "Change language:"
-msgstr ""

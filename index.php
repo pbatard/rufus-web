@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.11";
+$latest_version = "3.12";
 $previous_version = "3.7";
-$latest_date = "2020.06.18";
+$latest_date = "2020.10.14";
 $previous_date = "2019.09.09";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -352,16 +352,15 @@ case "ur":
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Add <a target="_blank" href="https://en.wikipedia.org/wiki/Rock_Ridge">Rock Ridge deep directory</a> support</span></li>
-					<li><span dir="ltr">Add an option to write small ISOs to an <a target="_blank" href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a> (<a target="_blank" href="https://en.wikipedia.org/wiki/GUID_Partition_Table">GPT</a> only)</span></li>
-					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Ctrl</div>-<div class="kbd">SELECT</div>) to extract content from an additional zip archive on top of the ISO</span></li>
-					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div>-<div class="kbd">G</div>) to disable Virtual Hard Disk listing</span></li>
-					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div>-<div class="kbd">P</div>) to toggle a GPT <a target="_blank" href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a> to Basic Data (Windows 10 only)</span></li>
-					<li><span dir="ltr">Fix improper x86 32-bit NTFS driver being used for <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a></span></li>
-					<li><span dir="ltr">Improve <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> compatibility with older UEFI firmwares</span></li>
-					<li><span dir="ltr">Improve startup time by running the ISO download feature check in the background</span></li>
-					<li><span dir="ltr">Remove Ubuntu's splash screen for persistent UEFI drives</span></li>
-					<li><span dir="ltr">Enable <a  target="_blank" href="https://en.wikipedia.org/wiki/Address_space_layout_randomization">ASLR</a> for the Rufus executable</span></li>
+					<li><span dir="ltr">Add optional SHA-512 digest algorithm (<div class="kbd">Alt</div>-<div class="kbd">H</div>)</span></li>
+					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div> <div class="kbd">+</div>/<div class="kbd">-</div>) to increase/decrease application priority</span></li>
+					<li><span dir="ltr">Enable direct provision of <code>install.wim</code>/<code>install.esd</code> for Windows To Go</span></li>
+					<li><span dir="ltr">Move Windows To Go <a target="_blank" href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a> to the beginning of the drive, on systems that allow it</span></li>
+					<li><span dir="ltr">Enforce a minimum volume size of 256 MB for <code>ext2</code>/<code>ext3</code> partitions</span></li>
+					<li><span dir="ltr">Speed up the scanning of ISOs with lots of Rock Ridge deep directory entries</span></li>
+					<li><span dir="ltr">Fix detection of GRUB version and update embedded GRUB for Ubuntu 20.10 support</span></li>
+					<li><span dir="ltr">Fix user interface labels for accessibility</span></li>
+					<li><span dir="ltr">Work around a Windows bug where the wrong drive letter may be returned</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>

@@ -1,21 +1,20 @@
-version = 3.11.1678
+version = 3.12.1710
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.11/rufus-3.11.exe
-download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.11/rufus-3.11_arm.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.11/rufus-3.11_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.12/rufus-3.12.exe
+download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.12/rufus-3.12_arm.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.12/rufus-3.12_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.11 (2020.06.19)\b0\par\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.12 (2020.10.14)\b0\par\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add Rock Ridge deep directory support\par
-{\pntext\f2\'B7\tab}Add an option to write small ISOs to an ESP (GPT only)\par
-{\pntext\f2\'B7\tab}Add a cheat mode (Ctrl-SELECT) to extract content from an additional zip archive on top of the ISO\par
-{\pntext\f2\'B7\tab}Add a cheat mode (Alt-G) to disable Virtual Hard Disk listing\par
-{\pntext\f2\'B7\tab}Add a cheat mode (Alt-P) to toggle a GPT ESP to Basic Data (Windows 10 only)\par
-{\pntext\f2\'B7\tab}Fix improper x86 32-bit NTFS driver being used for UEFI:NTFS\par
-{\pntext\f2\'B7\tab}Improve UEFI:NTFS compatibility with older UEFI firmwares\par
-{\pntext\f2\'B7\tab}Improve startup time by running the ISO download feature check in the background\par
-{\pntext\f2\'B7\tab}Remove Ubuntu's splash screen for persistent UEFI drives\par
-{\pntext\f2\'B7\tab}Enable ASLR for the Rufus executable\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add optional SHA-512 digest algorithm (Alt-H)\par
+{\pntext\f2\'B7\tab}Add a cheat mode (Alt +/-) to increase/decrease application priority\par
+{\pntext\f2\'B7\tab}Enable direct provision of install.wim/install.esd for Windows To Go\par
+{\pntext\f2\'B7\tab}Move Windows To Go ESP to the beginning of the drive, on systems that allow it\par
+{\pntext\f2\'B7\tab}Enforce a minimum volume size of 256 MB for ext2/ext3 partitions\par
+{\pntext\f2\'B7\tab}Speed up the scanning of ISOs with lots of Rock Ridge deep directory entries\par
+{\pntext\f2\'B7\tab}Fix detection of GRUB version and update embedded GRUB for Ubuntu 20.10 support\par
+{\pntext\f2\'B7\tab}Fix user interface labels for accessibility\par
+{\pntext\f2\'B7\tab}Work around a Windows bug where the wrong drive letter may be returned\par
 
 \pard\ltrpar\sl276\slmult1\par}

@@ -42,6 +42,7 @@ $langs = array(
   'ko_KR' => array('ko', 'Korean (한국어)'),
   'lv_LV' => array('lv', 'Latvian (Latviešu)'),
   'lt_LT' => array('lt', 'Lithuanian (Lietuvių)'),
+  'mk_MK' => array('mk', 'Macedonian (Македонски)'),
   'ms_MY' => array('ms', 'Malay (Bahasa Malaysia)'),
   'nb_NO' => array('nb', 'Norwegian (Norsk)'),
   'or_IN' => array('or', 'Odia (ଓଡ଼ିଆ)'),

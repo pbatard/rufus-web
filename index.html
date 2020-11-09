@@ -31,7 +31,6 @@ body { margin:0; padding:0; }
 </head>
 <body style="margin:0px;padding:0px;overflow:hidden" id="body">
 <noscript><iframe class="frame" src="en_IE.html"></iframe></noscript>
-
 <script type="text/javascript">
 var localized_index = "en_IE.html";
 var lang = window.navigator.userLanguage || window.navigator.language;
@@ -88,8 +87,7 @@ else if (lang.substr(0,2) == "uk") localized_index = "uk_UA.html";
 else if (lang.substr(0,2) == "ur") localized_index = "ur_PK.html";
 else if (lang.substr(0,2) == "vi") localized_index = "vi_VN.html";
 else if (lang.substr(0,2) == "cy") localized_index = "cy_GB.html";
-
 document.getElementById("body").innerHTML = `<iframe class="frame" src="${localized_index}"></iframe>`;
-</script>	
+</script>
 </body>
 </html>

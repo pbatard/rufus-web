@@ -33,7 +33,8 @@ body { margin:0; padding:0; }
 .frame { display:block; width:100vw; height:100vh; max-width:100%; margin:0; padding:0; border:0; box-sizing:border-box; }
 </style>
 </head>
-<body style="margin:0px;padding:0px;overflow:hidden">
+<body style="margin:0px;padding:0px;overflow:hidden" id="body">
+<noscript><iframe class="frame" src="en_IE.html"></iframe></noscript>
 <script type="text/javascript">
 var localized_index = "en_IE.html";
 var lang = window.navigator.userLanguage || window.navigator.language;
@@ -51,9 +52,8 @@ do
 done
 echo Creating index.html
 cat >>index.html<<EOF
+document.getElementById("body").innerHTML = \`<iframe class="frame" src="\${localized_index}"></iframe>\`;
 </script>
-<iframe id="frame" class="frame"></iframe>
-<script>document.getElementById("frame").src = localized_index;</script>	
 </body>
 </html>
 EOF

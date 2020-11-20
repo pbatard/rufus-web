@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.12";
+$latest_version = "3.13";
 $previous_version = "3.7";
-$latest_date = "2020.10.14";
+$latest_date = "2020.11.20";
 $previous_date = "2019.09.09";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -353,15 +353,16 @@ case "ur":
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Add optional SHA-512 digest algorithm (<div class="kbd">Alt</div>-<div class="kbd">H</div>)</span></li>
-					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div> <div class="kbd">+</div>/<div class="kbd">-</div>) to increase/decrease application priority</span></li>
-					<li><span dir="ltr">Enable direct provision of <code>install.wim</code>/<code>install.esd</code> for Windows To Go</span></li>
-					<li><span dir="ltr">Move Windows To Go <a target="_blank" href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a> to the beginning of the drive, on systems that allow it</span></li>
-					<li><span dir="ltr">Enforce a minimum volume size of 256 MB for <code>ext2</code>/<code>ext3</code> partitions</span></li>
-					<li><span dir="ltr">Speed up the scanning of ISOs with lots of Rock Ridge deep directory entries</span></li>
-					<li><span dir="ltr">Fix detection of GRUB version and update embedded GRUB for Ubuntu 20.10 support</span></li>
-					<li><span dir="ltr">Fix user interface labels for accessibility</span></li>
-					<li><span dir="ltr">Work around a Windows bug where the wrong drive letter may be returned</span></li>
+					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div>-<div class="kbd">M</div>) to accept disk images without a Boot Marker</span></li>
+					<li><span dir="ltr">Add marquee operation progress to the taskbar icon</span></li>
+					<li><span dir="ltr">Add zeroing/image writing progress to the log</span></li>
+					<li><span dir="ltr">Switch to using <code>0x55</code> and <code>0xAA</code> instead of <code>0x00</code> and <code>0xFF</code> for low pass badblock check</span></li>
+					<li><span dir="ltr">Switch to using fake/manufacturer units when computing the default label</span></li>
+					<li><span dir="ltr">Fix overnumerous write retries on error when writing a disk image</span></li>
+					<li><span dir="ltr">Work around Windows' abysmal handling of removable drives that contain an ESP</span></li>
+					<li><span dir="ltr">Improve mounting/unmounting of volumes</span></li>
+					<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> <a target="_blank" href="https://github.com/pbatard/efifs">file system drivers</a> to version 1.7</span></li>
+					<li><span dir="ltr">Other internal fixes and improvements (VDS, error reporting, etc.)</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>

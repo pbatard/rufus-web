@@ -261,9 +261,9 @@
 		רשימה לא מקיפה של קובצי ISO הנתמכים ע״י Rufus נמצאת בתחתית העמוד הזה. <a href="#ref2"><sup>(2)</sup></a></p>
 				<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">הורדה</span></h2>
-			<p><b>תאריך עדכון אחרון 2020.10.14:</b></p>
-			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.12/rufus-3.12.exe"><span dir="ltr">3.12 Rufus</span></a></b></span> <span dir="rtl">(1.1 מ״ב)</span></li>
-			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.12/rufus-3.12p.exe"><span dir="ltr">3.12 Rufus</span> נייד</a> <span dir="rtl">(1.1 מ״ב)</span></li>
+			<p><b>תאריך עדכון אחרון 2020.11.20:</b></p>
+			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13.exe"><span dir="ltr">3.13 Rufus</span></a></b></span> <span dir="rtl">(1.1 מ״ב)</span></li>
+			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13p.exe"><span dir="ltr">3.13 Rufus</span> נייד</a> <span dir="rtl">(1.1 מ״ב)</span></li>
 			<li><a href="/downloads/">גרסאות אחרות (GitHub)</a></li>
 			<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">גרסאות אחרות (FossHub)</a></li>
 			</ul></p>
@@ -335,23 +335,24 @@
 		<a name="changelog"></a>
 		<h2>הערות שחרור</h2>
 		<ul dir="rtl">
-			<li><span dir="ltr">(2020.10.14) <b>3.12 גרסה</b></span>				<ul dir="rtl">
-					<li><span dir="ltr">Add optional SHA-512 digest algorithm (<div class="kbd">Alt</div>-<div class="kbd">H</div>)</span></li>
-					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div> <div class="kbd">+</div>/<div class="kbd">-</div>) to increase/decrease application priority</span></li>
-					<li><span dir="ltr">Enable direct provision of <code>install.wim</code>/<code>install.esd</code> for Windows To Go</span></li>
-					<li><span dir="ltr">Move Windows To Go <a target="_blank" href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a> to the beginning of the drive, on systems that allow it</span></li>
-					<li><span dir="ltr">Enforce a minimum volume size of 256 MB for <code>ext2</code>/<code>ext3</code> partitions</span></li>
-					<li><span dir="ltr">Speed up the scanning of ISOs with lots of Rock Ridge deep directory entries</span></li>
-					<li><span dir="ltr">Fix detection of GRUB version and update embedded GRUB for Ubuntu 20.10 support</span></li>
-					<li><span dir="ltr">Fix user interface labels for accessibility</span></li>
-					<li><span dir="ltr">Work around a Windows bug where the wrong drive letter may be returned</span></li>
+			<li><span dir="ltr">(2020.11.20) <b>3.13 גרסה</b></span>				<ul dir="rtl">
+					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div>-<div class="kbd">M</div>) to accept disk images without a Boot Marker</span></li>
+					<li><span dir="ltr">Add marquee operation progress to the taskbar icon</span></li>
+					<li><span dir="ltr">Add zeroing/image writing progress to the log</span></li>
+					<li><span dir="ltr">Switch to using <code>0x55</code> and <code>0xAA</code> instead of <code>0x00</code> and <code>0xFF</code> for low pass badblock check</span></li>
+					<li><span dir="ltr">Switch to using fake/manufacturer units when computing the default label</span></li>
+					<li><span dir="ltr">Fix overnumerous write retries on error when writing a disk image</span></li>
+					<li><span dir="ltr">Work around Windows' abysmal handling of removable drives that contain an ESP</span></li>
+					<li><span dir="ltr">Improve mounting/unmounting of volumes</span></li>
+					<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> <a target="_blank" href="https://github.com/pbatard/efifs">file system drivers</a> to version 1.7</span></li>
+					<li><span dir="ltr">Other internal fixes and improvements (VDS, error reporting, etc.)</span></li>
 				</ul>
 			</li>
 						<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">גרסאות אחרות</a></b></li>
 		</ul>
 
 		<h2>קוד מקור</h2>
-			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.12.zip"><span dir="ltr">3.12 Rufus</span></a> <span dir="rtl">(3.5 מ״ב)</span></li>
+			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.13.zip"><span dir="ltr">3.13 Rufus</span></a> <span dir="rtl">(3.5 מ״ב)</span></li>
 			<li>לחלופין, ניתן לשכפל את מאגר ה־<a target="_blank" href="http://git-scm.com">git</a> באמצעות:			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
 			<li>למידע נוסף, ניתן לראות את הפרוייקט ב־<a target="_blank" href="https://github.com/pbatard/rufus">github</a>.</li></ul>
 			אם אתה מפתח תוכנה, אני מעודד אותך להתעסק עם Rufus ולהגיש טלאים.</p>

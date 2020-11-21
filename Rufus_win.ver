@@ -1,20 +1,21 @@
-version = 3.12.1710
+version = 3.13.1730
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.12/rufus-3.12.exe
-download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.12/rufus-3.12_arm.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.12/rufus-3.12_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13.exe
+download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13_arm.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.12 (2020.10.14)\b0\par\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.13 (2020.11.20)\b0\par\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add optional SHA-512 digest algorithm (Alt-H)\par
-{\pntext\f2\'B7\tab}Add a cheat mode (Alt +/-) to increase/decrease application priority\par
-{\pntext\f2\'B7\tab}Enable direct provision of install.wim/install.esd for Windows To Go\par
-{\pntext\f2\'B7\tab}Move Windows To Go ESP to the beginning of the drive, on systems that allow it\par
-{\pntext\f2\'B7\tab}Enforce a minimum volume size of 256 MB for ext2/ext3 partitions\par
-{\pntext\f2\'B7\tab}Speed up the scanning of ISOs with lots of Rock Ridge deep directory entries\par
-{\pntext\f2\'B7\tab}Fix detection of GRUB version and update embedded GRUB for Ubuntu 20.10 support\par
-{\pntext\f2\'B7\tab}Fix user interface labels for accessibility\par
-{\pntext\f2\'B7\tab}Work around a Windows bug where the wrong drive letter may be returned\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add a cheat mode (Alt-M) to accept disk images without a Boot Marker\par
+{\pntext\f2\'B7\tab}Add marquee operation progress to the taskbar icon\par
+{\pntext\f2\'B7\tab}Add zeroing/image writing progress to the log\par
+{\pntext\f2\'B7\tab}Switch to using 0x55 and 0xAA instead of 0x00 and 0xFF for low pass badblock check\par
+{\pntext\f2\'B7\tab}Switch to using fake/manufacturer units when computing the default label\par
+{\pntext\f2\'B7\tab}Fix overnumerous write retries on error when writing a disk image\par
+{\pntext\f2\'B7\tab}Work around Windows' abysmal handling of removable drives that contain an ESP\par
+{\pntext\f2\'B7\tab}Improve mounting/unmounting of volumes\par
+{\pntext\f2\'B7\tab}Update UEFI:NTFS file system drivers to version 1.7\par
+{\pntext\f2\'B7\tab}Other internal fixes and improvements (VDS, error reporting, etc.)\par
 
 \pard\ltrpar\sl276\slmult1\par}

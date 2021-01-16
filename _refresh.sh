@@ -1,6 +1,14 @@
 #!/bin/bash
 url=nano
 add_else=
+# Array of locales that require custom handling.
+# The first locale is the one the key will default to, unless it's one of the subsequent values.
+# e.g. 'ar' should default to 'ar_SA' unless it's 'ar_IQ' (which should have its own ar_IQ page).
+declare -A custom=(
+  ['ar']='ar_SA;ar_IQ'
+  ['pt']='pt_PT;pt_BR'
+  ['zh']='zh_TW;zh_CN'
+)
 cat >index.html<<EOF
 <!DOCTYPE html>
 <html>
@@ -42,8 +50,12 @@ EOF
 for i in `curl -sS $url | sed -rn 's/.*<option.*value=\"(.*)\">/\1/p'`
 do
   echo Creating $i.html
-  if [ "${i:0:2}" == "zh" ] || [ "${i:0:2}" == "pt" ]; then
-    echo $add_else 'if (lang == "'$i'") localized_index = "'$i'.html";' >> index.html
+    if [[ -v custom[${i:0:2}] ]]; then
+      IFS=";" read -r -a arr <<< "${custom[${i:0:2}]}"
+      if [ "$i" == "${arr[0]}" ]; then
+        echo $add_else 'if (lang == "'${arr[1]}'") localized_index = "'${arr[1]}'.html";' >> index.html
+        echo 'else if (lang.substr(0,2) == "'${arr[0]:0:2}'") localized_index = "'${arr[0]}'.html";' >> index.html
+      fi
   else
     echo $add_else 'if (lang.substr(0,2) == "'${i:0:2}'") localized_index = "'$i'.html";' >> index.html
   fi

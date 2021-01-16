@@ -34,7 +34,8 @@ body { margin:0; padding:0; }
 <script type="text/javascript">
 var localized_index = "en_IE.html";
 var lang = window.navigator.userLanguage || window.navigator.language;
-if (lang.substr(0,2) == "en") localized_index = "en_IE.html";
+if (lang == "en_US") localized_index = "en_US.html";
+else if (lang.substr(0,2) == "en") localized_index = "en_IE.html";
 else if (lang.substr(0,2) == "sq") localized_index = "sq_AL.html";
 else if (lang == "ar_IQ") localized_index = "ar_IQ.html";
 else if (lang.substr(0,2) == "ar") localized_index = "ar_SA.html";

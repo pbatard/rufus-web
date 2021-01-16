@@ -6,6 +6,7 @@ add_else=
 # e.g. 'ar' should default to 'ar_SA' unless it's 'ar_IQ' (which should have its own ar_IQ page).
 declare -A custom=(
   ['ar']='ar_SA;ar_IQ'
+  ['en']='en_IE;en_US'
   ['pt']='pt_PT;pt_BR'
   ['zh']='zh_TW;zh_CN'
 )

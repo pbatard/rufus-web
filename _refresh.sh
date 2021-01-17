@@ -46,7 +46,7 @@ body { margin:0; padding:0; }
 <noscript><iframe class="frame" src="en_IE.html"></iframe></noscript>
 <script type="text/javascript">
 var localized_index = "en_IE.html";
-var lang = window.navigator.userLanguage || window.navigator.language;
+var lang = (window.navigator.language || window.navigator.userLanguage).replace('-', '_');
 EOF
 for i in `curl -sS $url | sed -rn 's/.*<option.*value=\"(.*)\">/\1/p'`
 do

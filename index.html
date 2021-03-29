@@ -10,25 +10,21 @@
   </head>
   <body>
     <script>
-     var supported_languages = [ 
-       "ar", "ar-IQ", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "en",
-       "en-US", "es", "et", "fa", "fi", "fr", "ga", "gl", "he", "hi", "hr", "hu", "hy",
-       "id", "it", "ja", "ko", "lt", "lv", "mk", "ms", "nb", "nl", "or", "pl", "pt",
-       "pt-BR", "ro", "ru", "sk", "sl", "sq", "sr", "sv", "th", "tr", "uk", "ur", "vi",
-       "yu", "zh", "zh-TW"
+     var supported_languages = [
+      "en_US", "en", "sq", "ar", "hy", "az", "bn", "bs", "bg", "yue", "ca", "zh", "zh_TW", "hr", "cs", "da", "nl", "et", "fi", "fr", "gl", "de", "el", "he", "hi", "hu", "id", "ga", "it", "ja", "ko", "ar_IQ", "lv", "lt", "mk", "ms", "nb", "or", "fa", "pl", "pt_BR", "pt", "ro", "ru", "sr", "sk", "sl", "es", "sv", "th", "tr", "uk", "ur", "vi", "cy"
      ];
      var localized_index = "en";
-     var lang = (window.navigator.language || window.navigator.userLanguage).replace('_', '-');
-     if (lang == "en-US")
-       localized_index = "en-US";
-     else if (lang == "ar-IQ")
-       localized_index = "ar-IQ";
-     else if (lang == "pt-BR")
-       localized_index = "pt-BR";
-     else if (lang == "zh-TW")
-       localized_index = "zh-TW";
+     var lang = (window.navigator.language || window.navigator.userLanguage).replace('-', '_');
+     if (lang == "en_US")
+       localized_index = "en_US";
+     else if (lang == "ar_IQ")
+       localized_index = "ar_IQ";
+     else if (lang == "pt_BR")
+       localized_index = "pt_BR";
+     else if (lang == "zh_TW")
+       localized_index = "zh_TW";
      else
-       localized_index = lang.substr(0,2);
+       localized_index = lang.split('_')[0];
      if (supported_languages.indexOf(localized_index) < 0)
        localized_index = "en";
      window.location = '/' + localized_index;

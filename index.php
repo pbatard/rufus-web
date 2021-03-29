@@ -117,10 +117,10 @@ case "ur":
 <meta name="author" content="Pete Batard">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="application-name" content="Rufus"/>
-<meta name="msapplication-square70x70logo" content="pics/rufus-72.png"/>
-<meta name="msapplication-square150x150logo" content="pics/rufus-150.png"/>
-<meta name="msapplication-wide310x150logo" content="pics/rufus-150.png"/>
-<meta name="msapplication-square310x310logo" content="pics/rufus-256.png"/>
+<meta name="msapplication-square70x70logo" content="/pics/rufus-72.png"/>
+<meta name="msapplication-square150x150logo" content="/pics/rufus-150.png"/>
+<meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png"/>
+<meta name="msapplication-square310x310logo" content="/pics/rufus-256.png"/>
 <meta name="msapplication-TileColor" content="#3f4555"/>
 <title>Rufus - <?= _("Create bootable USB drives the easy way");?></title>
 <script type="text/javascript">
@@ -221,7 +221,7 @@ case "ur":
 <div id="right_column">
 <label for="lang_select"><?=_("Change language:");?></label><select name="lang_select" id="lang_select" onchange="self.location='?locale='+this.options[this.selectedIndex].value">
 <? foreach($langs as $code => $lang): ?>
-  <option dir="ltr" <? if(substr($locale,0,strlen($lang[0])) == $lang[0]) echo "selected=\"selected\"";?> value="<?= $code;?>">
+  <option dir="ltr" <? if(substr($locale,0,strlen($lang[0])) == $lang[0]) echo "selected=\"selected\"";?> value="<?= $lang[0];?>">
   <?= $lang[1]; ?>
 </option>
 <? endforeach; ?>
@@ -254,12 +254,12 @@ case "ur":
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 	<hr style="width:728px;">
-	<h1><img border="0" src="pics/rufus-128.png" srcset="pics/rufus-128.png 1x, pics/rufus-256.png 2x" alt="[rufus icon]"/>
+	<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
 	<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
 	<div class="tagline">
 		<?= _("Create bootable USB drives the easy way");?>
 	</div>
-		<? /* This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension. */ printf("<img border=\"0\" src=\"pics/%s\" srcset=\"pics/%s 1x, pics/rufus_en_2x.png 2x\" alt=\"[rufus screenshot]\"/>", _("rufus_en.png"), _("rufus_en.png"));?>
+		<? /* This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension. */ printf("<img border=\"0\" src=\"/pics/%s\" srcset=\"/pics/%s 1x, /pics/rufus_en_2x.png 2x\" alt=\"[rufus screenshot]\"/>", _("rufus_en.png"), _("rufus_en.png"));?>
 		<p><?= _("Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.");?></p>
 		<p><?= _("It can be especially useful for cases where:");?>
 			<ul>
@@ -272,7 +272,7 @@ case "ur":
 		<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
 		<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
 		<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
-		<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"pics/" . $lang2[2] . ".png\" srcset=\"pics/" . $lang2[2] . ".png 1x, pics/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
+		<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"/pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"/pics/" . $lang2[2] . ".png\" srcset=\"/pics/" . $lang2[2] . ".png 1x, /pics/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
 		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L70\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
 		<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#Editing_an_existing_translation\">here</a>.</p>";?>
 		<a name="download"></a>

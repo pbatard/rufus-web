@@ -142,7 +142,7 @@ case "ur":
 		margin: 0 auto;
 		margin-top: 10px;
 		margin-right: 10px;
-		width: 230px;
+		width: 250px;
 		font-size: 0.8em;
 	}
 	#container {

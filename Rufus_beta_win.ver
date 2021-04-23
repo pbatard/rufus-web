@@ -1,19 +1,19 @@
-version = 3.13.1728
+version = 3.14.1781
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.13_BETA/rufus-3.13_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.14_BETA/rufus-3.14_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.13 BETA (2020.11.14)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.14 BETA (2021.04.23)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add a cheat mode (Alt-M) to accept disk images without a Boot Marker\par
-{\pntext\f2\'B7\tab}Add marquee operation progress to the taskbar icon\par
-{\pntext\f2\'B7\tab}Add zeroing/image writing progress to the log\par
-{\pntext\f2\'B7\tab}Switch to using 0x55 and 0xAA instead of 0x00 and 0xFF for low pass badblock check\par
-{\pntext\f2\'B7\tab}Switch to using fake/manufacturer units when computing the default label\par
-{\pntext\f2\'B7\tab}Fix overnumerous write retries on error when writing a disk image\par
-{\pntext\f2\'B7\tab}Work around Windows' abysmal handling of removable drives that contain an ESP\par
-{\pntext\f2\'B7\tab}Improve mounting/unmounting of volumes\par
-{\pntext\f2\'B7\tab}Other internal fixes and improvements (VDS, error reporting, etc.)\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Improve DD write speed (uncompressed images only)\par
+{\pntext\f2\'B7\tab}Improve checksum computation speed\par
+{\pntext\f2\'B7\tab}Improve network connectivity detection\par
+{\pntext\f2\'B7\tab}Only prompt for additional GRUB/Syslinux downloads when not writing in DD mode\par
+{\pntext\f2\'B7\tab}Fix potential "loss" of disk after writing Ubuntu 20.10 in DD mode\par
+{\pntext\f2\'B7\tab}Fix GRUB compatibility issue with Ubuntu 21.04\par
+{\pntext\f2\'B7\tab}Fix Rufus MBR not being selected by default for Windows ISOs\par
+{\pntext\f2\'B7\tab}Fix drag and drop being enabled during drive creation\par
+{\pntext\f2\'B7\tab}Add more "exceptions" for forced DD image writing\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

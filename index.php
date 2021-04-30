@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.13";
+$latest_version = "3.14";
 $previous_version = "3.7";
-$latest_date = "2020.11.20";
+$latest_date = "2021.04.30";
 $previous_date = "2019.09.09";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -354,16 +354,15 @@ case "ur":
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Add a cheat mode (<div class="kbd">Alt</div>-<div class="kbd">M</div>) to accept disk images without a Boot Marker</span></li>
-					<li><span dir="ltr">Add marquee operation progress to the taskbar icon</span></li>
-					<li><span dir="ltr">Add zeroing/image writing progress to the log</span></li>
-					<li><span dir="ltr">Switch to using <code>0x55</code> and <code>0xAA</code> instead of <code>0x00</code> and <code>0xFF</code> for low pass badblock check</span></li>
-					<li><span dir="ltr">Switch to using fake/manufacturer units when computing the default label</span></li>
-					<li><span dir="ltr">Fix overnumerous write retries on error when writing a disk image</span></li>
-					<li><span dir="ltr">Work around Windows' abysmal handling of removable drives that contain an ESP</span></li>
-					<li><span dir="ltr">Improve mounting/unmounting of volumes</span></li>
-					<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> <a target="_blank" href="https://github.com/pbatard/efifs">file system drivers</a> to version 1.7</span></li>
-					<li><span dir="ltr">Other internal fixes and improvements (VDS, error reporting, etc.)</span></li>
+					<li><span dir="ltr">Improve DD write speed (uncompressed images only)</span></li>
+					<li><span dir="ltr">Improve checksum computation speed</span></li>
+					<li><span dir="ltr">Improve network connectivity detection</span></li>
+					<li><span dir="ltr">Only prompt for additional GRUB/Syslinux downloads when not writing in DD mode</span></li>
+					<li><span dir="ltr">Fix potential "loss" of disk after writing Ubuntu 20.10 in DD mode</span></li>
+					<li><span dir="ltr">Fix GRUB compatibility issue with Ubuntu 21.04</span></li>
+					<li><span dir="ltr">Fix Rufus MBR not being selected by default for Windows ISOs</span></li>
+					<li><span dir="ltr">Fix drag and drop being enabled during drive creation</span></li>
+					<li><span dir="ltr">Add more "exceptions" for forced DD image writing</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>

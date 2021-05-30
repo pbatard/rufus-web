@@ -54,6 +54,7 @@ $langs = array(
   'ro_RO' => array('ro', '🇷🇴 Romanian (Română)'),
   'ru_RU' => array('ru', '🇷🇺 Russian (Русский)'),
   'sr_RS' => array('sr', '🇷🇸 Serbian [Latin] (Srpski [Latinica])'),
+  'si_LK' => array('si', '🇱🇰 Sinhala (සිංහල)'),
   'sk_SK' => array('sk', '🇸🇰 Slovak (Slovensky)'),
   'sl_SI' => array('sl', '🇸🇮 Slovenian (Slovenščina)'),
   'es_ES' => array('es', '🇪🇸 Spanish (Español)'),

@@ -239,6 +239,7 @@ case "ur":
      data-ad-client="ca-pub-8924382055379825"
      data-ad-slot="8722233764"></ins>
 <script>
+     (adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
@@ -252,6 +253,7 @@ case "ur":
 	     data-ad-client="ca-pub-8924382055379825"
 	     data-ad-slot="7142613500"></ins>
 	<script>
+	     (adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
 	     (adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 	<hr style="width:728px;">

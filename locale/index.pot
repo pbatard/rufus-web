@@ -1,14 +1,14 @@
 # Rufus Homepage.
-# Copyright (C) 2020 Pete Batard
+# Copyright (C) 2021 Pete Batard
 # This file is distributed under the same license as the Rufus Homepage package.
-# Pete Batard <pete@akeo.ie>, 2020.
+# Pete Batard <pete@akeo.ie>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2020-08-20 11:13+0100\n"
+"POT-Creation-Date: 2021-06-07 18:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,66 +17,74 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: index.php:91
+#: index.php:94
 msgid "Version"
 msgstr ""
 
-#: index.php:123 index.php:258
+#: index.php:126 index.php:326
 msgid "Create bootable USB drives the easy way"
 msgstr ""
 
-#: index.php:220
+#: index.php:278
+msgid ""
+"This page uses Google services, which may serve <u>non-personalised</u> "
+"cookies for advertising, analytics and security."
+msgstr ""
+
+#: index.php:279
+msgid "See details"
+msgstr ""
+
+#: index.php:280
+msgid "OK"
+msgstr ""
+
+#: index.php:286
 msgid "Change language:"
 msgstr ""
 
-#: index.php:229
+#: index.php:295
 msgid "Want to improve this translation?"
 msgstr ""
 
-#: index.php:250
-msgid ""
-"Placeholder for ads &mdash; Just like you, I wish this site could exist "
-"without them..."
-msgstr ""
-
 #. This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension.
-#: index.php:260
+#: index.php:328
 msgid "rufus_en.png"
 msgstr ""
 
-#: index.php:261
+#: index.php:329
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
 msgstr ""
 
-#: index.php:262
+#: index.php:330
 msgid "It can be especially useful for cases where:"
 msgstr ""
 
-#: index.php:264
+#: index.php:332
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
 msgstr ""
 
-#: index.php:265
+#: index.php:333
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr ""
 
-#: index.php:266
+#: index.php:334
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr ""
 
-#: index.php:267
+#: index.php:335
 msgid "you want to run a low-level utility"
 msgstr ""
 
-#: index.php:270
+#: index.php:338
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr ""
 
-#: index.php:271
+#: index.php:339
 #, php-format
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
@@ -86,49 +94,49 @@ msgid ""
 "marginally faster on the creation of Linux bootable USB from ISOs."
 msgstr ""
 
-#: index.php:272
+#: index.php:340
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
 "of this page."
 msgstr ""
 
-#: index.php:277
+#: index.php:345
 msgid "Download"
 msgstr ""
 
-#: index.php:278
+#: index.php:346
 #, php-format
 msgid "Last updated %s:"
 msgstr ""
 
 #. Abbreviation for MegaByte
-#: index.php:279 index.php:280 index.php:381
+#: index.php:347 index.php:348 index.php:448
 msgid "MB"
 msgstr ""
 
-#: index.php:280
+#: index.php:348
 msgid "Portable"
 msgstr ""
 
-#: index.php:281 index.php:282 index.php:377
+#: index.php:349 index.php:350 index.php:444
 msgid "Other versions"
 msgstr ""
 
-#: index.php:284
+#: index.php:352
 msgid "Supported Languages:"
 msgstr ""
 
-#: index.php:329
+#: index.php:397
 msgid "System Requirements:"
 msgstr ""
 
-#: index.php:330
+#: index.php:398
 msgid ""
 "Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
 msgstr ""
 
-#: index.php:331
+#: index.php:399
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -136,32 +144,32 @@ msgid ""
 "you should really thank them!"
 msgstr ""
 
-#: index.php:332
+#: index.php:400
 msgid "Usage"
 msgstr ""
 
-#: index.php:333
+#: index.php:401
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr ""
 
-#: index.php:334
+#: index.php:402
 msgid "The executable is digitally signed and the signature should state:"
 msgstr ""
 
-#: index.php:335
+#: index.php:403
 msgid "(v1.3.0 or later)"
 msgstr ""
 
-#: index.php:336
+#: index.php:404
 msgid "(v1.2.0 or earlier)"
 msgstr ""
 
-#: index.php:337
+#: index.php:405
 msgid "Notes on DOS support:"
 msgstr ""
 
-#: index.php:338
+#: index.php:406
 #, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
@@ -170,18 +178,18 @@ msgid ""
 "selection, is recommended over MS-DOS, as it supports more keyboard layouts."
 msgstr ""
 
-#: index.php:339
+#: index.php:407
 msgid "Notes on ISO Support:"
 msgstr ""
 
-#: index.php:340
+#: index.php:408
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
 "an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 
-#: index.php:341
+#: index.php:409
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
@@ -190,17 +198,17 @@ msgid ""
 "\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
 
-#: index.php:343
+#: index.php:411
 msgid "Frequently Asked Questions (FAQ)"
 msgstr ""
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:344
+#: index.php:412
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
 
-#: index.php:345
+#: index.php:413
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -208,24 +216,24 @@ msgid ""
 "\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 
-#: index.php:347
+#: index.php:415
 msgid "License"
 msgstr ""
 
-#: index.php:348
+#: index.php:416
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
 msgstr ""
 
-#: index.php:348
+#: index.php:416
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you "
 "respect the GPLv3 license."
 msgstr ""
 
-#: index.php:349
+#: index.php:417
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank"
@@ -234,51 +242,51 @@ msgid ""
 msgstr ""
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:351
+#: index.php:419
 msgid "Changelog"
 msgstr ""
 
-#: index.php:380
+#: index.php:447
 msgid "Source Code"
 msgstr ""
 
-#: index.php:382
+#: index.php:449
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr ""
 
-#: index.php:384
+#: index.php:451
 #, php-format
 msgid ""
 "For more information, see the <a target=\"_blank\" %s>github project</a>."
 msgstr ""
 
-#: index.php:385
+#: index.php:452
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
 msgstr ""
 
-#: index.php:387
+#: index.php:454
 msgid "Donations"
 msgstr ""
 
-#: index.php:388
+#: index.php:455
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr ""
 
-#: index.php:389
+#: index.php:456
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
 "choose not to donate."
 msgstr ""
 
-#: index.php:392
+#: index.php:459
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a target="
@@ -286,24 +294,24 @@ msgid ""
 "software like Rufus is possible."
 msgstr ""
 
-#: index.php:393
+#: index.php:460
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much "
 "appreciated!"
 msgstr ""
 
-#: index.php:394
+#: index.php:461
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
 
-#: index.php:396
+#: index.php:463
 msgid "Speed comparison between Rufus and other applications"
 msgstr ""
 
-#: index.php:397
+#: index.php:464
 #, php-format
 msgid ""
 "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
@@ -311,21 +319,21 @@ msgid ""
 "3.0 ADATA S102 flash drive</a>."
 msgstr ""
 
-#: index.php:422
+#: index.php:489
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr ""
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:477
+#: index.php:544
 msgid "English translation by Pete Batard"
 msgstr ""
 
-#: index.php:478
+#: index.php:545
 msgid "USB icon by"
 msgstr ""
 
-#: index.php:479
+#: index.php:546
 msgid "Hosting by"
 msgstr ""

@@ -192,7 +192,6 @@ document.addEventListener("DOMContentLoaded", function(event)
 		color: #fff;
 		-moz-border-radius: 0;
 		-webkit-border-radius: 0;
-		font-weight: bold;
 		margin: -8px -8px;
 		padding: 5px 0px 5px 15px;
 		position: relative;
@@ -276,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 <div id="cookie-notice" style="display: none;">
   <div id="cookie-statement" class="cookie-notification">
     <div class="text">
-      <span><?= _("This page relies on Google services, that use <u>non-personalised</u> cookies for <i>Advertising</i>, <i>Analytics</i> and <i>Security</i>.");?></span>
+      <span><?= _("This page uses Google services, which may serve <u>non-personalised</u> cookies for advertising, analytics and security.");?></span>
       <? echo "<a href=\"https://policies.google.com/technologies/cookies?hl=" . $locale . "\" target=\"_blank\">" ?><?= _("See details");?></a>
       <a href="#" onclick="document.getElementById('cookie-notice').style.display = 'none'; setCookie('display_cookie_notice', 'no', 365);"><?= _("OK");?></a>
     </div>

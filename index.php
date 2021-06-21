@@ -45,6 +45,7 @@ $langs = array(
   'lt_LT' => array('lt', '🇱🇹 Lithuanian (Lietuvių)'),
   'mk_MK' => array('mk', '🇲🇰 Macedonian (Македонски)'),
   'ms_MY' => array('ms', '🇲🇾 Malay (Bahasa Malaysia)'),
+  'mi_NZ' => array('mi', '🇳🇿 Maori (Māori)'),
   'nb_NO' => array('nb', '🇳🇴 Norwegian (Norsk)'),
   'or_IN' => array('or', '🇮🇳 Odia (ଓଡ଼ିଆ)'),
   'fa_IR' => array('fa', '🇮🇷 Persian (پارسی)'),

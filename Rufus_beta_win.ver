@@ -1,19 +1,20 @@
-version = 3.14.1781
+version = 3.15.1806
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.14_BETA/rufus-3.14_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.15_BETA/rufus-3.15_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.14 BETA (2021.04.23)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.15 BETA (2021.07.28)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Improve DD write speed (uncompressed images only)\par
-{\pntext\f2\'B7\tab}Improve checksum computation speed\par
-{\pntext\f2\'B7\tab}Improve network connectivity detection\par
-{\pntext\f2\'B7\tab}Only prompt for additional GRUB/Syslinux downloads when not writing in DD mode\par
-{\pntext\f2\'B7\tab}Fix potential "loss" of disk after writing Ubuntu 20.10 in DD mode\par
-{\pntext\f2\'B7\tab}Fix GRUB compatibility issue with Ubuntu 21.04\par
-{\pntext\f2\'B7\tab}Fix Rufus MBR not being selected by default for Windows ISOs\par
-{\pntext\f2\'B7\tab}Fix drag and drop being enabled during drive creation\par
-{\pntext\f2\'B7\tab}Add more "exceptions" for forced DD image writing\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Update GRUB to version 2.06\par
+{\pntext\f2\'B7\tab}Add support for .vtsi files (Ventoy Sparse Image)\par
+{\pntext\f2\'B7\tab}Move default app directory to %LocalAppData%\Rufus\ and always save a log there on exit\par
+{\pntext\f2\'B7\tab}Fix AppStore version of Rufus not being able to store downloaded files\par
+{\pntext\f2\'B7\tab}Fix failure to open Syslinux/GRUB files when Rufus is located at the root of a drive\par
+{\pntext\f2\'B7\tab}Prevent the creation of 'System Volume Information' on ESPs written in DD mode\par
+{\pntext\f2\'B7\tab}Prevent drive letter assignation to the UEFI:NTFS partition\par
+{\pntext\f2\'B7\tab}Prevent persistent partition creation errors due to size\par
+{\pntext\f2\'B7\tab}Enhance safety checks before running the Fido ISO download script\par
+{\pntext\f2\'B7\tab}Other internal fixes and improvements\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

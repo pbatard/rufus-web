@@ -11,13 +11,11 @@
   <body>
     <script>
      var supported_languages = [
-      "en_US", "en", "sq", "ar", "hy", "az", "bn", "bs", "bg", "yue", "ca", "zh", "zh_TW", "hr", "cs", "da", "nl", "et", "fi", "fr", "gl", "de", "el", "he", "hi", "hu", "id", "ga", "it", "ja", "ko", "ar_IQ", "lv", "lt", "mk", "ms", "mi", "nb", "or", "fa", "pl", "pt_BR", "pt", "ro", "ru", "sr", "si", "sk", "sl", "es", "sv", "th", "tr", "uk", "ur", "vi", "cy"
+      "en", "sq", "ar", "hy", "az", "bn", "bs", "bg", "yue", "ca", "zh", "zh_TW", "hr", "cs", "da", "nl", "et", "fi", "fr", "gl", "de", "el", "he", "hi", "hu", "id", "ga", "it", "ja", "ko", "ar_IQ", "lv", "lt", "mk", "ms", "mi", "nb", "or", "fa", "pl", "pt_BR", "pt", "ro", "ru", "sr", "si", "sk", "sl", "es", "sv", "th", "tr", "uk", "ur", "vi", "cy"
      ];
      var localized_index = "en";
      var lang = (window.navigator.language || window.navigator.userLanguage).replace('-', '_');
-     if (lang == "en_US")
-       localized_index = "en_US";
-     else if (lang == "ar_IQ")
+     if (lang == "ar_IQ")
        localized_index = "ar_IQ";
      else if (lang == "pt_BR")
        localized_index = "pt_BR";

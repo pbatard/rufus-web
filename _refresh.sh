@@ -2,8 +2,8 @@
 url=nano
 index=index.html
 main_region=('ar_SA' 'pt_PT' 'zh_CN')
-spec_region=('en_US' 'ar_IQ' 'pt_BR' 'zh_TW')
-locale_var='"en_US"'
+spec_region=('ar_IQ' 'pt_BR' 'zh_TW')
+locale_var=""
 
 echo "s/'?locale='+this.options\[this\.selectedIndex\]\.value\">/'\/'+this\.options\[this\.selectedIndex\]\.value\">/g" > cmd.sed
 for l in ${main_region[@]}; do
@@ -14,7 +14,11 @@ for l in `curl -sS $url | sed -rn 's/.*<option.*value=\"(.*)\">/\1/p'`
 do
   dir=$l
   if [[ ${main_region[@]} =~ $l ]]; then dir=${l:0:2}; fi
-  locale_var="${locale_var}, \"${dir}\""
+  if [ -z "$locale_var" ]; then
+    locale_var="\"${dir}\""
+  else
+    locale_var="${locale_var}, \"${dir}\""
+  fi
   echo Processing $dir/index.html
   curl -sS $url?locale=$l -o $dir/index.html
   sed -b -i -f cmd.sed $dir/index.html

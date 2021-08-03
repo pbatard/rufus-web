@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.14";
+$latest_version = "3.15";
 $previous_version = "3.7";
-$latest_date = "2021.04.30";
+$latest_date = "2021.08.03";
 $previous_date = "2019.09.09";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -421,15 +421,17 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Improve DD write speed (uncompressed images only)</span></li>
-					<li><span dir="ltr">Improve checksum computation speed</span></li>
-					<li><span dir="ltr">Improve network connectivity detection</span></li>
-					<li><span dir="ltr">Only prompt for additional GRUB/Syslinux downloads when not writing in DD mode</span></li>
-					<li><span dir="ltr">Fix potential "loss" of disk after writing Ubuntu 20.10 in DD mode</span></li>
-					<li><span dir="ltr">Fix GRUB compatibility issue with Ubuntu 21.04</span></li>
-					<li><span dir="ltr">Fix Rufus MBR not being selected by default for Windows ISOs</span></li>
-					<li><span dir="ltr">Fix drag and drop being enabled during drive creation</span></li>
-					<li><span dir="ltr">Add more "exceptions" for forced DD image writing</span></li>
+					<li><span dir="ltr">Update <a href="https://www.gnu.org/software/grub/">GRUB</a> to version 2.06</span></li>
+					<li><span dir="ltr">Add support for <code>.vtsi</code> files (<a href="https://www.ventoy.net">Ventoy</a> Sparse Image, courtesy of <b><i>longpanda</i></b>/<b><i>ventoy</i></b>)</span></li>
+					<li><span dir="ltr">Add workaround for openSUSE Live ISOs</span></li>
+					<li><span dir="ltr">Move default app directory to <code>%LocalAppData%\Rufus\</code> and always save a log there on exit</span></li>
+					<li><span dir="ltr">Fix AppStore version of Rufus not being able to store downloaded files</span></li>
+					<li><span dir="ltr">Fix failure to open Syslinux/GRUB files when Rufus is located at the root of a drive</span></li>
+					<li><span dir="ltr">Prevent the creation of <code>System Volume Information</code> on <a href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a>s written in DD mode</span></li>
+					<li><span dir="ltr">Prevent drive letter assignation to the <a href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition</span></li>
+					<li><span dir="ltr">Prevent persistent partition creation errors due to size</span></li>
+					<li><span dir="ltr">Wnhance safety checks before running the <a href="https://github.com/pbatard/Fido">Fido ISO download script</a></span></li>
+					<li><span dir="ltr">Other internal fixes and improvements</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>

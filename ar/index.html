@@ -332,9 +332,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 		أسفل هذه الصفحة ستجد قائمة غير شاملة من صور ISO التي يدعمها برنامج Rufus‏. <a href="#ref2"><sup>(2)</sup></a></p>
 				<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">تحميل</span></h2>
-			<p><b>تاريخ آخر تحديث 2021.04.30:</b></p>
-			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.14/rufus-3.14.exe"><span dir="ltr">3.14 Rufus</span></a></b></span> <span dir="rtl">(1.1 ميغا بايت)</span></li>
-			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.14/rufus-3.14p.exe"><span dir="ltr">3.14 Rufus</span> محمول</a> <span dir="rtl">(1.1 ميغا بايت)</span></li>
+			<p><b>تاريخ آخر تحديث 2021.08.03:</b></p>
+			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.15/rufus-3.15.exe"><span dir="ltr">3.15 Rufus</span></a></b></span> <span dir="rtl">(1.1 ميغا بايت)</span></li>
+			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.15/rufus-3.15p.exe"><span dir="ltr">3.15 Rufus</span> محمول</a> <span dir="rtl">(1.1 ميغا بايت)</span></li>
 			<li><a href="/downloads/">إصدارات أخرى (GitHub)</a></li>
 			<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">إصدارات أخرى (FossHub)</a></li>
 			</ul></p>
@@ -406,23 +406,25 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<a name="changelog"></a>
 		<h2>سجل التغييرات</h2>
 		<ul dir="rtl">
-			<li><span dir="ltr">(2021.04.30) <b>3.14 الإصدار</b></span>				<ul dir="rtl">
-					<li><span dir="ltr">Improve DD write speed (uncompressed images only)</span></li>
-					<li><span dir="ltr">Improve checksum computation speed</span></li>
-					<li><span dir="ltr">Improve network connectivity detection</span></li>
-					<li><span dir="ltr">Only prompt for additional GRUB/Syslinux downloads when not writing in DD mode</span></li>
-					<li><span dir="ltr">Fix potential "loss" of disk after writing Ubuntu 20.10 in DD mode</span></li>
-					<li><span dir="ltr">Fix GRUB compatibility issue with Ubuntu 21.04</span></li>
-					<li><span dir="ltr">Fix Rufus MBR not being selected by default for Windows ISOs</span></li>
-					<li><span dir="ltr">Fix drag and drop being enabled during drive creation</span></li>
-					<li><span dir="ltr">Add more "exceptions" for forced DD image writing</span></li>
+			<li><span dir="ltr">(2021.08.03) <b>3.15 الإصدار</b></span>				<ul dir="rtl">
+					<li><span dir="ltr">Update <a href="https://www.gnu.org/software/grub/">GRUB</a> to version 2.06</span></li>
+					<li><span dir="ltr">Add support for <code>.vtsi</code> files (<a href="https://www.ventoy.net">Ventoy</a> Sparse Image, courtesy of <b><i>longpanda</i></b>/<b><i>ventoy</i></b>)</span></li>
+					<li><span dir="ltr">Add workaround for openSUSE Live ISOs</span></li>
+					<li><span dir="ltr">Move default app directory to <code>%LocalAppData%\Rufus\</code> and always save a log there on exit</span></li>
+					<li><span dir="ltr">Fix AppStore version of Rufus not being able to store downloaded files</span></li>
+					<li><span dir="ltr">Fix failure to open Syslinux/GRUB files when Rufus is located at the root of a drive</span></li>
+					<li><span dir="ltr">Prevent the creation of <code>System Volume Information</code> on <a href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a>s written in DD mode</span></li>
+					<li><span dir="ltr">Prevent drive letter assignation to the <a href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition</span></li>
+					<li><span dir="ltr">Prevent persistent partition creation errors due to size</span></li>
+					<li><span dir="ltr">Wnhance safety checks before running the <a href="https://github.com/pbatard/Fido">Fido ISO download script</a></span></li>
+					<li><span dir="ltr">Other internal fixes and improvements</span></li>
 				</ul>
 			</li>
 						<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">إصدارات أخرى</a></b></li>
 		</ul>
 
 		<h2>كود المصدر</h2>
-			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.14.zip"><span dir="ltr">3.14 Rufus</span></a> <span dir="rtl">(3.5 ميغا بايت)</span></li>
+			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.15.zip"><span dir="ltr">3.15 Rufus</span></a> <span dir="rtl">(3.5 ميغا بايت)</span></li>
 			<li>كطريقة بديلة، يمكنك نسخ مخزن <a target="_blank" href="http://git-scm.com">git</a> باستخدام:			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
 			<li>للمزيد من المعلومات راجع <a target="_blank" href="https://github.com/pbatard/rufus">مشروع github</a>.</li></ul>
 			إذا كنت من المطورين، فنحن نشجعك بشدة على العبث بـ Rufus وإرسال التنقيحات والتحسينات.</p>

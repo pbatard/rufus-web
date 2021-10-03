@@ -24,6 +24,10 @@ if [[ ! -f $PRIVATE_KEY ]] ; then
     echo $PRIVATE_KEY does not exist - aborting.
     exit 1
 fi
+if [[ ! -f $PUBLIC_KEY ]] ; then
+    echo $PUBLIC_KEY does not exist - aborting.
+    exit 1
+fi
 read -s -p "Enter pass phrase for `realpath $PRIVATE_KEY`: " PASSWORD
 echo
 # Confirm that the pass phrase is valid by trying to sign a dummy file

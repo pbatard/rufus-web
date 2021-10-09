@@ -1,17 +1,19 @@
-version = 3.16.1830
+version = 3.16.1833
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.16_BETA/rufus-3.16_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.16_BETA2/rufus-3.16_BETA2.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.16 BETA (2021.10.04)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.16 BETA #2 (2021.10.09)\fs10\b0\par\fs22\par
 
 \pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix ISO mode support for Red Hat 8.2+ and derivatives\par
 {\pntext\f2\'B7\tab}Fix BIOS boot support for Arch derivatives\par
 {\pntext\f2\'B7\tab}Fix removal of some boot entries for Ubuntu derivatives\par
 {\pntext\f2\'B7\tab}Fix log not being saved on exit\par
+{\pntext\f2\'B7\tab}Add Windows 11 "Extended" installation support (Disables TPM/Secure Boot/RAM requirements)\par
+{\pntext\f2\'B7\tab}Add UEFI Shell ISO downloads\par
 {\pntext\f2\'B7\tab}Add support for Intel NUC card readers\par
-{\pntext\f2\'B7\tab}Improve Windows version reporting\par
 {\pntext\f2\'B7\tab}Improve Windows 11 support\par
+{\pntext\f2\'B7\tab}Improve Windows version reporting\par
 {\pntext\f2\'B7\tab}Speed up clearing of MBR/GPT\par
 
 \pard\ltrpar\sl276\slmult1\par

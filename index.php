@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.15";
+$latest_version = "3.16";
 $previous_version = "3.7";
-$latest_date = "2021.08.03";
+$latest_date = "2021.10.13";
 $previous_date = "2019.09.09";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
 $bugfix = false;
 $exe_size = 1.1;
-$src_size = 3.5;
+$src_size = 4.2;
 $langs = array(
   'en_IE' => array('en', '🇮🇪/🇬🇧/🇺🇸 English (International)'),
   'sq_AL' => array('sq', '🇦🇱 Albanian (Shqip)'),
@@ -421,17 +421,16 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Update <a href="https://www.gnu.org/software/grub/">GRUB</a> to version 2.06</span></li>
-					<li><span dir="ltr">Add support for <code>.vtsi</code> files (<a href="https://www.ventoy.net">Ventoy</a> Sparse Image, courtesy of <b><i>longpanda</i></b>/<b><i>ventoy</i></b>)</span></li>
-					<li><span dir="ltr">Add workaround for openSUSE Live ISOs</span></li>
-					<li><span dir="ltr">Move default app directory to <code>%LocalAppData%\Rufus\</code> and always save a log there on exit</span></li>
-					<li><span dir="ltr">Fix AppStore version of Rufus not being able to store downloaded files</span></li>
-					<li><span dir="ltr">Fix failure to open Syslinux/GRUB files when Rufus is located at the root of a drive</span></li>
-					<li><span dir="ltr">Prevent the creation of <code>System Volume Information</code> on <a href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a>s written in DD mode</span></li>
-					<li><span dir="ltr">Prevent drive letter assignation to the <a href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition</span></li>
-					<li><span dir="ltr">Prevent persistent partition creation errors due to size</span></li>
-					<li><span dir="ltr">Wnhance safety checks before running the <a href="https://github.com/pbatard/Fido">Fido ISO download script</a></span></li>
-					<li><span dir="ltr">Other internal fixes and improvements</span></li>
+					<li><span dir="ltr">Fix ISO mode support for Red Hat 8.2+ and derivatives</span></li>
+					<li><span dir="ltr">Fix BIOS boot support for Arch derivatives</span></li>
+					<li><span dir="ltr">Fix removal of some boot entries for Ubuntu derivatives</span></li>
+					<li><span dir="ltr">Fix log not being saved on exit</span></li>
+					<li><span dir="ltr">Add Windows 11 <i>"Extended"</i> installation support (Disables TPM/Secure Boot/RAM requirements)</span></li>
+					<li><span dir="ltr">Add <a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a> ISO downloads</span></li>
+					<li><span dir="ltr">Add support for Intel NUC card readers</span></li>
+					<li><span dir="ltr">Improve Windows 11 support</span></li>
+					<li><span dir="ltr">Improve Windows version reporting</span></li>
+					<li><span dir="ltr">Speed up clearing of MBR/GPT</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>
@@ -491,53 +490,53 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<a name="ref2">&nbsp;</a>
 		<h2>(2) <?= _("Non exhaustive list of ISOs Rufus is known to work with");?></h2>
 		<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="http://www.archlinux.org/">Arch&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://archbang.org/">Archbang</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://archlinux.org/">Arch&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a target="_blank" href="http://www.nu2.nu/pebuilder/">BartPE/pebuilder</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://centos.org">CentOS</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.centos.org">CentOS</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://clonezilla.org/clonezilla-live.php">Clonezilla</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a target="_blank" href="http://www.damnsmalllinux.org/">Damn&nbsp;Small&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a target="_blank" href="https://www.debian.org/">Debian</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://fedoraproject.org/">Fedora</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.freedos.org/">FreeDOS</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://getfedora.org">Fedora</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.freedos.org/">FreeDOS</a></td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="http://www.freenas.org/">FreeNAS</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.gentoo.org/">Gentoo</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://gparted.org/">GParted</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.gnewsense.org/">gNewSense</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.hirensbootcd.org/">Hiren's&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://reboot.pro/forum/52/">LiveXP</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://knoppix.net/">Knoppix</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://kolibrios.org">KolibriOS</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.kubuntu.org/">Kubuntu</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://garudalinux.org">Garuda Linux</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.gentoo.org">Gentoo</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://gparted.org">GParted</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.hirensbootcd.org">Hiren's&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://reboot.pro/forum/52">LiveXP</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://knoppix.net">Knoppix</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://kolibrios.org">KolibriOS</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://kubuntu.org">Kubuntu</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://linuxmint.com">Linux&nbsp;Mint</a></td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="http://linuxmint.com/">Linux&nbsp;Mint</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://pogostick.net/~pnh/ntpasswd/">NT&nbsp;Password&nbsp;Registry&nbsp;Editor</a></td><td><?=$comma;?>&nbsp;</td>
-			<!-- <td><a target="_blank" href="http://www.opensuse.org/">OpenSUSE</a></td><td><?=$comma;?>&nbsp;</td> -->
-			<td><a target="_blank" href="http://partedmagic.com/">Parted&nbsp;Magic</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.partitionwizard.com/partition-wizard-bootable-cd.html">Partition&nbsp;Wizard</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.raspbian.org/">Raspbian</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://manjaro.org">Manjaro Linux</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://pogostick.net/~pnh/ntpasswd">NT&nbsp;Password&nbsp;Registry&nbsp;Editor</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.opensuse.org">OpenSUSE</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://partedmagic.com">Parted&nbsp;Magic</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.partitionwizard.com/partition-wizard-bootable-cd.html">Partition&nbsp;Wizard</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.raspbian.org">Raspbian</a></td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="http://reactos.org/">ReactOS</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.redhat.com/">Red&nbsp;Hat</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.rodsbooks.com/refind/">rEFInd</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.slackware.com/">Slackware</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable/">Super&nbsp;Grub2&nbsp;Disk</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://tails.boum.org/">Tails</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://trinityhome.org/">Trinity&nbsp;Rescue&nbsp;Kit</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.ubuntu.com/">Ubuntu</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://reactos.org">ReactOS</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.redhat.com">Red&nbsp;Hat</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.rodsbooks.com/refind">rEFInd</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://rockylinux.org">Rocky Linux</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="http://www.slackware.com">Slackware</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable">Super&nbsp;Grub2&nbsp;Disk</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://tails.boum.org">Tails</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://trinityhome.org">Trinity&nbsp;Rescue&nbsp;Kit</a></td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="http://www.ultimatebootcd.com/">Ultimate&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=140&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=146&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;Vista</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=351&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;Server&nbsp;2008</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=350&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;7</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.truenas.com/download-truenas-core">TrueNAS CORE</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://ubuntu.com">Ubuntu</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.ultimatebootcd.com">Ultimate&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-xp">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-vista">Windows&nbsp;Vista</a></td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=481&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;8</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=524&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;8.1</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=483&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;Server&nbsp;2012</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-7">Windows&nbsp;7</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows8ISO">Windows&nbsp;8/8.1</a></td><td><?=$comma;?>&nbsp;</td>
 			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows10ISO/">Windows&nbsp;10</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#searchTerm=&ProductFamilyId=665&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0">Windows&nbsp;Server&nbsp;2016</a></td><td><?=$comma;?>&nbsp;</td>
-
+			<td><a target="_blank" href="https://www.microsoft.com/en-ie/windows-server">Windows&nbsp;Server&nbsp;2019</a></td><td><?=$comma;?>&nbsp;</td>
+			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows11">Windows&nbsp;11</a></td><td><?=$comma;?>&nbsp;</td>
 			<td>&hellip;</td>
 		</tr></table></p>
 		<div class="footer"><table align="center" dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>

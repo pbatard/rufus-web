@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.16";
-$previous_version = "3.7";
-$latest_date = "2021.10.13";
-$previous_date = "2019.09.09";
+$latest_version = "3.17";
+$previous_version = "3.16";
+$latest_date = "2021.10.23";
+$previous_date = "2021.10.13";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
-$bugfix = false;
-$exe_size = 1.1;
-$src_size = 4.2;
+$bugfix = true;
+$exe_size = 1.3;
+$src_size = 4.5;
 $langs = array(
   'en_IE' => array('en', '🇮🇪/🇬🇧/🇺🇸 English (International)'),
   'sq_AL' => array('sq', '🇦🇱 Albanian (Shqip)'),
@@ -421,24 +421,27 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Fix ISO mode support for Red Hat 8.2+ and derivatives</span></li>
-					<li><span dir="ltr">Fix BIOS boot support for Arch derivatives</span></li>
-					<li><span dir="ltr">Fix removal of some boot entries for Ubuntu derivatives</span></li>
-					<li><span dir="ltr">Fix log not being saved on exit</span></li>
-					<li><span dir="ltr">Add Windows 11 <i>"Extended"</i> installation support (Disables TPM/Secure Boot/RAM requirements)</span></li>
-					<li><span dir="ltr">Add <a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a> ISO downloads</span></li>
-					<li><span dir="ltr">Add support for Intel NUC card readers</span></li>
-					<li><span dir="ltr">Improve Windows 11 support</span></li>
-					<li><span dir="ltr">Improve Windows version reporting</span></li>
-					<li><span dir="ltr">Speed up clearing of MBR/GPT</span></li>
+					<li><span dir="ltr">Fix MBR not being properly cleared</span></li>
+					<li><span dir="ltr">Fix commandline hogger not being deleted on exit</span></li>
+					<li><span dir="ltr">Improve ReFS handling for platforms that support it</span></li>
+					<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> to latest and remove Secure Boot notice since this version is Secure Boot signed</span></li>
+					<li><span dir="ltr">Update Grub4DOS to latest</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>
 			<br />
 			<li><?= $prev_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Fix regression where some ISOs (Debian) would produce a Syslinux error when booting in BIOS mode</span></li>
-					<li><span dir="ltr">Fix potential <code>0xC0030057</code> errors when trying to create a persistent partitions on a non-FIXED drive</span></li>
+					<li><span dir="ltr">Fix ISO mode support for Red Hat 8.2+ and derivatives</span></li>
+					<li><span dir="ltr">Fix BIOS boot support for Arch derivatives</span></li>
+					<li><span dir="ltr">Fix removal of some boot entries for Ubuntu derivatives</span></li>
+					<li><span dir="ltr">Fix log not being saved on exit</span></li>
+					<li><span dir="ltr">Add Windows 11 <i>"Extended"</i> installation support (Disables TPM/Secure Boot)</span></li>
+					<li><span dir="ltr">Add <a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a> ISO downloads</span></li>
+					<li><span dir="ltr">Add support for Intel NUC card readers</span></li>
+					<li><span dir="ltr">Improve Windows 11 support</span></li>
+					<li><span dir="ltr">Improve Windows version reporting</span></li>
+					<li><span dir="ltr">Speed up clearing of MBR/GPT</span></li>
 				</ul>
 			</li>
 			<br />

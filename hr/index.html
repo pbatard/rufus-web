@@ -332,9 +332,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 		Nepotpuna lista podržanih ISO slika nalazi se na dnu ove stranice. <a href="#ref2"><sup>(2)</sup></a></p>
 				<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Preuzmi</span></h2>
-			<p><b>Posljednji put ažurirano 2021.10.13:</b></p>
-			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.16/rufus-3.16.exe">Rufus 3.16</a></b></span> <span dir="ltr">(1.1 MB)</span></li>
-			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.16/rufus-3.16p.exe">Rufus 3.16 Portable</a> <span dir="ltr">(1.1 MB)</span></li>
+			<p><b>Posljednji put ažurirano 2021.10.23:</b></p>
+			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17.exe">Rufus 3.17</a></b></span> <span dir="ltr">(1.3 MB)</span></li>
+			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17p.exe">Rufus 3.17 Portable</a> <span dir="ltr">(1.3 MB)</span></li>
 			<li><a href="/downloads/">Druge verzije (GitHub)</a></li>
 			<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">Druge verzije (FossHub)</a></li>
 			</ul></p>
@@ -406,12 +406,21 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<a name="changelog"></a>
 		<h2>Promjene</h2>
 		<ul dir="ltr">
+			<li><b>Verzija 3.17</b> (2021.10.23) [BUGFIX RELEASE]				<ul dir="ltr">
+					<li><span dir="ltr">Fix MBR not being properly cleared</span></li>
+					<li><span dir="ltr">Fix commandline hogger not being deleted on exit</span></li>
+					<li><span dir="ltr">Improve ReFS handling for platforms that support it</span></li>
+					<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> to latest and remove Secure Boot notice since this version is Secure Boot signed</span></li>
+					<li><span dir="ltr">Update Grub4DOS to latest</span></li>
+				</ul>
+			</li>
+						<br />
 			<li><b>Verzija 3.16</b> (2021.10.13)				<ul dir="ltr">
 					<li><span dir="ltr">Fix ISO mode support for Red Hat 8.2+ and derivatives</span></li>
 					<li><span dir="ltr">Fix BIOS boot support for Arch derivatives</span></li>
 					<li><span dir="ltr">Fix removal of some boot entries for Ubuntu derivatives</span></li>
 					<li><span dir="ltr">Fix log not being saved on exit</span></li>
-					<li><span dir="ltr">Add Windows 11 <i>"Extended"</i> installation support (Disables TPM/Secure Boot/RAM requirements)</span></li>
+					<li><span dir="ltr">Add Windows 11 <i>"Extended"</i> installation support (Disables TPM/Secure Boot)</span></li>
 					<li><span dir="ltr">Add <a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a> ISO downloads</span></li>
 					<li><span dir="ltr">Add support for Intel NUC card readers</span></li>
 					<li><span dir="ltr">Improve Windows 11 support</span></li>
@@ -419,11 +428,12 @@ document.addEventListener("DOMContentLoaded", function(event)
 					<li><span dir="ltr">Speed up clearing of MBR/GPT</span></li>
 				</ul>
 			</li>
+			<br />
 						<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Druge verzije</a></b></li>
 		</ul>
 
 		<h2>Izvorni kod</h2>
-			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.16.zip">Rufus 3.16</a> <span dir="ltr">(4.2 MB)</span></li>
+			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.17.zip">Rufus 3.17</a> <span dir="ltr">(4.5 MB)</span></li>
 			<li>Ili možete klonirati <a target="_blank" href="http://git-scm.com">git</a> repozitorij pomoću:			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
 			<li>Za dodatne informacije, pogledajte <a target="_blank" href="https://github.com/pbatard/rufus">github projekt</a>.</li></ul>
 			Ukoliko ste programer, dobrodošli ste petljati s Rufusom i ponuditi zakrpe.</p>

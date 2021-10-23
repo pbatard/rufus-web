@@ -1,11 +1,19 @@
-version = 3.16.1836
+version = 3.17.1842
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.16/rufus-3.16.exe
-download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.16/rufus-3.16_arm.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.16/rufus-3.16_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17.exe
+download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17_arm.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.16 (2021.10.13)\b0\par\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.17 (2021.10.23) [BUGFIX RELEASE]\b0\par\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix MBR not being properly cleared\par
+{\pntext\f2\'B7\tab}Fix commandline hogger not being deleted on exit\par
+{\pntext\f2\'B7\tab}Improve ReFS handling for platforms that support it\par
+{\pntext\f2\'B7\tab}Update UEFI:NTFS to latest and remove Secure Boot notice since this version is Secure Boot signed\par
+{\pntext\f2\'B7\tab}Update Grub4DOS to latest\par
+
+\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Still from Rufus 3.16 (2021.10.13)\b0\par\par
 
 \pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix ISO mode support for Red Hat 8.2+ and derivatives\par
 {\pntext\f2\'B7\tab}Fix BIOS boot support for Arch derivatives\par

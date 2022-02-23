@@ -543,7 +543,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			<td>&hellip;</td>
 		</tr></table></p>
 		<div class="footer"><table align="center" dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2021&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
+			<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2022&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
 			<? /* Please insert your language and name here.
 If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a> */ $tr = _("English translation by Pete Batard"); if (substr($tr,0,4) != "Engl") echo $tr . "<br/>";?>

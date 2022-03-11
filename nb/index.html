@@ -332,9 +332,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 		En ikke komplett liste over støttete ISOer er tilgjengelig nederst på denne siden. <a href="#ref2"><sup>(2)</sup></a></p>
 				<a name="download"></a>
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Last ned</span></h2>
-			<p><b>Sist oppdatert 2021.10.23:</b></p>
-			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17.exe">Rufus 3.17</a></b></span> <span dir="ltr">(1.3 MB)</span></li>
-			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17p.exe">Rufus 3.17 Portabel</a> <span dir="ltr">(1.3 MB)</span></li>
+			<p><b>Sist oppdatert 2022.03.11:</b></p>
+			<p><ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.18/rufus-3.18.exe">Rufus 3.18</a></b></span> <span dir="ltr">(1.3 MB)</span></li>
+			<li><a href="https://github.com/pbatard/rufus/releases/download/v3.18/rufus-3.18p.exe">Rufus 3.18 Portabel</a> <span dir="ltr">(1.3 MB)</span></li>
 			<li><a href="/downloads/">Andre versjoner (GitHub)</a></li>
 			<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">Andre versjoner (FossHub)</a></li>
 			</ul></p>
@@ -406,34 +406,21 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<a name="changelog"></a>
 		<h2>Programendringer (på Engelsk)</h2>
 		<ul dir="ltr">
-			<li><b>Versjon 3.17</b> (2021.10.23) [BUGFIX RELEASE]				<ul dir="ltr">
-					<li><span dir="ltr">Fix MBR not being properly cleared</span></li>
-					<li><span dir="ltr">Fix commandline hogger not being deleted on exit</span></li>
-					<li><span dir="ltr">Improve ReFS handling for platforms that support it</span></li>
-					<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> to latest and remove Secure Boot notice since this version is Secure Boot signed</span></li>
-					<li><span dir="ltr">Update Grub4DOS to latest</span></li>
+			<li><b>Versjon 3.18</b> (2022.03.11)				<ul dir="ltr">
+					<li><span dir="ltr">Fix DLL sideloading vulnerabilities</span></li>
+					<li><span dir="ltr">Fix ISO → ESP creation when running on Windows 11</span></li>
+					<li><span dir="ltr">Fix an issue when detecting network connectivity when the DHCP service is disabled</span></li>
+					<li><span dir="ltr">Update <a target="_blank" href="https://www.freedos.org">FreeDOS</a> to version 1.3</span></li>
+					<li><span dir="ltr">Add bypass of Windows 11 restrictions for in-place upgrades</span></li>
+					<li><span dir="ltr">Add Miracle Linux 8 to the list of Red Hat exceptions</span></li>
+					<li><span dir="ltr">Other internal fixes and improvements</span></li>
 				</ul>
 			</li>
-						<br />
-			<li><b>Versjon 3.16</b> (2021.10.13)				<ul dir="ltr">
-					<li><span dir="ltr">Fix ISO mode support for Red Hat 8.2+ and derivatives</span></li>
-					<li><span dir="ltr">Fix BIOS boot support for Arch derivatives</span></li>
-					<li><span dir="ltr">Fix removal of some boot entries for Ubuntu derivatives</span></li>
-					<li><span dir="ltr">Fix log not being saved on exit</span></li>
-					<li><span dir="ltr">Add Windows 11 <i>"Extended"</i> installation support (Disables TPM/Secure Boot)</span></li>
-					<li><span dir="ltr">Add <a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a> ISO downloads</span></li>
-					<li><span dir="ltr">Add support for Intel NUC card readers</span></li>
-					<li><span dir="ltr">Improve Windows 11 support</span></li>
-					<li><span dir="ltr">Improve Windows version reporting</span></li>
-					<li><span dir="ltr">Speed up clearing of MBR/GPT</span></li>
-				</ul>
-			</li>
-			<br />
 						<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Andre versjoner</a></b></li>
 		</ul>
 
 		<h2>Kildekode</h2>
-			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.17.zip">Rufus 3.17</a> <span dir="ltr">(4.5 MB)</span></li>
+			<p><ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.18.zip">Rufus 3.18</a> <span dir="ltr">(4.5 MB)</span></li>
 			<li>Alternativt kan du klone <a target="_blank" href="http://git-scm.com">git</a>-arkivet med:			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
 			<li>For mer informasjon, vennligst se <a target="_blank" href="https://github.com/pbatard/rufus">github-prosjektet</a>.</li></ul>
 			Er du programvareutvikler, er du oppfordret til å forbedre Rufus og sende inn programendringer.</p>

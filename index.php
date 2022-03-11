@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.17";
+$latest_version = "3.18";
 $previous_version = "3.16";
-$latest_date = "2021.10.23";
+$latest_date = "2022.03.11";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
-$bugfix = true;
+$bugfix = false;
 $exe_size = 1.3;
 $src_size = 4.5;
 $langs = array(
@@ -421,11 +421,13 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Fix MBR not being properly cleared</span></li>
-					<li><span dir="ltr">Fix commandline hogger not being deleted on exit</span></li>
-					<li><span dir="ltr">Improve ReFS handling for platforms that support it</span></li>
-					<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> to latest and remove Secure Boot notice since this version is Secure Boot signed</span></li>
-					<li><span dir="ltr">Update Grub4DOS to latest</span></li>
+					<li><span dir="ltr">Fix DLL sideloading vulnerabilities</span></li>
+					<li><span dir="ltr">Fix ISO → ESP creation when running on Windows 11</span></li>
+					<li><span dir="ltr">Fix an issue when detecting network connectivity when the DHCP service is disabled</span></li>
+					<li><span dir="ltr">Update <a target="_blank" href="https://www.freedos.org">FreeDOS</a> to version 1.3</span></li>
+					<li><span dir="ltr">Add bypass of Windows 11 restrictions for in-place upgrades</span></li>
+					<li><span dir="ltr">Add Miracle Linux 8 to the list of Red Hat exceptions</span></li>
+					<li><span dir="ltr">Other internal fixes and improvements</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>

@@ -1,29 +1,18 @@
-version = 3.17.1842
+version = 3.18.1877
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17.exe
-download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17_arm.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.17/rufus-3.17_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.18/rufus-3.18.exe
+download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.18/rufus-3.18_arm.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.18/rufus-3.18_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.17 (2021.10.23) [BUGFIX RELEASE]\b0\par\par
+\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 3.18 (2022.03.11)\b0\par\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix MBR not being properly cleared\par
-{\pntext\f2\'B7\tab}Fix commandline hogger not being deleted on exit\par
-{\pntext\f2\'B7\tab}Improve ReFS handling for platforms that support it\par
-{\pntext\f2\'B7\tab}Update UEFI:NTFS to latest and remove Secure Boot notice since this version is Secure Boot signed\par
-{\pntext\f2\'B7\tab}Update Grub4DOS to latest\par
-
-\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Still from Rufus 3.16 (2021.10.13)\b0\par\par
-
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix ISO mode support for Red Hat 8.2+ and derivatives\par
-{\pntext\f2\'B7\tab}Fix BIOS boot support for Arch derivatives\par
-{\pntext\f2\'B7\tab}Fix removal of some boot entries for Ubuntu derivatives\par
-{\pntext\f2\'B7\tab}Fix log not being saved on exit\par
-{\pntext\f2\'B7\tab}Add Windows 11 "Extended" installation support (Disables TPM/Secure Boot/RAM requirements)\par
-{\pntext\f2\'B7\tab}Add UEFI Shell ISO downloads\par
-{\pntext\f2\'B7\tab}Add support for Intel NUC card readers\par
-{\pntext\f2\'B7\tab}Improve Windows 11 support\par
-{\pntext\f2\'B7\tab}Improve Windows version reporting\par
-{\pntext\f2\'B7\tab}Speed up clearing of MBR/GPT\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix DLL sideloading vulnerabilities\par
+{\pntext\f2\'B7\tab}Fix ISO -> ESP creation when running on Windows 11\par
+{\pntext\f2\'B7\tab}Fix an issue when detecting network connectivity when the DHCP service is disabled\par
+{\pntext\f2\'B7\tab}Update FreeDOS to version 1.3\par
+{\pntext\f2\'B7\tab}Add bypass of Windows 11 restrictions for in-place upgrades\par
+{\pntext\f2\'B7\tab}Add Miracle Linux 8 to the list of Red Hat exceptions\par
+{\pntext\f2\'B7\tab}Other internal fixes and improvements\par
 
 \pard\ltrpar\sl276\slmult1\par}

@@ -454,7 +454,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<h2><?= _("Source Code");?></h2>
 			<p><ul><li><?= /* Abbreviation for MegaByte */ "<a target=\"_blank\" href=\"https://github.com/pbatard/rufus/archive/v" . $latest_version . ".zip\">" . $app_name . "</a> <span dir=\"" . $dir . "\">(" . $src_size . " " . _("MB") . ")";?></span></li>
 			<li><? printf(_("Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"), "href=\"http://git-scm.com\"");?>
-			<pre dir="ltr">$ git clone git://github.com/pbatard/rufus</pre></li>
+			<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 			<li><? printf(_("For more information, see the <a target=\"_blank\" %s>github project</a>."), "href=\"https://github.com/pbatard/rufus\"");?></li></ul>
 			<?= _("If you are a developer, you are very much encouraged to tinker with Rufus and submit patches.");?></p>
 		<a name="donate"></a>

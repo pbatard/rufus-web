@@ -236,11 +236,11 @@ msgstr "Rufus-ի ՀՏՀ-ը հասանելի են <b><a target=\"_blank\" %s>ԱՅ
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Հետադարձ կապի, սխալի մասին հաղորդելու կամ բարելավությունների առաջարկներ "
-"անելու համար օգտվե՛ք github-ի <a target=\"_blank\" %s>խնդիրների "
+"անելու համար օգտվե՛ք GitHub-ի <a target=\"_blank\" %s>խնդիրների "
 "տեղեկատուից</a>: Կամ կարող եք <a target=\"_blank\" %s> էլեկտրոնային նամակ "
 "ուղարկել</a>:"
 
@@ -302,9 +302,9 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
-"Լրացուցիչ տեղեկությունների համար այցելե՛ք՝ <a target=\"_blank\" %s> github "
+"Լրացուցիչ տեղեկությունների համար այցելե՛ք՝ <a target=\"_blank\" %s> GitHub "
 "նախաձեռնությունը </a>:"
 
 #: index.php:385

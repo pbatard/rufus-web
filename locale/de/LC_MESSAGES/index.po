@@ -251,7 +251,7 @@ msgstr "Die Rufus-FAQ ist <b><a target=\"_blank\" %s>HIER</a></b> zu finden."
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target="
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target="
 "\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Um Feedback, einen Fehlerbericht oder Verbesserungsvorschläge zu senden, "
@@ -310,7 +310,7 @@ msgstr ""
 #: index.php:451
 #, php-format
 msgid ""
-"For more information, see the <a target=\"_blank\" %s>github project</a>."
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "Für weitere Informationen besuchen Sie das <a target=\"_blank\" %s>GitHub-"
 "Projekt</a>."

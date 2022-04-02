@@ -242,11 +242,11 @@ msgstr ""
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "I ddarparu adborth, riportio nam neu ofyn am welliant, defnyddiwch y traciwr"
-" mater github <a target=\"_blank\" %s>traciwr mater</a>. Neu gallwch <a "
+" mater GitHub <a target=\"_blank\" %s>traciwr mater</a>. Neu gallwch <a "
 "target=\"_blank\" %s>anfon e-bost</a>."
 
 #: index.php:347
@@ -302,9 +302,9 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
-"Am ragor o wybodaeth, gweler y prosiect <a target=\"_blank\" %s>github</a>."
+"Am ragor o wybodaeth, gweler y prosiect <a target=\"_blank\" %s>GitHub</a>."
 
 #: index.php:385
 msgid ""

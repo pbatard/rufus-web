@@ -223,7 +223,7 @@ msgstr "問到爛嘅問題，都喺 <b><a target=\"_blank\" %s>呢邊</a></b> �
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "想留個意見畀作者？想話畀作者知邊到有 BUG？想請作者加啲新嘢？可以去 GitHub 個 <a target=\"_blank\" "
@@ -277,7 +277,7 @@ msgstr "除此之外，亦都畀打指令 <a target=\"_blank\" %s>Clone Git</a>�
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr "或者睇睇 <a target=\"_blank\" %s>GitHub 專案</a>。"
 
 #: index.php:385

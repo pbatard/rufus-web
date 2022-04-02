@@ -238,11 +238,11 @@ msgstr ""
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Untuk memberikan maklum balas, melaporkan pepijat atau menuntut peningkatan,"
-" sila gunakan <a target=\"_blank\" %s>penjejak isu</a> github. Atau anda "
+" sila gunakan <a target=\"_blank\" %s>penjejak isu</a> GitHub. Atau anda "
 "boleh <a target=\"_blank\" %s>hantarkan e-mel</a>."
 
 #: index.php:347
@@ -302,8 +302,8 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
-msgstr "Untuk maklumat lanjut, lihat <a target=\"_blank\" %s>projek github</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr "Untuk maklumat lanjut, lihat <a target=\"_blank\" %s>projek GitHub</a>."
 
 #: index.php:385
 msgid ""

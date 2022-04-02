@@ -245,12 +245,12 @@ msgstr ""
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Για να παρέχετε καποια εποικοδομητική κριτική, να αναφέρετε κάποιο σφάλμα ή "
 "να ζητήσετε κάποια βελτίωση, παρακαλούμε να χρησιμοποιήσετε τον <a  "
-"%s>tracker του github</a>. Ή μπορείτε να στείλετε κάποιο <a "
+"%s>tracker του GitHub</a>. Ή μπορείτε να στείλετε κάποιο <a "
 "target=\"_blank\" %s>e-mail εδώ</a>."
 
 #: index.php:347
@@ -311,10 +311,10 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "Για περισσότερες πληροφορίες, δείτε τη <a target=\"_blank\" %s>σελίδα στο "
-"github</a>."
+"GitHub</a>."
 
 #: index.php:385
 msgid ""

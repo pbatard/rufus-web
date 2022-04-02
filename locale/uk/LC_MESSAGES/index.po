@@ -233,12 +233,12 @@ msgstr "Rufus FAQ доступний <b><a target=\"_blank\" %s>ТУТ</a></b>."
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Для того, щоб залишити відгук, повідомити про помилку чи запропонувати ідею,"
 " будь ласка, використовуйте <a target=\"_blank\" %s>відслідковування "
-"проблем</a> github. Також ви можете <a target=\"_blank\" %s>відправити "
+"проблем</a> GitHub. Також ви можете <a target=\"_blank\" %s>відправити "
 "e-mail</a>."
 
 #: index.php:347
@@ -298,10 +298,10 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "Додаткові відомості дивіться у розділі <a target=\"_blank\" %s>проекту "
-"github</a>."
+"GitHub</a>."
 
 #: index.php:385
 msgid ""

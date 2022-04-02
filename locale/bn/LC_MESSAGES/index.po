@@ -227,7 +227,7 @@ msgstr "Rufus সজিপ্র পাওয়া যাবে <b><a target=\"_bl
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "প্রতিক্রিয়া জানাতে চাইলে বাগ রিপোর্ট করুন বা আরো উন্নয়নের অনুরোধ করুন। "
@@ -291,7 +291,7 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr "বিস্তারিত তথ্যের জন্য <a target=\"_blank\" %s>গিটহাব প্রজেক্ট</a> দেখুন।"
 
 #: index.php:385

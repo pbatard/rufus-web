@@ -232,10 +232,10 @@ msgstr "Rufus 的常见问题（FAQ）<b><a target=\"_blank\" %s>在此</a></b>�
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target="
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target="
 "\"_blank\" %s>send an e-mail</a>."
 msgstr ""
-"您可以使用 github 的 <a target=\"_blank\" %s>issue tracker</a> 来提供反馈，报"
+"您可以使用 GitHub 的 <a target=\"_blank\" %s>issue tracker</a> 来提供反馈，报"
 "告 BUG，或者提交功能需求。当然也可以直接发 <a target=\"_blank\" %s>电子邮件</"
 "a>。"
 
@@ -288,8 +288,8 @@ msgstr ""
 #: index.php:451
 #, php-format
 msgid ""
-"For more information, see the <a target=\"_blank\" %s>github project</a>."
-msgstr "更多详情请查看 <a target=\"_blank\" %s>github 项目主页</a> 。"
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr "更多详情请查看 <a target=\"_blank\" %s>GitHub 项目主页</a> 。"
 
 #: index.php:452
 msgid ""

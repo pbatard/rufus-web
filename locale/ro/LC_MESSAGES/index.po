@@ -230,12 +230,12 @@ msgstr ""
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Pentru a ne spune părerea dvs., a raporta o eroare sau a solicita o "
 "caracteristică nouă, vă rugăm să folosiți <a target=\"_blank\" "
-"%s>github</a>. Sau puteți <a target=\"_blank\" %s>trimite un e-mail</a>."
+"%s>GitHub</a>. Sau puteți <a target=\"_blank\" %s>trimite un e-mail</a>."
 
 #: index.php:347
 msgid "License"
@@ -293,10 +293,10 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "Pentru mai multe informații, consultați <a target=\"_blank\" %s>proiectul "
-"github</a>."
+"GitHub</a>."
 
 #: index.php:385
 msgid ""

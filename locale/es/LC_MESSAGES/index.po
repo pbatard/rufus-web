@@ -246,7 +246,7 @@ msgstr ""
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target="
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target="
 "\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Para enviar comentarios, notificar un error o solicitar una mejora, use el "
@@ -307,7 +307,7 @@ msgstr ""
 #: index.php:451
 #, php-format
 msgid ""
-"For more information, see the <a target=\"_blank\" %s>github project</a>."
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "Para obtener más información, échele un vistazo al <a target=\"_blank\" "
 "%s>proyecto en GitHub</a>."

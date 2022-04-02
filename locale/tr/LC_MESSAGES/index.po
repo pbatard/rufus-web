@@ -241,11 +241,11 @@ msgstr "Rufus SSS <b><a target=\"_blank\" %s>BURADA</a></b>."
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Geribildirim gönderimi, hata raporlaması ya da geliştirme istekleri için "
-"lütfen github <a target=\"_blank\" %s>issue tracker (sorun takipçisi)</a>'ı "
+"lütfen GitHub <a target=\"_blank\" %s>issue tracker (sorun takipçisi)</a>'ı "
 "kullanın. Ya da <a target=\"_blank\" %s>bir e-posta gönderin</a>."
 
 #: index.php:347
@@ -301,8 +301,8 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
-msgstr "Daha fazla bilgi için <a target=\"_blank\" %s>github projesine</a> bakın."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr "Daha fazla bilgi için <a target=\"_blank\" %s>GitHub projesine</a> bakın."
 
 #: index.php:385
 msgid ""

@@ -230,11 +230,11 @@ msgstr "FAQ về Rufus có tại <b><a target=\"_blank\" %s>ĐÂY</a></b>."
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Để cung cấp phản hồi, báo lỗi hoặc yêu cầu cải tiến, vui lòng dùng <a "
-"target=\"_blank\" %s>bộ theo dõi vấn đề</a> trên github. Hoặc bạn có thể <a "
+"target=\"_blank\" %s>bộ theo dõi vấn đề</a> trên GitHub. Hoặc bạn có thể <a "
 "target=\"_blank\" %s>gửi e-mail</a>."
 
 #: index.php:347
@@ -294,8 +294,8 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
-msgstr "Để có thêm thông tin, hãy xem <a target=\"_blank\" %s>dự án github</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr "Để có thêm thông tin, hãy xem <a target=\"_blank\" %s>dự án GitHub</a>."
 
 #: index.php:385
 msgid ""

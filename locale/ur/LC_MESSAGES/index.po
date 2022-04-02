@@ -240,10 +240,10 @@ msgstr "روفُس سوالنامہ <b><a target=\"_blank\" %s> یہاں </a></b
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
-"فیڈ بیک دینے یا کسی بگ کی اطلاع دینے یا کسی بہتری کی درخواست کے لئے، GITHUB "
+"فیڈ بیک دینے یا کسی بگ کی اطلاع دینے یا کسی بہتری کی درخواست کے لئے، GitHub "
 "کا <a target=\"_blank\" %s>issue tracker</a> استعمال کریں یا پھر آپ ہمیں <a"
 " target=\"_blank\" %s>ای میل بھیج دیں</a>"
 
@@ -304,9 +304,9 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
-"مزید معلومات کے لئے، <a target=\"_blank\" %s>github project</a> ملاحظہ کریں۔"
+"مزید معلومات کے لئے، <a target=\"_blank\" %s>GitHub project</a> ملاحظہ کریں۔"
 
 #: index.php:385
 msgid ""

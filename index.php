@@ -411,7 +411,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<a name="FAQ"></a>
 		<h2><?= _("Frequently Asked Questions (FAQ)");?></h2>
 		<p><? /* You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English */ printf(_("A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."), "href=\"https://github.com/pbatard/rufus/wiki/FAQ\"");?><br/></p>
-		<p><? printf(_("To provide feedback, report a bug or request an enhancement, please use the github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target=\"_blank\" %s>send an e-mail</a>."), "href=\"https://github.com/pbatard/rufus/issues\"", "href=\"mailto:pete@akeo.ie?subject=Rufus\"");?></p>
+		<p><? printf(_("To provide feedback, report a bug or request an enhancement, please use the GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target=\"_blank\" %s>send an e-mail</a>."), "href=\"https://github.com/pbatard/rufus/issues\"", "href=\"mailto:pete@akeo.ie?subject=Rufus\"");?></p>
 		<a name="license"></a>
 		<h2><?= _("License")?></h2>
 		<p><? printf(_("<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."), "href=\"http://www.gnu.org/licenses/gpl.html\"");?><br /><?= _("You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license.")?></p>
@@ -455,7 +455,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			<p><ul><li><?= /* Abbreviation for MegaByte */ "<a target=\"_blank\" href=\"https://github.com/pbatard/rufus/archive/v" . $latest_version . ".zip\">" . $app_name . "</a> <span dir=\"" . $dir . "\">(" . $src_size . " " . _("MB") . ")";?></span></li>
 			<li><? printf(_("Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"), "href=\"http://git-scm.com\"");?>
 			<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
-			<li><? printf(_("For more information, see the <a target=\"_blank\" %s>github project</a>."), "href=\"https://github.com/pbatard/rufus\"");?></li></ul>
+			<li><? printf(_("For more information, see the <a target=\"_blank\" %s>GitHub project</a>."), "href=\"https://github.com/pbatard/rufus\"");?></li></ul>
 			<?= _("If you are a developer, you are very much encouraged to tinker with Rufus and submit patches.");?></p>
 		<a name="donate"></a>
 		<h2><?= _("Donations");?></h2>

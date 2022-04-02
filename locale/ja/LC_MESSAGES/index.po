@@ -215,7 +215,7 @@ msgstr "Rufusについてのよくある質問とその回答は<b><a target=\"_
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "ご意見ご感想、不具合の報告や機能改善のご要望は、GitHubの<a target=\"_blank\" %s>課題追跡</a>、もしくは<a "
@@ -272,7 +272,7 @@ msgstr "次のコマンドで<a target=\"_blank\" %s>git</a> レポジトリを�
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr "詳細については、<a target=\"_blank\" %s>GitHubのプロジェクトページ</a>をご参照ください。"
 
 #: index.php:385

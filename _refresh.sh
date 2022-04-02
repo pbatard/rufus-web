@@ -1,5 +1,5 @@
 #!/bin/bash
-url=nano
+url=nas
 index=index.html
 main_region=('ar_SA' 'pt_PT' 'zh_CN')
 spec_region=('ar_IQ' 'pt_BR' 'zh_TW')

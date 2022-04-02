@@ -238,11 +238,11 @@ msgstr "एक रूफस एफएक्यू उपलब्ध है <b><
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"github <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "प्रतिक्रिया प्रदान करने के लिए, एक बग की रिपोर्ट करें या एक वृद्धि का अनुरोध"
-" करें, कृपया github <a target=\"_blank\" %s>समस्या ट्रैकर</a> का उपयोग करें।"
+" करें, कृपया GitHub <a target=\"_blank\" %s>समस्या ट्रैकर</a> का उपयोग करें।"
 " या आप <a target=\"_blank\" %s>एक ई-मेल भेज सकते हैं</a>."
 
 #: index.php:347
@@ -303,8 +303,8 @@ msgstr ""
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
-msgstr "अधिक जानकारी के लिए, <a target=\"_blank\" %s>github प्रोजेक्ट</a> देखें."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr "अधिक जानकारी के लिए, <a target=\"_blank\" %s>GitHub प्रोजेक्ट</a> देखें."
 
 #: index.php:385
 msgid ""

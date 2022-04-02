@@ -209,10 +209,10 @@ msgstr "රූෆස් නිති අසන ප්‍රශ්න <b> <a targ
 #: index.php:345
 #, php-format
 msgid ""
-"To provide feedback, report a bug or request an enhancement, please use the github <a target="
+"To provide feedback, report a bug or request an enhancement, please use the GitHub <a target="
 "\"_blank\" %s>issue tracker</a>. Or you can <a target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
-"ප්‍රතිපෝෂණය ලබා දීමට, දෝෂයක් වාර්තා කිරීමට හෝ වැඩි දියුණු කිරීමක් ඉල්ලා සිටීමට කරුණාකර Github <a target=\"_blank\" "
+"ප්‍රතිපෝෂණය ලබා දීමට, දෝෂයක් වාර්තා කිරීමට හෝ වැඩි දියුණු කිරීමක් ඉල්ලා සිටීමට කරුණාකර GitHub <a target=\"_blank\" "
 "%s> issue tracker </a> භාවිතා කරන්න. නැතහොත් ඔබට <a target=\"_blank\" %s> විද්‍යුත් තැපෑලක් එවිය හැකිය </a>."
 
 #: index.php:347
@@ -255,8 +255,8 @@ msgstr "විකල්පයක් ලෙස, ඔබට මෙය භාවි�
 
 #: index.php:384
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>github project</a>."
-msgstr "වැඩි විස්තර සඳහා, බලන්න <a target=\"_blank\" %s>github ව්‍යාපෘතිය</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr "වැඩි විස්තර සඳහා, බලන්න <a target=\"_blank\" %s>GitHub ව්‍යාපෘතිය</a>."
 
 #: index.php:385
 msgid ""

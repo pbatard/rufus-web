@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.18";
+$latest_version = "3.19";
 $previous_version = "3.16";
-$latest_date = "2022.03.11";
+$latest_date = "2022.07.01";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -421,13 +421,23 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Fix DLL sideloading vulnerabilities</span></li>
-					<li><span dir="ltr">Fix ISO → ESP creation when running on Windows 11</span></li>
-					<li><span dir="ltr">Fix an issue when detecting network connectivity when the DHCP service is disabled</span></li>
-					<li><span dir="ltr">Update <a target="_blank" href="https://www.freedos.org">FreeDOS</a> to version 1.3</span></li>
-					<li><span dir="ltr">Add bypass of Windows 11 restrictions for in-place upgrades</span></li>
-					<li><span dir="ltr">Add Miracle Linux 8 to the list of Red Hat exceptions</span></li>
-					<li><span dir="ltr">Other internal fixes and improvements</span></li>
+					<li><span dir="ltr">Add a new selection dialog for Windows 11 setup customization:</span><br/>
+						<ul dir="<?= $dir;?>">
+							<li><span dir="ltr">Secure Boot and TPM bypass have now been moved to this dialog</span></li>
+							<li><span dir="ltr">Also allows to bypass the mandatory requirement for a Microsoft account on Windows&nbsp;11&nbsp;22H2<br/>(NB: Network <b>MUST</b> be temporarily disabled for the local account creation to be proposed)</span></li>
+							<li><span dir="ltr">Also add an option to skip all collection questions (Sets all answers to <i>"Don't allow"</i>)</span></li>
+							<li><span dir="ltr">Also add an option for setting internal drives offline for <i>Windows To Go</i></span></li>
+						</ul>
+						<b>Note:</b> These customization options are only proposed when using a Windows 11 image.
+					</li>
+					<li><span dir="ltr">Add support for distros using a nonstandard GRUB 2.0 prefix directory (openSUSE Live, GeckoLinux)</span></li>
+					<li><span dir="ltr">Add the ability to ignore USBs (See <a target="_blank" href="https://github.com/pbatard/rufus/blob/master/res/rufus.ini">here</a>)</span></li>
+					<li><span dir="ltr">Change drive listing to always list in increasing order of size</span></li>
+					<li><span dir="ltr">Update exceptions needed by Red Hat and derivatives for the 9.x releases</span></li>
+					<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> drivers to latest</span></li>
+					<li><span dir="ltr">Reassign a letter for drives written in DD mode that don't have an <a target="_blank" href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a> (e.g. CoreELEC)</span></li>
+					<li><span dir="ltr">Fix Windows refusing to mount Linux MBR partitions on FIXED drives</span></li>
+					<li><span dir="ltr">Fix support for multiextent files when Joliet is in use</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>

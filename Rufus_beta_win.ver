@@ -1,24 +1,20 @@
-version = 3.19.1906
+version = 3.20.1926
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.19_BETA/rufus-3.19_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.20_BETA/rufus-3.20_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.19 BETA (2022.06.24)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.20 BETA (2022.07.27)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add a new selection dialog for Windows 11 setup customization:\par
-\pard\sl276\slmult1\tab - Secure Boot and TPM bypass have now been moved to this dialog\par
-\pard\sl276\slmult1\tab - Also allows to bypass requirement for a Microsoft account on 22H2\par
-\pard\sl276\slmult1\tab   (NB: Network *MUST* be disabled for local account creation to work)\par
-\pard\sl276\slmult1\tab - Also add an option to skip all collection questions (Answer No to all)\par
-\pard\sl276\slmult1\tab - Also add an option for setting internal drives offline for Windows To Go\par
-\pard\sl276\slmult1\tab Note: These customization options are only proposed when using Windows 11.\par
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16Add support for distros using a nonstandard GRUB 2.0 prefix directory\par
-{\pntext\f2\'B7\tab}Add the ability to ignore USBs\par
-{\pntext\f2\'B7\tab}Change drive listing to always list in increasing order of size\par
-{\pntext\f2\'B7\tab}Update exceptions needed by Red Hat and derivatives for the 9.x releases\par
-{\pntext\f2\'B7\tab}Update UEFI:NTFS drivers to latest\par
-{\pntext\f2\'B7\tab}Reassign a letter for drives written in DD mode that don't have an ESP\par
-{\pntext\f2\'B7\tab}Fix Windows refusing to mount Linux MBR partitions on FIXED drives\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Enable applicable Windows User Experience options for Windows 10\par
+{\pntext\f2\'B7\tab}Make Windows User Experience options persist between sessions\par
+{\pntext\f2\'B7\tab}Add automatic local account creation and regional options duplication\par
+{\pntext\f2\'B7\tab}Add a workaround for ISOs that have a 'syslinux' symbolic link to '/isolinux/' (Knoppix)\par
+{\pntext\f2\'B7\tab}Revert to offline insertion of registry keys for the TPM/SB/RAM bypass where possible\par
+{\pntext\f2\'B7\tab}Remove storage bypass, since this is a bogus bypass that doesn't do anything\par
+{\pntext\f2\'B7\tab}Improve BIOS compatibility when displaying the "UEFI boot only" alert message\par
+{\pntext\f2\'B7\tab}Fix Windows User Experience dialog appearing twice for Windows To Go\par
+{\pntext\f2\'B7\tab}Fix Windows User Experience options not being applied for ARM64\par
+{\pntext\f2\'B7\tab}Fix Microsoft Account bypass not being applied unless TPM/SB/RAM bypass is selected\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

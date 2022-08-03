@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.19";
+$latest_version = "3.20";
 $previous_version = "3.16";
-$latest_date = "2022.07.01";
+$latest_date = "2022.08.03";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -421,23 +421,17 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?>
 				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Add a new selection dialog for Windows 11 setup customization:</span><br/>
-						<ul dir="<?= $dir;?>">
-							<li><span dir="ltr">Secure Boot and TPM bypass have now been moved to this dialog</span></li>
-							<li><span dir="ltr">Also allows to bypass the mandatory requirement for a Microsoft account on Windows&nbsp;11&nbsp;22H2<br/>(NB: Network <b>MUST</b> be temporarily disabled for the local account creation to be proposed)</span></li>
-							<li><span dir="ltr">Also add an option to skip all collection questions (Sets all answers to <i>"Don't allow"</i>)</span></li>
-							<li><span dir="ltr">Also add an option for setting internal drives offline for <i>Windows To Go</i></span></li>
-						</ul>
-						<b>Note:</b> These customization options are only proposed when using a Windows 11 image.
-					</li>
-					<li><span dir="ltr">Add support for distros using a nonstandard GRUB 2.0 prefix directory (openSUSE Live, GeckoLinux)</span></li>
-					<li><span dir="ltr">Add the ability to ignore USBs (See <a target="_blank" href="https://github.com/pbatard/rufus/blob/master/res/rufus.ini">here</a>)</span></li>
-					<li><span dir="ltr">Change drive listing to always list in increasing order of size</span></li>
-					<li><span dir="ltr">Update exceptions needed by Red Hat and derivatives for the 9.x releases</span></li>
-					<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> drivers to latest</span></li>
-					<li><span dir="ltr">Reassign a letter for drives written in DD mode that don't have an <a target="_blank" href="https://en.wikipedia.org/wiki/EFI_system_partition">ESP</a> (e.g. CoreELEC)</span></li>
-					<li><span dir="ltr">Fix Windows refusing to mount Linux MBR partitions on FIXED drives</span></li>
-					<li><span dir="ltr">Fix support for multiextent files when Joliet is in use</span></li>
+					<li><span dir="ltr">Enable applicable Windows User Experience options for Windows 10</span></li>
+					<li><span dir="ltr">Remember last Windows User Experience selection between sessions</span></li>
+					<li><span dir="ltr">Add automatic local account creation and regional options duplication<br/>(NB: This is limited to creating an account with the same name as the current user and with an empty password that the user will be prompted to change after first reboot)</span></li>
+					<li><span dir="ltr">Add a workaround for ISOs that have a <code>syslinux</code> symbolic link to <code>/isolinux/</code> (Knoppix)</span></li>
+					<li><span dir="ltr">Revert to offline insertion of registry keys for the TPM/SB/RAM bypass where possible</span></li>
+					<li><span dir="ltr">Remove storage bypass, since this is a bogus bypass that doesn't do anything</span></li>
+					<li><span dir="ltr">Improve BIOS compatibility when displaying the <i>"UEFI boot only"</i> alert message</span></li>
+					<li><span dir="ltr">Fix Windows User Experience dialog appearing twice for Windows To Go</span></li>
+					<li><span dir="ltr">Fix Windows User Experience options not being applied for ARM64</span></li>
+					<li><span dir="ltr">Fix Microsoft Account bypass not being applied unless TPM/SB/RAM bypass is selected</span></li>
+					<li><span dir="ltr">Fix overeager detection of GRUB2 bootloaders with nonstandard prefixes</span></li>
 				</ul>
 			</li>
 			<? if($bugfix):?>

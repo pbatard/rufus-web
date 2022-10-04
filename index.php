@@ -9,6 +9,9 @@ $lang2 = array('', 'Serbian', 'Serbia');
 $bugfix = false;
 $exe_size = 1.3;
 $src_size = 4.5;
+$nb_screenshots = 5;
+$screenshot_height = "600px";
+$screenshot_duration = 10000;
 $langs = array(
   'en_IE' => array('en', '🇮🇪/🇬🇧/🇺🇸 English (International)'),
   'sq_AL' => array('sq', '🇦🇱 Albanian (Shqip)'),
@@ -68,6 +71,7 @@ $langs = array(
   'cy_GB' => array('cy', '🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)'),
 );
 $locale = "en_IE";
+$short_locale = "en";
 if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
   $locale = locale_accept_from_http($_SERVER["HTTP_ACCEPT_LANGUAGE"]);
 if (isSet($_GET["locale"])) {
@@ -77,6 +81,7 @@ $locale = preg_replace("/[^a-zA-Z_]/", "", substr($locale,0,5));
 foreach($langs as $code => $lang) {
   if(substr($locale,0,strlen($lang[0])) == $lang[0]) {
     $locale = $code;
+    $short_locale = $lang[0];
     break;
   }
 }
@@ -118,13 +123,14 @@ case "ur":
 <meta name="keywords" content="Application,BIOS,Boot,Bootable,DOS,Download,Drive,Fast,Flash,Formatting,FreeDOS,Linux,Portable,Rufus,Small,Standlone,UEFI,USB,Utility,Windows">
 <meta name="author" content="Pete Batard">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="application-name" content="Rufus"/>
-<meta name="msapplication-square70x70logo" content="/pics/rufus-72.png"/>
-<meta name="msapplication-square150x150logo" content="/pics/rufus-150.png"/>
-<meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png"/>
-<meta name="msapplication-square310x310logo" content="/pics/rufus-256.png"/>
-<meta name="msapplication-TileColor" content="#3f4555"/>
+<meta name="application-name" content="Rufus">
+<meta name="msapplication-square70x70logo" content="/pics/rufus-72.png">
+<meta name="msapplication-square150x150logo" content="/pics/rufus-150.png">
+<meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
+<meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
+<meta name="msapplication-TileColor" content="#3f4555">
 <title>Rufus - <?= _("Create bootable USB drives the easy way");?></title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script>
 function setCookie(name, value, days) {
 	var expires = "";
@@ -160,9 +166,12 @@ document.addEventListener("DOMContentLoaded", function(event)
 	ga('send', 'pageview');
 </script>
 <style type="text/css">
+	:root {
+		--bs-body-line-height: 1.2;
+	}
 	body {
 		background-color: #3f4555;
-		font-family: Helvetica, Arial, FreeSans, san-serif;
+		font-family: Helvetica, Arial, FreeSans, san-serif !important;
 		color: #ffffff;
 	}
 	#right_column {
@@ -175,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 	}
 	#container {
 		margin: 0 auto;
-		width: 730px;
+		width: 735px;
 		overflow: auto;
 	}
 	#notice {
@@ -212,39 +221,39 @@ document.addEventListener("DOMContentLoaded", function(event)
 		text-decoration: none;
 		white-space: nowrap;
 	}
-	table.reference
-	{
-	color: #000030;
-	background-color:#ffffff;
-	border:1px solid #c3c3c3;
-	border-collapse:collapse;
-	width:100%;
+	table.reference {
+		color: #000030;
+		background-color:#ffffff;
+		border:1px solid #c3c3c3;
+		border-collapse:collapse;
+		width:100%;
 	}
-	table.reference th
-	{
-	background-color:#e5eecc;
-	border:1px solid #c3c3c3;
-	padding:3px;
-	vertical-align:top;
+	table.reference th {
+		background-color:#e5eecc;
+		border:1px solid #c3c3c3;
+		padding:3px;
+		vertical-align:top;
 	}
-	table.reference td
-	{
-	border:1px solid #c3c3c3;
-	padding:3px;
-	vertical-align:top;
+	table.reference td {
+		border:1px solid #c3c3c3;
+		padding:3px;
+		vertical-align:top;
 	}
-	h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; margin-top: 10px;}
+	li { line-height: 1.3em; }
+	h1, h2, h3, h4 { font-weight: bold; }
+	h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; margin-top: 10px; }
 	h1 .small { font-size: 0.4em; }
 	h1 a { text-decoration: none }
-	h2 { padding: 12px; font-size: 1.5em; color: #c0baaa; line-height: 1.3em; border: 2px solid #706a6a;}
+	h2 { padding: 12px; font-size: 1.5em; color: #c0baaa; line-height: 1.3em; border: 2px solid #706a6a; margin-top: 40px; margin-bottom: 20px; }
 	h3 { text-align: center; color: #c0baaa; }
+	h4 { font-size: 1.0em; margin-top: 24px; margin-bottom: 10px; }
 	a { color: #c0baaa; }
 	.cookie-notification { background: #fffbe4; border-color: #f8f6e6; overflow: hidden; }
-	.tagline { font-size: 1.6em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+	.tagline { font-size: 1.6em; margin-bottom: 30px; margin-top: 30px; font-style: italic; }
 	.download { float: right; }
-	pre { background: #000; color: #fff; padding: 15px;}
-	code { display:inline-block; padding:3px 3px 4px 1px; color:#ececec; font-family:monospace, monospace; line-height:10px; font-size:16px; vertical-align:middle; }
-	hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+	pre { background: #000; color: #fff; padding: 15px; margin-top: 15px; }
+	code { display: inline-block; padding: 3px 3px 4px 1px; color: #ececec; font-family: monospace, monospace; line-height: 10px; font-size: 16px; vertical-align: middle; }
+	hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 	.kbd{
 		display:inline-block;
 		padding:3px 5px;
@@ -257,22 +266,27 @@ document.addEventListener("DOMContentLoaded", function(event)
 		border:solid 1px #ccc;
 		border-bottom-color:#bbb;
 		border-radius:3px;
-		box-shadow:inset 0 -1px 0 #bbb
+		box-shadow:inset 0 -1px 0 #bbb;
 	}
-	.footer { font-size: 0.9em; text-align:center; padding-top:30px; font-style: italic; }
-	.treeView{ -moz-user-select:none; position:relative; }
-	.treeView ul{ margin:0 0 0 -1.5em; padding:0 0 0 1.5em; }
-	.treeView li{ margin:0; padding:0; list-style-position:inside; list-style-image:none; cursor:auto; }
-	.treeView li li{ padding-left:1.5em; }
-	@media screen and (max-width: 1002px) {
-	  .hide_on_small_screens {
-	    display:none;
-	  }
+	.footer { font-size: 0.9em; text-align:center; padding-top: 30px; font-style: italic; }
+	.treeView{ -moz-user-select: none; position: relative; }
+	.treeView ul { margin: 0 0 0 -1.5em; padding: 0 0 0 1.5em; }
+	.treeView li { margin: 0; padding: 0; list-style-position: inside; list-style-image: none; cursor: auto; }
+	.treeView li li { padding-left: 1.5em; }
+	@media screen and ( max-width: 1002px; ) {
+		.hide_on_small_screens { display: none; }
+	}
+	.carousel-indicators { bottom: -45px; }
+	.carousel-indicators li {
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
 	}
 </style>
 </head>
 
 <body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 <div id="cookie-notice" style="display: none;">
   <div id="cookie-statement" class="cookie-notification">
     <div class="text">
@@ -294,8 +308,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 <div class="hide_on_small_screens">
 <? if (substr($locale,0,2) == "en") echo "<a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#wiki-Translating_the_Rufus_Homepage\">Want your language here?</a>";
   else if (substr($locale,0,2) != "fr") echo "<a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation\">" . _("Want to improve this translation?") . "</a>" ?>
-&nbsp;<br />
-&nbsp;<br />
+&nbsp;<br/>
+&nbsp;<br/>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Rufus - Sidebar -->
 <ins class="adsbygoogle"
@@ -323,241 +337,259 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<hr style="width:728px;">
 	<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
 	<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
-	<div class="tagline">
-		<?= _("Create bootable USB drives the easy way");?>
+	<div class="tagline"><center><?= _("Create bootable USB drives the easy way");?></center></div>
+	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="<?=$screenshot_duration;?>">
+		<div class="carousel-inner">
+<? for ($i = 1; $i <= $nb_screenshots; $i++) {
+$screenshot_lang = (file_exists("pics/screenshot" . $i . "_" . $short_locale . ".png")) ? $short_locale : "en";
+printf("\t\t\t<div class=\"carousel-item%s\">\n", ($i == 1) ? " active" : "");
+printf("\t\t\t\t<img src=\"/pics/screenshot%d_" . $screenshot_lang . ".png\" class=\"d-block\" alt=\"Rufus screenshot %d\" style=\"height: %s; margin: auto;\">\n", $i, $i, $screenshot_height);
+printf("\t\t\t</div>\n");
+} ?>
+		</div>
+		<div class="carousel-indicators">
+<? for ($i = 0; $i < $nb_screenshots; $i++) {
+printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"%d\" aria-label=\"Slide %d\"%s></button>\n", $i, $i + 1, ($i == 0) ? " class=\"active\" aria-current=\"true\"" : "");
+} ?>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
 	</div>
-		<? /* This is used display a screenshot of Rufus in your language (if available). Simply replace the "en" with your language (or lang_REGION, such as "pt_BR" or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is displayed then. Or you can leave the string untranslated to have the English version displayed. Please make sure to keep the .png extension. */ printf("<img border=\"0\" src=\"/pics/%s\" srcset=\"/pics/%s 1x, /pics/rufus_en_2x.png 2x\" alt=\"[rufus screenshot]\"/>", _("rufus_en.png"), _("rufus_en.png"));?>
-		<p><?= _("Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.");?></p>
-		<p><?= _("It can be especially useful for cases where:");?>
-			<ul>
-				<li><?= _("you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)");?></li>
-				<li><?= _("you need to work on a system that doesn't have an OS installed");?></li>
-				<li><?= _("you need to flash a BIOS or other firmware from DOS");?></li>
-				<li><?= _("you want to run a low-level utility");?></li>
-			</ul>
-		</p>
-		<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
-		<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
-		<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
-		<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"/pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"/pics/" . $lang2[2] . ".png\" srcset=\"/pics/" . $lang2[2] . ".png 1x, /pics/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
-		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L70\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
-		<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#Editing_an_existing_translation\">here</a>.</p>";?>
-		<a name="download"></a>
-		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
-			<p><b><? printf(_("Last updated %s:"), $latest_date);?></b></p>
-			<p><ul><li><span style="font-size: 133%"><b><?= /* Abbreviation for MegaByte */ "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . ".exe\">" . $app_name . "</a>";?></b></span> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
-			<li><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "p.exe\">" . $app_name . " " . _("Portable") . "</a>";?> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
-			<li><a href="/downloads/"><?= _("Other versions");?> (GitHub)</a></li>
-			<li><a target="_blank" href="https://www.fosshub.com/Rufus.html"><?= _("Other versions");?> (FossHub)</a></li>
-			</ul></p>
-		<h4><?= _("Supported Languages:");?></h4>
-		<p><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><i>Bahasa Indonesia</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Bahasa Malaysia</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Български</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Čeština</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Dansk</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Deutsch</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Ελληνικά</i></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><i>English</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Español</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Français</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Hrvatski</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Italiano</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Latviešu</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Lietuvių</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Magyar</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Nederlands</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Norsk</i></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><i>Polski</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Português</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Português do Brasil</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Русский</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Română</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Slovensky</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Slovenščina</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Srpski</i></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><i>Suomi</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Svenska</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Tiếng&nbsp;Việt</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Türkçe</i></td><td><?=$comma;?>&nbsp;</td>
-			<td><i>Українська</i></td><td><?=$comma;?>&nbsp;</td>
-			<td>简体中文</td><td><?=$comma;?>&nbsp;</td>
-			<td>正體中文</td><td><?=$comma;?>&nbsp;</td>
-			<td>日本語</td><td><?=$comma;?>&nbsp;</td>
-			<td>한국어</td><td><?=$comma;?>&nbsp;</td>
-			<td>ไทย</td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td>עברית</td><td><?=$comma;?>&nbsp;</td>
-			<td>العربية</td><td><?=$comma;?>&nbsp;</td>
-			<td>پارسی</td><td>.</td>
-		</tr></table></p>
-		<h4><?= _("System Requirements:");?></h4>
-		<p><?= _("Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.");?></p>
-		<p><?= _("I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!");?></p>
-		<h2><?= _("Usage");?></h2>
-		<p><?= _("Download the executable and run it &ndash; no installation is necessary.");?></p>
-		<p><?= _("The executable is digitally signed and the signature should state:");?>
-			<ul><li><i>"Akeo Consulting"</i> <?= _("(v1.3.0 or later)");?></li>
-			<li><i>"Pete Batard - Open Source Developer"</i> <?= _("(v1.2.0 or earlier)");?></li></ul></p>
-		<h4><?= _("Notes on DOS support:");?></h4>
-		<p><? printf(_("If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system. In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default selection, is recommended over MS-DOS, as it supports more keyboard layouts."), "href=\"http://www.freedos.org\"");?></p>
-		<h4><?= _("Notes on ISO Support:");?></h4>
-		<p><? printf(_("All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target=\"_blank\" %s>ISO image</a> (.iso)."), "href=\"http://en.wikipedia.org/wiki/ISO_image\"");?></p>
-		<p><? printf(_("Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a target=\"_blank\" %s>CDBurnerXP</a>."), "href=\"http://infrarecorder.org/\"", "href=\"http://cdburnerxp.se/\"");?></p>
-		<a name="FAQ"></a>
-		<h2><?= _("Frequently Asked Questions (FAQ)");?></h2>
-		<p><? /* You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English */ printf(_("A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."), "href=\"https://github.com/pbatard/rufus/wiki/FAQ\"");?><br/></p>
-		<p><? printf(_("To provide feedback, report a bug or request an enhancement, please use the GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target=\"_blank\" %s>send an e-mail</a>."), "href=\"https://github.com/pbatard/rufus/issues\"", "href=\"mailto:pete@akeo.ie?subject=Rufus\"");?></p>
-		<a name="license"></a>
-		<h2><?= _("License")?></h2>
-		<p><? printf(_("<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."), "href=\"http://www.gnu.org/licenses/gpl.html\"");?><br /><?= _("You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license.")?></p>
-		<p><? printf(_("Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" %s>MinGW32</a> environment."), "href=\"https://github.com/pbatard/rufus\"", "href=\"http://mingw-w64.org\"");?></p>
-		<a name="changelog"></a>
-		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
-		<ul dir="<?= $dir;?>">
-			<li><?= $full_version;?>
-				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Enable applicable Windows User Experience options for Windows 10</span></li>
-					<li><span dir="ltr">Remember last Windows User Experience selection between sessions</span></li>
-					<li><span dir="ltr">Add automatic local account creation and regional options duplication<br/>(NB: This is limited to creating an account with the same name as the current user and with an empty password that the user will be prompted to change after first reboot)</span></li>
-					<li><span dir="ltr">Add a workaround for ISOs that have a <code>syslinux</code> symbolic link to <code>/isolinux/</code> (Knoppix)</span></li>
-					<li><span dir="ltr">Revert to offline insertion of registry keys for the TPM/SB/RAM bypass where possible</span></li>
-					<li><span dir="ltr">Remove storage bypass, since this is a bogus bypass that doesn't do anything</span></li>
-					<li><span dir="ltr">Improve BIOS compatibility when displaying the <i>"UEFI boot only"</i> alert message</span></li>
-					<li><span dir="ltr">Fix Windows User Experience dialog appearing twice for Windows To Go</span></li>
-					<li><span dir="ltr">Fix Windows User Experience options not being applied for ARM64</span></li>
-					<li><span dir="ltr">Fix Microsoft Account bypass not being applied unless TPM/SB/RAM bypass is selected</span></li>
-					<li><span dir="ltr">Fix overeager detection of GRUB2 bootloaders with nonstandard prefixes</span></li>
-				</ul>
-			</li>
-			<? if($bugfix):?>
-			<br />
-			<li><?= $prev_version;?>
-				<ul dir="<?= $dir;?>">
-					<li><span dir="ltr">Fix ISO mode support for Red Hat 8.2+ and derivatives</span></li>
-					<li><span dir="ltr">Fix BIOS boot support for Arch derivatives</span></li>
-					<li><span dir="ltr">Fix removal of some boot entries for Ubuntu derivatives</span></li>
-					<li><span dir="ltr">Fix log not being saved on exit</span></li>
-					<li><span dir="ltr">Add Windows 11 <i>"Extended"</i> installation support (Disables TPM/Secure Boot)</span></li>
-					<li><span dir="ltr">Add <a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a> ISO downloads</span></li>
-					<li><span dir="ltr">Add support for Intel NUC card readers</span></li>
-					<li><span dir="ltr">Improve Windows 11 support</span></li>
-					<li><span dir="ltr">Improve Windows version reporting</span></li>
-					<li><span dir="ltr">Speed up clearing of MBR/GPT</span></li>
-				</ul>
-			</li>
-			<br />
-			<? endif;?>
-			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt"><?= _("Other versions");?></a></b></li>
+	<p>&nbsp;</p>
+	<p><?= _("Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.");?></p>
+	<p><?= _("It can be especially useful for cases where:");?></p>
+	<ul>
+		<li><?= _("you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)");?></li>
+		<li><?= _("you need to work on a system that doesn't have an OS installed");?></li>
+		<li><?= _("you need to flash a BIOS or other firmware from DOS");?></li>
+		<li><?= _("you want to run a low-level utility");?></li>
+	</ul>
+	<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
+	<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
+	<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
+	<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"/pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"/pics/" . $lang2[2] . ".png\" srcset=\"/pics/" . $lang2[2] . ".png 1x, /pics/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
+	<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L70\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
+	<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#Editing_an_existing_translation\">here</a>.</p>";?>
+	<a name="download"></a>
+	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
+		<p><b><? printf(_("Last updated %s:"), $latest_date);?></b></p>
+		<ul><li><span style="font-size: 133%"><b><?= /* Abbreviation for MegaByte */ "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . ".exe\">" . $app_name . "</a>";?></b></span> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
+		<li><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "p.exe\">" . $app_name . " " . _("Portable") . "</a>";?> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
+		<li><a href="/downloads/"><?= _("Other versions");?> (GitHub)</a></li>
+		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html"><?= _("Other versions");?> (FossHub)</a></li>
 		</ul>
-
-		<h2><?= _("Source Code");?></h2>
-			<p><ul><li><?= /* Abbreviation for MegaByte */ "<a target=\"_blank\" href=\"https://github.com/pbatard/rufus/archive/v" . $latest_version . ".zip\">" . $app_name . "</a> <span dir=\"" . $dir . "\">(" . $src_size . " " . _("MB") . ")";?></span></li>
-			<li><? printf(_("Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"), "href=\"http://git-scm.com\"");?>
-			<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
-			<li><? printf(_("For more information, see the <a target=\"_blank\" %s>GitHub project</a>."), "href=\"https://github.com/pbatard/rufus\"");?></li></ul>
-			<?= _("If you are a developer, you are very much encouraged to tinker with Rufus and submit patches.");?></p>
-		<a name="donate"></a>
-		<h2><?= _("Donations");?></h2>
-			<p><?= _("Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this page.");?></p>
-			<p><?= _("The main reason is that I feel that the donation system doesn't actually help software development and worse, can be guilt-inducing for users who choose not to donate.");?></p>
-			<p><? if (substr($locale,0,2) == "en") echo "Instead, I think that <span lang=\"fr\"><i>\"<a target=\"_blank\" href=\"https://en.wiktionary.org/wiki/m%C3%A9c%C3%A9nat\">mécénat</a>\"</i></span>; or developer patronage, from <b>companies</b> which benefit most from a healthy <a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Free_and_open_source_software\">FLOSS</a> ecosystem, is what we should be aiming for. This is because, unless they are backed by a company, developers who want to provide quality Open Source software cannot realistically sustain full time development, no matter how generous their software users are.</p>
-			<p>Also, unless you are <a target=\"_blank\" href=\"http://winhelp2002.mvps.org/hosts.htm\">blocking them</a> (hint, hint), you'll notice that there are ads on this page, which I consider sufficient revenue enough.</p>
-			<p>Finally the fact that I have the freedom to develop <a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Free_software\">Free Software</a> in my spare time should indicate that I'm well-off enough, and therefore that you should direct your generosity towards people who need it a lot more than I do. "; printf(_("If you really insist, you can always make a donation to the <a target=\"_blank\" %s>Free Software Foundation</a>, as they are the main reason software like Rufus is possible."), "href=\"http://www.fsf.org/\"");?></p>
-			<p><?= _("At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm about this little program: it is much appreciated!");?></p>
-			<p><?= _("But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!");?></p>
-		<a name="ref1">&nbsp;</a>
-		<h2>(1) <?= _("Speed comparison between Rufus and other applications");?></h2>
-		<p><? printf(_("The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB 3.0 ADATA S102 flash drive</a>."), "href=\"http://www.adata-group.com/index.php?action=product_feature&cid=1&piid=145&lan=en\"");?></p>
-		<p><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Windows 7 x64</td><td>:&nbsp;</td><td><i>en_windows_7_ultimate_with_sp1_x64_dvd_618240.iso</i></td></tr></table><br/>
-		<table class="reference" style="width:70%">
+	<h4><?= _("Supported Languages:");?></h4>
+	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td><i>Bahasa Indonesia</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Bahasa Malaysia</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Български</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Čeština</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Dansk</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Deutsch</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Ελληνικά</i></td><td><?=$comma;?>&nbsp;</td>
+	</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td><i>English</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Español</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Français</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Hrvatski</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Italiano</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Latviešu</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Lietuvių</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Magyar</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Nederlands</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Norsk</i></td><td><?=$comma;?>&nbsp;</td>
+	</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td><i>Polski</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Português</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Português do Brasil</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Русский</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Română</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Slovensky</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Slovenščina</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Srpski</i></td><td><?=$comma;?>&nbsp;</td>
+	</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td><i>Suomi</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Svenska</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Tiếng&nbsp;Việt</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Türkçe</i></td><td><?=$comma;?>&nbsp;</td>
+		<td><i>Українська</i></td><td><?=$comma;?>&nbsp;</td>
+		<td>简体中文</td><td><?=$comma;?>&nbsp;</td>
+		<td>正體中文</td><td><?=$comma;?>&nbsp;</td>
+		<td>日本語</td><td><?=$comma;?>&nbsp;</td>
+		<td>한국어</td><td><?=$comma;?>&nbsp;</td>
+		<td>ไทย</td><td><?=$comma;?>&nbsp;</td>
+	</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td>עברית</td><td><?=$comma;?>&nbsp;</td>
+		<td>العربية</td><td><?=$comma;?>&nbsp;</td>
+		<td>پارسی</td><td>.</td>
+	</tr></table>
+	<h4><?= _("System Requirements:");?></h4>
+	<p><?= _("Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.");?></p>
+	<p><?= _("I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!");?></p>
+	<h2><?= _("Usage");?></h2>
+	<p><?= _("Download the executable and run it &ndash; no installation is necessary.");?></p>
+	<p><?= _("The executable is digitally signed and the signature should state:");?></p>
+	<ul>
+		<li><i>"Akeo Consulting"</i> <?= _("(v1.3.0 or later)");?></li>
+		<li><i>"Pete Batard - Open Source Developer"</i> <?= _("(v1.2.0 or earlier)");?></li>
+	</ul>
+	<h4><?= _("Notes on DOS support:");?></h4>
+	<p><? printf(_("If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system. In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default selection, is recommended over MS-DOS, as it supports more keyboard layouts."), "href=\"http://www.freedos.org\"");?></p>
+	<h4><?= _("Notes on ISO Support:");?></h4>
+	<p><? printf(_("All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target=\"_blank\" %s>ISO image</a> (.iso)."), "href=\"http://en.wikipedia.org/wiki/ISO_image\"");?></p>
+	<p><? printf(_("Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a target=\"_blank\" %s>CDBurnerXP</a>."), "href=\"http://infrarecorder.org/\"", "href=\"http://cdburnerxp.se/\"");?></p>
+	<a name="FAQ"></a>
+	<h2><?= _("Frequently Asked Questions (FAQ)");?></h2>
+	<p><? /* You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English */ printf(_("A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."), "href=\"https://github.com/pbatard/rufus/wiki/FAQ\"");?><br/></p>
+	<p><? printf(_("To provide feedback, report a bug or request an enhancement, please use the GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target=\"_blank\" %s>send an e-mail</a>."), "href=\"https://github.com/pbatard/rufus/issues\"", "href=\"mailto:pete@akeo.ie?subject=Rufus\"");?></p>
+	<a name="license"></a>
+	<h2><?= _("License")?></h2>
+	<p><? printf(_("<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."), "href=\"http://www.gnu.org/licenses/gpl.html\"");?><br /><?= _("You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license.")?></p>
+	<p><? printf(_("Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" %s>MinGW32</a> environment."), "href=\"https://github.com/pbatard/rufus\"", "href=\"http://mingw-w64.org\"");?></p>
+	<a name="changelog"></a>
+	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
+	<ul dir="<?= $dir;?>">
+		<li><?= $full_version;?><ul dir="<?= $dir;?>">
+			<li><span dir="ltr">Enable applicable Windows User Experience options for Windows 10</span></li>
+			<li><span dir="ltr">Remember last Windows User Experience selection between sessions</span></li>
+			<li><span dir="ltr">Add automatic local account creation and regional options duplication<br/>(NB: This is limited to creating an account with the same name as the current user and with an empty password that the user will be prompted to change after first reboot)</span></li>
+			<li><span dir="ltr">Add a workaround for ISOs that have a <code>syslinux</code> symbolic link to <code>/isolinux/</code> (Knoppix)</span></li>
+			<li><span dir="ltr">Revert to offline insertion of registry keys for the TPM/SB/RAM bypass where possible</span></li>
+			<li><span dir="ltr">Remove storage bypass, since this is a bogus bypass that doesn't do anything</span></li>
+			<li><span dir="ltr">Improve BIOS compatibility when displaying the <i>"UEFI boot only"</i> alert message</span></li>
+			<li><span dir="ltr">Fix Windows User Experience dialog appearing twice for Windows To Go</span></li>
+			<li><span dir="ltr">Fix Windows User Experience options not being applied for ARM64</span></li>
+			<li><span dir="ltr">Fix Microsoft Account bypass not being applied unless TPM/SB/RAM bypass is selected</span></li>
+			<li><span dir="ltr">Fix overeager detection of GRUB2 bootloaders with nonstandard prefixes</span></li>
+		</ul></li>
+<? if($bugfix):?>
+		<br />
+		<li><?= $prev_version;?><ul dir="<?= $dir;?>">
+			<li><span dir="ltr">Fix ISO mode support for Red Hat 8.2+ and derivatives</span></li>
+			<li><span dir="ltr">Fix BIOS boot support for Arch derivatives</span></li>
+			<li><span dir="ltr">Fix removal of some boot entries for Ubuntu derivatives</span></li>
+			<li><span dir="ltr">Fix log not being saved on exit</span></li>
+			<li><span dir="ltr">Add Windows 11 <i>"Extended"</i> installation support (Disables TPM/Secure Boot)</span></li>
+			<li><span dir="ltr">Add <a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a> ISO downloads</span></li>
+			<li><span dir="ltr">Add support for Intel NUC card readers</span></li>
+			<li><span dir="ltr">Improve Windows 11 support</span></li>
+			<li><span dir="ltr">Improve Windows version reporting</span></li>
+			<li><span dir="ltr">Speed up clearing of MBR/GPT</span></li>
+		</ul></li>
+		<br />
+<? endif;?>
+		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt"><?= _("Other versions");?></a></b></li>
+	</ul>
+	<h2><?= _("Source Code");?></h2>
+		<ul><li><?= /* Abbreviation for MegaByte */ "<a target=\"_blank\" href=\"https://github.com/pbatard/rufus/archive/v" . $latest_version . ".zip\">" . $app_name . "</a> <span dir=\"" . $dir . "\">(" . $src_size . " " . _("MB") . ")";?></span></li>
+		<li><? printf(_("Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:\n"), "href=\"http://git-scm.com\"");?>
+		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
+		<li><? printf(_("For more information, see the <a target=\"_blank\" %s>GitHub project</a>."), "href=\"https://github.com/pbatard/rufus\"");?></li></ul>
+		<p><?= _("If you are a developer, you are very much encouraged to tinker with Rufus and submit patches.");?></p>
+	<a name="donate"></a>
+	<h2><?= _("Donations");?></h2>
+		<p><?= _("Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this page.");?></p>
+		<p><?= _("The main reason is that I feel that the donation system doesn't actually help software development and worse, can be guilt-inducing for users who choose not to donate.");?></p>
+		<p><? if (substr($locale,0,2) == "en") echo "Instead, I think that <span lang=\"fr\"><i>\"<a target=\"_blank\" href=\"https://en.wiktionary.org/wiki/m%C3%A9c%C3%A9nat\">mécénat</a>\"</i></span>; or developer patronage, from <b>companies</b> which benefit most from a healthy <a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Free_and_open_source_software\">FLOSS</a> ecosystem, is what we should be aiming for. This is because, unless they are backed by a company, developers who want to provide quality Open Source software cannot realistically sustain full time development, no matter how generous their software users are.</p>
+		<p>Also, unless you are <a target=\"_blank\" href=\"http://winhelp2002.mvps.org/hosts.htm\">blocking them</a> (hint, hint), you'll notice that there are ads on this page, which I consider sufficient revenue enough.</p>
+		<p>Finally the fact that I have the freedom to develop <a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Free_software\">Free Software</a> in my spare time should indicate that I'm well-off enough, and therefore that you should direct your generosity towards people who need it a lot more than I do. "; printf(_("If you really insist, you can always make a donation to the <a target=\"_blank\" %s>Free Software Foundation</a>, as they are the main reason software like Rufus is possible."), "href=\"http://www.fsf.org/\"");?></p>
+		<p><?= _("At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm about this little program: it is much appreciated!");?></p>
+		<p><?= _("But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!");?></p>
+	<a name="ref1"></a>
+	<h2>(1) <?= _("Speed comparison between Rufus and other applications");?></h2>
+	<p><? printf(_("The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB 3.0 ADATA S102 flash drive</a>."), "href=\"http://www.adata-group.com/index.php?action=product_feature&cid=1&piid=145&lan=en\"");?></p>
+	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Windows 7 x64</td><td>:&nbsp;</td><td><i>en_windows_7_ultimate_with_sp1_x64_dvd_618240.iso</i></td></tr></table><br/>
+	<table class="reference" style="width:70%">
 		<tr><td width="80%">Windows 7 USB/DVD Download Tool v1.0.30</td><td>00:08:10</td></tr>
 		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:07:10</td></tr>
 		<tr><td>UNetbootin v1.1.1.1</td><td>00:06:20</td></tr>
 		<tr><td>RMPrepUSB v2.1.638</td><td>00:04:10</td></tr>
 		<tr><td>WiNToBootic v1.2</td><td>00:03:35</td></tr>
 		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:03:25</b></td></tr>
-		</table></p>
-		<p><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Ubuntu 11.10 x86</td><td>:&nbsp;</td><td><i>ubuntu-11.10-desktop-i386.iso</i></td></tr></table><br/>
-		<table class="reference" style="width:70%">
+	</table>
+	&nbsp;<br/>
+	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Ubuntu 11.10 x86</td><td>:&nbsp;</td><td><i>ubuntu-11.10-desktop-i386.iso</i></td></tr></table><br/>
+	<table class="reference" style="width:70%">
 		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>00:01:45</td></tr>
 		<tr><td>RMPrepUSB v2.1.638</td><td> 00:01:35</td></tr>
 		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:01:20</td></tr>
 		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:01:15</b></td></tr>
-		</table></p>
-		<p><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Slackware 13.37 x86</td><td>:&nbsp;</td><td><i>slackware-13.37-install-dvd.iso</i></td></tr></table><br/>
-		<table class="reference" style="width:70%">
+	</table>
+	&nbsp;<br/>
+	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Slackware 13.37 x86</td><td>:&nbsp;</td><td><i>slackware-13.37-install-dvd.iso</i></td></tr></table><br/>
+	<table class="reference" style="width:70%">
 		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>01:00:00+</td></tr>
 		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:24:35</td></tr>
 		<tr><td>RMPrepUSB v2.1.638</td><td>00:22:45</td></tr>
 		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:20:15</b></td></tr>
-		</table></p>
-		<a name="ref2">&nbsp;</a>
-		<h2>(2) <?= _("Non exhaustive list of ISOs Rufus is known to work with");?></h2>
-		<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.nu2.nu/pebuilder">BartPE</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.centos.org">CentOS</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://clonezilla.org/clonezilla-live.php">Clonezilla</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.damnsmalllinux.org">Damn&nbsp;Small&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.debian.org">Debian</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://elementary.io">Elementary OS</a></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://getfedora.org">Fedora</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.freedos.org">FreeDOS</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://garudalinux.org">Garuda Linux</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.gentoo.org">Gentoo</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://gparted.org">GParted</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.hirensbootcd.org">Hiren's&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.kali.org">Kali Linux</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://knoppix.net">Knoppix</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://kolibrios.org">KolibriOS</a></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<!--<td><a target="_blank" href="https://kubuntu.org">Kubuntu</a></td><td><?=$comma;?>&nbsp;</td>-->
-			<td><a target="_blank" href="https://linuxmint.com">Linux&nbsp;Mint</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://manjaro.org">Manjaro Linux</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://pogostick.net/~pnh/ntpasswd">NT&nbsp;Password&nbsp;Registry&nbsp;Editor</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.opensuse.org">OpenSUSE</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.raspberrypi.com/software/">Raspberry Pi OS</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.raspbian.org">Raspbian</a></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://reactos.org">ReactOS</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.redhat.com">Red&nbsp;Hat</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.rodsbooks.com/refind">rEFInd</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://rockylinux.org">Rocky Linux</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="http://www.slackware.com">Slackware</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable">Super&nbsp;Grub2&nbsp;Disk</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://tails.boum.org">Tails</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://trinityhome.org">Trinity&nbsp;Rescue&nbsp;Kit</a></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://www.truenas.com/download-truenas-core">TrueNAS CORE</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://ubuntu.com">Ubuntu</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.ultimatebootcd.com">Ultimate&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-xp">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-vista">Windows&nbsp;Vista</a></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-7">Windows&nbsp;7</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows8ISO">Windows&nbsp;8/8.1</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows10ISO/">Windows&nbsp;10</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.microsoft.com/en-ie/windows-server">Windows&nbsp;Server&nbsp;2019</a></td><td><?=$comma;?>&nbsp;</td>
-			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows11">Windows&nbsp;11</a></td><td><?=$comma;?>&nbsp;</td>
-			<td>&hellip;</td>
-		</tr></table></p>
-		<div class="footer"><table align="center" dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2022&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
-			<? /* Please insert your language and name here.
+	</table>
+	<a name="ref2"></a>
+	<h2>(2) <?= _("Non exhaustive list of ISOs Rufus is known to work with");?></h2>
+	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="http://www.nu2.nu/pebuilder">BartPE</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.centos.org">CentOS</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://clonezilla.org/clonezilla-live.php">Clonezilla</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="http://www.damnsmalllinux.org">Damn&nbsp;Small&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.debian.org">Debian</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://elementary.io">Elementary OS</a></td><td><?=$comma;?>&nbsp;</td>
+	</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td><a target="_blank" href="https://getfedora.org">Fedora</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.freedos.org">FreeDOS</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://garudalinux.org">Garuda Linux</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.gentoo.org">Gentoo</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://gparted.org">GParted</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.hirensbootcd.org">Hiren's&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.kali.org">Kali Linux</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://knoppix.net">Knoppix</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://kolibrios.org">KolibriOS</a></td><td><?=$comma;?>&nbsp;</td>
+	</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<!--<td><a target="_blank" href="https://kubuntu.org">Kubuntu</a></td><td><?=$comma;?>&nbsp;</td>-->
+		<td><a target="_blank" href="https://linuxmint.com">Linux&nbsp;Mint</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://manjaro.org">Manjaro Linux</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://pogostick.net/~pnh/ntpasswd">NT&nbsp;Password&nbsp;Registry&nbsp;Editor</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.opensuse.org">OpenSUSE</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.raspberrypi.com/software/">Raspberry Pi OS</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.raspbian.org">Raspbian</a></td><td><?=$comma;?>&nbsp;</td>
+	</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td><a target="_blank" href="https://reactos.org">ReactOS</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.redhat.com">Red&nbsp;Hat</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.rodsbooks.com/refind">rEFInd</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://rockylinux.org">Rocky Linux</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="http://www.slackware.com">Slackware</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable">Super&nbsp;Grub2&nbsp;Disk</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://tails.boum.org">Tails</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://trinityhome.org">Trinity&nbsp;Rescue&nbsp;Kit</a></td><td><?=$comma;?>&nbsp;</td>
+	</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td><a target="_blank" href="https://www.truenas.com/download-truenas-core">TrueNAS CORE</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://ubuntu.com">Ubuntu</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.ultimatebootcd.com">Ultimate&nbsp;Boot&nbsp;CD</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-xp">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-vista">Windows&nbsp;Vista</a></td><td><?=$comma;?>&nbsp;</td>
+	</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-7">Windows&nbsp;7</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows8ISO">Windows&nbsp;8/8.1</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows10ISO/">Windows&nbsp;10</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.microsoft.com/en-ie/windows-server">Windows&nbsp;Server&nbsp;2019</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows11">Windows&nbsp;11</a></td><td><?=$comma;?>&nbsp;</td>
+		<td>&hellip;</td>
+	</tr></table>
+	<div class="footer"><table align="center" dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2022&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
+		<? /* Please insert your language and name here.
 If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a> */ $tr = _("English translation by Pete Batard"); if (substr($tr,0,4) != "Engl") echo $tr . "<br/>";?>
-			<?= _("USB icon by");?> PC Unleashed<br/>
-			<?= _("Hosting by");?> <a target="_blank" href="https://pages.github.com/">GitHub</a>
-			</div>
-		</div>
+		<?= _("USB icon by");?> PC Unleashed<br/>
+		<?= _("Hosting by");?> <a target="_blank" href="https://pages.github.com/">GitHub</a>
+		</div><? if ($short_locale == "ja") echo "&nbsp; <!-- Heck if I know why Japanese needs this in order to remove scrollbars when using bootstrap -->" ?>  
 	</div>
 </body>
 </html>

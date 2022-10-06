@@ -35,6 +35,6 @@ openssl dgst -sha256 -sign $PRIVATE_KEY -passin pass:$PASSWORD $PUBLIC_KEY >/dev
 
 find ./ -maxdepth 1 -name "*.ver" ! -name "Fido.ver" ! -name "Loc.ver" | while read FILE; do sign_file; done
 find ./downloads -name "*.exe" -type f | while read FILE; do sign_file; done
-find ./files -not -name "*.txt" -not -name "*.sh" -not -name "*.sig" -not -name "*pre*" -type f | while read FILE; do sign_file; done
+find ./files -not -name "*.txt" -not -name "*.sh" -not -name "*.sig" -not -name "*pre*" -not -name "*.patch" -type f | while read FILE; do sign_file; done
 # Clear the PASSWORD variable just in case
 PASSWORD=`head -c 50 /dev/random | base64`

@@ -1,20 +1,18 @@
-version = 3.20.1926
+version = 3.21.1947
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.20_BETA/rufus-3.20_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.21_BETA/rufus-3.21_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.20 BETA (2022.07.27)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.21 BETA (2022.11.17)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Enable applicable Windows User Experience options for Windows 10\par
-{\pntext\f2\'B7\tab}Make Windows User Experience options persist between sessions\par
-{\pntext\f2\'B7\tab}Add automatic local account creation and regional options duplication\par
-{\pntext\f2\'B7\tab}Add a workaround for ISOs that have a 'syslinux' symbolic link to '/isolinux/' (Knoppix)\par
-{\pntext\f2\'B7\tab}Revert to offline insertion of registry keys for the TPM/SB/RAM bypass where possible\par
-{\pntext\f2\'B7\tab}Remove storage bypass, since this is a bogus bypass that doesn't do anything\par
-{\pntext\f2\'B7\tab}Improve BIOS compatibility when displaying the "UEFI boot only" alert message\par
-{\pntext\f2\'B7\tab}Fix Windows User Experience dialog appearing twice for Windows To Go\par
-{\pntext\f2\'B7\tab}Fix Windows User Experience options not being applied for ARM64\par
-{\pntext\f2\'B7\tab}Fix Microsoft Account bypass not being applied unless TPM/SB/RAM bypass is selected\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Allow the provision of an arbitrary local account username in the Windows User Experience dialog\par
+{\pntext\f2\'B7\tab}Improve Windows version reporting from ISO/.wim\par
+{\pntext\f2\'B7\tab}Update UEFI:NTFS' NTFS drivers to v1.4 and exFAT drivers to v1.9\par
+{\pntext\f2\'B7\tab}Switch to remote download for nonstandard GRUB (Fedora 37, openSUSE Live, GeckoLinux)\par
+{\pntext\f2\'B7\tab}Fix UEFI:NTFS partition not being set in MBR mode for ISOs with a >4GB file (UwUntu)\par
+{\pntext\f2\'B7\tab}Fix GRUB support for Arch and derivatives, when a non FAT compliant label is used\par
+{\pntext\f2\'B7\tab}Fix incorrect detection of GRUB with nonstandard prefixes\par
+{\pntext\f2\'B7\tab}Fix tab order not working on the Windows User Experience dialog\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

@@ -375,9 +375,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 	أسفل هذه الصفحة ستجد قائمة غير شاملة من صور ISO التي يدعمها برنامج Rufus‏. <a href="#ref2"><sup>(2)</sup></a></p>
 		<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">تحميل</span></h2>
-		<p><b>تاريخ آخر تحديث 2022.08.03:</b></p>
-		<ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.20/rufus-3.20.exe"><span dir="ltr">3.20 Rufus</span></a></b></span> <span dir="rtl">(1.3 ميغا بايت)</span></li>
-		<li><a href="https://github.com/pbatard/rufus/releases/download/v3.20/rufus-3.20p.exe"><span dir="ltr">3.20 Rufus</span> محمول</a> <span dir="rtl">(1.3 ميغا بايت)</span></li>
+		<p><b>تاريخ آخر تحديث 2022.11.28:</b></p>
+		<ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.21/rufus-3.21.exe"><span dir="ltr">3.21 Rufus</span></a></b></span> <span dir="rtl">(1.3 ميغا بايت)</span></li>
+		<li><a href="https://github.com/pbatard/rufus/releases/download/v3.21/rufus-3.21p.exe"><span dir="ltr">3.21 Rufus</span> محمول</a> <span dir="rtl">(1.3 ميغا بايت)</span></li>
 		<li><a href="/downloads/">إصدارات أخرى (GitHub)</a></li>
 		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">إصدارات أخرى (FossHub)</a></li>
 		</ul>
@@ -452,23 +452,20 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<a name="changelog"></a>
 	<h2>سجل التغييرات</h2>
 	<ul dir="rtl">
-		<li><span dir="ltr">(2022.08.03) <b>3.20 الإصدار</b></span><ul dir="rtl">
-			<li><span dir="ltr">Enable applicable Windows User Experience options for Windows 10</span></li>
-			<li><span dir="ltr">Remember last Windows User Experience selection between sessions</span></li>
-			<li><span dir="ltr">Add automatic local account creation and regional options duplication<br/>(NB: This is limited to creating an account with the same name as the current user and with an empty password that the user will be prompted to change after first reboot)</span></li>
-			<li><span dir="ltr">Add a workaround for ISOs that have a <code>syslinux</code> symbolic link to <code>/isolinux/</code> (Knoppix)</span></li>
-			<li><span dir="ltr">Revert to offline insertion of registry keys for the TPM/SB/RAM bypass where possible</span></li>
-			<li><span dir="ltr">Remove storage bypass, since this is a bogus bypass that doesn't do anything</span></li>
-			<li><span dir="ltr">Improve BIOS compatibility when displaying the <i>"UEFI boot only"</i> alert message</span></li>
-			<li><span dir="ltr">Fix Windows User Experience dialog appearing twice for Windows To Go</span></li>
-			<li><span dir="ltr">Fix Windows User Experience options not being applied for ARM64</span></li>
-			<li><span dir="ltr">Fix Microsoft Account bypass not being applied unless TPM/SB/RAM bypass is selected</span></li>
-			<li><span dir="ltr">Fix overeager detection of GRUB2 bootloaders with nonstandard prefixes</span></li>
+		<li><span dir="ltr">(2022.11.28) <b>3.21 الإصدار</b></span><ul dir="rtl">
+			<li><span dir="ltr">Allow the provision of an arbitrary local account username in the Windows User Experience dialog</span></li>
+			<li><span dir="ltr">Improve Windows version reporting from ISO/.wim</span></li>
+			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>' NTFS drivers to <a target="_blank" href="https://github.com/pbatard/ntfs-3g/releases/tag/1.4">v1.4</a> and exFAT drivers to <a target="_blank" href="https://github.com/pbatard/efifs/releases/tag/v1.9">v1.9</a></span></li>
+			<li><span dir="ltr">Switch to remote download for nonstandard GRUB (Fedora 37, openSUSE Live, GeckoLinux)</span></li>
+			<li><span dir="ltr">Fix <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition not being set in MBR mode for ISOs with a >4GB file (UwUntu)</span></li>
+			<li><span dir="ltr">Fix GRUB support for Arch and derivatives, when a non FAT compliant label is used</span></li>
+			<li><span dir="ltr">Fix incorrect detection of GRUB with nonstandard prefixes</span></li>
+			<li><span dir="ltr">Fix tab order not working on the Windows User Experience dialog</span></li>
 		</ul></li>
 		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">إصدارات أخرى</a></b></li>
 	</ul>
 	<h2>كود المصدر</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.20.zip"><span dir="ltr">3.20 Rufus</span></a> <span dir="rtl">(4.5 ميغا بايت)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.21.zip"><span dir="ltr">3.21 Rufus</span></a> <span dir="rtl">(4.5 ميغا بايت)</span></li>
 		<li>Alternatively, you can clone the <a target="_blank" href="http://git-scm.com">git</a> repository using:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>للمزيد من المعلومات راجع <a target="_blank" href="https://github.com/pbatard/rufus">مشروع GitHub</a>.</li></ul>

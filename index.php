@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.20";
+$latest_version = "3.21";
 $previous_version = "3.16";
-$latest_date = "2022.08.03";
+$latest_date = "2022.11.28";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Azerbaijani', 'Azerbaijan');
 $lang2 = array('', 'Serbian', 'Serbia');
@@ -456,17 +456,14 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Enable applicable Windows User Experience options for Windows 10</span></li>
-			<li><span dir="ltr">Remember last Windows User Experience selection between sessions</span></li>
-			<li><span dir="ltr">Add automatic local account creation and regional options duplication<br/>(NB: This is limited to creating an account with the same name as the current user and with an empty password that the user will be prompted to change after first reboot)</span></li>
-			<li><span dir="ltr">Add a workaround for ISOs that have a <code>syslinux</code> symbolic link to <code>/isolinux/</code> (Knoppix)</span></li>
-			<li><span dir="ltr">Revert to offline insertion of registry keys for the TPM/SB/RAM bypass where possible</span></li>
-			<li><span dir="ltr">Remove storage bypass, since this is a bogus bypass that doesn't do anything</span></li>
-			<li><span dir="ltr">Improve BIOS compatibility when displaying the <i>"UEFI boot only"</i> alert message</span></li>
-			<li><span dir="ltr">Fix Windows User Experience dialog appearing twice for Windows To Go</span></li>
-			<li><span dir="ltr">Fix Windows User Experience options not being applied for ARM64</span></li>
-			<li><span dir="ltr">Fix Microsoft Account bypass not being applied unless TPM/SB/RAM bypass is selected</span></li>
-			<li><span dir="ltr">Fix overeager detection of GRUB2 bootloaders with nonstandard prefixes</span></li>
+			<li><span dir="ltr">Allow the provision of an arbitrary local account username in the Windows User Experience dialog</span></li>
+			<li><span dir="ltr">Improve Windows version reporting from ISO/.wim</span></li>
+			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>' NTFS drivers to <a target="_blank" href="https://github.com/pbatard/ntfs-3g/releases/tag/1.4">v1.4</a> and exFAT drivers to <a target="_blank" href="https://github.com/pbatard/efifs/releases/tag/v1.9">v1.9</a></span></li>
+			<li><span dir="ltr">Switch to remote download for nonstandard GRUB (Fedora 37, openSUSE Live, GeckoLinux)</span></li>
+			<li><span dir="ltr">Fix <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition not being set in MBR mode for ISOs with a >4GB file (UwUntu)</span></li>
+			<li><span dir="ltr">Fix GRUB support for Arch and derivatives, when a non FAT compliant label is used</span></li>
+			<li><span dir="ltr">Fix incorrect detection of GRUB with nonstandard prefixes</span></li>
+			<li><span dir="ltr">Fix tab order not working on the Windows User Experience dialog</span></li>
 		</ul></li>
 <? if($bugfix):?>
 		<br />

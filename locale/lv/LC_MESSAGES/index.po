@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2018-05-29 15:55+0100\n"
-"PO-Revision-Date: 2018-05-29 16:25+0100\n"
+"PO-Revision-Date: 2023-02-17 12:43+0000\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
 "Language-Team: \n"
 "Language: lv_LV\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: index.php:91
 msgid "Version"
@@ -28,13 +28,14 @@ msgstr "Viegls veids kā izveidot OS ielādes USB ierīci"
 
 #: index.php:229
 msgid "Want to improve this translation?"
-msgstr ""
+msgstr "Vēlaties uzlabot šo tulkojumu?"
 
 #: index.php:250
 msgid ""
-"Placeholder for ads &mdash; Just like you, I wish this site could exist "
-"without them..."
+"Placeholder for ads &mdash; Just like you, I wish this site could exist without "
+"them..."
 msgstr ""
+"Vieta reklāmai &mdash; Es tāpat kā jūs vēlētos lai varētu iztikt bez tās..."
 
 #. This is used display a screenshot of Rufus in your language (if available).
 #. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
@@ -47,8 +48,8 @@ msgstr "rufus_lv.png"
 
 #: index.php:261
 msgid ""
-"Rufus is a utility that helps format and create bootable USB flash drives, "
-"such as USB keys/pendrives, memory sticks, etc."
+"Rufus is a utility that helps format and create bootable USB flash drives, such "
+"as USB keys/pendrives, memory sticks, etc."
 msgstr ""
 "<b>Rufus</b> ir instruments ar kura palīdzību var formatēt un izveidot "
 "operētājsistēmas ielādes ierīci uz tādiem nesējiem, kā USB pieslēguma "
@@ -56,12 +57,12 @@ msgstr ""
 
 #: index.php:262
 msgid "It can be especially useful for cases where:"
-msgstr "To var pielietot piemēram šādos gadījumos:"
+msgstr "To var izmantot šādos gadījumos:"
 
 #: index.php:264
 msgid ""
-"you need to create USB installation media from bootable ISOs (Windows, "
-"Linux, UEFI, etc.)"
+"you need to create USB installation media from bootable ISOs (Windows, Linux, "
+"UEFI, etc.)"
 msgstr ""
 "jums nepieciešams izveidot USB instalācijas nesēju no ISO formāta (Windows, "
 "Linux, UEFI, u.c.)"
@@ -80,15 +81,16 @@ msgstr "jums jāpiestartē zema līmeņa OS programma"
 
 #: index.php:270
 msgid "Despite its small size, Rufus provides everything you need!"
-msgstr "Neskatoties uz mazo svaru, <b>Rufus</b> dod jums visu nepieciešamo!"
+msgstr ""
+"Neskatoties uz mazo apjomu, <b>Rufus</b> nodrošina jums visu nepieciešamo!"
 
 #: index.php:271
 #, php-format
 msgid ""
 "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
 "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
-" the creation of a Windows 7 USB installation drive from an ISO. It is also "
+"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on "
+"the creation of a Windows 7 USB installation drive from an ISO. It is also "
 "marginally faster on the creation of Linux bootable USB from ISOs."
 msgstr ""
 "Piedevām, <b>Rufus</b> ir <b>ātrs</b>. Tas strādā divreiz ātrāk nekā <a "
@@ -99,8 +101,8 @@ msgstr ""
 
 #: index.php:272
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom of "
+"this page."
 msgstr ""
 "Daļējs ISO atbalstāmo formātu saraksts, ar kuriem strādā <b>Rufus</b>, ir "
 "uzrādīts lapas apakšā."
@@ -116,7 +118,7 @@ msgstr "Pēdējais atjauninājums %s:"
 
 #: index.php:280
 msgid "Portable"
-msgstr ""
+msgstr "Portatīvā versija"
 
 #: index.php:281 index.php:282 index.php:377
 msgid "Other versions"
@@ -135,18 +137,18 @@ msgid ""
 "Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
 "application is ready to use."
 msgstr ""
-"Windows 7 vai jaunāka OS (nav nozīmes 32 vai 64 bitu). Uzreiz pēc "
-"lejupielādes <b>Rufus</b> ir gatavs lietošanai."
+"Windows 7 vai jaunāka OS (32 vai 64 bitu). Uzreiz pēc lejupielādes <b>Rufus</b> "
+"ir gatavs lietošanai."
 
 #: index.php:331
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
-"various languages. If you find that you can use Rufus in your own language, "
-"you should really thank them!"
+"various languages. If you find that you can use Rufus in your own language, you "
+"should really thank them!"
 msgstr ""
-"Izmantojot iespēju, gribu izteikt pateicību tiem, kas programmu <b>Rufus</b>"
-" un šo mājaslapu ir tulkojuši vairākās valodās. Ja jūs ievērojāt, ka varat "
+"Izmantojot iespēju, gribu izteikt pateicību tiem, kas programmu <b>Rufus</b> un "
+"šo mājaslapu ir tulkojuši vairākās valodās. Ja jūs ievērojāt, ka varat "
 "<b>Rufus</b> izmantot savā dzimtajā valodā, jāizsaka pateicība tieši viņiem!"
 
 #: index.php:332
@@ -154,10 +156,8 @@ msgid "Usage"
 msgstr "Izmantošana"
 
 #: index.php:333
-msgid ""
-"Download the executable and run it &ndash; no installation is necessary."
-msgstr ""
-"Lejuplādējiet failu un palaidiet to &ndash; instalācija nav nepieciešama."
+msgid "Download the executable and run it &ndash; no installation is necessary."
+msgstr "Lejuplādējiet failu un palaidiet to &ndash; instalācija nav nepieciešama."
 
 #: index.php:334
 msgid "The executable is digitally signed and the signature should state:"
@@ -165,11 +165,11 @@ msgstr "Palaišanas fails ir elektroniski parakstīts, kurš satur:"
 
 #: index.php:335
 msgid "(v1.3.0 or later)"
-msgstr "(v1.3.0 vai jaunāka versija)"
+msgstr "(v1.3.0 vai jaunāka)"
 
 #: index.php:336
 msgid "(v1.2.0 or earlier)"
-msgstr "(v1.2.0 vai agrāka versija)"
+msgstr "(v1.2.0 vai vecāka)"
 
 #: index.php:337
 msgid "Notes on DOS support:"
@@ -179,14 +179,14 @@ msgstr "Piezīmes DOS atbalstam:"
 #, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
-"attempt to select a keyboard layout according to the locale of your system. "
-"In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default "
-"selection, is recommended over MS-DOS, as it supports more keyboard layouts."
+"attempt to select a keyboard layout according to the locale of your system. In "
+"that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default selection, "
+"is recommended over MS-DOS, as it supports more keyboard layouts."
 msgstr ""
 "Ja veidojat DOS ielādes disku un neizmantojat US tastatūras izkārtojumu, "
-"<b>Rufus</b> izvēlēsies izkārtojumu no jūsu OS reģinālajiem uzstādījumiem. "
-"Šādā gadījumā MS-DOS vietā tiks izmantota <a target=\"_blank\" "
-"%s>FreeDOS</a>, kura atbalsta plašāku tastatūru izvietojumu izvēli."
+"<b>Rufus</b> izvēlēsies izkārtojumu no jūsu OS reģinālajiem uzstādījumiem. Šādā "
+"gadījumā MS-DOS vietā tiks izmantota <a target=\"_blank\" %s>FreeDOS</a>, kura "
+"atbalsta plašāku tastatūru izvietojumu izvēli."
 
 #: index.php:339
 msgid "Notes on ISO Support:"
@@ -195,8 +195,8 @@ msgstr "Piezīmes ISO atbalstam:"
 #: index.php:340
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an "
+"<a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "Sākot no versijas 1.1.0, <b>Rufus</b> ļauj izveidot OS ielādes disku no <a "
 "target=\"_blank\" %s>ISO formāta</a> failiem (faili ar paplašinājumu .iso)."
@@ -204,15 +204,15 @@ msgstr ""
 #: index.php:341
 #, php-format
 msgid ""
-"Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
-"target=\"_blank\" %s>CDBurnerXP</a>."
+"Creating an ISO image from a physical disc or from a set of files is very easy "
+"to do however, through the use of a CD burning application, such as the freely "
+"available <a target=\"_blank\" %s>InfraRecorder</a> or <a target=\"_blank\" "
+"%s>CDBurnerXP</a>."
 msgstr ""
-"Izveidot ISO bildi no fiziska diskai vai failu kopas ir viegli darāms, "
-"toties jums būs jāizmanto kāda no brīvi pieejamām (<i>Freeware</i>) "
-"programmām - <a target=\"_blank\" %s>InfraRecorder</a> vai <a "
-"target=\"_blank\" %s>CDBurnerXP</a>."
+"Izveidot ISO bildi no fiziska diskai vai failu kopas ir viegli darāms, toties "
+"jums būs jāizmanto kāda no brīvi pieejamām (<i>Freeware</i>) programmām - <a "
+"target=\"_blank\" %s>InfraRecorder</a> vai <a target=\"_blank\" %s>CDBurnerXP</"
+"a>."
 
 #: index.php:343
 msgid "Frequently Asked Questions (FAQ)"
@@ -224,8 +224,8 @@ msgstr "Bieži uzdotie jautājumi (BUJ)"
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
-"Saistītie BUJ ar <b>Rufus</b> atrodas <b><a target=\"_blank\" "
-"%s>ŠEIT</a></b> (angliski)."
+"Saistītie BUJ ar <b>Rufus</b> atrodas <b><a target=\"_blank\" %s>ŠEIT</a></b> "
+"(angliski)."
 
 #: index.php:345
 #, php-format
@@ -234,27 +234,26 @@ msgid ""
 "GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
-"Lai atstātu atsauksmi, paziņot par kļūdu vai ieteikt kādu padomu, "
-"izmantojiet GitHub <a target=\"_blank\" %s>problēmu novēršana</a>. "
-"Tāpat jūs varat sazināties <a target=\"_blank\" %s>sūtot e-pastu</a>."
+"Lai atstātu atsauksmi, paziņot par kļūdu vai ieteikt kādu padomu, izmantojiet "
+"GitHub <a target=\"_blank\" %s>problēmu novēršana</a>. Tāpat jūs varat "
+"sazināties <a target=\"_blank\" %s>sūtot e-pastu</a>."
 
 #: index.php:347
 msgid "License"
-msgstr "Licenze"
+msgstr "Licence"
 
 #: index.php:348
 #, php-format
 msgid ""
-"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
-"later."
+"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."
 msgstr ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) versija 3</a> vai "
 "jaunāka."
 
 #: index.php:348
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr ""
 "Jūs varat brīvi izplatīt, mainīt, vai pat pārdot <b>Rufus</b> "
 "programmnodrošinājumu ievērojot GPLv3 nosacījumus un noteikumus."
@@ -262,9 +261,8 @@ msgstr ""
 #: index.php:349
 #, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a "
-"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
-"%s>MinGW32</a> environment."
+"Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" "
+"%s>public source</a>, using a <a target=\"_blank\" %s>MinGW32</a> environment."
 msgstr ""
 "<b>Rufus</b> ir izveidota izmantojot 100%% <a target=\"_blank\" %s>atvērtu "
 "kodu</a>, izmantojot <a target=\"_blank\" %s>MinGW32</a> vidi."
@@ -290,8 +288,7 @@ msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr ""
-"Jūs varat veidot <a target=\"_blank\" %s>git</a> repozitorijas klonu "
-"izmantojot:"
+"Jūs varat veidot <a target=\"_blank\" %s>git</a> repozitorijas klonu izmantojot:"
 
 #: index.php:384
 #, php-format
@@ -300,11 +297,11 @@ msgstr "Papildinformācijai skatieties <a target=\"_blank\" %s>GitHub project</a
 
 #: index.php:385
 msgid ""
-"If you are a developer, you are very much encouraged to tinker with Rufus "
-"and submit patches."
+"If you are a developer, you are very much encouraged to tinker with Rufus and "
+"submit patches."
 msgstr ""
-"Ja esat izstrādātājs, jūs varat palīdzēt projektam atsūtot savus "
-"<b>Rufus</b> labojumus, papildinājumus, u.c."
+"Ja esat izstrādātājs, jūs varat palīdzēt projektam atsūtot savus <b>Rufus</b> "
+"labojumus, papildinājumus, u.c."
 
 #: index.php:387
 msgid "Donations"
@@ -315,36 +312,35 @@ msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr ""
-"Bieži saņemu jautājumu, kāpēc <b>Rufus</b> mājaslapā <b>nav</b> ziedojumu "
-"linka."
+"Bieži saņemu jautājumu, kāpēc <b>Rufus</b> mājaslapā <b>nav</b> ziedojumu linka."
 
 #: index.php:389
 msgid ""
-"The main reason is that I feel that the donation system doesn't actually "
-"help software development and worse, can be guilt-inducing for users who "
-"choose not to donate."
+"The main reason is that I feel that the donation system doesn't actually help "
+"software development and worse, can be guilt-inducing for users who choose not "
+"to donate."
 msgstr ""
-"Ziedojumu linka neesamība ir saistīta ar to, ka pēc maniem ieskatiem "
-"ziedojumi nekādā ziņā nepalīdz programmnodrošinājuma izstrādē un attīstībā, "
-"bet tikai rada vainas apziņu tiem lietotājiem, kuri jebkādu iemeslu dēļ nav "
-"ziedojuši konkrētam projektam."
+"Ziedojumu linka neesamība ir saistīta ar to, ka pēc maniem ieskatiem ziedojumi "
+"nekādā ziņā nepalīdz programmnodrošinājuma izstrādē un attīstībā, bet tikai "
+"rada vainas apziņu tiem lietotājiem, kuri jebkādu iemeslu dēļ nav ziedojuši "
+"konkrētam projektam."
 
 #: index.php:392
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
-"reason software like Rufus is possible."
+"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main reason "
+"software like Rufus is possible."
 msgstr ""
-"Ja jūs tiešām uzskatāt ka materiāls atbalsts ir nepieciešams, tad varat "
-"veikt zidojumus <a target=\"_blank\" %s>Free Software Foundation</a>, jo "
-"tieši pateicoties FSF ir iespējams programmu <b>Rufus</b> attīstīt."
+"Ja jūs tiešām uzskatāt ka materiāls atbalsts ir nepieciešams, tad varat veikt "
+"zidojumus <a target=\"_blank\" %s>Free Software Foundation</a>, jo tieši "
+"pateicoties FSF ir iespējams programmu <b>Rufus</b> attīstīt."
 
 #: index.php:393
 msgid ""
-"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
+"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your "
+"continuing support and enthusiasm about this little program: it is much "
+"appreciated!"
 msgstr ""
 "Jebkurā gadījumā, es vēlos jums izteikt <i><u>pateicību</i></u> par jūsu "
 "atbalstu un entuziasmu, kuri saistīti ar programmu <b>Rufus</b>. Man tas ir "
@@ -355,8 +351,7 @@ msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
-"Turpiniet rīkoties ar šo programmnodrošinājumu neuztraucoties par "
-"ziedojumiem."
+"Turpiniet rīkoties ar šo programmnodrošinājumu neuztraucoties par ziedojumiem."
 
 #: index.php:396
 msgid "Speed comparison between Rufus and other applications"
@@ -366,18 +361,18 @@ msgstr "Ātrdarbīguma salīdzinājums <b>Rufus</b> ar citām programmām"
 #, php-format
 msgid ""
 "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
-" 3.0 ADATA S102 flash drive</a>."
+"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB "
+"3.0 ADATA S102 flash drive</a>."
 msgstr ""
-"Salīdzinājums tika veikts uz datora ar sekojošiem parametriem: OS Windows 7 "
-"x64 ar CPU Core 2 duo, 4 GB RAM, izmantojot USB 3.0 un <a target=\"_blank\" "
-"%s>USB zibatmiņu 3.0 ADATA S102 16 GB</a>."
+"Salīdzinājums tika veikts uz datora ar sekojošiem parametriem: OS Windows 7 x64 "
+"ar CPU Core 2 duo, 4 GB RAM, izmantojot USB 3.0 un <a target=\"_blank\" %s>USB "
+"zibatmiņu 3.0 ADATA S102 16 GB</a>."
 
 #: index.php:422
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr ""
-"Nepilnīgs ISO atbalstāmo formātu saraksts ar kādiem strādā programma "
-"<b>Rufus</b>"
+"Nepilnīgs ISO atbalstāmo formātu saraksts ar kādiem strādā programma <b>Rufus</"
+"b>"
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this
@@ -387,9 +382,8 @@ msgstr ""
 #: index.php:477
 msgid "English translation by Pete Batard"
 msgstr ""
-"Latviski tulkojis <a "
-"href=\"mailto:alibaba@inbox.lv?Subject=Rufus%20Homepage%20translation\">Aldis"
-" Tutins / alibaba</a>"
+"Latviski tulkojis <a href=\"mailto:alibaba@inbox.lv?"
+"Subject=Rufus%20Homepage%20translation\">Aldis Tutins / alibaba</a>"
 
 #: index.php:478
 msgid "USB icon by"
@@ -401,4 +395,4 @@ msgstr "Mājaslapas uzturētājs"
 
 #: index.php:220
 msgid "Change language:"
-msgstr ""
+msgstr "Mainīt valodu:"

@@ -4,8 +4,8 @@ $latest_version = "3.21";
 $previous_version = "3.16";
 $latest_date = "2022.11.28";
 $previous_date = "2021.10.13";
-$lang1 = array('', 'Azerbaijani', 'Azerbaijan');
-$lang2 = array('', 'Serbian', 'Serbia');
+$lang1 = array('el', 'Greek', 'Greece');
+$lang2 = array('vi', 'Vietnamese', 'Vietnam');
 $bugfix = false;
 $exe_size = 1.3;
 $src_size = 4.5;
@@ -372,9 +372,9 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
 	<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
 	<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
-	<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative;top:11px;\" src=\"/pics/" . $lang1[2] . ".png\" srcset=\"/pics/" . $lang1[2] . ".png 1x, /pics/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative;top:11px;\" src=\"/pics/" . $lang2[2] . ".png\" srcset=\"/pics/" . $lang2[2] . ".png 1x, /pics/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
-	<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L70\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
-	<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#Editing_an_existing_translation\">here</a>.</p>";?>
+	<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative\" src=\"/pics/flags/" . $lang1[2] . ".png\" srcset=\"/pics/flags/" . $lang1[2] . ".png 1x, /pics/flags/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative\" src=\"/pics/flags/" . $lang2[2] . ".png\" srcset=\"/pics/flags/" . $lang2[2] . ".png 1x, /pics/flags/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
+	<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L83\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
+	<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#editing-an-existing-translation\">here</a>.</p>";?>
 	<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
 		<p><b><? printf(_("Last updated %s:"), $latest_date);?></b></p>

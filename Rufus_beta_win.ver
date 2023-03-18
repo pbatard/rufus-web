@@ -1,18 +1,20 @@
-version = 3.21.1947
+version = 3.22.2003
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.21_BETA/rufus-3.21_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v3.22_BETA/rufus-3.22_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.21 BETA (2022.11.17)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.22 BETA (2023.03.18)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Allow the provision of an arbitrary local account username in the Windows User Experience dialog\par
-{\pntext\f2\'B7\tab}Improve Windows version reporting from ISO/.wim\par
-{\pntext\f2\'B7\tab}Update UEFI:NTFS' NTFS drivers to v1.4 and exFAT drivers to v1.9\par
-{\pntext\f2\'B7\tab}Switch to remote download for nonstandard GRUB (Fedora 37, openSUSE Live, GeckoLinux)\par
-{\pntext\f2\'B7\tab}Fix UEFI:NTFS partition not being set in MBR mode for ISOs with a >4GB file (UwUntu)\par
-{\pntext\f2\'B7\tab}Fix GRUB support for Arch and derivatives, when a non FAT compliant label is used\par
-{\pntext\f2\'B7\tab}Fix incorrect detection of GRUB with nonstandard prefixes\par
-{\pntext\f2\'B7\tab}Fix tab order not working on the Windows User Experience dialog\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add SHA-1 and SHA-256 x86 acceleration on CPUs that support it\par
+{\pntext\f2\'B7\tab}Add an option to disable BitLocker device encryption in the Windows User Experience dialog\par
+{\pntext\f2\'B7\tab}Add a cheat mode (Ctrl-P) to preserve the log between sessions\par
+{\pntext\f2\'B7\tab}Fix potential media creation errors by forcing the unmount of stale .wim images\par
+{\pntext\f2\'B7\tab}Fix potential access errors in ISO → ESP mode by forcing Large FAT32 formatting\par
+{\pntext\f2\'B7\tab}Fix user-specified label not being preserved on error/cancel\par
+{\pntext\f2\'B7\tab}Fix some large SSD devices being listed by default\par
+{\pntext\f2\'B7\tab}Fix processing of Rock Ridge CE fields\par
+{\pntext\f2\'B7\tab}Work around the use of Rock Ridge symbolic links for Linux firmware packages (Debian)\par
+{\pntext\f2\'B7\tab}Remove the ISO download feature on Windows 7\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

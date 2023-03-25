@@ -374,9 +374,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 	ଋଫସରେ ହେଉଥିବା ଆଇଏସଓର ସୂଚୀ ତଳପୃଷ୍ଠାରେ ମଧ୍ୟ ଦିଆଯାଇଛି. <a href="#ref2"><sup>(2)</sup></a></p>
 		<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">ନିଜର କରନ୍ତୁ</span></h2>
-		<p><b>ଗତ ସମୟସୁଦ୍ଧା 2022.11.28:</b></p>
-		<ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.21/rufus-3.21.exe">Rufus 3.21</a></b></span> <span dir="ltr">(1.3 ଏମବି)</span></li>
-		<li><a href="https://github.com/pbatard/rufus/releases/download/v3.21/rufus-3.21p.exe">Rufus 3.21 ଚଳନ୍ତା</a> <span dir="ltr">(1.3 ଏମବି)</span></li>
+		<p><b>ଗତ ସମୟସୁଦ୍ଧା 2023.03.25:</b></p>
+		<ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22.exe">Rufus 3.22</a></b></span> <span dir="ltr">(1.3 ଏମବି)</span></li>
+		<li><a href="https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22p.exe">Rufus 3.22 ଚଳନ୍ତା</a> <span dir="ltr">(1.3 ଏମବି)</span></li>
 		<li><a href="/downloads/">ଅନ୍ୟ ସଂସରଣଗୁଡିକ (GitHub)</a></li>
 		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">ଅନ୍ୟ ସଂସରଣଗୁଡିକ (FossHub)</a></li>
 		</ul>
@@ -451,20 +451,23 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<a name="changelog"></a>
 	<h2>ଲଗ୍ ପରିବର୍ତନ</h2>
 	<ul dir="ltr">
-		<li><b>ସଂସରଣ 3.21</b> (2022.11.28)<ul dir="ltr">
-			<li><span dir="ltr">Allow the provision of an arbitrary local account username in the Windows User Experience dialog</span></li>
-			<li><span dir="ltr">Improve Windows version reporting from ISO/.wim</span></li>
-			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>' NTFS drivers to <a target="_blank" href="https://github.com/pbatard/ntfs-3g/releases/tag/1.4">v1.4</a> and exFAT drivers to <a target="_blank" href="https://github.com/pbatard/efifs/releases/tag/v1.9">v1.9</a></span></li>
-			<li><span dir="ltr">Switch to remote download for nonstandard GRUB (Fedora 37, openSUSE Live, GeckoLinux)</span></li>
-			<li><span dir="ltr">Fix <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition not being set in MBR mode for ISOs with a >4GB file (UwUntu)</span></li>
-			<li><span dir="ltr">Fix GRUB support for Arch and derivatives, when a non FAT compliant label is used</span></li>
-			<li><span dir="ltr">Fix incorrect detection of GRUB with nonstandard prefixes</span></li>
-			<li><span dir="ltr">Fix tab order not working on the Windows User Experience dialog</span></li>
+		<li><b>ସଂସରଣ 3.22</b> (2023.03.25)<ul dir="ltr">
+			<li><span dir="ltr">Add SHA-1 and SHA-256 x86 acceleration on CPUs that support it (courtesy of <b>Jeffrey Walton</b>)</span></li>
+			<li><span dir="ltr">Add an option to disable BitLocker device encryption in the Windows User Experience dialog</span></li>
+			<li><span dir="ltr">Add a cheat mode (<kbd>Ctrl</kbd>-<kbd>P</kbd>) to preserve the log between sessions</span></li>
+			<li><span dir="ltr">Fix potential media creation errors by forcing the unmount of stale WIM images</span></li>
+			<li><span dir="ltr">Fix potential access errors in ISO → ESP mode by forcing Large FAT32 formatting</span></li>
+			<li><span dir="ltr">Fix user-specified label not being preserved on error/cancel</span></li>
+			<li><span dir="ltr">Fix some large SSD devices being listed by default</span></li>
+			<li><span dir="ltr">Fix processing of Rock Ridge CE fields</span></li>
+			<li><span dir="ltr">Work around the use of Rock Ridge symbolic links for Linux firmware packages (Debian)</span></li>
+			<li><span dir="ltr">Remove the ISO download feature on Windows 7</span></li>
+			<li><span dir="ltr"><b>Note: This is the last version of Rufus that can run on Windows 7</b></span></li>
 		</ul></li>
 		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">ଅନ୍ୟ ସଂସରଣଗୁଡିକ</a></b></li>
 	</ul>
 	<h2>ମୂଳ କୋଡ୍</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.21.zip">Rufus 3.21</a> <span dir="ltr">(4.5 ଏମବି)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.22.zip">Rufus 3.22</a> <span dir="ltr">(6 ଏମବି)</span></li>
 		<li>Alternatively, you can clone the <a target="_blank" href="http://git-scm.com">git</a> repository using:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>ଅଧିକ ଜାଣିବା ପାଇଁ <a target="_blank" href="https://github.com/pbatard/rufus">ଗିଟହବ ପ୍ରଜେକ୍ଟ</a> ଦେଖନ୍ତୁ.</li></ul>
@@ -561,7 +564,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2023&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
 		ଏହା ଆଲୋକ ପ୍ରଧାନଙ୍କ ଦ୍ଵାରା ଓଡିଆରେ ଅନୁବାଦ <a href= "mailto:alcon.od@gmail.com?Subject=Rufus%20Homepage%20translation">Alok Pradhan, Odia (India)</a><br/>		ଇଉଏସବି ଛବି PC Unleashed<br/>
 		ଅନୁଗ୍ରହଠାରୁ <a target="_blank" href="https://pages.github.com/">GitHub</a>
-		</div>  
+		</div> 
 	</div>
 </body>
 </html>

@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.21";
+$latest_version = "3.22";
 $previous_version = "3.16";
-$latest_date = "2022.11.28";
+$latest_date = "2023.03.25";
 $previous_date = "2021.10.13";
 $lang1 = array('ar', 'Arabic', 'Saudi-Arabia');
 $lang2 = array('ja', 'Japanese', 'Japan');
 $bugfix = false;
 $exe_size = 1.3;
-$src_size = 4.5;
+$src_size = 6.0;
 $nb_screenshots = 5;
 $screenshot_height = "600px";
 $screenshot_duration = 10000;
@@ -455,14 +455,17 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Allow the provision of an arbitrary local account username in the Windows User Experience dialog</span></li>
-			<li><span dir="ltr">Improve Windows version reporting from ISO/.wim</span></li>
-			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>' NTFS drivers to <a target="_blank" href="https://github.com/pbatard/ntfs-3g/releases/tag/1.4">v1.4</a> and exFAT drivers to <a target="_blank" href="https://github.com/pbatard/efifs/releases/tag/v1.9">v1.9</a></span></li>
-			<li><span dir="ltr">Switch to remote download for nonstandard GRUB (Fedora 37, openSUSE Live, GeckoLinux)</span></li>
-			<li><span dir="ltr">Fix <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition not being set in MBR mode for ISOs with a >4GB file (UwUntu)</span></li>
-			<li><span dir="ltr">Fix GRUB support for Arch and derivatives, when a non FAT compliant label is used</span></li>
-			<li><span dir="ltr">Fix incorrect detection of GRUB with nonstandard prefixes</span></li>
-			<li><span dir="ltr">Fix tab order not working on the Windows User Experience dialog</span></li>
+			<li><span dir="ltr">Add SHA-1 and SHA-256 x86 acceleration on CPUs that support it (courtesy of <b>Jeffrey Walton</b>)</span></li>
+			<li><span dir="ltr">Add an option to disable BitLocker device encryption in the Windows User Experience dialog</span></li>
+			<li><span dir="ltr">Add a cheat mode (<kbd>Ctrl</kbd>-<kbd>P</kbd>) to preserve the log between sessions</span></li>
+			<li><span dir="ltr">Fix potential media creation errors by forcing the unmount of stale WIM images</span></li>
+			<li><span dir="ltr">Fix potential access errors in ISO → ESP mode by forcing Large FAT32 formatting</span></li>
+			<li><span dir="ltr">Fix user-specified label not being preserved on error/cancel</span></li>
+			<li><span dir="ltr">Fix some large SSD devices being listed by default</span></li>
+			<li><span dir="ltr">Fix processing of Rock Ridge CE fields</span></li>
+			<li><span dir="ltr">Work around the use of Rock Ridge symbolic links for Linux firmware packages (Debian)</span></li>
+			<li><span dir="ltr">Remove the ISO download feature on Windows 7</span></li>
+			<li><span dir="ltr"><b>Note: This is the last version of Rufus that can run on Windows 7</b></span></li>
 		</ul></li>
 <? if($bugfix):?>
 		<br />
@@ -585,7 +588,7 @@ If you want people to be able to e-mail you directly about this translation, you
 <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a> */ $tr = _("English translation by Pete Batard"); if (substr($tr,0,4) != "Engl") echo $tr . "<br/>";?>
 		<?= _("USB icon by");?> PC Unleashed<br/>
 		<?= _("Hosting by");?> <a target="_blank" href="https://pages.github.com/">GitHub</a>
-		</div><? if ($short_locale == "ja") echo "&nbsp; <!-- Heck if I know why Japanese needs this in order to remove scrollbars when using bootstrap -->" ?>  
+		</div><? if ($short_locale == "ja") echo "&nbsp; <!-- Heck if I know why Japanese needs this in order to remove scrollbars when using bootstrap -->" ?> 
 	</div>
 </body>
 </html>

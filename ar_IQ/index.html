@@ -372,11 +372,13 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<p>سەرەڕای قەبارە بچووکەکەی ، ڕوفس هەموو شتێک دابین دەکات کە پێویستت پێیەتی!</p>
 	<p>ئۆو بەلێ Rufus <b>خێراییە</b>. بۆ نمونە دوو بەرامبەر خێراتر لە  <a target="_blank" href="http://unetbootin.sourceforge.net/">UNetbootin</a>, <a target="_blank" href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3">Universal USB Installer</a> or <a target="_blank" href="https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool">Windows 7 USB download tool</a>, لە دروستکردنی فایلی windows 7 دانانی USB بەهۆی ISO، وە زۆر خێراترە لە رووی دروستکردنی فایلی بوتکراوی LINUX لە ISO. <a href="#ref1"><sup>(1)</sup></a><br/>
 	لیستێکی تەواونەکراوی Rufus کە پشتیوانی لە ISO کردووە لە خوارەوەی ئەم لاپەڕەیە دابین دەکرێت. <a href="#ref2"><sup>(2)</sup></a></p>
-		<a name="download"></a>
+	<p dir="ltr" align="top"><img style="position:relative" src="/pics/flags/Saudi-Arabia.png" srcset="/pics/flags/Saudi-Arabia.png 1x, /pics/flags/Saudi-Arabia-64px.png 2x" alt=""/>&nbsp;&nbsp;<b><font color="#dd8800"><u>CALLING ON NEW TRANSLATORS!</u></font></b>&nbsp;&nbsp;<img style="position:relative" src="/pics/flags/Japan.png" srcset="/pics/flags/Japan.png 1x, /pics/flags/Japan-64px.png 2x" alt=""/></p>
+	<p dir="ltr">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target="_blank" href="https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L83">update the localization</a> for <b><i>Arabic</i></b> and <b><i>Japanese</i></b>.</p>
+	<p dir="ltr">If you think you are up to the task, please have a look <a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#editing-an-existing-translation">here</a>.</p>	<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">داگرتن</span></h2>
-		<p><b>دوا نوێکردنەوە 2022.11.28:</b></p>
-		<ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.21/rufus-3.21.exe"><span dir="ltr">3.21 Rufus</span></a></b></span> <span dir="rtl">(1.3 مێگا بایت)</span></li>
-		<li><a href="https://github.com/pbatard/rufus/releases/download/v3.21/rufus-3.21p.exe"><span dir="ltr">3.21 Rufus</span> هەڵگر</a> <span dir="rtl">(1.3 مێگا بایت)</span></li>
+		<p><b>دوا نوێکردنەوە 2023.03.25:</b></p>
+		<ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22.exe"><span dir="ltr">3.22 Rufus</span></a></b></span> <span dir="rtl">(1.3 مێگا بایت)</span></li>
+		<li><a href="https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22p.exe"><span dir="ltr">3.22 Rufus</span> هەڵگر</a> <span dir="rtl">(1.3 مێگا بایت)</span></li>
 		<li><a href="/downloads/">وەشانەکانی تر (GitHub)</a></li>
 		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">وەشانەکانی تر (FossHub)</a></li>
 		</ul>
@@ -451,20 +453,23 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<a name="changelog"></a>
 	<h2>گۆرانکارییەکان</h2>
 	<ul dir="rtl">
-		<li><span dir="ltr">(2022.11.28) <b>3.21 وەشان</b></span><ul dir="rtl">
-			<li><span dir="ltr">Allow the provision of an arbitrary local account username in the Windows User Experience dialog</span></li>
-			<li><span dir="ltr">Improve Windows version reporting from ISO/.wim</span></li>
-			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>' NTFS drivers to <a target="_blank" href="https://github.com/pbatard/ntfs-3g/releases/tag/1.4">v1.4</a> and exFAT drivers to <a target="_blank" href="https://github.com/pbatard/efifs/releases/tag/v1.9">v1.9</a></span></li>
-			<li><span dir="ltr">Switch to remote download for nonstandard GRUB (Fedora 37, openSUSE Live, GeckoLinux)</span></li>
-			<li><span dir="ltr">Fix <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition not being set in MBR mode for ISOs with a >4GB file (UwUntu)</span></li>
-			<li><span dir="ltr">Fix GRUB support for Arch and derivatives, when a non FAT compliant label is used</span></li>
-			<li><span dir="ltr">Fix incorrect detection of GRUB with nonstandard prefixes</span></li>
-			<li><span dir="ltr">Fix tab order not working on the Windows User Experience dialog</span></li>
+		<li><span dir="ltr">(2023.03.25) <b>3.22 وەشان</b></span><ul dir="rtl">
+			<li><span dir="ltr">Add SHA-1 and SHA-256 x86 acceleration on CPUs that support it (courtesy of <b>Jeffrey Walton</b>)</span></li>
+			<li><span dir="ltr">Add an option to disable BitLocker device encryption in the Windows User Experience dialog</span></li>
+			<li><span dir="ltr">Add a cheat mode (<kbd>Ctrl</kbd>-<kbd>P</kbd>) to preserve the log between sessions</span></li>
+			<li><span dir="ltr">Fix potential media creation errors by forcing the unmount of stale WIM images</span></li>
+			<li><span dir="ltr">Fix potential access errors in ISO → ESP mode by forcing Large FAT32 formatting</span></li>
+			<li><span dir="ltr">Fix user-specified label not being preserved on error/cancel</span></li>
+			<li><span dir="ltr">Fix some large SSD devices being listed by default</span></li>
+			<li><span dir="ltr">Fix processing of Rock Ridge CE fields</span></li>
+			<li><span dir="ltr">Work around the use of Rock Ridge symbolic links for Linux firmware packages (Debian)</span></li>
+			<li><span dir="ltr">Remove the ISO download feature on Windows 7</span></li>
+			<li><span dir="ltr"><b>Note: This is the last version of Rufus that can run on Windows 7</b></span></li>
 		</ul></li>
 		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">وەشانەکانی تر</a></b></li>
 	</ul>
 	<h2>کۆدی سەرچاوە</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.21.zip"><span dir="ltr">3.21 Rufus</span></a> <span dir="rtl">(4.5 مێگا بایت)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.22.zip"><span dir="ltr">3.22 Rufus</span></a> <span dir="rtl">(6 مێگا بایت)</span></li>
 		<li>Alternatively, you can clone the <a target="_blank" href="http://git-scm.com">git</a> repository using:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>بۆ زانیاری زیاتر، <a target="_blank" href="https://github.com/pbatard/rufus">پرۆژە </a>ببینە.</li></ul>
@@ -561,7 +566,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2023&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
 		زمانی کوردی لە لایەن خالید والکەر<br/>		ئایکۆنی USB لە لەلایەن PC Unleashed<br/>
 		میوانداریکردن لەلایەن <a target="_blank" href="https://pages.github.com/">GitHub</a>
-		</div>  
+		</div> 
 	</div>
 </body>
 </html>

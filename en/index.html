@@ -370,8 +370,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li>you want to run a low-level utility</li>
 	</ul>
 	<p>Despite its small size, Rufus provides everything you need!</p>
-	<p>Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target="_blank" href="http://unetbootin.sourceforge.net/">UNetbootin</a>, <a target="_blank" href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3">Universal USB Installer</a> or <a target="_blank" href="https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool">Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs. <a href="#ref1"><sup>(1)</sup></a><br/>
-	A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page. <a href="#ref2"><sup>(2)</sup></a></p>
+	<p>A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page. <a href="#ref1"><sup>(1)</sup></a></p>
 	<p dir="ltr" align="top"><img style="position:relative" src="/pics/flags/Malaysia.png" srcset="/pics/flags/Malaysia.png 1x, /pics/flags/Malaysia-64px.png 2x" alt=""/>&nbsp;&nbsp;<b><font color="#dd8800"><u>CALLING ON NEW TRANSLATORS!</u></font></b>&nbsp;&nbsp;<img style="position:relative" src="/pics/flags/Croatia.png" srcset="/pics/flags/Croatia.png 1x, /pics/flags/Croatia-64px.png 2x" alt=""/></p>
 	<p dir="ltr">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target="_blank" href="https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L83">update the localization</a> for <b><i>Malay</i></b> and <b><i>Croatian</i></b>.</p>
 	<p dir="ltr">If you think you are up to the task, please have a look <a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#editing-an-existing-translation">here</a>.</p>	<a name="download"></a>
@@ -382,6 +381,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li><a href="/downloads/">Other versions (GitHub)</a></li>
 		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">Other versions (FossHub)</a></li>
 		</ul>
+	<h4>System Requirements:</h4>
+	<p>Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.</p>
 	<h4>Supported Languages:</h4>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
@@ -427,8 +428,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<td>العربية</td><td>,&nbsp;</td>
 		<td>پارسی</td><td>.</td>
 	</tr></table>
-	<h4>System Requirements:</h4>
-	<p>Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.</p>
+	&nbsp;
 	<p>I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!</p>
 	<h2>Usage</h2>
 	<p>Download the executable and run it &ndash; no installation is necessary.</p>
@@ -438,10 +438,10 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 or earlier)</li>
 	</ul>
 	<h4>Notes on DOS support:</h4>
-	<p>If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system. In that case, <a target="_blank" href="http://www.freedos.org">FreeDOS</a>, which is the default selection, is recommended over MS-DOS, as it supports more keyboard layouts.</p>
+	<p>If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system.</p>
 	<h4>Notes on ISO Support:</h4>
 	<p>All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO image</a> (.iso).</p>
-	<p>Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> or <a target="_blank" href="http://cdburnerxp.se/">CDBurnerXP</a>.</p>
+	<p>Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> or <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
 	<a name="FAQ"></a>
 	<h2>Frequently Asked Questions (FAQ)</h2>
 	<p>A Rufus FAQ is available <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">HERE</a></b>.<br/></p>
@@ -484,35 +484,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<p>At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm about this little program: it is much appreciated!</p>
 		<p>But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!</p>
 	<a name="ref1"></a>
-	<h2>(1) Speed comparison between Rufus and other applications</h2>
-	<p>The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM platform, with an USB 3.0 controller and a <a target="_blank" href="http://www.adata-group.com/index.php?action=product_feature&cid=1&piid=145&lan=en">16 GB USB 3.0 ADATA S102 flash drive</a>.</p>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Windows 7 x64</td><td>:&nbsp;</td><td><i>en_windows_7_ultimate_with_sp1_x64_dvd_618240.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">Windows 7 USB/DVD Download Tool v1.0.30</td><td>00:08:10</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:07:10</td></tr>
-		<tr><td>UNetbootin v1.1.1.1</td><td>00:06:20</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:04:10</td></tr>
-		<tr><td>WiNToBootic v1.2</td><td>00:03:35</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:03:25</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Ubuntu 11.10 x86</td><td>:&nbsp;</td><td><i>ubuntu-11.10-desktop-i386.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>00:01:45</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td> 00:01:35</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:01:20</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:01:15</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Slackware 13.37 x86</td><td>:&nbsp;</td><td><i>slackware-13.37-install-dvd.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>01:00:00+</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:24:35</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:22:45</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:20:15</b></td></tr>
-	</table>
-	<a name="ref2"></a>
-	<h2>(2) Non exhaustive list of ISOs Rufus is known to work with</h2>
+	<h2>(1) Non exhaustive list of ISOs Rufus is known to work with</h2>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
 		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>

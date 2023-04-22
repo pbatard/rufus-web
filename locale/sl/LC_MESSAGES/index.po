@@ -17,44 +17,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.7\n"
 
-#: index.php:91
+#: index.php:100
 msgid "Version"
 msgstr "Različica"
 
-#: index.php:123 index.php:258
+#: index.php:132 index.php:339
 msgid "Create bootable USB drives the easy way"
 msgstr "Enostavno ustvarjajte zagonske pogone USB"
 
-#: index.php:229
+#: index.php:309
 msgid "Want to improve this translation?"
 msgstr ""
 
-#: index.php:250
-msgid ""
-"Placeholder for ads &mdash; Just like you, I wish this site could exist "
-"without them..."
-msgstr ""
-
-#. This is used display a screenshot of Rufus in your language (if available).
-#. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
-#. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
-#. displayed then. Or you can leave the string untranslated to have the
-#. English version displayed. Please make sure to keep the .png extension.
-#: index.php:260
-msgid "rufus_en.png"
-msgstr "rufus_sl.png"
-
-#: index.php:261
+#: index.php:364
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
 msgstr "Rufus je program za formatiranje in ustvarjanje zagonskih naprav USB."
 
-#: index.php:262
+#: index.php:365
 msgid "It can be especially useful for cases where:"
 msgstr "Uporaben je še posebej, če:"
 
-#: index.php:264
+#: index.php:367
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -62,40 +47,25 @@ msgstr ""
 "morate ustvariti zagonski medij USB iz zagonskih slik ISO (Windows, Linux, "
 "UEFI, itd.)"
 
-#: index.php:265
+#: index.php:368
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr ""
 "morate delati na računalniku, ki nima nameščenega operacijskega sistema"
 
-#: index.php:266
+#: index.php:369
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr ""
 "morate uporabiti DOS, da posodobite BIOS ali drugo strojno programsko opremo"
 
-#: index.php:267
+#: index.php:370
 msgid "you want to run a low-level utility"
 msgstr "morate uporabiti nizkonivojsko orodje"
 
-#: index.php:270
+#: index.php:372
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Čeprav je majhen, Rufus ponuja vse, kar potrebujete!"
 
-#: index.php:271
-#, php-format
-msgid ""
-"Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
-"target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
-" the creation of a Windows 7 USB installation drive from an ISO. It is also "
-"marginally faster on the creation of Linux bootable USB from ISOs."
-msgstr ""
-"In mimogrede - Rufus je <b>hiter</b>. Je npr. enkrat hitrejši kot <a "
-"target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-"Installer</a> ali <a target=\"_blank\" %s>Windows 7 USB download tool</a> "
-"pri ustvarjanju USB namestitve Windows 7 iz slike ISO. Je tudi malce "
-"hitrejši pri ustvarjanju zagonske naprave USB iz ISO slike Linuxa."
-
-#: index.php:272
+#: index.php:373
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
 " of this page."
@@ -103,40 +73,36 @@ msgstr ""
 "Nepopoln seznam slik ISO, ki jih Rufus podpira, je priložen na dnu te "
 "strani."
 
-#: index.php:277
+#: index.php:378
 msgid "Download"
 msgstr "Prenos"
 
-#: index.php:278
+#: index.php:379
 #, php-format
 msgid "Last updated %s:"
 msgstr "Zadnjič posodobljeno %s:"
 
-#: index.php:280
+#: index.php:381
 msgid "Portable"
 msgstr ""
 
-#: index.php:281 index.php:282 index.php:377
+#: index.php:382 index.php:383 index.php:486
 msgid "Other versions"
 msgstr "Ostale verzije"
 
-#: index.php:284
+#: index.php:387
 msgid "Supported Languages:"
 msgstr "Podprti jeziki:"
 
-#: index.php:329
+#: index.php:385
 msgid "System Requirements:"
 msgstr "Sistemske zahteve:"
 
-#: index.php:330
-msgid ""
-"Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
-"application is ready to use."
-msgstr ""
-"Windows 7 ali novejši, vseeno, ali je 32- ali 64-bitni. Aplikacija je "
-"pripravljena za uporabo takoj po prenosu."
+#: index.php:386
+msgid "Windows 7 or later, 32 or 64 bit doesn't matter."
+msgstr "Windows 7 ali novejši, vseeno, ali je 32- ali 64-bitni."
 
-#: index.php:331
+#: index.php:433
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -146,49 +112,44 @@ msgstr ""
 "Lepo se zahvaljujem vsem prevajalcem, ki so prevedli Rufus in to spletno "
 "stran iz angleščine v različne jezike."
 
-#: index.php:332
+#: index.php:434
 msgid "Usage"
 msgstr "Uporaba"
 
-#: index.php:333
+#: index.php:435
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "Prenesite program in ga zaženite &ndash; namestitev ni potrebna."
 
-#: index.php:334
+#: index.php:436
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "Datoteka EXE je digitalno podpisana in podpis bi moral praviti:"
 
-#: index.php:335
+#: index.php:438
 msgid "(v1.3.0 or later)"
 msgstr "(verzija 1.3.0 ali novejša)"
 
-#: index.php:336
+#: index.php:439
 msgid "(v1.2.0 or earlier)"
 msgstr "(verzija 1.2.0 ali starejša)"
 
-#: index.php:337
+#: index.php:441
 msgid "Notes on DOS support:"
 msgstr "Opombe k podpori za DOS:"
 
-#: index.php:338
-#, php-format
+#: index.php:442
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
-"attempt to select a keyboard layout according to the locale of your system. "
-"In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default "
-"selection, is recommended over MS-DOS, as it supports more keyboard layouts."
+"attempt to select a keyboard layout according to the locale of your system."
 msgstr ""
 "Če ustvarite zagonski medij za DOS in uporabljate neameriško tipkovnico, bo "
-"Rufus poskusil izbrati razpored tipk glede na tistega na vašem sistemu. V "
-"tem primeru je namesto MS-DOS priporočen <a target=\"_blank\" %s>FreeDOS</a>"
-" (ki je privzeta možnost), ker podpira več razporedov."
+"Rufus poskusil izbrati razpored tipk glede na tistega na vašem sistemu."
 
-#: index.php:339
+#: index.php:443
 msgid "Notes on ISO Support:"
 msgstr "Opombe k podpori ISO:"
 
-#: index.php:340
+#: index.php:444
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
@@ -197,7 +158,7 @@ msgstr ""
 "Rufus lahko od verzije 1.1.0 dalje ustvarja zagonske medije USB iz <a "
 "target=\"_blank\" %s>slike ISO</a> (.iso)."
 
-#: index.php:341
+#: index.php:445
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
@@ -209,20 +170,20 @@ msgstr ""
 "uporabo aplikacije za peko CD-jev, kot je <a target=\"_blank\" "
 "%s>InfraRecorder</a> ali <a target=\"_blank\" %s>CDBurnerXP</a>."
 
-#: index.php:343
+#: index.php:447
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Pogosto zastavljena vprašanja"
 
 #. You are encouraged to add the translation for " (in English)." after
 #. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:344
+#: index.php:448
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
 "Odgovori na pogosto zastavljena vprašanja o Rufusu so na voljo <b><a "
 "target=\"_blank\" %s>tukaj</a></b> (v angleščini)."
 
-#: index.php:345
+#: index.php:449
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -234,11 +195,11 @@ msgstr ""
 "sledenje težav</a>, ali pa <a target=\"_blank\" %s>pošljite sporočilo po "
 "elektronski pošti</a>."
 
-#: index.php:347
+#: index.php:451
 msgid "License"
 msgstr "Licenca"
 
-#: index.php:348
+#: index.php:452
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
@@ -247,7 +208,7 @@ msgstr ""
 "<a target=\"_blank\" %s>Splošno dovoljenje GNU (GPL), verzija 3</a> ali "
 "novejša."
 
-#: index.php:348
+#: index.php:452
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you"
 " respect the GPLv3 license."
@@ -255,7 +216,7 @@ msgstr ""
 "Ta program vam je dovoljeno razpečavati, spreminjati ali celo prodajati, "
 "dokler spoštujete licenco GPLv3."
 
-#: index.php:349
+#: index.php:453
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
@@ -268,48 +229,48 @@ msgstr ""
 
 #. You are encouraged to append the translation for "(in English)" after
 #. "Changelog" as it is only available in English
-#: index.php:351
+#: index.php:455
 msgid "Changelog"
 msgstr "Zapisnik sprememb"
 
-#: index.php:380
+#: index.php:488
 msgid "Source Code"
 msgstr "Izvorna koda"
 
 #. Abbreviation for MegaByte
-#: index.php:279 index.php:280 index.php:381
+#: index.php:380 index.php:381 index.php:489
 msgid "MB"
 msgstr "MB"
 
-#: index.php:382
+#: index.php:490
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr "Lahko pa tudi klonirate repozitorij <a target=\"_blank\" %s>Git</a> z:"
 
-#: index.php:384
+#: index.php:492
 #, php-format
 msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr "Za več informacij glejte <a target=\"_blank\" %s>projekt na GitHubu</a>."
 
-#: index.php:385
+#: index.php:493
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
 msgstr "Če ste razvijalec, so vaši popravki dobrodošli."
 
-#: index.php:387
+#: index.php:495
 msgid "Donations"
 msgstr "Donacije"
 
-#: index.php:388
+#: index.php:496
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr "Na tej strani <b>ni</b> gumba za donacijo."
 
-#: index.php:389
+#: index.php:497
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -319,7 +280,7 @@ msgstr ""
 "razvoju programske opreme in v najslabšem primeru lahko vzbuja občutek "
 "krivde pri uporabnikih, ki se odločijo, da ne bodo donirali."
 
-#: index.php:392
+#: index.php:500
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -330,7 +291,7 @@ msgstr ""
 "%s>Free Software Foundation</a>, ker je ta ustanova glavni razlog, da je "
 "programska oprema, kot je Rufus, sploh mogoča."
 
-#: index.php:393
+#: index.php:501
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much"
@@ -339,7 +300,7 @@ msgstr ""
 "Vsekakor pa <i><u>hvala</u></i> za vašo podporo in zanimanje za ta mali "
 "program. To zelo cenim!"
 
-#: index.php:394
+#: index.php:502
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -347,22 +308,7 @@ msgstr ""
 "Toda, prosim, še naprej uporabljajte Rufus brezplačno in naj vas ne peče "
 "slaba vest, ker ga ne podpirate finančno &ndash; ne bi vam bilo treba!"
 
-#: index.php:396
-msgid "Speed comparison between Rufus and other applications"
-msgstr "Primerjava hitrosti Rufusa in drugih aplikacij"
-
-#: index.php:397
-#, php-format
-msgid ""
-"The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
-" 3.0 ADATA S102 flash drive</a>."
-msgstr ""
-"Sledeči preizkusi so bili izvedeni na Windows 7 x64 na sistemu Core 2 Duo s "
-"4 GB spomina, kontrolerjem USB 3.0 in <a target=\"_blank\" %s>16 GB USB 3.0 "
-"nosilcem ADATA S102</a>."
-
-#: index.php:422
+#: index.php:504
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Nepopoln seznam slik ISO, s katerimi Rufus deluje"
 
@@ -371,20 +317,73 @@ msgstr "Nepopoln seznam slik ISO, s katerimi Rufus deluje"
 #. translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
 #. Batard</a>
-#: index.php:477
+#: index.php:560
 msgid "English translation by Pete Batard"
 msgstr ""
 "V slovenščino prevedel <a href=\"http://matejhorvat.si/sl/\">Matej "
 "Horvat</a>"
 
-#: index.php:478
+#: index.php:561
 msgid "USB icon by"
 msgstr "Ikona USB od"
 
-#: index.php:479
+#: index.php:562
 msgid "Hosting by"
 msgstr "Gostuje"
 
-#: index.php:220
+#: index.php:300
 msgid "Change language:"
 msgstr ""
+
+#: index.php:386
+msgid "Once downloaded, the application is ready to use."
+msgstr "Aplikacija je pripravljena za uporabo takoj po prenosu."
+
+#: index.php:292
+msgid ""
+"This page uses Google services, which may serve <u>non-personalised</u> "
+"cookies for advertising, analytics and security."
+msgstr ""
+
+#: index.php:293
+msgid "See details"
+msgstr ""
+
+#: index.php:294
+msgid "OK"
+msgstr ""
+
+#~ msgid ""
+#~ "Placeholder for ads &mdash; Just like you, I wish this site could exist "
+#~ "without them..."
+#~ msgstr ""
+
+#~ msgid "rufus_en.png"
+#~ msgstr "rufus_sl.png"
+
+#, php-format
+#~ msgid ""
+#~ "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
+#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
+#~ "Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
+#~ " the creation of a Windows 7 USB installation drive from an ISO. It is also "
+#~ "marginally faster on the creation of Linux bootable USB from ISOs."
+#~ msgstr ""
+#~ "In mimogrede - Rufus je <b>hiter</b>. Je npr. enkrat hitrejši kot <a "
+#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
+#~ "Installer</a> ali <a target=\"_blank\" %s>Windows 7 USB download tool</a> "
+#~ "pri ustvarjanju USB namestitve Windows 7 iz slike ISO. Je tudi malce "
+#~ "hitrejši pri ustvarjanju zagonske naprave USB iz ISO slike Linuxa."
+
+#~ msgid "Speed comparison between Rufus and other applications"
+#~ msgstr "Primerjava hitrosti Rufusa in drugih aplikacij"
+
+#, php-format
+#~ msgid ""
+#~ "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
+#~ "platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
+#~ " 3.0 ADATA S102 flash drive</a>."
+#~ msgstr ""
+#~ "Sledeči preizkusi so bili izvedeni na Windows 7 x64 na sistemu Core 2 Duo s "
+#~ "4 GB spomina, kontrolerjem USB 3.0 in <a target=\"_blank\" %s>16 GB USB 3.0 "
+#~ "nosilcem ADATA S102</a>."

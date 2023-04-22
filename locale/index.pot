@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2023-03-25 14:26+0000\n"
+"POT-Creation-Date: 2023-04-21 17:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,55 +80,47 @@ msgid "Despite its small size, Rufus provides everything you need!"
 msgstr ""
 
 #: index.php:373
-#, php-format
-msgid ""
-"Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
-"target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on "
-"the creation of a Windows 7 USB installation drive from an ISO. It is also "
-"marginally faster on the creation of Linux bootable USB from ISOs."
-msgstr ""
-
-#: index.php:374
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
 "of this page."
 msgstr ""
 
-#: index.php:379
+#: index.php:378
 msgid "Download"
 msgstr ""
 
-#: index.php:380
+#: index.php:379
 #, php-format
 msgid "Last updated %s:"
 msgstr ""
 
 #. Abbreviation for MegaByte
-#: index.php:381 index.php:382 index.php:489
+#: index.php:380 index.php:381 index.php:489
 msgid "MB"
 msgstr ""
 
-#: index.php:382
+#: index.php:381
 msgid "Portable"
 msgstr ""
 
-#: index.php:383 index.php:384 index.php:486
+#: index.php:382 index.php:383 index.php:486
 msgid "Other versions"
 msgstr ""
 
-#: index.php:386
-msgid "Supported Languages:"
-msgstr ""
-
-#: index.php:431
+#: index.php:385
 msgid "System Requirements:"
 msgstr ""
 
-#: index.php:432
-msgid ""
-"Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
-"application is ready to use."
+#: index.php:386
+msgid "Windows 7 or later, 32 or 64 bit doesn't matter."
+msgstr ""
+
+#: index.php:386
+msgid "Once downloaded, the application is ready to use."
+msgstr ""
+
+#: index.php:387
+msgid "Supported Languages:"
 msgstr ""
 
 #: index.php:433
@@ -165,12 +157,9 @@ msgid "Notes on DOS support:"
 msgstr ""
 
 #: index.php:442
-#, php-format
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
-"attempt to select a keyboard layout according to the locale of your system. "
-"In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default "
-"selection, is recommended over MS-DOS, as it supports more keyboard layouts."
+"attempt to select a keyboard layout according to the locale of your system."
 msgstr ""
 
 #: index.php:443
@@ -189,8 +178,8 @@ msgstr ""
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
 "easy to do however, through the use of a CD burning application, such as the "
-"freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
-"target=\"_blank\" %s>CDBurnerXP</a>."
+"freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a target="
+"\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
 
 #: index.php:447
@@ -207,8 +196,8 @@ msgstr ""
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
-"target=\"_blank\" %s>send an e-mail</a>."
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target="
+"\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 
 #: index.php:451
@@ -231,9 +220,9 @@ msgstr ""
 #: index.php:453
 #, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a "
-"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
-"%s>MinGW32</a> environment."
+"Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank"
+"\" %s>public source</a>, using a <a target=\"_blank\" %s>MinGW32</a> "
+"environment."
 msgstr ""
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
@@ -249,7 +238,7 @@ msgstr ""
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
-"using:\n"
+"using:"
 msgstr ""
 
 #: index.php:492
@@ -284,9 +273,9 @@ msgstr ""
 #: index.php:500
 #, php-format
 msgid ""
-"If you really insist, you can always make a donation to the <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
-"reason software like Rufus is possible."
+"If you really insist, you can always make a donation to the <a target="
+"\"_blank\" %s>Free Software Foundation</a>, as they are the main reason "
+"software like Rufus is possible."
 msgstr ""
 
 #: index.php:501
@@ -303,32 +292,20 @@ msgid ""
 msgstr ""
 
 #: index.php:504
-msgid "Speed comparison between Rufus and other applications"
-msgstr ""
-
-#: index.php:505
-#, php-format
-msgid ""
-"The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB "
-"3.0 ADATA S102 flash drive</a>."
-msgstr ""
-
-#: index.php:532
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr ""
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:588
+#: index.php:560
 msgid "English translation by Pete Batard"
 msgstr ""
 
-#: index.php:589
+#: index.php:561
 msgid "USB icon by"
 msgstr ""
 
-#: index.php:590
+#: index.php:562
 msgid "Hosting by"
 msgstr ""

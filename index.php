@@ -370,8 +370,7 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 		<li><?= _("you want to run a low-level utility");?></li>
 	</ul>
 	<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
-	<p><? printf(_("Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs."), "href=\"http://unetbootin.sourceforge.net/\"", "href=\"http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3\"", "href=\"https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool\"");?> <a href="#ref1"><sup>(1)</sup></a><br/>
-	<?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref2"><sup>(2)</sup></a></p>
+	<p><?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref1"><sup>(1)</sup></a></p>
 	<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative\" src=\"/pics/flags/" . $lang1[2] . ".png\" srcset=\"/pics/flags/" . $lang1[2] . ".png 1x, /pics/flags/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative\" src=\"/pics/flags/" . $lang2[2] . ".png\" srcset=\"/pics/flags/" . $lang2[2] . ".png 1x, /pics/flags/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
 	<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L83\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
 	<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#editing-an-existing-translation\">here</a>.</p>";?>
@@ -383,6 +382,8 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 		<li><a href="/downloads/"><?= _("Other versions");?> (GitHub)</a></li>
 		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html"><?= _("Other versions");?> (FossHub)</a></li>
 		</ul>
+	<h4><?= _("System Requirements:");?></h4>
+	<p><?= _("Windows 7 or later, 32 or 64 bit doesn't matter.");?> <?= _("Once downloaded, the application is ready to use.");?></p>
 	<h4><?= _("Supported Languages:");?></h4>
 	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><i>Bahasa Indonesia</i></td><td><?=$comma;?>&nbsp;</td>
@@ -428,8 +429,7 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 		<td>العربية</td><td><?=$comma;?>&nbsp;</td>
 		<td>پارسی</td><td>.</td>
 	</tr></table>
-	<h4><?= _("System Requirements:");?></h4>
-	<p><?= _("Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.");?></p>
+	&nbsp;
 	<p><?= _("I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!");?></p>
 	<h2><?= _("Usage");?></h2>
 	<p><?= _("Download the executable and run it &ndash; no installation is necessary.");?></p>
@@ -439,10 +439,10 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 		<li><i>"Pete Batard - Open Source Developer"</i> <?= _("(v1.2.0 or earlier)");?></li>
 	</ul>
 	<h4><?= _("Notes on DOS support:");?></h4>
-	<p><? printf(_("If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system. In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default selection, is recommended over MS-DOS, as it supports more keyboard layouts."), "href=\"http://www.freedos.org\"");?></p>
+	<p><?= _("If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system.");?></p>
 	<h4><?= _("Notes on ISO Support:");?></h4>
 	<p><? printf(_("All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target=\"_blank\" %s>ISO image</a> (.iso)."), "href=\"http://en.wikipedia.org/wiki/ISO_image\"");?></p>
-	<p><? printf(_("Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a target=\"_blank\" %s>CDBurnerXP</a>."), "href=\"http://infrarecorder.org/\"", "href=\"http://cdburnerxp.se/\"");?></p>
+	<p><? printf(_("Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a target=\"_blank\" %s>CDBurnerXP</a>."), "href=\"http://infrarecorder.org/\"", "href=\"https://www.fosshub.com/CDBurnerXP.html\"");?></p>
 	<a name="FAQ"></a>
 	<h2><?= _("Frequently Asked Questions (FAQ)");?></h2>
 	<p><? /* You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English */ printf(_("A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."), "href=\"https://github.com/pbatard/rufus/wiki/FAQ\"");?><br/></p>
@@ -487,7 +487,7 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	</ul>
 	<h2><?= _("Source Code");?></h2>
 		<ul><li><?= /* Abbreviation for MegaByte */ "<a target=\"_blank\" href=\"https://github.com/pbatard/rufus/archive/v" . $latest_version . ".zip\">" . $app_name . "</a> <span dir=\"" . $dir . "\">(" . $src_size . " " . _("MB") . ")";?></span></li>
-		<li><? printf(_("Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:\n"), "href=\"http://git-scm.com\"");?>
+		<li><? printf(_("Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:") . "\n", "href=\"http://git-scm.com\"");?>
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li><? printf(_("For more information, see the <a target=\"_blank\" %s>GitHub project</a>."), "href=\"https://github.com/pbatard/rufus\"");?></li></ul>
 		<p><?= _("If you are a developer, you are very much encouraged to tinker with Rufus and submit patches.");?></p>
@@ -501,35 +501,7 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 		<p><?= _("At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm about this little program: it is much appreciated!");?></p>
 		<p><?= _("But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!");?></p>
 	<a name="ref1"></a>
-	<h2>(1) <?= _("Speed comparison between Rufus and other applications");?></h2>
-	<p><? printf(_("The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB 3.0 ADATA S102 flash drive</a>."), "href=\"http://www.adata-group.com/index.php?action=product_feature&cid=1&piid=145&lan=en\"");?></p>
-	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Windows 7 x64</td><td>:&nbsp;</td><td><i>en_windows_7_ultimate_with_sp1_x64_dvd_618240.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">Windows 7 USB/DVD Download Tool v1.0.30</td><td>00:08:10</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:07:10</td></tr>
-		<tr><td>UNetbootin v1.1.1.1</td><td>00:06:20</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:04:10</td></tr>
-		<tr><td>WiNToBootic v1.2</td><td>00:03:35</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:03:25</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Ubuntu 11.10 x86</td><td>:&nbsp;</td><td><i>ubuntu-11.10-desktop-i386.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>00:01:45</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td> 00:01:35</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:01:20</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:01:15</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Slackware 13.37 x86</td><td>:&nbsp;</td><td><i>slackware-13.37-install-dvd.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>01:00:00+</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:24:35</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:22:45</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:20:15</b></td></tr>
-	</table>
-	<a name="ref2"></a>
-	<h2>(2) <?= _("Non exhaustive list of ISOs Rufus is known to work with");?></h2>
+	<h2>(1) <?= _("Non exhaustive list of ISOs Rufus is known to work with");?></h2>
 	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td><?=$comma;?>&nbsp;</td>
 		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>

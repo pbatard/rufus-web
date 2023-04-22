@@ -18,40 +18,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4\n"
 
-#: index.php:91
+#: index.php:100
 msgid "Version"
 msgstr "Verzió"
 
-#: index.php:123 index.php:258
+#: index.php:132 index.php:339
 msgid "Create bootable USB drives the easy way"
 msgstr "Hozzon létre indítható USB-meghajtókat egyszerűen"
 
-#: index.php:220
+#: index.php:300
 msgid "Change language:"
 msgstr "Nyelv módosítása:"
 
-#: index.php:229
+#: index.php:309
 msgid "Want to improve this translation?"
 msgstr "Javítani szeretne a fordításon?"
 
-#: index.php:250
-msgid ""
-"Placeholder for ads &mdash; Just like you, I wish this site could exist "
-"without them..."
-msgstr ""
-"A reklámok helye &ndash; Ahogy Ön, én is azt kívánom, hogy létezhetne az "
-"oldal ezek nélkül is..."
-
-#. This is used display a screenshot of Rufus in your language (if available).
-#. Simply replace the "en" with your language (or lang_REGION, such as "pt_BR"
-#. or "zh_CN"), and I'll make sure a screenshot of Rufus in that language is
-#. displayed then. Or you can leave the string untranslated to have the
-#. English version displayed. Please make sure to keep the .png extension.
-#: index.php:260
-msgid "rufus_en.png"
-msgstr "rufus_hu.png"
-
-#: index.php:261
+#: index.php:364
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -59,11 +42,11 @@ msgstr ""
 "A Rufus egy segédprogram, amellyel indítható USB flash meghajtókat formázhat"
 " és készíthet, például USB kulcsokat/pendrive-okat, memóriakártyákat, stb."
 
-#: index.php:262
+#: index.php:365
 msgid "It can be especially useful for cases where:"
 msgstr "Különösen hasznos lehet, ha:"
 
-#: index.php:264
+#: index.php:367
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -71,39 +54,24 @@ msgstr ""
 "USB telepítési médiát készít indítható ISO-fájlokból (Windows, Linux, UEFI, "
 "stb.)"
 
-#: index.php:265
+#: index.php:368
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr ""
 "olyan rendszeren kell dolgoznia, amire nincs operációs rendszer telepítve"
 
-#: index.php:266
+#: index.php:369
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "BIOS-t vagy más firmware-t kell írnia DOS-ból"
 
-#: index.php:267
+#: index.php:370
 msgid "you want to run a low-level utility"
 msgstr "alacsony szintű segédprogramot akar futtatni"
 
-#: index.php:270
+#: index.php:372
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Kis mérete ellenére, a Rufus biztosít mindent, amire szüksége van!"
 
-#: index.php:271
-#, php-format
-msgid ""
-"Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
-"target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-"Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
-" the creation of a Windows 7 USB installation drive from an ISO. It is also "
-"marginally faster on the creation of Linux bootable USB from ISOs."
-msgstr ""
-"És a Rufus <b>gyors</b>. Például kétszer gyorsabb mint a <a "
-"target=\"_blank\" %s>UNetbootin</a>, a <a target=\"_blank\" %s>Universal USB"
-" Installer</a> vagy a <a target=\"_blank\" %s>Windows 7 USB download "
-"tool</a>, egy Windows 7 USB-s telepítőmeghajtó ISO-ból történő kiírásában. A"
-" Linux telepítő USB-k ISO-ból történő létrehozása is valamivel gyorsabb."
-
-#: index.php:272
+#: index.php:373
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
 " of this page."
@@ -111,45 +79,41 @@ msgstr ""
 "A Rufus által támogatott ISO-k nem kimerítő részletességű listája "
 "megtalálható a lap alján."
 
-#: index.php:277
+#: index.php:378
 msgid "Download"
 msgstr "Letöltés"
 
-#: index.php:278
+#: index.php:379
 #, php-format
 msgid "Last updated %s:"
 msgstr "Legutóbbi frissítés &ndash; %s:"
 
 #. Abbreviation for MegaByte
-#: index.php:279 index.php:280 index.php:381
+#: index.php:380 index.php:381 index.php:489
 msgid "MB"
 msgstr "MB"
 
-#: index.php:280
+#: index.php:381
 msgid "Portable"
 msgstr "hordozható"
 
-#: index.php:281 index.php:282 index.php:377
+#: index.php:382 index.php:383 index.php:486
 msgid "Other versions"
 msgstr "Egyéb verziók"
 
-#: index.php:284
+#: index.php:387
 msgid "Supported Languages:"
 msgstr "Támogatott nyelvek:"
 
-#: index.php:329
+#: index.php:385
 msgid "System Requirements:"
 msgstr "Rendszerkövetelmények:"
 
-#: index.php:330
-msgid ""
-"Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the "
-"application is ready to use."
-msgstr ""
-"Windows 7 vagy újabb, mindegy, hogy 32 vagy 64 bites. Letöltés után az "
-"alkalmazás használatra kész."
+#: index.php:386
+msgid "Windows 7 or later, 32 or 64 bit doesn't matter."
+msgstr "Windows 7 vagy újabb, mindegy, hogy 32 vagy 64 bites."
 
-#: index.php:331
+#: index.php:433
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -161,53 +125,47 @@ msgstr ""
 "legyen fordítva. Ha úgy látja, hogy használhatja a Rufust a saját nyelvén, "
 "akkor köszönje meg nekik!"
 
-#: index.php:332
+#: index.php:434
 msgid "Usage"
 msgstr "Használat"
 
-#: index.php:333
+#: index.php:435
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "Töltse le és futtassa &ndash; telepítés nem szükséges."
 
-#: index.php:334
+#: index.php:436
 msgid "The executable is digitally signed and the signature should state:"
 msgstr ""
 "A végrehajtható fájl digitálisan aláírt, és az aláírásának ezt kell "
 "tartalmaznia:"
 
-#: index.php:335
+#: index.php:438
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 vagy későbbi)"
 
-#: index.php:336
+#: index.php:439
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 vagy korábbi)"
 
-#: index.php:337
+#: index.php:441
 msgid "Notes on DOS support:"
 msgstr "Megjegyzések a DOS támogatáshoz:"
 
-#: index.php:338
-#, php-format
+#: index.php:442
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
-"attempt to select a keyboard layout according to the locale of your system. "
-"In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is the default "
-"selection, is recommended over MS-DOS, as it supports more keyboard layouts."
+"attempt to select a keyboard layout according to the locale of your system."
 msgstr ""
 "Ha egy DOS-os indítható meghajtót hoz létre, és nem angol (US) "
 "billentyűzetet használ, akkor a Rufus megpróbálja kiválasztani a "
-"billentyűzetkiosztást a rendszer területi beállítása alapján. Ebben az "
-"esetben a <a target=\"_blank\" %s>FreeDOS</a>, ami az alapértelmezett "
-"választás, az ajánlott az MS-DOS helyett, mert több billentyűzetkiosztást "
-"támogat."
+"billentyűzetkiosztást a rendszer területi beállítása alapján."
 
-#: index.php:339
+#: index.php:443
 msgid "Notes on ISO Support:"
 msgstr "Megjegyzések az ISO támogatáshoz:"
 
-#: index.php:340
+#: index.php:444
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
@@ -216,7 +174,7 @@ msgstr ""
 "A Rufus v1.1.0 óta az összes verzió lehetővé teszi az indítható USB-k "
 "létrehozását egy <a target=\"_blank\" %s>ISO-lemezképből</a> (.iso)."
 
-#: index.php:341
+#: index.php:445
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
@@ -229,18 +187,18 @@ msgstr ""
 "target=\"_blank\" %s>InfraRecorder-vel</a> vagy az <a target=\"_blank\" "
 "%s>CDBurnerXPnel</a>."
 
-#: index.php:343
+#: index.php:447
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Gyakran Ismételt Kérdések (GyIK)"
 
 #. You are encouraged to add the translation for " (in English)." after
 #. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:344
+#: index.php:448
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr "A Rufus GyIK <b><a target=\"_blank\" %s>ITT</a></b> érhető el."
 
-#: index.php:345
+#: index.php:449
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -251,11 +209,11 @@ msgstr ""
 "használja a GitHub <a target=\"_blank\" %s>hibakövetőt</a>. Vagy <a "
 "target=\"_blank\" %s>küldjön egy e-mailt</a>."
 
-#: index.php:347
+#: index.php:451
 msgid "License"
 msgstr "Licenc"
 
-#: index.php:348
+#: index.php:452
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
@@ -264,7 +222,7 @@ msgstr ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) 3-as verziója</a> "
 "vagy későbbi."
 
-#: index.php:348
+#: index.php:452
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you"
 " respect the GPLv3 license."
@@ -272,7 +230,7 @@ msgstr ""
 "Szabadon terjesztheti, módosíthatja és akár el is adhatja a szoftvert, "
 "amennyiben betartja a GPLv3 licencet."
 
-#: index.php:349
+#: index.php:453
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
@@ -285,15 +243,15 @@ msgstr ""
 
 #. You are encouraged to append the translation for "(in English)" after
 #. "Changelog" as it is only available in English
-#: index.php:351
+#: index.php:455
 msgid "Changelog"
 msgstr "Változásnapló"
 
-#: index.php:380
+#: index.php:488
 msgid "Source Code"
 msgstr "Forráskód"
 
-#: index.php:382
+#: index.php:490
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
@@ -302,13 +260,13 @@ msgstr ""
 "Egyébként klónozhatja a <a target=\"_blank\" %s>git</a> tárólót a következő "
 "használatával:"
 
-#: index.php:384
+#: index.php:492
 #, php-format
 msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "További információkért lásd a <a target=\"_blank\" %s>GitHub projektet</a>."
 
-#: index.php:385
+#: index.php:493
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -316,11 +274,11 @@ msgstr ""
 "Ha Ön fejlesztő, akkor feltétlenül arra bátorítjuk, hogy bütyköljön a "
 "Rufussal, és küldjön foltokat."
 
-#: index.php:387
+#: index.php:495
 msgid "Donations"
 msgstr "Adományok"
 
-#: index.php:388
+#: index.php:496
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -328,7 +286,7 @@ msgstr ""
 "Mivel ezt gyakran kérdezik tőlem, <b>nincs</b> adományozás gomb ezen az "
 "oldalon."
 
-#: index.php:389
+#: index.php:497
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -338,7 +296,7 @@ msgstr ""
 "szoftverfejlesztésben, és ami még rosszabb, lelkiismeret-furdalást kelt "
 "azokban, akik úgy döntenek, hogy nem támogatják."
 
-#: index.php:392
+#: index.php:500
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -349,7 +307,7 @@ msgstr ""
 "%s>Free Software Foundationnek</a>, mivel ők a fő okai annak, hogy "
 "lehetségesek az olyan szoftverek, mint a Rufus."
 
-#: index.php:393
+#: index.php:501
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much"
@@ -359,7 +317,7 @@ msgstr ""
 "<i><u>köszönöm</u></i> a folyamatos támogatást és lelkesedést a program "
 "iránt: nagyra értékelem!"
 
-#: index.php:394
+#: index.php:502
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -367,23 +325,7 @@ msgstr ""
 "Használja lelkiismeret-furdalás nélkül a Rufust, akkor is, ha nem támogatja "
 "anyagilag &ndash; ez sosem kötelező!"
 
-#: index.php:396
-msgid "Speed comparison between Rufus and other applications"
-msgstr "Sebességösszehasonlítás a Rufus és más alkalmazások között"
-
-#: index.php:397
-#, php-format
-msgid ""
-"The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-"platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
-" 3.0 ADATA S102 flash drive</a>."
-msgstr ""
-"A következő tesztek egy 64 bites Windows 7-et futtató, Core 2 Duo "
-"processzoros, 4 GB RAM-ot tartalmazó számítógépen voltak elvégezve, egy USB "
-"3.0-s vezérlővel és egy <a target=\"_blank\" %s>16 GB-os USB 3.0-s ADATA "
-"S102 flash meghajtóval</a>."
-
-#: index.php:422
+#: index.php:504
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "A Rufussal működő ISO-k nem kimerítő részletességű listája"
 
@@ -392,17 +334,73 @@ msgstr "A Rufussal működő ISO-k nem kimerítő részletességű listája"
 #. translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
 #. Batard</a>
-#: index.php:477
+#: index.php:560
 msgid "English translation by Pete Batard"
 msgstr ""
 "A magyar fordítást készítették: <a "
 "href=\"mailto:familyguyfan79@gmail.com?Subject=Rufus%20Homepage%20translation\">[HUN]DeadMan</a>,"
 " <a href=\"mailto:mesko.balazs@fsf.hu?Subject=Rufus\">Meskó Balázs</a>"
 
-#: index.php:478
+#: index.php:561
 msgid "USB icon by"
 msgstr "USB ikon:"
 
-#: index.php:479
+#: index.php:562
 msgid "Hosting by"
 msgstr "Tárhely:"
+
+#: index.php:386
+msgid "Once downloaded, the application is ready to use."
+msgstr "Letöltés után az alkalmazás használatra kész."
+
+#: index.php:292
+msgid ""
+"This page uses Google services, which may serve <u>non-personalised</u> "
+"cookies for advertising, analytics and security."
+msgstr ""
+
+#: index.php:293
+msgid "See details"
+msgstr ""
+
+#: index.php:294
+msgid "OK"
+msgstr ""
+
+#~ msgid ""
+#~ "Placeholder for ads &mdash; Just like you, I wish this site could exist "
+#~ "without them..."
+#~ msgstr ""
+#~ "A reklámok helye &ndash; Ahogy Ön, én is azt kívánom, hogy létezhetne az "
+#~ "oldal ezek nélkül is..."
+
+#~ msgid "rufus_en.png"
+#~ msgstr "rufus_hu.png"
+
+#, php-format
+#~ msgid ""
+#~ "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
+#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
+#~ "Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
+#~ " the creation of a Windows 7 USB installation drive from an ISO. It is also "
+#~ "marginally faster on the creation of Linux bootable USB from ISOs."
+#~ msgstr ""
+#~ "És a Rufus <b>gyors</b>. Például kétszer gyorsabb mint a <a "
+#~ "target=\"_blank\" %s>UNetbootin</a>, a <a target=\"_blank\" %s>Universal USB"
+#~ " Installer</a> vagy a <a target=\"_blank\" %s>Windows 7 USB download "
+#~ "tool</a>, egy Windows 7 USB-s telepítőmeghajtó ISO-ból történő kiírásában. A"
+#~ " Linux telepítő USB-k ISO-ból történő létrehozása is valamivel gyorsabb."
+
+#~ msgid "Speed comparison between Rufus and other applications"
+#~ msgstr "Sebességösszehasonlítás a Rufus és más alkalmazások között"
+
+#, php-format
+#~ msgid ""
+#~ "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
+#~ "platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
+#~ " 3.0 ADATA S102 flash drive</a>."
+#~ msgstr ""
+#~ "A következő tesztek egy 64 bites Windows 7-et futtató, Core 2 Duo "
+#~ "processzoros, 4 GB RAM-ot tartalmazó számítógépen voltak elvégezve, egy USB "
+#~ "3.0-s vezérlővel és egy <a target=\"_blank\" %s>16 GB-os USB 3.0-s ADATA "
+#~ "S102 flash meghajtóval</a>."

@@ -173,15 +173,15 @@ document.addEventListener("DOMContentLoaded", function(event)
 <div id="cookie-notice" style="display: none;">
   <div id="cookie-statement" class="cookie-notification">
     <div class="text">
-      <span>This page uses Google services, which may serve <u>non-personalised</u> cookies for advertising, analytics and security.</span>
-      <a href="https://policies.google.com/technologies/cookies?hl=ja_JP" target="_blank">See details</a>
+      <span>このページは Google サービスを使用しており、広告、分析、セキュリティのために<u>パーソナライズされていない</u> Cookie を提供する場合があります。</span>
+      <a href="https://policies.google.com/technologies/cookies?hl=ja_JP" target="_blank">詳細を見る</a>
       <a href="#" onclick="document.getElementById('cookie-notice').style.display = 'none'; setCookie('display_cookie_notice', 'no', 365);">OK</a>
     </div>
   </div>
   <div style="height: 15px;"></div>
 </div>
 <div id="right_column">
-<label for="lang_select">Change language:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
+<label for="lang_select">言語を変えてください：</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
   <option dir="ltr"  value="en">
   🇮🇪/🇬🇧/🇺🇸 English (International)</option>
   <option dir="ltr"  value="sq">
@@ -370,8 +370,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li>ローレベルなユーティリティを使うとき</li>
 	</ul>
 	<p>ファイルサイズは小さいですが、Rufusにはすべてが備わっています。</p>
-	<p>特筆すべきはRufusの<b>スピード</b>です。例えばRufusなら<a target="_blank" href="http://unetbootin.sourceforge.net/">UNetbootin</a>、<a target="_blank" href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3">Universal USB Installer</a>、<a target="_blank" href="https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool">Windows USB/DVD Download Tool</a>と比べ、2倍もの速度でISOからWindows７のUSBインストール ドライブを作ることができます。同様にしてLinuxのブートディスクもわずかですが速く作ることができます。 <a href="#ref1"><sup>(1)</sup></a><br/>
-	Rufus対応ISOファイルのリストはこのページの末尾にも一部記載しています。 <a href="#ref2"><sup>(2)</sup></a></p>
+	<p>Rufus対応ISOファイルのリストはこのページの末尾にも一部記載しています。 <a href="#ref1"><sup>(1)</sup></a></p>
 		<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">ダウンロード</span></h2>
 		<p><b>最新のアップデート 2023.03.25</b></p>
@@ -380,6 +379,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li><a href="/downloads/">他のバージョン (GitHub)</a></li>
 		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">他のバージョン (FossHub)</a></li>
 		</ul>
+	<h4>システム要件</h4>
+	<p>Windows 7以降の32bit・64bit版のWindows OS。 ダウンロードが完了すると、アプリケーションを使用する準備が整います。</p>
 	<h4>選択可能な言語</h4>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
@@ -425,8 +426,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<td>العربية</td><td>,&nbsp;</td>
 		<td>پارسی</td><td>.</td>
 	</tr></table>
-	<h4>システム要件</h4>
-	<p>Windows 7以降の32bit・64bit版のWindows OS</p>
+	&nbsp;
 	<p>この場を借りて、Rufusおよびこのホームページを様々な言語に翻訳してくれる翻訳者の皆様に感謝の意を表します。もし、あなたが自分の言語で翻訳されたRufusを使うことができているとしたら、それはその翻訳者のおかげです。</p>
 	<h2>利用方法</h2>
 	<p>実行ファイルをダウンロードし起動します。インストールは不要です。</p>
@@ -436,10 +436,10 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li><i>"Pete Batard - Open Source Developer"</i> （v1.2.0以前のバージョン）</li>
 	</ul>
 	<h4>DOSサポートについて</h4>
-	<p>DOS起動可能なドライブを作成する際、US配列以外のキーボードを使用するとRufusがシステムの言語に応じてキーボード レイアウトを選択します。その場合は、自動で選択される<a target="_blank" href="http://www.freedos.org">FreeDOS</a>をお薦めします。FreeDOSはMS-DOSと比べて多くのキーボード レイアウトに対応しています。</p>
+	<p>DOS起動可能なドライブを作成する際、US配列以外のキーボードを使用するとRufusがシステムの言語に応じてキーボード レイアウトを選択します。その場合は、自動で選択される<a target="_blank" %s>FreeDOS</a>をお薦めします。FreeDOSはMS-DOSと比べて多くのキーボード レイアウトに対応しています。</p>
 	<h4>ISOファイルサポートについて</h4>
 	<p>バージョン1.1.0以降のRufusでは<a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISOイメージ ファイル</a> (.iso) から起動可能なUSBドライブを作成することができます。</p>
-	<p><a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a>や<a target="_blank" href="http://cdburnerxp.se/">CDBurnerXP</a>といったCD書き込みアプリケーションの使用により、とても簡単にディスクやファイルからISOイメージを作成することができます。</p>
+	<p><a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a>や<a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>といったCD書き込みアプリケーションの使用により、とても簡単にディスクやファイルからISOイメージを作成することができます。</p>
 	<a name="FAQ"></a>
 	<h2>よくある質問 (FAQ)</h2>
 	<p>Rufusについてのよくある質問とその回答は<b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">こちら</a></b>に掲載しています。<br/></p>
@@ -468,7 +468,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 	</ul>
 	<h2>ソースコード</h2>
 		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.22.zip">Rufus 3.22</a> <span dir="ltr">(6 MB)</span></li>
-		<li>Alternatively, you can clone the <a target="_blank" href="http://git-scm.com">git</a> repository using:
+		<li>次のコマンドで<a target="_blank" href="http://git-scm.com">git</a> レポジトリをクローン (ダウンロード) することもできます。
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>詳細については、<a target="_blank" href="https://github.com/pbatard/rufus">GitHubのプロジェクトページ</a>をご参照ください。</li></ul>
 		<p>あなたが開発者であれば、ぜひRufusをさらに改善してアップデートのためのパッチを送ってください。</p>
@@ -480,35 +480,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<p>この小さなプログラムに対する日頃からの支援と熱意に対してこの場を借りて<u>感謝</u>申し上げます。</p>
 		<p>経済支援のことで罪悪感を感じたり気兼ねしたりすることなく、気軽にRufusをご利用ください。</p>
 	<a name="ref1"></a>
-	<h2>(1) Rufusと他のアプリケーションの速度比較</h2>
-	<p>以下のテストはWindows 7 64bit版、Core 2 Duo、4 GB RAM、USB 3.0コントローラーと<a target="_blank" href="http://www.adata-group.com/index.php?action=product_feature&cid=1&piid=145&lan=en">16 GB USB 3.0 ADATA S102 フラッシュドライブ</a>の環境のもと行われています。</p>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Windows 7 x64</td><td>:&nbsp;</td><td><i>en_windows_7_ultimate_with_sp1_x64_dvd_618240.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">Windows 7 USB/DVD Download Tool v1.0.30</td><td>00:08:10</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:07:10</td></tr>
-		<tr><td>UNetbootin v1.1.1.1</td><td>00:06:20</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:04:10</td></tr>
-		<tr><td>WiNToBootic v1.2</td><td>00:03:35</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:03:25</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Ubuntu 11.10 x86</td><td>:&nbsp;</td><td><i>ubuntu-11.10-desktop-i386.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>00:01:45</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td> 00:01:35</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:01:20</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:01:15</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Slackware 13.37 x86</td><td>:&nbsp;</td><td><i>slackware-13.37-install-dvd.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>01:00:00+</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:24:35</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:22:45</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:20:15</b></td></tr>
-	</table>
-	<a name="ref2"></a>
-	<h2>(2) Rufusが対応しているISOイメージ ファイル リスト (順不同、一部分のみ抜粋)</h2>
+	<h2>(1) Rufusが対応しているISOイメージ ファイル リスト (順不同、一部分のみ抜粋)</h2>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
 		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>

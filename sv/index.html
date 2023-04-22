@@ -370,8 +370,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li>du vill köra ett lågnivåverktyg</li>
 	</ul>
 	<p>Även om Rufus är ett litet program, klarar den utföra allt du behöver!</p>
-	<p>Jo, Rufus är <b>snabb</b>. Det är till exempel dubbelt så snabb som  <a target="_blank" href="http://unetbootin.sourceforge.net/">UNetbootin</a>, <a target="_blank" href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3">Universal USB Installer</a> eller <a target="_blank" href="https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool">Windows 7 USB download tool</a>, på att skapa en Windows 7 USB-installationsdisk från en ISO-fil. Det är också marginellt snabbare på att skapa Linux startbara USB-enheter från ISO-filer. <a href="#ref1"><sup>(1)</sup></a><br/>
-	En ofullständig lista över ISO-filer som Rufus fungerar ihop med finns längst ner på sidan. <a href="#ref2"><sup>(2)</sup></a></p>
+	<p>En ofullständig lista över ISO-filer som Rufus fungerar ihop med finns längst ner på sidan. <a href="#ref1"><sup>(1)</sup></a></p>
 		<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Ladda ner</span></h2>
 		<p><b>Senaste uppdateringen 2023.03.25:</b></p>
@@ -380,6 +379,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li><a href="/downloads/">Andra versioner (GitHub)</a></li>
 		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">Andra versioner (FossHub)</a></li>
 		</ul>
+	<h4>Systemkrav:</h4>
+	<p>Windows 7 eller senare, 32- eller 64-bitars spelar ingen roll. När du är klar med nerladdningen är det bara att starta programmet.</p>
 	<h4>Språkstöd:</h4>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
@@ -425,8 +426,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<td>العربية</td><td>,&nbsp;</td>
 		<td>پارسی</td><td>.</td>
 	</tr></table>
-	<h4>Systemkrav:</h4>
-	<p>Windows 7 eller senare, 32- eller 64-bitars spelar ingen roll. När du är klar med nerladdningen är det bara att starta programmet.</p>
+	&nbsp;
 	<p>Jag vill passa på att uttrycka min tacksamhet till översättarna som gjort det möjligt för Rufus och hemsidan att bli översatt till olika språk. Om du märker att du har användning av Rufus på ditt egna språk, då ska du verkligen tacka dem!</p>
 	<h2>Användning</h2>
 	<p>Ladda ner den körbara filen och kör den &ndash; du behöver inte ens installera programmet.</p>
@@ -436,10 +436,10 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 eller tidigare)</li>
 	</ul>
 	<h4>Anmärkningar om DOS-stödet:</h4>
-	<p>När du skapar en startbar DOS-disk och du inte använder en amerikansk teckenuppsättning, försöker då Rufus att välja en teckenuppsättning som motsvarar din dators regioninställningar. I så fall är <a target="_blank" href="http://www.freedos.org">FreeDOS</a> att rekommendera i stället för MS-DOS, då det har stöd för fler tangentbordsuppsättningar.</p>
+	<p>När du skapar en startbar DOS-disk och du inte använder en amerikansk teckenuppsättning, försöker då Rufus att välja en teckenuppsättning som motsvarar din dators regioninställningar.</p>
 	<h4>Anmärkningar om ISO-stödet:</h4>
 	<p>Alla versioner av Rufus sen version 1.1.0 tillåter dig att skapa en startbar USB från en <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO-avbild</a> (.iso).</p>
-	<p>Att skapa en ISO-avbild av en fysisk disk eller från en bunt filer är väldigt enkelt att göra med hjälp utav gratisprogrammen  <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> eller <a target="_blank" href="http://cdburnerxp.se/">CDBurnerXP</a>.</p>
+	<p>Att skapa en ISO-avbild av en fysisk disk eller från en bunt filer är väldigt enkelt att göra med hjälp utav gratisprogrammen  <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> eller <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
 	<a name="FAQ"></a>
 	<h2>Frequently Asked Questions (FAQ)</h2>
 	<p>En Rufus FAQ finns tillgänglig <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">HÄR</a></b>.<br/></p>
@@ -468,7 +468,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 	</ul>
 	<h2>Källkod</h2>
 		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.22.zip">Rufus 3.22</a> <span dir="ltr">(6 MB)</span></li>
-		<li>Alternatively, you can clone the <a target="_blank" href="http://git-scm.com">git</a> repository using:
+		<li>Som alternativ kan du klona <a target="_blank" href="http://git-scm.com">git</a>-förrådet med:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>För mer information, se <a target="_blank" href="https://github.com/pbatard/rufus">GitHub projekt</a>.</li></ul>
 		<p>Är du en utvecklare är du välkommen att göra egna ändringar i Rufus och skicka in dina "patchar".</p>
@@ -480,35 +480,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<p>Hur som helst, jag ska passa på att säga <i><u>tack</u></i> för ditt fortsatta stöd och entusiasm för detta lilla program, det är mycket uppskattat!</p>
 		<p>Du kan fortsätta använda Rufus helt gratis och helt utan att känna dig tvingad att donera något!</p>
 	<a name="ref1"></a>
-	<h2>(1) Jämförelse i hastigheten mellan Rufus och andra program</h2>
-	<p>Följande test utfördes på en Windows 7 x64 Core 2 duo/4 GB RAM platform, med en USB 3.0-kontroller och en <a target="_blank" href="http://www.adata-group.com/index.php?action=product_feature&cid=1&piid=145&lan=en">16 GB USB 3.0 ADATA S102-minne</a>.</p>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Windows 7 x64</td><td>:&nbsp;</td><td><i>en_windows_7_ultimate_with_sp1_x64_dvd_618240.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">Windows 7 USB/DVD Download Tool v1.0.30</td><td>00:08:10</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:07:10</td></tr>
-		<tr><td>UNetbootin v1.1.1.1</td><td>00:06:20</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:04:10</td></tr>
-		<tr><td>WiNToBootic v1.2</td><td>00:03:35</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:03:25</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Ubuntu 11.10 x86</td><td>:&nbsp;</td><td><i>ubuntu-11.10-desktop-i386.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>00:01:45</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td> 00:01:35</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:01:20</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:01:15</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Slackware 13.37 x86</td><td>:&nbsp;</td><td><i>slackware-13.37-install-dvd.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>01:00:00+</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:24:35</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:22:45</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:20:15</b></td></tr>
-	</table>
-	<a name="ref2"></a>
-	<h2>(2) Lista över fungerande ISO-filer som Rufus borde fungera med</h2>
+	<h2>(1) Lista över fungerande ISO-filer som Rufus borde fungera med</h2>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
 		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>

@@ -370,8 +370,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li>potřebujete pracovat s low-level utilitami</li>
 	</ul>
 	<p>I když Rufus zabírá jen pár kilobyte, poskytuje vše potřebné!</p>
-	<p>Rufus vyniká i rychlostí. V porovnání s <a target="_blank" href="http://unetbootin.sourceforge.net/">UNetbootin</a>, <a target="_blank" href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3">Universal USB Installer</a> či <a target="_blank" href="https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool">Windows 7 USB download tool</a> je až dvakrát rychlejší! Při tomto testování bylo použito ISO Windows 7. Při ISO souborech Linuxu je stále ještě nadprůměrný. <a href="#ref1"><sup>(1)</sup></a><br/>
-	Neúplný seznam Rufusem podporovaných ISO obrazů najdete také dole na této stránce. <a href="#ref2"><sup>(2)</sup></a></p>
+	<p>Neúplný seznam Rufusem podporovaných ISO obrazů najdete také dole na této stránce. <a href="#ref1"><sup>(1)</sup></a></p>
 		<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Stažení</span></h2>
 		<p><b>Aktuální verze z 2023.03.25:</b></p>
@@ -380,6 +379,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li><a href="/downloads/">Starší verze (GitHub)</a></li>
 		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">Starší verze (FossHub)</a></li>
 		</ul>
+	<h4>Systémové požadavky:</h4>
+	<p>U systémů Windows 7 a novějších se nezohlednuje stažená bitová verze (32 bitů X 64 bitů). Ihned po stažení je aplikace připravena k použití.</p>
 	<h4>Podporované Jazyky:</h4>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
@@ -425,8 +426,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<td>العربية</td><td>,&nbsp;</td>
 		<td>پارسی</td><td>.</td>
 	</tr></table>
-	<h4>Systémové požadavky:</h4>
-	<p>U systémů Windows 7 a novějších se nezohlednuje stažená bitová verze (32 bitů X 64 bitů). Ihned po stažení je aplikace připravena k použití.</p>
+	&nbsp;
 	<p>Využívám této příležitosti k poděkování všem překladatelům Rufuse a webových stránek. Čtete-li tento text svým mateřským jazykem, víte, komu máte poděkovat :)!</p>
 	<h2>Použití</h2>
 	<p>Pouze stáhnout a spustit &ndash; Ano, naprosto bez instalace.</p>
@@ -436,10 +436,10 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<li><i>"Pete Batard - Open Source Developer"</i> (verze 1.2.0 a starší)</li>
 	</ul>
 	<h4>Poznámky k podpoře DOS:</h4>
-	<p>Pokud vytvoříte bootovací DOS klíčenku bez US (americké) rozvržení klávesnice, Rufus vám nastaví Může se stát, že vytvoříte DOS klíčenku s jiným než americkým (US) rozvržením klávesnice. Potom vám Rufus vybere vhodné rozvržení, podle jazyku ve vašem systému. Jelikož DOS systém <a target="_blank" href="http://www.freedos.org">FreeDOS</a> podporuje širokou škálu layoutů, doporučujeme ho více než MS-DOS, kterému některá rozvržení schází.</p>
+	<p>Pokud vytvoříte bootovací DOS klíčenku bez US (americké) rozvržení klávesnice, Rufus vám nastaví Může se stát, že vytvoříte DOS klíčenku s jiným než americkým (US) rozvržením klávesnice.</p>
 	<h4>Poznámky k podpoře ISO:</h4>
 	<p>Od verze 1.1.0 Rufus podporuje tvorbu bootovacích USB z <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO obrazu</a> (.iso).</p>
-	<p>Tvorba ISO souborů z fyzického disku (CD/DVD) nebo z několika souborů je velmi snadná. Nicméně ji lépe zvládnou specializovanější aplikace, jako <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> či <a target="_blank" href="http://cdburnerxp.se/">CDBurnerXP</a>.</p>
+	<p>Tvorba ISO souborů z fyzického disku (CD/DVD) nebo z několika souborů je velmi snadná. Nicméně ji lépe zvládnou specializovanější aplikace, jako <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> či <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
 	<a name="FAQ"></a>
 	<h2>Často kladené otázky (FAQ)</h2>
 	<p>Dotazy ohledně Rufuse najdete <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">ZDE</a></b>.<br/></p>
@@ -468,7 +468,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 	</ul>
 	<h2>Zdrojový kód</h2>
 		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.22.zip">Rufus 3.22</a> <span dir="ltr">(6 MB)</span></li>
-		<li>Alternatively, you can clone the <a target="_blank" href="http://git-scm.com">git</a> repository using:
+		<li>‭V alternativním případě můžete následující řádkou naklonovat <a target="_blank" href="http://git-scm.com">git</a> repozitář:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>Pro více informací navštivte <a target="_blank" href="https://github.com/pbatard/rufus">GitHub projekt</a>.</li></ul>
 		<p>Jste-li zdatným programátorem, neváhejte Rufus otestovat přes celou délku a navrhnout jeho vylepšení.</p>
@@ -480,35 +480,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<p>Tak či tak, využiji další příležitosti poděkovat: Tentokrát vám, kteří vkládají tak velké nadšení do tak malého programu. Cením si vás!</p>
 		<p>Hlavně, prosím, neciťte se ničím proviněni - to, že nepřijímám peněžní dary je čistě mé rozhodnutí. Hodně štěstí s Rufusem!</p>
 	<a name="ref1"></a>
-	<h2>(1) Svižnost: Rufus VS další aplikace</h2>
-	<p>Testy proběhly na konfiguraci: Windows 7 x64 Core 2 duo/4GB RAM/řadič USB 3.0/<a target="_blank" href="http://www.adata-group.com/index.php?action=product_feature&cid=1&piid=145&lan=en">16 GB USB 3.0 ADATA S102 flash disk</a>.</p>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Windows 7 x64</td><td>:&nbsp;</td><td><i>en_windows_7_ultimate_with_sp1_x64_dvd_618240.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">Windows 7 USB/DVD Download Tool v1.0.30</td><td>00:08:10</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:07:10</td></tr>
-		<tr><td>UNetbootin v1.1.1.1</td><td>00:06:20</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:04:10</td></tr>
-		<tr><td>WiNToBootic v1.2</td><td>00:03:35</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:03:25</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Ubuntu 11.10 x86</td><td>:&nbsp;</td><td><i>ubuntu-11.10-desktop-i386.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>00:01:45</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td> 00:01:35</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:01:20</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:01:15</b></td></tr>
-	</table>
-	&nbsp;<br/>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr><td>&bull;&nbsp;</td><td>Slackware 13.37 x86</td><td>:&nbsp;</td><td><i>slackware-13.37-install-dvd.iso</i></td></tr></table><br/>
-	<table class="reference" style="width:70%">
-		<tr><td width="80%">UNetbootin v1.1.1.1</td><td>01:00:00+</td></tr>
-		<tr><td>Universal USB Installer v1.8.7.5</td><td>00:24:35</td></tr>
-		<tr><td>RMPrepUSB v2.1.638</td><td>00:22:45</td></tr>
-		<tr><td><b>Rufus v1.1.1</b></td><td><b>00:20:15</b></td></tr>
-	</table>
-	<a name="ref2"></a>
-	<h2>(2) Neúplný seznam ISO souborů, se kterými Rufus 100% dovede pracovat</h2>
+	<h2>(1) Neúplný seznam ISO souborů, se kterými Rufus 100% dovede pracovat</h2>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
 		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>

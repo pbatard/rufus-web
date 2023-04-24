@@ -1,0 +1,22 @@
+version = 3.22.2009
+platform_min = 6.1
+download_url = https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22.exe
+download_url_arm = https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22_arm.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22_arm64.exe
+release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
+
+\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 3.22 (2023.03.25)\b0\par\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add SHA-1 and SHA-256 x86 acceleration on CPUs that support it\par
+{\pntext\f2\'B7\tab}Add an option to disable BitLocker device encryption in the Windows User Experience dialog\par
+{\pntext\f2\'B7\tab}Add a cheat mode (Ctrl-P) to preserve the log between sessions\par
+{\pntext\f2\'B7\tab}Fix potential media creation errors by forcing the unmount of stale .wim images\par
+{\pntext\f2\'B7\tab}Fix potential access errors in ISO → ESP mode by forcing Large FAT32 formatting\par
+{\pntext\f2\'B7\tab}Fix user-specified label not being preserved on error/cancel\par
+{\pntext\f2\'B7\tab}Fix some large SSD devices being listed by default\par
+{\pntext\f2\'B7\tab}Fix processing of Rock Ridge CE fields\par
+{\pntext\f2\'B7\tab}Work around the use of Rock Ridge symbolic links for Linux firmware packages (Debian)\par
+{\pntext\f2\'B7\tab}Remove the ISO download feature on Windows 7\par
+{\pntext\f2\'B7\tab}Note: This is the last version of Rufus that can run on Windows 7\par
+
+\pard\ltrpar\sl276\slmult1\par}

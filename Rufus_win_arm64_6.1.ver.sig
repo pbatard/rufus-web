@@ -1,0 +1,1 @@
+Rufus_win_6.1.ver.sig

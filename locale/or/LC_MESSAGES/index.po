@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ଋଫସ୍ ଘରପୃଷ୍ଠା ୧.୧\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2018-10-03 18:40+0530\n"
-"PO-Revision-Date: 2018-10-07 14:31+0200\n"
+"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"PO-Revision-Date: 2023-04-24 13:57+0100\n"
 "Last-Translator: Alok Pradhan <alcon.od@gmail.com>\n"
 "Language-Team: ଓଡିଆ ଭାଷା (Od_IN) <LL@li.org>\n"
 "Language: or_IN\n"
@@ -16,381 +16,368 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:100
+#: index.php:106
 msgid "Version"
 msgstr "ସଂସରଣ"
 
-#: index.php:132 index.php:339
+#: index.php:138 index.php:350
 msgid "Create bootable USB drives the easy way"
 msgstr "ଅତି ସହଜରେ କାର୍ଯ୍ୟଶୀଳ ଇଉଏସବି ଡ୍ରାଇଭସ୍ ବନାନ୍ତୁ"
 
-#: index.php:300
+#: index.php:303
+msgid ""
+"This page uses Google services, which may serve <u>non-personalised</u> cookies for "
+"advertising, analytics and security."
+msgstr ""
+"ଏହି ପୃଷ୍ଠା Google ସେବାଗୁଡିକ ବ୍ୟବହାର କରେ, ଯାହା ବିଜ୍ଞାପନ, ବିଶ୍ଳେଷଣ ଏବଂ ନିରାପତ୍ତା ପାଇଁ <u>ଅଣ-ବ୍ୟକ୍ତିଗତ</u> କୁକିଜ୍ "
+"ପରିବେଷଣ କରିପାରେ।"
+
+#: index.php:304
+msgid "See details"
+msgstr "ଦେଖନ୍ତୁ ବିବରଣୀ"
+
+#: index.php:305
+msgid "OK"
+msgstr ""
+
+#: index.php:311
 msgid "Change language:"
 msgstr "ଭାଷା ବଦଳାନ୍ତୁ:"
 
-#: index.php:309
+#: index.php:320
 msgid "Want to improve this translation?"
 msgstr "ଏହି ଅନୁବାଦକୁ ଉନ୍ନତି କରିବା ପାଇଁ ଚାହାନ୍ତି?"
 
-#: index.php:364
+#: index.php:375
 msgid ""
-"Rufus is a utility that helps format and create bootable USB flash drives, "
-"such as USB keys/pendrives, memory sticks, etc."
+"Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/"
+"pendrives, memory sticks, etc."
 msgstr ""
-"ଋଫସ ଏକ ସରଞ୍ଜାମ ଯେଉଁଥିରେ ଆପଣ ଚିତ୍ରଣ ଓ କାର୍ଯ୍ୟଶୀଳ ଇଉଏସବି ଫ୍ଲାଶ୍ ଡ୍ରାଇଭ, ଯଥା "
-"ଇଉଏସବି ଚାବି/କଲମଡ୍ରାଇଭଗୁଡିକ, ସ୍ମରଣ ବାଡିଗୁଡିକ, ଇତ୍ୟାଦି. ବନାଇ ପାରିବେ."
+"ଋଫସ ଏକ ସରଞ୍ଜାମ ଯେଉଁଥିରେ ଆପଣ ଚିତ୍ରଣ ଓ କାର୍ଯ୍ୟଶୀଳ ଇଉଏସବି ଫ୍ଲାଶ୍ ଡ୍ରାଇଭ, ଯଥା ଇଉଏସବି ଚାବି/କଲମଡ୍ରାଇଭଗୁଡିକ, ସ୍ମରଣ "
+"ବାଡିଗୁଡିକ, ଇତ୍ୟାଦି. ବନାଇ ପାରିବେ."
 
-#: index.php:365
+#: index.php:376
 msgid "It can be especially useful for cases where:"
 msgstr "ଏହା ବିଶେଷଭାବରେ ଉପଯୁକ୍ତ ଯେଉଁଠାରେ:"
 
-#: index.php:367
+#: index.php:378
 msgid ""
-"you need to create USB installation media from bootable ISOs (Windows, "
-"Linux, UEFI, etc.)"
+"you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)"
 msgstr ""
-"ପ୍ରଥମେ ଆପଣଙ୍କୁ କାର୍ଯ୍ୟଯୋଗ୍ୟ ଆଇଏସଓଗୁଡିଜ (ୱିଣ୍ଡୋଜ, ଲିନସ୍କ, ଇଉଇଏଫଆଇ, ଇତ୍ୟାଦି.) "
-"ଇଉଏସବି ମିଡିଆଠାରେ ତିଆରି କରିବାକୁ ପଡିବ"
+"ପ୍ରଥମେ ଆପଣଙ୍କୁ କାର୍ଯ୍ୟଯୋଗ୍ୟ ଆଇଏସଓଗୁଡିଜ (ୱିଣ୍ଡୋଜ, ଲିନସ୍କ, ଇଉଇଏଫଆଇ, ଇତ୍ୟାଦି.) ଇଉଏସବି ମିଡିଆଠାରେ ତିଆରି କରିବାକୁ ପଡିବ"
 
-#: index.php:368
+#: index.php:379
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "ଆପଣଙ୍କୁ ଅଏସ୍ ନଥିବା ସିସ୍ଟମ୍ ରେ କାର୍ଯ୍ୟ କରିବାକୁ ପଡିବ"
 
-#: index.php:369
+#: index.php:380
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "ଆପଣଙ୍କୁ ବାଇଅସ୍ କିମ୍ବା ଡୋସ୍ ଠାରୁ ନକଲ୍ ବନାଇବାକୁ ପଡିବ"
 
-#: index.php:370
+#: index.php:381
 msgid "you want to run a low-level utility"
 msgstr "ଆପଣ ଛଟଧରଣ ସରଞ୍ଜାମ ଚଳାଇବାକୁ ଚାହାନ୍ତି"
 
-#: index.php:372
+#: index.php:383
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "ଋଫସର ଆକାର ଛୋଟୋ ହେଲେବି ଆପଣ ଯାହା ଚାହାନ୍ତି ତାହା ଦିଏ !"
 
-#: index.php:373
+#: index.php:384
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page."
 msgstr "ଋଫସରେ ହେଉଥିବା ଆଇଏସଓର ସୂଚୀ ତଳପୃଷ୍ଠାରେ ମଧ୍ୟ ଦିଆଯାଇଛି."
 
-#: index.php:378
+#: index.php:389
 msgid "Download"
 msgstr "ନିଜର କରନ୍ତୁ"
 
-#: index.php:379
-#, php-format
-msgid "Last updated %s:"
-msgstr "ଗତ ସମୟସୁଦ୍ଧା %s:"
+#: index.php:390
+msgid "Latest releases:"
+msgstr "ସଦ୍ୟ ମୁକ୍ତିଲାଭ:"
 
-#: index.php:381
-msgid "Portable"
-msgstr "ଚଳନ୍ତା"
+#: index.php:393
+msgid "Link"
+msgstr "ଲିଙ୍କ୍"
 
-#: index.php:382 index.php:383 index.php:486
-msgid "Other versions"
-msgstr "ଅନ୍ୟ ସଂସରଣଗୁଡିକ"
+#: index.php:394
+msgid "Type"
+msgstr "ପ୍ରକାର[ସମ୍ପାଦନା]"
 
-#: index.php:387
-msgid "Supported Languages:"
-msgstr "ଅନ୍ୟ ଭାଷାସବୁ:"
+#: index.php:395
+msgid "Platform"
+msgstr "ପ୍ଲାଟଫର୍ମ"
 
-#: index.php:385
-msgid "System Requirements:"
-msgstr "ସିସ୍ଟମ୍ ଆବଶ୍ୟକତା:"
+#: index.php:396
+msgid "Size"
+msgstr "ଆକାର[ସମ୍ପାଦନା]"
 
-#: index.php:386
-msgid "Windows 7 or later, 32 or 64 bit doesn't matter."
-msgstr "ୱିଣ୍ଡୋଜ ୭ କିମ୍ବା ପର, ୩୨ କିମ୍ବା ୬୪ ବିଟ୍ କିଛି ମାନେ କରେନି."
+#: index.php:397
+msgid "Date"
+msgstr "ତାରିଖ"
 
-#: index.php:433
-msgid ""
-"I will take this opportunity to express my gratitude to the translators who "
-"made it possible for Rufus, as well as this webpage, to be translated in "
-"various languages. If you find that you can use Rufus in your own language, "
-"you should really thank them!"
-msgstr ""
-"ମୁଁ ହୃଦୟସହ ସମସ୍ତ ଋଫସ ଅନୁବାଦକଙ୍କୁ ଧନ୍ୟବାଦ ଜଣାଇବା ପାଇଁ ଚାହେଁ ଓ ଏହି ଗୃହପୃଷ୍ଠାର "
-"ଅନୁବାଦ ଅନ୍ୟ ଭାଷାରେ ମଧ୍ୟ ହେବା ଆବଶ୍ୟକ ମନେ କରୁଛି. ଯଦି ଋଫସ ଆପଣ ନିଜ ଭାଷାରେ "
-"ବ୍ୟବହାର କରିପାରୁଛନ୍ତି ତେବେ ସେମାନଙ୍କୁ ଧନ୍ୟବାଦ ଜଣାନ୍ତୁ!"
-
-#: index.php:434
-msgid "Usage"
-msgstr "ବ୍ୟବହାରିତା"
-
-#: index.php:435
-msgid ""
-"Download the executable and run it &ndash; no installation is necessary."
-msgstr "ନିଜର କରିଥିବା ଚଳନୀୟଟିକୁ ଚଲାନ୍ତୁ &ndash; ଇନଷ୍ଟାଲେସନ୍ ଅନାବଶ୍ୟକ."
-
-#: index.php:436
-msgid "The executable is digitally signed and the signature should state:"
-msgstr "ଚଳନୀୟଟି ଡିଜିଟାଲ ସ୍ଵାକ୍ଷରିତ ଓ ସ୍ଵାକ୍ଷରଟି କହେ ଯେ:"
-
-#: index.php:438
-msgid "(v1.3.0 or later)"
-msgstr "(ସଂ୧.୩.୦ କିମ୍ବା ପର)"
-
-#: index.php:439
-msgid "(v1.2.0 or earlier)"
-msgstr "(ସଂ୧.୨.୦ କିମ୍ବା ପର)"
-
-#: index.php:441
-msgid "Notes on DOS support:"
-msgstr "ଡୋସ୍ ସାହାର୍ଯ୍ୟ ପାଇଁ ଟିପ୍ପଣୀ:"
-
-#: index.php:442
-msgid ""
-"If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
-"attempt to select a keyboard layout according to the locale of your system."
-msgstr ""
-"ଯଦି ଆପଣ ଡୋସ୍ କାର୍ଯ୍ୟଶୀଳ ଡ୍ରାଇଭ ବନାନ୍ତି ତେବେ ଅଣଆମେରିକୀୟ କୀବୋର୍ଡ ବ୍ୟବହାର "
-"କରନ୍ତୁ, ଋଫସ୍ ଆପଣଙ୍କ ସିସ୍ଟମ୍ କୀବୋର୍ଡ ଚୟନ କରିବ."
-
-#: index.php:443
-msgid "Notes on ISO Support:"
-msgstr "ଆଇଏସଓ:"
-
-#: index.php:444
-#, php-format
-msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
-msgstr ""
-"ସଂ୧.୧.୦ ଠାରୁ ସବୁ ଋଫସ ସଂସରଣ ଆପଣଙ୍କୁ <a target=\"_blank\" %s>ଆଇଏସଓ ଛବିଋ</a> "
-"(.iso)."
-
-#: index.php:445
-#, php-format
-msgid ""
-"Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
-"target=\"_blank\" %s>CDBurnerXP</a>."
-msgstr ""
-"ଫିଜିକଲ୍ ଡ଼ିସ୍କରୁ ଅଥବା ବିଭିନ୍ନ ଫାଇଲ୍ ଠାରୁ ଆଇଏସଓ ବନାଇବା ଏଥିରେ ଅତି ସହଜ କିନ୍ତୁ <a"
-" target=\"_blank\" %s>InfraRecorder</a> କିମ୍ବା <a target=\"_blank\" "
-"%s>CDBurnerXP</a> ଆବଶ୍ୟକ."
-
-#: index.php:447
-msgid "Frequently Asked Questions (FAQ)"
-msgstr "ସର୍ବଦା ପଚରା ଯାଉଥିବା ପ୍ରଶ୍ନ"
-
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:448
-#, php-format
-msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
-msgstr ""
-"ଋଫସ ପାଇଁ ସର୍ବଦା ପଚରା ଯାଉଥିବା ପ୍ରଶ୍ନ <b><a target=\"_blank\" %s>ଏଠାରେ "
-"(ଇଂରାଜୀ)</a></b>."
-
-#: index.php:449
-#, php-format
-msgid ""
-"To provide feedback, report a bug or request an enhancement, please use the "
-"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
-"target=\"_blank\" %s>send an e-mail</a>."
-msgstr ""
-"ମନ୍ତର୍ବ୍ୟ, ବଗ୍ କିମ୍ବା ଉନ୍ନତି ପାଇଁ, ଦୟାକରି ଗିଟହବ <a target=\"_blank\" %s>ଇସୂ "
-"ଟ୍ରେଟ୍କ୍କର</a> ବ୍ୟବହାର କରନ୍ତୁ. କିମ୍ବା ଆପଣ <a target=\"_blank\" %s>ସନ୍ଦେଶ "
-"ପଠାନ୍ତୁ</a>."
-
-#: index.php:451
-msgid "License"
-msgstr "ଲାଇସେନ୍ସ"
-
-#: index.php:452
-#, php-format
-msgid ""
-"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
-"later."
-msgstr ""
-"<a target=\"_blank\" %s>ଜିଏନ୍ ୟୂ ଜେନେରଲ୍ ପବ୍ଲିକ ଲାଇସେନ୍ସ (ଜିପିଲ୍) ସଂସରଣ "
-"୩</a> କିମ୍ବା ପର."
-
-#: index.php:452
-msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
-msgstr ""
-"ଆପଣ ଜିପିଏଲସଂ୩ ଲାଇସେନ୍ସରେ ବର୍ଣିତ ସର୍ତାବଳିକୁ ଦୃଷ୍ଟିରେ ରଖି ଏହାକୁ ବିନାମୂଲ୍ୟରେ "
-"ବାଣ୍ଟିପାରିବେ, ବଦଳାଇ ପାରିବେ କିମ୍ବା ସରଞ୍ଜାମଟିକୁ ବିକ୍ରୟ ବି କରିପାରିବେ."
-
-#: index.php:453
-#, php-format
-msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a "
-"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
-"%s>MinGW32</a> environment."
-msgstr ""
-"ଋଫସ ସହେ ଶତକ ପରିଷ୍କାରରୂପେ କରାଯାଇଛି, <a target=\"_blank\" %s>ଏହା ଲୋକଙ୍କପାଇଁ "
-"ଉଦ୍ଧିଷ୍ଟ</a>, <a target=\"_blank\" %s>MinGW32</a> ଜଗତରେ ଏହାର ସୃଷ୍ଟି."
-
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
-#: index.php:455
-msgid "Changelog"
-msgstr "ଲଗ୍ ପରିବର୍ତନ"
-
-#: index.php:488
-msgid "Source Code"
-msgstr "ମୂଳ କୋଡ୍"
+#: index.php:401 index.php:415 index.php:422
+msgid "Standard"
+msgstr "ମାନକ[ସମ୍ପାଦନା]"
 
 #. Abbreviation for MegaByte
-#: index.php:380 index.php:381 index.php:489
+#: index.php:403 index.php:410 index.php:417 index.php:424 index.php:432 index.php:543
 msgid "MB"
 msgstr "ଏମବି"
 
-#: index.php:490
-#, php-format
-msgid ""
-"Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
-"using:"
+#: index.php:408
+msgid "Portable"
+msgstr "ଚଳନ୍ତା"
+
+#: index.php:430
+msgid "BETA"
 msgstr ""
-"ଆପଣ ଏହାର ସମ୍ପୂର୍ଣ ଅବିକଳ <a target=\"_blank\" %s>git</a> ମାଧ୍ୟମରେ ବି "
-"କରିପାରିବେ:"
+
+#: index.php:437 index.php:438 index.php:540
+msgid "Other versions"
+msgstr "ଅନ୍ୟ ସଂସରଣଗୁଡିକ"
+
+#: index.php:439
+msgid "System Requirements:"
+msgstr "ସିସ୍ଟମ୍ ଆବଶ୍ୟକତା:"
+
+#: index.php:440
+msgid "Windows 8 or later."
+msgstr "ୱିଣ୍ଡୋଜ ୭ କିମ୍ବା ପର, ୩୨ କିମ୍ବା ୬୪ ବିଟ୍ କିଛି ମାନେ କରେନି."
+
+#: index.php:440
+msgid "Once downloaded, the application is ready to use."
+msgstr "ଯେତେବେଳେ ଆପଣ ନିଜର କରିନିଅନ୍ତି ସେତେବେଳଠୁ କାର୍ଯ୍ୟ ପାଇଁ ଏହା ପ୍ରସ୍ତୁତ."
+
+#: index.php:441
+msgid "Supported Languages:"
+msgstr "ଅନ୍ୟ ଭାଷାସବୁ:"
+
+#: index.php:487
+msgid ""
+"I will take this opportunity to express my gratitude to the translators who made it possible "
+"for Rufus, as well as this webpage, to be translated in various languages. If you find that "
+"you can use Rufus in your own language, you should really thank them!"
+msgstr ""
+"ମୁଁ ହୃଦୟସହ ସମସ୍ତ ଋଫସ ଅନୁବାଦକଙ୍କୁ ଧନ୍ୟବାଦ ଜଣାଇବା ପାଇଁ ଚାହେଁ ଓ ଏହି ଗୃହପୃଷ୍ଠାର ଅନୁବାଦ ଅନ୍ୟ ଭାଷାରେ ମଧ୍ୟ ହେବା ଆବଶ୍ୟକ "
+"ମନେ କରୁଛି. ଯଦି ଋଫସ ଆପଣ ନିଜ ଭାଷାରେ ବ୍ୟବହାର କରିପାରୁଛନ୍ତି ତେବେ ସେମାନଙ୍କୁ ଧନ୍ୟବାଦ ଜଣାନ୍ତୁ!"
+
+#: index.php:488
+msgid "Usage"
+msgstr "ବ୍ୟବହାରିତା"
+
+#: index.php:489
+msgid "Download the executable and run it &ndash; no installation is necessary."
+msgstr "ନିଜର କରିଥିବା ଚଳନୀୟଟିକୁ ଚଲାନ୍ତୁ &ndash; ଇନଷ୍ଟାଲେସନ୍ ଅନାବଶ୍ୟକ."
+
+#: index.php:490
+msgid "The executable is digitally signed and the signature should state:"
+msgstr "ଚଳନୀୟଟି ଡିଜିଟାଲ ସ୍ଵାକ୍ଷରିତ ଓ ସ୍ଵାକ୍ଷରଟି କହେ ଯେ:"
 
 #: index.php:492
+msgid "(v1.3.0 or later)"
+msgstr "(ସଂ୧.୩.୦ କିମ୍ବା ପର)"
+
+#: index.php:493
+msgid "(v1.2.0 or earlier)"
+msgstr "(ସଂ୧.୨.୦ କିମ୍ବା ପର)"
+
+#: index.php:495
+msgid "Notes on DOS support:"
+msgstr "ଡୋସ୍ ସାହାର୍ଯ୍ୟ ପାଇଁ ଟିପ୍ପଣୀ:"
+
+#: index.php:496
+msgid ""
+"If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a "
+"keyboard layout according to the locale of your system."
+msgstr ""
+"ଯଦି ଆପଣ ଡୋସ୍ କାର୍ଯ୍ୟଶୀଳ ଡ୍ରାଇଭ ବନାନ୍ତି ତେବେ ଅଣଆମେରିକୀୟ କୀବୋର୍ଡ ବ୍ୟବହାର କରନ୍ତୁ, ଋଫସ୍ ଆପଣଙ୍କ ସିସ୍ଟମ୍ କୀବୋର୍ଡ ଚୟନ "
+"କରିବ."
+
+#: index.php:497
+msgid "Notes on ISO Support:"
+msgstr "ଆଇଏସଓ:"
+
+#: index.php:498
+#, php-format
+msgid ""
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a "
+"target=\"_blank\" %s>ISO image</a> (.iso)."
+msgstr "ସଂ୧.୧.୦ ଠାରୁ ସବୁ ଋଫସ ସଂସରଣ ଆପଣଙ୍କୁ <a target=\"_blank\" %s>ଆଇଏସଓ ଛବିଋ</a> (.iso)."
+
+#: index.php:499
+#, php-format
+msgid ""
+"Creating an ISO image from a physical disc or from a set of files is very easy to do however, "
+"through the use of a CD burning application, such as the freely available <a "
+"target=\"_blank\" %s>InfraRecorder</a> or <a target=\"_blank\" %s>CDBurnerXP</a>."
+msgstr ""
+"ଫିଜିକଲ୍ ଡ଼ିସ୍କରୁ ଅଥବା ବିଭିନ୍ନ ଫାଇଲ୍ ଠାରୁ ଆଇଏସଓ ବନାଇବା ଏଥିରେ ଅତି ସହଜ କିନ୍ତୁ <a target=\"_blank\" "
+"%s>InfraRecorder</a> କିମ୍ବା <a target=\"_blank\" %s>CDBurnerXP</a> ଆବଶ୍ୟକ."
+
+#: index.php:501
+msgid "Frequently Asked Questions (FAQ)"
+msgstr "ସର୍ବଦା ପଚରା ଯାଉଥିବା ପ୍ରଶ୍ନ"
+
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:502
+#, php-format
+msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+msgstr "ଋଫସ ପାଇଁ ସର୍ବଦା ପଚରା ଯାଉଥିବା ପ୍ରଶ୍ନ <b><a target=\"_blank\" %s>ଏଠାରେ (ଇଂରାଜୀ)</a></b>."
+
+#: index.php:503
+#, php-format
+msgid ""
+"To provide feedback, report a bug or request an enhancement, please use the GitHub <a "
+"target=\"_blank\" %s>issue tracker</a>. Or you can <a target=\"_blank\" %s>send an e-mail</a>."
+msgstr ""
+"ମନ୍ତର୍ବ୍ୟ, ବଗ୍ କିମ୍ବା ଉନ୍ନତି ପାଇଁ, ଦୟାକରି ଗିଟହବ <a target=\"_blank\" %s>ଇସୂ ଟ୍ରେଟ୍କ୍କର</a> ବ୍ୟବହାର କରନ୍ତୁ. କିମ୍ବା "
+"ଆପଣ <a target=\"_blank\" %s>ସନ୍ଦେଶ ପଠାନ୍ତୁ</a>."
+
+#: index.php:505
+msgid "License"
+msgstr "ଲାଇସେନ୍ସ"
+
+#: index.php:506
+#, php-format
+msgid "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."
+msgstr "<a target=\"_blank\" %s>ଜିଏନ୍ ୟୂ ଜେନେରଲ୍ ପବ୍ଲିକ ଲାଇସେନ୍ସ (ଜିପିଲ୍) ସଂସରଣ ୩</a> କିମ୍ବା ପର."
+
+#: index.php:506
+msgid ""
+"You are free to distribute, modify or even sell the software, insofar as you respect the "
+"GPLv3 license."
+msgstr ""
+"ଆପଣ ଜିପିଏଲସଂ୩ ଲାଇସେନ୍ସରେ ବର୍ଣିତ ସର୍ତାବଳିକୁ ଦୃଷ୍ଟିରେ ରଖି ଏହାକୁ ବିନାମୂଲ୍ୟରେ ବାଣ୍ଟିପାରିବେ, ବଦଳାଇ ପାରିବେ କିମ୍ବା "
+"ସରଞ୍ଜାମଟିକୁ ବିକ୍ରୟ ବି କରିପାରିବେ."
+
+#: index.php:507
+#, php-format
+msgid ""
+"Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" %s>public "
+"source</a>, using a <a target=\"_blank\" %s>MinGW32</a> environment."
+msgstr ""
+"ଋଫସ ସହେ ଶତକ ପରିଷ୍କାରରୂପେ କରାଯାଇଛି, <a target=\"_blank\" %s>ଏହା ଲୋକଙ୍କପାଇଁ ଉଦ୍ଧିଷ୍ଟ</a>, <a "
+"target=\"_blank\" %s>MinGW32</a> ଜଗତରେ ଏହାର ସୃଷ୍ଟି."
+
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:509
+msgid "Changelog"
+msgstr "ଲଗ୍ ପରିବର୍ତନ"
+
+#: index.php:542
+msgid "Source Code"
+msgstr "ମୂଳ କୋଡ୍"
+
+#: index.php:544
+#, php-format
+msgid "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"
+msgstr "ଆପଣ ଏହାର ସମ୍ପୂର୍ଣ ଅବିକଳ <a target=\"_blank\" %s>git</a> ମାଧ୍ୟମରେ ବି କରିପାରିବେ:"
+
+#: index.php:546
 #, php-format
 msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr "ଅଧିକ ଜାଣିବା ପାଇଁ <a target=\"_blank\" %s>ଗିଟହବ ପ୍ରଜେକ୍ଟ</a> ଦେଖନ୍ତୁ."
 
-#: index.php:493
+#: index.php:547
 msgid ""
-"If you are a developer, you are very much encouraged to tinker with Rufus "
-"and submit patches."
-msgstr ""
-"ଯଦି ଆପଣ ଜଣେ ଡେଭେଲପର, ଆପଣ ସର୍ବଦା ଋଫସ ସହ ସମୟ ବିତାଇ ପାରିବେ ଓ ପାଚ ବି ପଠାଇ "
-"ପାରିବେ."
+"If you are a developer, you are very much encouraged to tinker with Rufus and submit patches."
+msgstr "ଯଦି ଆପଣ ଜଣେ ଡେଭେଲପର, ଆପଣ ସର୍ବଦା ଋଫସ ସହ ସମୟ ବିତାଇ ପାରିବେ ଓ ପାଚ ବି ପଠାଇ ପାରିବେ."
 
-#: index.php:495
+#: index.php:549
 msgid "Donations"
 msgstr "ଦାନ"
 
-#: index.php:496
+#: index.php:550
 msgid ""
-"Since I'm getting asked about this on regular basis, there is <b>no</b> "
-"donation button on this page."
-msgstr ""
-"ଯେହେତୁ ସର୍ବଦା ସମସ୍ତେ ମୋତେ ପଚାରନ୍ତି, ମୁଁ ଜଣାଇବାକୁ ଚାହେଁ ଏହି ପୃଷ୍ଠାରେ ଦାନ ବଟନ "
-"<b>ନାହି</b>."
+"Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on "
+"this page."
+msgstr "ଯେହେତୁ ସର୍ବଦା ସମସ୍ତେ ମୋତେ ପଚାରନ୍ତି, ମୁଁ ଜଣାଇବାକୁ ଚାହେଁ ଏହି ପୃଷ୍ଠାରେ ଦାନ ବଟନ <b>ନାହି</b>."
 
-#: index.php:497
+#: index.php:551
 msgid ""
-"The main reason is that I feel that the donation system doesn't actually "
-"help software development and worse, can be guilt-inducing for users who "
-"choose not to donate."
+"The main reason is that I feel that the donation system doesn't actually help software "
+"development and worse, can be guilt-inducing for users who choose not to donate."
 msgstr ""
-"ମୁଁ ଭାବେ, ଦାନଶୈଳୀ କେବେବି ସଫ୍ଟୱେର ଗଠନରେ ସାହାର୍ଯ୍ୟ କରେନୀ ଓଲଟି ଖରାପ କରେ। "
-"ଯେଉଁମାନେ ଦାନକରିବାକୁ ଚାହାନ୍ତିନୀ ସେମାନେ ନିଜକୁ ବହୁତ କୋଷନ୍ତି."
+"ମୁଁ ଭାବେ, ଦାନଶୈଳୀ କେବେବି ସଫ୍ଟୱେର ଗଠନରେ ସାହାର୍ଯ୍ୟ କରେନୀ ଓଲଟି ଖରାପ କରେ। ଯେଉଁମାନେ ଦାନକରିବାକୁ ଚାହାନ୍ତିନୀ "
+"ସେମାନେ ନିଜକୁ ବହୁତ କୋଷନ୍ତି."
 
-#: index.php:500
+#: index.php:554
 #, php-format
 msgid ""
-"If you really insist, you can always make a donation to the <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
-"reason software like Rufus is possible."
+"If you really insist, you can always make a donation to the <a target=\"_blank\" %s>Free "
+"Software Foundation</a>, as they are the main reason software like Rufus is possible."
 msgstr ""
-"ଯଦି ଆପଣ ସ୍ଵେଚ୍ଛାଭାବେ ଦାନ କରିବାକୁ ଚାହାନ୍ତି ତେବେ ସର୍ବଦା <a target=\"_blank\" "
-"%s>ଫ୍ରୀ ସଫ୍ଟୱେର ଫାଉନ୍ଡ଼େସନ</a>, ପକ୍ଷରେ ଦିଅନ୍ତୁ, କାରଣ ସେମାନଙ୍କ ପାଇଁ ହି ଋଫସ "
-"ସମ୍ଭବ ହୋଇପାରିଛି."
+"ଯଦି ଆପଣ ସ୍ଵେଚ୍ଛାଭାବେ ଦାନ କରିବାକୁ ଚାହାନ୍ତି ତେବେ ସର୍ବଦା <a target=\"_blank\" %s>ଫ୍ରୀ ସଫ୍ଟୱେର ଫାଉନ୍ଡ଼େସନ</"
+"a>, ପକ୍ଷରେ ଦିଅନ୍ତୁ, କାରଣ ସେମାନଙ୍କ ପାଇଁ ହି ଋଫସ ସମ୍ଭବ ହୋଇପାରିଛି."
 
-#: index.php:501
+#: index.php:555
 msgid ""
-"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
+"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing "
+"support and enthusiasm about this little program: it is much appreciated!"
 msgstr ""
-"ମୁଁ ଏହି ସୁଯୋଗନେଇ କହିବାକୁ ଚାହେଁ, ଏହି ଛୋଟିଆ ସରଞ୍ଜାମ ପାଇଁ ଆପଣଙ୍କର ଅହରହ ସପକ୍ଷ ଓ "
-"ଭଲପାଇବା ଯୋଗୁଁ <i><u> ଆପଣଙ୍କୁ ଧନ୍ୟବାଦ </u></i>: ବହୁତ କୃତଞ୍ଜତା!"
+"ମୁଁ ଏହି ସୁଯୋଗନେଇ କହିବାକୁ ଚାହେଁ, ଏହି ଛୋଟିଆ ସରଞ୍ଜାମ ପାଇଁ ଆପଣଙ୍କର ଅହରହ ସପକ୍ଷ ଓ ଭଲପାଇବା ଯୋଗୁଁ <i><u> ଆପଣଙ୍କୁ "
+"ଧନ୍ୟବାଦ </u></i>: ବହୁତ କୃତଞ୍ଜତା!"
 
-#: index.php:502
+#: index.php:556
 msgid ""
-"But please continue to feel free to use Rufus without any guilt about not "
-"contributing for it financially &ndash; you should never have to!"
+"But please continue to feel free to use Rufus without any guilt about not contributing for it "
+"financially &ndash; you should never have to!"
 msgstr ""
-"ଦୟାକରି ଆପଣ ମୁକ୍ତଭାବ ମନରେ ଋଫସ ଉପଯୋଗ କରନ୍ତୁ ଓ ଆପଣ ଆର୍ଥିକରୂପେ ସାହାର୍ଯ୍ୟ "
-"କରିନାହାନ୍ତି ବୋଲି କେବେବି ନିଜକୁ ଖରାପ ମନେ କରିବେନି &ndash; ଆପଣଙ୍କୁ କେବେବି ସେପରି "
-"କରିବାକୁ ପଡିବନି!"
+"ଦୟାକରି ଆପଣ ମୁକ୍ତଭାବ ମନରେ ଋଫସ ଉପଯୋଗ କରନ୍ତୁ ଓ ଆପଣ ଆର୍ଥିକରୂପେ ସାହାର୍ଯ୍ୟ କରିନାହାନ୍ତି ବୋଲି କେବେବି ନିଜକୁ ଖରାପ ମନେ "
+"କରିବେନି &ndash; ଆପଣଙ୍କୁ କେବେବି ସେପରି କରିବାକୁ ପଡିବନି!"
 
-#: index.php:504
+#: index.php:558
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "ଋଫସରେ ହେଉଥିବା ଆଇଏସଓ ସୂଚୀ"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
-#: index.php:560
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
+#: index.php:614
 msgid "English translation by Pete Batard"
 msgstr ""
-"ଏହା ଆଲୋକ ପ୍ରଧାନଙ୍କ ଦ୍ଵାରା ଓଡିଆରେ ଅନୁବାଦ <a href= "
-"\"mailto:alcon.od@gmail.com?Subject=Rufus%20Homepage%20translation\">Alok "
-"Pradhan, Odia (India)</a>"
+"ଏହା ଆଲୋକ ପ୍ରଧାନଙ୍କ ଦ୍ଵାରା ଓଡିଆରେ ଅନୁବାଦ <a href= \"mailto:alcon.od@gmail.com?"
+"Subject=Rufus%20Homepage%20translation\">Alok Pradhan, Odia (India)</a>"
 
-#: index.php:561
+#: index.php:615
 msgid "USB icon by"
 msgstr "ଇଉଏସବି ଛବି"
 
-#: index.php:562
+#: index.php:616
 msgid "Hosting by"
 msgstr "ଅନୁଗ୍ରହଠାରୁ"
 
-#: index.php:386
-msgid "Once downloaded, the application is ready to use."
-msgstr "ଯେତେବେଳେ ଆପଣ ନିଜର କରିନିଅନ୍ତି ସେତେବେଳଠୁ କାର୍ଯ୍ୟ ପାଇଁ ଏହା ପ୍ରସ୍ତୁତ."
-
-#: index.php:292
-msgid ""
-"This page uses Google services, which may serve <u>non-personalised</u> "
-"cookies for advertising, analytics and security."
-msgstr ""
-
-#: index.php:293
-msgid "See details"
-msgstr ""
-
-#: index.php:294
-msgid "OK"
-msgstr ""
+#, php-format
+#~ msgid "Last updated %s:"
+#~ msgstr "ଗତ ସମୟସୁଦ୍ଧା %s:"
 
 #~ msgid ""
-#~ "Placeholder for ads &mdash; Just like you, I wish this site could exist "
-#~ "without them..."
-#~ msgstr ""
-#~ "ପ୍ରଚାର ପାଇଁ ଜାଗା &mdash; ଅପଙ୍କପରି ମୁଁ ମଧ୍ୟ ଆଶାବାଦୀ ଯେ ଏହି ସାଇଟ୍ ତାଙ୍କ ବିନା "
-#~ "ଥିଲେ ଭଲ ହୋଇଥାନ୍ତା..."
-
-#~ msgid "rufus_en.png"
-#~ msgstr ""
+#~ "Placeholder for ads &mdash; Just like you, I wish this site could exist without them..."
+#~ msgstr "ପ୍ରଚାର ପାଇଁ ଜାଗା &mdash; ଅପଙ୍କପରି ମୁଁ ମଧ୍ୟ ଆଶାବାଦୀ ଯେ ଏହି ସାଇଟ୍ ତାଙ୍କ ବିନା ଥିଲେ ଭଲ ହୋଇଥାନ୍ତା..."
 
 #, php-format
 #~ msgid ""
 #~ "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
-#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-#~ "Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
-#~ " the creation of a Windows 7 USB installation drive from an ISO. It is also "
-#~ "marginally faster on the creation of Linux bootable USB from ISOs."
+#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> "
+#~ "or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on the creation of a Windows 7 "
+#~ "USB installation drive from an ISO. It is also marginally faster on the creation of Linux "
+#~ "bootable USB from ISOs."
 #~ msgstr ""
-#~ "ହଁ, ଋଫସ ବହୁତ <b>ଶୀଘ୍ର</b>. ଯେମିତି ଏହା ଆଇଏସଓ ଠାରୁ ୱିନ୍ଡୋଜ ୭ ଇଉଏସବି ତିଆରି "
-#~ "କରିବାରେ <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" "
-#~ "%s>Universal USB Installer</a> କିମ୍ବା <a target=\"_blank\" %s>Windows 7 USB "
-#~ "download tool</a>, ଠାରୁ ଦୁଇଗୁଣା ଶୀଘ୍ର."
+#~ "ହଁ, ଋଫସ ବହୁତ <b>ଶୀଘ୍ର</b>. ଯେମିତି ଏହା ଆଇଏସଓ ଠାରୁ ୱିନ୍ଡୋଜ ୭ ଇଉଏସବି ତିଆରି କରିବାରେ <a target=\"_blank\" "
+#~ "%s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB Installer</a> କିମ୍ବା <a "
+#~ "target=\"_blank\" %s>Windows 7 USB download tool</a>, ଠାରୁ ଦୁଇଗୁଣା ଶୀଘ୍ର."
 
 #~ msgid "Speed comparison between Rufus and other applications"
 #~ msgstr "ବେଗ ନିରୂପଣ, ଋଫସ ଓ ଅନ୍ୟ ସରଞ୍ଜାମ"
 
 #, php-format
 #~ msgid ""
-#~ "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-#~ "platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
-#~ " 3.0 ADATA S102 flash drive</a>."
+#~ "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM platform, with "
+#~ "an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB 3.0 ADATA S102 flash drive</"
+#~ "a>."
 #~ msgstr ""
-#~ "ତଳବର୍ଣିତ ପରୀକ୍ଷାଗୁଡିକ ୱିଣ୍ଡୋଜ ୭ କ୍ଷ x୬୪ କୋର ୨ ଡୂଓ/୪ ଜିବି ରାମ ପ୍ଳାଟଫର୍ମ "
-#~ "କ୍ଷେତ୍ରରେ ଇଉଏସବି ୩.୦ ନିୟନ୍ତ୍ରିତ ଥିବା a <a target=\"_blank\" %s>୧୬ ଇଉଏସବି ୩.୦"
-#~ " ଏଡେଟା ଏସ୧୦୨ ଫ୍ଲାଶ ଡ୍ରାଇଭରେ କରାଯାଇଛି</a>."
+#~ "ତଳବର୍ଣିତ ପରୀକ୍ଷାଗୁଡିକ ୱିଣ୍ଡୋଜ ୭ କ୍ଷ x୬୪ କୋର ୨ ଡୂଓ/୪ ଜିବି ରାମ ପ୍ଳାଟଫର୍ମ କ୍ଷେତ୍ରରେ ଇଉଏସବି ୩.୦ ନିୟନ୍ତ୍ରିତ ଥିବା a "
+#~ "<a target=\"_blank\" %s>୧୬ ଇଉଏସବି ୩.୦ ଏଡେଟା ଏସ୧୦୨ ଫ୍ଲାଶ ଡ୍ରାଇଭରେ କରାଯାଇଛି</a>."

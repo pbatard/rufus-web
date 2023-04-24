@@ -23,50 +23,24 @@ def main():
         print("Processing '" + filename + "'...")
         po = polib.pofile(filename)
 
-        entry = po.find("Windows 7 or later, 32 or 64 bit doesn't matter. Once downloaded, the application is ready to use.")
+        entry = po.find("Windows 7 or later, 32 or 64 bit doesn't matter.")
         if entry:
-          entry.msgid = "Windows 7 or later, 32 or 64 bit doesn't matter."
-          parts = entry.msgstr.split(". ")
-          if (len(parts) > 1):
-            print("o Splitting Windows 7 string")
-            entry.msgstr = parts[0] + "."
-            entry2 = polib.POEntry(
-               msgid  = "Once downloaded, the application is ready to use.",
-               msgstr = parts[1]
-            )
-            po.append(entry2)
-          else:
-            p = os.path.relpath(path, cwd).replace("\\LC_MESSAGES", "")
-            if p not in problem_po:
-              problem_po.append(p)
-
-            
-        entry = po.find("If you create a DOS bootable drive and use a non-US keyboard, "
-            "Rufus will attempt to select a keyboard layout according to the locale of "
-            "your system. In that case, <a target=\"_blank\" %s>FreeDOS</a>, which is "
-            "the default selection, is recommended over MS-DOS, as it supports more keyboard layouts.")
-        if entry:
-          entry.msgid = ("If you create a DOS bootable drive and use a non-US keyboard, "
-            "Rufus will attempt to select a keyboard layout according to the locale of "
-            "your system.")
-          parts = entry.msgstr.split(". ")
-          if (len(parts) > 1):
-            print("o Shortening FreeDOS string")
-            entry.msgstr = parts[0] + "."
-          else:
-            p = os.path.relpath(path, cwd).replace("\\LC_MESSAGES", "")
-            if p not in problem_po:
-              problem_po.append(p)
+          entry.msgid = "Windows 8 or later."
+          entry.msgstr = entry.msgstr.replace("7", "8")
+        else:
+          p = os.path.relpath(path, cwd).replace("\\LC_MESSAGES", "")
+          if p not in problem_po:
+            problem_po.append(p)
 
         po.merge(pot)
 #        os.replace(filename, filename + '.old')
         po.save(filename)
-        filename = filename.replace('.po', '.mo')
-        po.save_as_mofile(filename)
-  print("List of problematic languages:")
-  for p in problem_po:
-    print("o " + p)
-
+#        filename = filename.replace('.po', '.mo')
+#        po.save_as_mofile(filename)
+  if (len(problem_po) > 0):
+    print("List of problematic languages:")
+    for p in problem_po:
+      print("o " + p)
 
 # Load main only and run as stand-alone script
 if __name__ == "__main__":

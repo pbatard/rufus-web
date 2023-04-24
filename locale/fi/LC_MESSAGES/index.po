@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2018-05-29 15:55+0100\n"
-"PO-Revision-Date: 2018-05-29 16:17+0100\n"
+"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"PO-Revision-Date: 2023-04-24 13:43+0100\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
 "Language-Team: \n"
 "Language: fi_FI\n"
@@ -16,21 +16,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: index.php:100
+#: index.php:106
 msgid "Version"
 msgstr "Versio"
 
-#: index.php:132 index.php:339
+#: index.php:138 index.php:350
 msgid "Create bootable USB drives the easy way"
 msgstr "Luo boottaavat USB-asemat helpolla tavalla"
 
-#: index.php:309
-msgid "Want to improve this translation?"
+#: index.php:303
+msgid ""
+"This page uses Google services, which may serve <u>non-personalised</u> "
+"cookies for advertising, analytics and security."
+msgstr ""
+"Tällä sivulla käytetään Googlen palveluita, jotka voivat tarjota "
+"<u>personoimattomia</u> evästeitä mainontaa, analytiikkaa ja turvallisuutta "
+"varten."
+
+#: index.php:304
+msgid "See details"
+msgstr "Katso yksityiskohdat"
+
+#: index.php:305
+msgid "OK"
 msgstr ""
 
-#: index.php:364
+#: index.php:311
+msgid "Change language:"
+msgstr "Vaihda kieli:"
+
+#: index.php:320
+msgid "Want to improve this translation?"
+msgstr "Haluatko parantaa tätä käännöstä?"
+
+#: index.php:375
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -38,11 +59,11 @@ msgstr ""
 "Rufus on ohjelma, joka auttaa alustamaan ja luomaan boottaavia USB-"
 "laitteita, kuten esimerkiksi USB-avaimia, muistitikkuja jne."
 
-#: index.php:365
+#: index.php:376
 msgid "It can be especially useful for cases where:"
 msgstr "Siitä voi olla erityisesti hyötyä seuraavissa tilanteissa:"
 
-#: index.php:367
+#: index.php:378
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -50,62 +71,99 @@ msgstr ""
 "sinun tarvitsee tehdä USB-asennettava tietoväline boottaavasta ISO-"
 "levykuvasta (Windows, Linux, UEFI jne.)"
 
-#: index.php:368
+#: index.php:379
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr ""
-"sinun tarvitsee työskennellä järjestelmässä, jossa ei ole käyttöjärjestelmää"
-" asennettuna"
+"sinun tarvitsee työskennellä järjestelmässä, jossa ei ole käyttöjärjestelmää "
+"asennettuna"
 
-#: index.php:369
+#: index.php:380
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "sinun tarvitsee asentaa BIOS tai jokin muu laiteohjelmisto DOSista"
 
-#: index.php:370
+#: index.php:381
 msgid "you want to run a low-level utility"
 msgstr "haluat käyttää matalalla tasolla toimivaa apuohjelmaa"
 
-#: index.php:372
+#: index.php:383
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Pienestä koostaan huolimatta Rufus tarjoaa kaiken tarvitsemasi!"
 
-#: index.php:373
+#: index.php:384
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
+"of this page."
 msgstr ""
 "Epätäydellinen luettelo Rufuksen tukemista ISO-levykuvista on myös "
 "saatavilla tämän sivun alareunassa."
 
-#: index.php:378
+#: index.php:389
 msgid "Download"
 msgstr "Lataa"
 
-#: index.php:379
-#, php-format
-msgid "Last updated %s:"
-msgstr "Viimeksi päivitetty %s:"
+#: index.php:390
+msgid "Latest releases:"
+msgstr "Uusimmat julkaisut:"
 
-#: index.php:381
+#: index.php:393
+msgid "Link"
+msgstr "Linkki"
+
+#: index.php:394
+msgid "Type"
+msgstr "Tyyppi"
+
+#: index.php:395
+msgid "Platform"
+msgstr "Alusta"
+
+#: index.php:396
+msgid "Size"
+msgstr "Koko"
+
+#: index.php:397
+msgid "Date"
+msgstr "Päivämäärä"
+
+#: index.php:401 index.php:415 index.php:422
+msgid "Standard"
+msgstr "Normaali"
+
+#. Abbreviation for MegaByte
+#: index.php:403 index.php:410 index.php:417 index.php:424 index.php:432
+#: index.php:543
+msgid "MB"
+msgstr ""
+
+#: index.php:408
 msgid "Portable"
 msgstr ""
 
-#: index.php:382 index.php:383 index.php:486
+#: index.php:430
+msgid "BETA"
+msgstr ""
+
+#: index.php:437 index.php:438 index.php:540
 msgid "Other versions"
 msgstr "Muut versiot"
 
-#: index.php:387
-msgid "Supported Languages:"
-msgstr "Tuetut kielet:"
-
-#: index.php:385
+#: index.php:439
 msgid "System Requirements:"
 msgstr "Järjestelmävaatimukset:"
 
-#: index.php:386
-msgid "Windows 7 or later, 32 or 64 bit doesn't matter."
-msgstr "Windows 7 tai uudempi, 32- tai 64-bittisyydellä ei ole merkitystä."
+#: index.php:440
+msgid "Windows 8 or later."
+msgstr "Windows 8 tai uudempi."
 
-#: index.php:433
+#: index.php:440
+msgid "Once downloaded, the application is ready to use."
+msgstr "Sovellus on valmis käytettäväksi heti lataamisen jälkeen."
+
+#: index.php:441
+msgid "Supported Languages:"
+msgstr "Tuetut kielet:"
+
+#: index.php:487
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -113,39 +171,39 @@ msgid ""
 "you should really thank them!"
 msgstr ""
 "Haluan käyttää tilaisuuden osoittaakseni kiitollisuuteni kääntäjiä kohtaan, "
-"jotka mahdollistavat Rufuksen sekä tämän verkkosivun käyttämisen useilla eri"
-" kielillä. Jos huomaat pystyväsi käyttämään Rufusta omalla äidinkielelläsi, "
+"jotka mahdollistavat Rufuksen sekä tämän verkkosivun käyttämisen useilla eri "
+"kielillä. Jos huomaat pystyväsi käyttämään Rufusta omalla äidinkielelläsi, "
 "kannattaisi sinunkin kiittää heitä!"
 
-#: index.php:434
+#: index.php:488
 msgid "Usage"
 msgstr "Käyttö"
 
-#: index.php:435
+#: index.php:489
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr ""
 "Lataa suoritettava tiedosto ja käynnistä se &ndash; asennusta ei tarvita."
 
-#: index.php:436
+#: index.php:490
 msgid "The executable is digitally signed and the signature should state:"
 msgstr ""
 "Käynnistettävä tiedosto on digitaalisesti allekirjoitettu ja "
 "allekirjoituksen tulisi todeta:"
 
-#: index.php:438
+#: index.php:492
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 tai uudempi)"
 
-#: index.php:439
+#: index.php:493
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 tai vanhempi)"
 
-#: index.php:441
+#: index.php:495
 msgid "Notes on DOS support:"
 msgstr "Huomioita DOS-tukea koskien:"
 
-#: index.php:442
+#: index.php:496
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system."
@@ -154,25 +212,25 @@ msgstr ""
 "näppäimistöasettelua, pyrkii Rufus valitsemaan näppäimistöasetuksen "
 "järjestelmäsi alueasetuksen mukaan."
 
-#: index.php:443
+#: index.php:497
 msgid "Notes on ISO Support:"
 msgstr "Huomioita ISO-tukea koskien:"
 
-#: index.php:444
+#: index.php:498
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
+"an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "Kaikki Rufuksen versiot v1.1.0 lähtien sallivat boottaavan USB-aseman "
 "luomisen <a target=\"_blank\" %s>ISO-levykuvasta</a> (.iso)."
 
-#: index.php:445
+#: index.php:499
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
+"easy to do however, through the use of a CD burning application, such as the "
+"freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
 "target=\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
 "ISO-levykuvan luominen fyysisestä levystä tai tiedostoista on erittäin "
@@ -180,20 +238,19 @@ msgstr ""
 "<a target=\"_blank\" %s>InfraRecorder</a> ja <a target=\"_blank\" "
 "%s>CDBurnerXP</a>."
 
-#: index.php:447
+#: index.php:501
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Usein kysytyt kysymykset (FAQ)"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:448
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:502
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
 "Rufuksen FAQ on saatavilla <b><a target=\"_blank\" %s>TÄÄLLÄ</a></b> "
 "(englanniksi)."
 
-#: index.php:449
+#: index.php:503
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -201,14 +258,14 @@ msgid ""
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Jos haluat lähettää palautetta, kertoa virheestä tai pyytää parannuksia, "
-"käytä GitHubin <a target=\"_blank\" %s>issue trackeria</a>. Vaihtoehtoisesti"
-" voit myös <a target=\"_blank\" %s>lähettää sähköpostia</a>."
+"käytä GitHubin <a target=\"_blank\" %s>issue trackeria</a>. Vaihtoehtoisesti "
+"voit myös <a target=\"_blank\" %s>lähettää sähköpostia</a>."
 
-#: index.php:451
+#: index.php:505
 msgid "License"
 msgstr "Lisenssi"
 
-#: index.php:452
+#: index.php:506
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
@@ -217,15 +274,15 @@ msgstr ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) versio 3</a> tai "
 "uudempi."
 
-#: index.php:452
+#: index.php:506
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr ""
 "Olet vapaa jakamaan, muokkaamaan tai jopa myymään ohjelmistoa, kunhan "
 "kunnioitat GPLv3-lisenssiä."
 
-#: index.php:453
+#: index.php:507
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
@@ -233,25 +290,19 @@ msgid ""
 "%s>MinGW32</a> environment."
 msgstr ""
 "Rufus on tuotettu 100%% läpinäkyvin keinoin <a target=\"_blank\" "
-"%s>julkisesta lähteestään</a> käyttäen <a target=\"_blank\" "
-"%s>MinGW32</a>-ympäristöä."
+"%s>julkisesta lähteestään</a> käyttäen <a target=\"_blank\" %s>MinGW32</a>-"
+"ympäristöä."
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
-#: index.php:455
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:509
 msgid "Changelog"
 msgstr "Muutosloki (englanniksi)"
 
-#: index.php:488
+#: index.php:542
 msgid "Source Code"
 msgstr "Lähdekoodi"
 
-#. Abbreviation for MegaByte
-#: index.php:380 index.php:381 index.php:489
-msgid "MB"
-msgstr "MB"
-
-#: index.php:490
+#: index.php:544
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
@@ -260,13 +311,14 @@ msgstr ""
 "Voit vaihtoehtoisesti kloonata <a target=\"_blank\" %s>git</a>-arkiston "
 "seuraavasti:"
 
-#: index.php:492
+#: index.php:546
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "Saadakseksi lisätietoa, katso <a target=\"_blank\" %s>GitHub-projekti</a>."
 
-#: index.php:493
+#: index.php:547
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -274,11 +326,11 @@ msgstr ""
 "Jos olet kehittäjä, rohkaisemme sinua näpertelemään Rufuksen kanssa ja "
 "esittämään päivityksiä."
 
-#: index.php:495
+#: index.php:549
 msgid "Donations"
 msgstr "Lahjoitukset"
 
-#: index.php:496
+#: index.php:550
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -286,17 +338,17 @@ msgstr ""
 "Kirjoitan tämän, sillä minulta kysytään asiasta säännöllisesti. Tällä "
 "sivulla <b>ei ole</b> lahjoituspainiketta."
 
-#: index.php:497
+#: index.php:551
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
 "choose not to donate."
 msgstr ""
-"Pääsyynä on se, että minusta tuntuu, ettei lahjoitusjärjestelmä itse asiassa"
-" auta ohjelmistokehitystä ja mikä pahinta, se voi aiheuttaa "
+"Pääsyynä on se, että minusta tuntuu, ettei lahjoitusjärjestelmä itse asiassa "
+"auta ohjelmistokehitystä ja mikä pahinta, se voi aiheuttaa "
 "syyllisyydentunnetta käyttäjille, jotka eivät päätä lahjoittaa."
 
-#: index.php:500
+#: index.php:554
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -307,17 +359,17 @@ msgstr ""
 "Software Foundationille</a>, sillä he ovat pääsyy sille, että Rufuksen "
 "kaltaiset ohjelmistot ovat mahdollisia."
 
-#: index.php:501
+#: index.php:555
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
+"your continuing support and enthusiasm about this little program: it is much "
+"appreciated!"
 msgstr ""
-"Käytän joka tapauksessa tämän mahdollisuuden sanoakseni <i><u>kiitos</u></i>"
-" jatkuvasta tuesta sekä innostuksesta tätä pientä ohjelmaa kohtaan: arvostan"
-" sitä suuresti!"
+"Käytän joka tapauksessa tämän mahdollisuuden sanoakseni <i><u>kiitos</u></i> "
+"jatkuvasta tuesta sekä innostuksesta tätä pientä ohjelmaa kohtaan: arvostan "
+"sitä suuresti!"
 
-#: index.php:502
+#: index.php:556
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -326,55 +378,30 @@ msgstr ""
 "siitä, ettet tue sitä rahallisesti &ndash; sinun ei koskaan tulisi "
 "tarvitakaan tehdä niin!"
 
-#: index.php:504
+#: index.php:558
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr ""
 "Epätäydellinen lista ISO-levykuvista, joiden kanssa Rufuksen tiedetään "
 "toimivan"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
-#: index.php:560
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
+#: index.php:614
 msgid "English translation by Pete Batard"
 msgstr "Suomenkielinen käännös: Riku Brander"
 
-#: index.php:561
+#: index.php:615
 msgid "USB icon by"
 msgstr "USB-kuvakkeen luonut"
 
-#: index.php:562
+#: index.php:616
 msgid "Hosting by"
 msgstr "Hostauksesta vastaa"
 
-#: index.php:300
-msgid "Change language:"
-msgstr ""
-
-#: index.php:386
-msgid "Once downloaded, the application is ready to use."
-msgstr "Sovellus on valmis käytettäväksi heti lataamisen jälkeen."
-
-#: index.php:292
-msgid ""
-"This page uses Google services, which may serve <u>non-personalised</u> "
-"cookies for advertising, analytics and security."
-msgstr ""
-
-#: index.php:293
-msgid "See details"
-msgstr ""
-
-#: index.php:294
-msgid "OK"
-msgstr ""
-
-#~ msgid ""
-#~ "Placeholder for ads &mdash; Just like you, I wish this site could exist "
-#~ "without them..."
-#~ msgstr ""
+#, php-format
+#~ msgid "Last updated %s:"
+#~ msgstr "Viimeksi päivitetty %s:"
 
 #~ msgid "rufus_en.png"
 #~ msgstr "rufus_fi.png"
@@ -382,27 +409,27 @@ msgstr ""
 #, php-format
 #~ msgid ""
 #~ "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
-#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-#~ "Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
-#~ " the creation of a Windows 7 USB installation drive from an ISO. It is also "
-#~ "marginally faster on the creation of Linux bootable USB from ISOs."
+#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal "
+#~ "USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</"
+#~ "a>, on the creation of a Windows 7 USB installation drive from an ISO. It "
+#~ "is also marginally faster on the creation of Linux bootable USB from ISOs."
 #~ msgstr ""
-#~ "Ai niin, ja Rufus on <b>nopea</b>. Se on esimerkiksi noin kaksi kertaa niin "
-#~ "nopea kuin <a target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" "
-#~ "%s>Universal USB Installer</a> tai <a target=\"_blank\" %s>Windows 7 USB "
-#~ "download tool</a>, kun tehdään asennettavaa Windows 7 USB-muistitikkua ISO-"
-#~ "levykuvasta. Se on myös hieman nopeampi Linux-pohjaisten boottaavien USB-"
-#~ "laitteiden luomisessa ISO-levykuvasta."
+#~ "Ai niin, ja Rufus on <b>nopea</b>. Se on esimerkiksi noin kaksi kertaa "
+#~ "niin nopea kuin <a target=\"_blank\" %s>UNetbootin</a>, <a "
+#~ "target=\"_blank\" %s>Universal USB Installer</a> tai <a target=\"_blank\" "
+#~ "%s>Windows 7 USB download tool</a>, kun tehdään asennettavaa Windows 7 "
+#~ "USB-muistitikkua ISO-levykuvasta. Se on myös hieman nopeampi Linux-"
+#~ "pohjaisten boottaavien USB-laitteiden luomisessa ISO-levykuvasta."
 
 #~ msgid "Speed comparison between Rufus and other applications"
 #~ msgstr "Nopeusvertailu Rufuksen ja muiden sovellusten välillä"
 
 #, php-format
 #~ msgid ""
-#~ "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-#~ "platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
-#~ " 3.0 ADATA S102 flash drive</a>."
+#~ "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB "
+#~ "RAM platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 "
+#~ "GB USB 3.0 ADATA S102 flash drive</a>."
 #~ msgstr ""
-#~ "Seuraavat testit suoritettiin Windows 7 x64 Core 2 duo/4 GB RAM "
-#~ "-kokoonpanolla käyttäen USB 3.0-ohjainta ja <a target=\"_blank\" %s>16 GB "
+#~ "Seuraavat testit suoritettiin Windows 7 x64 Core 2 duo/4 GB RAM -"
+#~ "kokoonpanolla käyttäen USB 3.0-ohjainta ja <a target=\"_blank\" %s>16 GB "
 #~ "USB 3.0 ADATA S102 -muistitikkua</a>."

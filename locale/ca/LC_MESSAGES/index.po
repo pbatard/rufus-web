@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2018-05-29 15:55+0100\n"
-"PO-Revision-Date: 2018-05-29 16:09+0100\n"
+"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"PO-Revision-Date: 2023-04-24 13:38+0100\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Adolfo Jayme Barrientos <fito@libreoffice.org>\n"
 "Language: ca\n"
@@ -16,22 +16,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:100
+#: index.php:106
 msgid "Version"
 msgstr "Versió"
 
-#: index.php:132 index.php:339
+#: index.php:138 index.php:350
 msgid "Create bootable USB drives the easy way"
 msgstr "Creeu unitats USB d’arrencada fàcilment"
 
-#: index.php:309
+#: index.php:303
+msgid ""
+"This page uses Google services, which may serve <u>non-personalised</u> "
+"cookies for advertising, analytics and security."
+msgstr ""
+"Aquesta pàgina utilitza els serveis de Google, que poden servir <u>cookies "
+"no personalitzades</u> per a publicitat, anàlisi i seguretat."
+
+#: index.php:304
+msgid "See details"
+msgstr "Veure detalls"
+
+#: index.php:305
+msgid "OK"
+msgstr ""
+
+#: index.php:311
+msgid "Change language:"
+msgstr "Canvia d'idioma:"
+
+#: index.php:320
 msgid "Want to improve this translation?"
 msgstr "Voleu millorar aquesta traducció?"
 
-#: index.php:364
+#: index.php:375
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -39,11 +59,11 @@ msgstr ""
 "El Rufus és una utilitat que us permet formatar i crear unitats USB "
 "d’arrencada, com a «pendrives», targetes de memòria, etcètera."
 
-#: index.php:365
+#: index.php:376
 msgid "It can be especially useful for cases where:"
 msgstr "Pot resultar molt útil si:"
 
-#: index.php:367
+#: index.php:378
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -51,60 +71,97 @@ msgstr ""
 "necessiteu crear un suport d’instal·lació USB a partir d’ISO de arrencada "
 "(Windows, Linux, UEFI, etc.)"
 
-#: index.php:368
+#: index.php:379
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "heu de treballar en un ordinador sense cap sistema operatiu"
 
-#: index.php:369
+#: index.php:380
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "necessiteu instal·lar un microprogramari o BIOS des del DOS"
 
-#: index.php:370
+#: index.php:381
 msgid "you want to run a low-level utility"
 msgstr "voleu executar una utilitat de baix nivell"
 
-#: index.php:372
+#: index.php:383
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Malgrat la seva petita mida, el Rufus conté tot el que necessiteu!"
 
-#: index.php:373
+#: index.php:384
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
+"of this page."
 msgstr ""
 "Proveïm una llista breu d’ISO compatibles amb el Rufus en la part inferior "
 "d’aquesta pàgina."
 
-#: index.php:378
+#: index.php:389
 msgid "Download"
 msgstr "Baixa"
 
-#: index.php:379
-#, php-format
-msgid "Last updated %s:"
-msgstr "Darrera actualització el %s:"
+#: index.php:390
+msgid "Latest releases:"
+msgstr "Últimes versions:"
 
-#: index.php:381
+#: index.php:393
+msgid "Link"
+msgstr "Enllaç"
+
+#: index.php:394
+msgid "Type"
+msgstr "Tipus"
+
+#: index.php:395
+msgid "Platform"
+msgstr "Plataforma"
+
+#: index.php:396
+msgid "Size"
+msgstr "Mida"
+
+#: index.php:397
+msgid "Date"
+msgstr "Data"
+
+#: index.php:401 index.php:415 index.php:422
+msgid "Standard"
+msgstr "Estàndard"
+
+#. Abbreviation for MegaByte
+#: index.php:403 index.php:410 index.php:417 index.php:424 index.php:432
+#: index.php:543
+msgid "MB"
+msgstr "MB"
+
+#: index.php:408
 msgid "Portable"
 msgstr "Portàtil"
 
-#: index.php:382 index.php:383 index.php:486
+#: index.php:430
+msgid "BETA"
+msgstr ""
+
+#: index.php:437 index.php:438 index.php:540
 msgid "Other versions"
 msgstr "Altres versions"
 
-#: index.php:387
-msgid "Supported Languages:"
-msgstr "Idiomes admesos:"
-
-#: index.php:385
+#: index.php:439
 msgid "System Requirements:"
 msgstr "Requisits del sistema:"
 
-#: index.php:386
-msgid "Windows 7 or later, 32 or 64 bit doesn't matter."
-msgstr "Windows 7 o posterior, 32 o 64 bits."
+#: index.php:440
+msgid "Windows 8 or later."
+msgstr "Windows 8 o posterior."
 
-#: index.php:433
+#: index.php:440
+msgid "Once downloaded, the application is ready to use."
+msgstr "Baixeu-ho i estareu a punt."
+
+#: index.php:441
+msgid "Supported Languages:"
+msgstr "Idiomes admesos:"
+
+#: index.php:487
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -116,32 +173,32 @@ msgstr ""
 "llengües. Si trobeu que podeu utilitzar el Rufus en la vostra llengua, "
 "agraïu-los!"
 
-#: index.php:434
+#: index.php:488
 msgid "Usage"
 msgstr "Utilització"
 
-#: index.php:435
+#: index.php:489
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "Baixeu el fitxer executable i obriu-ho; no cal instal·lar-ho."
 
-#: index.php:436
+#: index.php:490
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "L’executable s’ha signat digitalment; la signatura ha de dir:"
 
-#: index.php:438
+#: index.php:492
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 o posterior)"
 
-#: index.php:439
+#: index.php:493
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 o anterior)"
 
-#: index.php:441
+#: index.php:495
 msgid "Notes on DOS support:"
 msgstr "Notes quant a la compatibilitat amb el DOS:"
 
-#: index.php:442
+#: index.php:496
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system."
@@ -150,25 +207,25 @@ msgstr ""
 "l’anglès estatunidenc, el Rufus intentarà seleccionar una disposició del "
 "teclat adequada per a la configuració local del vostre sistema."
 
-#: index.php:443
+#: index.php:497
 msgid "Notes on ISO Support:"
 msgstr "Notes quant a la compatibilitat amb ISO:"
 
-#: index.php:444
+#: index.php:498
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
+"an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "Totes les versions del Rufus, des de la 1.1.0, us permeten crear USB "
 "d’arrencada a partir d’<a target=\"_blank\" %s>imatges ISO</a> (.iso)."
 
-#: index.php:445
+#: index.php:499
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
+"easy to do however, through the use of a CD burning application, such as the "
+"freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
 "target=\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
 "És senzill crear imatges ISO a partir d’un disc físic o un conjunt de "
@@ -176,20 +233,19 @@ msgstr ""
 "target=\"_blank\" %s>InfraRecorder</a> o l’<a target=\"_blank\" "
 "%s>CDBurnerXP</a>, tots dos gratuïts."
 
-#: index.php:447
+#: index.php:501
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Preguntes freqüents"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:448
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:502
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
-"Hi ha una llista de preguntes freqüents <b><a target=\"_blank\" "
-"%s>AQUÍ</a></b>."
+"Hi ha una llista de preguntes freqüents <b><a target=\"_blank\" %s>AQUÍ</a></"
+"b>."
 
-#: index.php:449
+#: index.php:503
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -197,14 +253,14 @@ msgid ""
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 "Si teniu comentaris, voleu informar d’una errada o sol·licitar una millora, "
-"feu servir el <a target=\"_blank\" %s>sistema de seguiment d’errades</a> del"
-" GitHub. O <a target=\"_blank\" %s>envieu-me un missatge</a> (en anglès)."
+"feu servir el <a target=\"_blank\" %s>sistema de seguiment d’errades</a> del "
+"GitHub. O <a target=\"_blank\" %s>envieu-me un missatge</a> (en anglès)."
 
-#: index.php:451
+#: index.php:505
 msgid "License"
 msgstr "Llicència"
 
-#: index.php:452
+#: index.php:506
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
@@ -213,15 +269,15 @@ msgstr ""
 "<a target=\"_blank\" %s>Llicncia Pública General del GNU (GPL) versió 3</a> "
 "o posterior."
 
-#: index.php:452
+#: index.php:506
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr ""
 "Podeu distribuir, modificar o fins i tot vendre el programari si respecteu "
 "la llicència GPL v3."
 
-#: index.php:453
+#: index.php:507
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
@@ -232,36 +288,31 @@ msgstr ""
 "target=\"_blank\" %s>codi font públic</a> i en un entorn <a "
 "target=\"_blank\" %s>MinGW32</a>."
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
-#: index.php:455
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:509
 msgid "Changelog"
 msgstr "Registre de canvis"
 
-#: index.php:488
+#: index.php:542
 msgid "Source Code"
 msgstr "Codi font"
 
-#. Abbreviation for MegaByte
-#: index.php:380 index.php:381 index.php:489
-msgid "MB"
-msgstr "MB"
-
-#: index.php:490
+#: index.php:544
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr "O bé, podeu clonar el repositori <a target=\"_blank\" %s>Git</a>:"
 
-#: index.php:492
+#: index.php:546
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
-"Per a més informació, visiteu el <a target=\"_blank\" %s>projecte a "
-"GitHub</a>."
+"Per a més informació, visiteu el <a target=\"_blank\" %s>projecte a GitHub</"
+"a>."
 
-#: index.php:493
+#: index.php:547
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
@@ -269,11 +320,11 @@ msgstr ""
 "Si sabeu programar, us animem al fet que trastegeu amb el Rufus y envieu "
 "pedaços."
 
-#: index.php:495
+#: index.php:549
 msgid "Donations"
 msgstr "Donatius"
 
-#: index.php:496
+#: index.php:550
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -281,7 +332,7 @@ msgstr ""
 "Com que m’ho pregunten gairebé sempre, <b>no</b> hi ha cap botó per donar "
 "diners en aquesta pàgina."
 
-#: index.php:497
+#: index.php:551
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -291,7 +342,7 @@ msgstr ""
 "el que és pitjor, pot provocar un sentiment de culpa a els qui trien no fer "
 "donatius."
 
-#: index.php:500
+#: index.php:554
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -302,70 +353,45 @@ msgstr ""
 "Foundation</a>, que és el motiu principal pel qual programari com el Rufus "
 "és possible."
 
-#: index.php:501
+#: index.php:555
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
+"your continuing support and enthusiasm about this little program: it is much "
+"appreciated!"
 msgstr ""
-"En qualsevol cas, vull donar-vos les <i><u>gràcies</u></i> pel vostre suport"
-" i entusiasme continuats!"
+"En qualsevol cas, vull donar-vos les <i><u>gràcies</u></i> pel vostre suport "
+"i entusiasme continuats!"
 
-#: index.php:502
+#: index.php:556
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
-"No hauríeu de sentir-vos culpable per no contribuir financerament amb aquest"
-" programa!"
+"No hauríeu de sentir-vos culpable per no contribuir financerament amb aquest "
+"programa!"
 
-#: index.php:504
+#: index.php:558
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Llista breu de fitxers ISO amb què el Rufus funciona"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
-#: index.php:560
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
+#: index.php:614
 msgid "English translation by Pete Batard"
 msgstr "Traduit al català per l’Adolf"
 
-#: index.php:561
+#: index.php:615
 msgid "USB icon by"
 msgstr "Icona de l’USB per"
 
-#: index.php:562
+#: index.php:616
 msgid "Hosting by"
 msgstr "Hostatge per"
 
-#: index.php:300
-msgid "Change language:"
-msgstr ""
-
-#: index.php:386
-msgid "Once downloaded, the application is ready to use."
-msgstr "Baixeu-ho i estareu a punt."
-
-#: index.php:292
-msgid ""
-"This page uses Google services, which may serve <u>non-personalised</u> "
-"cookies for advertising, analytics and security."
-msgstr ""
-
-#: index.php:293
-msgid "See details"
-msgstr ""
-
-#: index.php:294
-msgid "OK"
-msgstr ""
-
-#~ msgid ""
-#~ "Placeholder for ads &mdash; Just like you, I wish this site could exist "
-#~ "without them..."
-#~ msgstr ""
+#, php-format
+#~ msgid "Last updated %s:"
+#~ msgstr "Darrera actualització el %s:"
 
 #~ msgid "rufus_en.png"
 #~ msgstr "rufus_en.png"
@@ -373,27 +399,27 @@ msgstr ""
 #, php-format
 #~ msgid ""
 #~ "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
-#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal USB "
-#~ "Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</a>, on"
-#~ " the creation of a Windows 7 USB installation drive from an ISO. It is also "
-#~ "marginally faster on the creation of Linux bootable USB from ISOs."
+#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal "
+#~ "USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</"
+#~ "a>, on the creation of a Windows 7 USB installation drive from an ISO. It "
+#~ "is also marginally faster on the creation of Linux bootable USB from ISOs."
 #~ msgstr ""
-#~ "Ah, i el Rufus és <b>veloç</b>. Per exemple, és gairebé dos cops més ràpid "
-#~ "que l’<a target=\"_blank\" %s>UNetbootin</a>, l’<a target=\"_blank\" "
-#~ "%s>Universal USB Installer</a> o l’<a target=\"_blank\" %s>eina de baixada "
-#~ "del Windows 7 a USB</a> en crear una unitat USB d’instal·lació amb Windows 7"
-#~ " des d’un fitxer ISO. És també una mica més ràpid en crear USB arrencables "
-#~ "amb Linux des d’ISO."
+#~ "Ah, i el Rufus és <b>veloç</b>. Per exemple, és gairebé dos cops més "
+#~ "ràpid que l’<a target=\"_blank\" %s>UNetbootin</a>, l’<a "
+#~ "target=\"_blank\" %s>Universal USB Installer</a> o l’<a target=\"_blank\" "
+#~ "%s>eina de baixada del Windows 7 a USB</a> en crear una unitat USB "
+#~ "d’instal·lació amb Windows 7 des d’un fitxer ISO. És també una mica més "
+#~ "ràpid en crear USB arrencables amb Linux des d’ISO."
 
 #~ msgid "Speed comparison between Rufus and other applications"
 #~ msgstr "Comparació de velocitat entre el Rufus i uns altres programes"
 
 #, php-format
 #~ msgid ""
-#~ "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB RAM "
-#~ "platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 GB USB"
-#~ " 3.0 ADATA S102 flash drive</a>."
+#~ "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB "
+#~ "RAM platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 "
+#~ "GB USB 3.0 ADATA S102 flash drive</a>."
 #~ msgstr ""
-#~ "S’han realitzat aquestes proves en una plataforma Windows 7 x64 Core 2 Duo/4"
-#~ " GB RAM, amb un controlador USB 3.0 i una <a target=\"_blank\" %s>unitat "
-#~ "<i>flash</i> ADATA S102 USB 3.0 de 16 GB</a>."
+#~ "S’han realitzat aquestes proves en una plataforma Windows 7 x64 Core 2 "
+#~ "Duo/4 GB RAM, amb un controlador USB 3.0 i una <a target=\"_blank\" "
+#~ "%s>unitat <i>flash</i> ADATA S102 USB 3.0 de 16 GB</a>."

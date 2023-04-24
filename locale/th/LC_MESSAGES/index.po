@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2023-04-21 17:04+0100\n"
-"PO-Revision-Date: 2023-04-22 12:15+0100\n"
+"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"PO-Revision-Date: 2023-04-24 14:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: Joe Keating <Joe_keating@live.com>\n"
 "Language: th_TH\n"
@@ -19,15 +19,15 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:100
+#: index.php:106
 msgid "Version"
 msgstr "เวอร์ชั่น"
 
-#: index.php:132 index.php:339
+#: index.php:138 index.php:350
 msgid "Create bootable USB drives the easy way"
 msgstr "สร้างไดรฟ์บูตUSBอย่างง่ายดาย"
 
-#: index.php:292
+#: index.php:303
 msgid ""
 "This page uses Google services, which may serve <u>non-personalised</u> cookies for advertising, "
 "analytics and security."
@@ -35,96 +35,123 @@ msgstr ""
 "หน้านี้ใช้บริการของ Google ซึ่งอาจให้บริการคุกกี้ <u>ที่ไม่ใช่ส่วนบุคคล</u> เพื่อการโฆษณา การวิเคราะห์ "
 "และการรักษาความปลอดภัย"
 
-#: index.php:293
+#: index.php:304
 msgid "See details"
 msgstr "ดูรายละเอียด"
 
-#: index.php:294
+#: index.php:305
 msgid "OK"
 msgstr ""
 
-#: index.php:300
+#: index.php:311
 msgid "Change language:"
 msgstr "เปลี่ยนภาษา:"
 
-#: index.php:309
+#: index.php:320
 msgid "Want to improve this translation?"
 msgstr "ต้องการที่จะปรับปรุงการแปลนี้?"
 
-#: index.php:364
+#: index.php:375
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/"
 "pendrives, memory sticks, etc."
 msgstr ""
 "Rufusคือโปรแกรมที่ช่วยฟอร์แมทและสร้างUSBแฟลชไดรฟ์ที่สามารถบูทได้ เช่นคีย์ USB / pendrives, Memory Sticks, ฯลฯ"
 
-#: index.php:365
+#: index.php:376
 msgid "It can be especially useful for cases where:"
 msgstr "Rufus อาจจะเป็นประโยชน์อย่างยิ่งในกรณีที่:"
 
-#: index.php:367
+#: index.php:378
 msgid "you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)"
 msgstr "คุณจำเป็นต้องสร้างสื่อการติดตั้ง USB จาก ISOs ที่สามารถบูตได้ (Windows, Linux, UEFI ฯลฯ )"
 
-#: index.php:368
+#: index.php:379
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "คุณจำเป็นต้องทำงานในระบบที่ไม่ได้มีการติดตั้งระบบปฏิบัติการไว้ก่อนหน้า"
 
-#: index.php:369
+#: index.php:380
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "คุณจำเป็นต้องแฟลชไบออสหรือเฟิร์มแวร์อื่น ๆ จาก DOS"
 
-#: index.php:370
+#: index.php:381
 msgid "you want to run a low-level utility"
 msgstr "คุณต้องการเรียกใช้ยูทิลิตี้ระดับต่ำ"
 
-#: index.php:372
+#: index.php:383
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "แม้จะมีขนาดที่เล็กแต่Rufusมีทุกสิ่งที่คุณต้องการ!"
 
-#: index.php:373
+#: index.php:384
 msgid "A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page."
 msgstr "รายการ ISOs ที่Rufusสนับสนุนอย่างคร่าวๆ สามารถดูได้จากด้านล่างของหน้านี้"
 
-#: index.php:378
+#: index.php:389
 msgid "Download"
 msgstr "ดาวน์โหลด"
 
-#: index.php:379
-#, php-format
-msgid "Last updated %s:"
-msgstr "การอัพเดทล่าสุด %s:"
+#: index.php:390
+msgid "Latest releases:"
+msgstr "รุ่นล่าสุด:"
+
+#: index.php:393
+msgid "Link"
+msgstr "ลิงค์"
+
+#: index.php:394
+msgid "Type"
+msgstr "ชนิด"
+
+#: index.php:395
+msgid "Platform"
+msgstr "แพลตฟอร์ม"
+
+#: index.php:396
+msgid "Size"
+msgstr "ขนาด"
+
+#: index.php:397
+msgid "Date"
+msgstr "วันที่"
+
+#: index.php:401 index.php:415 index.php:422
+msgid "Standard"
+msgstr "มาตรฐาน"
 
 #. Abbreviation for MegaByte
-#: index.php:380 index.php:381 index.php:489
+#: index.php:403 index.php:410 index.php:417 index.php:424 index.php:432 index.php:543
 msgid "MB"
 msgstr "MB"
 
-#: index.php:381
+#: index.php:408
 msgid "Portable"
 msgstr "แบบพกพา"
 
-#: index.php:382 index.php:383 index.php:486
+#: index.php:430
+msgid "BETA"
+msgstr ""
+
+#: index.php:437 index.php:438 index.php:540
 msgid "Other versions"
 msgstr "เวอร์ชั่นอื่นๆ"
 
-#: index.php:385
+#: index.php:439
 msgid "System Requirements:"
 msgstr "ข้อกำหนดขั้นต่ำของระบบ:"
 
-#: index.php:386
-msgid "Windows 7 or later, 32 or 64 bit doesn't matter."
-msgstr "Windows 7 32หรือ 64บิท หรือระบบปฏิบัติการที่ใหม่กว่า"
+#: index.php:440
+msgid "Windows 8 or later."
+msgstr "Windows 8 หรือใหม่กว่า"
 
-#: index.php:386
+#: index.php:440
 msgid "Once downloaded, the application is ready to use."
 msgstr "เมื่อติดตั้งแล้วโปรแกรมจะสามารถใช้งานได้ทันที"
 
-#: index.php:387
+#: index.php:441
 msgid "Supported Languages:"
 msgstr "ภาษาที่ได้รับการสนับสนุน:"
 
-#: index.php:433
+#: index.php:487
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who made it possible for "
 "Rufus, as well as this webpage, to be translated in various languages. If you find that you can "
@@ -133,31 +160,31 @@ msgstr ""
 "ผมขอใช้โอกาสนี้เพื่อเป็นการแสดงความขอบคุณอย่างสุดซึ้งไปยังผู้แปลทุกคนที่ทำให้Rufusมายังจุดนี้ได้ "
 "และรวมถึงผู้แปลเว็บไซต์ในหลากหลายภาษา หากคุณพบว่าคุณสามารถใช้Rufusในภาษาของคุณเอง คุณควรจะขอบคุณพวกเขา!"
 
-#: index.php:434
+#: index.php:488
 msgid "Usage"
 msgstr "วิธีการใช้งาน"
 
-#: index.php:435
+#: index.php:489
 msgid "Download the executable and run it &ndash; no installation is necessary."
 msgstr "ดาวน์โหลดและเรียกใช้ &ndash; ไม่จำเป็นต้องติดตั้งโปรแกรม"
 
-#: index.php:436
+#: index.php:490
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "โปรแกรมมีลายเซ็นและลายเซ็นควรระบุ:"
 
-#: index.php:438
+#: index.php:492
 msgid "(v1.3.0 or later)"
 msgstr "(v.1.3.0 หรือเวอร์ชั่นที่สูงกว่า)"
 
-#: index.php:439
+#: index.php:493
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 หรือเวอร์ชั่นที่ต่ำกว่า)"
 
-#: index.php:441
+#: index.php:495
 msgid "Notes on DOS support:"
 msgstr "หมายเหตุเกี่ยวกับการสนับสนุน DOS:"
 
-#: index.php:442
+#: index.php:496
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a "
 "keyboard layout according to the locale of your system."
@@ -165,18 +192,18 @@ msgstr ""
 "ถ้าคุณสร้างไดรฟ์ที่สามารถบูต DOS และใช้แป้นพิมพ์ที่ไม่ใช่ของสหรัฐอเมริกา "
 "Rufusจะพยายามที่จะเลือกรูปแบบแป้นพิมพ์ตามสถานที่จากระบบของคุณ"
 
-#: index.php:443
+#: index.php:497
 msgid "Notes on ISO Support:"
 msgstr "หมายเหตุเกี่ยวกับการสนับสนุน ISO:"
 
-#: index.php:444
+#: index.php:498
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a "
 "target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr "ทุกรุ่นของRufus ตั้งแต่ v1.1.0 สามารถสร้างUSBที่บูทได้จาก <a target=\"_blank\" %s>ISO</a> (.iso)"
 
-#: index.php:445
+#: index.php:499
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very easy to do however, "
@@ -187,17 +214,17 @@ msgstr ""
 "อย่างไรก็ตามคุณจะต้องใช้งานผ่านโปรแกรมเบิร์นCDที่มีสามารถดาวน์โหลดได้ฟรี เช่น <a target=\"_blank\" "
 "%s>InfraRecorder</a> หรือ <a target=\"_blank\" %s>CDBurnerXP</a>"
 
-#: index.php:447
+#: index.php:501
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "คำถามที่ถูกถามบ่อย (FAQ)"
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:448
+#: index.php:502
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr "สามารถดูคำถามที่ถูกถามบ่อยเดี่ยวกับRufusได้ <b><a target=\"_blank\" %s>ที่นี่</a></b>"
 
-#: index.php:449
+#: index.php:503
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the GitHub <a "
@@ -207,22 +234,22 @@ msgstr ""
 "เพื่อให้ข้อเสนอแนะรายงานข้อผิดพลาดหรือขอให้มีการเพิ่มประสิทธิภาพโปรดใช้ GitHub <a target=\"_blank\" "
 "%s>ติดตามปัญหา</a> หรือคุณสามารถ <a target=\"_blank\" %s>ส่ง e-mail</a>"
 
-#: index.php:451
+#: index.php:505
 msgid "License"
 msgstr "สิทธิ์การใช้งาน"
 
-#: index.php:452
+#: index.php:506
 #, php-format
 msgid "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."
 msgstr "<a target=\"_blank\" %s>ใบอนุญาตสาธารณะทั่วไป (GPL) เวอร์ชั่น 3</a> หรือสูงกว่า"
 
-#: index.php:452
+#: index.php:506
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 "
 "license."
 msgstr "คุณสามารถแจกจ่าย แก้ไข หรือแม้กระทั่งขายซอฟต์แวร์ได้ ตราบเท่าที่คุณเคารพใบอนุญาต GPLv3"
 
-#: index.php:453
+#: index.php:507
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" %s>public source</"
@@ -232,40 +259,40 @@ msgstr ""
 "target=\"_blank\" %s>mingw32</a>"
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:455
+#: index.php:509
 msgid "Changelog"
 msgstr "การเปลี่ยนแปลง"
 
-#: index.php:488
+#: index.php:542
 msgid "Source Code"
 msgstr "ซอร์สโค๊ด (คำสั่งในการเขียนโปรแกรม)"
 
-#: index.php:490
+#: index.php:544
 #, php-format
 msgid "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"
 msgstr "นอกจากนี้แล้ว คุณสามารถโคลน <a target=\"_blank\" %s>Git repository</a> โดยใช้:"
 
-#: index.php:492
+#: index.php:546
 #, php-format
 msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr "หากต้องการข้อมูลเพิ่มเติม โปรดดู <a target=\"_blank\" %s>GitHub project</a>."
 
-#: index.php:493
+#: index.php:547
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus and submit patches."
 msgstr "หากคุณเป็นนักพัฒนา คุณสามารถทดสอบและส่งแพทช์ของRufusได้"
 
-#: index.php:495
+#: index.php:549
 msgid "Donations"
 msgstr "การบริจาคเพื่อสนับสนุน"
 
-#: index.php:496
+#: index.php:550
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this "
 "page."
 msgstr "เนื่องจากมีการสอบถามเข้ามาเป็นจำนวนมาก ปุ่มบริจาคเงินจะ<b>ไม่มี</b> ในหน้านี้"
 
-#: index.php:497
+#: index.php:551
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually help software "
 "development and worse, can be guilt-inducing for users who choose not to donate."
@@ -273,7 +300,7 @@ msgstr ""
 "เหตุผลหลักก็คือ ผมรู้สึกว่าระบบการบริจาคไม่ได้ช่วยในการพัฒนาซอฟท์แวร์ และที่แย่ไปกว่านั้นคือ "
 "ระบบบริจาคอาจจะทำให้ผู้ที่เลือกที่จะไม่บริจาครู้สึกผิดกับการที่ตัดสินใจแบบนั้น"
 
-#: index.php:500
+#: index.php:554
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a target=\"_blank\" %s>Free "
@@ -282,7 +309,7 @@ msgstr ""
 "แต่หากคุณยืนยันจริงๆว่าคุณต้องการจะบริจาค คุณสามารถทำการบริจาคได้ที่ <a target=\"_blank\" %s>Free Software "
 "Foundation</a> เนื่องจากพวกเขาเป็นเหตุผลหลักที่ทำให้Rufusเกิดขึ้นได้"
 
-#: index.php:501
+#: index.php:555
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing "
 "support and enthusiasm about this little program: it is much appreciated!"
@@ -290,31 +317,35 @@ msgstr ""
 "สุดท้ายนี้ ผมขอใช้โอกาสนี้กล่าวคำ <i><u>ขอบคุณ</u></i> "
 "สำหรับการสนับสนุนอย่างต่อเนื่องและล้นหลามในโปรแกรมเล็กๆโปรแกรมนี้ ผมรู้สึกซาบซึ้งจริงๆ"
 
-#: index.php:502
+#: index.php:556
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not contributing for it "
 "financially &ndash; you should never have to!"
 msgstr ""
 "และโปรดใช้งาน Rufusได้อย่างเสรีและสบายใจแม้ว่าคุณจะไม่ได้สนับสนุนใดๆเลยทางด้านการเงิน คุณไม่ควรจะเลยที่จะรู้สึกแย่"
 
-#: index.php:504
+#: index.php:558
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "รายการ ISOsอย่างคร่าวๆที่สามารถใช้งานได้กับ Rufus"
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:560
+#: index.php:614
 msgid "English translation by Pete Batard"
 msgstr "แปลเป็นภาษาไทยโดย วชิรวิทย์ ศรีมนัส"
 
-#: index.php:561
+#: index.php:615
 msgid "USB icon by"
 msgstr "ไอคอนUSBโดย"
 
-#: index.php:562
+#: index.php:616
 msgid "Hosting by"
 msgstr "โฮสติ้งโดย"
+
+#, php-format
+#~ msgid "Last updated %s:"
+#~ msgstr "การอัพเดทล่าสุด %s:"
 
 #~ msgid "rufus_en.png"
 #~ msgstr "rufus_th.png"

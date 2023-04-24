@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2023-04-21 17:04+0100\n"
-"PO-Revision-Date: 2023-04-22 12:18+0100\n"
+"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"PO-Revision-Date: 2023-04-24 14:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: Aapatee Ul Bakistani <aapatee@gmail.com>\n"
 "Language: ur_PK\n"
@@ -19,15 +19,15 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:100
+#: index.php:106
 msgid "Version"
 msgstr "ورژن"
 
-#: index.php:132 index.php:339
+#: index.php:138 index.php:350
 msgid "Create bootable USB drives the easy way"
 msgstr "بوٹ ایبل یو ایس بی بنائیں آسان طریقے سے"
 
-#: index.php:292
+#: index.php:303
 msgid ""
 "This page uses Google services, which may serve <u>non-personalised</u> cookies "
 "for advertising, analytics and security."
@@ -35,23 +35,23 @@ msgstr ""
 "یہ صفحہ Google سروسز کا استعمال کرتا ہے، جو اشتہارات، تجزیات اور سیکیورٹی کے "
 "لیے <u>غیر ذاتی نوعیت کی</u> کوکیز پیش کر سکتی ہے۔"
 
-#: index.php:293
+#: index.php:304
 msgid "See details"
 msgstr "تفصیلات دیکھیں"
 
-#: index.php:294
+#: index.php:305
 msgid "OK"
 msgstr ""
 
-#: index.php:300
+#: index.php:311
 msgid "Change language:"
 msgstr "زبان بدلیں:"
 
-#: index.php:309
+#: index.php:320
 msgid "Want to improve this translation?"
 msgstr "اس ترجمے کو بہتر بنانا چاہتے ہیں؟"
 
-#: index.php:364
+#: index.php:375
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, such "
 "as USB keys/pendrives, memory sticks, etc."
@@ -59,11 +59,11 @@ msgstr ""
 "روفُس ایک آلہ ہے جو یو ایس بی ڈرائیوز (پین ڈرائیوز اور میموری اسٹکس وغیرہ) کو "
 "فارمیٹ کرنے اور اُنہیں بوٹ ایبل بنانے میں مدد دیتا ہے۔"
 
-#: index.php:365
+#: index.php:376
 msgid "It can be especially useful for cases where:"
 msgstr "یہ اُن صورتوں میں خاص طور پر  کارآمد  ہو سکتا ہے جب:"
 
-#: index.php:367
+#: index.php:378
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, Linux, "
 "UEFI, etc.)"
@@ -71,70 +71,98 @@ msgstr ""
 "آپ کو بوٹ ایبل آئی ایس او فائلز سے انسٹالیشن میڈیا بنانا ہو (ایسی یو ایس بی جس "
 "سے آپریٹنگ سسٹمز یعنی ونڈوز، لنکس، یو ای ایف آئی وغیرہ) انسٹال کئے جاسکتےہوں"
 
-#: index.php:368
+#: index.php:379
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "آپ کو ایسے کمپیوٹر سسٹم پر کام کرنا ہو جس میں آپریٹنگ سسٹم موجود ہی نہ ہو"
 
-#: index.php:369
+#: index.php:380
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "آپ کو بائیوس یا دوسرے فرم ویْر کو فلیش کرنا ہو"
 
-#: index.php:370
+#: index.php:381
 msgid "you want to run a low-level utility"
 msgstr "آپ کو ایک لو لیول یوٹیلٹی چلانی ہو"
 
-#: index.php:372
+#: index.php:383
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr ""
 "اس کے چھوٹے سائز کے باوجود، روفُس آپ کو ہر وہ چیز فراہم کرتا ہے  جس کی آپ کو "
 "ضرورت ہے!"
 
-#: index.php:373
+#: index.php:384
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom of "
 "this page."
 msgstr ""
 "ان آئی ایس اوز کی فہرست جنہیں روفُس سپورٹ کرتا ہے، صفحے کے نیچے دی گئی ہیں۔"
 
-#: index.php:378
+#: index.php:389
 msgid "Download"
 msgstr "ڈاؤنلوڈ کریں"
 
-#: index.php:379
-#, php-format
-msgid "Last updated %s:"
-msgstr "تازہ ترین اپ ڈیٹ %s:"
+#: index.php:390
+msgid "Latest releases:"
+msgstr "تازہ ترین ریلیز:"
+
+#: index.php:393
+msgid "Link"
+msgstr "لنک"
+
+#: index.php:394
+msgid "Type"
+msgstr "نوعیت"
+
+#: index.php:395
+msgid "Platform"
+msgstr "پلیٹ فارم"
+
+#: index.php:396
+msgid "Size"
+msgstr "ناپ"
+
+#: index.php:397
+msgid "Date"
+msgstr "تاریخ"
+
+#: index.php:401 index.php:415 index.php:422
+msgid "Standard"
+msgstr "معیاری"
 
 #. Abbreviation for MegaByte
-#: index.php:380 index.php:381 index.php:489
+#: index.php:403 index.php:410 index.php:417 index.php:424 index.php:432
+#: index.php:543
 msgid "MB"
 msgstr ""
 
-#: index.php:381
+#: index.php:408
 msgid "Portable"
 msgstr "پورٹ ایبل"
 
-#: index.php:382 index.php:383 index.php:486
+#: index.php:430
+msgid "BETA"
+msgstr ""
+
+#: index.php:437 index.php:438 index.php:540
 msgid "Other versions"
 msgstr "دیگر ورژن"
 
-#: index.php:385
+#: index.php:439
 msgid "System Requirements:"
 msgstr "سسٹم کی ضروریات:"
 
-#: index.php:386
-msgid "Windows 7 or later, 32 or 64 bit doesn't matter."
-msgstr "ونڈوز ۷ یا بعد کی ونڈوز، ۳۲ اور ۶۴ بِٹ کا کوئی مسئلہ نہیں۔"
+#: index.php:440
+msgid "Windows 8 or later."
+msgstr "ونڈوز 8 یا اس کے بعد."
 
-#: index.php:386
+#: index.php:440
 msgid "Once downloaded, the application is ready to use."
 msgstr "ایک بار ڈاؤنلوڈ ہوجائے اور بس استعمال کے لئے تیار۔"
 
-#: index.php:387
+#: index.php:441
 msgid "Supported Languages:"
 msgstr "تعاون کردہ زبانیں:"
 
-#: index.php:433
+#: index.php:487
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -146,35 +174,35 @@ msgstr ""
 "اگر آپ روفُس کو اپنی خود کی زبان میں استعمال کر سکتے ہیں تو آپ کو ضرور اِن لوگوں "
 "کا شکریہ ادا کرنا چاہیے!"
 
-#: index.php:434
+#: index.php:488
 msgid "Usage"
 msgstr "استعمال"
 
-#: index.php:435
+#: index.php:489
 msgid "Download the executable and run it &ndash; no installation is necessary."
 msgstr ""
 "اگر آپ DOS بوٹ ایبل ڈرائیو بنائیں اور ایسا کیبورڈ استعمال کریں جو Non-US ہو، تو "
 "روفُس آپ کے سسٹم کے حساب سے کیبورڈ سلیکٹ کرنے کی کوشش کرے گا۔یہ کیبورڈ کی زیادہ "
 "ترتیبوں کو سپورٹ کرتا ہے۔"
 
-#: index.php:436
+#: index.php:490
 msgid "The executable is digitally signed and the signature should state:"
 msgstr ""
 "یہ ایگریکیوٹ ایبل ہندساتی طور پر دستخط شدہ ہے اور دستخط بتا رہا ہونا چاہیے:"
 
-#: index.php:438
+#: index.php:492
 msgid "(v1.3.0 or later)"
 msgstr "(ورژن ۰۔۳۔۱ یا کوئی بعد کا)"
 
-#: index.php:439
+#: index.php:493
 msgid "(v1.2.0 or earlier)"
 msgstr "(ورژن ۰۔۲۔۱ یا کوئی پہلے کا)"
 
-#: index.php:441
+#: index.php:495
 msgid "Notes on DOS support:"
 msgstr "DOS سپورٹ پر نوٹ:"
 
-#: index.php:442
+#: index.php:496
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system."
@@ -183,11 +211,11 @@ msgstr ""
 "روفُس آپ کے سسٹم کے حساب سے کیبورڈ سلیکٹ کرنے کی کوشش کرے گا۔یہ کیبورڈ کی زیادہ "
 "ترتیبوں کو سپورٹ کرتا ہے۔"
 
-#: index.php:443
+#: index.php:497
 msgid "Notes on ISO Support:"
 msgstr "آئی ایس او سپورٹ پر نوٹ:"
 
-#: index.php:444
+#: index.php:498
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an "
@@ -196,7 +224,7 @@ msgstr ""
 "ورژن ۰۔۱۔۱ سے لے کر تمام ورژن <a target=\"_blank\" %s>ISO image</a> (.ISO) فائل "
 "سے بوٹ ایبل یو ایس بی کو بنانے میں مددگار ہیں."
 
-#: index.php:445
+#: index.php:499
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very easy "
@@ -208,17 +236,17 @@ msgstr ""
 "یا <a target=\"_blank\" %s>CDBurnerXP</a> سے کسی سی ڈی یا فائلز کے ایک سیٹ سے "
 "ایک ISO بنانا بہت آسان ہے۔"
 
-#: index.php:447
+#: index.php:501
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "اکثر پوچھے گئے سوالات"
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:448
+#: index.php:502
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr "روفُس سوالنامہ <b><a target=\"_blank\" %s> یہاں </a></b> دستیاب ہے۔"
 
-#: index.php:449
+#: index.php:503
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -229,11 +257,11 @@ msgstr ""
 "<a target=\"_blank\" %s>issue tracker</a> استعمال کریں یا پھر آپ ہمیں <a "
 "target=\"_blank\" %s>ای میل بھیج دیں</a>"
 
-#: index.php:451
+#: index.php:505
 msgid "License"
 msgstr "لائسنس"
 
-#: index.php:452
+#: index.php:506
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."
@@ -241,7 +269,7 @@ msgstr ""
 "<a target=\"_blank\" %s>جی این یو عام عوامی اجازت نامہ ورژن ۳</a> or later. یا "
 "بعد کا ورژن۔"
 
-#: index.php:452
+#: index.php:506
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you "
 "respect the GPLv3 license."
@@ -249,7 +277,7 @@ msgstr ""
 "آپ اس سوفٹ ویئر کی تقسیم کرنے، ترمیم کرنے، حتیٰ کہ اس کو فروخت کرنے کے لئے بھی "
 "آزاد ہیں، جب تک کہ آپ جی پی ایل ورژن ۳ اجازت نامے کا احترام کرتے ہیں۔"
 
-#: index.php:453
+#: index.php:507
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" "
@@ -259,15 +287,15 @@ msgstr ""
 "target=\"_blank\" %s>MinGW32</a> کے ماحول میں بنایا گیا ہے۔"
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:455
+#: index.php:509
 msgid "Changelog"
 msgstr "ترامیم"
 
-#: index.php:488
+#: index.php:542
 msgid "Source Code"
 msgstr "اس کی کوڈنگ"
 
-#: index.php:490
+#: index.php:544
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
@@ -276,13 +304,13 @@ msgstr ""
 "متبادل طور پر، آپ <a target=\"_blank\" %s>git</a> کے انبار کو کلون کرسکتے ہیں، "
 "درجِ ذیل کوڈ کو استعمال کرتے ہوئے:"
 
-#: index.php:492
+#: index.php:546
 #, php-format
 msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "مزید معلومات کے لئے، <a target=\"_blank\" %s>GitHub project</a> ملاحظہ کریں۔"
 
-#: index.php:493
+#: index.php:547
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus and "
 "submit patches."
@@ -290,11 +318,11 @@ msgstr ""
 "اگر آپ ایک ڈویلپر ہیں تو آپ کی حوصلہ افزائی کی جاتی ہے کہ آپ روفُس کے ساتھ چھیڑ "
 "چھاڑ کریں اور اس کے پیچز جمع کروائیں۔"
 
-#: index.php:495
+#: index.php:549
 msgid "Donations"
 msgstr "عطیات"
 
-#: index.php:496
+#: index.php:550
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -302,7 +330,7 @@ msgstr ""
 "چونکہ مجھ سے عطیات کے بارے میں روزانہ کی بنیاد پر پوچھا جا رہا ہے، تو عرض ہے کہ "
 "اس صفحے پر کوئی عطیے کا بٹن <b>نہیں</b> ہے۔"
 
-#: index.php:497
+#: index.php:551
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually help "
 "software development and worse, can be guilt-inducing for users who choose not "
@@ -312,7 +340,7 @@ msgstr ""
 "مدد نہیں دیتے اور اس سے بھی برا یہ کہ وہ صارفین جو عطیات نہ دینے کا فیصلہ کرتے "
 "ہیں، انہیں شرمندگی سی محسوس ہوگی۔"
 
-#: index.php:500
+#: index.php:554
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -323,7 +351,7 @@ msgstr ""
 "Foundation</a> کو عطیات دے سکتے ہیں کیونکہ یہ ہی وجہ ہیں کہ روفُس جیسا ایک سوفٹ "
 "ویئر ممکن ہوسکا۔"
 
-#: index.php:501
+#: index.php:555
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your "
 "continuing support and enthusiasm about this little program: it is much "
@@ -332,7 +360,7 @@ msgstr ""
 "میں اس موقع کا فائدہ اٹھاتے ہوئے اس چھوٹے سے سوفٹ ویئر کے حوالے سے  آپ کے جذبے "
 "اور سپورٹ کو جاری رکھنے پر <i><u>شکریہ</u></i> کہوں گا، اس کی قدر کی جاتی ہے!"
 
-#: index.php:502
+#: index.php:556
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -340,26 +368,30 @@ msgstr ""
 "مگر آپ اس سوفٹ ویئر کو استعمال کرنے میں کچھ مجرمانہ سا محسوس نہ کریں کہ آپ اس "
 "میں مالی طور پر حصہ نہیں ڈال رہے &ndash; آپ کو کبھی ہونا بھی نہیں چاہیے!"
 
-#: index.php:504
+#: index.php:558
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "آئی ایس او فائلز کی ایک غیر جامع فہرست جن کے ساتھ روفُس کام کرتا ہے"
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:560
+#: index.php:614
 msgid "English translation by Pete Batard"
 msgstr ""
 "اردو ترجمہ <a href=\"mailto:aapatee@gmail.com?"
 "Subject=Rufus%20Homepage%20translation\">علی الباکستانی</a>"
 
-#: index.php:561
+#: index.php:615
 msgid "USB icon by"
 msgstr "یو ایس بی آئکون منجانب"
 
-#: index.php:562
+#: index.php:616
 msgid "Hosting by"
 msgstr "میزبانی منجانب"
+
+#, php-format
+#~ msgid "Last updated %s:"
+#~ msgstr "تازہ ترین اپ ڈیٹ %s:"
 
 #~ msgid ""
 #~ "Placeholder for ads &mdash; Just like you, I wish this site could exist "

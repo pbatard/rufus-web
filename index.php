@@ -1,13 +1,19 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "3.22";
+$latest_version = "4.0";
+$beta_version = "4.1";
 $previous_version = "3.16";
-$latest_date = "2023.03.25";
+$latest_date = "2023.04.26";
+$beta_date = "2023.06.26";
 $previous_date = "2021.10.13";
 $lang1 = array('ms', 'Malay', 'Malaysia');
 $lang2 = array('hr', 'Croatian', 'Croatia');
 $bugfix = false;
-$exe_size = 1.3;
+$beta = false;
+$x64_size = 1.4;
+$x86_size = 1.4;
+$arm64_size = 4.5;
+$beta_size = 1.4;
 $src_size = 6.0;
 $nb_screenshots = 5;
 $screenshot_height = "600px";
@@ -238,11 +244,16 @@ document.addEventListener("DOMContentLoaded", function(event)
 		padding:3px;
 		vertical-align:top;
 	}
+	th.title { background-color: #80e090 }
+	td.item { color: #444444; background-color: #e8e8e8; }
+	td.item a { color: #0a58ca; }
+	td.item a:hover { color: fuchsia; }
+	td.item a:visited { color: purple; }
 	li { line-height: 1.3em; }
 	h1, h2, h3, h4 { font-weight: bold; }
 	h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; margin-top: 10px; }
 	h1 .small { font-size: 0.4em; }
-	h1 a { text-decoration: none }
+	h1 a { text-decoration: none; }
 	h2 { padding: 12px; font-size: 1.5em; color: #c0baaa; line-height: 1.3em; border: 2px solid #706a6a; margin-top: 40px; margin-bottom: 20px; }
 	h3 { text-align: center; color: #c0baaa; }
 	h4 { font-size: 1.0em; margin-top: 24px; margin-bottom: 10px; }
@@ -253,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 	pre { background: #000; color: #fff; padding: 15px; margin-top: 15px; }
 	code { display: inline-block; padding: 3px 3px 4px 1px; color: #ececec; font-family: monospace, monospace; line-height: 10px; font-size: 16px; vertical-align: middle; }
 	hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
-	.kbd{
+	.kbd {
 		display:inline-block;
 		padding:3px 5px;
 		font-family:monospace, monospace;
@@ -376,14 +387,57 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#editing-an-existing-translation\">here</a>.</p>";?>
 	<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%"><?= _("Download");?></span></h2>
-		<p><b><? printf(_("Last updated %s:"), $latest_date);?></b></p>
-		<ul><li><span style="font-size: 133%"><b><?= /* Abbreviation for MegaByte */ "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . ".exe\">" . $app_name . "</a>";?></b></span> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
-		<li><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "p.exe\">" . $app_name . " " . _("Portable") . "</a>";?> <span dir="<?= $dir;?>">(<?= "" . $exe_size . " " . _("MB");?>)</span></li>
-		<li><a href="/downloads/"><?= _("Other versions");?> (GitHub)</a></li>
-		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html"><?= _("Other versions");?> (FossHub)</a></li>
-		</ul>
+		<p><b><?= _("Latest releases:") ;?></b></p>
+		<table cellspacing="1" cellpadding="6" border="0">
+			<tr>
+				<th class="title" width=220><?= _("Link") ;?></th>
+				<th class="title" width=100><?= _("Type") ;?></th>
+				<th class="title" width=160><?= _("Platform") ;?></th>
+				<th class="title" width=100><?= _("Size") ;?></th>
+				<th class="title" width=120><?= _("Date") ;?></th>
+			</tr>
+			<tr>
+				<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . ".exe\">" . "<code>rufus-" . $latest_version . ".exe</code></a>";?></td>
+				<td class="item"><?= _("Standard") ;?></td>
+				<td class="item">Windows x64</td>
+				<td class="item"><span dir="<?= $dir;?>"><?= "" . $x64_size . " " . _("MB");?></span></td>
+				<td class="item"><?= $latest_date;?></td>
+			</tr>
+			<tr>
+				<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "p.exe\">" . "<code>rufus-" . $latest_version . "p.exe</code></a>";?></td>
+				<td class="item"><?= _("Portable") ;?></td>
+				<td class="item">Windows x64</td>
+				<td class="item"><span dir="<?= $dir;?>"><?= "" . $x64_size . " " . _("MB");?></span></td>
+				<td class="item"><?= $latest_date;?></td>
+			</tr>
+			<tr>
+				<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "_x86.exe\">" . "<code>rufus-" . $latest_version . "_x86.exe</code></a>";?></td>
+				<td class="item"><?= _("Standard") ;?></td>
+				<td class="item">Windows x86</td>
+				<td class="item"><span dir="<?= $dir;?>"><?= "" . $x86_size . " " . _("MB");?></span></td>
+				<td class="item"><?= $latest_date;?></td>
+			</tr>
+			<tr>
+				<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "_arm64p.exe\">" . "<code>rufus-" . $latest_version . "_arm64.exe</code></a>";?></td>
+				<td class="item"><?= _("Standard") ;?></td>
+				<td class="item">Windows ARM64</td>
+				<td class="item"><span dir="<?= $dir;?>"><?= "" . $arm64_size . " " . _("MB");?></span></td>
+				<td class="item"><?= $latest_date;?></td>
+			</tr>
+<? if($beta):?>
+			<tr>
+				<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $beta_version . "/rufus-" . $beta_version . "_BETA.exe\">" . "<code>rufus-" . $beta_version . "_BETA.exe</code></a>";?></td>
+				<td class="item"><?= _("BETA") ;?></td>
+				<td class="item">Windows x64</td>
+				<td class="item"><span dir="<?= $dir;?>"><?= "" . $beta_size . " " . _("MB");?></span></td>
+				<td class="item"><?= $beta_date;?></td>
+			</tr>
+<? endif;?>
+		</table>&nbsp;
+		<p><span style="font-size: 110%"><a href="/downloads/"><?= _("Other versions");?> (GitHub)</a><br/>
+		<a target="_blank" href="https://www.fosshub.com/Rufus.html"><?= _("Other versions");?> (FossHub)</a></span></p>
 	<h4><?= _("System Requirements:");?></h4>
-	<p><?= _("Windows 7 or later, 32 or 64 bit doesn't matter.");?> <?= _("Once downloaded, the application is ready to use.");?></p>
+	<p><?= _("Windows 8 or later.");?> <?= _("Once downloaded, the application is ready to use.");?></p>
 	<h4><?= _("Supported Languages:");?></h4>
 	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><i>Bahasa Indonesia</i></td><td><?=$comma;?>&nbsp;</td>

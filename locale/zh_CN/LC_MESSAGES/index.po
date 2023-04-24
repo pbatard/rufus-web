@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2023-04-21 17:04+0100\n"
-"PO-Revision-Date: 2023-04-22 12:22+0100\n"
+"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"PO-Revision-Date: 2023-04-24 14:17+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: index.php:100
+#: index.php:106
 msgid "Version"
 msgstr "版本"
 
-#: index.php:132 index.php:339
+#: index.php:138 index.php:350
 msgid "Create bootable USB drives the easy way"
 msgstr "轻松创建 USB 启动盘"
 
-#: index.php:292
+#: index.php:303
 msgid ""
 "This page uses Google services, which may serve <u>non-personalised</u> "
 "cookies for advertising, analytics and security."
@@ -34,99 +34,127 @@ msgstr ""
 "此页面使用 Google 服务，该服务可能会使用<u>非个性化</u> Cookies 以提供广告、"
 "分析及安全功能。"
 
-#: index.php:293
+#: index.php:304
 msgid "See details"
 msgstr "了解详情"
 
-#: index.php:294
+#: index.php:305
 msgid "OK"
 msgstr "好"
 
-#: index.php:300
+#: index.php:311
 msgid "Change language:"
 msgstr "更改语言："
 
-#: index.php:309
+#: index.php:320
 msgid "Want to improve this translation?"
 msgstr "想要帮忙改善此翻译吗？"
 
-#: index.php:364
+#: index.php:375
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
 msgstr "Rufus 是一款格式化和创建 USB 启动盘的辅助工具。"
 
-#: index.php:365
+#: index.php:376
 msgid "It can be especially useful for cases where:"
 msgstr "本软件适用于以下场景："
 
-#: index.php:367
+#: index.php:378
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
 msgstr "需要将可引导 ISO (Windows、Linux、UEFI 等) 刻录到 USB 安装媒介的情况"
 
-#: index.php:368
+#: index.php:379
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "需要处理未安装操作系统的设备的情况"
 
-#: index.php:369
+#: index.php:380
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "需要在 DOS 环境下刷写 BIOS 或其他固件的情况"
 
-#: index.php:370
+#: index.php:381
 msgid "you want to run a low-level utility"
 msgstr "需要运行低级工具的情况"
 
-#: index.php:372
+#: index.php:383
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Rufus 麻雀虽小，但五脏俱全！"
 
-#: index.php:373
+#: index.php:384
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
 "of this page."
 msgstr "本页下方列出了一部分 Rufus 所支持的 ISO 列表。"
 
-#: index.php:378
+#: index.php:389
 msgid "Download"
 msgstr "下载"
 
-#: index.php:379
-#, php-format
-msgid "Last updated %s:"
-msgstr "最近更新于 %s："
+#: index.php:390
+msgid "Latest releases:"
+msgstr "最新版本："
+
+#: index.php:393
+msgid "Link"
+msgstr "链接"
+
+#: index.php:394
+msgid "Type"
+msgstr "类型"
+
+#: index.php:395
+msgid "Platform"
+msgstr "平台"
+
+#: index.php:396
+msgid "Size"
+msgstr "大小"
+
+#: index.php:397
+msgid "Date"
+msgstr "日期"
+
+#: index.php:401 index.php:415 index.php:422
+msgid "Standard"
+msgstr "标准"
 
 #. Abbreviation for MegaByte
-#: index.php:380 index.php:381 index.php:489
+#: index.php:403 index.php:410 index.php:417 index.php:424 index.php:432
+#: index.php:543
 msgid "MB"
 msgstr "MB"
 
-#: index.php:381
+#: index.php:408
 msgid "Portable"
 msgstr "便携版"
 
-#: index.php:382 index.php:383 index.php:486
+#: index.php:430
+msgid "BETA"
+msgstr ""
+
+#: index.php:437 index.php:438 index.php:540
 msgid "Other versions"
 msgstr "其他版本"
 
-#: index.php:385
+#: index.php:439
 msgid "System Requirements:"
 msgstr "系统需求："
 
-#: index.php:386
-msgid "Windows 7 or later, 32 or 64 bit doesn't matter."
-msgstr "Windows 7 或更高版本 (32/64 位均可)。"
+#: index.php:440
+msgid "Windows 8 or later."
+msgstr "Windows 8 或更高版本。"
 
-#: index.php:386
+#: index.php:440
 msgid "Once downloaded, the application is ready to use."
 msgstr "本应用即开即用。"
 
-#: index.php:387
+#: index.php:441
 msgid "Supported Languages:"
 msgstr "支持语言："
 
-#: index.php:433
+#: index.php:487
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -136,32 +164,32 @@ msgstr ""
 "我希望借此机会在此表达对 Rufus 及其官方网站的译者的由衷谢意。如果 Rufus 有你"
 "的语言，你也应该和我一起感谢他们！"
 
-#: index.php:434
+#: index.php:488
 msgid "Usage"
 msgstr "用法"
 
-#: index.php:435
+#: index.php:489
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "下载后即开即用，无需安装。"
 
-#: index.php:436
+#: index.php:490
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "本程序已经经过数字签名，其内容应为："
 
-#: index.php:438
+#: index.php:492
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 或更高版本)"
 
-#: index.php:439
+#: index.php:493
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 及更早版本)"
 
-#: index.php:441
+#: index.php:495
 msgid "Notes on DOS support:"
 msgstr "DOS 支持备注："
 
-#: index.php:442
+#: index.php:496
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system."
@@ -169,11 +197,11 @@ msgstr ""
 "如果你创建了 DOS 启动盘，但却未使用美式键盘布局，Rufus 则将会自动根据系统语言"
 "选择键盘布局。"
 
-#: index.php:443
+#: index.php:497
 msgid "Notes on ISO Support:"
 msgstr "ISO 支持备注："
 
-#: index.php:444
+#: index.php:498
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
@@ -182,7 +210,7 @@ msgstr ""
 "Rufus 1.1.0 及更高版本支持使用 <a target=\"_blank\" %s>ISO 镜像</a> (.iso) 文"
 "件来创建引导 U 盘。"
 
-#: index.php:445
+#: index.php:499
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
@@ -194,17 +222,17 @@ msgstr ""
 "的 <a target=\"_blank\" %s>InfraRecorder</a> 或 <a target=\"_blank\" "
 "%s>CDBurnerXP</a>。"
 
-#: index.php:447
+#: index.php:501
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "常见问题 (FAQ)"
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:448
+#: index.php:502
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr "您可<b><a target=\"_blank\" %s>在此</a></b>找到 Rufus 的常见问题。"
 
-#: index.php:449
+#: index.php:503
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -214,24 +242,24 @@ msgstr ""
 "要反馈问题、漏洞或功能请求，请使用 GitHub 的<a target=\"_blank\" %s>议题功能 "
 "(Issues)</a>，或<a target=\"_blank\" %s>向我发送电子邮件</a>。"
 
-#: index.php:451
+#: index.php:505
 msgid "License"
 msgstr "许可协议"
 
-#: index.php:452
+#: index.php:506
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
 msgstr "<a target=\"_blank\" %s>GNU 通用许可证第三版 (GPL)</a>或更高版。"
 
-#: index.php:452
+#: index.php:506
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you "
 "respect the GPLv3 license."
 msgstr "在遵循 GPLv3 许可证的前提下，你可以随意分发、修改，甚至是出售本软件。"
 
-#: index.php:453
+#: index.php:507
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
@@ -242,44 +270,44 @@ msgstr ""
 "%s>MinGW32</a> 开发环境，Rufus 的开发流程百分百开源透明。"
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:455
+#: index.php:509
 msgid "Changelog"
 msgstr "更新日志"
 
-#: index.php:488
+#: index.php:542
 msgid "Source Code"
 msgstr "源代码"
 
-#: index.php:490
+#: index.php:544
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr "或者，您可以使用以下方法克隆 <a target=\"_blank\" %s>git</a> 存储库："
 
-#: index.php:492
+#: index.php:546
 #, php-format
 msgid ""
 "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr "您可以参见 <a target=\"_blank\" %s>GitHub 项目</a>来了解详情。"
 
-#: index.php:493
+#: index.php:547
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
 msgstr "如果您是开发者，我们十分欢迎您为此项目添砖加瓦。"
 
-#: index.php:495
+#: index.php:549
 msgid "Donations"
 msgstr "捐助"
 
-#: index.php:496
+#: index.php:550
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr "由于我经常会被问到此问题，所以在此特别声明，本页上<b>无</b>捐助按钮。"
 
-#: index.php:497
+#: index.php:551
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -288,7 +316,7 @@ msgstr ""
 "原因之一是，本人觉得捐助系统并不能帮助本软件的开发，甚至会让未捐助的用户背上"
 "负罪感。"
 
-#: index.php:500
+#: index.php:554
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -298,27 +326,27 @@ msgstr ""
 "但如果您执意要捐赠的话，您可以向<a target=\"_blank\" %s>自由软件基金会</a>捐"
 "赠。该基金会是促成包括 Rufus 在内的开源软件的主要推手之一。"
 
-#: index.php:501
+#: index.php:555
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much "
 "appreciated!"
 msgstr "无论如何，<u>谢谢你</u>对这款小软件的不断支持！"
 
-#: index.php:502
+#: index.php:556
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr "所以不要背上任何没捐赠或没做出贡献的负罪感，尽情随意使用本软件吧！"
 
-#: index.php:504
+#: index.php:558
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Rufus 已知支持的部分 ISO 镜像列表"
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:560
+#: index.php:614
 msgid "English translation by Pete Batard"
 msgstr ""
 "简体中文翻译由 <a target=\"_blank\" href=\"https://twitter.com/"
@@ -326,13 +354,17 @@ msgstr ""
 "Lemonawa\">Lemonawa</a> 和 <a target=\"_blank\" href=\"https://github.com/"
 "Byacrya\">Byacrya</a> 提供"
 
-#: index.php:561
+#: index.php:615
 msgid "USB icon by"
 msgstr "USB 图标制作者"
 
-#: index.php:562
+#: index.php:616
 msgid "Hosting by"
 msgstr "网站托管提供商"
+
+#, php-format
+#~ msgid "Last updated %s:"
+#~ msgstr "最近更新于 %s："
 
 #, php-format
 #~ msgid ""

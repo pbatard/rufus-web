@@ -122,11 +122,16 @@ document.addEventListener("DOMContentLoaded", function(event)
 		padding:3px;
 		vertical-align:top;
 	}
+	th.title { background-color: #80e090 }
+	td.item { color: #444444; background-color: #e8e8e8; }
+	td.item a { color: #0a58ca; }
+	td.item a:hover { color: fuchsia; }
+	td.item a:visited { color: purple; }
 	li { line-height: 1.3em; }
 	h1, h2, h3, h4 { font-weight: bold; }
 	h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; margin-top: 10px; }
 	h1 .small { font-size: 0.4em; }
-	h1 a { text-decoration: none }
+	h1 a { text-decoration: none; }
 	h2 { padding: 12px; font-size: 1.5em; color: #c0baaa; line-height: 1.3em; border: 2px solid #706a6a; margin-top: 40px; margin-bottom: 20px; }
 	h3 { text-align: center; color: #c0baaa; }
 	h4 { font-size: 1.0em; margin-top: 24px; margin-bottom: 10px; }
@@ -137,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 	pre { background: #000; color: #fff; padding: 15px; margin-top: 15px; }
 	code { display: inline-block; padding: 3px 3px 4px 1px; color: #ececec; font-family: monospace, monospace; line-height: 10px; font-size: 16px; vertical-align: middle; }
 	hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
-	.kbd{
+	.kbd {
 		display:inline-block;
 		padding:3px 5px;
 		font-family:monospace, monospace;
@@ -173,8 +178,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 <div id="cookie-notice" style="display: none;">
   <div id="cookie-statement" class="cookie-notification">
     <div class="text">
-      <span>This page uses Google services, which may serve <u>non-personalised</u> cookies for advertising, analytics and security.</span>
-      <a href="https://policies.google.com/technologies/cookies?hl=pt_BR" target="_blank">See details</a>
+      <span>Esta página utiliza os serviços da Google, que podem servir cookies <u>não personalizados</u> para publicidade, análise e segurança.</span>
+      <a href="https://policies.google.com/technologies/cookies?hl=pt_BR" target="_blank">Veja detalhes</a>
       <a href="#" onclick="document.getElementById('cookie-notice').style.display = 'none'; setCookie('display_cookie_notice', 'no', 365);">OK</a>
     </div>
   </div>
@@ -373,14 +378,48 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<p>Mais abaixo se encontra uma breve lista das ISOs suportadas por Rufus. <a href="#ref1"><sup>(1)</sup></a></p>
 		<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Download</span></h2>
-		<p><b>Ultima atualização 2023.03.25:</b></p>
-		<ul><li><span style="font-size: 133%"><b><a href="https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22.exe">Rufus 3.22</a></b></span> <span dir="ltr">(1.3 MB)</span></li>
-		<li><a href="https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22p.exe">Rufus 3.22 Portátil</a> <span dir="ltr">(1.3 MB)</span></li>
-		<li><a href="/downloads/">Outras versões (GitHub)</a></li>
-		<li><a target="_blank" href="https://www.fosshub.com/Rufus.html">Outras versões (FossHub)</a></li>
-		</ul>
+		<p><b>Últimos lançamentos:</b></p>
+		<table cellspacing="1" cellpadding="6" border="0">
+			<tr>
+				<th class="title" width=220>Link</th>
+				<th class="title" width=100>Tipo</th>
+				<th class="title" width=160>Plataforma</th>
+				<th class="title" width=100>Tamanho</th>
+				<th class="title" width=120>Data</th>
+			</tr>
+			<tr>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.0/rufus-4.0.exe"><code>rufus-4.0.exe</code></a></td>
+				<td class="item">Standard</td>
+				<td class="item">Windows x64</td>
+				<td class="item"><span dir="ltr">1.3 MB</span></td>
+				<td class="item">2023.04.26</td>
+			</tr>
+			<tr>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.0/rufus-4.0p.exe"><code>rufus-4.0p.exe</code></a></td>
+				<td class="item">Portátil</td>
+				<td class="item">Windows x64</td>
+				<td class="item"><span dir="ltr">1.3 MB</span></td>
+				<td class="item">2023.04.26</td>
+			</tr>
+			<tr>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.0/rufus-4.0_x86.exe"><code>rufus-4.0_x86.exe</code></a></td>
+				<td class="item">Standard</td>
+				<td class="item">Windows x86</td>
+				<td class="item"><span dir="ltr">1.4 MB</span></td>
+				<td class="item">2023.04.26</td>
+			</tr>
+			<tr>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.0/rufus-4.0_arm64p.exe"><code>rufus-4.0_arm64.exe</code></a></td>
+				<td class="item">Standard</td>
+				<td class="item">Windows ARM64</td>
+				<td class="item"><span dir="ltr">4.5 MB</span></td>
+				<td class="item">2023.04.26</td>
+			</tr>
+		</table>&nbsp;
+		<p><span style="font-size: 110%"><a href="/downloads/">Outras versões (GitHub)</a><br/>
+		<a target="_blank" href="https://www.fosshub.com/Rufus.html">Outras versões (FossHub)</a></span></p>
 	<h4>Requisitos do sistema:</h4>
-	<p>Windows 7 ou posterior, 32 ou 64 bit. Uma vez baixado o aplicativo está pronto para o uso.</p>
+	<p>Windows 8 ou posterior. Uma vez baixado o aplicativo está pronto para o uso.</p>
 	<h4>Idiomas suportados:</h4>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
@@ -451,23 +490,26 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<a name="changelog"></a>
 	<h2>Alterações</h2>
 	<ul dir="ltr">
-		<li><b>Versão 3.22</b> (2023.03.25)<ul dir="ltr">
-			<li><span dir="ltr">Add SHA-1 and SHA-256 x86 acceleration on CPUs that support it (courtesy of <b>Jeffrey Walton</b>)</span></li>
-			<li><span dir="ltr">Add an option to disable BitLocker device encryption in the Windows User Experience dialog</span></li>
-			<li><span dir="ltr">Add a cheat mode (<kbd>Ctrl</kbd>-<kbd>P</kbd>) to preserve the log between sessions</span></li>
-			<li><span dir="ltr">Fix potential media creation errors by forcing the unmount of stale WIM images</span></li>
-			<li><span dir="ltr">Fix potential access errors in ISO → ESP mode by forcing Large FAT32 formatting</span></li>
-			<li><span dir="ltr">Fix user-specified label not being preserved on error/cancel</span></li>
-			<li><span dir="ltr">Fix some large SSD devices being listed by default</span></li>
-			<li><span dir="ltr">Fix processing of Rock Ridge CE fields</span></li>
-			<li><span dir="ltr">Work around the use of Rock Ridge symbolic links for Linux firmware packages (Debian)</span></li>
-			<li><span dir="ltr">Remove the ISO download feature on Windows 7</span></li>
-			<li><span dir="ltr"><b>Note: This is the last version of Rufus that can run on Windows 7</b></span></li>
+		<li><b>Versão 4.0</b> (2023.04.26)<ul dir="ltr">
+			<li><span dir="ltr">Fix persistent partition not working with Ubuntu 23.04</span></li>
+			<li><span dir="ltr">Fix out of range pointer error with Ubuntu 23.04 when booting in BIOS mode</span></li>
+			<li><span dir="ltr">Fix boot freeze with Ubuntu Studio when Secure Boot is enabled</span></li>
+			<li><span dir="ltr">Fix incorrect architecture detection when checking for updates</span></li>
+			<li><span dir="ltr">Fix a Windows Store application crash when processing GRUB bootloaders</span></li>
+			<li><span dir="ltr">Fix a Windows Store application crash when enumerating processes that contain a <code>%</code> sign</span></li>
+			<li><span dir="ltr">Fix a Windows Store application crash when using German localization</span></li>
+			<li><span dir="ltr">Note that the major version was bumped on account of:</span><br/>
+					<ul dir="ltr">
+						<li><span dir="ltr">New versions of Rufus requiring Windows 8 or later</span></li>
+						<li><span dir="ltr">New versions of Rufus defaulting to a 64-bit executable</span></li>
+						<li><span dir="ltr">Old versions of Rufus potentially not being able to update properly</span></li>
+					</ul>
+			</li>
 		</ul></li>
 		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Outras versões</a></b></li>
 	</ul>
 	<h2>Código-fonte</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v3.22.zip">Rufus 3.22</a> <span dir="ltr">(6 MB)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.0.zip">Rufus 4.0</a> <span dir="ltr">(6 MB)</span></li>
 		<li>Alternativamente você pode clonar o <a target="_blank" href="http://git-scm.com">git</a> repositório usando:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>Para mais informações veja: <a target="_blank" href="https://github.com/pbatard/rufus">GitHub project</a>.</li></ul>

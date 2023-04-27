@@ -6,6 +6,10 @@ PUBLIC_KEY=~/public.pem
 
 # Create or update a signature
 sign_file() {
+  # Ignore symlinks
+  if [[ "$(git ls-tree HEAD: $FILE | cut -d " " -f1)" -eq "120000" ]]; then
+    return
+  fi
   if [ -f $FILE.sig ]; then
     SIZE=$(stat -c%s $FILE.sig)
     openssl dgst -sha256 -verify $PUBLIC_KEY -signature $FILE.sig $FILE >/dev/null 2>&1

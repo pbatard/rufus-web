@@ -1,8 +1,8 @@
-core.img was created from:
-  https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
+Because of issue #2233, core.img was created from the GRUB gitsource obtained on 2023.04.25 from:
+  https://git.savannah.gnu.org/cgit/grub.git/tree/?id=e67a551a48192a04ab705fca832d82f850162b64
 with the following Fedora patch applied:
   grub_is_debug_enabled.patch
-on a Debian 11.5 x64 system using the commands:
+on a Debian 11.6 x64 system using the commands:
   ./autogen.sh
   # --enable-boot-time for Manjaro Linux
   ./configure --disable-nls --enable-boot-time

@@ -418,7 +418,7 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 				<td class="item"><?= $latest_date;?></td>
 			</tr>
 			<tr>
-				<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "_arm64p.exe\">" . "<code>rufus-" . $latest_version . "_arm64.exe</code></a>";?></td>
+				<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $latest_version . "/rufus-" . $latest_version . "_arm64.exe\">" . "<code>rufus-" . $latest_version . "_arm64.exe</code></a>";?></td>
 				<td class="item"><?= _("Standard") ;?></td>
 				<td class="item">Windows ARM64</td>
 				<td class="item"><span dir="<?= $dir;?>"><?= "" . $arm64_size . " " . _("MB");?></span></td>

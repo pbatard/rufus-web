@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.0";
+$latest_version = "4.1";
 $beta_version = "4.1";
 $previous_version = "3.16";
-$latest_date = "2023.04.26";
+$latest_date = "2023.05.31";
 $beta_date = "2023.06.26";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Malay', 'Malaysia');
@@ -509,20 +509,11 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Fix persistent partition not working with Ubuntu 23.04</span></li>
-			<li><span dir="ltr">Fix out of range pointer error with Ubuntu 23.04 when booting in BIOS mode</span></li>
-			<li><span dir="ltr">Fix boot freeze with Ubuntu Studio when Secure Boot is enabled</span></li>
-			<li><span dir="ltr">Fix incorrect architecture detection when checking for updates</span></li>
-			<li><span dir="ltr">Fix a Windows Store application crash when processing GRUB bootloaders</span></li>
-			<li><span dir="ltr">Fix a Windows Store application crash when enumerating processes that contain a <code>%</code> sign</span></li>
-			<li><span dir="ltr">Fix a Windows Store application crash when using German localization</span></li>
-			<li><span dir="ltr">Note that the major version was bumped on account of:</span><br/>
-					<ul dir="<?= $dir;?>">
-						<li><span dir="ltr">New versions of Rufus requiring Windows 8 or later</span></li>
-						<li><span dir="ltr">New versions of Rufus defaulting to a 64-bit executable</span></li>
-						<li><span dir="ltr">Old versions of Rufus potentially not being able to update properly</span></li>
-					</ul>
-			</li>
+			<li><span dir="ltr">Add timeouts on enumeration queries that may stall on some systems</span></li>
+			<li><span dir="ltr">Restore MS-DOS drive creation through the download of binaries from Microsoft</span></li>
+			<li><span dir="ltr">Update the log button icon</span></li>
+			<li><span dir="ltr">Fix UEFI:NTFS incompatibility with Windows Dev Kit 2023 platform</span></li>
+			<li><span dir="ltr">Fix more GRUB <code>out of range pointer</code> errors with Ubuntu/Fedora when booting in BIOS mode</span></li>
 		</ul></li>
 <? if($bugfix):?>
 		<br />

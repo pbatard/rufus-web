@@ -388,32 +388,32 @@ document.addEventListener("DOMContentLoaded", function(event)
 				<th class="title" width=120>Data</th>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.0/rufus-4.0.exe"><code>rufus-4.0.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.1/rufus-4.1.exe"><code>rufus-4.1.exe</code></a></td>
 				<td class="item">Standard</td>
 				<td class="item">Windows x64</td>
 				<td class="item"><span dir="ltr">1.3 MB</span></td>
-				<td class="item">2023.04.26</td>
+				<td class="item">2023.05.31</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.0/rufus-4.0p.exe"><code>rufus-4.0p.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.1/rufus-4.1p.exe"><code>rufus-4.1p.exe</code></a></td>
 				<td class="item">Portátil</td>
 				<td class="item">Windows x64</td>
 				<td class="item"><span dir="ltr">1.3 MB</span></td>
-				<td class="item">2023.04.26</td>
+				<td class="item">2023.05.31</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.0/rufus-4.0_x86.exe"><code>rufus-4.0_x86.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.1/rufus-4.1_x86.exe"><code>rufus-4.1_x86.exe</code></a></td>
 				<td class="item">Standard</td>
 				<td class="item">Windows x86</td>
 				<td class="item"><span dir="ltr">1.4 MB</span></td>
-				<td class="item">2023.04.26</td>
+				<td class="item">2023.05.31</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.0/rufus-4.0_arm64.exe"><code>rufus-4.0_arm64.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.1/rufus-4.1_arm64.exe"><code>rufus-4.1_arm64.exe</code></a></td>
 				<td class="item">Standard</td>
 				<td class="item">Windows ARM64</td>
 				<td class="item"><span dir="ltr">4.5 MB</span></td>
-				<td class="item">2023.04.26</td>
+				<td class="item">2023.05.31</td>
 			</tr>
 		</table>&nbsp;
 		<p><span style="font-size: 110%"><a href="/downloads/">Outras versões (GitHub)</a><br/>
@@ -490,26 +490,17 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<a name="changelog"></a>
 	<h2>Alterações</h2>
 	<ul dir="ltr">
-		<li><b>Versão 4.0</b> (2023.04.26)<ul dir="ltr">
-			<li><span dir="ltr">Fix persistent partition not working with Ubuntu 23.04</span></li>
-			<li><span dir="ltr">Fix out of range pointer error with Ubuntu 23.04 when booting in BIOS mode</span></li>
-			<li><span dir="ltr">Fix boot freeze with Ubuntu Studio when Secure Boot is enabled</span></li>
-			<li><span dir="ltr">Fix incorrect architecture detection when checking for updates</span></li>
-			<li><span dir="ltr">Fix a Windows Store application crash when processing GRUB bootloaders</span></li>
-			<li><span dir="ltr">Fix a Windows Store application crash when enumerating processes that contain a <code>%</code> sign</span></li>
-			<li><span dir="ltr">Fix a Windows Store application crash when using German localization</span></li>
-			<li><span dir="ltr">Note that the major version was bumped on account of:</span><br/>
-					<ul dir="ltr">
-						<li><span dir="ltr">New versions of Rufus requiring Windows 8 or later</span></li>
-						<li><span dir="ltr">New versions of Rufus defaulting to a 64-bit executable</span></li>
-						<li><span dir="ltr">Old versions of Rufus potentially not being able to update properly</span></li>
-					</ul>
-			</li>
+		<li><b>Versão 4.1</b> (2023.05.31)<ul dir="ltr">
+			<li><span dir="ltr">Add timeouts on enumeration queries that may stall on some systems</span></li>
+			<li><span dir="ltr">Restore MS-DOS drive creation through the download of binaries from Microsoft</span></li>
+			<li><span dir="ltr">Update the log button icon</span></li>
+			<li><span dir="ltr">Fix UEFI:NTFS incompatibility with Windows Dev Kit 2023 platform</span></li>
+			<li><span dir="ltr">Fix more GRUB <code>out of range pointer</code> errors with Ubuntu/Fedora when booting in BIOS mode</span></li>
 		</ul></li>
 		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Outras versões</a></b></li>
 	</ul>
 	<h2>Código-fonte</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.0.zip">Rufus 4.0</a> <span dir="ltr">(6 MB)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.1.zip">Rufus 4.1</a> <span dir="ltr">(6 MB)</span></li>
 		<li>Alternativamente você pode clonar o <a target="_blank" href="http://git-scm.com">git</a> repositório usando:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>Para mais informações veja: <a target="_blank" href="https://github.com/pbatard/rufus">GitHub project</a>.</li></ul>

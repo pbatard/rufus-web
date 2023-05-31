@@ -1,5 +1,7 @@
 core.img was created from:
   https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
+with the following Fedora patch applied:
+  grub_is_debug_enabled.patch
 on a Debian 11.5 x64 system using the commands:
   ./autogen.sh
   # --enable-boot-time for Manjaro Linux

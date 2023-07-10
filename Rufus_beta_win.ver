@@ -1,20 +1,17 @@
-version = 3.22.2003
+version = 4.2.2070
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v3.22_BETA/rufus-3.22_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v4.2_BETA/rufus-4.2_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 3.22 BETA (2023.03.18)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.2 BETA (2023.07.10)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add SHA-1 and SHA-256 x86 acceleration on CPUs that support it\par
-{\pntext\f2\'B7\tab}Add an option to disable BitLocker device encryption in the Windows User Experience dialog\par
-{\pntext\f2\'B7\tab}Add a cheat mode (Ctrl-P) to preserve the log between sessions\par
-{\pntext\f2\'B7\tab}Fix potential media creation errors by forcing the unmount of stale .wim images\par
-{\pntext\f2\'B7\tab}Fix potential access errors in ISO → ESP mode by forcing Large FAT32 formatting\par
-{\pntext\f2\'B7\tab}Fix user-specified label not being preserved on error/cancel\par
-{\pntext\f2\'B7\tab}Fix some large SSD devices being listed by default\par
-{\pntext\f2\'B7\tab}Fix processing of Rock Ridge CE fields\par
-{\pntext\f2\'B7\tab}Work around the use of Rock Ridge symbolic links for Linux firmware packages (Debian)\par
-{\pntext\f2\'B7\tab}Remove the ISO download feature on Windows 7\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add detection and warning for UEFI revoked bootloaders (including ones revoked through SkuSiPolicy.p7b)\par
+{\pntext\f2\'B7\tab}Add ZIP64 support, to extract .zip images that are larger than 4 GB\par
+{\pntext\f2\'B7\tab}Add saving and restoring current drive to/from compressed VHDX image\par
+{\pntext\f2\'B7\tab}Add saving and restoring current drive to/from compressed FFU (Full Flash Update) image [EXPERIMENTAL]\par
+{\pntext\f2\'B7\tab}Fix a crash when trying to open Windows ISOs, with the x86 32-bit version\par
+{\pntext\f2\'B7\tab}Increase ISO → ESP limit, for Debian 12 netinst images\par
+{\pntext\f2\'B7\tab}Make sure the main partition size is aligned to the cluster size\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

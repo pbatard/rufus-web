@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
 <?
 $latest_version = "4.1";
-$beta_version = "4.1";
+$beta_version = "4.2";
 $previous_version = "3.16";
 $latest_date = "2023.05.31";
-$beta_date = "2023.06.26";
+$beta_date = "2023.07.10";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Croatian', 'Croatia');
 $bugfix = false;
-$beta = false;
+$beta = true;
 $x64_size = 1.3;
 $x86_size = 1.4;
 $arm64_size = 4.5;
@@ -426,8 +426,8 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 			</tr>
 <? if($beta):?>
 			<tr>
-				<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $beta_version . "/rufus-" . $beta_version . "_BETA.exe\">" . "<code>rufus-" . $beta_version . "_BETA.exe</code></a>";?></td>
-				<td class="item"><?= _("BETA") ;?></td>
+				<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $beta_version . "_BETA/rufus-" . $beta_version . "_BETA.exe\">" . "<code>rufus-" . $beta_version . "_BETA.exe</code></a>";?></td>
+				<td class="item"><?= "<a href=\"https://raw.githubusercontent.com/pbatard/rufus/master/ChangeLog.txt\">" .  _("BETA") . "</a>";?></td>
 				<td class="item">Windows x64</td>
 				<td class="item"><span dir="<?= $dir;?>"><?= "" . $beta_size . " " . _("MB");?></span></td>
 				<td class="item"><?= $beta_date;?></td>

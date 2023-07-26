@@ -514,7 +514,7 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 			<li><span dir="ltr">Add saving and restoring current drive to/from compressed VHDX image</span></li>
 			<li><span dir="ltr">Add saving and restoring current drive to/from compressed FFU (<a target="_blank" href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu">Full Flash Update</a>) image <b>[EXPERIMENTAL]</b></span></li>
 			<li><span dir="ltr">Fix a crash when trying to open Windows ISOs, with the MinGW compiled x86 32-bit version</span></li>
-			<li><span dir="ltr">Fix an issue where ISOs that contain a boot image with an <code>'EFI'</code> label are not be detected bootable</span></li>
+			<li><span dir="ltr">Fix an issue where ISOs that contain a boot image with an <code>'EFI'</code> label are not detected as bootable</span></li>
 			<li><span dir="ltr">Increase the ISO → ESP limit for Debian 12 netinst images</span></li>
 			<li><span dir="ltr">Ensure that the main partition size is aligned to the cluster size</span></li>
 		</ul></li>

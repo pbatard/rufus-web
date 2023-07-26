@@ -1,18 +1,18 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.1";
+$latest_version = "4.2";
 $beta_version = "4.2";
 $previous_version = "3.16";
-$latest_date = "2023.05.31";
+$latest_date = "2023.07.26";
 $beta_date = "2023.07.10";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Croatian', 'Croatia');
 $bugfix = false;
-$beta = true;
-$x64_size = 1.3;
+$beta = false;
+$x64_size = 1.4;
 $x86_size = 1.4;
-$arm64_size = 4.5;
+$arm64_size = 4.6;
 $beta_size = 1.4;
 $src_size = 6.0;
 $nb_screenshots = 5;
@@ -509,11 +509,14 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Add timeouts on enumeration queries that may stall on some systems</span></li>
-			<li><span dir="ltr">Restore MS-DOS drive creation through the download of binaries from Microsoft</span></li>
-			<li><span dir="ltr">Update the log button icon</span></li>
-			<li><span dir="ltr">Fix UEFI:NTFS incompatibility with Windows Dev Kit 2023 platform</span></li>
-			<li><span dir="ltr">Fix more GRUB <code>out of range pointer</code> errors with Ubuntu/Fedora when booting in BIOS mode</span></li>
+			<li><span dir="ltr">Add detection and warning for UEFI revoked bootloaders (including ones revoked through <code>SkuSiPolicy.p7b</code>)</span></li>
+			<li><span dir="ltr">Add ZIP64 support, to extract <code>.zip</code> images that are larger than 4 GB</span></li>
+			<li><span dir="ltr">Add saving and restoring current drive to/from compressed VHDX image</span></li>
+			<li><span dir="ltr">Add saving and restoring current drive to/from compressed FFU (<a target="_blank" href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu">Full Flash Update</a>) image <b>[EXPERIMENTAL]</b></span></li>
+			<li><span dir="ltr">Fix a crash when trying to open Windows ISOs, with the MinGW compiled x86 32-bit version</span></li>
+			<li><span dir="ltr">Fix an issue where ISOs that contain a boot image with an <code>'EFI'</code> label are not be detected bootable</span></li>
+			<li><span dir="ltr">Increase the ISO → ESP limit for Debian 12 netinst images</span></li>
+			<li><span dir="ltr">Ensure that the main partition size is aligned to the cluster size</span></li>
 		</ul></li>
 <? if($bugfix):?>
 		<br />

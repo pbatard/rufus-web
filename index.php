@@ -14,7 +14,7 @@ $x64_size = 1.4;
 $x86_size = 1.4;
 $arm64_size = 4.6;
 $beta_size = 1.4;
-$src_size = 6.0;
+$src_size = 6.1;
 $nb_screenshots = 5;
 $screenshot_height = "600px";
 $screenshot_duration = 10000;
@@ -556,7 +556,7 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td><?=$comma;?>&nbsp;</td>
 		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>
-		<td><a target="_blank" href="http://www.nu2.nu/pebuilder">BartPE</a></td><td><?=$comma;?>&nbsp;</td>
+		<td><a target="_blank" href="https://archboot.com/">Archboot</a></td><td><?=$comma;?>&nbsp;</td>
 		<td><a target="_blank" href="https://www.centos.org">CentOS</a></td><td><?=$comma;?>&nbsp;</td>
 		<td><a target="_blank" href="https://clonezilla.org/clonezilla-live.php">Clonezilla</a></td><td><?=$comma;?>&nbsp;</td>
 		<td><a target="_blank" href="http://www.damnsmalllinux.org">Damn&nbsp;Small&nbsp;Linux</a></td><td><?=$comma;?>&nbsp;</td>

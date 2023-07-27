@@ -1,4 +1,4 @@
-version = 4.2.2075
+version = 4.2.2074
 platform_min = 6.2
 download_url = https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2.exe
 download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2_x86.exe

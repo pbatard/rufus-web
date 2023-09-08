@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2023-04-24 13:34+0100\n"
-"PO-Revision-Date: 2023-04-24 13:41+0100\n"
+"PO-Revision-Date: 2023-09-08 13:50+0100\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
 "Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"
 "Language: el_GR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: index.php:106
 msgid "Version"
@@ -158,9 +158,7 @@ msgstr "Windows 8 ή νεότερη έκδοση."
 
 #: index.php:440
 msgid "Once downloaded, the application is ready to use."
-msgstr ""
-"Υποστηρίζονται όλες οι εκδόσεις των Windows από 7 και μετά σε 32bit ή 64bit "
-"αρχιτεκτονική συστήματος."
+msgstr "Μετά τη λήψη, η εφαρμογή είναι έτοιμη για χρήση."
 
 #: index.php:441
 msgid "Supported Languages:"

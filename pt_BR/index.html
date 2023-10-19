@@ -388,32 +388,32 @@ document.addEventListener("DOMContentLoaded", function(event)
 				<th class="title" width=120>Data</th>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2.exe"><code>rufus-4.2.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3.exe"><code>rufus-4.3.exe</code></a></td>
 				<td class="item">Standard</td>
 				<td class="item">Windows x64</td>
 				<td class="item"><span dir="ltr">1.4 MB</span></td>
-				<td class="item">2023.07.26</td>
+				<td class="item">2023.10.19</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2p.exe"><code>rufus-4.2p.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3p.exe"><code>rufus-4.3p.exe</code></a></td>
 				<td class="item">Portátil</td>
 				<td class="item">Windows x64</td>
 				<td class="item"><span dir="ltr">1.4 MB</span></td>
-				<td class="item">2023.07.26</td>
+				<td class="item">2023.10.19</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2_x86.exe"><code>rufus-4.2_x86.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3_x86.exe"><code>rufus-4.3_x86.exe</code></a></td>
 				<td class="item">Standard</td>
 				<td class="item">Windows x86</td>
 				<td class="item"><span dir="ltr">1.4 MB</span></td>
-				<td class="item">2023.07.26</td>
+				<td class="item">2023.10.19</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2_arm64.exe"><code>rufus-4.2_arm64.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3_arm64.exe"><code>rufus-4.3_arm64.exe</code></a></td>
 				<td class="item">Standard</td>
 				<td class="item">Windows ARM64</td>
 				<td class="item"><span dir="ltr">4.6 MB</span></td>
-				<td class="item">2023.07.26</td>
+				<td class="item">2023.10.19</td>
 			</tr>
 			<tr>
 				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.3_BETA/rufus-4.3_BETA.exe"><code>rufus-4.3_BETA.exe</code></a></td>
@@ -497,20 +497,20 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<a name="changelog"></a>
 	<h2>Alterações</h2>
 	<ul dir="ltr">
-		<li><b>Versão 4.2</b> (2023.07.26)<ul dir="ltr">
-			<li><span dir="ltr">Add detection and warning for UEFI revoked bootloaders (including ones revoked through <code>SkuSiPolicy.p7b</code>)</span></li>
-			<li><span dir="ltr">Add ZIP64 support, to extract <code>.zip</code> images that are larger than 4 GB</span></li>
-			<li><span dir="ltr">Add saving and restoring current drive to/from compressed VHDX image</span></li>
-			<li><span dir="ltr">Add saving and restoring current drive to/from compressed FFU (<a target="_blank" href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu">Full Flash Update</a>) image <b>[EXPERIMENTAL]</b></span></li>
-			<li><span dir="ltr">Fix a crash when trying to open Windows ISOs, with the MinGW compiled x86 32-bit version</span></li>
-			<li><span dir="ltr">Fix an issue where ISOs that contain a boot image with an <code>'EFI'</code> label are not detected as bootable</span></li>
-			<li><span dir="ltr">Increase the ISO → ESP limit for Debian 12 netinst images</span></li>
-			<li><span dir="ltr">Ensure that the main partition size is aligned to the cluster size</span></li>
+		<li><b>Versão 4.3</b> (2023.10.19)<ul dir="ltr">
+			<li><span dir="ltr">Add support for Rock Ridge symbolic links preservation when NTFS is used</span></li>
+			<li><span dir="ltr">Add an exception to enforce NTFS for Linux Mint's LMDE</span></li>
+			<li><span dir="ltr">Add an expert feature to restrict a Windows installation to S Mode</span></li>
+			<li><span dir="ltr">Fix persistence support for Debian 12 when booted in BIOS mode</span></li>
+			<li><span dir="ltr">Fix a regression that prevented the opening of <code>.vhd</code> images</span></li>
+			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> to report a more explicit error on bootmgr security issues</span></li>
+			<li><span dir="ltr">Improve the search for conflicting processes by running it in a background thread</span></li>
+			<li><span dir="ltr">Improve support for <a target="_blank" href="https://www.slax.org">Slax Linux</a></span></li>
 		</ul></li>
 		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Outras versões</a></b></li>
 	</ul>
 	<h2>Código-fonte</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.2.zip">Rufus 4.2</a> <span dir="ltr">(6.1 MB)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.3.zip">Rufus 4.3</a> <span dir="ltr">(6.1 MB)</span></li>
 		<li>Alternativamente você pode clonar o <a target="_blank" href="http://git-scm.com">git</a> repositório usando:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>Para mais informações veja: <a target="_blank" href="https://github.com/pbatard/rufus">GitHub project</a>.</li></ul>

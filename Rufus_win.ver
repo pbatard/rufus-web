@@ -1,18 +1,20 @@
-version = 4.2.2074
+version = 4.3.2090
 platform_min = 6.2
-download_url = https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2.exe
-download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2_x86.exe
-download_url_arm = https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2_arm.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3.exe
+download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3_x86.exe
+download_url_arm = https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3_arm.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.2 (2023.07.26)\b0\par\par
+\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.3 (2023.10.19)\b0\par\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add detection and warning for UEFI revoked bootloaders (including ones revoked through SkuSiPolicy.p7b)\par
-{\pntext\f2\'B7\tab}Add ZIP64 support, to extract .zip images that are larger than 4 GB\par
-{\pntext\f2\'B7\tab}Add saving and restoring current drive to/from compressed FFU (Full Flash Update) image [EXPERIMENTAL]\par
-{\pntext\f2\'B7\tab}Fix a crash when trying to open Windows ISOs, with the MinGW compiled x86 32-bit version\par
-{\pntext\f2\'B7\tab}Fix an issue where ISOs that contain a boot image with an 'EFI' label are not detected as bootable\par
-{\pntext\f2\'B7\tab}Ensure that the main partition size is aligned to the cluster size\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add support for symbolic link preservation when NTFS is used\par
+{\pntext\f2\'B7\tab}Add an exception to enforce NTFS for Linux Mint's LMDE\par
+{\pntext\f2\'B7\tab}Add an expert feature to restrict a Windows installation to S Mode\par
+{\pntext\f2\'B7\tab}Fix persistence support for Debian 12 in BIOS mode\par
+{\pntext\f2\'B7\tab}Fix a regression that prevented the opening of .vhd images\par
+{\pntext\f2\'B7\tab}Update UEFI:NTFS to report a more explicit error on bootmgr security issues\par
+{\pntext\f2\'B7\tab}Improve the search for conflicting processes, by running it in a background thread\par
+{\pntext\f2\'B7\tab}Improve support for Slax Linux\par
 
 \pard\ltrpar\sl276\slmult1\par}

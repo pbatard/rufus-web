@@ -73,6 +73,7 @@ $langs = array(
   'tr_TR' => array('tr', '🇹🇷 Turkish (Türkçe)'),
   'uk_UA' => array('uk', '🇺🇦 Ukrainian (Українська)'),
   'ur_PK' => array('ur', '🇵🇰 Urdu (اُردُو)'),
+  'ug_CN' => array('ug', '🏴 Uyghur (ئۇيغۇر تىلى)'),
   'vi_VN' => array('vi', '🇻🇳 Vietnamese (Tiếng Việt)'),
   'cy_GB' => array('cy', '🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)'),
 );
@@ -111,6 +112,7 @@ switch (substr($locale,0,2)) {
 case "ar":
 case "fa":
 case "he":
+case "ug":
 case "ur":
   $dir = "rtl";
   $app_name = "<span dir=\"ltr\">" . $latest_version . " Rufus</span>";

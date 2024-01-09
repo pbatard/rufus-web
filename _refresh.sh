@@ -13,6 +13,7 @@ done
 for l in `curl -sS $url | sed -rn 's/.*<option.*value=\"(.*)\">/\1/p'`
 do
   dir=$l
+  mkdir -p $dir 
   if [[ ${main_region[@]} =~ $l ]]; then dir=${l:0:2}; fi
   if [ -z "$locale_var" ]; then
     locale_var="\"${dir}\""

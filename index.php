@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.3";
-$beta_version = "4.3";
+$latest_version = "4.4";
+$beta_version = "4.4";
 $previous_version = "3.16";
-$latest_date = "2023.10.19";
+$latest_date = "2024.01.17";
 $beta_date = "2023.10.12";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Croatian', 'Croatia');
 $bugfix = false;
-$beta = true;
+$beta = false;
 $x64_size = 1.4;
 $x86_size = 1.4;
 $arm64_size = 4.6;
@@ -511,14 +511,13 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Add support for Rock Ridge symbolic links preservation when NTFS is used</span></li>
-			<li><span dir="ltr">Add an exception to enforce NTFS for Linux Mint's LMDE</span></li>
-			<li><span dir="ltr">Add an expert feature to restrict a Windows installation to S Mode</span></li>
-			<li><span dir="ltr">Fix persistence support for Debian 12 when booted in BIOS mode</span></li>
-			<li><span dir="ltr">Fix a regression that prevented the opening of <code>.vhd</code> images</span></li>
-			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> to report a more explicit error on bootmgr security issues</span></li>
-			<li><span dir="ltr">Improve the search for conflicting processes by running it in a background thread</span></li>
-			<li><span dir="ltr">Improve support for <a target="_blank" href="https://www.slax.org">Slax Linux</a></span></li>
+			<li><span dir="ltr">Add workaround for distros that use broken symbolic links as their UEFI bootloaders (such as Mint 21.3)</span></li>
+			<li><span dir="ltr">Add support for GRUB 2.12</span></li>
+			<li><span dir="ltr">Fix a crash when saving <a target="_blank" href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu"><code>.ffu</code></a> images</span></li>
+			<li><span dir="ltr">Fix <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition not being added, in MBR mode, for some Linux ISOs</span></li>
+			<li><span dir="ltr">Prevent <a target="_blank" href="https://learn.microsoft.com/en-us/windows/dev-drive/">Microsoft Dev Drives</a> from being listed</li>
+			<li><span dir="ltr">Improve support for SDXC card readers</span></li>
+			<li><span dir="ltr">Improve Large FAT32 formatting by aligning start of data regions to 1 MB (courtesy of <b>Fred</b>)</a></span></li>
 		</ul></li>
 <? if($bugfix):?>
 		<br />

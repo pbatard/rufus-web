@@ -13,7 +13,7 @@
 <meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
 <meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
 <meta name="msapplication-TileColor" content="#3f4555">
-<title>Rufus - Crie drives USB bootaveis facilmente</title>
+<title>Rufus - Crie drives USB inicializáveis de forma fácil</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script>
 function setCookie(name, value, days) {
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 <!-- <div id="cookie-notice" style="display: none;">
   <div id="cookie-statement" class="cookie-notification">
     <div class="text">
-      <span>Esta página utiliza os serviços da Google, que podem servir cookies <u>não personalizados</u> para publicidade, análise e segurança.</span>
+      <span>Esta página utiliza os serviços da Google, que podem servir cookies <u>não personalizados</u> para publicidade, análises e segurança.</span>
       <a href="https://policies.google.com/technologies/cookies?hl=pt_BR" target="_blank">Veja detalhes</a>
       <a href="#" onclick="document.getElementById('cookie-notice').style.display = 'none'; setCookie('display_cookie_notice', 'no', 365);">OK</a>
     </div>
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function(event)
   <div style="height: 15px;"></div>
 </div> -->
 <div id="right_column">
-<label for="lang_select">Mudar a língua:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
+<label for="lang_select">Mudar o idioma:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
   <option dir="ltr"  value="en">
   🇮🇪/🇬🇧/🇺🇸 English (International)</option>
   <option dir="ltr"  value="sq">
@@ -332,7 +332,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<hr style="width:728px;">
 	<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
 	<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
-	<div class="tagline"><center>Crie drives USB bootaveis facilmente</center></div>
+	<div class="tagline"><center>Crie drives USB inicializáveis de forma fácil</center></div>
 	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
@@ -368,16 +368,16 @@ document.addEventListener("DOMContentLoaded", function(event)
 		</button>
 	</div>
 	<p>&nbsp;</p>
-	<p>Rufus é uma ferramenta que ajuda a formatar e criar flash drives USB bootaveis, como pendrives, USBkeys, cartões de memória e etc.</p>
-	<p>Rufus será especialmente util em casos onde:</p>
+	<p>Rufus é uma ferramenta que ajuda a formatar e criar drives USB inicializáveis, como chaves/drives USB, cartões de memória e etc.</p>
+	<p>Rufus pode ser especialmente útil em casos onde:</p>
 	<ul>
-		<li>você precisa criar uma mídia de instalação USB a partir de ISOs bootaveis (Windows, Linux, UEFI, etc.)</li>
-		<li>você precisa trabalhar em um hardware que não possui sistema operacional (OS) instalado</li>
-		<li>você precisa rodar um BIOS ou outro firmware a partir do DOS</li>
-		<li>quer executar programas de baixo nível</li>
+		<li>você precisa criar uma mídia de instalação USB a partir de ISOs inicializáveis (Windows, Linux, UEFI, etc.)</li>
+		<li>você precisa trabalhar em um equipamento que não possui um SO (sistema operacional) instalado</li>
+		<li>você precisa atualizar um BIOS ou outro firmware, a partir do DOS</li>
+		<li>você deseja executar um utilitário de baixo nível</li>
 	</ul>
-	<p>Apesar de pequeno, Rufus fornece tudo que você precisa!</p>
-	<p>Mais abaixo se encontra uma breve lista das ISOs suportadas por Rufus. <a href="#ref1"><sup>(1)</sup></a></p>
+	<p>Apesar de seu pequeno tamanho, o Rufus fornece tudo que você precisa!</p>
+	<p>Também é fornecida na parte inferior desta página, uma breve lista das ISOs suportadas pelo Rufus. <a href="#ref1"><sup>(1)</sup></a></p>
 		<a name="download"></a>
 	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Download</span></h2>
 		<p><b>Últimos lançamentos:</b></p>
@@ -391,7 +391,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			</tr>
 			<tr>
 				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.4/rufus-4.4.exe"><code>rufus-4.4.exe</code></a></td>
-				<td class="item">Standard</td>
+				<td class="item">Padrão</td>
 				<td class="item">Windows x64</td>
 				<td class="item"><span dir="ltr">1.4 MB</span></td>
 				<td class="item">2024.01.17</td>
@@ -405,14 +405,14 @@ document.addEventListener("DOMContentLoaded", function(event)
 			</tr>
 			<tr>
 				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.4/rufus-4.4_x86.exe"><code>rufus-4.4_x86.exe</code></a></td>
-				<td class="item">Standard</td>
+				<td class="item">Padrão</td>
 				<td class="item">Windows x86</td>
 				<td class="item"><span dir="ltr">1.4 MB</span></td>
 				<td class="item">2024.01.17</td>
 			</tr>
 			<tr>
 				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.4/rufus-4.4_arm64.exe"><code>rufus-4.4_arm64.exe</code></a></td>
-				<td class="item">Standard</td>
+				<td class="item">Padrão</td>
 				<td class="item">Windows ARM64</td>
 				<td class="item"><span dir="ltr">4.6 MB</span></td>
 				<td class="item">2024.01.17</td>
@@ -420,8 +420,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 		</table>&nbsp;
 		<p><span style="font-size: 110%"><a href="/downloads/">Outras versões (GitHub)</a><br/>
 		<a target="_blank" href="https://www.fosshub.com/Rufus.html">Outras versões (FossHub)</a></span></p>
-	<h4>Requisitos do sistema:</h4>
-	<p>Windows 8 ou posterior. Uma vez baixado o aplicativo está pronto para o uso.</p>
+	<h4>Requisitos de sistema:</h4>
+	<p>Windows 8 ou posterior. Uma vez baixado, o aplicativo está pronto para uso.</p>
 	<h4>Idiomas suportados:</h4>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
@@ -468,29 +468,29 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<td>پارسی</td><td>.</td>
 	</tr></table>
 	&nbsp;
-	<p>Aproveito esta oportunidade para expressar minha gratidão aos tradutores que tornaram possível, tanto para Rufus quanto para esta página, serem traduzidos para vários idiomas. Se você pode usar Rufus em sua própria língua deve agradecer a eles!</p>
+	<p>Aproveito esta oportunidade para expressar minha gratidão aos tradutores que tornaram possível, tanto ao Rufus, quanto para esta página, serem traduzidos para vários idiomas. Se você pode usar Rufus em seu idioma, você realmente deveria agradecê-los!</p>
 	<h2>Uso</h2>
 	<p>Baixe o executável e abra &ndash; nenhuma instalação é necessária.</p>
-	<p>O aplicativo possui uma assinatura digital que deve ser:</p>
+	<p>O executável é assinado digitalmente e a assinatura deve indicar:</p>
 	<ul>
 		<li><i>"Akeo Consulting"</i> (v1.3.0 ou posterior)</li>
 		<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 ou anterior)</li>
 	</ul>
-	<h4>Notas sobre o suporte DOS:</h4>
-	<p>Se você criou um USB bootavel com DOS e usa um teclado não americano, Rufus tentará selecionar um modelo de teclado de acordo com a localização do seu sistema.</p>
+	<h4>Notas sobre o suporte no DOS:</h4>
+	<p>Se você criou um USB inicializável via DOS e usa um teclado não americano, o Rufus tentará selecionar um modelo de teclado de acordo com a localização do seu sistema.</p>
 	<h4>Notas sobre o suporte de ISOs:</h4>
-	<p>Todas as versões de Rufus desde V1.1.0 permitem a criação de um USB bootavel a partir de uma <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">imagem ISO</a> (.iso).</p>
-	<p>Criar uma imagem ISO através de um disco físico ou de um grupo de arquivos é algo fácil de fazer, mas através de um aplicativo de gravação de CDs, como <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> ou <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a> que são disponibilizados gratuitamente.</p>
+	<p>Todas as versões de Rufus desde a v1.1.0, permitem a criação de um USB inicializável a partir de uma <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">imagem ISO</a> (.iso).</p>
+	<p>Criar uma imagem ISO a partir de um disco físico ou de um conjunto de arquivos é algo fácil de fazer, através de um aplicativo de gravação de CDs, como os gratuitos <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> ou <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
 	<a name="FAQ"></a>
-	<h2>Perguntas frequentes:</h2>
-	<p>As perguntas frequentes sobre Rufus estão disponíveis <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">AQUI</a></b>.<br/></p>
-	<p>Para enviar um feedback, reportar um erro ou solicitar melhoras, favor usar o GitHub <a target="_blank" href="https://github.com/pbatard/rufus/issues">issue tracker</a> . Ou você pode <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">enviar-me um e-mail</a>.</p>
+	<h2>FAQ (Perguntas Frequentes)</h2>
+	<p>FAQ (Perguntas Frequentes) sobre o Rufus estão disponíveis <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">AQUI</a></b>.<br/></p>
+	<p>Para enviar opinião, reportar um erro ou solicitar melhorias, favor use o <a target="_blank" href="https://github.com/pbatard/rufus/issues">rastreador de problemas</a> GitHub. Ou você pode <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">enviar um e-mail</a>.</p>
 	<a name="license"></a>
 	<h2>Licença</h2>
 	<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL) versão 3</a> ou superior.<br />Você está livre para distribuir, modificar ou até vender o software, desde que respeite a licença GPLv3.</p>
-	<p>Rufus é produzido de modo 100% transparente, através de seu <a target="_blank" href="https://github.com/pbatard/rufus">código-fonte</a>, usando um ambiente <a target="_blank" href="http://mingw-w64.org">MinGW32</a>.</p>
+	<p>Rufus é produzido de modo 100% transparente, através de sua <a target="_blank" href="https://github.com/pbatard/rufus">fonte pública</a>, usando um ambiente <a target="_blank" href="http://mingw-w64.org">MinGW32</a>.</p>
 	<a name="changelog"></a>
-	<h2>Alterações</h2>
+	<h2>Registro de alterações</h2>
 	<ul dir="ltr">
 		<li><b>Versão 4.4</b> (2024.01.17)<ul dir="ltr">
 			<li><span dir="ltr">Add workaround for distros that use broken symbolic links as their UEFI bootloaders (such as Mint 21.3)</span></li>
@@ -505,19 +505,19 @@ document.addEventListener("DOMContentLoaded", function(event)
 	</ul>
 	<h2>Código-fonte</h2>
 		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.4.zip">Rufus 4.4</a> <span dir="ltr">(6.1 MB)</span></li>
-		<li>Alternativamente você pode clonar o <a target="_blank" href="http://git-scm.com">git</a> repositório usando:
+		<li>Alternativamente, você pode clonar o <a target="_blank" href="http://git-scm.com">repositório git</a> usando:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
-		<li>Para mais informações veja: <a target="_blank" href="https://github.com/pbatard/rufus">GitHub project</a>.</li></ul>
-		<p>Se você é desenvolvedor sinta-se encorajado a contribuir com Rufus e enviar patches.</p>
+		<li>Para mais informações veja o <a target="_blank" href="https://github.com/pbatard/rufus">projeto GitHub</a>.</li></ul>
+		<p>Se você é um desenvolvedor, sinta-se encorajado a alterar o Rufus, e enviar correções.</p>
 	<a name="donate"></a>
 	<h2>Doações</h2>
-		<p>Tenho sido perguntado constantemente a respeito disso, <b>não</b> há botão de doações nesta página.</p>
-		<p>A principal razão é que eu não sinto que o sistema de doações de fato ajude no desenvolvimento do software, e pior, pode se tornar um indutor de culpa para usuários que preferem não doar.</p>
-		<p>Se você faz questão, pode então doar para a <a target="_blank" href="http://www.fsf.org/">Free Software Fundation</a>. Eles são a razão principal pela qual softwares como Rufus são possíveis .</p>
-		<p>De qualquer forma, aproveito esta oportunidade para dizer <i><u>muito obrigado</u></i>  pelo seu contínuo suporte e pelo entusiasmo para com este programa, eles são muito apreciados!</p>
-		<p>Mas por favor, sinta-se à vontade para continuar a usar Rufus sem culpa alguma a respeito de não contribuir financeiramente &ndash; isso nunca será necessário!</p>
+		<p>Já que me perguntam constantemente sobre isso, <b>não</b> há botão para doações nesta página.</p>
+		<p>A principal razão é que, não sinto que o sistema de doações de fato ajude no desenvolvimento de software, e pior, pode se tornar um indutor de culpa para usuários que optam por não doar.</p>
+		<p>Se fizer questão, você pode sempre fazer uma doação para a <a target="_blank" href="http://www.fsf.org/">Free Software Fundation</a>, já que eles são a razão principal pela qual softwares como o Rufus são possíveis.</p>
+		<p>De todas as formas, aproveito esta oportunidade para dizer <i><u>muito obrigado</u></i> pelo seu contínuo suporte e pelo entusiasmo sobre este pequeno programa. Fico muito agradecido!</p>
+		<p>Mas por favor, sinta-se à vontade em continuar a usar o Rufus sem culpa alguma por não contribuir financeiramente &ndash; você nunca deverá ter que contribuir!</p>
 	<a name="ref1"></a>
-	<h2>(1) Breve lista de ISOs que sabe-se que funcionam com Rufus</h2>
+	<h2>(1) Breve lista de ISOs com as quais se sabe que o Rufus funciona</h2>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
 		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>
@@ -571,8 +571,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 	</tr></table>
 	<div class="footer"><table align="center" dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2024&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
-		Traduzido para português por Guilherme Hastenreiter e <a href="mailto:felipe9678865@gmail.com?Subject=Rufus%20Homepage%20translation">HowTo InstallBR</a><br/>		Ícone USB criado por PC Unleashed<br/>
-		Hospedado por <a target="_blank" href="https://pages.github.com/">GitHub</a>
+		Traduzido para português por Guilherme Hastenreiter, e Felipe9678865, e <a href="mailto:alexccastelli@gmail.com?Subject=Rufus%20Homepage%20translation">Alex Castelli</a><br/>		Ícone USB por PC Unleashed<br/>
+		Hospedagem por <a target="_blank" href="https://pages.github.com/">GitHub</a>
 		</div> 
 	</div>
 </body>

@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
 <?
 $latest_version = "4.4";
-$beta_version = "4.4";
+$beta_version = "4.5";
 $previous_version = "3.16";
 $latest_date = "2024.01.17";
-$beta_date = "2023.10.12";
+$beta_date = "2024.05.08";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Croatian', 'Croatia');
 $bugfix = false;
-$beta = false;
+$beta = true;
 $x64_size = 1.4;
 $x86_size = 1.4;
 $arm64_size = 4.6;

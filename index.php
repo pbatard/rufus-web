@@ -1,18 +1,18 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.4";
+$latest_version = "4.5";
 $beta_version = "4.5";
 $previous_version = "3.16";
-$latest_date = "2024.01.17";
+$latest_date = "2024.05.22";
 $beta_date = "2024.05.08";
 $previous_date = "2021.10.13";
 $lang1 = array('bg', 'Bulgarian', 'Bulgaria');
 $lang2 = array('zh', 'Simplified Chinese', 'China');
 $bugfix = false;
-$beta = true;
+$beta = false;
 $x64_size = 1.4;
-$x86_size = 1.4;
-$arm64_size = 4.6;
+$x86_size = 1.5;
+$arm64_size = 4.8;
 $beta_size = 1.4;
 $src_size = 6.1;
 $nb_screenshots = 5;
@@ -511,13 +511,16 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Add workaround for distros that use broken symbolic links as their UEFI bootloaders (such as Mint 21.3)</span></li>
-			<li><span dir="ltr">Add support for GRUB 2.12</span></li>
-			<li><span dir="ltr">Fix a crash when saving <a target="_blank" href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu"><code>.ffu</code></a> images</span></li>
-			<li><span dir="ltr">Fix <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition not being added, in MBR mode, for some Linux ISOs</span></li>
-			<li><span dir="ltr">Prevent <a target="_blank" href="https://learn.microsoft.com/en-us/windows/dev-drive/">Microsoft Dev Drives</a> from being listed</li>
-			<li><span dir="ltr">Improve support for SDXC card readers</span></li>
-			<li><span dir="ltr">Improve Large FAT32 formatting by aligning start of data regions to 1 MB (courtesy of <b>Fred</b>)</a></span></li>
+			<li><span dir="ltr">Add new advanced option to perform <a target="_blank" href="https://github.com/pbatard/uefi-md5sum">runtime UEFI media validation</a> of suitable images (Windows, most Linux)</span></li>
+			<li><span dir="ltr">Move the <i>Use Rufus MBR</i> advanced option to a cheat mode (<kbd>Alt</kbd>-<kbd>A</kbd>)</span></li>
+			<li><span dir="ltr">Fix truncation of VHDX images, as well as a benign error message when writing VHD/VHDX</span></li>
+			<li><span dir="ltr">Fix support for Linux persistence in some configurations (Mint, Ubuntu 24.04)</span></li>
+			<li><span dir="ltr">Fix multiple potential vulnerabilities (with thanks to <b>Mansour Gashasbi</b>)</span></li>
+			<li><span dir="ltr">Update internal GRUB to version 2.12</span></li>
+			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> to latest (now always uses the <a target="_blank" href="https://github.com/pbatard/ntfs-3g">ntfs-3g</a> driver, rather than the <a target="_blank" href="https://github.com/pbatard/AmiNtfsBug">buggy AMI NTFS one</a>)</span></li>
+			<li><span dir="ltr">Increase buffer size when copying ISO files, in an attempt to minimize the AMI NTFS UEFI driver bug</li>
+			<li><span dir="ltr">Improve partition creation handling</span></li>
+			<li><span dir="ltr">Don't display the WUE dialog when a conflicting <code>unattend.xml</code> already exists</a></span></li>
 		</ul></li>
 <? if($bugfix):?>
 		<br />

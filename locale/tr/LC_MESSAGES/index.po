@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2023-04-24 13:34+0100\n"
-"PO-Revision-Date: 2023-04-24 14:12+0100\n"
+"PO-Revision-Date: 2024-08-10 14:46+0100\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
 "Language-Team: RufusTR <mehmetalikuran@gmail.com> <ilhamitugral@gmail.com>\n"
 "Language: tr_TR\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: index.php:106
 msgid "Version"
-msgstr "Versiyon"
+msgstr "Sürüm"
 
 #: index.php:138 index.php:350
 msgid "Create bootable USB drives the easy way"
@@ -48,7 +48,7 @@ msgstr "Dil Değiştir:"
 
 #: index.php:320
 msgid "Want to improve this translation?"
-msgstr "Bu çeviriyi geliştirmek ister misiniz?"
+msgstr "Bu tercümeyi geliştirmek ister misiniz?"
 
 #: index.php:375
 msgid ""

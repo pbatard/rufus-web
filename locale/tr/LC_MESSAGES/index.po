@@ -20,7 +20,7 @@ msgstr ""
 
 #: index.php:106
 msgid "Version"
-msgstr "Versiyon"
+msgstr "Sürüm"
 
 #: index.php:138 index.php:350
 msgid "Create bootable USB drives the easy way"
@@ -48,7 +48,7 @@ msgstr "Dil Değiştir:"
 
 #: index.php:320
 msgid "Want to improve this translation?"
-msgstr "Bu çeviriyi geliştirmek ister misiniz?"
+msgstr "Bu tercümeyi geliştirmek ister misiniz?"
 
 #: index.php:375
 msgid ""

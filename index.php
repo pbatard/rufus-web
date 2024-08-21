@@ -325,9 +325,11 @@ document.addEventListener("DOMContentLoaded", function(event)
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Rufus - Sidebar -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:160px;height:600px"
-     data-ad-client="ca-pub-8924382055379825"
-     data-ad-slot="8722233764"></ins>
+	 style="display:inline-block;width:160px;height:600px"
+	 data-ad-client="ca-pub-8924382055379825"
+	 data-ad-slot="8722233764"
+	 data-ad-format="rectangle, vertical"
+	 data-full-width-responsive="false"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
      (adsbygoogle = window.adsbygoogle || []).push({});
@@ -339,9 +341,11 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Rufus - Banner -->
 	<ins class="adsbygoogle"
-	     style="display:inline-block;width:728px;height:90px"
-	     data-ad-client="ca-pub-8924382055379825"
-	     data-ad-slot="7142613500"></ins>
+		 style="display:inline-block;width:728px;height:90px"
+		 data-ad-client="ca-pub-8924382055379825"
+		 data-ad-slot="7142613500"
+		 data-ad-format="rectangle, horizontal"
+		 data-full-width-responsive="false"></ins>
 	<script>
 	     (adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
 	     (adsbygoogle = window.adsbygoogle || []).push({});

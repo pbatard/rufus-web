@@ -2,3 +2,6 @@ sbat,1,2024010900
 shim,4
 grub,3
 grub.debian,4
+# The following is derived from Microsoft's DBXUpdateSVN.bin per
+# https://github.com/pbatard/rufus/issues/2244#issuecomment-2243661539
+BOOTMGRSECURITYVERSIONNUMBER,0x30000

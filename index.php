@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.5";
+$latest_version = "4.6";
 $beta_version = "4.6";
 $previous_version = "3.16";
-$latest_date = "2024.05.22";
+$latest_date = "2024.10.21";
 $beta_date = "2024.10.10";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Traditional Chinese', 'Taiwan');
 $bugfix = false;
-$beta = true;
-$x64_size = 1.4;
-$x86_size = 1.5;
-$arm64_size = 4.8;
+$beta = false;
+$x64_size = 1.5;
+$x86_size = 1.6;
+$arm64_size = 5.1;
 $beta_size = 1.5;
-$src_size = 6.1;
+$src_size = 6.4;
 $nb_screenshots = 5;
 $screenshot_height = "600px";
 $screenshot_duration = 10000;
@@ -515,16 +515,13 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Add new advanced option to perform <a target="_blank" href="https://github.com/pbatard/uefi-md5sum">runtime UEFI media validation</a> of suitable images (Windows, most Linux)</span></li>
-			<li><span dir="ltr">Move the <i>Use Rufus MBR</i> advanced option to a cheat mode (<kbd>Alt</kbd>-<kbd>A</kbd>)</span></li>
-			<li><span dir="ltr">Fix truncation of VHDX images, as well as a benign error message when writing VHD/VHDX</span></li>
-			<li><span dir="ltr">Fix support for Linux persistence in some configurations (Mint, Ubuntu 24.04)</span></li>
-			<li><span dir="ltr">Fix multiple potential vulnerabilities (with thanks to <b>Mansour Gashasbi</b>)</span></li>
-			<li><span dir="ltr">Update internal GRUB to version 2.12</span></li>
-			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> to latest (now always uses the <a target="_blank" href="https://github.com/pbatard/ntfs-3g">ntfs-3g</a> driver, rather than the <a target="_blank" href="https://github.com/pbatard/AmiNtfsBug">buggy AMI NTFS one</a>)</span></li>
-			<li><span dir="ltr">Increase buffer size when copying ISO files, in an attempt to minimize the AMI NTFS UEFI driver bug</li>
-			<li><span dir="ltr">Improve partition creation handling</span></li>
-			<li><span dir="ltr">Don't display the WUE dialog when a conflicting <code>unattend.xml</code> already exists</a></span></li>
+			<li><span dir="ltr">Add a new <code>setup.exe</code> wrapper to bypass Windows 11 24H2 in-place upgrade restrictions</span></li>
+			<li><span dir="ltr">Add TimeZone to regional options replication</span></li>
+			<li><span dir="ltr">Set local account passwords to not expire by default</span></li>
+			<li><span dir="ltr">Fix an error when trying to write compressed VHD images</span></li>
+			<li><span dir="ltr">Fix an error when invoking Rufus from the PowerShell commandline</span></li>
+			<li><span dir="ltr">Improve revoked UEFI bootloaders check to support <a target="_blank" href="https://github.com/rhboot/shim/blob/main/SBAT.md">Linux SBAT</a>, <a target="_blank" href="https://support.microsoft.com/en-us/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d#bkmk_mitigation_guidelines">Windows SVN</a> and cert DBX</span></li>
+			<li><span dir="ltr">Improve support for <a target="_blank" href="https://reactos.org/">ReactOS</a> boot media</span></li>
 		</ul></li>
 <? if($bugfix):?>
 		<br />

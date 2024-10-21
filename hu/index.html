@@ -394,39 +394,32 @@ document.addEventListener("DOMContentLoaded", function(event)
 				<th class="title" width=120>Dátum</th>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe"><code>rufus-4.5.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe"><code>rufus-4.6.exe</code></a></td>
 				<td class="item">Standard</td>
 				<td class="item">Windows x64</td>
-				<td class="item"><span dir="ltr">1.4 MB</span></td>
-				<td class="item">2024.05.22</td>
+				<td class="item"><span dir="ltr">1.5 MB</span></td>
+				<td class="item">2024.10.21</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5p.exe"><code>rufus-4.5p.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6p.exe"><code>rufus-4.6p.exe</code></a></td>
 				<td class="item">hordozható</td>
 				<td class="item">Windows x64</td>
-				<td class="item"><span dir="ltr">1.4 MB</span></td>
-				<td class="item">2024.05.22</td>
+				<td class="item"><span dir="ltr">1.5 MB</span></td>
+				<td class="item">2024.10.21</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5_x86.exe"><code>rufus-4.5_x86.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_x86.exe"><code>rufus-4.6_x86.exe</code></a></td>
 				<td class="item">Standard</td>
 				<td class="item">Windows x86</td>
-				<td class="item"><span dir="ltr">1.5 MB</span></td>
-				<td class="item">2024.05.22</td>
+				<td class="item"><span dir="ltr">1.6 MB</span></td>
+				<td class="item">2024.10.21</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5_arm64.exe"><code>rufus-4.5_arm64.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_arm64.exe"><code>rufus-4.6_arm64.exe</code></a></td>
 				<td class="item">Standard</td>
 				<td class="item">Windows ARM64</td>
-				<td class="item"><span dir="ltr">4.8 MB</span></td>
-				<td class="item">2024.05.22</td>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6_BETA/rufus-4.6_BETA.exe"><code>rufus-4.6_BETA.exe</code></a></td>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/tag/v4.6_BETA">BETA</a></td>
-				<td class="item">Windows x64</td>
-				<td class="item"><span dir="ltr">1.5 MB</span></td>
-				<td class="item">2024.10.10</td>
+				<td class="item"><span dir="ltr">5.1 MB</span></td>
+				<td class="item">2024.10.21</td>
 			</tr>
 		</table>&nbsp;
 		<p><span style="font-size: 110%"><a href="/downloads/">Egyéb verziók (GitHub)</a><br/>
@@ -503,22 +496,19 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<a name="changelog"></a>
 	<h2>Változásnapló</h2>
 	<ul dir="ltr">
-		<li><b>Verzió 4.5</b> (2024.05.22)<ul dir="ltr">
-			<li><span dir="ltr">Add new advanced option to perform <a target="_blank" href="https://github.com/pbatard/uefi-md5sum">runtime UEFI media validation</a> of suitable images (Windows, most Linux)</span></li>
-			<li><span dir="ltr">Move the <i>Use Rufus MBR</i> advanced option to a cheat mode (<kbd>Alt</kbd>-<kbd>A</kbd>)</span></li>
-			<li><span dir="ltr">Fix truncation of VHDX images, as well as a benign error message when writing VHD/VHDX</span></li>
-			<li><span dir="ltr">Fix support for Linux persistence in some configurations (Mint, Ubuntu 24.04)</span></li>
-			<li><span dir="ltr">Fix multiple potential vulnerabilities (with thanks to <b>Mansour Gashasbi</b>)</span></li>
-			<li><span dir="ltr">Update internal GRUB to version 2.12</span></li>
-			<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> to latest (now always uses the <a target="_blank" href="https://github.com/pbatard/ntfs-3g">ntfs-3g</a> driver, rather than the <a target="_blank" href="https://github.com/pbatard/AmiNtfsBug">buggy AMI NTFS one</a>)</span></li>
-			<li><span dir="ltr">Increase buffer size when copying ISO files, in an attempt to minimize the AMI NTFS UEFI driver bug</li>
-			<li><span dir="ltr">Improve partition creation handling</span></li>
-			<li><span dir="ltr">Don't display the WUE dialog when a conflicting <code>unattend.xml</code> already exists</a></span></li>
+		<li><b>Verzió 4.6</b> (2024.10.21)<ul dir="ltr">
+			<li><span dir="ltr">Add a new <code>setup.exe</code> wrapper to bypass Windows 11 24H2 in-place upgrade restrictions</span></li>
+			<li><span dir="ltr">Add TimeZone to regional options replication</span></li>
+			<li><span dir="ltr">Set local account passwords to not expire by default</span></li>
+			<li><span dir="ltr">Fix an error when trying to write compressed VHD images</span></li>
+			<li><span dir="ltr">Fix an error when invoking Rufus from the PowerShell commandline</span></li>
+			<li><span dir="ltr">Improve revoked UEFI bootloaders check to support <a target="_blank" href="https://github.com/rhboot/shim/blob/main/SBAT.md">Linux SBAT</a>, <a target="_blank" href="https://support.microsoft.com/en-us/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d#bkmk_mitigation_guidelines">Windows SVN</a> and cert DBX</span></li>
+			<li><span dir="ltr">Improve support for <a target="_blank" href="https://reactos.org/">ReactOS</a> boot media</span></li>
 		</ul></li>
 		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Egyéb verziók</a></b></li>
 	</ul>
 	<h2>Forráskód</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.5.zip">Rufus 4.5</a> <span dir="ltr">(6.1 MB)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.6.zip">Rufus 4.6</a> <span dir="ltr">(6.4 MB)</span></li>
 		<li>Egyébként klónozhatja a <a target="_blank" href="http://git-scm.com">git</a> tárólót a következő használatával:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>További információkért lásd a <a target="_blank" href="https://github.com/pbatard/rufus">GitHub projektet</a>.</li></ul>

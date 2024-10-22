@@ -1,22 +1,19 @@
-version = 4.5.2180
+version = 4.6.2208
 platform_min = 6.2
-download_url = https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe
-download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5_x86.exe
-download_url_arm = https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5_arm.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe
+download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_x86.exe
+download_url_arm = https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_arm.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.5 (2024.05.22)\b0\par\par
+\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.6 (2024.10.21)\b0\par\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add new advanced option to perform runtime UEFI media validation of suitable images (Windows, most Linux)\par
-{\pntext\f2\'B7\tab}Move the 'Use Rufus MBR' advanced option to a cheat mode (Alt-A)\par
-{\pntext\f2\'B7\tab}Fix truncation of VHDX images, as well as a benign error message when writing VHD/VHDX\par
-{\pntext\f2\'B7\tab}Fix support for Linux persistence in some configurations (Mint, Ubuntu 24.04)\par
-{\pntext\f2\'B7\tab}Fix multiple potential vulnerabilities (with thanks to Mansour Gashasbi)\par
-{\pntext\f2\'B7\tab}Update internal GRUB to version 2.12\par
-{\pntext\f2\'B7\tab}Update UEFI:NTFS to latest (now always uses the ntfs-3g driver, rather than the buggy AMI NTFS one)\par
-{\pntext\f2\'B7\tab}Increase buffer size when copying ISO files, in an attempt to minimize the AMI NTFS UEFI driver bug\par
-{\pntext\f2\'B7\tab}Improve partition creation handling\par
-{\pntext\f2\'B7\tab}Don't display the WUE dialog when a conflicting 'unattend.xml' already exists\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add a new setup.exe wrapper to bypass Windows 11 24H2 in-place upgrade restrictions\par
+{\pntext\f2\'B7\tab}Add TimeZone to regional options replication\par
+{\pntext\f2\'B7\tab}Set local account passwords to not expire by default\par
+{\pntext\f2\'B7\tab}Fix an error when trying to write compressed VHD images\par
+{\pntext\f2\'B7\tab}Fix an error when invoking Rufus from the PowerShell commandline\par
+{\pntext\f2\'B7\tab}Improve revoked UEFI bootloaders check to support Linux SBAT, Windows SVN and cert DBX\par
+{\pntext\f2\'B7\tab}Improve support for ReactOS boot media\par
 
 \pard\ltrpar\sl276\slmult1\par}

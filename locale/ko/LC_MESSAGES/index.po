@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2024-05-22 12:32+0100\n"
-"PO-Revision-Date: 2024-10-21 10:14+0100\n"
+"PO-Revision-Date: 2024-10-22 03:00+0900\n"
 "Last-Translator: 비너스걸💋 <venusgirls@outlook.com>\n"
 "Language-Team: VenusGirl: https://venusgirls.tistory.com/\n"
 "Language: ko_KR\n"
@@ -230,7 +230,7 @@ msgstr ""
 
 #: index.php:503
 msgid "Frequently Asked Questions (FAQ)"
-msgstr "자주 묻는 질문(FAQ)"
+msgstr "자주 묻는 질문 (FAQ)"
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
 #: index.php:504
@@ -296,8 +296,8 @@ msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr ""
-"또는 다음을 사용하여<a target=\"_blank\" %s>git</a> 리포지토리를 복제할 수 있"
-"습니다:"
+"또는 다음을 사용하여 <a target=\"_blank\" %s>git</a> 리포지토리를 복제할 수 "
+"있습니다:"
 
 #: index.php:547
 #, php-format
@@ -340,9 +340,8 @@ msgid ""
 "target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
 "reason software like Rufus is possible."
 msgstr ""
-"정말 그렇게 하고 싶다면 자유 소프트웨어 재단에 기부할 수도 있습니다. <a "
-"target=\"_blank\" %s>무료 소프트웨어 재단</a>은 Rufus와 같은 소프트웨어가 가"
-"능한 주된 이유이기 때문입니다."
+"정말로 주장한다면, Rufus와 같은 소프트웨어가 가능한 주된 이유이기 때문에 <a "
+"target=\"_blank\" %s>Free Software 재단</a>에 언제든지 기부할 수 있습니다."
 
 #: index.php:556
 msgid ""
@@ -358,7 +357,7 @@ msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
-"하지만 루퍼스를 재정적으로 기부하지 않은 것에 대해 죄책감 없이 계속 자유롭게 "
+"하지만 Rufus를 재정적으로 기부하지 않은 것에 대해 죄책감 없이 계속 자유롭게 "
 "사용해 주세요 &ndash; 절대 그럴 필요가 없습니다!"
 
 #: index.php:559

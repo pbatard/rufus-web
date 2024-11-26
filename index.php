@@ -48,6 +48,7 @@ $langs = array(
   'ga_IE' => array('ga', '🇮🇪 Irish (Gaeilge)'),
   'it_IT' => array('it', '🇮🇹 Italian (Italiano)'),
   'ja_JP' => array('ja', '🇯🇵 Japanese (日本語)'),
+  'jv_ID' => array('jv', '🇮🇩 Javanese (Basa Jawa)'),
   'ko_KR' => array('ko', '🇰🇷 Korean (한국어)'),
   'ar_IQ' => array('ar_IQ', '🏴󠁩󠁲󠀱󠀶󠁿 Kurdish (کوردی)'),
   'lv_LV' => array('lv', '🇱🇻 Latvian (Latviešu)'),

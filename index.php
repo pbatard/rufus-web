@@ -70,6 +70,7 @@ $langs = array(
   'sl_SI' => array('sl', '🇸🇮 Slovenian (Slovenščina)'),
   'es_ES' => array('es', '🇪🇸 Spanish (Español)'),
   'sv_SE' => array('sv', '🇸🇪 Swedish (Svenska)'),
+  'te_IN' => array('te', '🇮🇳 Telugu (తెలుగు)'),
   'th_TH' => array('th', '🇹🇭 Thai (ไทย)'),
   'tr_TR' => array('tr', '🇹🇷 Turkish (Türkçe)'),
   'uk_UA' => array('uk', '🇺🇦 Ukrainian (Українська)'),

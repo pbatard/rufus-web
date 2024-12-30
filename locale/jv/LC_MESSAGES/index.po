@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2024-10-21 16:17+0100\n"
-"PO-Revision-Date: 2024-11-26 13:45+0000\n"
+"PO-Revision-Date: 2024-12-30 13:03+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: jv_ID\n"
@@ -68,20 +68,20 @@ msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
 msgstr ""
-"sampeyan kudu nggawe media instalasi USB seko ISO bootable (Windows, Linux, "
-"UEFI, sak piturute.)"
+"nggawe media instalasi USB seko ISO bootable (Windows, Linux, UEFI, sak "
+"piturute.)"
 
 #: index.php:385
 msgid "you need to work on a system that doesn't have an OS installed"
-msgstr "sampeyan kudu nggarap sistem seng ora diinstal OS"
+msgstr "nggarap sistem seng ora diinstal OS"
 
 #: index.php:386
 msgid "you need to flash a BIOS or other firmware from DOS"
-msgstr "sampeyan kudu flash BIOS utowo perangkat firmware liyane teko DOS"
+msgstr "flash BIOS utowo perangkat firmware liyane teko DOS"
 
 #: index.php:387
 msgid "you want to run a low-level utility"
-msgstr "sampeyan pengen jalanke low-lever utility"
+msgstr "pengen jalanke low-level utility"
 
 #: index.php:389
 msgid "Despite its small size, Rufus provides everything you need!"
@@ -92,8 +92,7 @@ msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
 "of this page."
 msgstr ""
-"Daftar ISO seng didukung Rufus seng ora lengkap yo disediakne neng bagian "
-"ngesor halaman iki."
+"Daftar ISO seng didukung Rufus yo disediakne neng bagian ngesor halaman iki."
 
 #: index.php:395
 msgid "Download"
@@ -205,7 +204,7 @@ msgid ""
 "attempt to select a keyboard layout according to the locale of your system."
 msgstr ""
 "Nek Sampeyan nggawe drive bootable DOS gek nggunakne keyboard non-US, Rufus "
-"bakal milih tata letak keyboard sesuai kambi lokasi sisteme Sampeyan."
+"bakal milih toto letak keyboard sesuai kambi lokasi sisteme Sampeyan."
 
 #: index.php:503
 msgid "Notes on ISO Support:"
@@ -271,8 +270,8 @@ msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you "
 "respect the GPLv3 license."
 msgstr ""
-"Sampeyan bebas nyebarke, modipan, utowo malah ngedol piranti lunak iki, "
-"asalke Sampeyan hormati lisensi GPLv3."
+"Sampeyan bebas nyebarke, modip, utowo malah ngedol piranti lunak iki, asalke "
+"Sampeyan hormati lisensi GPLv3."
 
 #: index.php:513
 #, php-format
@@ -349,7 +348,7 @@ msgid ""
 msgstr ""
 "Nek Sampeyan tetep bersikeras, Sampeyan iso nyumbang neng <a "
 "target=\"_blank\" %s>Free Software Foundation</a>, marai dekne kui alesan "
-"utama ngopo piranti lunak koyo Rufus kui enek."
+"utomo ngopo piranti lunak koyo Rufus kui enek."
 
 #: index.php:557
 msgid ""
@@ -378,7 +377,7 @@ msgstr "Daftar ISO seng kenek di enggo karo Rufus"
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
 #: index.php:616
 msgid "English translation by Pete Batard"
-msgstr "Di terjemahke neng Basa Jawa karo Septian Dwi Cahya"
+msgstr "Di terjemahke neng Basa Jowo karo Septian Dwi Cahya"
 
 #: index.php:617
 msgid "USB icon by"

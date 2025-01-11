@@ -1,589 +1,968 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en-IE" dir="ltr">
-<head profile="http://www.w3.org/2005/10/profile">
-<meta charset='utf-8'>
-<meta name="description" content="Rufus: Create bootable USB drives the easy way">
-<meta name="keywords" content="Application,BIOS,Boot,Bootable,DOS,Download,Drive,Fast,Flash,Formatting,FreeDOS,Linux,Portable,Rufus,Small,Standlone,UEFI,USB,Utility,Windows">
-<meta name="author" content="Pete Batard">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="application-name" content="Rufus">
-<meta name="msapplication-square70x70logo" content="/pics/rufus-72.png">
-<meta name="msapplication-square150x150logo" content="/pics/rufus-150.png">
-<meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
-<meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
-<meta name="msapplication-TileColor" content="#3f4555">
-<title>Rufus - Create bootable USB drives the easy way</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<script>
-function setCookie(name, value, days) {
-	var expires = "";
-	if (days) {
-		var date = new Date();
-		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-		expires = "; expires=" + date.toUTCString();
-	}
-	document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-}
-function getCookie(name) {
-	var nameEQ = name + "=";
-	var ca = document.cookie.split(';');
-	for (var i = 0; i < ca.length; i++) {
-		var c = ca[i];
-		while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-	}
-	return "";
-}
-document.addEventListener("DOMContentLoaded", function(event)
-{
-	if (getCookie('display_cookie_notice') != 'no')
-		document.getElementById('cookie-notice').style.display = 'block';
-});
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6PCK0CM7G9"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-6PCK0CM7G9');
-</script>
-<style type="text/css">
-	:root {
-		--bs-body-line-height: 1.2;
-	}
-	body {
-		background-color: #3f4555;
-		font-family: Helvetica, Arial, FreeSans, san-serif !important;
-		color: #ffffff;
-	}
-	#right_column {
-		float: right;
-		margin: 0 auto;
-		margin-top: 10px;
-		margin-right: 10px;
-		width: 250px;
-		font-size: 0.8em;
-	}
-	#container {
-		margin: 0 auto;
-		width: 735px;
-		overflow: auto;
-	}
-	#notice {
-		border:4px solid #ffa520;
-		color:#ffffff;
-		padding:1em;
-		width:94%;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	#cookie-statement {
-		background-color: #5a5a5a;
-		border: none;
-		border-radius: 0;
-		color: #fff;
-		-moz-border-radius: 0;
-		-webkit-border-radius: 0;
-		margin: -8px -8px;
-		padding: 5px 0px 5px 15px;
-		position: relative;
-		width: 100%;
-		z-index: 999;
-	}
-	#cookie-statement a {
-		background-color: #303030;
-		border: 1px solid rgba(0,0,0,.1);
-		-moz-border-radius: 2px;
-		-webkit-border-radius: 2px;
-		border-radius: 2px;
-		color: #fff;
-		cursor: pointer;
-		line-height: 200%;
-		padding: 4px 8px;
-		text-decoration: none;
-		white-space: nowrap;
-	}
-	table.reference {
-		color: #000030;
-		background-color:#ffffff;
-		border:1px solid #c3c3c3;
-		border-collapse:collapse;
-		width:100%;
-	}
-	table.reference th {
-		background-color:#e5eecc;
-		border:1px solid #c3c3c3;
-		padding:3px;
-		vertical-align:top;
-	}
-	table.reference td {
-		border:1px solid #c3c3c3;
-		padding:3px;
-		vertical-align:top;
-	}
-	th.title { background-color: #80e090 }
-	td.item { color: #444444; background-color: #e8e8e8; }
-	td.item a { color: #0a58ca; }
-	td.item a:hover { color: fuchsia; }
-	td.item a:visited { color: purple; }
-	li { line-height: 1.3em; }
-	h1, h2, h3, h4 { font-weight: bold; }
-	h1 { font-size: 3.8em; color: #c0baaa; margin-bottom: 3px; margin-top: 10px; }
-	h1 .small { font-size: 0.4em; }
-	h1 a { text-decoration: none; }
-	h2 { padding: 12px; font-size: 1.5em; color: #c0baaa; line-height: 1.3em; border: 2px solid #706a6a; margin-top: 40px; margin-bottom: 20px; }
-	h3 { text-align: center; color: #c0baaa; }
-	h4 { font-size: 1.0em; margin-top: 24px; margin-bottom: 10px; }
-	a { color: #c0baaa; }
-	.cookie-notification { background: #fffbe4; border-color: #f8f6e6; overflow: hidden; }
-	.tagline { font-size: 1.6em; margin-bottom: 30px; margin-top: 30px; font-style: italic; }
-	.download { float: right; }
-	pre { background: #000; color: #fff; padding: 15px; margin-top: 15px; }
-	code { display: inline-block; padding: 3px 3px 4px 1px; color: #ececec; font-family: monospace, monospace; line-height: 10px; font-size: 16px; vertical-align: middle; }
-	hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
-	.kbd {
-		display:inline-block;
-		padding:3px 5px;
-		font-family:monospace, monospace;
-		font-size:11px;
-		line-height:10px;
-		color:#555;
-		vertical-align:middle;
-		background-color:#fcfcfc;
-		border:solid 1px #ccc;
-		border-bottom-color:#bbb;
-		border-radius:3px;
-		box-shadow:inset 0 -1px 0 #bbb;
-	}
-	.footer { font-size: 0.9em; text-align:center; padding-top: 30px; font-style: italic; }
-	.treeView{ -moz-user-select: none; position: relative; }
-	.treeView ul { margin: 0 0 0 -1.5em; padding: 0 0 0 1.5em; }
-	.treeView li { margin: 0; padding: 0; list-style-position: inside; list-style-image: none; cursor: auto; }
-	.treeView li li { padding-left: 1.5em; }
-	@media screen and ( max-width: 1002px; ) {
-		.hide_on_small_screens { display: none; }
-	}
-	.carousel-indicators { bottom: -45px; }
-	.carousel-indicators li {
-		width: 10px;
-		height: 10px;
-		border-radius: 100%;
-	}
-</style>
+<html lang="en">
+<head>
+	<head profile="http://www.w3.org/2005/10/profile">
+		<meta charset='utf-8'>
+		<meta name="description" content="Rufus: Create bootable USB drives the easy way">
+		<meta name="keywords" content="Application,BIOS,Boot,Bootable,DOS,Download,Drive,Fast,Flash,Formatting,FreeDOS,Linux,Portable,Rufus,Small,Standlone,UEFI,USB,Utility,Windows">
+		<meta name="author" content="Pete Batard">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="application-name" content="Rufus">
+		<meta name="msapplication-square70x70logo" content="/pics/rufus-72.png">
+		<meta name="msapplication-square150x150logo" content="/pics/rufus-150.png">
+		<meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
+		<meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
+		<meta name="msapplication-TileColor" content="#3f4555">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/pics/rufus-72.png" type="image/x-icon">
+    <title>Rufus - Create bootable USB drives the easy way</title>
 </head>
-
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-<!-- <div id="cookie-notice" style="display: none;">
-  <div id="cookie-statement" class="cookie-notification">
-    <div class="text">
-      <span>This page uses Google services, which may serve <u>non-personalised</u> cookies for advertising, analytics and security.</span>
-      <a href="https://policies.google.com/technologies/cookies?hl=en_IE" target="_blank">See details</a>
-      <a href="#" onclick="document.getElementById('cookie-notice').style.display = 'none'; setCookie('display_cookie_notice', 'no', 365);">OK</a>
+    <nav class="Menu" id="Menu" >
+        <picture>
+            <img src="/pics/rufus-72.png" alt="Rufus Icono" >
+            <a href="https://github.com/pbatard/rufus" target="_blank">Rufus</a>
+        </picture>
+        <ul>
+            <li><a href="#Download">Download</a></li>
+            <li><a href="#Questions_FAQ">Questions (FAQ)</a></li>
+            <li><a href="#Code">Code</a></li>
+            <li><a href="">Donations</a></li>
+            <li><a href="#Contenedor_informacion_rufus">About</a></li>
+            <select for="lang_select" class="lang_select" name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value" >
+                <option dir="ltr" selected="selected" value="en">
+                    🇮🇪/🇬🇧/🇺🇸 English (International)</option>
+                    <option dir="ltr"  value="sq">
+                    🇦🇱 Albanian (Shqip)</option>
+                    <option dir="ltr"  value="ar">
+                    🇸🇦 Arabic (العربية)</option>
+                    <option dir="ltr"  value="hy">
+                    🇦🇲 Armenian (Հայերեն)</option>
+                    <option dir="ltr"  value="az">
+                    🇦🇿 Azerbaijani (Azərbaycan)</option>
+                    <option dir="ltr"  value="bn">
+                    🇧🇩 Bangla (বাংলা)</option>
+                    <option dir="ltr"  value="bs">
+                    🇧🇦 Bosnian (Bosánski)</option>
+                    <option dir="ltr"  value="bg">
+                    🇧🇬 Bulgarian (Български)</option>
+                    <option dir="ltr"  value="yue">
+                    🇭🇰 Cantonese [Hong Kong] (香港粵文)</option>
+                    <option dir="ltr"  value="ca">
+                    🏴󠁥󠁳󠁣󠁴󠁿 Catalan (Català)</option>
+                    <option dir="ltr"  value="zh">
+                    🇨🇳 Chinese Simplified (简体中文)</option>
+                    <option dir="ltr"  value="zh_TW">
+                    🇹🇼 Chinese Traditional (正體中文)</option>
+                    <option dir="ltr"  value="hr">
+                    🇭🇷 Croatian (Hrvatski)</option>
+                    <option dir="ltr"  value="cs">
+                    🇨🇿 Czech (Čeština)</option>
+                    <option dir="ltr"  value="da">
+                    🇩🇰 Danish (Dansk)</option>
+                    <option dir="ltr"  value="nl">
+                    🇳🇱 Dutch (Nederlands)</option>
+                    <option dir="ltr"  value="et">
+                    🇪🇪 Estonian (eesti keel)</option>
+                    <option dir="ltr"  value="fi">
+                    🇫🇮 Finnish (Suomi)</option>
+                    <option dir="ltr"  value="fr">
+                    🇫🇷 French (Français)</option>
+                    <option dir="ltr"  value="gl">
+                    🏴󠁥󠁳󠁧󠁡󠁿 Galician (Galego)</option>
+                    <option dir="ltr"  value="de">
+                    🇩🇪 German (Deutsch)</option>
+                    <option dir="ltr"  value="el">
+                    🇬🇷 Greek (Ελληνικά)</option>
+                    <option dir="ltr"  value="he">
+                    🇮🇱 Hebrew (עברית)</option>
+                    <option dir="ltr"  value="hi">
+                    🇮🇳 Hindi (हिंदी)</option>
+                    <option dir="ltr"  value="hu">
+                    🇭🇺 Hungarian (Magyar)</option>
+                    <option dir="ltr"  value="id">
+                    🇮🇩 Indonesian (Bahasa Indonesia)</option>
+                    <option dir="ltr"  value="ga">
+                    🇮🇪 Irish (Gaeilge)</option>
+                    <option dir="ltr"  value="it">
+                    🇮🇹 Italian (Italiano)</option>
+                    <option dir="ltr"  value="ja">
+                    🇯🇵 Japanese (日本語)</option>
+                    <option dir="ltr"  value="jv">
+                    🇮🇩 Javanese (Basa Jawa)</option>
+                    <option dir="ltr"  value="ko">
+                    🇰🇷 Korean (한국어)</option>
+                    <option dir="ltr"  value="ar_IQ">
+                    🏴󠁩󠁲󠀱󠀶󠁿 Kurdish (کوردی)</option>
+                    <option dir="ltr"  value="lv">
+                    🇱🇻 Latvian (Latviešu)</option>
+                    <option dir="ltr"  value="lt">
+                    🇱🇹 Lithuanian (Lietuvių)</option>
+                    <option dir="ltr"  value="mk">
+                    🇲🇰 Macedonian (Македонски)</option>
+                    <option dir="ltr"  value="ms">
+                    🇲🇾 Malay (Bahasa Malaysia)</option>
+                    <option dir="ltr"  value="mi">
+                    🇳🇿 Maori (Māori)</option>
+                    <option dir="ltr"  value="nb">
+                    🇳🇴 Norwegian (Norsk)</option>
+                    <option dir="ltr"  value="or">
+                    🇮🇳 Odia (ଓଡ଼ିଆ)</option>
+                    <option dir="ltr"  value="fa">
+                    🇮🇷 Persian (پارسی)</option>
+                    <option dir="ltr"  value="pl">
+                    🇵🇱 Polish (Polski)</option>
+                    <option dir="ltr"  value="pt_BR">
+                    🇧🇷 Portuguese [BR] (Português [BR])</option>
+                    <option dir="ltr"  value="pt">
+                    🇵🇹 Portuguese [PT] (Português [PT])</option>
+                    <option dir="ltr"  value="ro">
+                    🇷🇴 Romanian (Română)</option>
+                    <option dir="ltr"  value="ru">
+                    🇷🇺 Russian (Русский)</option>
+                    <option dir="ltr"  value="sr">
+                    🇷🇸 Serbian [Latin] (Srpski [Latinica])</option>
+                    <option dir="ltr"  value="si">
+                    🇱🇰 Sinhala (සිංහල)</option>
+                    <option dir="ltr"  value="sk">
+                    🇸🇰 Slovak (Slovensky)</option>
+                    <option dir="ltr"  value="sl">
+                    🇸🇮 Slovenian (Slovenščina)</option>
+                    <option dir="ltr"  value="es">
+                    🇪🇸 Spanish (Español)</option>
+                    <option dir="ltr"  value="sv">
+                    🇸🇪 Swedish (Svenska)</option>
+                    <option dir="ltr"  value="te">
+                    🇮🇳 Telugu (తెలుగు)</option>
+                    <option dir="ltr"  value="th">
+                    🇹🇭 Thai (ไทย)</option>
+                    <option dir="ltr"  value="tr">
+                    🇹🇷 Turkish (Türkçe)</option>
+                    <option dir="ltr"  value="uk">
+                    🇺🇦 Ukrainian (Українська)</option>
+                    <option dir="ltr"  value="ur">
+                    🇵🇰 Urdu (اُردُو)</option>
+                    <option dir="ltr"  value="ug">
+                    🏴 Uyghur (ئۇيغۇر تىلى)</option>
+                    <option dir="ltr"  value="vi">
+                    🇻🇳 Vietnamese (Tiếng Việt)</option>
+                    <option dir="ltr"  value="cy">
+                    🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)</option>
+            </select>
+        </ul>
+    </nav>
+
+
+    <section class="Banner">
+        <div class="Banner__content">
+            <h1>CREATE BOOTABLE</h1>
+            <p>Drives the easy way</p>
+            <div class="Buttons">
+                <button onclick="Descargas()">Ultima Version Estandar</button>
+                <button onclick="irDescargas()">Todas Las Versiones</button>
+            </div>
+        </div>
+
+    <div class="carousel">
+        <div class="carousel__track">
+            <div class="carousel__slide">
+                <img src="/pics/screenshot1_en.png" alt="screenshot1_en">
+            </div>
+            <div class="carousel__slide">
+                <img src="/pics/screenshot2_en.png" alt="screenshot2_en">
+            </div>
+            <div class="carousel__slide">
+                <img src="/pics/screenshot3_en.png" alt="screenshot3_en">
+            </div>
+            <div class="carousel__slide">
+                <img src="/pics/screenshot4_en.png" alt="screenshot4_en">
+            </div>
+            <div class="carousel__slide">
+                <img src="/pics/screenshot5_en.png" alt="screenshot5_en">
+            </div>
+        </div>
+        <button class="carousel__button carousel__button--left">&#9664;</button>
+        <button class="carousel__button carousel__button--right">&#9654;</button>
     </div>
-  </div>
-  <div style="height: 15px;"></div>
-</div> -->
-<div id="right_column">
-<label for="lang_select">Change language:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
-  <option dir="ltr" selected="selected" value="en">
-  🇮🇪/🇬🇧/🇺🇸 English (International)</option>
-  <option dir="ltr"  value="sq">
-  🇦🇱 Albanian (Shqip)</option>
-  <option dir="ltr"  value="ar">
-  🇸🇦 Arabic (العربية)</option>
-  <option dir="ltr"  value="hy">
-  🇦🇲 Armenian (Հայերեն)</option>
-  <option dir="ltr"  value="az">
-  🇦🇿 Azerbaijani (Azərbaycan)</option>
-  <option dir="ltr"  value="bn">
-  🇧🇩 Bangla (বাংলা)</option>
-  <option dir="ltr"  value="bs">
-  🇧🇦 Bosnian (Bosánski)</option>
-  <option dir="ltr"  value="bg">
-  🇧🇬 Bulgarian (Български)</option>
-  <option dir="ltr"  value="yue">
-  🇭🇰 Cantonese [Hong Kong] (香港粵文)</option>
-  <option dir="ltr"  value="ca">
-  🏴󠁥󠁳󠁣󠁴󠁿 Catalan (Català)</option>
-  <option dir="ltr"  value="zh">
-  🇨🇳 Chinese Simplified (简体中文)</option>
-  <option dir="ltr"  value="zh_TW">
-  🇹🇼 Chinese Traditional (正體中文)</option>
-  <option dir="ltr"  value="hr">
-  🇭🇷 Croatian (Hrvatski)</option>
-  <option dir="ltr"  value="cs">
-  🇨🇿 Czech (Čeština)</option>
-  <option dir="ltr"  value="da">
-  🇩🇰 Danish (Dansk)</option>
-  <option dir="ltr"  value="nl">
-  🇳🇱 Dutch (Nederlands)</option>
-  <option dir="ltr"  value="et">
-  🇪🇪 Estonian (eesti keel)</option>
-  <option dir="ltr"  value="fi">
-  🇫🇮 Finnish (Suomi)</option>
-  <option dir="ltr"  value="fr">
-  🇫🇷 French (Français)</option>
-  <option dir="ltr"  value="gl">
-  🏴󠁥󠁳󠁧󠁡󠁿 Galician (Galego)</option>
-  <option dir="ltr"  value="de">
-  🇩🇪 German (Deutsch)</option>
-  <option dir="ltr"  value="el">
-  🇬🇷 Greek (Ελληνικά)</option>
-  <option dir="ltr"  value="he">
-  🇮🇱 Hebrew (עברית)</option>
-  <option dir="ltr"  value="hi">
-  🇮🇳 Hindi (हिंदी)</option>
-  <option dir="ltr"  value="hu">
-  🇭🇺 Hungarian (Magyar)</option>
-  <option dir="ltr"  value="id">
-  🇮🇩 Indonesian (Bahasa Indonesia)</option>
-  <option dir="ltr"  value="ga">
-  🇮🇪 Irish (Gaeilge)</option>
-  <option dir="ltr"  value="it">
-  🇮🇹 Italian (Italiano)</option>
-  <option dir="ltr"  value="ja">
-  🇯🇵 Japanese (日本語)</option>
-  <option dir="ltr"  value="jv">
-  🇮🇩 Javanese (Basa Jawa)</option>
-  <option dir="ltr"  value="ko">
-  🇰🇷 Korean (한국어)</option>
-  <option dir="ltr"  value="ar_IQ">
-  🏴󠁩󠁲󠀱󠀶󠁿 Kurdish (کوردی)</option>
-  <option dir="ltr"  value="lv">
-  🇱🇻 Latvian (Latviešu)</option>
-  <option dir="ltr"  value="lt">
-  🇱🇹 Lithuanian (Lietuvių)</option>
-  <option dir="ltr"  value="mk">
-  🇲🇰 Macedonian (Македонски)</option>
-  <option dir="ltr"  value="ms">
-  🇲🇾 Malay (Bahasa Malaysia)</option>
-  <option dir="ltr"  value="mi">
-  🇳🇿 Maori (Māori)</option>
-  <option dir="ltr"  value="nb">
-  🇳🇴 Norwegian (Norsk)</option>
-  <option dir="ltr"  value="or">
-  🇮🇳 Odia (ଓଡ଼ିଆ)</option>
-  <option dir="ltr"  value="fa">
-  🇮🇷 Persian (پارسی)</option>
-  <option dir="ltr"  value="pl">
-  🇵🇱 Polish (Polski)</option>
-  <option dir="ltr"  value="pt_BR">
-  🇧🇷 Portuguese [BR] (Português [BR])</option>
-  <option dir="ltr"  value="pt">
-  🇵🇹 Portuguese [PT] (Português [PT])</option>
-  <option dir="ltr"  value="ro">
-  🇷🇴 Romanian (Română)</option>
-  <option dir="ltr"  value="ru">
-  🇷🇺 Russian (Русский)</option>
-  <option dir="ltr"  value="sr">
-  🇷🇸 Serbian [Latin] (Srpski [Latinica])</option>
-  <option dir="ltr"  value="si">
-  🇱🇰 Sinhala (සිංහල)</option>
-  <option dir="ltr"  value="sk">
-  🇸🇰 Slovak (Slovensky)</option>
-  <option dir="ltr"  value="sl">
-  🇸🇮 Slovenian (Slovenščina)</option>
-  <option dir="ltr"  value="es">
-  🇪🇸 Spanish (Español)</option>
-  <option dir="ltr"  value="sv">
-  🇸🇪 Swedish (Svenska)</option>
-  <option dir="ltr"  value="te">
-  🇮🇳 Telugu (తెలుగు)</option>
-  <option dir="ltr"  value="th">
-  🇹🇭 Thai (ไทย)</option>
-  <option dir="ltr"  value="tr">
-  🇹🇷 Turkish (Türkçe)</option>
-  <option dir="ltr"  value="uk">
-  🇺🇦 Ukrainian (Українська)</option>
-  <option dir="ltr"  value="ur">
-  🇵🇰 Urdu (اُردُو)</option>
-  <option dir="ltr"  value="ug">
-  🏴 Uyghur (ئۇيغۇر تىلى)</option>
-  <option dir="ltr"  value="vi">
-  🇻🇳 Vietnamese (Tiếng Việt)</option>
-  <option dir="ltr"  value="cy">
-  🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)</option>
-</select>
-<div class="hide_on_small_screens">
-<a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#wiki-Translating_the_Rufus_Homepage">Want your language here?</a>&nbsp;<br/>
-&nbsp;<br/>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Rufus - Sidebar -->
-<ins class="adsbygoogle"
-	 style="display:inline-block;width:160px;height:600px"
-	 data-ad-client="ca-pub-8924382055379825"
-	 data-ad-slot="8722233764"
-	 data-ad-format="rectangle, vertical"
-	 data-full-width-responsive="false"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-     (adsbygoogle = window.adsbygoogle || []).push({});
+    </section>
+
+
+    <section class="Contenedor_informacion_rufus" id="Contenedor_informacion_rufus">
+        <div class="Title">
+            <span>Information About Rufus</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items">
+            <p>Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.</p>
+            <p>It can be especially useful for cases where:</p>
+            <ul>
+                <li>you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)</li>
+                <li>you need to work on a system that doesn't have an OS installed</li>
+                <li>you need to flash a BIOS or other firmware from DOS</li>
+                <li>you want to run a low-level utility</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="Contenedor_informacion_rufus" id="Questions_FAQ">
+        <div class="Title">
+            <span>Frequently Asked Questions (FAQ)</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items">
+            <p>A Rufus FAQ is available. <a href="https://github.com/pbatard/rufus/wiki/FAQ" target="_blank">Here</a></p>
+            <p>To provide feedback, report a bug or request an enhancement, please use the GitHub <a href="https://github.com/pbatard/rufus/issues" target="_blank">Issue Tracker.</a> Or you can <a href="mailto:pete@akeo.ie?subject=Rufus">Send an E-mail.</a></p>
+        </div>
+    </section>
+
+    <section class="Contenedor_informacion_rufus" id="Download">
+        <div class="Title">
+            <span>Download</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items-download">
+            <div class="download-item">
+                <span class="file">Links</span>
+                <span class="type">Type</span>
+                <span class="platform">Platform</span>
+                <span class="size">Size</span>
+                <span class="date">Date</span>
+            </div>
+            <div class="informacion_items-download">
+                    <div class="download-item">
+                        <span class="file"><a href="#">rufus-4.6.exe</a></span>
+                        <span class="type">Standard</span>
+                        <span class="platform">Windows x64</span>
+                        <span class="size">1.5 MB</span>
+                        <span class="date">2024.10.21</span>
+                    </div>
+                
+                    <div class="download-item">
+                        <span class="file"><a href="#">rufus-4.6p.exe</a></span>
+                        <span class="type">Portable</span>
+                        <span class="platform">Windows x64</span>
+                        <span class="size">1.5 MB</span>
+                        <span class="date">2024.10.21</span>
+                    </div>
+                
+                    <div class="download-item">
+                        <span class="file"><a href="#">rufus-4.6_x86.exe</a></span>
+                        <span class="type">Standard</span>
+                        <span class="platform">Windows x86</span>
+                        <span class="size">1.6 MB</span>
+                        <span class="date">2024.10.21</span>
+                    </div>
+                
+                    <div class="download-item">
+                        <span class="file"><a href="#">rufus-4.6_arm64.exe</a></span>
+                        <span class="type">Standard</span>
+                        <span class="platform">Windows ARM64</span>
+                        <span class="size">5.1 MB</span>
+                        <span class="date">2024.10.21</span>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="Contenedor_informacion_rufus">
+        <div class="Title">
+            <span>SYSTEM REQUIREMENTS</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items">
+            <p>Windows 8 or later. Once downloaded, the application is ready to use.</p>
+        </div>
+    </section>
+
+
+    <section class="Contenedor_informacion_rufus">
+        <div class="Title">
+            <span>SUPPORTED LANGUAGES</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items">
+            <p>Bahasa Indonesia	, 	Bahasa Malaysia	, 	Български	, 	Čeština	, 	Dansk	, 	Deutsch	, 	Ελληνικά	, 
+                English	, 	Español	, 	Français	, 	Hrvatski	, 	Italiano	, 	Latviešu	, 	Lietuvių	, 	Magyar	, 	Nederlands	, 	Norsk	, 
+                Polski	, 	Português	, 	Português do Brasil	, 	Русский	, 	Română	, 	Slovensky	, 	Slovenščina	, 	Srpski	, 
+                Suomi	, 	Svenska	, 	Tiếng Việt	, 	Türkçe	, 	Українська	, 	简体中文	, 	正體中文	, 	日本語	, 	한국어	, 	ไทย	, 
+                עברית	, 	العربية	, 	پارسی	.
+            </p>
+
+            <p>
+                I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!
+            </p>
+        </div>
+    </section>
+
+    <section class="Contenedor_informacion_rufus">
+        <div class="Title">
+            <span>USAGE</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items">
+            <p>Download the executable and run it – no installation is necessary.</p>
+            <p>The executable is digitally signed and the signature should state</p>
+            <ul>
+                <li>"Akeo Consulting" (v1.3.0 or later)</li>
+                <li>"Pete Batard - Open Source Developer" (v1.2.0 or earlier)</li>
+            </ul>
+            <section class="Contenedor_informacion_rufus">
+                <div class="Title">
+                    <span>Notes on DOS support</span>
+                    <div class="barra"></div>
+                </div>
+                <div class="informacion_items">
+                    <p>If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system.</p>
+                    
+                </div>
+            </section>
+            <section class="Contenedor_informacion_rufus">
+                <div class="Title">
+                    <span>Notes on ISO Support</span>
+                    <div class="barra"></div>
+                </div>
+                <div class="informacion_items">
+                    <p>All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a href="https://en.wikipedia.org/wiki/ISO_image">ISO image</a> (.iso).</p>
+                    <p>Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a href="http://infrarecorder.org/">InfraRecorder</a> or <a href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="Contenedor_informacion_rufus">
+        <div class="Title">
+            <span>LICENSE</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items">
+            <p><a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License (GPL) version 3</a> or later.</p>
+            <p>You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license.</p>
+            <br>
+            <p>Rufus is produced in a 100% transparent manner, from its <a href="https://github.com/pbatard/rufus">public source</a> , using a <a href="https://www.mingw-w64.org/">MinGW32</a> environment.</p>
+        </div>
+    </section>
+
+    <section class="Contenedor_informacion_rufus">
+        <div class="Title">
+            <span>CHANGELOG</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items">
+            <ul>
+                <li>Version 4.6 (2024.10.21)</li>
+                <ul>
+                    <li>Add a new setup.exe wrapper to bypass Windows 11 24H2 in-place upgrade restrictions</li>
+                    <li>Add TimeZone to regional options replication</li>
+                    <li>Set local account passwords to not expire by default</li>
+                    <li>Fix an error when trying to write compressed VHD images</li>
+                    <li>Fix an error when invoking Rufus from the PowerShell commandline</li>
+                    <li>Improve revoked UEFI bootloaders check to support <a href="https://github.com/rhboot/shim/blob/main/SBAT.md">Linux SBAT</a>,<a href="https://support.microsoft.com/en-us/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d#bkmk_mitigation_guidelines">Windows SVN</a> and cert DBX</li>
+                    <li>Improve support for <a href="https://reactos.org/">ReactOS</a> boot media</li>
+                </ul>
+                <li><a href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Otras versions</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="Contenedor_informacion_rufus" id="Code">
+        <div class="Title">
+            <span>SOURD CODE</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items">
+            <p><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe">Rufus 4.6</a> (6.4 MB)</p>
+            <p>Alternatively, you can clone the git repository using</p>
+            <!--Código para copiar el repositorio-->
+            <code>$ git clone https://github.com/pbatard/rufus</code>
+
+            <p>For more information, see the <a href="https://github.com/pbatard/rufus">GitHub project</a>.</p>
+            <p>If you are a developer, you are very much encouraged to tinker with Rufus and submit patches.</p>
+        </div>
+    </section>
+
+    <section class="Contenedor_informacion_rufus" id="Code">
+        <div class="Title">
+            <span>DONATIONS</span>
+            <div class="barra"></div>
+        </div>
+        <div class="informacion_items">
+            <p>Since I'm getting asked about this on regular basis, there is no donation button on this page.</p>
+            <p>The main reason is that I feel that the donation system doesn't actually help software development and worse, can be guilt-inducing for users who choose not to donate.</p>
+            <p>Instead, I think that "<a href="https://en.wiktionary.org/wiki/m%C3%A9c%C3%A9nat">mécénat</a>"; or developer patronage, from companies which benefit most from a healthy <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FLOSS</a> ecosystem,
+                is what we should be aiming for. This is because, unless they are backed by a company, developers who want to provide quality
+                Open Source software cannot realistically sustain full time development, no matter how generous their software users are.
+            </p>
+
+            <p>Also, unless you are <a href="https://winhelp2002.mvps.org/hosts.htm">blocking them</a> (hint, hint), you'll notice that there are ads on this page, which I consider sufficient revenue enough.</p>
+
+            <p>Finally the fact that I have the freedom to develop <a href="https://en.wikipedia.org/wiki/Free_software">Free software</a> in my spare time should indicate that I'm well-off enough, and therefore that you should direct your generosity towards 
+                people who need it a lot more than I do. If you really insist, you can always make a donation to the <a href="https://www.fsf.org/">Free Software Foundation</a>, as they are the main reason software like Rufus is possible.</p>
+
+            <p>At any rate, I'll take this opportunity to say thank you for your continuing support and enthusiasm about this little program: it is much appreciated!</p>
+
+            <p>But please continue to feel free to use Rufus without any guilt about not contributing for it financially – you should never have to!</p>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright © 2011-2024 <a href="https://pete.akeo.ie/">Pete Batard</a></p>
+        <p>USB icon by PC Unleashed</p>
+        <p>Hosting by <a href="https://pages.github.com/">GitHub</a></p>
+        <p>Diseñado de la web <a href="https://github.com/NioyJadelkaFp">NioyJadelkaFp</a></p>
+    </footer>
+
+
+	<style>
+		*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar{
+    background-color: white;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+    
+}
+
+.Menu{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.Menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 80%;
+}
+
+.Menu picture{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu a{
+    margin: 0 5px;
+    text-decoration: none;
+    color: grey;
+    font-size: 10px;
+    transition: 1s all;
+}
+
+.Menu img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Menu ul li{
+    margin: 0 10px;
+}   
+
+.Menu a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    transition: 1s all;
+}
+
+.Menu a:hover{
+    color: black;
+    transition: 1s all;
+}
+
+.lang_select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+}
+
+.lang_select option{
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* carrusel de img*/
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel__slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel__button--left,
+.carousel__button--right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel__button--left:hover{
+    transition: 0.5 all;
+    scale: 1.1;
+}
+.carousel__button--right:hover {
+    transition: 0.5 all;
+    scale: 1.1;
+}
+
+.carousel__button--left {
+    left: 10px;
+}
+
+.carousel__button--right {
+    right: 10px;
+}
+
+.Banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+}
+
+.Banner__img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Banner__img img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.Banner__content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.Banner__content h1{
+    font-size: 50px;
+    color: black;
+    margin: 10px;
+}
+
+.Banner__content p{
+    font-size: 20px;
+    color: grey;
+    margin: 15px;
+}
+
+.Banner__content button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Banner__content button:nth-child(1){
+    background-color: black;
+    color: white;
+}
+
+.Banner__content button:nth-child(2){
+    background-color: white;
+    color: black;
+}   
+
+
+.Contenedor_informacion_rufus{
+    width: 90%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.Title span{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+    text-align: start;
+}
+
+.barra{
+    width: 80%;
+    height: 1px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.informacion_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    
+}
+.informacion_items ul{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.informacion_items-download{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.informacion_items p{
+    margin: 5px;
+    width: 100%;
+}
+
+.informacion_items ul{
+    margin: 10px;
+}
+
+
+.downloads {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.download-item {
+    display: flex;
+    margin-top: 10px;
+    padding: 12px 16px;
+    border: 1px solid #ebebeb;
+    transition: background-color 0.3s ease;
+    background-color: #ffffff;
+}
+
+.download-item:hover {
+    background-color: #ffffff;
+}
+
+.download-item span {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+.download-item .file {
+    flex: 2;
+    text-align: left;
+    font-weight: bold;
+}
+
+.download-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.download-item a:hover {
+    text-decoration: underline;
+}
+
+.download-item .size,
+.download-item .date {
+    color: #555;
+}
+
+
+#Code code{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    width: 90%;
+    justify-content: start;
+    margin: 10px;
+}
+
+.footer{
+    border-top: 1px solid black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .Menu ul{
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+    }
+    .Menu a{
+        width: 100%;
+        font-size: 10px;
+    }
+
+
+
+    .Menu ul {
+        width: 100%;
+    }
+
+    .Menu picture {
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 300px;
+    }
+
+    .Banner {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .Banner__img, .Banner__content {
+        width: 100%;
+        height: auto;
+    }
+
+    .Banner__content h1 {
+        font-size: 30px;
+    }
+
+    .Banner__content p {
+        font-size: 16px;
+    }
+
+    .Banner__content button {
+        width: 100%;
+        height: 40px;
+        margin: 5px 0;
+    }
+
+    .Contenedor_informacion_rufus {
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .Title span {
+        font-size: 20px;
+    }
+
+    .informacion_items {
+        width: 80%;
+    }
+
+    .informacion_items ul {
+        width: 100%;
+    }
+
+    .downloads {
+        width: 100%;
+    }
+
+
+    .download-item span, .download-item .file, .download-item .size, .download-item .date {
+        font-size: 10px;
+    }
+
+    #Code code {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+    }
+}
+	</style>
+
+
+    <script>
+        function irDescargas(){
+            // Mover hacia el apartado de id zapatos
+            document.getElementById('Download').scrollIntoView({ behavior: 'smooth' });
+        };
+
+        function Descargas(){
+            // Abrir enlace de descarga
+            window.open('https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe', '_blank');
+        }
+        //https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel__track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel__button--right');
+    const prevButton = document.querySelector('.carousel__button--left');
+    
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    const updateCarousel = () => {
+        const slideWidth = slides[0].clientWidth;
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    };
+
+    // Avanzar
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    });
+
+    // Retroceder
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    });
+
+    // click automatico
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    }, 5000 * 5);
+
+    // Ajustar en caso de resize
+    window.addEventListener('resize', updateCarousel);
+});
+
 </script>
-</div>
-</div>
-<div id="container">
-	<hr style="width:728px;">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Rufus - Banner -->
-	<ins class="adsbygoogle"
-		 style="display:inline-block;width:728px;height:90px"
-		 data-ad-client="ca-pub-8924382055379825"
-		 data-ad-slot="7142613500"
-		 data-ad-format="rectangle, horizontal"
-		 data-full-width-responsive="false"></ins>
-	<script>
-	     (adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-	     (adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-	<hr style="width:728px;">
-	<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
-	<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
-	<div class="tagline"><center>Create bootable USB drives the easy way</center></div>
-	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="/pics/screenshot1_en.png" class="d-block" alt="Rufus screenshot 1" style="height: 600px; margin: auto;">
-			</div>
-			<div class="carousel-item">
-				<img src="/pics/screenshot2_en.png" class="d-block" alt="Rufus screenshot 2" style="height: 600px; margin: auto;">
-			</div>
-			<div class="carousel-item">
-				<img src="/pics/screenshot3_en.png" class="d-block" alt="Rufus screenshot 3" style="height: 600px; margin: auto;">
-			</div>
-			<div class="carousel-item">
-				<img src="/pics/screenshot4_en.png" class="d-block" alt="Rufus screenshot 4" style="height: 600px; margin: auto;">
-			</div>
-			<div class="carousel-item">
-				<img src="/pics/screenshot5_en.png" class="d-block" alt="Rufus screenshot 5" style="height: 600px; margin: auto;">
-			</div>
-		</div>
-		<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
-	<p>&nbsp;</p>
-	<p>Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.</p>
-	<p>It can be especially useful for cases where:</p>
-	<ul>
-		<li>you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)</li>
-		<li>you need to work on a system that doesn't have an OS installed</li>
-		<li>you need to flash a BIOS or other firmware from DOS</li>
-		<li>you want to run a low-level utility</li>
-	</ul>
-	<p>Despite its small size, Rufus provides everything you need!</p>
-	<p>A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page. <a href="#ref1"><sup>(1)</sup></a></p>
-		<a name="download"></a>
-	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Download</span></h2>
-		<p><b>Latest releases:</b></p>
-		<table cellspacing="1" cellpadding="6" border="0">
-			<tr>
-				<th class="title" width=220>Link</th>
-				<th class="title" width=100>Type</th>
-				<th class="title" width=160>Platform</th>
-				<th class="title" width=100>Size</th>
-				<th class="title" width=120>Date</th>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe"><code>rufus-4.6.exe</code></a></td>
-				<td class="item">Standard</td>
-				<td class="item">Windows x64</td>
-				<td class="item"><span dir="ltr">1.5 MB</span></td>
-				<td class="item">2024.10.21</td>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6p.exe"><code>rufus-4.6p.exe</code></a></td>
-				<td class="item">Portable</td>
-				<td class="item">Windows x64</td>
-				<td class="item"><span dir="ltr">1.5 MB</span></td>
-				<td class="item">2024.10.21</td>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_x86.exe"><code>rufus-4.6_x86.exe</code></a></td>
-				<td class="item">Standard</td>
-				<td class="item">Windows x86</td>
-				<td class="item"><span dir="ltr">1.6 MB</span></td>
-				<td class="item">2024.10.21</td>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_arm64.exe"><code>rufus-4.6_arm64.exe</code></a></td>
-				<td class="item">Standard</td>
-				<td class="item">Windows ARM64</td>
-				<td class="item"><span dir="ltr">5.1 MB</span></td>
-				<td class="item">2024.10.21</td>
-			</tr>
-		</table>&nbsp;
-		<p><span style="font-size: 110%"><a href="/downloads/">Other versions (GitHub)</a><br/>
-		<a target="_blank" href="https://www.fosshub.com/Rufus.html">Other versions (FossHub)</a></span></p>
-	<h4>System Requirements:</h4>
-	<p>Windows 8 or later. Once downloaded, the application is ready to use.</p>
-	<h4>Supported Languages:</h4>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
-		<td><i>Bahasa Malaysia</i></td><td>,&nbsp;</td>
-		<td><i>Български</i></td><td>,&nbsp;</td>
-		<td><i>Čeština</i></td><td>,&nbsp;</td>
-		<td><i>Dansk</i></td><td>,&nbsp;</td>
-		<td><i>Deutsch</i></td><td>,&nbsp;</td>
-		<td><i>Ελληνικά</i></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>English</i></td><td>,&nbsp;</td>
-		<td><i>Español</i></td><td>,&nbsp;</td>
-		<td><i>Français</i></td><td>,&nbsp;</td>
-		<td><i>Hrvatski</i></td><td>,&nbsp;</td>
-		<td><i>Italiano</i></td><td>,&nbsp;</td>
-		<td><i>Latviešu</i></td><td>,&nbsp;</td>
-		<td><i>Lietuvių</i></td><td>,&nbsp;</td>
-		<td><i>Magyar</i></td><td>,&nbsp;</td>
-		<td><i>Nederlands</i></td><td>,&nbsp;</td>
-		<td><i>Norsk</i></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>Polski</i></td><td>,&nbsp;</td>
-		<td><i>Português</i></td><td>,&nbsp;</td>
-		<td><i>Português do Brasil</i></td><td>,&nbsp;</td>
-		<td><i>Русский</i></td><td>,&nbsp;</td>
-		<td><i>Română</i></td><td>,&nbsp;</td>
-		<td><i>Slovensky</i></td><td>,&nbsp;</td>
-		<td><i>Slovenščina</i></td><td>,&nbsp;</td>
-		<td><i>Srpski</i></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>Suomi</i></td><td>,&nbsp;</td>
-		<td><i>Svenska</i></td><td>,&nbsp;</td>
-		<td><i>Tiếng&nbsp;Việt</i></td><td>,&nbsp;</td>
-		<td><i>Türkçe</i></td><td>,&nbsp;</td>
-		<td><i>Українська</i></td><td>,&nbsp;</td>
-		<td>简体中文</td><td>,&nbsp;</td>
-		<td>正體中文</td><td>,&nbsp;</td>
-		<td>日本語</td><td>,&nbsp;</td>
-		<td>한국어</td><td>,&nbsp;</td>
-		<td>ไทย</td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td>עברית</td><td>,&nbsp;</td>
-		<td>العربية</td><td>,&nbsp;</td>
-		<td>پارسی</td><td>.</td>
-	</tr></table>
-	&nbsp;
-	<p>I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!</p>
-	<h2>Usage</h2>
-	<p>Download the executable and run it &ndash; no installation is necessary.</p>
-	<p>The executable is digitally signed and the signature should state:</p>
-	<ul>
-		<li><i>"Akeo Consulting"</i> (v1.3.0 or later)</li>
-		<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 or earlier)</li>
-	</ul>
-	<h4>Notes on DOS support:</h4>
-	<p>If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system.</p>
-	<h4>Notes on ISO Support:</h4>
-	<p>All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO image</a> (.iso).</p>
-	<p>Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> or <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
-	<a name="FAQ"></a>
-	<h2>Frequently Asked Questions (FAQ)</h2>
-	<p>A Rufus FAQ is available <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">HERE</a></b>.<br/></p>
-	<p>To provide feedback, report a bug or request an enhancement, please use the GitHub <a target="_blank" href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">send an e-mail</a>.</p>
-	<a name="license"></a>
-	<h2>License</h2>
-	<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL) version 3</a> or later.<br />You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license.</p>
-	<p>Rufus is produced in a 100% transparent manner, from its <a target="_blank" href="https://github.com/pbatard/rufus">public source</a>, using a <a target="_blank" href="http://mingw-w64.org">MinGW32</a> environment.</p>
-	<a name="changelog"></a>
-	<h2>Changelog</h2>
-	<ul dir="ltr">
-		<li><b>Version 4.6</b> (2024.10.21)<ul dir="ltr">
-			<li><span dir="ltr">Add a new <code>setup.exe</code> wrapper to bypass Windows 11 24H2 in-place upgrade restrictions</span></li>
-			<li><span dir="ltr">Add TimeZone to regional options replication</span></li>
-			<li><span dir="ltr">Set local account passwords to not expire by default</span></li>
-			<li><span dir="ltr">Fix an error when trying to write compressed VHD images</span></li>
-			<li><span dir="ltr">Fix an error when invoking Rufus from the PowerShell commandline</span></li>
-			<li><span dir="ltr">Improve revoked UEFI bootloaders check to support <a target="_blank" href="https://github.com/rhboot/shim/blob/main/SBAT.md">Linux SBAT</a>, <a target="_blank" href="https://support.microsoft.com/en-us/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d#bkmk_mitigation_guidelines">Windows SVN</a> and cert DBX</span></li>
-			<li><span dir="ltr">Improve support for <a target="_blank" href="https://reactos.org/">ReactOS</a> boot media</span></li>
-		</ul></li>
-		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Other versions</a></b></li>
-	</ul>
-	<h2>Source Code</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.6.zip">Rufus 4.6</a> <span dir="ltr">(6.4 MB)</span></li>
-		<li>Alternatively, you can clone the <a target="_blank" href="http://git-scm.com">git</a> repository using:
-		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
-		<li>For more information, see the <a target="_blank" href="https://github.com/pbatard/rufus">GitHub project</a>.</li></ul>
-		<p>If you are a developer, you are very much encouraged to tinker with Rufus and submit patches.</p>
-	<a name="donate"></a>
-	<h2>Donations</h2>
-		<p>Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this page.</p>
-		<p>The main reason is that I feel that the donation system doesn't actually help software development and worse, can be guilt-inducing for users who choose not to donate.</p>
-		<p>Instead, I think that <span lang="fr"><i>"<a target="_blank" href="https://en.wiktionary.org/wiki/m%C3%A9c%C3%A9nat">mécénat</a>"</i></span>; or developer patronage, from <b>companies</b> which benefit most from a healthy <a target="_blank" href="http://en.wikipedia.org/wiki/Free_and_open_source_software">FLOSS</a> ecosystem, is what we should be aiming for. This is because, unless they are backed by a company, developers who want to provide quality Open Source software cannot realistically sustain full time development, no matter how generous their software users are.</p>
-		<p>Also, unless you are <a target="_blank" href="http://winhelp2002.mvps.org/hosts.htm">blocking them</a> (hint, hint), you'll notice that there are ads on this page, which I consider sufficient revenue enough.</p>
-		<p>Finally the fact that I have the freedom to develop <a target="_blank" href="http://en.wikipedia.org/wiki/Free_software">Free Software</a> in my spare time should indicate that I'm well-off enough, and therefore that you should direct your generosity towards people who need it a lot more than I do. If you really insist, you can always make a donation to the <a target="_blank" href="http://www.fsf.org/">Free Software Foundation</a>, as they are the main reason software like Rufus is possible.</p>
-		<p>At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm about this little program: it is much appreciated!</p>
-		<p>But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!</p>
-	<a name="ref1"></a>
-	<h2>(1) Non exhaustive list of ISOs Rufus is known to work with</h2>
-	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://archboot.com/">Archboot</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.centos.org">CentOS</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://clonezilla.org/clonezilla-live.php">Clonezilla</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="http://www.damnsmalllinux.org">Damn&nbsp;Small&nbsp;Linux</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.debian.org">Debian</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://elementary.io">Elementary OS</a></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://getfedora.org">Fedora</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.freedos.org">FreeDOS</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://garudalinux.org">Garuda Linux</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.gentoo.org">Gentoo</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://gparted.org">GParted</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.hirensbootcd.org">Hiren's&nbsp;Boot&nbsp;CD</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.kali.org">Kali Linux</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://knoppix.net">Knoppix</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://kolibrios.org">KolibriOS</a></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<!--<td><a target="_blank" href="https://kubuntu.org">Kubuntu</a></td><td>,&nbsp;</td>-->
-		<td><a target="_blank" href="https://linuxmint.com">Linux&nbsp;Mint</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://manjaro.org">Manjaro Linux</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://pogostick.net/~pnh/ntpasswd">NT&nbsp;Password&nbsp;Registry&nbsp;Editor</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.opensuse.org">OpenSUSE</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.raspberrypi.com/software/">Raspberry Pi OS</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.raspbian.org">Raspbian</a></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://reactos.org">ReactOS</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.redhat.com">Red&nbsp;Hat</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.rodsbooks.com/refind">rEFInd</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://rockylinux.org">Rocky Linux</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="http://www.slackware.com">Slackware</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable">Super&nbsp;Grub2&nbsp;Disk</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://tails.boum.org">Tails</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://trinityhome.org">Trinity&nbsp;Rescue&nbsp;Kit</a></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://www.truenas.com/download-truenas-core">TrueNAS CORE</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://ubuntu.com">Ubuntu</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.ultimatebootcd.com">Ultimate&nbsp;Boot&nbsp;CD</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-xp">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-vista">Windows&nbsp;Vista</a></td><td>,&nbsp;</td>
-	</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-7">Windows&nbsp;7</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows8ISO">Windows&nbsp;8/8.1</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows10ISO/">Windows&nbsp;10</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.microsoft.com/en-ie/windows-server">Windows&nbsp;Server&nbsp;2019</a></td><td>,&nbsp;</td>
-		<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows11">Windows&nbsp;11</a></td><td>,&nbsp;</td>
-		<td>&hellip;</td>
-	</tr></table>
-	<div class="footer"><table align="center" dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2024&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
-				USB icon by PC Unleashed<br/>
-		Hosting by <a target="_blank" href="https://pages.github.com/">GitHub</a>
-		</div> 
-	</div>
+
+<script>
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return "";
+    }
+    document.addEventListener("DOMContentLoaded", function(event)
+    {
+        if (getCookie('display_cookie_notice') != 'no')
+            document.getElementById('cookie-notice').style.display = 'block';
+    });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PCK0CM7G9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6PCK0CM7G9');
+    </script>
+    
 </body>
 </html>

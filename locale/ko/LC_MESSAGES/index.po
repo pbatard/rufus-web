@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2024-05-22 12:32+0100\n"
-"PO-Revision-Date: 2024-10-21 10:14+0100\n"
+"PO-Revision-Date: 2025-05-15 13:24+0100\n"
 "Last-Translator: 비너스걸💋 <venusgirls@outlook.com>\n"
 "Language-Team: VenusGirl: https://venusgirls.tistory.com/\n"
 "Language: ko_KR\n"
@@ -17,14 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: index.php:107
 msgid "Version"
 msgstr "버전"
 
-#: index.php:140 index.php:352
+#: index.php:140 index.php:356
 msgid "Create bootable USB drives the easy way"
 msgstr "간편한 방법으로 부팅 가능한 USB 드라이브 만들기"
 
@@ -52,7 +52,7 @@ msgstr "언어 선택:"
 msgid "Want to improve this translation?"
 msgstr "이 번역을 개선하시겠습니까?"
 
-#: index.php:377
+#: index.php:381
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -60,106 +60,106 @@ msgstr ""
 "Rufus는 USB 키/펜드라이브, 메모리 스틱 등과 같은 부팅 가능한 USB 플래시 드라"
 "이브를 포맷하고 생성하는 데 도움이 되는 유틸리티입니다."
 
-#: index.php:378
+#: index.php:382
 msgid "It can be especially useful for cases where:"
 msgstr "특히 다음과 같은 경우에 유용할 수 있습니다:"
 
-#: index.php:380
+#: index.php:384
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
 msgstr ""
 "부팅 가능한 ISO (Windows, Linux, UEFI 등)로 USB 설치 미디어를 만들 경우"
 
-#: index.php:381
+#: index.php:385
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "OS가 설치되지 않은 시스템에서 작업해야 하는 경우"
 
-#: index.php:382
+#: index.php:386
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "DOS에서 BIOS 또는 기타 펌웨어를 플래시해야 하는 경우"
 
-#: index.php:383
+#: index.php:387
 msgid "you want to run a low-level utility"
 msgstr "낮은 수준의 유틸리티를 실행하려는 경우"
 
-#: index.php:385
+#: index.php:389
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr "Rufus는 작은 크기에도 불구하고 필요한 모든 것을 제공합니다!"
 
-#: index.php:386
+#: index.php:390
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
 "of this page."
 msgstr "이 페이지 하단에는 Rufus 지원 ISO의 전체 목록이 나와 있습니다."
 
-#: index.php:391
+#: index.php:395
 msgid "Download"
 msgstr "다운로드"
 
-#: index.php:392
+#: index.php:396
 msgid "Latest releases:"
 msgstr "최신 릴리스:"
 
-#: index.php:395
+#: index.php:399
 msgid "Link"
 msgstr "링크"
 
-#: index.php:396
+#: index.php:400
 msgid "Type"
 msgstr "유형"
 
-#: index.php:397
+#: index.php:401
 msgid "Platform"
 msgstr "플랫폼"
 
-#: index.php:398
+#: index.php:402
 msgid "Size"
 msgstr "크기"
 
-#: index.php:399
+#: index.php:403
 msgid "Date"
 msgstr "날짜"
 
-#: index.php:403 index.php:417 index.php:424
+#: index.php:407 index.php:421 index.php:428
 msgid "Standard"
 msgstr "표준"
 
 #. Abbreviation for MegaByte
-#: index.php:405 index.php:412 index.php:419 index.php:426 index.php:434
-#: index.php:544
+#: index.php:409 index.php:416 index.php:423 index.php:430 index.php:438
+#: index.php:545
 msgid "MB"
 msgstr "MB"
 
-#: index.php:410
+#: index.php:414
 msgid "Portable"
 msgstr "포터블"
 
-#: index.php:432
+#: index.php:436
 msgid "BETA"
 msgstr "베타"
 
-#: index.php:439 index.php:440 index.php:541
+#: index.php:443 index.php:444 index.php:542
 msgid "Other versions"
 msgstr "다른 버전"
 
-#: index.php:441
+#: index.php:445
 msgid "System Requirements:"
 msgstr "시스템 요구 사항:"
 
-#: index.php:442
+#: index.php:446
 msgid "Windows 8 or later."
 msgstr "Windows 8 이상입니다."
 
-#: index.php:442
+#: index.php:446
 msgid "Once downloaded, the application is ready to use."
 msgstr "다운로드가 완료되면 응용 프로그램을 사용할 준비가 된 것입니다."
 
-#: index.php:443
+#: index.php:447
 msgid "Supported Languages:"
 msgstr "지원하는 언어:"
 
-#: index.php:489
+#: index.php:493
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -170,32 +170,32 @@ msgstr ""
 "에게 감사의 말씀을 전합니다. Rufus를 모국어로 사용할 수 있게 되었다면 정말 감"
 "사해야 합니다!"
 
-#: index.php:490
+#: index.php:494
 msgid "Usage"
 msgstr "사용법"
 
-#: index.php:491
+#: index.php:495
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "실행 파일을 다운로드하여 실행합니다 &ndash; 설치할 필요가 없습니다."
 
-#: index.php:492
+#: index.php:496
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "실행 파일은 디지털 서명을 받았으며 서명에는 다음이 명시되어야 합니다:"
 
-#: index.php:494
+#: index.php:498
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 이상)"
 
-#: index.php:495
+#: index.php:499
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 이하)"
 
-#: index.php:497
+#: index.php:501
 msgid "Notes on DOS support:"
 msgstr "DOS 지원에 관한 참고 사항:"
 
-#: index.php:498
+#: index.php:502
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system."
@@ -203,20 +203,20 @@ msgstr ""
 "DOS 부팅 드라이브를 만들고 미국 이외의 키보드를 사용하는 경우, Rufus는 시스템"
 "의 로케일에 따라 키보드 레이아웃을 선택하려고 시도합니다."
 
-#: index.php:499
+#: index.php:503
 msgid "Notes on ISO Support:"
 msgstr "ISO 지원에 관한 참고 사항:"
 
-#: index.php:500
+#: index.php:504
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
 "an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
-"v1.1.0 이후 모든 버전의 Rufus에서는 <a target=\"_blank\" %s>ISO 이미지</a> (."
-"iso)로 부팅 가능한 USB를 만들 수 있습니다."
+"v1.1.0 이후 모든 버전의 Rufus에서는 <a target=\"_blank\" %s>ISO 이미지</a> "
+"(.iso)로 부팅 가능한 USB를 만들 수 있습니다."
 
-#: index.php:501
+#: index.php:505
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
@@ -228,18 +228,18 @@ msgstr ""
 "target=\"_blank\" %s>CDBurnerXP</a>와 같은 CD 굽기 애플리케이션을 사용하면 실"
 "제 디스크 또는 파일 세트에서 ISO 이미지를 매우 쉽게 만들 수 있습니다."
 
-#: index.php:503
+#: index.php:507
 msgid "Frequently Asked Questions (FAQ)"
-msgstr "자주 묻는 질문(FAQ)"
+msgstr "자주 묻는 질문 (FAQ)"
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:504
+#: index.php:508
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
 "Rufus FAQ는 <b><a target=\"_blank\" %s>여기</a></b>에서 확인할 수 있습니다."
 
-#: index.php:505
+#: index.php:509
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -250,11 +250,11 @@ msgstr ""
 "target=\"_blank\" %s>이슈 트래커</a>를 사용하세요. 또는 <a target=\"_blank\" "
 "%s>이메일</a>을 보내주세요."
 
-#: index.php:507
+#: index.php:511
 msgid "License"
 msgstr "라이선스"
 
-#: index.php:508
+#: index.php:512
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
@@ -263,7 +263,7 @@ msgstr ""
 "<a target=\"_blank\" %s>GNU 일반 공중 사용 허가서 (GPL) 버전 3</a> 이상입니"
 "다."
 
-#: index.php:508
+#: index.php:512
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you "
 "respect the GPLv3 license."
@@ -271,7 +271,7 @@ msgstr ""
 "GPLv3 라이선스를 준수하는 한 소프트웨어를 자유롭게 배포, 수정 또는 판매할 수 "
 "있습니다."
 
-#: index.php:509
+#: index.php:513
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
@@ -282,41 +282,41 @@ msgstr ""
 "%s>MinGW32</a> 환경을 사용하여 100%% 투명한 방식으로 제작되었습니다."
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:511
+#: index.php:515
 msgid "Changelog"
 msgstr "변경 사항"
 
-#: index.php:543
+#: index.php:544
 msgid "Source Code"
 msgstr "소스 코드"
 
-#: index.php:545
+#: index.php:546
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr ""
-"또는 다음을 사용하여<a target=\"_blank\" %s>git</a> 리포지토리를 복제할 수 있"
-"습니다:"
+"또는 다음을 사용하여 <a target=\"_blank\" %s>git</a> 리포지토리를 복제할 수 "
+"있습니다:"
 
-#: index.php:547
+#: index.php:548
 #, php-format
 msgid ""
 "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "자세한 내용은 <a target=\"_blank\" %s>GitHub 프로젝트</a>를 참조하세요."
 
-#: index.php:548
+#: index.php:549
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
 msgstr "개발자라면 Rufus를 손보고 패치를 제출하는 것을 적극 권장합니다."
 
-#: index.php:550
+#: index.php:551
 msgid "Donations"
 msgstr "기부하기"
 
-#: index.php:551
+#: index.php:552
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -324,7 +324,7 @@ msgstr ""
 "이와 관련된 문의를 정기적으로 받고 있기 때문에 이 페이지에는 기부 버튼이 <b>"
 "없습니다</b>."
 
-#: index.php:552
+#: index.php:553
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
@@ -333,18 +333,18 @@ msgstr ""
 "가장 큰 이유는 기부 시스템이 실제로 소프트웨어 개발에 도움이 되지 않고, 오히"
 "려 기부를 하지 않는 사용자에게 죄책감을 유발할 수 있다고 생각하기 때문입니다."
 
-#: index.php:555
+#: index.php:556
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
 "target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
 "reason software like Rufus is possible."
 msgstr ""
-"정말 그렇게 하고 싶다면 자유 소프트웨어 재단에 기부할 수도 있습니다. <a "
-"target=\"_blank\" %s>무료 소프트웨어 재단</a>은 Rufus와 같은 소프트웨어가 가"
-"능한 주된 이유이기 때문입니다."
+"정말 그렇게 하고 싶다면, Rufus와 같은 소프트웨어가 가능한 주된 이유이기 때문"
+"에 언제든지 <a target=\"_blank\" %s>Free Software 재단</a>에 기부할 수 있습니"
+"다."
 
-#: index.php:556
+#: index.php:557
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much "
@@ -353,7 +353,7 @@ msgstr ""
 "어쨌든 이 자리를 빌려 이 작은 프로그램에 대한 여러분의 지속적인 지원과 열정"
 "에 <i><u>감사</u></i>드립니다!"
 
-#: index.php:557
+#: index.php:558
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -361,28 +361,28 @@ msgstr ""
 "하지만 루퍼스를 재정적으로 기부하지 않은 것에 대해 죄책감 없이 계속 자유롭게 "
 "사용해 주세요 &ndash; 절대 그럴 필요가 없습니다!"
 
-#: index.php:559
+#: index.php:560
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Rufus는 아래 목록에 있는 것 이외에도 다양한 ISO 이미지를 지원합니다"
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:615
+#: index.php:616
 msgid "English translation by Pete Batard"
 msgstr ""
 "한국어 번역: <a href=\"mailto:venusgirl@outlook.com?Subject=Rufus%20홈페이"
 "지%20번역\">비너스걸💋</a>, <a href=\"mailto:howonkim@me.com?Subject=Rufus%20"
 "홈%20페이지%20번역\">김호원</a>, <a href=\"mailto:cheon7886@naver.com?"
-"Subject=Rufus%20홈%20페이지%20번역\">전민석</a>, <a href=\"mailto:"
-"i18n@peremen.name?Subject=Rufus%20홈%20페이지%20번역\">박신조</a>, <a "
-"href=\"mailto:jeonkiyong111@gmail.com?Subject=Rufus%20홈%20페이지%20번역\">전"
-"기요</a>"
+"Subject=Rufus%20홈%20페이지%20번역\">전민석</a>, <a "
+"href=\"mailto:i18n@peremen.name?Subject=Rufus%20홈%20페이지%20번역\">박신조</"
+"a>, <a href=\"mailto:jeonkiyong111@gmail.com?Subject=Rufus%20홈%20페이지%20번"
+"역\">전기요</a>"
 
-#: index.php:616
+#: index.php:617
 msgid "USB icon by"
 msgstr "USB 아이콘"
 
-#: index.php:617
+#: index.php:618
 msgid "Hosting by"
 msgstr "호스팅"

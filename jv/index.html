@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="ca-ES" dir="ltr">
+<html lang="jv-ID" dir="ltr">
 <head profile="http://www.w3.org/2005/10/profile">
 <meta charset='utf-8'>
 <meta name="description" content="Rufus: Create bootable USB drives the easy way">
@@ -13,7 +13,7 @@
 <meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
 <meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
 <meta name="msapplication-TileColor" content="#3f4555">
-<title>Rufus - Creeu unitats USB d’arrencada fàcilment</title>
+<title>Rufus - Gawe bootable USB drive nganngo coro seng gampang</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script>
 function setCookie(name, value, days) {
@@ -178,15 +178,15 @@ document.addEventListener("DOMContentLoaded", function(event)
 <!-- <div id="cookie-notice" style="display: none;">
   <div id="cookie-statement" class="cookie-notification">
     <div class="text">
-      <span>Aquesta pàgina utilitza els serveis de Google, que poden servir <u>cookies no personalitzades</u> per a publicitat, anàlisi i seguretat.</span>
-      <a href="https://policies.google.com/technologies/cookies?hl=ca_ES" target="_blank">Veure detalls</a>
+      <span>Halaman iki nganggo layanan Google, seng iso nyediyani cookie <u>non-pribadi</u> kanggo iklan, analitik kambi keamanan.</span>
+      <a href="https://policies.google.com/technologies/cookies?hl=jv_ID" target="_blank">Delok lebih rinci</a>
       <a href="#" onclick="document.getElementById('cookie-notice').style.display = 'none'; setCookie('display_cookie_notice', 'no', 365);">OK</a>
     </div>
   </div>
   <div style="height: 15px;"></div>
 </div> -->
 <div id="right_column">
-<label for="lang_select">Canvia d'idioma:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
+<label for="lang_select">Ganti bahasa:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
   <option dir="ltr"  value="en">
   🇮🇪/🇬🇧/🇺🇸 English (International)</option>
   <option dir="ltr"  value="sq">
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function(event)
   🇧🇬 Bulgarian (Български)</option>
   <option dir="ltr"  value="yue">
   🇭🇰 Cantonese [Hong Kong] (香港粵文)</option>
-  <option dir="ltr" selected="selected" value="ca">
+  <option dir="ltr"  value="ca">
   🏴󠁥󠁳󠁣󠁴󠁿 Catalan (Català)</option>
   <option dir="ltr"  value="zh">
   🇨🇳 Chinese Simplified (简体中文)</option>
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function(event)
   🇮🇹 Italian (Italiano)</option>
   <option dir="ltr"  value="ja">
   🇯🇵 Japanese (日本語)</option>
-  <option dir="ltr"  value="jv">
+  <option dir="ltr" selected="selected" value="jv">
   🇮🇩 Javanese (Basa Jawa)</option>
   <option dir="ltr"  value="ko">
   🇰🇷 Korean (한국어)</option>
@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function(event)
   🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)</option>
 </select>
 <div class="hide_on_small_screens">
-<a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation">Voleu millorar aquesta traducció?</a>&nbsp;<br/>
+<a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation">Pengen ngapiki terjemahan iki?</a>&nbsp;<br/>
 &nbsp;<br/>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Rufus - Sidebar -->
@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<hr style="width:728px;">
 	<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
 	<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
-	<div class="tagline"><center>Creeu unitats USB d’arrencada fàcilment</center></div>
+	<div class="tagline"><center>Gawe bootable USB drive nganngo coro seng gampang</center></div>
 	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
@@ -376,61 +376,61 @@ document.addEventListener("DOMContentLoaded", function(event)
 		</button>
 	</div>
 	<p>&nbsp;</p>
-	<p>El Rufus és una utilitat que us permet formatar i crear unitats USB d’arrencada, com a «pendrives», targetes de memòria, etcètera.</p>
-	<p>Pot resultar molt útil si:</p>
+	<p>Rufus ki sarana seng mbantu format karo nggawe USB flash drive seng iso di-boot, koyo  flashdisk, memori stik, sak piturute.</p>
+	<p>Iso digunakne utamane kanggo kasus neng ngisor iki:</p>
 	<ul>
-		<li>necessiteu crear un suport d’instal·lació USB a partir d’ISO de arrencada (Windows, Linux, UEFI, etc.)</li>
-		<li>heu de treballar en un ordinador sense cap sistema operatiu</li>
-		<li>necessiteu instal·lar un microprogramari o BIOS des del DOS</li>
-		<li>voleu executar una utilitat de baix nivell</li>
+		<li>nggawe media instalasi USB seko ISO bootable (Windows, Linux, UEFI, sak piturute.)</li>
+		<li>nggarap sistem seng ora diinstal OS</li>
+		<li>flash BIOS utowo perangkat firmware liyane teko DOS</li>
+		<li>pengen jalanke low-level utility</li>
 	</ul>
-	<p>Malgrat la seva petita mida, el Rufus conté tot el que necessiteu!</p>
-	<p>Proveïm una llista breu d’ISO compatibles amb el Rufus en la part inferior d’aquesta pàgina. <a href="#ref1"><sup>(1)</sup></a></p>
+	<p>Senajan ukurane cilik, Rufus nyediakne kabeh seng sampeya butuhne!</p>
+	<p>Daftar ISO seng didukung Rufus yo disediakne neng bagian ngesor halaman iki. <a href="#ref1"><sup>(1)</sup></a></p>
 		<a name="download"></a>
-	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Baixa</span></h2>
-		<p><b>Últimes versions:</b></p>
+	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Unduh</span></h2>
+		<p><b>Rilis terahir:</b></p>
 		<table cellspacing="1" cellpadding="6" border="0">
 			<tr>
-				<th class="title" width=220>Enllaç</th>
-				<th class="title" width=100>Tipus</th>
-				<th class="title" width=160>Plataforma</th>
-				<th class="title" width=100>Mida</th>
-				<th class="title" width=120>Data</th>
+				<th class="title" width=220>Link</th>
+				<th class="title" width=100>Tipe</th>
+				<th class="title" width=160>Platform</th>
+				<th class="title" width=100>Ukuran</th>
+				<th class="title" width=120>Tanggal</th>
 			</tr>
 			<tr>
 				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe"><code>rufus-4.6.exe</code></a></td>
-				<td class="item">Estàndard</td>
+				<td class="item">Standar</td>
 				<td class="item">Windows x64</td>
 				<td class="item"><span dir="ltr">1.5 MB</span></td>
 				<td class="item">2024.10.21</td>
 			</tr>
 			<tr>
 				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6p.exe"><code>rufus-4.6p.exe</code></a></td>
-				<td class="item">Portàtil</td>
+				<td class="item">Portabel</td>
 				<td class="item">Windows x64</td>
 				<td class="item"><span dir="ltr">1.5 MB</span></td>
 				<td class="item">2024.10.21</td>
 			</tr>
 			<tr>
 				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_x86.exe"><code>rufus-4.6_x86.exe</code></a></td>
-				<td class="item">Estàndard</td>
+				<td class="item">Standar</td>
 				<td class="item">Windows x86</td>
 				<td class="item"><span dir="ltr">1.6 MB</span></td>
 				<td class="item">2024.10.21</td>
 			</tr>
 			<tr>
 				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_arm64.exe"><code>rufus-4.6_arm64.exe</code></a></td>
-				<td class="item">Estàndard</td>
+				<td class="item">Standar</td>
 				<td class="item">Windows ARM64</td>
 				<td class="item"><span dir="ltr">5.1 MB</span></td>
 				<td class="item">2024.10.21</td>
 			</tr>
 		</table>&nbsp;
-		<p><span style="font-size: 110%"><a href="/downloads/">Altres versions (GitHub)</a><br/>
-		<a target="_blank" href="https://www.fosshub.com/Rufus.html">Altres versions (FossHub)</a></span></p>
-	<h4>Requisits del sistema:</h4>
-	<p>Windows 8 o posterior. Baixeu-ho i estareu a punt.</p>
-	<h4>Idiomes admesos:</h4>
+		<p><span style="font-size: 110%"><a href="/downloads/">Versi liyane (GitHub)</a><br/>
+		<a target="_blank" href="https://www.fosshub.com/Rufus.html">Versi liyane (FossHub)</a></span></p>
+	<h4>Persaratan Sistem:</h4>
+	<p>Windows 8 opo lebih. Sekali ke unduh, aplikasi siap digunakne.</p>
+	<h4>Bahasa seng didukung:</h4>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
 		<td><i>Bahasa Malaysia</i></td><td>,&nbsp;</td>
@@ -476,31 +476,31 @@ document.addEventListener("DOMContentLoaded", function(event)
 		<td>پارسی</td><td>.</td>
 	</tr></table>
 	&nbsp;
-	<p>Vull expressar la meva gratitud cap als traductors que han fet possible que el Rufus, així com aquesta pàgina web, estiguin disponibles en diverses llengües. Si trobeu que podeu utilitzar el Rufus en la vostra llengua, agraïu-los!</p>
-	<h2>Utilització</h2>
-	<p>Baixeu el fitxer executable i obriu-ho; no cal instal·lar-ho.</p>
-	<p>L’executable s’ha signat digitalment; la signatura ha de dir:</p>
+	<p>Aku bakal jikok kesempatan iki nggo ngucapke matur suwun karo poro penerjemah seng mungkinke Rufus, kambi halaman web iki, diterjemahke neng macem-macem boso. Nek Sampeyan isoh nggunakne Rufus neng basane Sampeyan, Sampeyan kudu matur suwun karo poro penerjemah!</p>
+	<h2>Penggunaan</h2>
+	<p>Unduh executable e terus jalanke iku &ndash; ora perlu di pasang.</p>
+	<p>Executable e wes di sign secoro digital karo tanda tangan kudu nyatakne:</p>
 	<ul>
-		<li><i>"Akeo Consulting"</i> (v1.3.0 o posterior)</li>
-		<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 o anterior)</li>
+		<li><i>"Akeo Consulting"</i> (v1.3.0 utowo lebih)</li>
+		<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 utowo sebelume)</li>
 	</ul>
-	<h4>Notes quant a la compatibilitat amb el DOS:</h4>
-	<p>Si cregueu una unitat d’arrencada DOS i feu servir un teclat diferent de l’anglès estatunidenc, el Rufus intentarà seleccionar una disposició del teclat adequada per a la configuració local del vostre sistema.</p>
-	<h4>Notes quant a la compatibilitat amb ISO:</h4>
-	<p>Totes les versions del Rufus, des de la 1.1.0, us permeten crear USB d’arrencada a partir d’<a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">imatges ISO</a> (.iso).</p>
-	<p>És senzill crear imatges ISO a partir d’un disc físic o un conjunt de fitxers si utilitzeu un programa d’enregistrament de CD com al <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> o l’<a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>, tots dos gratuïts.</p>
+	<h4>Catetan nggo dukungan DOS:</h4>
+	<p>Nek Sampeyan nggawe drive bootable DOS gek nggunakne keyboard non-US, Rufus bakal milih toto letak keyboard sesuai kambi lokasi sisteme Sampeyan.</p>
+	<h4>Catetan nggo dukungan ISO:</h4>
+	<p>Kabeh versi Rufus kawet v1.1.0 mungkinke nggawe USB bootable teko <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">gambar ISO</a> (.iso).</p>
+	<p>Nggawe gambar ISO teko disk fisik utowo teko sak set file kui gampang, lewat aplikasi pembakaran CD, koyo to <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> or <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
 	<a name="FAQ"></a>
-	<h2>Preguntes freqüents</h2>
-	<p>Hi ha una llista de preguntes freqüents <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">AQUÍ</a></b>.<br/></p>
-	<p>Si teniu comentaris, voleu informar d’una errada o sol·licitar una millora, feu servir el <a target="_blank" href="https://github.com/pbatard/rufus/issues">sistema de seguiment d’errades</a> del GitHub. O <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">envieu-me un missatge</a> (en anglès).</p>
+	<h2>Pertanyaan Seng Sering Ditekokne (FAQ)</h2>
+	<p>FAQ Rufus kesedia <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">NANG KENE</a></b>.<br/></p>
+	<p>Nek pengen ngekei masukan, lapor bug utowo njalok peningkatan, monggo gunakne GitHub  <a target="_blank" href="https://github.com/pbatard/rufus/issues">pelacak masalah</a>. Utowo Sampeyan iso <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">kirim surel</a>.</p>
 	<a name="license"></a>
-	<h2>Llicència</h2>
-	<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">Llicncia Pública General del GNU (GPL) versió 3</a> o posterior.<br />Podeu distribuir, modificar o fins i tot vendre el programari si respecteu la llicència GPL v3.</p>
-	<p>El Rufus es produeix de manera 100 % transparent, a partir del <a target="_blank" href="https://github.com/pbatard/rufus">codi font públic</a> i en un entorn <a target="_blank" href="http://mingw-w64.org">MinGW32</a>.</p>
+	<h2>Lisensi</h2>
+	<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL) version 3</a> utowo lebih.<br />Sampeyan bebas nyebarke, modip, utowo malah ngedol piranti lunak iki, asalke Sampeyan hormati lisensi GPLv3.</p>
+	<p>Rufus diproduksi transparan 100%, teko <a target="_blank" href="https://github.com/pbatard/rufus">sumber publike</a>, nggunakne lingkungan <a target="_blank" href="http://mingw-w64.org">MinGW32</a>.</p>
 	<a name="changelog"></a>
-	<h2>Registre de canvis</h2>
+	<h2>Catetan perubahan</h2>
 	<ul dir="ltr">
-		<li><b>Versió 4.6</b> (2024.10.21)<ul dir="ltr">
+		<li><b>Versi 4.6</b> (2024.10.21)<ul dir="ltr">
 			<li><span dir="ltr">Add a new <code>setup.exe</code> wrapper to bypass Windows 11 24H2 in-place upgrade restrictions</span></li>
 			<li><span dir="ltr">Add TimeZone to regional options replication</span></li>
 			<li><span dir="ltr">Set local account passwords to not expire by default</span></li>
@@ -509,23 +509,23 @@ document.addEventListener("DOMContentLoaded", function(event)
 			<li><span dir="ltr">Improve revoked UEFI bootloaders check to support <a target="_blank" href="https://github.com/rhboot/shim/blob/main/SBAT.md">Linux SBAT</a>, <a target="_blank" href="https://support.microsoft.com/en-us/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d#bkmk_mitigation_guidelines">Windows SVN</a> and cert DBX</span></li>
 			<li><span dir="ltr">Improve support for <a target="_blank" href="https://reactos.org/">ReactOS</a> boot media</span></li>
 		</ul></li>
-		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Altres versions</a></b></li>
+		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Versi liyane</a></b></li>
 	</ul>
-	<h2>Codi font</h2>
+	<h2>Kode sumber</h2>
 		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.6.zip">Rufus 4.6</a> <span dir="ltr">(6.4 MB)</span></li>
-		<li>O bé, podeu clonar el repositori <a target="_blank" href="http://git-scm.com">Git</a>:
+		<li>Sampeyan yo iso klon repositori <a target="_blank" href="http://git-scm.com">git</a> nganggo perintah iki:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
-		<li>Per a més informació, visiteu el <a target="_blank" href="https://github.com/pbatard/rufus">projecte a GitHub</a>.</li></ul>
-		<p>Si sabeu programar, us animem al fet que trastegeu amb el Rufus y envieu pedaços.</p>
+		<li>Kanggo informasi luweh lengkap, tili'i <a target="_blank" href="https://github.com/pbatard/rufus">proyek GitHub</a>.</li></ul>
+		<p>Nek Sampeyan kui developer, Sampeyan dianjurke nggo ngutak-atek Rufus karo ngirim tambalan.</p>
 	<a name="donate"></a>
-	<h2>Donatius</h2>
-		<p>Com que m’ho pregunten gairebé sempre, <b>no</b> hi ha cap botó per donar diners en aquesta pàgina.</p>
-		<p>Principalment crec que així no s’ajuda al desenvolupament de programari, i el que és pitjor, pot provocar un sentiment de culpa a els qui trien no fer donatius.</p>
-		<p>Si insistiu, feu un donatiu a la <a target="_blank" href="http://www.fsf.org/">Free Software Foundation</a>, que és el motiu principal pel qual programari com el Rufus és possible.</p>
-		<p>En qualsevol cas, vull donar-vos les <i><u>gràcies</u></i> pel vostre suport i entusiasme continuats!</p>
-		<p>No hauríeu de sentir-vos culpable per no contribuir financerament amb aquest programa!</p>
+	<h2>Sumbangan</h2>
+		<p>Aku sering di tekoni perkoro sumbangan, tak tegeske neng halaman iki <b>ora</b> enek tombol sumbangan.</p>
+		<p>Alesan utamane kui korno aku ngeroso sistem donasi ora nggawe pengembangan priranti lunak luweh apik utowo luweh elek, malah iso ngekei roso bersalah kanggo pengguna seng ora nyumbang.</p>
+		<p>Nek Sampeyan tetep bersikeras, Sampeyan iso nyumbang neng <a target="_blank" href="http://www.fsf.org/">Free Software Foundation</a>, marai dekne kui alesan utomo ngopo piranti lunak koyo Rufus kui enek.</p>
+		<p>Aku bakal nganggo kesempatan iki nggo ngomong <i><u>matur suwun</u></i> kanggo dukungan karo antusiasme Sampeyan kambi program cilik iki: iki dihargai banget!</p>
+		<p>Tapi monggo teros nggunakne Rufus tanpo roso salah korno &dash; ora mesti kontribusi kui secoro finansial!</p>
 	<a name="ref1"></a>
-	<h2>(1) Llista breu de fitxers ISO amb què el Rufus funciona</h2>
+	<h2>(1) Daftar ISO seng kenek di enggo karo Rufus</h2>
 	<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
 		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>
@@ -579,8 +579,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 	</tr></table>
 	<div class="footer"><table align="center" dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2024&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
-		Traduit al català per l’Adolf<br/>		Icona de l’USB per PC Unleashed<br/>
-		Hostatge per <a target="_blank" href="https://pages.github.com/">GitHub</a>
+		Di terjemahke neng Basa Jowo karo Septian Dwi Cahya<br/>		Ikon USB teko PC Unleashed<br/>
+		Hosting teko <a target="_blank" href="https://pages.github.com/">GitHub</a>
 		</div> 
 	</div>
 </body>

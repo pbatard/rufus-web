@@ -1,19 +1,19 @@
 ﻿<!DOCTYPE html>
 <?
 $latest_version = "4.6";
-$beta_version = "4.6";
+$beta_version = "4.7";
 $previous_version = "3.16";
 $latest_date = "2024.10.21";
-$beta_date = "2024.10.10";
+$beta_date = "2025.04.02";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Traditional Chinese', 'Taiwan');
 $bugfix = false;
-$beta = false;
+$beta = true;
 $x64_size = 1.5;
 $x86_size = 1.6;
 $arm64_size = 5.1;
-$beta_size = 1.5;
+$beta_size = 1.6;
 $src_size = 6.4;
 $nb_screenshots = 5;
 $screenshot_height = "600px";

@@ -1,16 +1,21 @@
-version = 4.6.2205
+version = 4.7.2230
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v4.6_BETA/rufus-4.6_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v4.7_BETA/rufus-4.7_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.6 BETA (2024.10.10)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.7 BETA (2025.04.02)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add a new setup.exe wrapper to bypass Windows 11 24H2 in-place upgrade restrictions\par
-{\pntext\f2\'B7\tab}Add TimeZone to regional options replication\par
-{\pntext\f2\'B7\tab}Set local account passwords to not expire by default\par
-{\pntext\f2\'B7\tab}Fix an error when trying to write compressed VHD images\par
-{\pntext\f2\'B7\tab}Fix an error when invoking Rufus from the PowerShell commandline\par
-{\pntext\f2\'B7\tab}Improve revoked UEFI bootloaders check to support Linux SBAT, Windows SVN and cert DBX\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add a mechanism to detect and download updated DBXs from the official UEFI repository\par
+{\pntext\f2\'B7\tab}Add ztsd compression support for disk images\par
+{\pntext\f2\'B7\tab}Add a new exclusion feature in the settings, to ignore disks with a specific GPT GUID\par
+{\pntext\f2\'B7\tab}Improve detection for compressed VHD images that are too large to fit the target drive\par
+{\pntext\f2\'B7\tab}Fix commandline hogger not being deleted when running Rufus from a different directory\par
+{\pntext\f2\'B7\tab}Fix FAT filenames from embedded images being potentially truncated on image extraction\par
+{\pntext\f2\'B7\tab}Fix a side-loading vulnerability [CVE-2025-26624] with cfgmgr32.dll\par
+{\pntext\f2\'B7\tab}Fix UI memory leaks\par
+{\pntext\f2\'B7\tab}Fall back to user/system default locale when getting error description\par
+{\pntext\f2\'B7\tab}Don't run the commandline hogger on POSIX shells\par
+{\pntext\f2\'B7\tab}Drop ARM 32-bit builds (Note that ARM 64-bit builds are *NOT* affected by this)\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

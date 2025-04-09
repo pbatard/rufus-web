@@ -1,14 +1,14 @@
 # Rufus Homepage.
-# Copyright (C) 2024 Pete Batard
+# Copyright (C) 2025 Pete Batard
 # This file is distributed under the same license as the Rufus Homepage package.
-# Pete Batard <pete@akeo.ie>, 2024.
+# Pete Batard <pete@akeo.ie>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2024-10-21 16:17+0100\n"
+"POT-Creation-Date: 2025-04-09 11:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,141 +17,141 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: index.php:107
+#: index.php:109
 msgid "Version"
 msgstr ""
 
-#: index.php:140 index.php:356
+#: index.php:142 index.php:358
 msgid "Create bootable USB drives the easy way"
 msgstr ""
 
-#: index.php:305
+#: index.php:307
 msgid ""
 "This page uses Google services, which may serve <u>non-personalised</u> "
 "cookies for advertising, analytics and security."
 msgstr ""
 
-#: index.php:306
+#: index.php:308
 msgid "See details"
 msgstr ""
 
-#: index.php:307
+#: index.php:309
 msgid "OK"
 msgstr ""
 
-#: index.php:313
+#: index.php:315
 msgid "Change language:"
 msgstr ""
 
-#: index.php:322
+#: index.php:324
 msgid "Want to improve this translation?"
 msgstr ""
 
-#: index.php:381
+#: index.php:383
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
 msgstr ""
 
-#: index.php:382
+#: index.php:384
 msgid "It can be especially useful for cases where:"
 msgstr ""
 
-#: index.php:384
+#: index.php:386
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
 msgstr ""
 
-#: index.php:385
+#: index.php:387
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr ""
 
-#: index.php:386
+#: index.php:388
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr ""
 
-#: index.php:387
+#: index.php:389
 msgid "you want to run a low-level utility"
 msgstr ""
 
-#: index.php:389
+#: index.php:391
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr ""
 
-#: index.php:390
+#: index.php:392
 msgid ""
 "A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
 "of this page."
 msgstr ""
 
-#: index.php:395
+#: index.php:397
 msgid "Download"
 msgstr ""
 
-#: index.php:396
+#: index.php:398
 msgid "Latest releases:"
 msgstr ""
 
-#: index.php:399
+#: index.php:401
 msgid "Link"
 msgstr ""
 
-#: index.php:400
+#: index.php:402
 msgid "Type"
 msgstr ""
 
-#: index.php:401
+#: index.php:403
 msgid "Platform"
 msgstr ""
 
-#: index.php:402
+#: index.php:404
 msgid "Size"
 msgstr ""
 
-#: index.php:403
+#: index.php:405
 msgid "Date"
 msgstr ""
 
-#: index.php:407 index.php:421 index.php:428
+#: index.php:409 index.php:423 index.php:430
 msgid "Standard"
 msgstr ""
 
 #. Abbreviation for MegaByte
-#: index.php:409 index.php:416 index.php:423 index.php:430 index.php:438
-#: index.php:545
+#: index.php:411 index.php:418 index.php:425 index.php:432 index.php:440
+#: index.php:552
 msgid "MB"
 msgstr ""
 
-#: index.php:414
+#: index.php:416
 msgid "Portable"
 msgstr ""
 
-#: index.php:436
+#: index.php:438
 msgid "BETA"
 msgstr ""
 
-#: index.php:443 index.php:444 index.php:542
+#: index.php:445 index.php:446 index.php:549
 msgid "Other versions"
 msgstr ""
 
-#: index.php:445
+#: index.php:447
 msgid "System Requirements:"
 msgstr ""
 
-#: index.php:446
+#: index.php:448
 msgid "Windows 8 or later."
 msgstr ""
 
-#: index.php:446
+#: index.php:448
 msgid "Once downloaded, the application is ready to use."
 msgstr ""
 
-#: index.php:447
+#: index.php:449
 msgid "Supported Languages:"
 msgstr ""
 
-#: index.php:493
+#: index.php:495
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -159,49 +159,49 @@ msgid ""
 "you should really thank them!"
 msgstr ""
 
-#: index.php:494
+#: index.php:496
 msgid "Usage"
 msgstr ""
 
-#: index.php:495
+#: index.php:497
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr ""
 
-#: index.php:496
+#: index.php:498
 msgid "The executable is digitally signed and the signature should state:"
 msgstr ""
 
-#: index.php:498
+#: index.php:500
 msgid "(v1.3.0 or later)"
 msgstr ""
 
-#: index.php:499
+#: index.php:501
 msgid "(v1.2.0 or earlier)"
 msgstr ""
 
-#: index.php:501
+#: index.php:503
 msgid "Notes on DOS support:"
 msgstr ""
 
-#: index.php:502
+#: index.php:504
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system."
 msgstr ""
 
-#: index.php:503
+#: index.php:505
 msgid "Notes on ISO Support:"
 msgstr ""
 
-#: index.php:504
+#: index.php:506
 #, php-format
 msgid ""
 "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
 "an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 
-#: index.php:505
+#: index.php:507
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
@@ -210,17 +210,17 @@ msgid ""
 "target=\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
 
-#: index.php:507
+#: index.php:509
 msgid "Frequently Asked Questions (FAQ)"
 msgstr ""
 
 #. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:508
+#: index.php:510
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
 
-#: index.php:509
+#: index.php:511
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -228,24 +228,24 @@ msgid ""
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
 
-#: index.php:511
+#: index.php:513
 msgid "License"
 msgstr ""
 
-#: index.php:512
+#: index.php:514
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
 msgstr ""
 
-#: index.php:512
+#: index.php:514
 msgid ""
 "You are free to distribute, modify or even sell the software, insofar as you "
 "respect the GPLv3 license."
 msgstr ""
 
-#: index.php:513
+#: index.php:515
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
@@ -254,51 +254,51 @@ msgid ""
 msgstr ""
 
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:515
+#: index.php:517
 msgid "Changelog"
 msgstr ""
 
-#: index.php:544
+#: index.php:551
 msgid "Source Code"
 msgstr ""
 
-#: index.php:546
+#: index.php:553
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr ""
 
-#: index.php:548
+#: index.php:555
 #, php-format
 msgid ""
 "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 
-#: index.php:549
+#: index.php:556
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
 msgstr ""
 
-#: index.php:551
+#: index.php:558
 msgid "Donations"
 msgstr ""
 
-#: index.php:552
+#: index.php:559
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr ""
 
-#: index.php:553
+#: index.php:560
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
 "choose not to donate."
 msgstr ""
 
-#: index.php:556
+#: index.php:563
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -306,34 +306,34 @@ msgid ""
 "reason software like Rufus is possible."
 msgstr ""
 
-#: index.php:557
+#: index.php:564
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
 "your continuing support and enthusiasm about this little program: it is much "
 "appreciated!"
 msgstr ""
 
-#: index.php:558
+#: index.php:565
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
 
-#: index.php:560
+#: index.php:567
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr ""
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:616
+#: index.php:623
 msgid "English translation by Pete Batard"
 msgstr ""
 
-#: index.php:617
+#: index.php:624
 msgid "USB icon by"
 msgstr ""
 
-#: index.php:618
+#: index.php:625
 msgid "Hosting by"
 msgstr ""

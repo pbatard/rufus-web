@@ -398,32 +398,32 @@ document.addEventListener("DOMContentLoaded", function(event)
 				<th class="title" width=120>ତାରିଖ</th>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe"><code>rufus-4.6.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.7/rufus-4.7.exe"><code>rufus-4.7.exe</code></a></td>
 				<td class="item">ମାନକ[ସମ୍ପାଦନା]</td>
 				<td class="item">Windows x64</td>
-				<td class="item"><span dir="ltr">1.5 ଏମବି</span></td>
-				<td class="item">2024.10.21</td>
+				<td class="item"><span dir="ltr">1.6 ଏମବି</span></td>
+				<td class="item">2025.04.09</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6p.exe"><code>rufus-4.6p.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.7/rufus-4.7p.exe"><code>rufus-4.7p.exe</code></a></td>
 				<td class="item">ଚଳନ୍ତା</td>
 				<td class="item">Windows x64</td>
-				<td class="item"><span dir="ltr">1.5 ଏମବି</span></td>
-				<td class="item">2024.10.21</td>
+				<td class="item"><span dir="ltr">1.6 ଏମବି</span></td>
+				<td class="item">2025.04.09</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_x86.exe"><code>rufus-4.6_x86.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.7/rufus-4.7_x86.exe"><code>rufus-4.7_x86.exe</code></a></td>
 				<td class="item">ମାନକ[ସମ୍ପାଦନା]</td>
 				<td class="item">Windows x86</td>
 				<td class="item"><span dir="ltr">1.6 ଏମବି</span></td>
-				<td class="item">2024.10.21</td>
+				<td class="item">2025.04.09</td>
 			</tr>
 			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6_arm64.exe"><code>rufus-4.6_arm64.exe</code></a></td>
+				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.7/rufus-4.7_arm64.exe"><code>rufus-4.7_arm64.exe</code></a></td>
 				<td class="item">ମାନକ[ସମ୍ପାଦନା]</td>
 				<td class="item">Windows ARM64</td>
-				<td class="item"><span dir="ltr">5.1 ଏମବି</span></td>
-				<td class="item">2024.10.21</td>
+				<td class="item"><span dir="ltr">5.3 ଏମବି</span></td>
+				<td class="item">2025.04.09</td>
 			</tr>
 			<tr>
 				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.7_BETA/rufus-4.7_BETA.exe"><code>rufus-4.7_BETA.exe</code></a></td>
@@ -507,19 +507,24 @@ document.addEventListener("DOMContentLoaded", function(event)
 	<a name="changelog"></a>
 	<h2>ଲଗ୍ ପରିବର୍ତନ</h2>
 	<ul dir="ltr">
-		<li><b>ସଂସରଣ 4.6</b> (2024.10.21)<ul dir="ltr">
-			<li><span dir="ltr">Add a new <code>setup.exe</code> wrapper to bypass Windows 11 24H2 in-place upgrade restrictions</span></li>
-			<li><span dir="ltr">Add TimeZone to regional options replication</span></li>
-			<li><span dir="ltr">Set local account passwords to not expire by default</span></li>
-			<li><span dir="ltr">Fix an error when trying to write compressed VHD images</span></li>
-			<li><span dir="ltr">Fix an error when invoking Rufus from the PowerShell commandline</span></li>
-			<li><span dir="ltr">Improve revoked UEFI bootloaders check to support <a target="_blank" href="https://github.com/rhboot/shim/blob/main/SBAT.md">Linux SBAT</a>, <a target="_blank" href="https://support.microsoft.com/en-us/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d#bkmk_mitigation_guidelines">Windows SVN</a> and cert DBX</span></li>
-			<li><span dir="ltr">Improve support for <a target="_blank" href="https://reactos.org/">ReactOS</a> boot media</span></li>
+		<li><b>ସଂସରଣ 4.7</b> (2025.04.09)<ul dir="ltr">
+			<li><span dir="ltr">Add a mechanism to detect and download updated <a target="_blank" href="https://uefi.org/revocationlistfile">DBXs</a> from the official UEFI repository</span></li>
+			<li><span dir="ltr">Add <a target="_blank" href="https://github.com/facebook/zstd">ztsd compression</a> support for disk images</span></li>
+			<li><span dir="ltr">Add a new exclusion feature in the settings, to ignore disks with a specific GPT GUID</span></li>
+			<li><span dir="ltr">Improve detection for compressed VHD images that are too large to fit the target drive</span></li>
+			<li><span dir="ltr">Fix commandline hogger not being deleted when running Rufus from a different directory</span></li>
+			<li><span dir="ltr">Fix FAT filenames from embedded images being potentially truncated on image extraction</span></li>
+			<li><span dir="ltr">Fix a side-loading vulnerability [<a target="_blank" href="https://github.com/pbatard/rufus/security/advisories/GHSA-p8p5-r296-g2jv">CVE-2025-26624</a>] with <code>cfgmgr32.dll</code> (with thanks to <i><a target="_blank" href="https://github.com/EmperialX">@EmperialX</a></i>)</span></li>
+			<li><span dir="ltr">Fix UI memory leaks (courtesy of <i><a target="_blank" href="https://github.com/ozone10">@ozone10</a></i>)</span></li>
+			<li><span dir="ltr">Fall back to user/system default locale when getting error description (courtesy of <i><a target="_blank" href="https://github.com/Wack0">@Wack0</a></i>)</span></li>
+			<li><span dir="ltr">Don't run the commandline hogger on POSIX shells</span></li>
+			<li><span dir="ltr">Drop ARM 32-bit builds (Note that ARM 64-bit builds are <b>NOT</b> affected by this)</span></li>
+			<li><span dir="ltr">Update <a target="_blank" href="https://www.freedos.org/">FreeDOS</a> and <a target="_blank" href="https://github.com/chenall/grub4dos">Grub4DOS</a> to latest</span></li>
 		</ul></li>
 		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">ଅନ୍ୟ ସଂସରଣଗୁଡିକ</a></b></li>
 	</ul>
 	<h2>ମୂଳ କୋଡ୍</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.6.zip">Rufus 4.6</a> <span dir="ltr">(6.4 ଏମବି)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.7.zip">Rufus 4.7</a> <span dir="ltr">(6.6 ଏମବି)</span></li>
 		<li>ଆପଣ ଏହାର ସମ୍ପୂର୍ଣ ଅବିକଳ <a target="_blank" href="http://git-scm.com">git</a> ମାଧ୍ୟମରେ ବି କରିପାରିବେ:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>ଅଧିକ ଜାଣିବା ପାଇଁ <a target="_blank" href="https://github.com/pbatard/rufus">ଗିଟହବ ପ୍ରଜେକ୍ଟ</a> ଦେଖନ୍ତୁ.</li></ul>

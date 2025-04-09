@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.6";
+$latest_version = "4.7";
 $beta_version = "4.7";
 $previous_version = "3.16";
-$latest_date = "2024.10.21";
+$latest_date = "2025.04.09";
 $beta_date = "2025.04.02";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Traditional Chinese', 'Taiwan');
 $bugfix = false;
 $beta = true;
-$x64_size = 1.5;
+$x64_size = 1.6;
 $x86_size = 1.6;
-$arm64_size = 5.1;
+$arm64_size = 5.3;
 $beta_size = 1.6;
-$src_size = 6.4;
+$src_size = 6.6;
 $nb_screenshots = 5;
 $screenshot_height = "600px";
 $screenshot_duration = 10000;
@@ -517,13 +517,18 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Add a new <code>setup.exe</code> wrapper to bypass Windows 11 24H2 in-place upgrade restrictions</span></li>
-			<li><span dir="ltr">Add TimeZone to regional options replication</span></li>
-			<li><span dir="ltr">Set local account passwords to not expire by default</span></li>
-			<li><span dir="ltr">Fix an error when trying to write compressed VHD images</span></li>
-			<li><span dir="ltr">Fix an error when invoking Rufus from the PowerShell commandline</span></li>
-			<li><span dir="ltr">Improve revoked UEFI bootloaders check to support <a target="_blank" href="https://github.com/rhboot/shim/blob/main/SBAT.md">Linux SBAT</a>, <a target="_blank" href="https://support.microsoft.com/en-us/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d#bkmk_mitigation_guidelines">Windows SVN</a> and cert DBX</span></li>
-			<li><span dir="ltr">Improve support for <a target="_blank" href="https://reactos.org/">ReactOS</a> boot media</span></li>
+			<li><span dir="ltr">Add a mechanism to detect and download updated <a target="_blank" href="https://uefi.org/revocationlistfile">DBXs</a> from the official UEFI repository</span></li>
+			<li><span dir="ltr">Add <a target="_blank" href="https://github.com/facebook/zstd">ztsd compression</a> support for disk images</span></li>
+			<li><span dir="ltr">Add a new exclusion feature in the settings, to ignore disks with a specific GPT GUID</span></li>
+			<li><span dir="ltr">Improve detection for compressed VHD images that are too large to fit the target drive</span></li>
+			<li><span dir="ltr">Fix commandline hogger not being deleted when running Rufus from a different directory</span></li>
+			<li><span dir="ltr">Fix FAT filenames from embedded images being potentially truncated on image extraction</span></li>
+			<li><span dir="ltr">Fix a side-loading vulnerability [<a target="_blank" href="https://github.com/pbatard/rufus/security/advisories/GHSA-p8p5-r296-g2jv">CVE-2025-26624</a>] with <code>cfgmgr32.dll</code> (with thanks to <i><a target="_blank" href="https://github.com/EmperialX">@EmperialX</a></i>)</span></li>
+			<li><span dir="ltr">Fix UI memory leaks (courtesy of <i><a target="_blank" href="https://github.com/ozone10">@ozone10</a></i>)</span></li>
+			<li><span dir="ltr">Fall back to user/system default locale when getting error description (courtesy of <i><a target="_blank" href="https://github.com/Wack0">@Wack0</a></i>)</span></li>
+			<li><span dir="ltr">Don't run the commandline hogger on POSIX shells</span></li>
+			<li><span dir="ltr">Drop ARM 32-bit builds (Note that ARM 64-bit builds are <b>NOT</b> affected by this)</span></li>
+			<li><span dir="ltr">Update <a target="_blank" href="https://www.freedos.org/">FreeDOS</a> and <a target="_blank" href="https://github.com/chenall/grub4dos">Grub4DOS</a> to latest</span></li>
 		</ul></li>
 <? if($bugfix):?>
 		<br />

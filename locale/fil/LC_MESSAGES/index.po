@@ -1,0 +1,275 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Rufus\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fil_PH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#: index.php:109
+msgid "Version"
+msgstr "Bersyon"
+
+#: index.php:142 index.php:358
+msgid "Create bootable USB drives the easy way"
+msgstr "Gumawa ng mga bootable USB drive sa madaling paraan"
+
+#: index.php:307
+msgid "This page uses Google services, which may serve <u>non-personalised</u> cookies for advertising, analytics and security."
+msgstr "Gumagamit ang page na ito ng mga serbisyo ng Google, na maaaring maghatid ng <u>non-personalized</u> cookies para sa advertising, analytics at seguridad."
+
+#: index.php:308
+msgid "See details"
+msgstr "Tignan ang mga detalye"
+
+#: index.php:309
+msgid "OK"
+msgstr "OK"
+
+#: index.php:315
+msgid "Change language:"
+msgstr "Baguhin and wika"
+
+#: index.php:324
+msgid "Want to improve this translation?"
+msgstr "Gusto mong pagbutihin ang pagsasaling ito?"
+
+#: index.php:383
+msgid "Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc."
+msgstr "Ang Rufus ay isang utility na tumutulong sa pag-format at paggawa ng mga bootable USB flash drive, tulad ng mga USB key/pendrive, memory stick, atbp."
+
+#: index.php:384
+msgid "It can be especially useful for cases where:"
+msgstr "Maaari itong maging kapaki-pakinabang lalo na para sa mga kaso kung saan:"
+
+#: index.php:386
+msgid "you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)"
+msgstr "kailangan mong lumikha ng USB installation media mula sa mga bootable na ISO (Windows, Linux, UEFI, atbp.)"
+
+#: index.php:387
+msgid "you need to work on a system that doesn't have an OS installed"
+msgstr "kailangan mong magtrabaho sa isang system na walang OS na naka-install"
+
+#: index.php:388
+msgid "you need to flash a BIOS or other firmware from DOS"
+msgstr "kailangan mong mag-flash ng BIOS o iba pang firmware mula sa DOS"
+
+#: index.php:389
+msgid "you want to run a low-level utility"
+msgstr "gusto mong magpatakbo ng mababang antas ng utility"
+
+#: index.php:391
+msgid "Despite its small size, Rufus provides everything you need!"
+msgstr "Sa kabila ng maliit na sukat nito, ibinibigay ni Rufus ang lahat ng kailangan mo!"
+
+#: index.php:392
+msgid "A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page."
+msgstr "Ang isang hindi kumpletong listahan ng mga ISO na sinusuportahan ng Rufus ay ibinibigay din sa ibaba ng pahinang ito."
+
+#: index.php:397
+msgid "Download"
+msgstr "Mga Download"
+
+#: index.php:398
+msgid "Latest releases:"
+msgstr "Mga Pinakabagong Paglabas:"
+
+#: index.php:401
+msgid "Link"
+msgstr "Link"
+
+#: index.php:402
+msgid "Type"
+msgstr "Uri"
+
+#: index.php:403
+msgid "Platform"
+msgstr "Plataporma"
+
+#: index.php:404
+msgid "Size"
+msgstr "Sukat"
+
+#: index.php:405
+msgid "Date"
+msgstr "Petsa"
+
+#: index.php:409 index.php:423 index.php:430
+msgid "Standard"
+msgstr "Pamantayan"
+
+#. Abbreviation for MegaByte
+#: index.php:411 index.php:418 index.php:425 index.php:432 index.php:440
+#: index.php:552
+msgid "MB"
+msgstr "MB"
+
+#: index.php:416
+msgid "Portable"
+msgstr "Portable"
+
+#: index.php:438
+msgid "BETA"
+msgstr "BETA"
+
+#: index.php:445 index.php:446 index.php:549
+msgid "Other versions"
+msgstr "Iba pang mga bersyon"
+
+#: index.php:447
+msgid "System Requirements:"
+msgstr "Mga Kinakailangan sa System"
+
+#: index.php:448
+msgid "Windows 8 or later."
+msgstr "Windows 8 o mas bago."
+
+#: index.php:448
+msgid "Once downloaded, the application is ready to use."
+msgstr "Kapag na-download na, handa nang gamitin ang application."
+
+#: index.php:449
+msgid "Supported Languages:"
+msgstr "Mga Sinusuportahang Wika:"
+
+#: index.php:495
+msgid "I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!"
+msgstr "Sasamantalahin ko ang pagkakataong ito para ipahayag ang aking pasasalamat sa mga tagapagsalin na nagbigay-daan sa Rufus, gayundin sa webpage na ito, na maisalin sa iba't ibang wika. Kung nalaman mong magagamit mo si Rufus sa iyong sariling wika, dapat mo silang pasalamatan!"
+
+#: index.php:496
+msgid "Usage"
+msgstr "Paggamit"
+
+#: index.php:497
+msgid "Download the executable and run it &ndash; no installation is necessary."
+msgstr "I-download ang executable at patakbuhin ito &ndash; walang kinakailangang pag-install."
+
+#: index.php:498
+msgid "The executable is digitally signed and the signature should state:"
+msgstr "Ang executable ay digital na nilagdaan at ang pirma ay dapat na nakasaad:"
+
+#: index.php:500
+msgid "(v1.3.0 or later)"
+msgstr "(v1.3.0 o mas bago)"
+
+#: index.php:501
+msgid "(v1.2.0 or earlier)"
+msgstr "(v1.2.0 o mas maaga)"
+
+#: index.php:503
+msgid "Notes on DOS support:"
+msgstr "Mga tala sa suporta ng DOS:"
+
+#: index.php:504
+msgid "If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system."
+msgstr "Kung gagawa ka ng DOS bootable drive at gumamit ng non-US na keyboard, susubukan ni Rufus na pumili ng layout ng keyboard ayon sa locale ng iyong system."
+
+#: index.php:505
+msgid "Notes on ISO Support:"
+msgstr "Mga Tala sa Suporta sa ISO:"
+
+#: index.php:506
+msgid "All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+msgstr "Ang lahat ng bersyon ng Rufus mula noong v1.1.0 ay nagbibigay-daan sa paglikha ng isang bootable USB mula sa isang <a target=\"_blank\" %s>ISO image</a>(.iso)."
+
+#: index.php:507
+msgid "Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a target=\"_blank\" %s>CDBurnerXP</a>."
+msgstr "Ang paglikha ng isang ISO na imahe mula sa isang pisikal na disc o mula sa isang hanay ng mga file ay napakadaling gawin gayunpaman, sa pamamagitan ng paggamit ng isang CD burning application, tulad ng malayang magagamit na <a target=\"_blank\" %s>InfraRecorder</a> o <a target=\"_blank\" %s>CDBurnerXP</a>."
+
+#: index.php:509
+msgid "Frequently Asked Questions (FAQ)"
+msgstr "Mga Madalas Itanong (FAQ)"
+
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:510
+msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+msgstr "Available ang isang Rufus FAQ <b><a target=\"_blank\" %s>DITO</a></b>."
+
+#: index.php:511
+msgid "To provide feedback, report a bug or request an enhancement, please use the GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a target=\"_blank\" %s>send an e-mail</a>."
+msgstr "Upang magbigay ng feedback, mag-ulat ng bug o humiling ng pagpapahusay, mangyaring gamitin ang GitHub <a target=\"_blank\" %s>issue tracker</a>. O maaari kang <a target=\"_blank\" %s>magpadala ng e-mail</a>."
+
+#: index.php:513
+msgid "License"
+msgstr "Lisensya"
+
+#: index.php:514
+msgid "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."
+msgstr "<a target=\"_blank\" %s>GNU General Public License (GPL) bersyon 3</a> o mas bago."
+
+#: index.php:514
+msgid "You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license."
+msgstr "Malaya kang ipamahagi, baguhin o ibenta ang software, hangga't iginagalang mo ang lisensya ng GPLv3."
+
+#: index.php:515
+msgid "Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" %s>MinGW32</a> environment."
+msgstr "Ang Rufus ay ginawa sa 100%% transparent na paraan, mula sa <a target=\"_blank\" %s>pampublikong source</a> nito, gamit ang isang <a target=\"_blank\" %s>MinGW32</a> na kapaligiran."
+
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:517
+msgid "Changelog"
+msgstr "Changelog"
+
+#: index.php:551
+msgid "Source Code"
+msgstr "Source Code"
+
+#: index.php:553
+msgid "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"
+msgstr "Bilang kahalili, maaari mong i-clone ang <a target=\"_blank\" %s>git</a> repository gamit ang:"
+
+#: index.php:555
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr "Para sa higit pang impormasyon, tingnan ang <a target=\"_blank\" %s>GitHub project</a>."
+
+#: index.php:556
+msgid "If you are a developer, you are very much encouraged to tinker with Rufus and submit patches."
+msgstr "Kung ikaw ay isang developer, labis kang hinihikayat na makipag-usap sa Rufus at magsumite ng mga patch."
+
+#: index.php:558
+msgid "Donations"
+msgstr "Mga donasyon"
+
+#: index.php:559
+msgid "Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this page."
+msgstr "Dahil palagi akong tinatanong tungkol dito, <b>walang</b> button ng donasyon sa page na ito."
+
+#: index.php:560
+msgid "The main reason is that I feel that the donation system doesn't actually help software development and worse, can be guilt-inducing for users who choose not to donate."
+msgstr "Ang pangunahing dahilan ay ang pakiramdam ko na ang sistema ng donasyon ay hindi talaga nakakatulong sa pagbuo ng software at ang mas malala pa, ay maaaring maging sanhi ng pagkakasala para sa mga user na pipili na huwag mag-donate."
+
+#: index.php:563
+msgid "If you really insist, you can always make a donation to the <a target=\"_blank\" %s>Free Software Foundation</a>, as they are the main reason software like Rufus is possible."
+msgstr "Kung talagang pipilitin mo, maaari kang magbigay ng donasyon anumang oras sa <a target=\"_blank\" %s>Free Software Foundation</a>, dahil sila ang pangunahing dahilan kung bakit posible ang software tulad ni Rufus."
+
+#: index.php:564
+msgid "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm about this little program: it is much appreciated!"
+msgstr "Sa anumang kaso, gagamitin ko ang pagkakataong ito para sabihin <i><u>salamat</u></i> para sa iyong patuloy na suporta at sigasig tungkol sa maliit na programang ito: ito ay lubos na pinahahalagahan!"
+
+#: index.php:565
+msgid "But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!"
+msgstr "Ngunit mangyaring patuloy na huwag mag-atubiling gamitin si Rufus nang walang anumang pagkakasala tungkol sa hindi pag-aambag para dito sa pananalapi &ndash; hindi mo dapat kailanganin!"
+
+#: index.php:567
+msgid "Non exhaustive list of ISOs Rufus is known to work with"
+msgstr "Hindi kumpletong listahan ng mga ISO na kilala ni Rufus"
+
+#. Please insert your language and name here.
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
+#: index.php:623
+msgid "English translation by Pete Batard"
+msgstr "Pagsasalin sa Filipino ni Louie Catorce"
+
+#: index.php:624
+msgid "USB icon by"
+msgstr "USB icon ni"
+
+#: index.php:625
+msgid "Hosting by"
+msgstr "Pagho-host ni"

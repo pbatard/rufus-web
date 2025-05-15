@@ -36,6 +36,7 @@ $langs = array(
   'da_DK' => array('da', '🇩🇰 Danish (Dansk)'),
   'nl_NL' => array('nl', '🇳🇱 Dutch (Nederlands)'),
   'et_EE' => array('et', '🇪🇪 Estonian (eesti keel)'),
+  'fil_PH' => array('fil', '🇵🇭 Filipino (Wikang Filipino)'),
   'fi_FI' => array('fi', '🇫🇮 Finnish (Suomi)'),
   'fr_FR' => array('fr', '🇫🇷 French (Français)'),
   'gl_ES' => array('gl', '🏴󠁥󠁳󠁧󠁡󠁿 Galician (Galego)'),
@@ -314,7 +315,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 <div id="right_column">
 <label for="lang_select"><?=_("Change language:");?></label><select name="lang_select" id="lang_select" onchange="self.location='?locale='+this.options[this.selectedIndex].value">
 <? foreach($langs as $code => $lang): ?>
-  <option dir="ltr" <? if(substr($locale,0,strlen($lang[0])) == $lang[0]) echo "selected=\"selected\"";?> value="<?= $lang[0];?>">
+  <option dir="ltr" <? if(strtok($locale, '_') == $lang[0]) echo "selected=\"selected\"";?> value="<?= $lang[0];?>">
   <?= $lang[1]; ?>
 </option>
 <? endforeach; ?>

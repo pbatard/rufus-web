@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.7";
+$latest_version = "4.8";
 $beta_version = "4.8";
 $previous_version = "3.16";
-$latest_date = "2025.04.09";
+$latest_date = "2025.06.11";
 $beta_date = "2025.05.26";
 $previous_date = "2021.10.13";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Traditional Chinese', 'Taiwan');
 $bugfix = false;
-$beta = true;
-$x64_size = 1.6;
-$x86_size = 1.6;
-$arm64_size = 5.3;
+$beta = false;
+$x64_size = 2.0;
+$x86_size = 1.9;
+$arm64_size = 6.0;
 $beta_size = 2.0;
-$src_size = 6.6;
+$src_size = 7.2;
 $nb_screenshots = 5;
 $screenshot_height = "600px";
 $screenshot_duration = 10000;
@@ -518,18 +518,20 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Add a mechanism to detect and download updated <a target="_blank" href="https://uefi.org/revocationlistfile">DBXs</a> from the official UEFI repository</span></li>
-			<li><span dir="ltr">Add <a target="_blank" href="https://github.com/facebook/zstd">ztsd compression</a> support for disk images</span></li>
-			<li><span dir="ltr">Add a new exclusion feature in the settings, to ignore disks with a specific GPT GUID</span></li>
-			<li><span dir="ltr">Improve detection for compressed VHD images that are too large to fit the target drive</span></li>
-			<li><span dir="ltr">Fix commandline hogger not being deleted when running Rufus from a different directory</span></li>
-			<li><span dir="ltr">Fix FAT filenames from embedded images being potentially truncated on image extraction</span></li>
-			<li><span dir="ltr">Fix a side-loading vulnerability [<a target="_blank" href="https://github.com/pbatard/rufus/security/advisories/GHSA-p8p5-r296-g2jv">CVE-2025-26624</a>] with <code>cfgmgr32.dll</code> (with thanks to <i><a target="_blank" href="https://github.com/EmperialX">@EmperialX</a></i>)</span></li>
-			<li><span dir="ltr">Fix UI memory leaks (courtesy of <i><a target="_blank" href="https://github.com/ozone10">@ozone10</a></i>)</span></li>
-			<li><span dir="ltr">Fall back to user/system default locale when getting error description (courtesy of <i><a target="_blank" href="https://github.com/Wack0">@Wack0</a></i>)</span></li>
-			<li><span dir="ltr">Don't run the commandline hogger on POSIX shells</span></li>
-			<li><span dir="ltr">Drop ARM 32-bit builds (Note that ARM 64-bit builds are <b>NOT</b> affected by this)</span></li>
-			<li><span dir="ltr">Update <a target="_blank" href="https://www.freedos.org/">FreeDOS</a> and <a target="_blank" href="https://github.com/chenall/grub4dos">Grub4DOS</a> to latest</span></li>
+			<li><span dir="ltr">Switch to <a target="_blank" href="https://wimlib.net/">wimlib</a> for all WIM image processing:</span></li>
+				<ul dir="<?= $dir;?>">
+					<li><span dir="ltr">Greatly speeds up image analysis when opening Windows ISOs</span></li>
+					<li><span dir="ltr">Can speed up Windows To Go drive creation (But won't do miracles if you have a crap drive)</span></li>
+					<li><span dir="ltr">Might help with Parallels limitations on Mac (But Rufus on Parallels is still <b>unsupported</b>)</span></li>
+					<li><span dir="ltr">Enables the splitting of >4GB files with <kbd>Alt</kbd>-<kbd>E</kbd> (But still <b>WAY SLOWER</b> than using <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>)</span></li>
+				</ul>
+			</li>
+			<li><span dir="ltr">Switch to using Visual Studio binaries everywhere, due to MinGW DLL delay-loading limitations</span></li>
+			<li><span dir="ltr">Add more exceptions for Linux ISOs that restrict themselves to DD mode (Nobara, openSUSE, ...)</span></li>
+			<li><span dir="ltr">Improve reporting of UEFI bootloaders in the log, with info on the Secure Boot status</span></li>
+			<li><span dir="ltr">Fix an issue with size limitations when writing an uncompressed VHD back to the same drive</span></li>
+			<li><span dir="ltr">Fix a crash when opening the log with the 32-bit MinGW compiled version</span></li>
+			<li><span dir="ltr">Fix commandline parameters not being forwarded to original Windows <code>setup.exe</code></span></li>
 		</ul></li>
 <? if($bugfix):?>
 		<br />

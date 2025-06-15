@@ -1,11 +1,16 @@
-version = 4.8.2253
+version = 4.8.2256
 platform_min = 6.2
 download_url = https://github.com/pbatard/rufus/releases/download/v4.8/rufus-4.8.exe
 download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.8/rufus-4.8_x86.exe
 download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v4.8/rufus-4.8_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.8 (2025.06.11)\b0\par\par
+\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.9 (2025.06.15) [BUGFIX RELEASE]\b0\par\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix downloads from https://rufus.ie no longer working due to recent GitHub server changes\par
+{\pntext\f2\'B7\tab}Fix unofficial Windows ISOs, with single index WIMs, not presenting the WUE dialog\par
+
+\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Still from Rufus 4.8 (2025.06.11)\b0\par\par
 
 \pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Switch to wimlib for all WIM image processing:\par
 \pard\sl276\slmult1\tab - Greatly speeds up image analysis when opening Windows ISOs\par

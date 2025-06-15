@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.8";
-$beta_version = "4.8";
-$previous_version = "3.16";
-$latest_date = "2025.06.11";
+$latest_version = "4.9";
+$beta_version = "4.10";
+$previous_version = "4.8";
+$latest_date = "2025.06.15";
 $beta_date = "2025.05.26";
-$previous_date = "2021.10.13";
+$previous_date = "2025.06.11";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Traditional Chinese', 'Taiwan');
-$bugfix = false;
+$bugfix = true;
 $beta = false;
 $x64_size = 2.0;
 $x86_size = 1.9;
@@ -518,6 +518,12 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 	<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 	<ul dir="<?= $dir;?>">
 		<li><?= $full_version;?><ul dir="<?= $dir;?>">
+			<li><span dir="ltr">Fix downloads from <a href="https://rufus.ie">https://rufus.ie</a> no longer working due to recent GitHub server changes</span></li>
+			<li><span dir="ltr">Fix unofficial Windows ISOs, with single index WIMs, not presenting the WUE dialog</span></li>
+		</ul></li>
+<? if($bugfix):?>
+		<br />
+		<li><?= $prev_version;?><ul dir="<?= $dir;?>">
 			<li><span dir="ltr">Switch to <a target="_blank" href="https://wimlib.net/">wimlib</a> for all WIM image processing:</span></li>
 				<ul dir="<?= $dir;?>">
 					<li><span dir="ltr">Greatly speeds up image analysis when opening Windows ISOs</span></li>
@@ -532,20 +538,6 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 			<li><span dir="ltr">Fix an issue with size limitations when writing an uncompressed VHD back to the same drive</span></li>
 			<li><span dir="ltr">Fix a crash when opening the log with the 32-bit MinGW compiled version</span></li>
 			<li><span dir="ltr">Fix commandline parameters not being forwarded to original Windows <code>setup.exe</code></span></li>
-		</ul></li>
-<? if($bugfix):?>
-		<br />
-		<li><?= $prev_version;?><ul dir="<?= $dir;?>">
-			<li><span dir="ltr">Fix ISO mode support for Red Hat 8.2+ and derivatives</span></li>
-			<li><span dir="ltr">Fix BIOS boot support for Arch derivatives</span></li>
-			<li><span dir="ltr">Fix removal of some boot entries for Ubuntu derivatives</span></li>
-			<li><span dir="ltr">Fix log not being saved on exit</span></li>
-			<li><span dir="ltr">Add Windows 11 <i>"Extended"</i> installation support (Disables TPM/Secure Boot)</span></li>
-			<li><span dir="ltr">Add <a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a> ISO downloads</span></li>
-			<li><span dir="ltr">Add support for Intel NUC card readers</span></li>
-			<li><span dir="ltr">Improve Windows 11 support</span></li>
-			<li><span dir="ltr">Improve Windows version reporting</span></li>
-			<li><span dir="ltr">Speed up clearing of MBR/GPT</span></li>
 		</ul></li>
 		<br />
 <? endif;?>

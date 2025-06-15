@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.0\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2023-04-24 13:34+0100\n"
-"PO-Revision-Date: 2023-04-24 13:49+0100\n"
+"PO-Revision-Date: 2025-06-15 11:02+0200\n"
 "Last-Translator: bovirus <bovirus@gmail.com>\n"
 "Language-Team: bovirus <bovirus@gmail.com>\n"
 "Language: it_IT\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: index.php:106
@@ -246,8 +246,7 @@ msgstr "Domande frequenti (FAQ)"
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
-"Le FAQ di Rufus sono disponibili <b><a target=\"_blank\" %s>QUI</a></b> (in "
-"inglese)."
+"Le FAQ di Rufus sono disponibili <b><a target=\"_blank\" %s>QUI</a></b>."
 
 #: index.php:503
 #, php-format
@@ -295,7 +294,7 @@ msgstr ""
 #. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
 #: index.php:509
 msgid "Changelog"
-msgstr "Cronologia modifiche (in inglese)"
+msgstr "Changelog"
 
 #: index.php:542
 msgid "Source Code"
@@ -379,7 +378,7 @@ msgstr ""
 
 #: index.php:558
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
-msgstr "Elenco non esaustivo di immagini ISO compatibili con Rufus"
+msgstr "Esempi di ISO compatibili con Rufus"
 
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
@@ -388,7 +387,7 @@ msgstr "Elenco non esaustivo di immagini ISO compatibili con Rufus"
 msgid "English translation by Pete Batard"
 msgstr ""
 "Traduzione italiano di Roberto Boriotti, Lorenzo Milesi, garf02, Gianluca "
-"Veronese"
+"Veronese, Scotton Tommaso"
 
 #: index.php:615
 msgid "USB icon by"

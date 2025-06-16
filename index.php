@@ -521,8 +521,10 @@ printf("\t\t\t\t<button type=\"button\" data-bs-target=\"#carousel\" data-bs-sli
 			<li><span dir="ltr">Fix downloads from <a href="https://rufus.ie">https://rufus.ie</a> no longer working due to recent GitHub server changes</span></li>
 			<li><span dir="ltr">Fix unofficial Windows ISOs, with single index WIMs, not presenting the WUE dialog</span></li>
 		</ul></li>
+		<br/>
+		<p><b>Note:</b> The GitHub issue mentioned above means that <b>NONE</b> of the existing versions of Rufus are able to automatically detect and update to the 4.9 release.<br/>
+				You <b>MUST</b> upgrade to Rufus 4.9 manually, even if you have check for updates enabled... 😢</p>
 <? if($bugfix):?>
-		<br />
 		<li><?= $prev_version;?><ul dir="<?= $dir;?>">
 			<li><span dir="ltr">Switch to <a target="_blank" href="https://wimlib.net/">wimlib</a> for all WIM image processing:</span></li>
 				<ul dir="<?= $dir;?>">

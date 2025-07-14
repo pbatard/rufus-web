@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
 "POT-Creation-Date: 2023-04-24 13:34+0100\n"
-"PO-Revision-Date: 2023-04-24 14:16+0100\n"
+"PO-Revision-Date: 2025-07-14 23:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: Hon Fai\n"
 "Language: yue_HK\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: index.php:106
@@ -360,16 +360,16 @@ msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Rufus 明確行到邊類型系統嘅 ISO 檔（包括並唔單止）－"
 
 # Language: 香港粵文
-# Name: Hon Fai
+# Name: Yue Translator
 #. Please insert your language and name here.
 #. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
 #. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
 #: index.php:614
 msgid "English translation by Pete Batard"
 msgstr ""
-"由 <a href=\"https://www.facebook.com/fai.hon.1\">Hon Fai</a> 響 2019年尾聲 "
-"譯做 香港粵文，此記<br/>（還望更多人繼續講粵語、寫粵文、撐粵字，為廣東語文創"
-"立標準）"
+"由<a href=\"mailto:yue.translator@gmail.com?"
+"Subject=Rufus%20Homepage%20translation\">粵語社群</a>共同用❤️翻譯<br/>(誠盼繼"
+"續使用並珍惜粵語)"
 
 #: index.php:615
 msgid "USB icon by"

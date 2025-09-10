@@ -1,20 +1,17 @@
-version = 4.8.2250
+version = 4.10.2278
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v4.8_BETA/rufus-4.8_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v4.10_BETA/rufus-4.10_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.8 BETA (2025.05.26)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.10 BETA (2025.09.10)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Switch to wimlib for all WIM image processing:\par
-\pard\sl276\slmult1\tab - Greatly speeds up image analysis when opening Windows ISOs\par
-\pard\sl276\slmult1\tab - Can speed up Windows To Go drive creation (But won't do miracles if you have a crap drive)\par
-\pard\sl276\slmult1\tab - Might help with Parallels limitations on Mac (But Rufus on Parallels is still UNSUPPORTED)\par
-\pard\sl276\slmult1\tab - Enables the splitting of >4GB files with Alt-E (But still WAY SLOWER than using UEFI:NTFS)\par
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16Switch to using Visual Studio binaries everywhere, due to MinGW DLL delay-loading limitations\par
-{\pntext\f2\'B7\tab}Add more exceptions for Linux ISOs that restrict themselves to DD mode (Nobara, openSUSE, ...)\par
-{\pntext\f2\'B7\tab}Improve reporting of UEFI bootloaders in the log, with info on the Secure Boot status\par
-{\pntext\f2\'B7\tab}Fix an issue with size limitations when writing an uncompressed VHD back to the same drive\par
-{\pntext\f2\'B7\tab}Fix a crash when opening the log with the 32-bit MinGW compiled version\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add Dark Mode support (courtesy of @ozone10)\par
+{\pntext\f2\'B7\tab}Add support for creating Windows CA 2023 compatible media (requires a Windows 11 25H2 ISO)\par
+{\pntext\f2\'B7\tab}Add support for saving an existing drive to ISO (UDF only)\par
+{\pntext\f2\'B7\tab}Improve error reporting when saving to VHD/VHDX (with thanks to @Kazkans)\par
+{\pntext\f2\'B7\tab}Fix UEFI DBX updates being reported in some timezones, even when there are none\par
+{\pntext\f2\'B7\tab}Fix a situation where no file system can be selected in ISO mode\par
+{\pntext\f2\'B7\tab}Fix a crash when trying to process Windows ISOs with very long paths\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

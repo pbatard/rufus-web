@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#!/bin/env python3
 # -*- coding=utf-8 -*-
 
 import sys
@@ -23,20 +23,20 @@ def main():
         print("Processing '" + filename + "'...")
         po = polib.pofile(filename)
 
-        entry = po.find("Windows 7 or later, 32 or 64 bit doesn't matter.")
-        if entry:
-          entry.msgid = "Windows 8 or later."
-          entry.msgstr = entry.msgstr.replace("7", "8")
-        else:
-          p = os.path.relpath(path, cwd).replace("\\LC_MESSAGES", "")
-          if p not in problem_po:
-            problem_po.append(p)
+#        entry = po.find("Windows 7 or later, 32 or 64 bit doesn't matter.")
+#        if entry:
+#          entry.msgid = "Windows 8 or later."
+#          entry.msgstr = entry.msgstr.replace("7", "8")
+#        else:
+#          p = os.path.relpath(path, cwd).replace("\\LC_MESSAGES", "")
+#          if p not in problem_po:
+#            problem_po.append(p)
 
         po.merge(pot)
 #        os.replace(filename, filename + '.old')
         po.save(filename)
-#        filename = filename.replace('.po', '.mo')
-#        po.save_as_mofile(filename)
+        filename = filename.replace('.po', '.mo')
+        po.save_as_mofile(filename)
   if (len(problem_po) > 0):
     print("List of problematic languages:")
     for p in problem_po:

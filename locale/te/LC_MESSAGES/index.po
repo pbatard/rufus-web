@@ -19,316 +19,367 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.5\n"
 
-#: index.php:107
+#: index.php:111
 msgid "Version"
 msgstr "వెర్షన్"
 
-#: index.php:140 index.php:356
+#: index.php:144 index.php:286
 msgid "Create bootable USB drives the easy way"
 msgstr "బూటబుల్ USB డ్రైవ్‌లను సులభమైన మార్గంలో సృష్టించండి"
 
-#: index.php:305
-msgid ""
-"This page uses Google services, which may serve <u>non-personalised</u> cookies for advertising, analytics "
-"and security."
-msgstr "ఈ పేజీ Google సేవలను ఉపయోగిస్తుంది, ఇది ప్రకటనలు, విశ్లేషణలు మరియు భద్రత కోసం <u>వ్యక్తిగతీకరించని</u> కుక్కీలను అందించవచ్చు."
-
-#: index.php:306
-msgid "See details"
-msgstr "వివరాలను చూడండి"
-
-#: index.php:307
-msgid "OK"
-msgstr "సరే"
-
-#: index.php:313
+#: index.php:230
 msgid "Change language:"
 msgstr "భాషను మార్చండి:"
 
-#: index.php:322
+#: index.php:239
 msgid "Want to improve this translation?"
 msgstr "ఈ అనువాదాన్ని మెరుగుపరచాలనుకుంటున్నారా?"
 
-#: index.php:381
+#: index.php:313
 msgid ""
-"Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, "
-"memory sticks, etc."
-msgstr "రూఫస్ అనేది USB కీలు/పెండ్‌రైవ్‌లు, మెమరీ స్టిక్‌లు మొదలైన బూటబుల్ USB ఫ్లాష్ డ్రైవ్‌లను ఫార్మాట్ చేయడంలో మరియు సృష్టించడంలో సహాయపడే యుటిలిటీ."
+"Rufus is a utility that helps format and create bootable USB flash drives, "
+"such as USB keys/pendrives, memory sticks, etc."
+msgstr ""
+"రూఫస్ అనేది USB కీలు/పెండ్‌రైవ్‌లు, మెమరీ స్టిక్‌లు మొదలైన బూటబుల్ USB "
+"ఫ్లాష్ డ్రైవ్‌లను ఫార్మాట్ చేయడంలో మరియు సృష్టించడంలో సహాయపడే యుటిలిటీ."
 
-#: index.php:382
+#: index.php:314
 msgid "It can be especially useful for cases where:"
 msgstr "ఇది సందర్భాలలో ముఖ్యంగా ఉపయోగకరంగా ఉంటుంది:"
 
-#: index.php:384
-msgid "you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)"
-msgstr "మీరు బూటబుల్ ISOల నుండి USB ఇన్‌స్టాలేషన్ మీడియాను సృష్టించాలి (Windows, Linux, UEFI, మొదలైనవి)"
+#: index.php:316
+msgid ""
+"you need to create USB installation media from bootable ISOs (Windows, "
+"Linux, UEFI, etc.)"
+msgstr ""
+"మీరు బూటబుల్ ISOల నుండి USB ఇన్‌స్టాలేషన్ మీడియాను సృష్టించాలి (Windows, "
+"Linux, UEFI, మొదలైనవి)"
 
-#: index.php:385
+#: index.php:317
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "మీరు OS ఇన్‌స్టాల్ చేయని సిస్టమ్‌లో పని చేయాలి"
 
-#: index.php:386
+#: index.php:318
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "మీరు DOS నుండి BIOS లేదా ఇతర ఫర్మ్‌వేర్‌ను ఫ్లాష్ చేయాలి"
 
-#: index.php:387
+#: index.php:319
 msgid "you want to run a low-level utility"
 msgstr "మీరు తక్కువ-స్థాయి యుటిలిటీని అమలు చేయాలనుకుంటున్నారు"
 
-#: index.php:389
+#: index.php:321
 msgid "Despite its small size, Rufus provides everything you need!"
-msgstr "దాని చిన్న పరిమాణం ఉన్నప్పటికీ, రూఫస్ మీకు అవసరమైన ప్రతిదాన్ని అందిస్తుంది!"
+msgstr ""
+"దాని చిన్న పరిమాణం ఉన్నప్పటికీ, రూఫస్ మీకు అవసరమైన ప్రతిదాన్ని అందిస్తుంది!"
 
-#: index.php:390
-msgid "A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page."
-msgstr "రూఫస్ మద్దతు ఉన్న ISOల యొక్క సమగ్ర జాబితా కూడా ఈ పేజీ దిగువన అందించబడింది."
+#: index.php:322
+msgid ""
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
+" of this page."
+msgstr ""
+"రూఫస్ మద్దతు ఉన్న ISOల యొక్క సమగ్ర జాబితా కూడా ఈ పేజీ దిగువన అందించబడింది."
 
-#: index.php:395
+#: index.php:276 index.php:328
 msgid "Download"
 msgstr "డౌన్‌లోడ్"
 
-#: index.php:396
+#: index.php:329
 msgid "Latest releases:"
 msgstr "తాజా విడుదలలు:"
 
-#: index.php:399
+#: index.php:332
 msgid "Link"
 msgstr "లింక్"
 
-#: index.php:400
+#: index.php:333
 msgid "Type"
 msgstr "టైప్"
 
-#: index.php:401
+#: index.php:334
 msgid "Platform"
 msgstr "వేదిక"
 
-#: index.php:402
+#: index.php:335
 msgid "Size"
 msgstr "పరిమాణం"
 
-#: index.php:403
+#: index.php:336
 msgid "Date"
 msgstr "తేదీ"
 
-#: index.php:407 index.php:421 index.php:428
+#: index.php:340 index.php:354 index.php:361
 msgid "Standard"
 msgstr "ప్రామాణికం"
 
 #. Abbreviation for MegaByte
-#: index.php:409 index.php:416 index.php:423 index.php:430 index.php:438 index.php:545
+#: index.php:342 index.php:349 index.php:356 index.php:363 index.php:371
+#: index.php:486
 msgid "MB"
 msgstr "MB"
 
-#: index.php:414
+#: index.php:347
 msgid "Portable"
 msgstr "పోర్టబుల్"
 
-#: index.php:436
+#: index.php:369
 msgid "BETA"
 msgstr "బీటా"
 
-#: index.php:443 index.php:444 index.php:542
+#: index.php:376 index.php:377 index.php:481
 msgid "Other versions"
 msgstr "ఇతర సంస్కరణలు"
 
-#: index.php:445
+#: index.php:378
 msgid "System Requirements:"
 msgstr "సిస్టమ్ అవసరాలు:"
 
-#: index.php:446
+#: index.php:379
 msgid "Windows 8 or later."
 msgstr "Windows 8 లేదా తదుపరిది."
 
-#: index.php:446
+#: index.php:379
 msgid "Once downloaded, the application is ready to use."
 msgstr "డౌన్‌లోడ్ చేసిన తర్వాత, అప్లికేషన్ ఉపయోగించడానికి సిద్ధంగా ఉంది."
 
-#: index.php:447
+#: index.php:380
 msgid "Supported Languages:"
 msgstr "మద్దతు ఉన్న భాషలు:"
 
-#: index.php:493
+#: index.php:426
 msgid ""
-"I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as "
-"well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own "
-"language, you should really thank them!"
+"I will take this opportunity to express my gratitude to the translators who "
+"made it possible for Rufus, as well as this webpage, to be translated in "
+"various languages. If you find that you can use Rufus in your own language, "
+"you should really thank them!"
 msgstr ""
-"రూఫస్‌తో పాటు ఈ వెబ్‌పేజీని వివిధ భాషల్లోకి అనువదించడానికి అవకాశం కల్పించిన అనువాదకులకు నా కృతజ్ఞతలు తెలియజేసేందుకు ఈ అవకాశాన్ని ఉపయోగించుకుంటాను. "
-"మీరు మీ స్వంత భాషలో రూఫస్‌ని ఉపయోగించవచ్చని మీరు కనుగొంటే, మీరు వారికి నిజంగా కృతజ్ఞతలు చెప్పాలి!"
+"రూఫస్‌తో పాటు ఈ వెబ్‌పేజీని వివిధ భాషల్లోకి అనువదించడానికి అవకాశం కల్పించిన "
+"అనువాదకులకు నా కృతజ్ఞతలు తెలియజేసేందుకు ఈ అవకాశాన్ని ఉపయోగించుకుంటాను. మీరు "
+"మీ స్వంత భాషలో రూఫస్‌ని ఉపయోగించవచ్చని మీరు కనుగొంటే, మీరు వారికి నిజంగా "
+"కృతజ్ఞతలు చెప్పాలి!"
 
-#: index.php:494
+#: index.php:277 index.php:429
 msgid "Usage"
 msgstr "వాడుక"
 
-#: index.php:495
-msgid "Download the executable and run it &ndash; no installation is necessary."
+#: index.php:430
+msgid ""
+"Download the executable and run it &ndash; no installation is necessary."
 msgstr "ఎక్జిక్యూటబుల్‌ని డౌన్‌లోడ్ చేసి &ndash; సంస్థాపన అవసరం లేదు."
 
-#: index.php:496
+#: index.php:431
 msgid "The executable is digitally signed and the signature should state:"
 msgstr "ఎక్జిక్యూటబుల్ డిజిటల్ సంతకం చేయబడింది మరియు సంతకం ఇలా ఉండాలి:"
 
-#: index.php:498
+#: index.php:433
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 లేదా తర్వాత)"
 
-#: index.php:499
+#: index.php:434
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 లేదా అంతకు ముందు)"
 
-#: index.php:501
+#: index.php:436
 msgid "Notes on DOS support:"
 msgstr "DOS మద్దతుపై గమనికలు:"
 
-#: index.php:502
+#: index.php:437
 msgid ""
-"If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout "
-"according to the locale of your system."
+"If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
+"attempt to select a keyboard layout according to the locale of your system."
 msgstr ""
-"మీరు DOS బూటబుల్ డ్రైవ్‌ని సృష్టించి, US-యేతర కీబోర్డ్‌ని ఉపయోగిస్తే, రూఫస్ మీ సిస్టమ్ యొక్క లొకేల్ ప్రకారం కీబోర్డ్ లేఅవుట్‌ను ఎంచుకోవడానికి ప్రయత్నిస్తుంది."
+"మీరు DOS బూటబుల్ డ్రైవ్‌ని సృష్టించి, US-యేతర కీబోర్డ్‌ని ఉపయోగిస్తే, రూఫస్ "
+"మీ సిస్టమ్ యొక్క లొకేల్ ప్రకారం కీబోర్డ్ లేఅవుట్‌ను ఎంచుకోవడానికి "
+"ప్రయత్నిస్తుంది."
 
-#: index.php:503
+#: index.php:438
 msgid "Notes on ISO Support:"
 msgstr "ISO మద్దతుపై గమనికలు:"
 
-#: index.php:504
+#: index.php:439
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target=\"_blank\" %s>ISO "
-"image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
+" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
-"v1.1.0 నుండి రూఫస్ యొక్క అన్ని సంస్కరణలు <a target=\"_blank\" %s>ISO ఇమేజ్</a> (.iso) నుండి బూటబుల్ USBని సృష్టించడానికి "
-"అనుమతిస్తాయి."
+"v1.1.0 నుండి రూఫస్ యొక్క అన్ని సంస్కరణలు <a target=\"_blank\" %s>ISO "
+"ఇమేజ్</a> (.iso) నుండి బూటబుల్ USBని సృష్టించడానికి అనుమతిస్తాయి."
 
-#: index.php:505
+#: index.php:440
 #, php-format
 msgid ""
-"Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the "
-"use of a CD burning application, such as the freely available <a target=\"_blank\" %s>InfraRecorder</a> or "
-"<a target=\"_blank\" %s>CDBurnerXP</a>."
+"Creating an ISO image from a physical disc or from a set of files is very "
+"easy to do however, through the use of a CD burning application, such as the"
+" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
+"target=\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
-"భౌతిక డిస్క్ నుండి లేదా ఫైల్‌ల సెట్ నుండి ISO ఇమేజ్‌ని సృష్టించడం అనేది CD బర్నింగ్ అప్లికేషన్‌ని ఉపయోగించడం ద్వారా చాలా సులభం, అంటే ఉచితంగా లభించే <a "
-"target=\"_blank\" %s>InfraRecorder</a> లేదా <a target=\"_blank\" %s>CDBurnerXP</a>."
+"భౌతిక డిస్క్ నుండి లేదా ఫైల్‌ల సెట్ నుండి ISO ఇమేజ్‌ని సృష్టించడం అనేది CD "
+"బర్నింగ్ అప్లికేషన్‌ని ఉపయోగించడం ద్వారా చాలా సులభం, అంటే ఉచితంగా లభించే <a "
+"target=\"_blank\" %s>InfraRecorder</a> లేదా <a target=\"_blank\" "
+"%s>CDBurnerXP</a>."
 
-#: index.php:507
+#: index.php:443
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "తరచుగా అడిగే ప్రశ్నలు (FAQ)"
 
-#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:508
+#. You are encouraged to add the translation for " (in English)." after
+#. "HERE</a></b>" as the FAQ is only available in English
+#: index.php:444
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr "రూఫస్ FAQ <b><a target=\"_blank\" %s>ఇక్కడ</a></b> అందుబాటులో ఉంది."
 
-#: index.php:509
+#: index.php:445
 #, php-format
 msgid ""
-"To provide feedback, report a bug or request an enhancement, please use the GitHub <a target=\"_blank\" "
-"%s>issue tracker</a>. Or you can <a target=\"_blank\" %s>send an e-mail</a>."
+"To provide feedback, report a bug or request an enhancement, please use the "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
-"అభిప్రాయాన్ని అందించడానికి, బగ్‌ను నివేదించడానికి లేదా మెరుగుదలని అభ్యర్థించడానికి, దయచేసి GitHub <a target=\"_blank\" %s>సమస్య ట్రాకర్</a>ని "
+"అభిప్రాయాన్ని అందించడానికి, బగ్‌ను నివేదించడానికి లేదా మెరుగుదలని "
+"అభ్యర్థించడానికి, దయచేసి GitHub <a target=\"_blank\" %s>సమస్య ట్రాకర్</a>ని "
 "ఉపయోగించండి. లేదా మీరు <a target=\"_blank\" %s>ఇ-మెయిల్ పంపవచ్చు</a>."
 
-#: index.php:511
+#: index.php:448
 msgid "License"
 msgstr "లైసెన్స్"
 
-#: index.php:512
-#, php-format
-msgid "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."
-msgstr "<a target=\"_blank\" %s>GNU జనరల్ పబ్లిక్ లైసెన్స్ (GPL) వెర్షన్ 3</a> లేదా తదుపరిది."
-
-#: index.php:512
-msgid "You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license."
-msgstr "మీరు GPLv3 లైసెన్స్‌ను గౌరవించినంత వరకు, సాఫ్ట్‌వేర్‌ను పంపిణీ చేయడానికి, సవరించడానికి లేదా విక్రయించడానికి కూడా మీకు స్వేచ్ఛ ఉంది."
-
-#: index.php:513
+#: index.php:449
 #, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" %s>public source</a>, using a "
-"<a target=\"_blank\" %s>MinGW32</a> environment."
+"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
+"later."
 msgstr ""
-"రూఫస్ <a target=\"_blank\" %s>పబ్లిక్ సోర్స్</a> నుండి <a target=\"_blank\" %s>MinGW32</a> పర్యావరణాన్ని ఉపయోగించి 100%% "
-"పారదర్శక పద్ధతిలో ఉత్పత్తి చేయబడింది."
+"<a target=\"_blank\" %s>GNU జనరల్ పబ్లిక్ లైసెన్స్ (GPL) వెర్షన్ 3</a> లేదా "
+"తదుపరిది."
 
-#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:515
+#: index.php:449
+msgid ""
+"You are free to distribute, modify or even sell the software, insofar as you"
+" respect the GPLv3 license."
+msgstr ""
+"మీరు GPLv3 లైసెన్స్‌ను గౌరవించినంత వరకు, సాఫ్ట్‌వేర్‌ను పంపిణీ చేయడానికి, "
+"సవరించడానికి లేదా విక్రయించడానికి కూడా మీకు స్వేచ్ఛ ఉంది."
+
+#: index.php:450
+#, php-format
+msgid ""
+"Rufus is produced in a 100%% transparent manner, from its <a "
+"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
+"%s>MinGW32</a> environment."
+msgstr ""
+"రూఫస్ <a target=\"_blank\" %s>పబ్లిక్ సోర్స్</a> నుండి <a target=\"_blank\" "
+"%s>MinGW32</a> పర్యావరణాన్ని ఉపయోగించి 100%% పారదర్శక పద్ధతిలో ఉత్పత్తి "
+"చేయబడింది."
+
+#. You are encouraged to append the translation for "(in English)" after
+#. "Changelog" as it is only available in English
+#: index.php:453
 msgid "Changelog"
 msgstr "చేంజ్లాగ్"
 
-#: index.php:544
+#: index.php:279 index.php:485
 msgid "Source Code"
 msgstr "సోర్స్ కోడ్"
 
-#: index.php:546
+#: index.php:487
 #, php-format
-msgid "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"
-msgstr "ప్రత్యామ్నాయంగా, మీరు దీన్ని ఉపయోగించి <a target=\"_blank\" %s>git</a> రిపోజిటరీని క్లోన్ చేయవచ్చు:"
+msgid ""
+"Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
+"using:"
+msgstr ""
+"ప్రత్యామ్నాయంగా, మీరు దీన్ని ఉపయోగించి <a target=\"_blank\" %s>git</a> "
+"రిపోజిటరీని క్లోన్ చేయవచ్చు:"
 
-#: index.php:548
+#: index.php:489
 #, php-format
 msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
-msgstr "మరింత సమాచారం కోసం, <a target=\"_blank\" %s>GitHub ప్రాజెక్ట్</a>ని చూడండి."
+msgstr ""
+"మరింత సమాచారం కోసం, <a target=\"_blank\" %s>GitHub ప్రాజెక్ట్</a>ని చూడండి."
 
-#: index.php:549
-msgid "If you are a developer, you are very much encouraged to tinker with Rufus and submit patches."
-msgstr "మీరు డెవలపర్ అయితే, మీరు రూఫస్‌తో టింకర్ చేయడానికి మరియు ప్యాచ్‌లను సమర్పించడానికి చాలా ప్రోత్సహించబడతారు."
+#: index.php:490
+msgid ""
+"If you are a developer, you are very much encouraged to tinker with Rufus "
+"and submit patches."
+msgstr ""
+"మీరు డెవలపర్ అయితే, మీరు రూఫస్‌తో టింకర్ చేయడానికి మరియు ప్యాచ్‌లను "
+"సమర్పించడానికి చాలా ప్రోత్సహించబడతారు."
 
-#: index.php:551
+#: index.php:280 index.php:493
 msgid "Donations"
 msgstr "విరాళాలు"
 
-#: index.php:552
-msgid "Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this page."
-msgstr "నేను దీని గురించి తరచుగా అడుగుతున్నాను కాబట్టి, ఈ పేజీలో <b>నో</b> విరాళం బటన్ ఉంది."
-
-#: index.php:553
+#: index.php:494
 msgid ""
-"The main reason is that I feel that the donation system doesn't actually help software development and "
-"worse, can be guilt-inducing for users who choose not to donate."
+"Since I'm getting asked about this on regular basis, there is <b>no</b> "
+"donation button on this page."
 msgstr ""
-"ప్రధాన కారణం ఏమిటంటే, విరాళం వ్యవస్థ సాఫ్ట్‌వేర్ అభివృద్ధికి సహాయం చేయదని మరియు అధ్వాన్నంగా విరాళం ఇవ్వకూడదని ఎంచుకునే వినియోగదారులకు అపరాధ భావన "
+"నేను దీని గురించి తరచుగా అడుగుతున్నాను కాబట్టి, ఈ పేజీలో <b>నో</b> విరాళం "
+"బటన్ ఉంది."
+
+#: index.php:495
+msgid ""
+"The main reason is that I feel that the donation system doesn't actually "
+"help software development and worse, can be guilt-inducing for users who "
+"choose not to donate."
+msgstr ""
+"ప్రధాన కారణం ఏమిటంటే, విరాళం వ్యవస్థ సాఫ్ట్‌వేర్ అభివృద్ధికి సహాయం చేయదని "
+"మరియు అధ్వాన్నంగా విరాళం ఇవ్వకూడదని ఎంచుకునే వినియోగదారులకు అపరాధ భావన "
 "కలిగించవచ్చని నేను భావిస్తున్నాను."
 
-#: index.php:556
+#: index.php:498
 #, php-format
 msgid ""
-"If you really insist, you can always make a donation to the <a target=\"_blank\" %s>Free Software "
-"Foundation</a>, as they are the main reason software like Rufus is possible."
+"If you really insist, you can always make a donation to the <a "
+"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
+"reason software like Rufus is possible."
 msgstr ""
-"మీరు నిజంగా పట్టుబట్టినట్లయితే, మీరు ఎల్లప్పుడూ <a target=\"_blank\" %s>ఉచిత సాఫ్ట్‌వేర్ ఫౌండేషన్</a>కి విరాళం ఇవ్వవచ్చు, ఎందుకంటే రూఫస్ "
-"వంటి సాఫ్ట్‌వేర్ సాధ్యమయ్యే ప్రధాన కారణం."
+"మీరు నిజంగా పట్టుబట్టినట్లయితే, మీరు ఎల్లప్పుడూ <a target=\"_blank\" %s>ఉచిత"
+" సాఫ్ట్‌వేర్ ఫౌండేషన్</a>కి విరాళం ఇవ్వవచ్చు, ఎందుకంటే రూఫస్ వంటి "
+"సాఫ్ట్‌వేర్ సాధ్యమయ్యే ప్రధాన కారణం."
 
-#: index.php:557
+#: index.php:499
 msgid ""
-"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and "
-"enthusiasm about this little program: it is much appreciated!"
+"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
+"your continuing support and enthusiasm about this little program: it is much"
+" appreciated!"
 msgstr ""
-"ఏమైనప్పటికీ, ఈ చిన్న కార్యక్రమం గురించి మీ నిరంతర మద్దతు మరియు ఉత్సాహానికి <i><u>ధన్యవాదాలు</u></i> చెప్పడానికి నేను ఈ అవకాశాన్ని "
-"ఉపయోగించుకుంటాను: ఇది చాలా ప్రశంసించబడింది!"
+"ఏమైనప్పటికీ, ఈ చిన్న కార్యక్రమం గురించి మీ నిరంతర మద్దతు మరియు ఉత్సాహానికి "
+"<i><u>ధన్యవాదాలు</u></i> చెప్పడానికి నేను ఈ అవకాశాన్ని ఉపయోగించుకుంటాను: ఇది"
+" చాలా ప్రశంసించబడింది!"
 
-#: index.php:558
+#: index.php:500
 msgid ""
-"But please continue to feel free to use Rufus without any guilt about not contributing for it financially "
-"&ndash; you should never have to!"
-msgstr "కానీ దయచేసి రూఫస్‌కు ఆర్థికంగా సహకరించనందుకు ఎలాంటి అపరాధభావం లేకుండా ఉపయోగించడాన్ని సంకోచించకండి &ndash; మీరు ఎప్పటికీ చేయకూడదు!"
+"But please continue to feel free to use Rufus without any guilt about not "
+"contributing for it financially &ndash; you should never have to!"
+msgstr ""
+"కానీ దయచేసి రూఫస్‌కు ఆర్థికంగా సహకరించనందుకు ఎలాంటి అపరాధభావం లేకుండా "
+"ఉపయోగించడాన్ని సంకోచించకండి &ndash; మీరు ఎప్పటికీ చేయకూడదు!"
 
-#: index.php:560
+#: index.php:503
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "ISOల యొక్క నాన్ ఎగ్జాస్టివ్ లిస్ట్ రూఫస్‌తో పని చేస్తుంది"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:616
+#. If you want people to be able to e-mail you directly about this
+#. translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
+#. Batard</a>
+#: index.php:560
 msgid "English translation by Pete Batard"
 msgstr "Aryan Karamtoth ద్వారా తెలుగు అనువాదం"
 
-#: index.php:617
+#: index.php:561
 msgid "USB icon by"
 msgstr "USB చిహ్నం ద్వారా"
 
-#: index.php:618
+#: index.php:562
 msgid "Hosting by"
 msgstr "ద్వారా హోస్ట్ చేయబడింది"
+
+#: index.php:275
+msgid "About"
+msgstr "మా గురించి"
+
+#: index.php:278
+msgid "FAQ"
+msgstr ""

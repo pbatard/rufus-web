@@ -19,39 +19,23 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:106
+#: index.php:111
 msgid "Version"
 msgstr "Versiya"
 
-#: index.php:138 index.php:350
+#: index.php:144 index.php:286
 msgid "Create bootable USB drives the easy way"
 msgstr "Önyükləməli USB sürücü yaratmağın ən asan yolu"
 
-#: index.php:303
-msgid ""
-"This page uses Google services, which may serve <u>non-personalised</u> "
-"cookies for advertising, analytics and security."
-msgstr ""
-"Bu səhifə reklam, analitika və təhlükəsizlik üçün <u>fərdiləşdirilməmiş</u> "
-"kukilərə xidmət edə bilən Google xidmətlərindən istifadə edir."
-
-#: index.php:304
-msgid "See details"
-msgstr "Detallara baxın"
-
-#: index.php:305
-msgid "OK"
-msgstr ""
-
-#: index.php:311
+#: index.php:230
 msgid "Change language:"
 msgstr "Dili dəyişdirin:"
 
-#: index.php:320
+#: index.php:239
 msgid "Want to improve this translation?"
 msgstr "Bu tərcüməni yaxşılaşdırmaq istəyirsiniz?"
 
-#: index.php:375
+#: index.php:313
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
@@ -59,11 +43,11 @@ msgstr ""
 "Rufus, USB açar/yaddaşlar, yaddaş kartları və s. kimi USB sürücüləri "
 "formatlamağa və önyükləməli hala gətirməyə yardımçı olan bir vasitədir."
 
-#: index.php:376
+#: index.php:314
 msgid "It can be especially useful for cases where:"
 msgstr "Xüsusilə o yerlərdə faydalı ola bilər:"
 
-#: index.php:378
+#: index.php:316
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
@@ -71,98 +55,98 @@ msgstr ""
 "Önyükləməli ISO (Windows, Linux, UEFI, və s). USB yükləmə mediası "
 "yaratmağınız lazım olanda"
 
-#: index.php:379
+#: index.php:317
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "Əməliyyat sistemi yüklü olmayan bir sistemdə işləməyiniz lazım olanda"
 
-#: index.php:380
+#: index.php:318
 msgid "you need to flash a BIOS or other firmware from DOS"
 msgstr "DOS üzərindən BIOS və ya digər firmware yükləmələrinə ehtiyac olanda"
 
-#: index.php:381
+#: index.php:319
 msgid "you want to run a low-level utility"
 msgstr "Aşağı səviyyəli bir vasitə işlətmək istədikdə"
 
-#: index.php:383
+#: index.php:321
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr ""
 "Rufus, kiçik ölçüsünə baxmayaraq ehtiyac duyduğunuz hər şeyi təmin edir!"
 
-#: index.php:384
+#: index.php:322
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
-"of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
+" of this page."
 msgstr ""
 "Rufus'un dəstəklədiyi İSO'ların ətraflı olmayan siyahısına səhifənin alt "
 "hissəsindən baxa bilərsiniz."
 
-#: index.php:389
+#: index.php:276 index.php:328
 msgid "Download"
 msgstr "Yüklə"
 
-#: index.php:390
+#: index.php:329
 msgid "Latest releases:"
 msgstr "Son buraxılışlar:"
 
-#: index.php:393
+#: index.php:332
 msgid "Link"
 msgstr "Bağlantı"
 
-#: index.php:394
+#: index.php:333
 msgid "Type"
 msgstr "Tip"
 
-#: index.php:395
+#: index.php:334
 msgid "Platform"
 msgstr "Platforma"
 
-#: index.php:396
+#: index.php:335
 msgid "Size"
 msgstr "Sahəsi"
 
-#: index.php:397
+#: index.php:336
 msgid "Date"
 msgstr "Tarix"
 
-#: index.php:401 index.php:415 index.php:422
+#: index.php:340 index.php:354 index.php:361
 msgid "Standard"
 msgstr "Standart"
 
 #. Abbreviation for MegaByte
-#: index.php:403 index.php:410 index.php:417 index.php:424 index.php:432
-#: index.php:543
+#: index.php:342 index.php:349 index.php:356 index.php:363 index.php:371
+#: index.php:486
 msgid "MB"
 msgstr "MB"
 
-#: index.php:408
+#: index.php:347
 msgid "Portable"
 msgstr ""
 
-#: index.php:430
+#: index.php:369
 msgid "BETA"
 msgstr ""
 
-#: index.php:437 index.php:438 index.php:540
+#: index.php:376 index.php:377 index.php:481
 msgid "Other versions"
 msgstr "Digər versiyalar"
 
-#: index.php:439
+#: index.php:378
 msgid "System Requirements:"
 msgstr "Sistem Tələbləri:"
 
-#: index.php:440
+#: index.php:379
 msgid "Windows 8 or later."
 msgstr "Windows 8 və ya üstü."
 
-#: index.php:440
+#: index.php:379
 msgid "Once downloaded, the application is ready to use."
 msgstr "Yükləndikdən sonra, proqram istifadəyə hazırdır."
 
-#: index.php:441
+#: index.php:380
 msgid "Supported Languages:"
 msgstr "Dəstəklənən Dillər:"
 
-#: index.php:487
+#: index.php:426
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
@@ -174,33 +158,33 @@ msgstr ""
 "öz dilinizdə istifadə etmək şansını tapdınızssa, onlara həqiqətən bir "
 "təşəkkürü borc bilməlisiniz!"
 
-#: index.php:488
+#: index.php:277 index.php:429
 msgid "Usage"
 msgstr "İstifadə"
 
-#: index.php:489
+#: index.php:430
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
 msgstr "Yükləyin və işlədin &ndash; yükləməyə ehtiyac yoxdur."
 
-#: index.php:490
+#: index.php:431
 msgid "The executable is digitally signed and the signature should state:"
 msgstr ""
 "İşlədilə bilən fayl rəqəmsal olaraq imzalanıb və imza bu şəkildə olmalıdır:"
 
-#: index.php:492
+#: index.php:433
 msgid "(v1.3.0 or later)"
 msgstr "(v1.3.0 ya da sonrası)"
 
-#: index.php:493
+#: index.php:434
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 ya da əvvəli)"
 
-#: index.php:495
+#: index.php:436
 msgid "Notes on DOS support:"
 msgstr "DOS dəstəyi qeydləri:"
 
-#: index.php:496
+#: index.php:437
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system."
@@ -209,26 +193,26 @@ msgstr ""
 "olmayan bir klaviatura istifadə edirsinizsə, Rufus sistem dilinə görə bir "
 "klaviatura seçimini deyir."
 
-#: index.php:497
+#: index.php:438
 msgid "Notes on ISO Support:"
 msgstr "ISO dəstəyi qeydləri:"
 
-#: index.php:498
+#: index.php:439
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
-"an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
+" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "v1.1.0 versiyasından etibarən Rufus'un bütün versiyaları <a "
 "target=\"_blank\" %s>ISO əks olunmasından</a> (.iso) önyüklənəbilən USB "
 "yaratmağa icazə verir."
 
-#: index.php:499
+#: index.php:440
 #, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the "
-"freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
+"easy to do however, through the use of a CD burning application, such as the"
+" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
 "target=\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
 "Pulsuz olaraq çata biləcəyiniz <a target=\"_blank\" %s>InfraRecorder</a> ya "
@@ -236,17 +220,18 @@ msgstr ""
 "istifadə edərək fiziki bir sürücüdən və ya bir sıra işdən birbaşa ISO əks "
 "olunması yaratmaq çox asandır."
 
-#: index.php:501
+#: index.php:443
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Çox Soruşulan Suallar (ÇSS)"
 
-#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
-#: index.php:502
+#. You are encouraged to add the translation for " (in English)." after
+#. "HERE</a></b>" as the FAQ is only available in English
+#: index.php:444
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr "Rufus SSS <b><a target=\"_blank\" %s>BURADA</a></b>."
 
-#: index.php:503
+#: index.php:445
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
@@ -258,74 +243,74 @@ msgstr ""
 "izləyicisi)</a>'ı istifadə edin. Ya da <a target=\"_blank\" %s>bir e-poçta "
 "göndərin</a>."
 
-#: index.php:505
+#: index.php:448
 msgid "License"
 msgstr "Lisenziya"
 
-#: index.php:506
+#: index.php:449
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
 msgstr ""
-"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> ya da "
-"sonrası."
+"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> ya da"
+" sonrası."
 
-#: index.php:506
+#: index.php:449
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you "
-"respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you"
+" respect the GPLv3 license."
 msgstr ""
 "GPLv3 lisenziyasına hörmət etdiyiniz müddətcə, proqramı dağıtmaqda, "
 "dəyişdirməkdə hətta satmaqda azadsınız."
 
-#: index.php:507
+#: index.php:450
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
 "target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
 "%s>MinGW32</a> environment."
 msgstr ""
-"Rufus %%100 şəffaf bir anlayışla və <a target=\"_blank\" %s>açıq qaynaq</"
-"a>la, <a target=\"_blank\" %s>MinGW32</a> mühiti istifadə edilərək istehsal "
-"olunmuşdur."
+"Rufus %%100 şəffaf bir anlayışla və <a target=\"_blank\" %s>açıq "
+"qaynaq</a>la, <a target=\"_blank\" %s>MinGW32</a> mühiti istifadə edilərək "
+"istehsal olunmuşdur."
 
-#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
-#: index.php:509
+#. You are encouraged to append the translation for "(in English)" after
+#. "Changelog" as it is only available in English
+#: index.php:453
 msgid "Changelog"
 msgstr "Versiya Keçmişi"
 
-#: index.php:542
+#: index.php:279 index.php:485
 msgid "Source Code"
 msgstr "Qaynaq Kodu"
 
-#: index.php:544
+#: index.php:487
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr ""
-"Alternativ olaraq, <a target=\"_blank\" %s>get</a> hissəsini istifadə edərək "
-"klonlaşdıra bilərsiniz:"
+"Alternativ olaraq, <a target=\"_blank\" %s>get</a> hissəsini istifadə edərək"
+" klonlaşdıra bilərsiniz:"
 
-#: index.php:546
+#: index.php:489
 #, php-format
-msgid ""
-"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "Daha çox məlumat üçün <a target=\"_blank\" %s>GitHub proyektinə</a> baxın."
 
-#: index.php:547
+#: index.php:490
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
 msgstr "İnkişafa, Rufus'u düzəlişlərə və yamaq təqdim etməyə təşviq edirik."
 
-#: index.php:549
+#: index.php:280 index.php:493
 msgid "Donations"
 msgstr "Hədiyylər"
 
-#: index.php:550
+#: index.php:494
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
@@ -333,17 +318,17 @@ msgstr ""
 "Veb səhifəsində hədiyyə ilə bağlı bir buton <b>yoxdur</b> və bubarədə "
 "mütəmadi olaraq kodlar alıram."
 
-#: index.php:551
+#: index.php:495
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
 "choose not to donate."
 msgstr ""
-"Bunun əsas səbəbi hədiyyə sisteminin, əslində cd inkişaf yardımının olmaması "
-"hətta daha da pisi hədiyyə etməməyi üstün edən istifadəçilərə günah hissi "
+"Bunun əsas səbəbi hədiyyə sisteminin, əslində cd inkişaf yardımının olmaması"
+" hətta daha da pisi hədiyyə etməməyi üstün edən istifadəçilərə günah hissi "
 "etdirdiyini nəzərə alınmalıdır."
 
-#: index.php:554
+#: index.php:498
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
@@ -354,17 +339,17 @@ msgstr ""
 "<a target=\"_blank\" %s>Free Software Foundation</a>'a hədiyyə edə "
 "bilərsiniz."
 
-#: index.php:555
+#: index.php:499
 msgid ""
 "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much "
-"appreciated!"
+"your continuing support and enthusiasm about this little program: it is much"
+" appreciated!"
 msgstr ""
 "Nə olursa olsun, bu kiçik proqram ilə bağlı olaraq davamlı dəstəyiniz və "
 "həvəsləndiriciliyiniz üçün <i><u>təşəkkür edirəm</u></i> deməyi borc "
 "bilirəm. Bu çox təqdir edicidir!"
 
-#: index.php:556
+#: index.php:500
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
@@ -373,55 +358,34 @@ msgstr ""
 "heç bir günah etmədən xahiş edirəm, Rufus'u sərbəst istifadə etməyə davam "
 "edin."
 
-#: index.php:558
+#: index.php:503
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr "Rufus'un işlətdiyi məlum olan İSO ətraflı olmayan siyahısı"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
-#: index.php:614
+#. If you want people to be able to e-mail you directly about this
+#. translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
+#. Batard</a>
+#: index.php:560
 msgid "English translation by Pete Batard"
 msgstr ""
-"Azərbaycanca çevirən <a href=\"mailto:elvin_melikov@mail.ru?"
-"Subject=Rufus%20Homepage%20translation\">Məlikov Elvin[mayak18]</a>"
+"Azərbaycanca çevirən <a "
+"href=\"mailto:elvin_melikov@mail.ru?Subject=Rufus%20Homepage%20translation\">Məlikov"
+" Elvin[mayak18]</a>"
 
-#: index.php:615
+#: index.php:561
 msgid "USB icon by"
 msgstr "USB ikonu"
 
-#: index.php:616
+#: index.php:562
 msgid "Hosting by"
 msgstr "Saxlama Xidməti"
 
-#, php-format
-#~ msgid "Last updated %s:"
-#~ msgstr "Son yeniləmə %s:"
+#: index.php:275
+msgid "About"
+msgstr "Haqqında"
 
-#, php-format
-#~ msgid ""
-#~ "Oh, and Rufus is <b>fast</b>. For instance it's about twice as fast as <a "
-#~ "target=\"_blank\" %s>UNetbootin</a>, <a target=\"_blank\" %s>Universal "
-#~ "USB Installer</a> or <a target=\"_blank\" %s>Windows 7 USB download tool</"
-#~ "a>, on the creation of a Windows 7 USB installation drive from an ISO. It "
-#~ "is also marginally faster on the creation of Linux bootable USB from ISOs."
-#~ msgstr ""
-#~ "Bəli, Rufus <b>sürətlidir</b>. Misal, ISO'dan Windows 7 USB yükləmə "
-#~ "sürücüsü yaratmada, <a target=\"_blank\" %s>UNetbootin</a>, <a "
-#~ "target=\"_blank\" %s>Universal USB Installer</a> ya da <a "
-#~ "target=\"_blank\" %s>Windows 7 USB download tool</a> vasitələrindən "
-#~ "təxminən iki qat daha sürətlidir. Üstəlik, İSO-dan Linux önyükləməli USB "
-#~ "yaratmaqda da sürətlidir."
-
-#~ msgid "Speed comparison between Rufus and other applications"
-#~ msgstr "Rufus və digər üsullar arasındakı sürət müqayisə etməsi"
-
-#, php-format
-#~ msgid ""
-#~ "The following tests were carried out on a Windows 7 x64 Core 2 duo/4 GB "
-#~ "RAM platform, with an USB 3.0 controller and a <a target=\"_blank\" %s>16 "
-#~ "GB USB 3.0 ADATA S102 flash drive</a>."
-#~ msgstr ""
-#~ "Aşağıdakı testlər, Windows 7 x64, Core 2 duo/4 GB RAM, USB 3.0 kontrolu "
-#~ "və <a target=\"_blank\" %s>16 GB USB 3.0 ADATA S102 flash sürücü</a> ilə "
-#~ "həyata keçirilmişdir."
+#: index.php:278
+msgid "FAQ"
+msgstr ""

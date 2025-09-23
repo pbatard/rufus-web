@@ -35,8 +35,7 @@ function getCookie(name) {
 	}
 	return "";
 }
-document.addEventListener("DOMContentLoaded", function(event)
-{
+document.addEventListener("DOMContentLoaded", function(event) {
 	if (getCookie('display_cookie_notice') != 'no')
 		document.getElementById('cookie-notice').style.display = 'block';
 });
@@ -49,79 +48,20 @@ document.addEventListener("DOMContentLoaded", function(event)
 	gtag('config', 'G-6PCK0CM7G9');
 </script>
 <style type="text/css">
-	:root {
-		--bs-body-line-height: 1.2;
-	}
-	body {
-		background-color: #3f4555;
-		font-family: Helvetica, Arial, FreeSans, san-serif !important;
-		color: #ffffff;
-	}
-	#right_column {
-		float: left;
-		margin: 0 auto;
-		margin-top: 10px;
-		margin-right: 10px;
-		width: 250px;
-		font-size: 0.8em;
-	}
-	#container {
-		margin: 0 auto;
-		width: 735px;
-		overflow: auto;
-	}
-	#notice {
-		border:4px solid #ffa520;
-		color:#ffffff;
-		padding:1em;
-		width:94%;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	#cookie-statement {
-		background-color: #5a5a5a;
-		border: none;
-		border-radius: 0;
-		color: #fff;
-		-moz-border-radius: 0;
-		-webkit-border-radius: 0;
-		margin: -8px -8px;
-		padding: 5px 0px 5px 15px;
-		position: relative;
-		width: 100%;
-		z-index: 999;
-	}
-	#cookie-statement a {
-		background-color: #303030;
-		border: 1px solid rgba(0,0,0,.1);
-		-moz-border-radius: 2px;
-		-webkit-border-radius: 2px;
-		border-radius: 2px;
-		color: #fff;
-		cursor: pointer;
-		line-height: 200%;
-		padding: 4px 8px;
-		text-decoration: none;
-		white-space: nowrap;
-	}
-	table.reference {
-		color: #000030;
-		background-color:#ffffff;
-		border:1px solid #c3c3c3;
-		border-collapse:collapse;
-		width:100%;
-	}
-	table.reference th {
-		background-color:#e5eecc;
-		border:1px solid #c3c3c3;
-		padding:3px;
-		vertical-align:top;
-	}
-	table.reference td {
-		border:1px solid #c3c3c3;
-		padding:3px;
-		vertical-align:top;
-	}
+	* {	--bs-body-line-height: 1.2;	scroll-behavior: smooth; }
+	body { background-color: #3f4555; font-family: Helvetica, Arial, FreeSans, san-serif !important; color: white; }
+	#right_column { float: left; margin: 0 auto; margin-top: 10px; margin-right: 10px; width: 250px; font-size: 0.8em; }
+	#container { margin: 0 auto; width: 735px; overflow: auto; }
+	#notice { border: 4px solid #ffa520; color: white; padding: 1em; width: 94%; margin-left: auto; margin-right: auto; }
+	.menu { width: 100%; height: 100px; position: sticky; display: flex; justify-content: space-evenly; align-items: center; --font-size: 18px; font-weight: bold; }
+	.menu ul { display: flex; justify-content: space-evenly; align-items: center; list-style: none; width: 100%; }
+	.menu a { margin: 0 2px; text-decoration: none; color: grey; font-size: var(--font-size); transition: 1s all; }
+	.menu a:hover { color: #c0baaa; transition: 1s all; }
+	.menu ul li { margin: 0 5px; }
+	.generic_section { width: 100%; align-items: center; }
+	table.reference { color: #000030; background-color: white; border: 1px solid #c3c3c3; border-collapse: collapse; width: 100%; }
+	table.reference th { background-color: #e5eecc;	border: 1px solid #c3c3c3; padding: 3px; vertical-align: top; }
+	table.reference td { border: 1px solid #c3c3c3;	padding: 3px; vertical-align: top; }
 	th.title { background-color: #80e090 }
 	td.item { color: #444444; background-color: #e8e8e8; }
 	td.item a { color: #0a58ca; }
@@ -136,179 +76,151 @@ document.addEventListener("DOMContentLoaded", function(event)
 	h3 { text-align: center; color: #c0baaa; }
 	h4 { font-size: 1.0em; margin-top: 24px; margin-bottom: 10px; }
 	a { color: #c0baaa; }
+	a:hover { transition: 1s all; }
 	.cookie-notification { background: #fffbe4; border-color: #f8f6e6; overflow: hidden; }
 	.tagline { font-size: 1.6em; margin-bottom: 30px; margin-top: 30px; font-style: italic; }
 	.download { float: right; }
-	pre { background: #000; color: #fff; padding: 15px; margin-top: 15px; }
+	pre { background: black; color: white; padding: 15px; margin-top: 15px; }
 	code { display: inline-block; padding: 3px 3px 4px 1px; color: #ececec; font-family: monospace, monospace; line-height: 10px; font-size: 16px; vertical-align: middle; }
 	hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
-	.kbd {
-		display:inline-block;
-		padding:3px 5px;
-		font-family:monospace, monospace;
-		font-size:11px;
-		line-height:10px;
-		color:#555;
-		vertical-align:middle;
-		background-color:#fcfcfc;
-		border:solid 1px #ccc;
-		border-bottom-color:#bbb;
-		border-radius:3px;
-		box-shadow:inset 0 -1px 0 #bbb;
-	}
+	.kbd { display: inline-block; padding: 3px 5px; font-family: monospace, monospace; font-size: 11px; line-height: 10px; color: #555; vertical-align: middle; background-color: #fcfcfc; border: solid 1px #ccc; border-bottom-color: #bbb; border-radius: 3px; box-shadow: inset 0 -1px 0 #bbb; }
 	.footer { font-size: 0.9em; text-align:center; padding-top: 30px; font-style: italic; }
 	.treeView{ -moz-user-select: none; position: relative; }
 	.treeView ul { margin: 0 0 0 -1.5em; padding: 0 0 0 1.5em; }
 	.treeView li { margin: 0; padding: 0; list-style-position: inside; list-style-image: none; cursor: auto; }
 	.treeView li li { padding-left: 1.5em; }
-	@media screen and ( max-width: 1002px; ) {
-		.hide_on_small_screens { display: none; }
-	}
+	@media screen and ( max-width: 1002px; ) { .hide_on_small_screens { display: none; } }
 	.carousel-indicators { bottom: -45px; }
-	.carousel-indicators li {
-		width: 10px;
-		height: 10px;
-		border-radius: 100%;
-	}
+	.carousel-indicators li { width: 10px; height: 10px; border-radius: 100%; }
 </style>
 </head>
 
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-<!-- <div id="cookie-notice" style="display: none;">
-  <div id="cookie-statement" class="cookie-notification">
-    <div class="text">
-      <span>یہ صفحہ Google سروسز کا استعمال کرتا ہے، جو اشتہارات، تجزیات اور سیکیورٹی کے لیے <u>غیر ذاتی نوعیت کی</u> کوکیز پیش کر سکتی ہے۔</span>
-      <a href="https://policies.google.com/technologies/cookies?hl=ur_PK" target="_blank">تفصیلات دیکھیں</a>
-      <a href="#" onclick="document.getElementById('cookie-notice').style.display = 'none'; setCookie('display_cookie_notice', 'no', 365);">OK</a>
-    </div>
-  </div>
-  <div style="height: 15px;"></div>
-</div> -->
 <div id="right_column">
 <label for="lang_select">زبان بدلیں:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
-  <option dir="ltr"  value="en">
-  🇮🇪/🇬🇧/🇺🇸 English (International)</option>
-  <option dir="ltr"  value="sq">
-  🇦🇱 Albanian (Shqip)</option>
-  <option dir="ltr"  value="ar">
-  🇸🇦 Arabic (العربية)</option>
-  <option dir="ltr"  value="hy">
-  🇦🇲 Armenian (Հայերեն)</option>
-  <option dir="ltr"  value="az">
-  🇦🇿 Azerbaijani (Azərbaycan)</option>
-  <option dir="ltr"  value="bn">
-  🇧🇩 Bangla (বাংলা)</option>
-  <option dir="ltr"  value="bs">
-  🇧🇦 Bosnian (Bosánski)</option>
-  <option dir="ltr"  value="bg">
-  🇧🇬 Bulgarian (Български)</option>
-  <option dir="ltr"  value="yue">
-  🇭🇰 Cantonese [Hong Kong] (香港粵文)</option>
-  <option dir="ltr"  value="ca">
-  🏴󠁥󠁳󠁣󠁴󠁿 Catalan (Català)</option>
-  <option dir="ltr"  value="zh">
-  🇨🇳 Chinese Simplified (简体中文)</option>
-  <option dir="ltr"  value="zh_TW">
-  🇹🇼 Chinese Traditional (正體中文)</option>
-  <option dir="ltr"  value="hr">
-  🇭🇷 Croatian (Hrvatski)</option>
-  <option dir="ltr"  value="cs">
-  🇨🇿 Czech (Čeština)</option>
-  <option dir="ltr"  value="da">
-  🇩🇰 Danish (Dansk)</option>
-  <option dir="ltr"  value="nl">
-  🇳🇱 Dutch (Nederlands)</option>
-  <option dir="ltr"  value="et">
-  🇪🇪 Estonian (eesti keel)</option>
-  <option dir="ltr"  value="fil">
-  🇵🇭 Filipino (Wikang Filipino)</option>
-  <option dir="ltr"  value="fi">
-  🇫🇮 Finnish (Suomi)</option>
-  <option dir="ltr"  value="fr">
-  🇫🇷 French (Français)</option>
-  <option dir="ltr"  value="gl">
-  🏴󠁥󠁳󠁧󠁡󠁿 Galician (Galego)</option>
-  <option dir="ltr"  value="de">
-  🇩🇪 German (Deutsch)</option>
-  <option dir="ltr"  value="el">
-  🇬🇷 Greek (Ελληνικά)</option>
-  <option dir="ltr"  value="he">
-  🇮🇱 Hebrew (עברית)</option>
-  <option dir="ltr"  value="hi">
-  🇮🇳 Hindi (हिंदी)</option>
-  <option dir="ltr"  value="hu">
-  🇭🇺 Hungarian (Magyar)</option>
-  <option dir="ltr"  value="id">
-  🇮🇩 Indonesian (Bahasa Indonesia)</option>
-  <option dir="ltr"  value="ga">
-  🇮🇪 Irish (Gaeilge)</option>
-  <option dir="ltr"  value="it">
-  🇮🇹 Italian (Italiano)</option>
-  <option dir="ltr"  value="ja">
-  🇯🇵 Japanese (日本語)</option>
-  <option dir="ltr"  value="jv">
-  🇮🇩 Javanese (Basa Jawa)</option>
-  <option dir="ltr"  value="ko">
-  🇰🇷 Korean (한국어)</option>
-  <option dir="ltr"  value="ar_IQ">
-  🏴󠁩󠁲󠀱󠀶󠁿 Kurdish (کوردی)</option>
-  <option dir="ltr"  value="lv">
-  🇱🇻 Latvian (Latviešu)</option>
-  <option dir="ltr"  value="lt">
-  🇱🇹 Lithuanian (Lietuvių)</option>
-  <option dir="ltr"  value="mk">
-  🇲🇰 Macedonian (Македонски)</option>
-  <option dir="ltr"  value="ms">
-  🇲🇾 Malay (Bahasa Malaysia)</option>
-  <option dir="ltr"  value="mi">
-  🇳🇿 Maori (Māori)</option>
-  <option dir="ltr"  value="nb">
-  🇳🇴 Norwegian (Norsk)</option>
-  <option dir="ltr"  value="or">
-  🇮🇳 Odia (ଓଡ଼ିଆ)</option>
-  <option dir="ltr"  value="fa">
-  🇮🇷 Persian (پارسی)</option>
-  <option dir="ltr"  value="pl">
-  🇵🇱 Polish (Polski)</option>
-  <option dir="ltr"  value="pt_BR">
-  🇧🇷 Portuguese [BR] (Português [BR])</option>
-  <option dir="ltr"  value="pt">
-  🇵🇹 Portuguese [PT] (Português [PT])</option>
-  <option dir="ltr"  value="ro">
-  🇷🇴 Romanian (Română)</option>
-  <option dir="ltr"  value="ru">
-  🇷🇺 Russian (Русский)</option>
-  <option dir="ltr"  value="sr">
-  🇷🇸 Serbian [Latin] (Srpski [Latinica])</option>
-  <option dir="ltr"  value="si">
-  🇱🇰 Sinhala (සිංහල)</option>
-  <option dir="ltr"  value="sk">
-  🇸🇰 Slovak (Slovensky)</option>
-  <option dir="ltr"  value="sl">
-  🇸🇮 Slovenian (Slovenščina)</option>
-  <option dir="ltr"  value="es">
-  🇪🇸 Spanish (Español)</option>
-  <option dir="ltr"  value="sv">
-  🇸🇪 Swedish (Svenska)</option>
-  <option dir="ltr"  value="ta">
-  🇮🇳 Tamil (தமிழ்)</option>
-  <option dir="ltr"  value="te">
-  🇮🇳 Telugu (తెలుగు)</option>
-  <option dir="ltr"  value="th">
-  🇹🇭 Thai (ไทย)</option>
-  <option dir="ltr"  value="tr">
-  🇹🇷 Turkish (Türkçe)</option>
-  <option dir="ltr"  value="uk">
-  🇺🇦 Ukrainian (Українська)</option>
-  <option dir="ltr" selected="selected" value="ur">
-  🇵🇰 Urdu (اُردُو)</option>
-  <option dir="ltr"  value="ug">
-  🏴 Uyghur (ئۇيغۇر تىلى)</option>
-  <option dir="ltr"  value="vi">
-  🇻🇳 Vietnamese (Tiếng Việt)</option>
-  <option dir="ltr"  value="cy">
-  🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)</option>
+<option dir="ltr" value="en">
+🇮🇪/🇬🇧/🇺🇸 English (International)</option>
+<option dir="ltr" value="sq">
+🇦🇱 Albanian (Shqip)</option>
+<option dir="ltr" value="ar">
+🇸🇦 Arabic (العربية)</option>
+<option dir="ltr" value="hy">
+🇦🇲 Armenian (Հայերեն)</option>
+<option dir="ltr" value="az">
+🇦🇿 Azerbaijani (Azərbaycan)</option>
+<option dir="ltr" value="bn">
+🇧🇩 Bangla (বাংলা)</option>
+<option dir="ltr" value="bs">
+🇧🇦 Bosnian (Bosánski)</option>
+<option dir="ltr" value="bg">
+🇧🇬 Bulgarian (Български)</option>
+<option dir="ltr" value="yue">
+🇭🇰 Cantonese [Hong Kong] (香港粵文)</option>
+<option dir="ltr" value="ca">
+🏴󠁥󠁳󠁣󠁴󠁿 Catalan (Català)</option>
+<option dir="ltr" value="zh">
+🇨🇳 Chinese Simplified (简体中文)</option>
+<option dir="ltr" value="zh_TW">
+🇹🇼 Chinese Traditional (正體中文)</option>
+<option dir="ltr" value="hr">
+🇭🇷 Croatian (Hrvatski)</option>
+<option dir="ltr" value="cs">
+🇨🇿 Czech (Čeština)</option>
+<option dir="ltr" value="da">
+🇩🇰 Danish (Dansk)</option>
+<option dir="ltr" value="nl">
+🇳🇱 Dutch (Nederlands)</option>
+<option dir="ltr" value="et">
+🇪🇪 Estonian (eesti keel)</option>
+<option dir="ltr" value="fil">
+🇵🇭 Filipino (Wikang Filipino)</option>
+<option dir="ltr" value="fi">
+🇫🇮 Finnish (Suomi)</option>
+<option dir="ltr" value="fr">
+🇫🇷 French (Français)</option>
+<option dir="ltr" value="gl">
+🏴󠁥󠁳󠁧󠁡󠁿 Galician (Galego)</option>
+<option dir="ltr" value="de">
+🇩🇪 German (Deutsch)</option>
+<option dir="ltr" value="el">
+🇬🇷 Greek (Ελληνικά)</option>
+<option dir="ltr" value="he">
+🇮🇱 Hebrew (עברית)</option>
+<option dir="ltr" value="hi">
+🇮🇳 Hindi (हिंदी)</option>
+<option dir="ltr" value="hu">
+🇭🇺 Hungarian (Magyar)</option>
+<option dir="ltr" value="id">
+🇮🇩 Indonesian (Bahasa Indonesia)</option>
+<option dir="ltr" value="ga">
+🇮🇪 Irish (Gaeilge)</option>
+<option dir="ltr" value="it">
+🇮🇹 Italian (Italiano)</option>
+<option dir="ltr" value="ja">
+🇯🇵 Japanese (日本語)</option>
+<option dir="ltr" value="jv">
+🇮🇩 Javanese (Basa Jawa)</option>
+<option dir="ltr" value="ko">
+🇰🇷 Korean (한국어)</option>
+<option dir="ltr" value="ar_IQ">
+🏴󠁩󠁲󠀱󠀶󠁿 Kurdish (کوردی)</option>
+<option dir="ltr" value="lv">
+🇱🇻 Latvian (Latviešu)</option>
+<option dir="ltr" value="lt">
+🇱🇹 Lithuanian (Lietuvių)</option>
+<option dir="ltr" value="mk">
+🇲🇰 Macedonian (Македонски)</option>
+<option dir="ltr" value="ms">
+🇲🇾 Malay (Bahasa Malaysia)</option>
+<option dir="ltr" value="mi">
+🇳🇿 Maori (Māori)</option>
+<option dir="ltr" value="nb">
+🇳🇴 Norwegian (Norsk)</option>
+<option dir="ltr" value="or">
+🇮🇳 Odia (ଓଡ଼ିଆ)</option>
+<option dir="ltr" value="fa">
+🇮🇷 Persian (پارسی)</option>
+<option dir="ltr" value="pl">
+🇵🇱 Polish (Polski)</option>
+<option dir="ltr" value="pt_BR">
+🇧🇷 Portuguese [BR] (Português [BR])</option>
+<option dir="ltr" value="pt">
+🇵🇹 Portuguese [PT] (Português [PT])</option>
+<option dir="ltr" value="ro">
+🇷🇴 Romanian (Română)</option>
+<option dir="ltr" value="ru">
+🇷🇺 Russian (Русский)</option>
+<option dir="ltr" value="sr">
+🇷🇸 Serbian [Latin] (Srpski [Latinica])</option>
+<option dir="ltr" value="si">
+🇱🇰 Sinhala (සිංහල)</option>
+<option dir="ltr" value="sk">
+🇸🇰 Slovak (Slovensky)</option>
+<option dir="ltr" value="sl">
+🇸🇮 Slovenian (Slovenščina)</option>
+<option dir="ltr" value="es">
+🇪🇸 Spanish (Español)</option>
+<option dir="ltr" value="sv">
+🇸🇪 Swedish (Svenska)</option>
+<option dir="ltr" value="ta">
+🇮🇳 Tamil (தமிழ்)</option>
+<option dir="ltr" value="te">
+🇮🇳 Telugu (తెలుగు)</option>
+<option dir="ltr" value="th">
+🇹🇭 Thai (ไทย)</option>
+<option dir="ltr" value="tr">
+🇹🇷 Turkish (Türkçe)</option>
+<option dir="ltr" value="uk">
+🇺🇦 Ukrainian (Українська)</option>
+<option dir="ltr" selected="selected"value="ur">
+🇵🇰 Urdu (اُردُو)</option>
+<option dir="ltr" value="ug">
+🏴 Uyghur (ئۇيغۇر تىلى)</option>
+<option dir="ltr" value="vi">
+🇻🇳 Vietnamese (Tiếng Việt)</option>
+<option dir="ltr" value="cy">
+🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)</option>
 </select>
 <div class="hide_on_small_screens">
 <a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation">اس ترجمے کو بہتر بنانا چاہتے ہیں؟</a>&nbsp;<br/>
@@ -316,37 +228,50 @@ document.addEventListener("DOMContentLoaded", function(event)
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Rufus - Sidebar -->
 <ins class="adsbygoogle"
-	 style="display:inline-block;width:160px;height:600px"
-	 data-ad-client="ca-pub-8924382055379825"
-	 data-ad-slot="8722233764"
-	 data-ad-format="rectangle, vertical"
-	 data-full-width-responsive="false"></ins>
+	style="display:inline-block;width:160px;height:600px"
+	data-ad-client="ca-pub-8924382055379825"
+	data-ad-slot="8722233764"
+	data-ad-format="rectangle, vertical"
+	data-full-width-responsive="false"></ins>
 <script>
-     (adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-     (adsbygoogle = window.adsbygoogle || []).push({});
+	(adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
+	(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
 </div>
 <div id="container">
-	<hr style="width:728px;">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Rufus - Banner -->
-	<ins class="adsbygoogle"
-		 style="display:inline-block;width:728px;height:90px"
-		 data-ad-client="ca-pub-8924382055379825"
-		 data-ad-slot="7142613500"
-		 data-ad-format="rectangle, horizontal"
-		 data-full-width-responsive="false"></ins>
-	<script>
-	     (adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-	     (adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-	<hr style="width:728px;">
-	<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
-	<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
-	<div class="tagline"><center>بوٹ ایبل یو ایس بی بنائیں آسان طریقے سے</center></div>
-	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
-		<div class="carousel-inner">
+	<section class="generic_section" id="ad1">
+		<hr style="width:728px;">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Rufus - Banner -->
+		<ins class="adsbygoogle"
+			style="display:inline-block;width:728px;height:90px"
+			data-ad-client="ca-pub-8924382055379825"
+			data-ad-slot="7142613500"
+			data-ad-format="rectangle, horizontal"
+			data-full-width-responsive="false"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		<hr style="width:728px;">
+	</section>
+	<section class="generic_section" id="menu">
+		<nav class="menu" id="Menu"><ul>
+			<li><a href="#about">کے بارے میں</a></li>
+			<li><a href="#download">ڈاؤنلوڈ کریں</a></li>
+			<li><a href="#usage">استعمال</a></li>
+			<li><a href="#FAQ">FAQ</a></li>
+			<li><a href="#source">اس کی کوڈنگ</a></li>
+			<li><a href="#donate">عطیات</a></li>
+		</ul></nav>	
+	</section>
+	<section class="generic_section" id="top_banner">
+		<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
+		<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
+		<div class="tagline"><center>بوٹ ایبل یو ایس بی بنائیں آسان طریقے سے</center></div>
+		<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+			<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img src="/pics/screenshot1_en.png" class="d-block" alt="Rufus screenshot 1" style="height: 600px; margin: auto;">
 			</div>
@@ -362,247 +287,260 @@ document.addEventListener("DOMContentLoaded", function(event)
 			<div class="carousel-item">
 				<img src="/pics/screenshot5_en.png" class="d-block" alt="Rufus screenshot 5" style="height: 600px; margin: auto;">
 			</div>
-		</div>
-		<div class="carousel-indicators">
+			</div>
+			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
 				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
 				<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				<button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 				<button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
-	<p>&nbsp;</p>
-	<p>روفُس ایک آلہ ہے جو یو ایس بی ڈرائیوز (پین ڈرائیوز اور میموری اسٹکس وغیرہ) کو فارمیٹ کرنے اور اُنہیں بوٹ ایبل بنانے میں مدد دیتا ہے۔</p>
-	<p>یہ اُن صورتوں میں خاص طور پر  کارآمد  ہو سکتا ہے جب:</p>
-	<ul>
-		<li>آپ کو بوٹ ایبل آئی ایس او فائلز سے انسٹالیشن میڈیا بنانا ہو (ایسی یو ایس بی جس سے آپریٹنگ سسٹمز یعنی ونڈوز، لنکس، یو ای ایف آئی وغیرہ) انسٹال کئے جاسکتےہوں</li>
-		<li>آپ کو ایسے کمپیوٹر سسٹم پر کام کرنا ہو جس میں آپریٹنگ سسٹم موجود ہی نہ ہو</li>
-		<li>آپ کو بائیوس یا دوسرے فرم ویْر کو فلیش کرنا ہو</li>
-		<li>آپ کو ایک لو لیول یوٹیلٹی چلانی ہو</li>
-	</ul>
-	<p>اس کے چھوٹے سائز کے باوجود، روفُس آپ کو ہر وہ چیز فراہم کرتا ہے  جس کی آپ کو ضرورت ہے!</p>
-	<p>ان آئی ایس اوز کی فہرست جنہیں روفُس سپورٹ کرتا ہے، صفحے کے نیچے دی گئی ہیں۔ <a href="#ref1"><sup>(1)</sup></a></p>
-		<a name="download"></a>
-	<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">ڈاؤنلوڈ کریں</span></h2>
-		<p><b>تازہ ترین ریلیز:</b></p>
-		<table cellspacing="1" cellpadding="6" border="0">
-			<tr>
-				<th class="title" width=220>لنک</th>
-				<th class="title" width=100>نوعیت</th>
-				<th class="title" width=160>پلیٹ فارم</th>
-				<th class="title" width=100>ناپ</th>
-				<th class="title" width=120>تاریخ</th>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9.exe"><code>rufus-4.9.exe</code></a></td>
-				<td class="item">معیاری</td>
-				<td class="item">Windows x64</td>
-				<td class="item"><span dir="rtl">2 MB</span></td>
-				<td class="item">2025.06.15</td>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9p.exe"><code>rufus-4.9p.exe</code></a></td>
-				<td class="item">پورٹ ایبل</td>
-				<td class="item">Windows x64</td>
-				<td class="item"><span dir="rtl">2 MB</span></td>
-				<td class="item">2025.06.15</td>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9_x86.exe"><code>rufus-4.9_x86.exe</code></a></td>
-				<td class="item">معیاری</td>
-				<td class="item">Windows x86</td>
-				<td class="item"><span dir="rtl">1.9 MB</span></td>
-				<td class="item">2025.06.15</td>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9_arm64.exe"><code>rufus-4.9_arm64.exe</code></a></td>
-				<td class="item">معیاری</td>
-				<td class="item">Windows ARM64</td>
-				<td class="item"><span dir="rtl">6 MB</span></td>
-				<td class="item">2025.06.15</td>
-			</tr>
-			<tr>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.10_BETA/rufus-4.10_BETA.exe"><code>rufus-4.10_BETA.exe</code></a></td>
-				<td class="item"><a href="https://github.com/pbatard/rufus/releases/tag/v4.10_BETA">BETA</a></td>
-				<td class="item">Windows x64</td>
-				<td class="item"><span dir="rtl">1.8 MB</span></td>
-				<td class="item">2025.09.10</td>
-			</tr>
-		</table>&nbsp;
-		<p><span style="font-size: 110%"><a href="/downloads/">دیگر ورژن (GitHub)</a><br/>
-		<a target="_blank" href="https://www.fosshub.com/Rufus.html">دیگر ورژن (FossHub)</a></span></p>
-	<h4>سسٹم کی ضروریات:</h4>
-	<p>ونڈوز 8 یا اس کے بعد. ایک بار ڈاؤنلوڈ ہوجائے اور بس استعمال کے لئے تیار۔</p>
-	<h4>تعاون کردہ زبانیں:</h4>
-	<table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>Bahasa Indonesia</i></td><td>،&nbsp;</td>
-		<td><i>Bahasa Malaysia</i></td><td>،&nbsp;</td>
-		<td><i>Български</i></td><td>،&nbsp;</td>
-		<td><i>Čeština</i></td><td>،&nbsp;</td>
-		<td><i>Dansk</i></td><td>،&nbsp;</td>
-		<td><i>Deutsch</i></td><td>،&nbsp;</td>
-		<td><i>Ελληνικά</i></td><td>،&nbsp;</td>
-	</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>English</i></td><td>،&nbsp;</td>
-		<td><i>Español</i></td><td>،&nbsp;</td>
-		<td><i>Français</i></td><td>،&nbsp;</td>
-		<td><i>Hrvatski</i></td><td>،&nbsp;</td>
-		<td><i>Italiano</i></td><td>،&nbsp;</td>
-		<td><i>Latviešu</i></td><td>،&nbsp;</td>
-		<td><i>Lietuvių</i></td><td>،&nbsp;</td>
-		<td><i>Magyar</i></td><td>،&nbsp;</td>
-		<td><i>Nederlands</i></td><td>،&nbsp;</td>
-		<td><i>Norsk</i></td><td>،&nbsp;</td>
-	</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>Polski</i></td><td>،&nbsp;</td>
-		<td><i>Português</i></td><td>،&nbsp;</td>
-		<td><i>Português do Brasil</i></td><td>،&nbsp;</td>
-		<td><i>Русский</i></td><td>،&nbsp;</td>
-		<td><i>Română</i></td><td>،&nbsp;</td>
-		<td><i>Slovensky</i></td><td>،&nbsp;</td>
-		<td><i>Slovenščina</i></td><td>،&nbsp;</td>
-		<td><i>Srpski</i></td><td>،&nbsp;</td>
-	</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><i>Suomi</i></td><td>،&nbsp;</td>
-		<td><i>Svenska</i></td><td>،&nbsp;</td>
-		<td><i>Tiếng&nbsp;Việt</i></td><td>،&nbsp;</td>
-		<td><i>Türkçe</i></td><td>،&nbsp;</td>
-		<td><i>Українська</i></td><td>،&nbsp;</td>
-		<td>简体中文</td><td>،&nbsp;</td>
-		<td>正體中文</td><td>،&nbsp;</td>
-		<td>日本語</td><td>،&nbsp;</td>
-		<td>한국어</td><td>،&nbsp;</td>
-		<td>ไทย</td><td>،&nbsp;</td>
-	</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td>עברית</td><td>،&nbsp;</td>
-		<td>العربية</td><td>،&nbsp;</td>
-		<td>پارسی</td><td>.</td>
-	</tr></table>
-	&nbsp;
-	<p>میں اس موقع سے فائدہ اٹھاتے ہوئے ان سب ترجمہ کاروں سے شکریہ کا اظہار کرنا چاہوں گا کہ جن کی وجہ سے روفُس اور اس ویب پیج کا کئی زبانوں میں ترجمہ ہونا ممکن ہوسکا۔ اگر آپ روفُس کو اپنی خود کی زبان میں استعمال کر سکتے ہیں تو آپ کو ضرور اِن لوگوں کا شکریہ ادا کرنا چاہیے!</p>
-	<h2>استعمال</h2>
-	<p>اگر آپ DOS بوٹ ایبل ڈرائیو بنائیں اور ایسا کیبورڈ استعمال کریں جو Non-US ہو، تو روفُس آپ کے سسٹم کے حساب سے کیبورڈ سلیکٹ کرنے کی کوشش کرے گا۔یہ کیبورڈ کی زیادہ ترتیبوں کو سپورٹ کرتا ہے۔</p>
-	<p>یہ ایگریکیوٹ ایبل ہندساتی طور پر دستخط شدہ ہے اور دستخط بتا رہا ہونا چاہیے:</p>
-	<ul>
-		<li><i>"Akeo Consulting"</i> (ورژن ۰۔۳۔۱ یا کوئی بعد کا)</li>
-		<li><i>"Pete Batard - Open Source Developer"</i> (ورژن ۰۔۲۔۱ یا کوئی پہلے کا)</li>
-	</ul>
-	<h4>DOS سپورٹ پر نوٹ:</h4>
-	<p>اگر آپ DOS بوٹ ایبل ڈرائیو بنائیں اور ایسا کیبورڈ استعمال کریں جو Non-US ہو، تو روفُس آپ کے سسٹم کے حساب سے کیبورڈ سلیکٹ کرنے کی کوشش کرے گا۔یہ کیبورڈ کی زیادہ ترتیبوں کو سپورٹ کرتا ہے۔</p>
-	<h4>آئی ایس او سپورٹ پر نوٹ:</h4>
-	<p>ورژن ۰۔۱۔۱ سے لے کر تمام ورژن <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO image</a> (.ISO) فائل سے بوٹ ایبل یو ایس بی کو بنانے میں مددگار ہیں.</p>
-	<p>مفت ملنے والی سی ڈی برننگ ایپلیکیشنز <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> یا <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a> سے کسی سی ڈی یا فائلز کے ایک سیٹ سے ایک ISO بنانا بہت آسان ہے۔</p>
-	<a name="FAQ"></a>
-	<h2>اکثر پوچھے گئے سوالات</h2>
-	<p>روفُس سوالنامہ <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ"> یہاں </a></b> دستیاب ہے۔<br/></p>
-	<p>فیڈ بیک دینے یا کسی بگ کی اطلاع دینے یا کسی بہتری کی درخواست کے لئے، GitHub کا <a target="_blank" href="https://github.com/pbatard/rufus/issues">issue tracker</a> استعمال کریں یا پھر آپ ہمیں <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">ای میل بھیج دیں</a></p>
-	<a name="license"></a>
-	<h2>لائسنس</h2>
-	<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">جی این یو عام عوامی اجازت نامہ ورژن ۳</a> or later. یا بعد کا ورژن۔<br />آپ اس سوفٹ ویئر کی تقسیم کرنے، ترمیم کرنے، حتیٰ کہ اس کو فروخت کرنے کے لئے بھی آزاد ہیں، جب تک کہ آپ جی پی ایل ورژن ۳ اجازت نامے کا احترام کرتے ہیں۔</p>
-	<p>روفُس ۱۰۰ فیصد شفاف طریقے سے اس کے <a target="_blank" href="https://github.com/pbatard/rufus">پبلک ذرائع </a>سے <a target="_blank" href="http://mingw-w64.org">MinGW32</a> کے ماحول میں بنایا گیا ہے۔</p>
-	<a name="changelog"></a>
-	<h2>ترامیم</h2>
-	<ul dir="rtl">
-		<li><span dir="ltr">[BUGFIX RELEASE] (2025.06.15) <b>4.9 ورژن</b></span><ul dir="rtl">
-			<li><span dir="ltr">Fix downloads from <a href="https://rufus.ie">https://rufus.ie</a> no longer working due to recent GitHub server changes</span></li>
-			<li><span dir="ltr">Fix unofficial Windows ISOs, with single index WIMs, not presenting the WUE dialog</span></li>
-		</ul></li>
-		<br/>
-		<p><b>Note:</b> The GitHub issue mentioned above means that <b>NONE</b> of the existing versions of Rufus are able to automatically detect and update to the 4.9 release.<br/>
-				You <b>MUST</b> upgrade to Rufus 4.9 manually, even if you have check for updates enabled... 😢</p>
-		<li><span dir="ltr">(2025.06.11) <b>4.8 ورژن</b></span><ul dir="rtl">
-			<li><span dir="ltr">Switch to <a target="_blank" href="https://wimlib.net/">wimlib</a> for all WIM image processing:</span></li>
-				<ul dir="rtl">
-					<li><span dir="ltr">Greatly speeds up image analysis when opening Windows ISOs</span></li>
-					<li><span dir="ltr">Can speed up Windows To Go drive creation (But won't do miracles if you have a crap drive)</span></li>
-					<li><span dir="ltr">Might help with Parallels limitations on Mac (But Rufus on Parallels is still <b>unsupported</b>)</span></li>
-					<li><span dir="ltr">Enables the splitting of >4GB files with <kbd>Alt</kbd>-<kbd>E</kbd> (But still <b>WAY SLOWER</b> than using <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>)</span></li>
-				</ul>
-			</li>
-			<li><span dir="ltr">Switch to using Visual Studio binaries everywhere, due to MinGW DLL delay-loading limitations</span></li>
-			<li><span dir="ltr">Add more exceptions for Linux ISOs that restrict themselves to DD mode (Nobara, openSUSE, ...)</span></li>
-			<li><span dir="ltr">Improve reporting of UEFI bootloaders in the log, with info on the Secure Boot status</span></li>
-			<li><span dir="ltr">Fix an issue with size limitations when writing an uncompressed VHD back to the same drive</span></li>
-			<li><span dir="ltr">Fix a crash when opening the log with the 32-bit MinGW compiled version</span></li>
-			<li><span dir="ltr">Fix commandline parameters not being forwarded to original Windows <code>setup.exe</code></span></li>
-		</ul></li>
-		<br />
-		<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">دیگر ورژن</a></b></li>
-	</ul>
-	<h2>اس کی کوڈنگ</h2>
+		<p>&nbsp;</p>
+	</section>
+	<section class="generic_section" id="about">
+		<p>روفُس ایک آلہ ہے جو یو ایس بی ڈرائیوز (پین ڈرائیوز اور میموری اسٹکس وغیرہ) کو فارمیٹ کرنے اور اُنہیں بوٹ ایبل بنانے میں مدد دیتا ہے۔</p>
+		<p>یہ اُن صورتوں میں خاص طور پر  کارآمد  ہو سکتا ہے جب:</p>
+		<ul>
+			<li>آپ کو بوٹ ایبل آئی ایس او فائلز سے انسٹالیشن میڈیا بنانا ہو (ایسی یو ایس بی جس سے آپریٹنگ سسٹمز یعنی ونڈوز، لنکس، یو ای ایف آئی وغیرہ) انسٹال کئے جاسکتےہوں</li>
+			<li>آپ کو ایسے کمپیوٹر سسٹم پر کام کرنا ہو جس میں آپریٹنگ سسٹم موجود ہی نہ ہو</li>
+			<li>آپ کو بائیوس یا دوسرے فرم ویْر کو فلیش کرنا ہو</li>
+			<li>آپ کو ایک لو لیول یوٹیلٹی چلانی ہو</li>
+		</ul>
+		<p>اس کے چھوٹے سائز کے باوجود، روفُس آپ کو ہر وہ چیز فراہم کرتا ہے  جس کی آپ کو ضرورت ہے!</p>
+		<p>ان آئی ایس اوز کی فہرست جنہیں روفُس سپورٹ کرتا ہے، صفحے کے نیچے دی گئی ہیں۔ <a href="#ref1"><sup>(1)</sup></a></p>
+			</section>
+	<section class="generic_section" id="download">
+		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">ڈاؤنلوڈ کریں</span></h2>
+			<p><b>تازہ ترین ریلیز:</b></p>
+			<table cellspacing="1" cellpadding="6" border="0">
+				<tr>
+					<th class="title" width=220>لنک</th>
+					<th class="title" width=100>نوعیت</th>
+					<th class="title" width=160>پلیٹ فارم</th>
+					<th class="title" width=100>ناپ</th>
+					<th class="title" width=120>تاریخ</th>
+				</tr>
+				<tr>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9.exe"><code>rufus-4.9.exe</code></a></td>
+					<td class="item">معیاری</td>
+					<td class="item">Windows x64</td>
+					<td class="item"><span dir="rtl">2 MB</span></td>
+					<td class="item">2025.06.15</td>
+				</tr>
+				<tr>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9p.exe"><code>rufus-4.9p.exe</code></a></td>
+					<td class="item">پورٹ ایبل</td>
+					<td class="item">Windows x64</td>
+					<td class="item"><span dir="rtl">2 MB</span></td>
+					<td class="item">2025.06.15</td>
+				</tr>
+				<tr>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9_x86.exe"><code>rufus-4.9_x86.exe</code></a></td>
+					<td class="item">معیاری</td>
+					<td class="item">Windows x86</td>
+					<td class="item"><span dir="rtl">1.9 MB</span></td>
+					<td class="item">2025.06.15</td>
+				</tr>
+				<tr>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9_arm64.exe"><code>rufus-4.9_arm64.exe</code></a></td>
+					<td class="item">معیاری</td>
+					<td class="item">Windows ARM64</td>
+					<td class="item"><span dir="rtl">6 MB</span></td>
+					<td class="item">2025.06.15</td>
+				</tr>
+				<tr>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.10_BETA/rufus-4.10_BETA.exe"><code>rufus-4.10_BETA.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/tag/v4.10_BETA">BETA</a></td>
+					<td class="item">Windows x64</td>
+					<td class="item"><span dir="rtl">1.8 MB</span></td>
+					<td class="item">2025.09.10</td>
+				</tr>
+			</table>&nbsp;
+			<p><span style="font-size: 110%"><a href="/downloads/">دیگر ورژن (GitHub)</a><br/>
+			<a target="_blank" href="https://www.fosshub.com/Rufus.html">دیگر ورژن (FossHub)</a></span></p>
+		<h4>سسٹم کی ضروریات:</h4>
+		<p>ونڈوز 8 یا اس کے بعد. ایک بار ڈاؤنلوڈ ہوجائے اور بس استعمال کے لئے تیار۔</p>
+		<h4>تعاون کردہ زبانیں:</h4>
+		<table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><i>Bahasa Indonesia</i></td><td>،&nbsp;</td>
+			<td><i>Bahasa Malaysia</i></td><td>،&nbsp;</td>
+			<td><i>Български</i></td><td>،&nbsp;</td>
+			<td><i>Čeština</i></td><td>،&nbsp;</td>
+			<td><i>Dansk</i></td><td>،&nbsp;</td>
+			<td><i>Deutsch</i></td><td>،&nbsp;</td>
+			<td><i>Ελληνικά</i></td><td>،&nbsp;</td>
+		</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><i>English</i></td><td>،&nbsp;</td>
+			<td><i>Español</i></td><td>،&nbsp;</td>
+			<td><i>Français</i></td><td>،&nbsp;</td>
+			<td><i>Hrvatski</i></td><td>،&nbsp;</td>
+			<td><i>Italiano</i></td><td>،&nbsp;</td>
+			<td><i>Latviešu</i></td><td>،&nbsp;</td>
+			<td><i>Lietuvių</i></td><td>،&nbsp;</td>
+			<td><i>Magyar</i></td><td>،&nbsp;</td>
+			<td><i>Nederlands</i></td><td>،&nbsp;</td>
+			<td><i>Norsk</i></td><td>،&nbsp;</td>
+		</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><i>Polski</i></td><td>،&nbsp;</td>
+			<td><i>Português</i></td><td>،&nbsp;</td>
+			<td><i>Português do Brasil</i></td><td>،&nbsp;</td>
+			<td><i>Русский</i></td><td>،&nbsp;</td>
+			<td><i>Română</i></td><td>،&nbsp;</td>
+			<td><i>Slovensky</i></td><td>،&nbsp;</td>
+			<td><i>Slovenščina</i></td><td>،&nbsp;</td>
+			<td><i>Srpski</i></td><td>،&nbsp;</td>
+		</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><i>Suomi</i></td><td>،&nbsp;</td>
+			<td><i>Svenska</i></td><td>،&nbsp;</td>
+			<td><i>Tiếng&nbsp;Việt</i></td><td>،&nbsp;</td>
+			<td><i>Türkçe</i></td><td>،&nbsp;</td>
+			<td><i>Українська</i></td><td>،&nbsp;</td>
+			<td>简体中文</td><td>،&nbsp;</td>
+			<td>正體中文</td><td>،&nbsp;</td>
+			<td>日本語</td><td>،&nbsp;</td>
+			<td>한국어</td><td>،&nbsp;</td>
+			<td>ไทย</td><td>،&nbsp;</td>
+		</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td>עברית</td><td>،&nbsp;</td>
+			<td>العربية</td><td>،&nbsp;</td>
+			<td>پارسی</td><td>.</td>
+		</tr></table>
+		&nbsp;
+		<p>میں اس موقع سے فائدہ اٹھاتے ہوئے ان سب ترجمہ کاروں سے شکریہ کا اظہار کرنا چاہوں گا کہ جن کی وجہ سے روفُس اور اس ویب پیج کا کئی زبانوں میں ترجمہ ہونا ممکن ہوسکا۔ اگر آپ روفُس کو اپنی خود کی زبان میں استعمال کر سکتے ہیں تو آپ کو ضرور اِن لوگوں کا شکریہ ادا کرنا چاہیے!</p>
+	</section>
+	<section class="generic_section" id="usage">
+		<h2>استعمال</h2>
+		<p>اگر آپ DOS بوٹ ایبل ڈرائیو بنائیں اور ایسا کیبورڈ استعمال کریں جو Non-US ہو، تو روفُس آپ کے سسٹم کے حساب سے کیبورڈ سلیکٹ کرنے کی کوشش کرے گا۔یہ کیبورڈ کی زیادہ ترتیبوں کو سپورٹ کرتا ہے۔</p>
+		<p>یہ ایگریکیوٹ ایبل ہندساتی طور پر دستخط شدہ ہے اور دستخط بتا رہا ہونا چاہیے:</p>
+		<ul>
+			<li><i>"Akeo Consulting"</i> (ورژن ۰۔۳۔۱ یا کوئی بعد کا)</li>
+			<li><i>"Pete Batard - Open Source Developer"</i> (ورژن ۰۔۲۔۱ یا کوئی پہلے کا)</li>
+		</ul>
+		<h4>DOS سپورٹ پر نوٹ:</h4>
+		<p>اگر آپ DOS بوٹ ایبل ڈرائیو بنائیں اور ایسا کیبورڈ استعمال کریں جو Non-US ہو، تو روفُس آپ کے سسٹم کے حساب سے کیبورڈ سلیکٹ کرنے کی کوشش کرے گا۔یہ کیبورڈ کی زیادہ ترتیبوں کو سپورٹ کرتا ہے۔</p>
+		<h4>آئی ایس او سپورٹ پر نوٹ:</h4>
+		<p>ورژن ۰۔۱۔۱ سے لے کر تمام ورژن <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO image</a> (.ISO) فائل سے بوٹ ایبل یو ایس بی کو بنانے میں مددگار ہیں.</p>
+		<p>مفت ملنے والی سی ڈی برننگ ایپلیکیشنز <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> یا <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a> سے کسی سی ڈی یا فائلز کے ایک سیٹ سے ایک ISO بنانا بہت آسان ہے۔</p>
+	</section>
+	<section class="generic_section" id="FAQ">
+		<h2>اکثر پوچھے گئے سوالات</h2>
+		<p>روفُس سوالنامہ <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ"> یہاں </a></b> دستیاب ہے۔<br/></p>
+		<p>فیڈ بیک دینے یا کسی بگ کی اطلاع دینے یا کسی بہتری کی درخواست کے لئے، GitHub کا <a target="_blank" href="https://github.com/pbatard/rufus/issues">issue tracker</a> استعمال کریں یا پھر آپ ہمیں <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">ای میل بھیج دیں</a></p>
+	</section>
+	<section class="generic_section" id="license">
+		<h2>لائسنس</h2>
+		<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">جی این یو عام عوامی اجازت نامہ ورژن ۳</a> or later. یا بعد کا ورژن۔<br />آپ اس سوفٹ ویئر کی تقسیم کرنے، ترمیم کرنے، حتیٰ کہ اس کو فروخت کرنے کے لئے بھی آزاد ہیں، جب تک کہ آپ جی پی ایل ورژن ۳ اجازت نامے کا احترام کرتے ہیں۔</p>
+		<p>روفُس ۱۰۰ فیصد شفاف طریقے سے اس کے <a target="_blank" href="https://github.com/pbatard/rufus">پبلک ذرائع </a>سے <a target="_blank" href="http://mingw-w64.org">MinGW32</a> کے ماحول میں بنایا گیا ہے۔</p>
+	</section>
+	<section class="generic_section" id="changelog">
+		<h2>ترامیم</h2>
+		<ul dir="rtl">
+			<li><span dir="ltr">[BUGFIX RELEASE] (2025.06.15) <b>4.9 ورژن</b></span><ul dir="rtl">
+				<li><span dir="ltr">Fix downloads from <a href="https://rufus.ie">https://rufus.ie</a> no longer working due to recent GitHub server changes</span></li>
+				<li><span dir="ltr">Fix unofficial Windows ISOs, with single index WIMs, not presenting the WUE dialog</span></li>
+			</ul></li>
+			<br/>
+			<p><b>Note:</b> The GitHub issue mentioned above means that <b>NONE</b> of the existing versions of Rufus are able to automatically detect and update to the 4.9 release.<br/>
+					You <b>MUST</b> upgrade to Rufus 4.9 manually, even if you have check for updates enabled... 😢</p>
+			<li><span dir="ltr">(2025.06.11) <b>4.8 ورژن</b></span><ul dir="rtl">
+				<li><span dir="ltr">Switch to <a target="_blank" href="https://wimlib.net/">wimlib</a> for all WIM image processing:</span></li>
+					<ul dir="rtl">
+						<li><span dir="ltr">Greatly speeds up image analysis when opening Windows ISOs</span></li>
+						<li><span dir="ltr">Can speed up Windows To Go drive creation (But won't do miracles if you have a crap drive)</span></li>
+						<li><span dir="ltr">Might help with Parallels limitations on Mac (But Rufus on Parallels is still <b>unsupported</b>)</span></li>
+						<li><span dir="ltr">Enables the splitting of >4GB files with <kbd>Alt</kbd>-<kbd>E</kbd> (But still <b>WAY SLOWER</b> than using <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>)</span></li>
+					</ul>
+				</li>
+				<li><span dir="ltr">Switch to using Visual Studio binaries everywhere, due to MinGW DLL delay-loading limitations</span></li>
+				<li><span dir="ltr">Add more exceptions for Linux ISOs that restrict themselves to DD mode (Nobara, openSUSE, ...)</span></li>
+				<li><span dir="ltr">Improve reporting of UEFI bootloaders in the log, with info on the Secure Boot status</span></li>
+				<li><span dir="ltr">Fix an issue with size limitations when writing an uncompressed VHD back to the same drive</span></li>
+				<li><span dir="ltr">Fix a crash when opening the log with the 32-bit MinGW compiled version</span></li>
+				<li><span dir="ltr">Fix commandline parameters not being forwarded to original Windows <code>setup.exe</code></span></li>
+			</ul></li>
+			<br />
+			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">دیگر ورژن</a></b></li>
+		</ul>
+	</section>
+	<section class="generic_section" id="source">
+		<h2>اس کی کوڈنگ</h2>
 		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.9.zip"><span dir="ltr">4.9 Rufus</span></a> <span dir="rtl">(7.2 MB)</span></li>
 		<li>متبادل طور پر، آپ <a target="_blank" href="http://git-scm.com">git</a> کے انبار کو کلون کرسکتے ہیں، درجِ ذیل کوڈ کو استعمال کرتے ہوئے:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>مزید معلومات کے لئے، <a target="_blank" href="https://github.com/pbatard/rufus">GitHub project</a> ملاحظہ کریں۔</li></ul>
 		<p>اگر آپ ایک ڈویلپر ہیں تو آپ کی حوصلہ افزائی کی جاتی ہے کہ آپ روفُس کے ساتھ چھیڑ چھاڑ کریں اور اس کے پیچز جمع کروائیں۔</p>
-	<a name="donate"></a>
-	<h2>عطیات</h2>
+	</section>
+	<section class="generic_section" id="donate">
+		<h2>عطیات</h2>
 		<p>چونکہ مجھ سے عطیات کے بارے میں روزانہ کی بنیاد پر پوچھا جا رہا ہے، تو عرض ہے کہ اس صفحے پر کوئی عطیے کا بٹن <b>نہیں</b> ہے۔</p>
 		<p>اس کا اہم سبب یہ ہے کہ مجھے لگتا ہے کہ عطیات سوفٹ ویئر کے بننے بنانے میں کوئی مدد نہیں دیتے اور اس سے بھی برا یہ کہ وہ صارفین جو عطیات نہ دینے کا فیصلہ کرتے ہیں، انہیں شرمندگی سی محسوس ہوگی۔</p>
 		<p>اگر پھر بھی آپ اصرار کریں تو آپ <a target="_blank" href="http://www.fsf.org/">Free Software Foundation</a> کو عطیات دے سکتے ہیں کیونکہ یہ ہی وجہ ہیں کہ روفُس جیسا ایک سوفٹ ویئر ممکن ہوسکا۔</p>
 		<p>میں اس موقع کا فائدہ اٹھاتے ہوئے اس چھوٹے سے سوفٹ ویئر کے حوالے سے  آپ کے جذبے اور سپورٹ کو جاری رکھنے پر <i><u>شکریہ</u></i> کہوں گا، اس کی قدر کی جاتی ہے!</p>
 		<p>مگر آپ اس سوفٹ ویئر کو استعمال کرنے میں کچھ مجرمانہ سا محسوس نہ کریں کہ آپ اس میں مالی طور پر حصہ نہیں ڈال رہے &ndash; آپ کو کبھی ہونا بھی نہیں چاہیے!</p>
-	<a name="ref1"></a>
-	<h2>(1) آئی ایس او فائلز کی ایک غیر جامع فہرست جن کے ساتھ روفُس کام کرتا ہے</h2>
-	<table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://archboot.com/">Archboot</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.centos.org">CentOS</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://clonezilla.org/clonezilla-live.php">Clonezilla</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="http://www.damnsmalllinux.org">Damn&nbsp;Small&nbsp;Linux</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.debian.org">Debian</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://elementary.io">Elementary OS</a></td><td>،&nbsp;</td>
-	</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://getfedora.org">Fedora</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.freedos.org">FreeDOS</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://garudalinux.org">Garuda Linux</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.gentoo.org">Gentoo</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://gparted.org">GParted</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.hirensbootcd.org">Hiren's&nbsp;Boot&nbsp;CD</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.kali.org">Kali Linux</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://knoppix.net">Knoppix</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://kolibrios.org">KolibriOS</a></td><td>،&nbsp;</td>
-	</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<!--<td><a target="_blank" href="https://kubuntu.org">Kubuntu</a></td><td>،&nbsp;</td>-->
-		<td><a target="_blank" href="https://linuxmint.com">Linux&nbsp;Mint</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://manjaro.org">Manjaro Linux</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://pogostick.net/~pnh/ntpasswd">NT&nbsp;Password&nbsp;Registry&nbsp;Editor</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.opensuse.org">OpenSUSE</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.raspberrypi.com/software/">Raspberry Pi OS</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.raspbian.org">Raspbian</a></td><td>،&nbsp;</td>
-	</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://reactos.org">ReactOS</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.redhat.com">Red&nbsp;Hat</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.rodsbooks.com/refind">rEFInd</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://rockylinux.org">Rocky Linux</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="http://www.slackware.com">Slackware</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable">Super&nbsp;Grub2&nbsp;Disk</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://tails.boum.org">Tails</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://trinityhome.org">Trinity&nbsp;Rescue&nbsp;Kit</a></td><td>،&nbsp;</td>
-	</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://www.truenas.com/download-truenas-core">TrueNAS CORE</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://ubuntu.com">Ubuntu</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.ultimatebootcd.com">Ultimate&nbsp;Boot&nbsp;CD</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-xp">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-vista">Windows&nbsp;Vista</a></td><td>،&nbsp;</td>
-	</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-7">Windows&nbsp;7</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows8ISO">Windows&nbsp;8/8.1</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows10ISO/">Windows&nbsp;10</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.microsoft.com/en-ie/windows-server">Windows&nbsp;Server&nbsp;2019</a></td><td>،&nbsp;</td>
-		<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows11">Windows&nbsp;11</a></td><td>،&nbsp;</td>
-		<td>&hellip;</td>
-	</tr></table>
+	</section>
+	<section class="generic_section" id="ref1">
+		<h2>(1) آئی ایس او فائلز کی ایک غیر جامع فہرست جن کے ساتھ روفُس کام کرتا ہے</h2>
+		<table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://archboot.com/">Archboot</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.centos.org">CentOS</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://clonezilla.org/clonezilla-live.php">Clonezilla</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="http://www.damnsmalllinux.org">Damn&nbsp;Small&nbsp;Linux</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.debian.org">Debian</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://elementary.io">Elementary OS</a></td><td>،&nbsp;</td>
+		</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><a target="_blank" href="https://getfedora.org">Fedora</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.freedos.org">FreeDOS</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://garudalinux.org">Garuda Linux</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.gentoo.org">Gentoo</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://gparted.org">GParted</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.hirensbootcd.org">Hiren's&nbsp;Boot&nbsp;CD</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.kali.org">Kali Linux</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://knoppix.net">Knoppix</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://kolibrios.org">KolibriOS</a></td><td>،&nbsp;</td>
+		</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<!--<td><a target="_blank" href="https://kubuntu.org">Kubuntu</a></td><td>،&nbsp;</td>-->
+			<td><a target="_blank" href="https://linuxmint.com">Linux&nbsp;Mint</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://manjaro.org">Manjaro Linux</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://pogostick.net/~pnh/ntpasswd">NT&nbsp;Password&nbsp;Registry&nbsp;Editor</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.opensuse.org">OpenSUSE</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.raspberrypi.com/software/">Raspberry Pi OS</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.raspbian.org">Raspbian</a></td><td>،&nbsp;</td>
+		</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><a target="_blank" href="https://reactos.org">ReactOS</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.redhat.com">Red&nbsp;Hat</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.rodsbooks.com/refind">rEFInd</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://rockylinux.org">Rocky Linux</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="http://www.slackware.com">Slackware</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable">Super&nbsp;Grub2&nbsp;Disk</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://tails.boum.org">Tails</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://trinityhome.org">Trinity&nbsp;Rescue&nbsp;Kit</a></td><td>،&nbsp;</td>
+		</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><a target="_blank" href="https://www.truenas.com/download-truenas-core">TrueNAS CORE</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://ubuntu.com">Ubuntu</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.ultimatebootcd.com">Ultimate&nbsp;Boot&nbsp;CD</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-xp">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-vista">Windows&nbsp;Vista</a></td><td>،&nbsp;</td>
+		</tr></table><table dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-7">Windows&nbsp;7</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows8ISO">Windows&nbsp;8/8.1</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows10ISO/">Windows&nbsp;10</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.microsoft.com/en-ie/windows-server">Windows&nbsp;Server&nbsp;2019</a></td><td>،&nbsp;</td>
+			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows11">Windows&nbsp;11</a></td><td>،&nbsp;</td>
+			<td>&hellip;</td>
+		</tr></table>
+	</section>
 	<div class="footer"><table align="center" dir="rtl" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2025&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
 		اردو ترجمہ <a href="mailto:aapatee@gmail.com?Subject=Rufus%20Homepage%20translation">علی الباکستانی</a><br/>		یو ایس بی آئکون منجانب PC Unleashed<br/>

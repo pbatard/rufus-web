@@ -1,18 +1,18 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.9";
+$latest_version = "4.10";
 $beta_version = "4.10";
 $previous_version = "4.8";
-$latest_date = "2025.06.15";
+$latest_date = "2025.09.24";
 $beta_date = "2025.09.10";
 $previous_date = "2025.06.11";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Traditional Chinese', 'Taiwan');
-$bugfix = true;
-$beta = true;
-$x64_size = 2.0;
-$x86_size = 1.9;
-$arm64_size = 6.0;
+$bugfix = false;
+$beta = false;
+$x64_size = 1.8;
+$x86_size = 1.8;
+$arm64_size = 4.9;
 $beta_size = 1.8;
 $src_size = 7.2;
 $nb_screenshots = 5;
@@ -452,12 +452,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul dir="<?= $dir;?>">
-				<li><span dir="ltr">Fix downloads from <a href="https://rufus.ie">https://rufus.ie</a> no longer working due to recent GitHub server changes</span></li>
-				<li><span dir="ltr">Fix unofficial Windows ISOs, with single index WIMs, not presenting the WUE dialog</span></li>
+				<li><span dir="ltr">Add Dark Mode support (courtesy of @ozone10).</span></li>
+				<li><span dir="ltr">Add support for creating <code>Windows CA 2023</code> compatible media (requires a Windows 11 25H2 ISO). For more on this, see <a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ#how-do-i-secure-a-pc-for-the-pca-2011-windows-uefi-certificate-revocation-and-install-windows-11-25h2-on-it">this Rufus FAQ entry</a>.</span></li>
+				<li><span dir="ltr">Add support for saving an existing drive to ISO (UDF only).</span></li>
+				<li><span dir="ltr">Improve error reporting when saving to VHD/VHDX (with thanks to @Kazkans).</span></li>
+				<li><span dir="ltr">Improve persistence support for Linux Mint.</span></li>
+				<li><span dir="ltr">Fix UEFI DBX updates being reported in some timezones, even when there are none.</span></li>
+				<li><span dir="ltr">Fix a situation where no file system can be selected in ISO mode.</span></li>
+				<li><span dir="ltr">Fix a crash when trying to process Windows ISOs with very long paths.</span></li>
 			</ul></li>
 			<br/>
-			<p><b>Note:</b> The GitHub issue mentioned above means that <b>NONE</b> of the existing versions of Rufus are able to automatically detect and update to the 4.9 release.<br/>
-					You <b>MUST</b> upgrade to Rufus 4.9 manually, even if you have check for updates enabled... 😢</p>
 <? if($bugfix):?>
 			<li><?= $prev_version;?><ul dir="<?= $dir;?>">
 				<li><span dir="ltr">Switch to <a target="_blank" href="https://wimlib.net/">wimlib</a> for all WIM image processing:</span></li>

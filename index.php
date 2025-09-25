@@ -373,7 +373,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <? endif;?>
 			</table>&nbsp;
 			<p><span style="font-size: 110%"><a href="/downloads/"><?= _("Other versions");?> (GitHub)</a><br/>
-			<a target="_blank" href="https://www.fosshub.com/Rufus.html"><?= _("Other versions");?> (FossHub)</a></span></p>
+			<a target="_blank" href="https://dappcdn.com/download/system-rescue/rufus"><?= _("Other versions");?> (dAppCDN)</a></span></p>
 		<h4><?= _("System Requirements:");?></h4>
 		<p><?= _("Windows 8 or later.");?> <?= _("Once downloaded, the application is ready to use.");?></p>
 		<h4><?= _("Supported Languages:");?></h4>

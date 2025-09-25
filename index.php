@@ -273,10 +273,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<nav class="menu" id="Menu"><ul>
 			<li><a href="#about"><?= _("About");?></a></li>
 			<li><a href="#download"><?= _("Download");?></a></li>
+			<li><a href="#changelog">Changelog</a></li>
 			<li><a href="#usage"><?= _("Usage");?></a></li>
 			<li><a href="#FAQ"><?= _("FAQ");?></a></li>
 			<li><a href="#source"><?= _("Source Code");?></a></li>
-			<li><a href="#donate"><?= _("Donations");?></a></li>
 		</ul></nav>	
 	</section>
 	<section class="generic_section" id="top_banner">

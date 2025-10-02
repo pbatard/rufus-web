@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.10";
-$beta_version = "4.10";
+$latest_version = "4.11";
+$beta_version = "4.12";
 $previous_version = "4.8";
-$latest_date = "2025.09.24";
+$latest_date = "2025.10.02";
 $beta_date = "2025.09.10";
 $previous_date = "2025.06.11";
 $lang1 = array('', 'Malay', 'Malaysia');
@@ -452,14 +452,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul dir="<?= $dir;?>">
-				<li><span dir="ltr">Add Dark Mode support (courtesy of @ozone10).</span></li>
-				<li><span dir="ltr">Add support for creating <code>Windows CA 2023</code> compatible media (requires a Windows 11 25H2 ISO). For more on this, see <a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ#how-do-i-secure-a-pc-for-the-pca-2011-windows-uefi-certificate-revocation-and-install-windows-11-25h2-on-it">this Rufus FAQ entry</a>.</span></li>
-				<li><span dir="ltr">Add support for saving an existing drive to ISO (UDF only).</span></li>
-				<li><span dir="ltr">Improve error reporting when saving to VHD/VHDX (with thanks to @Kazkans).</span></li>
-				<li><span dir="ltr">Improve persistence support for Linux Mint.</span></li>
-				<li><span dir="ltr">Fix UEFI DBX updates being reported in some timezones, even when there are none.</span></li>
-				<li><span dir="ltr">Fix a situation where no file system can be selected in ISO mode.</span></li>
-				<li><span dir="ltr">Fix a crash when trying to process Windows ISOs with very long paths.</span></li>
+				<li><span dir="ltr">Add a cheat mode to toggle between Light and Dark mode.</span></li>
+				<li><span dir="ltr">Improve WUE option text relating to the CA 2023 option.<br/>For more info on CA 2023, see <a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ#how-do-i-secure-a-pc-for-the-pca-2011-windows-uefi-certificate-revocation-and-install-windows-11-25h2-on-it">this Rufus FAQ entry</a>.</span></li>
+				<li><span dir="ltr">Update Linux SBAT / Microsoft SVN Secure Boot revocation values to latest.</span></li>
+				<li><span dir="ltr">Fix some GRUB/Syslinux download dialogs showing only the 'Close' button.</span></li>
+				<li><span dir="ltr">Fix an assert being triggered when using the WUE CA 2023 option on its own.</span></li>
+				<li><span dir="ltr">Fix an application crash on systems that have a failed dynamic disk.</span></li>
 			</ul></li>
 			<br/>
 <? if($bugfix):?>

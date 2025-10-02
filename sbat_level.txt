@@ -1,7 +1,8 @@
-sbat,1,2024010900
+# From https://github.com/rhboot/shim/blob/main/SbatLevel_Variable.txt
+sbat,1,2025051000
 shim,4
-grub,3
-grub.debian,4
+grub,5
+grub.proxmox,2
 # The following is derived from Microsoft's DBXUpdateSVN.bin per
 # https://github.com/pbatard/rufus/issues/2244#issuecomment-2243661539
-BOOTMGRSECURITYVERSIONNUMBER,0x30000
+BOOTMGRSECURITYVERSIONNUMBER,0x70000

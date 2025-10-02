@@ -330,32 +330,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					<th class="title" width=120>תאריך</th>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.10/rufus-4.10.exe"><code>rufus-4.10.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11.exe"><code>rufus-4.11.exe</code></a></td>
 					<td class="item">רגיל</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="rtl">1.8 מ״ב</span></td>
-					<td class="item">2025.09.24</td>
+					<td class="item">2025.10.02</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.10/rufus-4.10p.exe"><code>rufus-4.10p.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11p.exe"><code>rufus-4.11p.exe</code></a></td>
 					<td class="item">נייד</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="rtl">1.8 מ״ב</span></td>
-					<td class="item">2025.09.24</td>
+					<td class="item">2025.10.02</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.10/rufus-4.10_x86.exe"><code>rufus-4.10_x86.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_x86.exe"><code>rufus-4.11_x86.exe</code></a></td>
 					<td class="item">רגיל</td>
 					<td class="item">Windows x86</td>
 					<td class="item"><span dir="rtl">1.8 מ״ב</span></td>
-					<td class="item">2025.09.24</td>
+					<td class="item">2025.10.02</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.10/rufus-4.10_arm64.exe"><code>rufus-4.10_arm64.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_arm64.exe"><code>rufus-4.11_arm64.exe</code></a></td>
 					<td class="item">רגיל</td>
 					<td class="item">Windows ARM64</td>
 					<td class="item"><span dir="rtl">4.9 מ״ב</span></td>
-					<td class="item">2025.09.24</td>
+					<td class="item">2025.10.02</td>
 				</tr>
 			</table>&nbsp;
 			<p><span style="font-size: 110%"><a href="/downloads/">גרסאות אחרות (GitHub)</a><br/>
@@ -437,15 +437,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<section class="generic_section" id="changelog">
 		<h2>הערות שחרור</h2>
 		<ul dir="rtl">
-			<li><span dir="ltr">(2025.09.24) <b>4.10 גרסה</b></span><ul dir="rtl">
-				<li><span dir="ltr">Add Dark Mode support (courtesy of @ozone10).</span></li>
-				<li><span dir="ltr">Add support for creating <code>Windows CA 2023</code> compatible media (requires a Windows 11 25H2 ISO). For more on this, see <a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ#how-do-i-secure-a-pc-for-the-pca-2011-windows-uefi-certificate-revocation-and-install-windows-11-25h2-on-it">this Rufus FAQ entry</a>.</span></li>
-				<li><span dir="ltr">Add support for saving an existing drive to ISO (UDF only).</span></li>
-				<li><span dir="ltr">Improve error reporting when saving to VHD/VHDX (with thanks to @Kazkans).</span></li>
-				<li><span dir="ltr">Improve persistence support for Linux Mint.</span></li>
-				<li><span dir="ltr">Fix UEFI DBX updates being reported in some timezones, even when there are none.</span></li>
-				<li><span dir="ltr">Fix a situation where no file system can be selected in ISO mode.</span></li>
-				<li><span dir="ltr">Fix a crash when trying to process Windows ISOs with very long paths.</span></li>
+			<li><span dir="ltr">(2025.10.02) <b>4.11 גרסה</b></span><ul dir="rtl">
+				<li><span dir="ltr">Add a cheat mode to toggle between Light and Dark mode.</span></li>
+				<li><span dir="ltr">Improve WUE option text relating to the CA 2023 option.<br/>For more info on CA 2023, see <a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ#how-do-i-secure-a-pc-for-the-pca-2011-windows-uefi-certificate-revocation-and-install-windows-11-25h2-on-it">this Rufus FAQ entry</a>.</span></li>
+				<li><span dir="ltr">Update Linux SBAT / Microsoft SVN Secure Boot revocation values to latest.</span></li>
+				<li><span dir="ltr">Fix some GRUB/Syslinux download dialogs showing only the 'Close' button.</span></li>
+				<li><span dir="ltr">Fix an assert being triggered when using the WUE CA 2023 option on its own.</span></li>
+				<li><span dir="ltr">Fix an application crash on systems that have a failed dynamic disk.</span></li>
 			</ul></li>
 			<br/>
 			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">גרסאות אחרות</a></b></li>
@@ -453,7 +451,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</section>
 	<section class="generic_section" id="source">
 		<h2>קוד מקור</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.10.zip"><span dir="ltr">4.10 Rufus</span></a> <span dir="rtl">(7.2 מ״ב)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.11.zip"><span dir="ltr">4.11 Rufus</span></a> <span dir="rtl">(7.2 מ״ב)</span></li>
 		<li>לחלופין, ניתן לשכפל את מאגר ה־<a target="_blank" href="http://git-scm.com">git</a> באמצעות:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>למידע נוסף, ניתן לראות את הפרוייקט ב־<a target="_blank" href="https://github.com/pbatard/rufus">GitHub</a>.</li></ul>

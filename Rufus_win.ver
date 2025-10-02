@@ -1,19 +1,17 @@
-version = 4.10.2279
+version = 4.11.2285
 platform_min = 6.2
-download_url = https://github.com/pbatard/rufus/releases/download/v4.10/rufus-4.10.exe
-download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.10/rufus-4.10_x86.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v4.10/rufus-4.10_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11.exe
+download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_x86.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.10 (2025.09.24)\b0\par\par
+\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.11 (2025.10.02)\b0\par\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add Dark Mode support (courtesy of @ozone10)\par
-{\pntext\f2\'B7\tab}Add support for creating Windows CA 2023 compatible media (requires a Windows 11 25H2 ISO)\par
-{\pntext\f2\'B7\tab}Add support for saving an existing drive to ISO (UDF only)\par
-{\pntext\f2\'B7\tab}Improve error reporting when saving to VHD/VHDX (with thanks to @Kazkans)\par
-{\pntext\f2\'B7\tab}Improve persistence support for Linux Mint\par
-{\pntext\f2\'B7\tab}Fix UEFI DBX updates being reported in some timezones, even when there are none\par
-{\pntext\f2\'B7\tab}Fix a situation where no file system can be selected in ISO mode\par
-{\pntext\f2\'B7\tab}Fix a crash when trying to process Windows ISOs with very long paths\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add a cheat mode to toggle between Light and Dark mode\par
+{\pntext\f2\'B7\tab}Improve WUE option text relating to the CA 2023 option\par
+{\pntext\f2\'B7\tab}Update Linux SBAT / Microsoft SVN Secure Boot revocation values to latest\par
+{\pntext\f2\'B7\tab}Fix some GRUB/Syslinux download dialogs showing only the 'Close' button\par
+{\pntext\f2\'B7\tab}Fix an assert being triggered when using the WUE CA 2023 option on its own\par
+{\pntext\f2\'B7\tab}Fix an application crash on systems that have a failed dynamic disk\par
 
 \pard\ltrpar\sl276\slmult1\par}

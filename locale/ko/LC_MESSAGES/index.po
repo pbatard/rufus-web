@@ -327,7 +327,7 @@ msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
-"하지만 루퍼스를 재정적으로 기부하지 않은 것에 대해 죄책감 없이 계속 자유롭게 사용해 주세요 &ndash; 절대 그럴 필요가 없습니다!"
+"하지만 Rufus를 재정적으로 기부하지 않은 것에 대해 죄책감 없이 계속 자유롭게 사용해 주세요 &ndash; 절대 그럴 필요가 없습니다!"
 
 #: index.php:503
 msgid "Non exhaustive list of ISOs Rufus is known to work with"

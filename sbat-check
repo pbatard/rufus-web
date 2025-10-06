@@ -1,0 +1,27 @@
+#!/bin/env bash
+# This script is meant to run as a daily cron jon to check if Shim's SBAT has been updated
+
+github_url="https://api.github.com/"
+
+# Retrieve the commit epoch from a GitHub URL or 0 if not available
+get_commit_date() {
+  url=$1
+  if [[ "${url}" =~ ^"${github_url}" ]]; then
+    parts=($(awk -F'contents/' '{ for(i=1;i<=NF;i++) print $i }' <<< ${url}))
+    date_url="${parts[0]}commits?path=${parts[1]//\//%2F}&page=1&per_page=1"
+    epoch="$(curl -s -L ${date_url} | python -m json.tool | grep -m1 \"date\": | sed -e 's/^.*\"date\":.*\"\(.*\)\".*/\1/' | date -f - +%s)"
+  fi
+  echo ${epoch:-0}
+}
+
+declare -A source=(
+  ['https://api.github.com/repos/rhboot/shim/contents/SbatLevel_Variable.txt']=1753341234
+)
+
+for url in "${!source[@]}"; do
+  timestamp=$(get_commit_date ${url})
+  if (( $timestamp > ${source[${url}]} )); then
+    echo -e "URL: ${url}\nDate: $(date -d @${timestamp})\nTimestamp: ${timestamp}" | mail -s "Shim SBAT has been updated" pete@akeo.ie
+    break 
+  fi
+done

@@ -19,10 +19,10 @@ declare -A source=(
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/amd64/DBXUpdate.bin']=1749602743
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm/DBXUpdate.bin']=1740428422
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm64/DBXUpdate.bin']=1740428422
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/amd64/DBXUpdateSVN.bin']=1737155155
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/x86/DBXUpdateSVN.bin']=1737155155
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/arm/DBXUpdateSVN.bin']=1737155155
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/arm64/DBXUpdateSVN.bin']=1737155155
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/amd64/DBXUpdateSVN.bin']=1759533505
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/x86/DBXUpdateSVN.bin']=1759533505
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/arm/DBXUpdateSVN.bin']=1759533505
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/arm64/DBXUpdateSVN.bin']=1759533505
 )
 
 for url in "${!source[@]}"; do

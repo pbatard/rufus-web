@@ -15,8 +15,8 @@ get_commit_date() {
 }
 
 declare -A source=(
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/x86/DBXUpdate.bin']=1740428422
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/amd64/DBXUpdate.bin']=1749602743
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/x86/DBXUpdate.bin']=1760555920
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/amd64/DBXUpdate.bin']=1760555920
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm/DBXUpdate.bin']=1740428422
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm64/DBXUpdate.bin']=1740428422
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/amd64/DBXUpdateSVN.bin']=1759533505
@@ -28,7 +28,11 @@ declare -A source=(
 for url in "${!source[@]}"; do
   timestamp=$(get_commit_date ${url})
   if (( $timestamp > ${source[${url}]} )); then
-    echo -e "URL: ${url}\nDate: $(date -d @${timestamp})\nTimestamp: ${timestamp}" | mail -s "Microsoft DBX has been updated" pete@akeo.ie
+    BODY+="URL: ${url}\nDate: $(date -d @${timestamp})\nTimestamp: ${timestamp}\n"
     break 
   fi
 done
+
+if [[ $BODY ]]; then
+ echo -e $BODY | mail -s "Microsoft DBX has been updated" pete@akeo.ie
+fi

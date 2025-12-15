@@ -65,7 +65,8 @@ $langs = array(
 	'pt_PT' => array('pt_PT', '🇵🇹 Portuguese [PT] (Português [PT])'),
 	'ro_RO' => array('ro', '🇷🇴 Romanian (Română)'),
 	'ru_RU' => array('ru', '🇷🇺 Russian (Русский)'),
-	'sr_RS' => array('sr', '🇷🇸 Serbian [Latin] (Srpski [Latinica])'),
+	'sr_RS' => array('sr_Cyrl', '🇷🇸 Serbian [Cyrillic] (Српски)'),
+	'sr_RS@latin' => array('sr', '🇷🇸 Serbian [Latin] (Srpski)'),
 	'si_LK' => array('si', '🇱🇰 Sinhala (සිංහල)'),
 	'sk_SK' => array('sk', '🇸🇰 Slovak (Slovensky)'),
 	'sl_SI' => array('sl', '🇸🇮 Slovenian (Slovenščina)'),
@@ -385,8 +386,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<td><i>Dansk</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Deutsch</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Ελληνικά</i></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>English</i></td><td><?=$comma;?>&nbsp;</td>
+		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>Español</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Français</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Hrvatski</i></td><td><?=$comma;?>&nbsp;</td>
@@ -396,14 +397,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<td><i>Magyar</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Nederlands</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Norsk</i></td><td><?=$comma;?>&nbsp;</td>
-		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>Polski</i></td><td><?=$comma;?>&nbsp;</td>
+		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>Português</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Português do Brasil</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Русский</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Română</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Slovensky</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Slovenščina</i></td><td><?=$comma;?>&nbsp;</td>
+			<td><i>Српски</i></td><td><?=$comma;?>&nbsp;</td>
 			<td><i>Srpski</i></td><td><?=$comma;?>&nbsp;</td>
 		</tr></table><table dir="<?= $dir;?>" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>Suomi</i></td><td><?=$comma;?>&nbsp;</td>

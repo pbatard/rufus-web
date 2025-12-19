@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="ja-JP" dir="ltr">
+<html lang="sr-RS@latin" dir="ltr">
 <head profile="http://www.w3.org/2005/10/profile">
 <meta charset='utf-8'>
 <meta name="description" content="Rufus: Create bootable USB drives the easy way">
@@ -13,7 +13,7 @@
 <meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
 <meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
 <meta name="msapplication-TileColor" content="#3f4555">
-<title>Rufus - 起動可能なUSBドライブを簡単に作成できます</title>
+<title>Rufus - Napravite butabilne USB fleš diskove na lakši način</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script>
 function setCookie(name, value, days) {
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 <div id="right_column">
-<label for="lang_select">言語を変えてください：</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
+<label for="lang_select">Promeni jezik:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
 <option dir="ltr" value="en">
 🇮🇪/🇬🇧/🇺🇸 English (International)</option>
 <option dir="ltr" value="sq">
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 🇮🇪 Irish (Gaeilge)</option>
 <option dir="ltr" value="it">
 🇮🇹 Italian (Italiano)</option>
-<option dir="ltr" selected="selected"value="ja">
+<option dir="ltr" value="ja">
 🇯🇵 Japanese (日本語)</option>
 <option dir="ltr" value="jv">
 🇮🇩 Javanese (Basa Jawa)</option>
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)</option>
 </select>
 <div class="hide_on_small_screens">
-<a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation">この翻訳を改正する</a>&nbsp;<br/>
+<a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation">Želite da poboljšate prevod?</a>&nbsp;<br/>
 &nbsp;<br/>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Rufus - Sidebar -->
@@ -260,22 +260,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</section>
 	<section class="generic_section" id="menu">
 		<nav class="menu" id="Menu"><ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="#download">ダウンロード</a></li>
+			<li><a href="#about">О нама</a></li>
+			<li><a href="#download">Preuzmi</a></li>
 			<li><a href="#changelog">Changelog</a></li>
-			<li><a href="#usage">利用方法</a></li>
+			<li><a href="#usage">Korišćenje</a></li>
 			<li><a href="#FAQ">FAQ</a></li>
-			<li><a href="#source">ソースコード</a></li>
+			<li><a href="#source">Izvor koda</a></li>
 		</ul></nav>	
 	</section>
 	<section class="generic_section" id="top_banner">
 		<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
 		<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
-		<div class="tagline"><center>起動可能なUSBドライブを簡単に作成できます</center></div>
+		<div class="tagline"><center>Napravite butabilne USB fleš diskove na lakši način</center></div>
 		<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
 			<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="/pics/screenshot1_ja.png" class="d-block" alt="Rufus screenshot 1" style="height: 600px; margin: auto;">
+				<img src="/pics/screenshot1_en.png" class="d-block" alt="Rufus screenshot 1" style="height: 600px; margin: auto;">
 			</div>
 			<div class="carousel-item">
 				<img src="/pics/screenshot2_en.png" class="d-block" alt="Rufus screenshot 2" style="height: 600px; margin: auto;">
@@ -309,62 +309,62 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<p>&nbsp;</p>
 	</section>
 	<section class="generic_section" id="about">
-		<p>Rufus (ルーファス) とは、起動可能なUSBフラッシュドライブ（USBメモリなど）を作成したり、フォーマットをするためのソフトウェアです。</p>
-		<p>こんなときに便利です</p>
+		<p>Rufus je alat koji pomaže da napravite butabilne USB fleš diskove, kao što su USB ključevi/pendrajvovi, memorijski stikovi, itd.</p>
+		<p>On može biti posebno biti koristan kada:</p>
 		<ul>
-			<li>起動可能なISOファイル（Windows、Linux、UEFIなど）からUSBインストールメディアを作成するとき</li>
-			<li>OSがインストールされていないシステムを使うとき</li>
-			<li>BIOSや他のDOSファームウェアを更新するとき</li>
-			<li>ローレベルなユーティリティを使うとき</li>
+			<li>morate da napravite USB istalacione medije iz butabilnih ISO slika (Windows, Linux, UEFI, itd)</li>
+			<li>morate da radite na sistemu koji nema instaliran OS</li>
+			<li>morate da flešujete BIOS ili drugi firmver iz DOS-a</li>
+			<li>želite da pokrenete neku low-level alatku</li>
 		</ul>
-		<p>ファイルサイズは小さいですが、Rufusにはすべてが備わっています。</p>
-		<p>Rufus対応ISOファイルのリストはこのページの末尾にも一部記載しています。 <a href="#ref1"><sup>(1)</sup></a></p>
+		<p>Uprkos svojoj maloj veličini, Rufus obezbeđuje sve što vam je potrebno!</p>
+		<p>Lista ISO slika koje Rufus ne podržava nalazi se na dnu stranice. <a href="#ref1"><sup>(1)</sup></a></p>
 			</section>
 	<section class="generic_section" id="download">
-		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">ダウンロード</span></h2>
-			<p><b>最新リリース:</b></p>
+		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Preuzmi</span></h2>
+			<p><b>Poslednja izdanja:</b></p>
 			<table cellspacing="1" cellpadding="6" border="0">
 				<tr>
-					<th class="title" width=220>リンク</th>
-					<th class="title" width=100>タイプ</th>
-					<th class="title" width=160>プラットフォーム</th>
-					<th class="title" width=100>サイズ</th>
-					<th class="title" width=120>日付</th>
+					<th class="title" width=220>Линк</th>
+					<th class="title" width=100>Tip</th>
+					<th class="title" width=160>Platforme</th>
+					<th class="title" width=100>Veličina</th>
+					<th class="title" width=120>Datum</th>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11.exe"><code>rufus-4.11.exe</code></a></td>
-					<td class="item">標準</td>
+					<td class="item">Standardna</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="ltr">1.8 MB</span></td>
 					<td class="item">2025.10.02</td>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11p.exe"><code>rufus-4.11p.exe</code></a></td>
-					<td class="item">Portable</td>
+					<td class="item">Portabilan</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="ltr">1.8 MB</span></td>
 					<td class="item">2025.10.02</td>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_x86.exe"><code>rufus-4.11_x86.exe</code></a></td>
-					<td class="item">標準</td>
+					<td class="item">Standardna</td>
 					<td class="item">Windows x86</td>
 					<td class="item"><span dir="ltr">1.8 MB</span></td>
 					<td class="item">2025.10.02</td>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_arm64.exe"><code>rufus-4.11_arm64.exe</code></a></td>
-					<td class="item">標準</td>
+					<td class="item">Standardna</td>
 					<td class="item">Windows ARM64</td>
 					<td class="item"><span dir="ltr">4.9 MB</span></td>
 					<td class="item">2025.10.02</td>
 				</tr>
 			</table>&nbsp;
-			<p><span style="font-size: 110%"><a href="/downloads/">他のバージョン (GitHub)</a><br/>
-			<a target="_blank" href="https://dappcdn.com/download/system-rescue/rufus">他のバージョン (dAppCDN)</a></span></p>
-		<h4>システム要件</h4>
-		<p>ウィンドウズ 8 以降。 ダウンロードが完了すると、アプリケーションを使用する準備が整います。</p>
-		<h4>選択可能な言語</h4>
+			<p><span style="font-size: 110%"><a href="/downloads/">Ostale verzije (GitHub)</a><br/>
+			<a target="_blank" href="https://dappcdn.com/download/system-rescue/rufus">Ostale verzije (dAppCDN)</a></span></p>
+		<h4>Sistemski zahtevi:</h4>
+		<p>Windows 8 ili kasnije. Kada se preuzme, aplikacija je spremna za upotrebu.</p>
+		<h4>Podržani jezici:</h4>
 		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
 			<td><i>Bahasa Malaysia</i></td><td>,&nbsp;</td>
@@ -410,36 +410,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<td>پارسی</td><td>.</td>
 		</tr></table>
 		&nbsp;
-		<p>この場を借りて、Rufusおよびこのホームページを様々な言語に翻訳してくれる翻訳者の皆様に感謝の意を表します。もし、あなたが自分の言語で翻訳されたRufusを使うことができているとしたら、それはその翻訳者のおかげです。</p>
+		<p>Ja ću iskoristiti ovu priliku da izrazim moju zahvalnost prema prevodiocima koji su omogućili da Rufus, kao i stranica, bude prevedena u različitim jezicima. Ako vidite da Rufus može da koristi vaš jezik, zahvalite se njima!</p>
 	</section>
 	<section class="generic_section" id="usage">
-		<h2>利用方法</h2>
-		<p>実行ファイルをダウンロードし起動します。インストールは不要です。</p>
-		<p>実行ファイルは以下の通りデジタル署名されています。</p>
+		<h2>Korišćenje</h2>
+		<p>Preuzmite aplikaciju i pokrenite je &ndash; Instalacija nije potrebna.</p>
+		<p>Izvršna datoteka je digitalno potpisana I potpis bi trebao da glasi:</p>
 		<ul>
-			<li><i>"Akeo Consulting"</i> （v1.3.0以降のバージョン）</li>
-			<li><i>"Pete Batard - Open Source Developer"</i> （v1.2.0以前のバージョン）</li>
+			<li><i>"Akeo Consulting"</i> (v1.3.0 ili kasnije)</li>
+			<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 ili ranije)</li>
 		</ul>
-		<h4>DOSサポートについて</h4>
-		<p>DOS起動可能なドライブを作成する際、US配列以外のキーボードを使用するとRufusがシステムの言語に応じてキーボード レイアウトを選択します。その場合は、自動で選択される<a target="_blank" %s>FreeDOS</a>をお薦めします。FreeDOSはMS-DOSと比べて多くのキーボード レイアウトに対応しています。</p>
-		<h4>ISOファイルサポートについて</h4>
-		<p>バージョン1.1.0以降のRufusでは<a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISOイメージ ファイル</a> (.iso) から起動可能なUSBドライブを作成することができます。</p>
-		<p><a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a>や<a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>といったCD書き込みアプリケーションの使用により、とても簡単にディスクやファイルからISOイメージを作成することができます。</p>
+		<h4>Napomene o podršci za DOS:</h4>
+		<p>Ako pravite DOS butabilne diskove i ne koristite US tastaturu, Rufus će probati da odabere raspored tastature prema vasem sistemu.</p>
+		<h4>Napomene o ISO Podršci:</h4>
+		<p>Sve verzije Rufus-a posle v1.1.0 podržavaju kreaciju butabilnog USB-a sa <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO slike</a> (.iso).</p>
+		<p>Pravljenje ISO slike sa fizičkog diska ili seta fajlova je lako, međutim potrebno je koristiti aplikaciju za rezanje CD-a kao npr. slobodno dostupni <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> ili <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
 	</section>
 	<section class="generic_section" id="FAQ">
-		<h2>よくある質問 (FAQ)</h2>
-		<p>Rufusについてのよくある質問とその回答は<b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">こちら</a></b>に掲載しています。<br/></p>
-		<p>ご意見ご感想、不具合の報告や機能改善のご要望は、GitHubの<a target="_blank" href="https://github.com/pbatard/rufus/issues">課題追跡</a>、もしくは<a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">Eメール</a>までお願いします。</p>
+		<h2>Često Postavljana Pitanja (FAQ)</h2>
+		<p>Rufus FAQ je dostupan <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">OVDE</a></b> (Na engleskom).<br/></p>
+		<p>Da obezbedite povratne informacije, ili prijavite grešku ili potražite pojačanje, molimo vas koristite GitHub <a target="_blank" href="https://github.com/pbatard/rufus/issues">treker problema</a>. Ili možete <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">poslati e-mail</a>.</p>
 	</section>
 	<section class="generic_section" id="license">
-		<h2>ライセンス</h2>
-		<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">GNU 一般公衆利用許諾 (GPL) バージョン３</a>以降<br />GPLv3 ライセンスに基づくソフトウェアの配布、変更あるいは販売は自由です。</p>
-		<p>Rufusはすべて<a target="_blank" href="https://github.com/pbatard/rufus">パブリック ソース (オープン ソース) </a>で公開しています。開発には<a target="_blank" href="http://mingw-w64.org">MinGW32</a>を使用しています。</p>
+		<h2>Licenca</h2>
+		<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">Generalna Javna Licensa (GPL) vezija 3</a>  ili kasnija.<br />Slobodni ste deliti, modifikovati čak i prodavati progam, sve dok poštujete GPLv3 licencu.</p>
+		<p>Rufus se proizvodi u 100% transparentnom maniru, iz svog <a target="_blank" href="https://github.com/pbatard/rufus">javnog source-a</a>, koristeći <a target="_blank" href="http://mingw-w64.org">MinGW32</a> okruženje.</p>
 	</section>
 	<section class="generic_section" id="changelog">
-		<h2>変更履歴 (英語)</h2>
+		<h2>Lista izmena (Na engleskom)</h2>
 		<ul dir="ltr">
-			<li><b>バージョン 4.11</b> (2025.10.02)<ul dir="ltr">
+			<li><b>Verzija 4.11</b> (2025.10.02)<ul dir="ltr">
 				<li><span dir="ltr">Add a cheat mode to toggle between Light and Dark mode.</span></li>
 				<li><span dir="ltr">Improve WUE option text relating to the CA 2023 option.<br/>For more info on CA 2023, see <a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ#how-do-i-secure-a-pc-for-the-pca-2011-windows-uefi-certificate-revocation-and-install-windows-11-25h2-on-it">this Rufus FAQ entry</a>.</span></li>
 				<li><span dir="ltr">Update Linux SBAT / Microsoft SVN Secure Boot revocation values to latest.</span></li>
@@ -448,27 +448,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				<li><span dir="ltr">Fix an application crash on systems that have a failed dynamic disk.</span></li>
 			</ul></li>
 			<br/>
-			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">他のバージョン</a></b></li>
+			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Ostale verzije</a></b></li>
 		</ul>
 	</section>
 	<section class="generic_section" id="source">
-		<h2>ソースコード</h2>
+		<h2>Izvor koda</h2>
 		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.11.zip">Rufus 4.11</a> <span dir="ltr">(7.2 MB)</span></li>
-		<li>次のコマンドで<a target="_blank" href="http://git-scm.com">git</a> レポジトリをクローン (ダウンロード) することもできます。
+		<li>Altenativno, možete klonirati <a target="_blank" href="http://git-scm.com">git</a>  repozitorijum  pomoću:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
-		<li>詳細については、<a target="_blank" href="https://github.com/pbatard/rufus">GitHubのプロジェクトページ</a>をご参照ください。</li></ul>
-		<p>あなたが開発者であれば、ぜひRufusをさらに改善してアップデートのためのパッチを送ってください。</p>
+		<li>Za još informacija, pogledajte naš <a target="_blank" href="https://github.com/pbatard/rufus">GitHub projekat</a>.</li></ul>
+		<p>Ako ste programer, veoma ste ohrabreni da pravite zakrpe za Rufus.</p>
 	</section>
 	<section class="generic_section" id="donate">
-		<h2>寄付</h2>
-		<p>寄付についてよく質問されるのですが、このページには寄付ボタンなるものは一切<b>存在しません</b>。</p>
-		<p>主な理由は寄付システムがソフトウェア開発の促進につながらないということと、さらに悪いことに、寄付をしないことによって罪悪感を感じる利用者が出てしまうのではないかという懸念があるためです。</p>
-		<p>どうしてもという方は、<a target="_blank" href="http://www.fsf.org/">フリーソフトウェア財団</a>に寄付をすることができます。Rufusのようなソフトウェアが存在するのは主にこのような財団のおかげです。</p>
-		<p>この小さなプログラムに対する日頃からの支援と熱意に対してこの場を借りて<u>感謝</u>申し上げます。</p>
-		<p>経済支援のことで罪悪感を感じたり気兼ねしたりすることなく、気軽にRufusをご利用ください。</p>
+		<h2>Donacije</h2>
+		<p>Pošto sam stalno pitan o ovome, <b>ne postoji</b> dugme za donaciju na ovoj stranici.</p>
+		<p>Glavni razlog je to što mislim da sistem donacije ne pomaže razvijanju programa i još gore, može biti izazvati osećaj krivice za korisnike koji odluče da ne doniraju.</p>
+		<p>Ako zaista insistirate, uvek možete napraviti donaciju <a target="_blank" href="http://www.fsf.org/">Zadužbini Besplatnih Programa</a>, jer su oni glavni razlog zbog čega je Rufus moguć.</p>
+		<p>U svakom slučaju, ja ću iskoristiti ovu priliku da kažem <i><u>hvala vam</u></i> za stalnu podršku i entuzijazam o ovom malom programu. To je mnogo cenjeno!</p>
+		<p>Ali molim vas budite slobodni da koristite Rufus bez ikakve krivice zbog toga što mu niste pomogli finansijski &ndash; Ne morate se brinuti oko toga!</p>
 	</section>
 	<section class="generic_section" id="ref1">
-		<h2>(1) Rufusが対応しているISOイメージ ファイル リスト (順不同、一部分のみ抜粋)</h2>
+		<h2>(1) Lista ISO-a sa kojima je dokazano da Rufus radi</h2>
 		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>
@@ -523,9 +523,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</section>
 	<div class="footer"><table align="center" dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2025&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
-		日本語翻訳　今井 翠、<a href="mailto:tiryoh+rufus@gmail.com?Subject=Rufus%20ウェブサイトの翻訳について">Tiryoh</a><br/>		USBアイコン PC Unleashed<br/>
-		Webページのホスティング <a target="_blank" href="https://pages.github.com/">GitHub</a>
-		</div>&nbsp; <!-- Heck if I know why Japanese needs this in order to remove scrollbars when using bootstrap --> 
+		Srpski prevod napravio <a href="https://www.facebook.com/jovanovicaleksej">Jovanović Aleksej</a>, unapredio <a href="http://umcaruje.github.io">Umcaruje</a><br/>		USB ikonu napravio PC Unleashed<br/>
+		Hosting pruža <a target="_blank" href="https://pages.github.com/">GitHub</a>
+		</div> 
 	</div>
 </body>
 </html>

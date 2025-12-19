@@ -65,7 +65,8 @@ $langs = array(
 	'pt_PT' => array('pt_PT', '🇵🇹 Portuguese [PT] (Português [PT])'),
 	'ro_RO' => array('ro', '🇷🇴 Romanian (Română)'),
 	'ru_RU' => array('ru', '🇷🇺 Russian (Русский)'),
-	'sr_RS' => array('sr', '🇷🇸 Serbian [Latin] (Srpski [Latinica])'),
+	'sr_RS@latin' => array('sr_LT', '🇷🇸 Serbian [Latin] (Srpski)'),
+	'sr_RS' => array('sr_CR', '🇷🇸 Serbian [Cyrillic] (Српски)'),
 	'si_LK' => array('si', '🇱🇰 Sinhala (සිංහල)'),
 	'sk_SK' => array('sk', '🇸🇰 Slovak (Slovensky)'),
 	'sl_SI' => array('sl', '🇸🇮 Slovenian (Slovenščina)'),
@@ -85,9 +86,8 @@ $locale = "en_IE";
 $short_locale = "en";
 if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
 	$locale = locale_accept_from_http($_SERVER["HTTP_ACCEPT_LANGUAGE"]);
-if (isSet($_GET["locale"])) {
+if (isSet($_GET["locale"]))
 	$locale = $_GET["locale"];
-}
 $locale = preg_replace("/[^a-zA-Z_]/", "", substr($locale,0,5));
 foreach($langs as $code => $lang) {
 	if(substr($locale,0,strlen($lang[0])) == $lang[0]) {
@@ -97,8 +97,16 @@ foreach($langs as $code => $lang) {
 	}
 }
 $bcp47_locale = str_replace("_", "-", $locale);
-// Must append ".utf8" suffix here, else languages such as Azerbaijani won't work
-setlocale(LC_MESSAGES, $locale . ".utf8");
+if ($locale == "sr_LT") {
+	setlocale(LC_MESSAGES, "sr@latin");
+	$locale = "sr@latin";
+} else if ($locale == "sr_CR") {
+	setlocale(LC_MESSAGES, "sr");
+	$locale = "sr";
+} else {
+	// Must append ".utf8" suffix here, else languages such as Azerbaijani won't work
+	setlocale(LC_MESSAGES, $locale . ".utf8");
+}
 // Also set the LANGUAGE variable, which may be needed on some systems
 putenv("LANGUAGE=" . $locale);
 bindtextdomain("index", "./locale");

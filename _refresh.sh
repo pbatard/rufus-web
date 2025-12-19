@@ -1,8 +1,8 @@
 #!/bin/bash
 url=nas
 index=index.html
-main_region=('ar_SA' 'pt_PT' 'zh_CN')
-spec_region=('ar_IQ' 'pt_BR' 'zh_TW')
+main_region=('ar_SA' 'pt_PT' 'zh_CN' 'sr_RS')
+spec_region=('ar_IQ' 'pt_BR' 'zh_TW' 'sr_LT')
 locale_var=""
 
 echo "s/'?locale='+this.options\[this\.selectedIndex\]\.value\">/'\/'+this\.options\[this\.selectedIndex\]\.value\">/g" > cmd.sed
@@ -20,7 +20,7 @@ do
   else
     locale_var="${locale_var}, \"${dir}\""
   fi
-  echo Processing $dir/index.html
+  echo Processing $dir/index.html  $url?locale=$l
   curl -sS $url?locale=$l -o $dir/index.html
   sed -b -i -f cmd.sed $dir/index.html
 done
@@ -48,7 +48,11 @@ EOF
 
 add_else=
 for l in ${spec_region[@]}; do
-  echo "     ${add_else}if (lang == \"$l\")" >> $index
+  if [ "$l" = "sr_LT" ]; then 
+    echo "     ${add_else}if (lang == \"sr@latin\" || lang == \"sr_RS@latin\")" >> $index
+  else
+    echo "     ${add_else}if (lang == \"$l\")" >> $index
+  fi
   echo "       localized_index = \"$l\";" >> $index
   add_else="else "
 done

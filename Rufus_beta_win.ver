@@ -1,17 +1,23 @@
-version = 4.10.2278
+version = 4.12.2313
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v4.10_BETA/rufus-4.10_BETA.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v4.12_BETA/rufus-4.12_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.10 BETA (2025.09.10)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.12 BETA (2026.01.22)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Add Dark Mode support (courtesy of @ozone10)\par
-{\pntext\f2\'B7\tab}Add support for creating Windows CA 2023 compatible media (requires a Windows 11 25H2 ISO)\par
-{\pntext\f2\'B7\tab}Add support for saving an existing drive to ISO (UDF only)\par
-{\pntext\f2\'B7\tab}Improve error reporting when saving to VHD/VHDX (with thanks to @Kazkans)\par
-{\pntext\f2\'B7\tab}Fix UEFI DBX updates being reported in some timezones, even when there are none\par
-{\pntext\f2\'B7\tab}Fix a situation where no file system can be selected in ISO mode\par
-{\pntext\f2\'B7\tab}Fix a crash when trying to process Windows ISOs with very long paths\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Filter out the new Bitdefender VHDs\par
+{\pntext\f2\'B7\tab}Filter disallowed characters in local account names\par
+{\pntext\f2\'B7\tab}Improve Microsoft Dev Drive detection (courtesy of Martin Kuschnik)\par
+{\pntext\f2\'B7\tab}Improve the pre-formatting partition cleanup code\par
+{\pntext\f2\'B7\tab}Improve error reporting on ISO extraction issues\par
+{\pntext\f2\'B7\tab}Improve detection of drives with long hardware IDs (typically SSDs)\par
+{\pntext\f2\'B7\tab}Improve conflicting process reporting\par
+{\pntext\f2\'B7\tab}Improve support for Nutanix and umbrelOS ISOs\par
+{\pntext\f2\'B7\tab}Fix a TOCTOU vulnerability in Fido script execution (CVE-2026-2398, reported by @independent-arg)\par
+{\pntext\f2\'B7\tab}Fix replacement vulnerabilities for diskcopy.dll and oscdimg.exe\par
+{\pntext\f2\'B7\tab}Fix FFU image creation being erroneously invocated, when trying to save an ISO image\par
+{\pntext\f2\'B7\tab}Fix saving of ISO images to paths that contain spaces\par
+{\pntext\f2\'B7\tab}Update UEFI:NTFS and UEFI DBXs to latest\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

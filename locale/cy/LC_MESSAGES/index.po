@@ -1,388 +1,385 @@
-# Rufus Homepage.
-# Copyright (C) 2019 Pete Batard
-# This file is distributed under the same license as the Rufus Homepage package.
-# Pete Batard <pete@akeo.ie>, 2019.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Rufus Homepage 1.1\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2023-04-24 13:34+0100\n"
-"PO-Revision-Date: 2023-04-24 13:39+0100\n"
-"Last-Translator: \n"
-"Language-Team: Amyhopps10 <lh10tehklaskycsupo@gmail.com>\n"
-"Language: cy_GB\n"
+"POT-Creation-Date: 2025-10-02 18:16+0100\n"
+"PO-Revision-Date: 2026-01-27 12:09+0000\n"
+"Last-Translator: Rhoslyn Prys <post@meddal.com>\n"
+"Language-Team: \n"
+"Language: cy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n==3 ? 3 : n==6 ? 4 : 5);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: .\n"
 
 #: index.php:111
 msgid "Version"
 msgstr "Fersiwn"
 
-#: index.php:144 index.php:286
+#: index.php:144 index.php:285
 msgid "Create bootable USB drives the easy way"
-msgstr "Creu gyriannau USB bootable y ffordd hawdd"
+msgstr "Creu gyriannau USB cychwynadwy yn hawdd"
 
-#: index.php:230
+#: index.php:229
 msgid "Change language:"
 msgstr "Newid iaith:"
 
-#: index.php:239
+#: index.php:238
 msgid "Want to improve this translation?"
-msgstr "Am wella'r cyfieithiad hwn?"
+msgstr "Eisiau gwella'r cyfieithiad hwn?"
 
-#: index.php:313
+#: index.php:274
+msgid "About"
+msgstr "Ynghylch"
+
+#: index.php:275 index.php:327
+msgid "Download"
+msgstr "Llwytho i lawr"
+
+#: index.php:277 index.php:428
+msgid "Usage"
+msgstr "Defnydd"
+
+#: index.php:278
+msgid "FAQ"
+msgstr "Cwestiynau Cyffredin"
+
+#: index.php:279 index.php:486
+msgid "Source Code"
+msgstr "Cod Ffynhonnell"
+
+#: index.php:312
 msgid ""
 "Rufus is a utility that helps format and create bootable USB flash drives, "
 "such as USB keys/pendrives, memory sticks, etc."
 msgstr ""
-"Mae Rufus yn gyfleustodau sy'n helpu i fformatio a chreu gyriannau fflach "
-"USB bootable, fel allweddi / pendrives USB, ffyn cof, ac ati."
+"Mae Rufus yn declyn sy'n helpu i fformatio a chreu gyriannau fflach USB "
+"cychwynadwy fel allweddi USB/gyriannau cof, coeon bach, ac ati."
 
-#: index.php:314
+#: index.php:313
 msgid "It can be especially useful for cases where:"
-msgstr "Gall fod yn arbennig o ddefnyddiol mewn achosion lle:"
+msgstr "Gall fod yn arbennig o ddefnyddiol ar gyfer achosion lle:"
 
-#: index.php:316
+#: index.php:315
 msgid ""
 "you need to create USB installation media from bootable ISOs (Windows, "
 "Linux, UEFI, etc.)"
 msgstr ""
-"mae angen i chi greu cyfryngau gosod USB o ISOau bootable (Windows, Linux, "
-"UEFI, ac ati)"
+"mae angen i chi greu cyfryngau gosod USB o ISOau cychwynadwy (Windows, "
+"Linux, UEFI, ac ati)"
+
+#: index.php:316
+msgid "you need to work on a system that doesn't have an OS installed"
+msgstr ""
+"mae angen i chi weithio ar system sydd heb system weithredu wedi'i gosod"
 
 #: index.php:317
-msgid "you need to work on a system that doesn't have an OS installed"
-msgstr "mae angen i chi weithio ar system nad oes ganddo OS wedi'i osod"
+msgid "you need to flash a BIOS or other firmware from DOS"
+msgstr "mae angen i chi fflachio BIOS neu galedwar arall o DOS"
 
 #: index.php:318
-msgid "you need to flash a BIOS or other firmware from DOS"
-msgstr "mae angen i chi fflachio BIOS neu gadarnwedd arall o DOS"
-
-#: index.php:319
 msgid "you want to run a low-level utility"
-msgstr "rydych chi am redeg cyfleustodau lefel isel"
+msgstr "rydych chi eisiau rhedeg teclyn lefel isel"
 
-#: index.php:321
+#: index.php:320
 msgid "Despite its small size, Rufus provides everything you need!"
 msgstr ""
-"Er gwaethaf ei faint bach, mae Rufus yn darparu popeth sydd ei angen arnoch "
-"chi!"
+"Er ei fod yn fychan, mae Rufus yn darparu popeth sydd ei angen arnoch chi!"
 
-#: index.php:322
+#: index.php:321
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
+"of this page."
 msgstr ""
-"Mae rhestr nad yw'n gynhwysfawr o ISOau a gefnogir gan Rufus hefyd ar waelod"
-" y dudalen hon."
+"Mae rhestr anghyflawn o ISOau sy'n cael ei cefnogi gan Rufus ar waelod y "
+"dudalen hon hefyd."
 
-#: index.php:276 index.php:328
-msgid "Download"
-msgstr "Dadlwythwch"
-
-#: index.php:329
+#: index.php:328
 msgid "Latest releases:"
-msgstr "Y datganiadau diweddaraf:"
+msgstr "Fersiynnau diweddaraf:"
 
-#: index.php:332
+#: index.php:331
 msgid "Link"
 msgstr "Dolen"
 
-#: index.php:333
+#: index.php:332
 msgid "Type"
 msgstr "Math"
 
-#: index.php:334
+#: index.php:333
 msgid "Platform"
 msgstr "Platfform"
 
-#: index.php:335
+#: index.php:334
 msgid "Size"
 msgstr "Maint"
 
-#: index.php:336
+#: index.php:335
 msgid "Date"
 msgstr "Dyddiad"
 
-#: index.php:340 index.php:354 index.php:361
+#: index.php:339 index.php:353 index.php:360
 msgid "Standard"
-msgstr "Safonol"
+msgstr "Safon"
 
 #. Abbreviation for MegaByte
-#: index.php:342 index.php:349 index.php:356 index.php:363 index.php:371
-#: index.php:486
+#: index.php:341 index.php:348 index.php:355 index.php:362 index.php:370
+#: index.php:487
 msgid "MB"
 msgstr ""
 
-#: index.php:347
+#: index.php:346
 msgid "Portable"
 msgstr "Cludadwy"
 
-#: index.php:369
+#: index.php:368
 msgid "BETA"
 msgstr ""
 
-#: index.php:376 index.php:377 index.php:481
+#: index.php:375 index.php:376 index.php:482
 msgid "Other versions"
 msgstr "Fersiynau eraill"
 
-#: index.php:378
+#: index.php:377
 msgid "System Requirements:"
-msgstr "Gofynion y System:"
+msgstr "Gofynion System:"
 
-#: index.php:379
+#: index.php:378
 msgid "Windows 8 or later."
-msgstr "Nid yw Windows 8 neu'n hwyrach."
+msgstr "Windows 8 neu'n hwyrach."
+
+#: index.php:378
+msgid "Once downloaded, the application is ready to use."
+msgstr "Ar ôl ei lwytho i lawr, mae'r rhaglen yn barod i'w defnyddio."
 
 #: index.php:379
-msgid "Once downloaded, the application is ready to use."
-msgstr "Ar ôl ei lawrlwytho, mae'r rhaglen yn barod i'w defnyddio."
-
-#: index.php:380
 msgid "Supported Languages:"
-msgstr "Ieithoedd â Chefnogaeth:"
+msgstr "Ieithoedd sy'n cael eu Cefnogi:"
 
-#: index.php:426
+#: index.php:425
 msgid ""
 "I will take this opportunity to express my gratitude to the translators who "
 "made it possible for Rufus, as well as this webpage, to be translated in "
 "various languages. If you find that you can use Rufus in your own language, "
 "you should really thank them!"
 msgstr ""
-"Cymeraf y cyfle hwn i fynegi fy niolch i'r cyfieithwyr a wnaeth yn bosibl i "
-"Rufus, yn ogystal â'r dudalen we hon, gael ei gyfieithu mewn amryw o "
-"ieithoedd. Os gwelwch y gallwch ddefnyddio Rufus yn eich iaith eich hun, "
-"dylech chi wir ddiolch iddyn nhw!"
+"Hoffwn fanteisio ar y cyfle hwn i fynegi fy niolchgarwch i'r cyfieithwyr "
+"wnaeth hi'n bosibl i Rufus, yn ogystal â'r dudalen we hon, gael eu cyfieithu "
+"i wahanol ieithoedd. Os byddwch chi'n profi eich bod chi'n gallu defnyddio "
+"Rufus yn eich iaith eich hun, dylech chi ddiolch yn fawr iddyn nhw!"
 
-#: index.php:277 index.php:429
-msgid "Usage"
-msgstr "Defnydd"
-
-#: index.php:430
+#: index.php:429
 msgid ""
 "Download the executable and run it &ndash; no installation is necessary."
-msgstr "Dadlwythwch y gweithredadwy a'i redeg &ndash; nid oes angen gosod."
+msgstr ""
+"Llwythwch y ffeil weithredadwy i lawr a'i rhedeg &ndash; does dim angen ei "
+"gosod."
 
-#: index.php:431
+#: index.php:430
 msgid "The executable is digitally signed and the signature should state:"
-msgstr "Mae'r gweithredadwy wedi'i lofnodi'n ddigidol a dylai'r llofnod nodi:"
+msgstr ""
+"Mae'r ffeil weithredadwy wedi'i llofnodi'n ddigidol a dylai'r llofnod "
+"ddatgan:"
+
+#: index.php:432
+msgid "(v1.3.0 or later)"
+msgstr "(v1.3.0 neu'n ddiweddarach)"
 
 #: index.php:433
-msgid "(v1.3.0 or later)"
-msgstr "(v1.3.0 neu'n hwyrach)"
-
-#: index.php:434
 msgid "(v1.2.0 or earlier)"
 msgstr "(v1.2.0 neu'n gynharach)"
 
-#: index.php:436
+#: index.php:435
 msgid "Notes on DOS support:"
 msgstr "Nodiadau ar gefnogaeth DOS:"
 
-#: index.php:437
+#: index.php:436
 msgid ""
 "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
 "attempt to select a keyboard layout according to the locale of your system."
 msgstr ""
-"Os ydych chi'n creu gyriant bootable DOS ac yn defnyddio bysellfwrdd nad "
-"yw'n UDA, bydd Rufus yn ceisio dewis cynllun bysellfwrdd yn ôl locale eich "
-"system."
+"Os ydych chi'n creu gyriant cychwynadwy DOS ac yn defnyddio bysellfwrdd nad "
+"yw'n un o'r Unol Daleithiau, bydd Rufus yn ceisio dewis cynllun bysellfwrdd "
+"yn ôl lleoliad eich system."
 
-#: index.php:438
+#: index.php:437
 msgid "Notes on ISO Support:"
 msgstr "Nodiadau ar Gymorth ISO:"
+
+#: index.php:438
+#, php-format
+msgid ""
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
+"an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+msgstr ""
+"Mae pob fersiwn o Rufus ers v1.1.0 yn caniatáu creu USB cychwynadwy o <a "
+"target=\"_blank\" %s>ddelwedd ISO</a> (.iso)."
 
 #: index.php:439
 #, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
-msgstr ""
-"Mae pob fersiwn o Rufus ers v1.1.0 yn caniatáu creu USB bootable o <a "
-"target=\"_blank\" %s>delwedd ISO</a> (.iso)."
-
-#: index.php:440
-#, php-format
-msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
+"easy to do however, through the use of a CD burning application, such as the "
+"freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
 "target=\"_blank\" %s>CDBurnerXP</a>."
 msgstr ""
-"Fodd bynnag, mae'n hawdd iawn creu delwedd ISO o ddisg gorfforol neu o set o ffeiliau, trwy ddefnyddio cymhwysiad llosgi CD, fel y <a target=\"_blank\" %s>InfraRecorder</a> sydd ar gael yn rhwydd neu <a target=\"_blank\" %s>\n"
-"CDBurnerXP</a>."
+"Mae creu delwedd ISO o ddisg gorfforol neu o set o ffeiliau yn hawdd iawn "
+"i'w wneud fodd bynnag, trwy ddefnyddio rhaglen llosgi CD, fel <a "
+"target=\"_blank\" %s>InfraRecorder</a> neu <a target=\"_blank\" "
+"%s>CDBurnerXP</a> sydd ar gael am ddim."
 
-#: index.php:443
+#: index.php:442
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Cwestiynau Cyffredin"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:444
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:443
 #, php-format
 msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
-"Mae Cwestiynau Cyffredin Rufus ar gael <b><a target=\"_blank\" %s>YMA</a> "
-"</b>."
+"Mae Cwestiynau Cyffredin Rufus ar gael <b><a target=\"_blank\" %s>YMA</a></"
+"b>."
 
-#: index.php:445
+#: index.php:444
 #, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
 "GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
 "target=\"_blank\" %s>send an e-mail</a>."
 msgstr ""
-"I ddarparu adborth, riportio nam neu ofyn am welliant, defnyddiwch y traciwr"
-" mater GitHub <a target=\"_blank\" %s>traciwr mater</a>. Neu gallwch <a "
-"target=\"_blank\" %s>anfon e-bost</a>."
+"I roi adborth, rhoi gwybod am wall neu ofyn am welliant, defnyddiwch <a "
+"target=\"_blank\" %s>traciwr materion</a> GitHub. Neu gallwch <a "
+"target=\"_blank\" %s>anfon e-bost</a> ."
 
-#: index.php:448
+#: index.php:447
 msgid "License"
 msgstr "Trwydded"
 
-#: index.php:449
+#: index.php:448
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
 msgstr ""
-"<a target=\"_blank\" %s>Trwydded Gyhoeddus Gyffredinol GNU fersiwn 3</a> "
-"neu'n hwyrach."
+"<a target=\"_blank\" %s>Trwydded Gyhoeddus Gyffredinol GNU (GPL) fersiwn 3</"
+"a> neu'n ddiweddarach."
 
-#: index.php:449
+#: index.php:448
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr ""
 "Rydych chi'n rhydd i ddosbarthu, addasu neu hyd yn oed werthu'r feddalwedd, "
-"i'r graddau eich bod chi'n parchu'r drwydded GPLv3."
+"cyn belled â'ch bod chi'n parchu'r drwydded GPLv3."
 
-#: index.php:450
+#: index.php:449
 #, php-format
 msgid ""
 "Rufus is produced in a 100%% transparent manner, from its <a "
 "target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
 "%s>MinGW32</a> environment."
 msgstr ""
-"Cynhyrchir Rufus mewn modd tryloyw 100 %%, o'i <a target=\"_blank\" "
-"%s>ffynhonnell gyhoeddus</a>, gan ddefnyddio amgylchedd <a target=\"_blank\""
-" %s> MinGW32</a>."
+"Mae Rufus yn cael ei gynhyrchu mewn modd 100%% tryloyw, o'i <a "
+"target=\"_blank\" %s>ffynhonnell gyhoeddus</a>, gan ddefnyddio amgylchedd <a "
+"target=\"_blank\" %s>MinGW32</a> ."
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
-#: index.php:453
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:452
 msgid "Changelog"
-msgstr "Changelog"
+msgstr "Cofnod Newid"
 
-#: index.php:279 index.php:485
-msgid "Source Code"
-msgstr "Cod Ffynhonnell"
-
-#: index.php:487
+#: index.php:488
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr ""
-"Fel arall, gallwch glonio'r ystorfa <a target=\"_blank\" %s>git</a> gan "
+"Fel arall, gallwch glonio'r storfa <a target=\"_blank\" %s>git</a> gan "
 "ddefnyddio:"
 
-#: index.php:489
-#, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
-msgstr ""
-"Am ragor o wybodaeth, gweler y prosiect <a target=\"_blank\" %s>GitHub</a>."
-
 #: index.php:490
+#, php-format
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr ""
+"Am ragor o wybodaeth, ewch i'r <a target=\"_blank\" %s>project GitHub</a> ."
+
+#: index.php:491
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
 "and submit patches."
 msgstr ""
-"Os ydych chi'n ddatblygwr, fe'ch anogir yn fawr i dincio gyda Rufus a "
-"chyflwyno darnau."
+"Os ydych chi'n ddatblygwr, rydym yn eich annog i chwarae gyda Rufus a "
+"chyflwyno gwelliannau."
 
-#: index.php:280 index.php:493
+#: index.php:494
 msgid "Donations"
 msgstr "Rhoddion"
 
-#: index.php:494
+#: index.php:495
 msgid ""
 "Since I'm getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr ""
-"Ers i mi gael fy holi ynglŷn â hyn yn rheolaidd, nid oes botwm rhoi "
-"<b>dim</b> ar y dudalen hon."
+"Gan fy mod yn cael fy holi am hyn yn rheolaidd, does <b>dim</b> botwm rhoi "
+"ar y dudalen hon."
 
-#: index.php:495
+#: index.php:496
 msgid ""
 "The main reason is that I feel that the donation system doesn't actually "
 "help software development and worse, can be guilt-inducing for users who "
 "choose not to donate."
 msgstr ""
-"Y prif reswm yw fy mod i'n teimlo nad yw'r system rhoi yn helpu datblygiad "
-"meddalwedd ac yn waeth, gall beri euogrwydd i ddefnyddwyr sy'n dewis peidio "
-"â rhoi."
+"Y prif reswm yw fy mod i'n teimlo nad yw'r system rhoi mewn gwirionedd yn "
+"helpu datblygu meddalwedd ac yn waeth byth, gall achosi i ddefnyddwyr sy'n "
+"dewis peidio â rhoi deimlo'n euog."
 
-#: index.php:498
+#: index.php:499
 #, php-format
 msgid ""
 "If you really insist, you can always make a donation to the <a "
 "target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
 "reason software like Rufus is possible."
 msgstr ""
-"Os ydych chi wir yn mynnu, gallwch chi bob amser roi rhodd i'r <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, gan mai nhw yw'r prif "
-"reswm mae meddalwedd fel Rufus yn bosibl."
-
-#: index.php:499
-msgid ""
-"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
-msgstr ""
-"Ar unrhyw gyfradd, cymeraf y cyfle hwn i ddweud <i><u>diolch</u></i> am eich"
-" cefnogaeth a'ch brwdfrydedd parhaus am y rhaglen fach hon: gwerthfawrogir "
-"yn fawr!"
+"Os ydych chi wir yn mynnu, gallwch chi bob amser wneud cyfraniad i'r <a "
+"target=\"_blank\" %s>Free Software Foundation</a> , gan mai nhw yw'r prif "
+"reswm pam mae meddalwedd fel Rufus yn bosibl."
 
 #: index.php:500
+msgid ""
+"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
+"your continuing support and enthusiasm about this little program: it is much "
+"appreciated!"
+msgstr ""
+"Beth bynnag, byddaf yn manteisio ar y cyfle hwn i <i><u>ddiolch i chi</u></"
+"i> am eich cefnogaeth a'ch brwdfrydedd parhaus am y rhaglen fach hon: mae'n "
+"cael ei werthfawrogi'n fawr!"
+
+#: index.php:501
 msgid ""
 "But please continue to feel free to use Rufus without any guilt about not "
 "contributing for it financially &ndash; you should never have to!"
 msgstr ""
-"Ond parhewch i deimlo'n rhydd i ddefnyddio Rufus heb unrhyw euogrwydd am "
-"beidio â chyfrannu amdano'n ariannol &ndash; ni ddylech fyth orfod!"
+"Ond cofiwch i barhau i ddefnyddio Rufus heb unrhyw euogrwydd am beidio â "
+"chyfrannu ato'n ariannol - dylech chi byth orfod gwneud hynny!"
 
-#: index.php:503
+#: index.php:504
 msgid "Non exhaustive list of ISOs Rufus is known to work with"
 msgstr ""
-"Rhestr nad yw'n gynhwysfawr o ISOau y gwyddys bod Rufus yn gweithio gyda nhw"
+"Rhestr anghyflawn o ISOau rydym yn gwybod bod Rufus yn gweithio gyda nhw"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
-#: index.php:560
-msgid "English translation by Pete Batard"
-msgstr "Cyfieithiad Cymraeg gan AmyHopps10"
-
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
 #: index.php:561
+msgid "English translation by Pete Batard"
+msgstr "Cyfieithiad Saesneg gan AmyHopps10"
+
+#: index.php:562
 msgid "USB icon by"
 msgstr "Eicon USB gan"
 
-#: index.php:562
+#: index.php:563
 msgid "Hosting by"
-msgstr "Yn cynnal gan"
-
-#: index.php:275
-msgid "About"
-msgstr "Ynglŷn â"
-
-#: index.php:278
-msgid "FAQ"
-msgstr ""
-
+msgstr "Gwesteio gan"

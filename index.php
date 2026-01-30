@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.11";
+$latest_version = "4.12";
 $beta_version = "4.12";
 $previous_version = "4.8";
-$latest_date = "2025.10.02";
+$latest_date = "2026.01.30";
 $beta_date = "2026.01.22";
 $previous_date = "2025.06.11";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Traditional Chinese', 'Taiwan');
 $bugfix = false;
 $beta = true;
-$x64_size = 1.8;
+$x64_size = 1.9;
 $x86_size = 1.8;
 $arm64_size = 4.9;
 $beta_size = 1.9;
-$src_size = 7.2;
+$src_size = 7.3;
 $nb_screenshots = 5;
 $screenshot_height = "600px";
 $screenshot_duration = 10000;
@@ -457,12 +457,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul dir="<?= $dir;?>">
-				<li><span dir="ltr">Add a cheat mode to toggle between Light and Dark mode.</span></li>
-				<li><span dir="ltr">Improve WUE option text relating to the CA 2023 option.<br/>For more info on CA 2023, see <a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ#how-do-i-secure-a-pc-for-the-pca-2011-windows-uefi-certificate-revocation-and-install-windows-11-25h2-on-it">this Rufus FAQ entry</a>.</span></li>
-				<li><span dir="ltr">Update Linux SBAT / Microsoft SVN Secure Boot revocation values to latest.</span></li>
-				<li><span dir="ltr">Fix some GRUB/Syslinux download dialogs showing only the 'Close' button.</span></li>
-				<li><span dir="ltr">Fix an assert being triggered when using the WUE CA 2023 option on its own.</span></li>
-				<li><span dir="ltr">Fix an application crash on systems that have a failed dynamic disk.</span></li>
+				<li><span dir="ltr">Filter out the new Bitdefender VHDs.</span></li>
+				<li><span dir="ltr">Filter disallowed characters in local account names.</span></li>
+				<li><span dir="ltr">Improve Microsoft Dev Drive detection (courtesy of <b>Martin Kuschnik</b>).</span></li>
+				<li><span dir="ltr">Improve the pre-formatting partition cleanup code.</span></li>
+				<li><span dir="ltr">Improve error reporting on ISO extraction issues.</span></li>
+				<li><span dir="ltr">Improve detection of drives with long hardware IDs (typically SSDs).</span></li>
+				<li><span dir="ltr">Improve conflicting process reporting.</span></li>
+				<li><span dir="ltr">Improve support for Nutanix and umbrelOS ISOs.</span></li>
+				<li><span dir="ltr">Fix a TOCTOU vulnerability in Fido script execution (<a target="_blank" href="https://github.com/pbatard/rufus/security/advisories/GHSA-hcx5-hrhj-xhq9">CVE-2026-2398</a>, reported by <b>@independent-arg</b>).</span></li>
+				<li><span dir="ltr">Fix replacement vulnerabilities for <code>diskcopy.dll</code> and <code>oscdimg.exe</code>.</span></li>
+				<li><span dir="ltr">Fix FFU image creation being erroneously invocated, when trying to save an ISO image.</span></li>
+				<li><span dir="ltr">Fix saving of ISO images to paths that contain spaces.</span></li>
+				<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> and <a target="_blank" href="https://uefi.org/revocationlistfile">UEFI DBXs</a> to latest.</span></li>
 			</ul></li>
 			<br/>
 <? if($bugfix):?>

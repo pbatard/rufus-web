@@ -332,32 +332,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					<th class="title" width=120>تاريخ</th>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11.exe"><code>rufus-4.11.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.12/rufus-4.12.exe"><code>rufus-4.12.exe</code></a></td>
 					<td class="item">قياسي</td>
 					<td class="item">Windows x64</td>
-					<td class="item"><span dir="rtl">1.8 ميغا بايت</span></td>
-					<td class="item">2025.10.02</td>
+					<td class="item"><span dir="rtl">1.9 ميغا بايت</span></td>
+					<td class="item">2026.01.30</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11p.exe"><code>rufus-4.11p.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.12/rufus-4.12p.exe"><code>rufus-4.12p.exe</code></a></td>
 					<td class="item">محمول</td>
 					<td class="item">Windows x64</td>
-					<td class="item"><span dir="rtl">1.8 ميغا بايت</span></td>
-					<td class="item">2025.10.02</td>
+					<td class="item"><span dir="rtl">1.9 ميغا بايت</span></td>
+					<td class="item">2026.01.30</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_x86.exe"><code>rufus-4.11_x86.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.12/rufus-4.12_x86.exe"><code>rufus-4.12_x86.exe</code></a></td>
 					<td class="item">قياسي</td>
 					<td class="item">Windows x86</td>
 					<td class="item"><span dir="rtl">1.8 ميغا بايت</span></td>
-					<td class="item">2025.10.02</td>
+					<td class="item">2026.01.30</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_arm64.exe"><code>rufus-4.11_arm64.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.12/rufus-4.12_arm64.exe"><code>rufus-4.12_arm64.exe</code></a></td>
 					<td class="item">قياسي</td>
 					<td class="item">Windows ARM64</td>
 					<td class="item"><span dir="rtl">4.9 ميغا بايت</span></td>
-					<td class="item">2025.10.02</td>
+					<td class="item">2026.01.30</td>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.12_BETA/rufus-4.12_BETA.exe"><code>rufus-4.12_BETA.exe</code></a></td>
@@ -446,13 +446,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<section class="generic_section" id="changelog">
 		<h2>سجل التغييرات</h2>
 		<ul dir="rtl">
-			<li><span dir="ltr">(2025.10.02) <b>4.11 الإصدار</b></span><ul dir="rtl">
-				<li><span dir="ltr">Add a cheat mode to toggle between Light and Dark mode.</span></li>
-				<li><span dir="ltr">Improve WUE option text relating to the CA 2023 option.<br/>For more info on CA 2023, see <a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ#how-do-i-secure-a-pc-for-the-pca-2011-windows-uefi-certificate-revocation-and-install-windows-11-25h2-on-it">this Rufus FAQ entry</a>.</span></li>
-				<li><span dir="ltr">Update Linux SBAT / Microsoft SVN Secure Boot revocation values to latest.</span></li>
-				<li><span dir="ltr">Fix some GRUB/Syslinux download dialogs showing only the 'Close' button.</span></li>
-				<li><span dir="ltr">Fix an assert being triggered when using the WUE CA 2023 option on its own.</span></li>
-				<li><span dir="ltr">Fix an application crash on systems that have a failed dynamic disk.</span></li>
+			<li><span dir="ltr">(2026.01.30) <b>4.12 الإصدار</b></span><ul dir="rtl">
+				<li><span dir="ltr">Filter out the new Bitdefender VHDs.</span></li>
+				<li><span dir="ltr">Filter disallowed characters in local account names.</span></li>
+				<li><span dir="ltr">Improve Microsoft Dev Drive detection (courtesy of <b>Martin Kuschnik</b>).</span></li>
+				<li><span dir="ltr">Improve the pre-formatting partition cleanup code.</span></li>
+				<li><span dir="ltr">Improve error reporting on ISO extraction issues.</span></li>
+				<li><span dir="ltr">Improve detection of drives with long hardware IDs (typically SSDs).</span></li>
+				<li><span dir="ltr">Improve conflicting process reporting.</span></li>
+				<li><span dir="ltr">Improve support for Nutanix and umbrelOS ISOs.</span></li>
+				<li><span dir="ltr">Fix a TOCTOU vulnerability in Fido script execution (<a target="_blank" href="https://github.com/pbatard/rufus/security/advisories/GHSA-hcx5-hrhj-xhq9">CVE-2026-2398</a>, reported by <b>@independent-arg</b>).</span></li>
+				<li><span dir="ltr">Fix replacement vulnerabilities for <code>diskcopy.dll</code> and <code>oscdimg.exe</code>.</span></li>
+				<li><span dir="ltr">Fix FFU image creation being erroneously invocated, when trying to save an ISO image.</span></li>
+				<li><span dir="ltr">Fix saving of ISO images to paths that contain spaces.</span></li>
+				<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> and <a target="_blank" href="https://uefi.org/revocationlistfile">UEFI DBXs</a> to latest.</span></li>
 			</ul></li>
 			<br/>
 			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">إصدارات أخرى</a></b></li>
@@ -460,7 +467,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</section>
 	<section class="generic_section" id="source">
 		<h2>كود المصدر</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.11.zip"><span dir="ltr">4.11 Rufus</span></a> <span dir="rtl">(7.2 ميغا بايت)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.12.zip"><span dir="ltr">4.12 Rufus</span></a> <span dir="rtl">(7.3 ميغا بايت)</span></li>
 		<li>كطريقة بديلة، يمكنك نسخ مخزن <a target="_blank" href="http://git-scm.com">git</a> باستخدام:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>للمزيد من المعلومات راجع <a target="_blank" href="https://github.com/pbatard/rufus">مشروع GitHub</a>.</li></ul>

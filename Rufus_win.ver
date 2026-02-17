@@ -1,24 +1,13 @@
-version = 4.12.2314
+version = 4.13.2316
 platform_min = 6.2
-download_url = https://github.com/pbatard/rufus/releases/download/v4.12/rufus-4.12.exe
-download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.12/rufus-4.12_x86.exe
-download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v4.12/rufus-4.12_arm64.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13.exe
+download_url_x86 = https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13_x86.exe
+download_url_arm64 = https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13_arm64.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.12 (2026.01.30)\b0\par\par
+\pard\ltrpar\sl276\slmult1\par\b\f0\fs22\lang9\tab Rufus 4.13 (2026.02.17)\b0\par\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Filter out the new Bitdefender VHDs\par
-{\pntext\f2\'B7\tab}Filter disallowed characters in local account names\par
-{\pntext\f2\'B7\tab}Improve Microsoft Dev Drive detection (courtesy of Martin Kuschnik)\par
-{\pntext\f2\'B7\tab}Improve the pre-formatting partition cleanup code\par
-{\pntext\f2\'B7\tab}Improve error reporting on ISO extraction issues\par
-{\pntext\f2\'B7\tab}Improve detection of drives with long hardware IDs (typically SSDs)\par
-{\pntext\f2\'B7\tab}Improve conflicting process reporting\par
-{\pntext\f2\'B7\tab}Improve support for Nutanix and umbrelOS ISOs\par
-{\pntext\f2\'B7\tab}Fix a TOCTOU vulnerability in Fido script execution (CVE-2026-2398, reported by @independent-arg)\par
-{\pntext\f2\'B7\tab}Fix replacement vulnerabilities for diskcopy.dll and oscdimg.exe\par
-{\pntext\f2\'B7\tab}Fix FFU image creation being erroneously invocated, when trying to save an ISO image\par
-{\pntext\f2\'B7\tab}Fix saving of ISO images to paths that contain spaces\par
-{\pntext\f2\'B7\tab}Update UEFI:NTFS and UEFI DBXs to latest\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Fix UEFI:NTFS not selecting the proper driver for ARM/ARM64\par
+{\pntext\f2\'B7\tab}Update embedded GRUB to v2.14\par
 
 \pard\ltrpar\sl276\slmult1\par}

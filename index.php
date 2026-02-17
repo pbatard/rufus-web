@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.12";
+$latest_version = "4.13";
 $beta_version = "4.12";
-$previous_version = "4.8";
-$latest_date = "2026.01.30";
+$previous_version = "4.12";
+$latest_date = "2026.02.17";
 $beta_date = "2026.01.22";
-$previous_date = "2025.06.11";
+$previous_date = "2026.01.30";
 $lang1 = array('', 'Malay', 'Malaysia');
 $lang2 = array('', 'Traditional Chinese', 'Taiwan');
-$bugfix = false;
+$bugfix = true;
 $beta = false;
 $x64_size = 1.9;
 $x86_size = 1.8;
@@ -457,6 +457,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul dir="<?= $dir;?>">
+				<li><span dir="ltr">Fix <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> not selecting the proper driver for ARM/ARM64.</span></li>
+				<li><span dir="ltr">Update embedded GRUB to v2.14.</span></li>
+			</ul></li>
+			<br/>
+<? if($bugfix):?>
+			<li><?= $prev_version;?><ul dir="<?= $dir;?>">
 				<li><span dir="ltr">Filter out the new Bitdefender VHDs.</span></li>
 				<li><span dir="ltr">Filter disallowed characters in local account names.</span></li>
 				<li><span dir="ltr">Improve Microsoft Dev Drive detection (courtesy of <b>Martin Kuschnik</b>).</span></li>
@@ -470,24 +476,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				<li><span dir="ltr">Fix FFU image creation being erroneously invocated, when trying to save an ISO image.</span></li>
 				<li><span dir="ltr">Fix saving of ISO images to paths that contain spaces.</span></li>
 				<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> and <a target="_blank" href="https://uefi.org/revocationlistfile">UEFI DBXs</a> to latest.</span></li>
-			</ul></li>
-			<br/>
-<? if($bugfix):?>
-			<li><?= $prev_version;?><ul dir="<?= $dir;?>">
-				<li><span dir="ltr">Switch to <a target="_blank" href="https://wimlib.net/">wimlib</a> for all WIM image processing:</span></li>
-					<ul dir="<?= $dir;?>">
-						<li><span dir="ltr">Greatly speeds up image analysis when opening Windows ISOs</span></li>
-						<li><span dir="ltr">Can speed up Windows To Go drive creation (But won't do miracles if you have a crap drive)</span></li>
-						<li><span dir="ltr">Might help with Parallels limitations on Mac (But Rufus on Parallels is still <b>unsupported</b>)</span></li>
-						<li><span dir="ltr">Enables the splitting of >4GB files with <kbd>Alt</kbd>-<kbd>E</kbd> (But still <b>WAY SLOWER</b> than using <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>)</span></li>
-					</ul>
-				</li>
-				<li><span dir="ltr">Switch to using Visual Studio binaries everywhere, due to MinGW DLL delay-loading limitations</span></li>
-				<li><span dir="ltr">Add more exceptions for Linux ISOs that restrict themselves to DD mode (Nobara, openSUSE, ...)</span></li>
-				<li><span dir="ltr">Improve reporting of UEFI bootloaders in the log, with info on the Secure Boot status</span></li>
-				<li><span dir="ltr">Fix an issue with size limitations when writing an uncompressed VHD back to the same drive</span></li>
-				<li><span dir="ltr">Fix a crash when opening the log with the 32-bit MinGW compiled version</span></li>
-				<li><span dir="ltr">Fix commandline parameters not being forwarded to original Windows <code>setup.exe</code></span></li>
 			</ul></li>
 			<br />
 <? endif;?>

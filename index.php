@@ -6,8 +6,8 @@ $previous_version = "4.12";
 $latest_date = "2026.02.17";
 $beta_date = "2026.01.22";
 $previous_date = "2026.01.30";
-$lang1 = array('', 'Malay', 'Malaysia');
-$lang2 = array('', 'Traditional Chinese', 'Taiwan');
+$lang1 = array('id', 'Indonesian', 'Indonesia');
+$lang2 = array('bg', 'Bulgarian', 'Bulgaria');
 $bugfix = true;
 $beta = false;
 $x64_size = 1.9;
@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<p><?= _("Despite its small size, Rufus provides everything you need!");?></p>
 		<p><?= _("A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page.");?> <a href="#ref1"><sup>(1)</sup></a></p>
 		<? if (substr($locale,0,2) == $lang1[0] || substr($locale,0,2) == $lang2[0] || ($lang1[0] != '' && substr($locale,0,2) == "en")) echo "<p dir=\"ltr\" align=\"top\"><img style=\"position:relative\" src=\"/pics/flags/" . $lang1[2] . ".png\" srcset=\"/pics/flags/" . $lang1[2] . ".png 1x, /pics/flags/" . $lang1[2] . "-64px.png 2x\" alt=\"\"/>&nbsp;&nbsp;<b><font color=\"#dd8800\"><u>CALLING ON NEW TRANSLATORS!</u></font></b>" . (($lang2[0] != '') ? "&nbsp;&nbsp;<img style=\"position:relative\" src=\"/pics/flags/" . $lang2[2] . ".png\" srcset=\"/pics/flags/" . $lang2[2] . ".png 1x, /pics/flags/" . $lang2[2] . "-64px.png 2x\" alt=\"\"/>" : "") . "</p>
-		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L83\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
+		<p dir=\"ltr\">The Rufus application would like to request <b>your</b> help with its translations, as the project is currently looking for volunteers that would be kind enough to <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/blob/master/res/loc/ChangeLog.txt#L8-L56\">update the localization</a> for <b><i>" . $lang1[1] . "</i></b>" . (($lang2[0] != '') ? " and <b><i>" . $lang2[1] . "</i></b>" : "") . ".</p>
 		<p dir=\"ltr\">If you think you are up to the task, please have a look <a target=\"_blank\" href=\"https://github.com/pbatard/rufus/wiki/Localization#editing-an-existing-translation\">here</a>.</p>";?>
 	</section>
 	<section class="generic_section" id="download">

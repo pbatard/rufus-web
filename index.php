@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <?
 $latest_version = "4.13";
-$beta_version = "4.12";
 $previous_version = "4.12";
 $latest_date = "2026.02.17";
-$beta_date = "2026.01.22";
 $previous_date = "2026.01.30";
-$lang1 = array('ms', 'Malaysian', 'Malaysia');
-$lang2 = array('ro', 'Romanian', 'Romania');
-$bugfix = true;
-$beta = false;
 $x64_size = 1.9;
 $x86_size = 1.8;
 $arm64_size = 4.9;
-$beta_size = 1.9;
 $src_size = 7.3;
+$bugfix = true;
+$beta = true;
+$beta_version = "4.14";
+$beta_date = "2026.04.21";
+$beta_size = 1.9;
+$lang1 = array('ms', 'Malaysian', 'Malaysia');
+$lang2 = array('ro', 'Romanian', 'Romania');
 $nb_screenshots = 5;
 $screenshot_height = "600px";
 $screenshot_duration = 10000;

@@ -332,32 +332,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					<th class="title" width=120>Датум</th>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13.exe"><code>rufus-4.13.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14.exe"><code>rufus-4.14.exe</code></a></td>
 					<td class="item">Стандарден</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="ltr">1.9 МБ</span></td>
-					<td class="item">2026.02.17</td>
+					<td class="item">2026.04.30</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13p.exe"><code>rufus-4.13p.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14p.exe"><code>rufus-4.14p.exe</code></a></td>
 					<td class="item">Преносливо</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="ltr">1.9 МБ</span></td>
-					<td class="item">2026.02.17</td>
+					<td class="item">2026.04.30</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13_x86.exe"><code>rufus-4.13_x86.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14_x86.exe"><code>rufus-4.14_x86.exe</code></a></td>
 					<td class="item">Стандарден</td>
 					<td class="item">Windows x86</td>
-					<td class="item"><span dir="ltr">1.8 МБ</span></td>
-					<td class="item">2026.02.17</td>
+					<td class="item"><span dir="ltr">1.9 МБ</span></td>
+					<td class="item">2026.04.30</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13_arm64.exe"><code>rufus-4.13_arm64.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14_arm64.exe"><code>rufus-4.14_arm64.exe</code></a></td>
 					<td class="item">Стандарден</td>
 					<td class="item">Windows ARM64</td>
-					<td class="item"><span dir="ltr">4.9 МБ</span></td>
-					<td class="item">2026.02.17</td>
+					<td class="item"><span dir="ltr">5.1 МБ</span></td>
+					<td class="item">2026.04.30</td>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14_BETA/rufus-4.14_BETA.exe"><code>rufus-4.14_BETA.exe</code></a></td>
@@ -446,33 +446,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<section class="generic_section" id="changelog">
 		<h2>Листа на промени</h2>
 		<ul dir="ltr">
-			<li><b>Верзија 4.13</b> (2026.02.17) [BUGFIX RELEASE]<ul dir="ltr">
-				<li><span dir="ltr">Fix <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> not selecting the proper driver for ARM/ARM64.</span></li>
-				<li><span dir="ltr">Update embedded GRUB to v2.14.</span></li>
+			<li><b>Верзија 4.14</b> (2026.04.30)<ul dir="ltr">
+				<li><span dir="ltr">Windows User Experience improvements:</span></li>
+					<ul dir="ltr">
+						<li><span dir="ltr">Add a <i>Quality of Life</i> option, to disable Teams, Outlook, Copilot and other Microsoft forced nuisances</span></li>
+						<li><span dir="ltr">Add a <i>Silent</i> installation option, that automatically, and <b>WITHOUT PROMPT</b>, installs Windows on the first detected disk</span></li>
+						<li><span dir="ltr">Add an option to copy <code>SkuSiPolicy.p7b</code> to the ESP on installation (please refer to <a target="_blank" href="https://support.microsoft.com/kb/5042562">KB5042562</a> for more info)</span></li>
+						<li><span dir="ltr">Add tooltips for all the dialog options</span></li>
+					</ul>
+				</li>
+				<li><span dir="ltr">Add limited support for <a target="_blank" href="http://wiki.osdev.org/El-Torito">El-Torito</a> UEFI image extraction (Mostly for Dell BIOS update ISOs)</span></li>
+				<li><span dir="ltr">Improve error report when the user tries to use an image that resides on the target drive</span></li>
+				<li><span dir="ltr">Improve the <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition label to make the install media more explicit during <i>Windows Setup</i> disk partitioning</span></li>
+				<li><span dir="ltr">Improve support for Bazzite and other Fedora derivatives that don't follow EFI conventions</span></li>
+				<li><span dir="ltr">Improve detection and exclusion of the new Bitdefender hidden VHDs</span></li>
+				<li><span dir="ltr">Improve reporting of GRUB and Isolinux MBRs</span></li>
+				<li><span dir="ltr">Fix potential errors during creation of <i>Windows To Go</i> media, due to the use of new versions of <code>bcdboot</code></span></li>
+				<li><span dir="ltr">Fix errors with local accounts that start or end with whitespaces</span></li>
 			</ul></li>
 			<br/>
-			<li><b>Верзија 4.12</b> (2026.01.30)<ul dir="ltr">
-				<li><span dir="ltr">Filter out the new Bitdefender VHDs.</span></li>
-				<li><span dir="ltr">Filter disallowed characters in local account names.</span></li>
-				<li><span dir="ltr">Improve Microsoft Dev Drive detection (courtesy of <b>Martin Kuschnik</b>).</span></li>
-				<li><span dir="ltr">Improve the pre-formatting partition cleanup code.</span></li>
-				<li><span dir="ltr">Improve error reporting on ISO extraction issues.</span></li>
-				<li><span dir="ltr">Improve detection of drives with long hardware IDs (typically SSDs).</span></li>
-				<li><span dir="ltr">Improve conflicting process reporting.</span></li>
-				<li><span dir="ltr">Improve support for Nutanix and umbrelOS ISOs.</span></li>
-				<li><span dir="ltr">Fix a TOCTOU vulnerability in Fido script execution (<a target="_blank" href="https://github.com/pbatard/rufus/security/advisories/GHSA-hcx5-hrhj-xhq9">CVE-2026-2398</a>, reported by <b>@independent-arg</b>).</span></li>
-				<li><span dir="ltr">Fix replacement vulnerabilities for <code>diskcopy.dll</code> and <code>oscdimg.exe</code>.</span></li>
-				<li><span dir="ltr">Fix FFU image creation being erroneously invocated, when trying to save an ISO image.</span></li>
-				<li><span dir="ltr">Fix saving of ISO images to paths that contain spaces.</span></li>
-				<li><span dir="ltr">Update <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> and <a target="_blank" href="https://uefi.org/revocationlistfile">UEFI DBXs</a> to latest.</span></li>
-			</ul></li>
-			<br />
 			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Други верзии</a></b></li>
 		</ul>
 	</section>
 	<section class="generic_section" id="source">
 		<h2>Изворен код</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.13.zip">Rufus 4.13</a> <span dir="ltr">(7.3 МБ)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.14.zip">Rufus 4.14</a> <span dir="ltr">(7.3 МБ)</span></li>
 		<li>Во спротивно, можете да го клонирате  <a target="_blank" href="http://git-scm.com">git</a> репозиториумот користејќи:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>За повеќе информации, погледнете го <a target="_blank" href="https://github.com/pbatard/rufus">GitHub проектот</a>.</li></ul>

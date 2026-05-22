@@ -1,5 +1,6 @@
 #!/bin/env bash
-# This script is meant to run as a daily cron jon to check if Microsoft's DBXs have been updated
+# This script is meant to run as a daily cron job to check if Microsoft's DBXs have changed
+# It is primarily designed to find if https://github.com/pbatard/Mosby/blob/main/src/data.c needs an update.
 
 github_url="https://api.github.com/"
 
@@ -19,10 +20,10 @@ declare -A source=(
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/amd64/DBXUpdate.bin']=1760555920
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm/DBXUpdate.bin']=1740428422
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm64/DBXUpdate.bin']=1740428422
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/amd64/DBXUpdateSVN.bin']=1759533505
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/x86/DBXUpdateSVN.bin']=1759533505
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/arm/DBXUpdateSVN.bin']=1759533505
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/arm64/DBXUpdateSVN.bin']=1759533505
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/amd64/DBXUpdateSVN.bin']=1779225697
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/x86/DBXUpdateSVN.bin']=1779225697
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/arm/DBXUpdateSVN.bin']=1779225697
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/arm64/DBXUpdateSVN.bin']=1779225697
 )
 
 for url in "${!source[@]}"; do

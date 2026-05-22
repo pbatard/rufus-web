@@ -1,5 +1,6 @@
 #!/bin/env bash
-# This script is meant to run as a daily cron jon to check if Shim's SBAT has been updated
+# This script is meant to run as a daily cron jobn to check if Shim's SBAT has changed.
+# It is primarily designed to find if https://github.com/pbatard/Mosby/blob/main/src/data.c needs an update.
 
 github_url="https://api.github.com/"
 

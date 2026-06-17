@@ -13,7 +13,7 @@
 <meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
 <meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
 <meta name="msapplication-TileColor" content="#3f4555">
-<title>Rufus - Gawe bootable USB drive nganngo coro seng gampang</title>
+<title>Rufus - Create bootable USB drives the easy way</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script>
 function setCookie(name, value, days) {
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 <div id="right_column">
-<label for="lang_select">Ganti bahasa:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
+<label for="lang_select">Change language:</label><select name="lang_select" id="lang_select" onchange="self.location='/'+this.options[this.selectedIndex].value">
 <option dir="ltr" value="en">
 🇮🇪/🇬🇧/🇺🇸 English (International)</option>
 <option dir="ltr" value="sq">
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)</option>
 </select>
 <div class="hide_on_small_screens">
-<a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation">Pengen ngapiki terjemahan iki?</a>&nbsp;<br/>
+<a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation">Want to improve this translation?</a>&nbsp;<br/>
 &nbsp;<br/>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Rufus - Sidebar -->
@@ -261,17 +261,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<section class="generic_section" id="menu">
 		<nav class="menu" id="Menu"><ul>
 			<li><a href="#about">About</a></li>
-			<li><a href="#download">Unduh</a></li>
+			<li><a href="#download">Download</a></li>
 			<li><a href="#changelog">Changelog</a></li>
-			<li><a href="#usage">Penggunaan</a></li>
+			<li><a href="#usage">Usage</a></li>
 			<li><a href="#FAQ">FAQ</a></li>
-			<li><a href="#source">Kode sumber</a></li>
+			<li><a href="#source">Source Code</a></li>
 		</ul></nav>	
 	</section>
 	<section class="generic_section" id="top_banner">
 		<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
 		<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
-		<div class="tagline"><center>Gawe bootable USB drive nganngo coro seng gampang</center></div>
+		<div class="tagline"><center>Create bootable USB drives the easy way</center></div>
 		<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
 			<div class="carousel-inner">
 			<div class="carousel-item active">
@@ -309,62 +309,69 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<p>&nbsp;</p>
 	</section>
 	<section class="generic_section" id="about">
-		<p>Rufus ki sarana seng mbantu format karo nggawe USB flash drive seng iso di-boot, koyo  flashdisk, memori stik, sak piturute.</p>
-		<p>Iso digunakne utamane kanggo kasus neng ngisor iki:</p>
+		<p>Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.</p>
+		<p>It can be especially useful for cases where:</p>
 		<ul>
-			<li>nggawe media instalasi USB seko ISO bootable (Windows, Linux, UEFI, sak piturute.)</li>
-			<li>nggarap sistem seng ora diinstal OS</li>
-			<li>flash BIOS utowo perangkat firmware liyane teko DOS</li>
-			<li>pengen jalanke low-level utility</li>
+			<li>you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)</li>
+			<li>you need to work on a system that doesn't have an OS installed</li>
+			<li>you need to flash a BIOS or other firmware from DOS</li>
+			<li>you want to run a low-level utility</li>
 		</ul>
-		<p>Senajan ukurane cilik, Rufus nyediakne kabeh seng sampeya butuhne!</p>
-		<p>Daftar ISO seng didukung Rufus yo disediakne neng bagian ngesor halaman iki. <a href="#ref1"><sup>(1)</sup></a></p>
+		<p>Despite its small size, Rufus provides everything you need!</p>
+		<p>A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page. <a href="#ref1"><sup>(1)</sup></a></p>
 			</section>
 	<section class="generic_section" id="download">
-		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Unduh</span></h2>
-			<p><b>Rilis terahir:</b></p>
+		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">Download</span></h2>
+			<p><b>Latest releases:</b></p>
 			<table cellspacing="1" cellpadding="6" border="0">
 				<tr>
 					<th class="title" width=220>Link</th>
-					<th class="title" width=100>Tipe</th>
+					<th class="title" width=100>Type</th>
 					<th class="title" width=160>Platform</th>
-					<th class="title" width=100>Ukuran</th>
-					<th class="title" width=120>Tanggal</th>
+					<th class="title" width=100>Size</th>
+					<th class="title" width=120>Date</th>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14.exe"><code>rufus-4.14.exe</code></a></td>
-					<td class="item">Standar</td>
+					<td class="item">Standard</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="ltr">1.9 MB</span></td>
 					<td class="item">2026.04.30</td>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14p.exe"><code>rufus-4.14p.exe</code></a></td>
-					<td class="item">Portabel</td>
+					<td class="item">Portable</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="ltr">1.9 MB</span></td>
 					<td class="item">2026.04.30</td>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14_x86.exe"><code>rufus-4.14_x86.exe</code></a></td>
-					<td class="item">Standar</td>
+					<td class="item">Standard</td>
 					<td class="item">Windows x86</td>
 					<td class="item"><span dir="ltr">1.9 MB</span></td>
 					<td class="item">2026.04.30</td>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14_arm64.exe"><code>rufus-4.14_arm64.exe</code></a></td>
-					<td class="item">Standar</td>
+					<td class="item">Standard</td>
 					<td class="item">Windows ARM64</td>
 					<td class="item"><span dir="ltr">5.1 MB</span></td>
 					<td class="item">2026.04.30</td>
 				</tr>
+				<tr>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15_BETA/rufus-4.15_BETA.exe"><code>rufus-4.15_BETA.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/tag/v4.15_BETA">BETA</a></td>
+					<td class="item">Windows x64</td>
+					<td class="item"><span dir="ltr">1.9 MB</span></td>
+					<td class="item">2026.06.17</td>
+				</tr>
 			</table>&nbsp;
-			<p><span style="font-size: 110%"><a href="/downloads/">Versi liyane (GitHub)</a><br/>
-			<a target="_blank" href="https://dappcdn.com/download/system-rescue/rufus">Versi liyane (dAppCDN)</a></span></p>
-		<h4>Persaratan Sistem:</h4>
-		<p>Windows 8 opo lebih. Sekali ke unduh, aplikasi siap digunakne.</p>
-		<h4>Bahasa seng didukung:</h4>
+			<p><span style="font-size: 110%"><a href="/downloads/">Other versions (GitHub)</a><br/>
+			<a target="_blank" href="https://dappcdn.com/download/system-rescue/rufus">Other versions (dAppCDN)</a></span></p>
+		<h4>System Requirements:</h4>
+		<p>Windows 8 or later. Once downloaded, the application is ready to use.</p>
+		<h4>Supported Languages:</h4>
 		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
 			<td><i>Bahasa Malaysia</i></td><td>,&nbsp;</td>
@@ -410,36 +417,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<td>پارسی</td><td>.</td>
 		</tr></table>
 		&nbsp;
-		<p>Aku bakal jikok kesempatan iki nggo ngucapke matur suwun karo poro penerjemah seng mungkinke Rufus, kambi halaman web iki, diterjemahke neng macem-macem boso. Nek Sampeyan isoh nggunakne Rufus neng basane Sampeyan, Sampeyan kudu matur suwun karo poro penerjemah!</p>
+		<p>I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, you should really thank them!</p>
 	</section>
 	<section class="generic_section" id="usage">
-		<h2>Penggunaan</h2>
-		<p>Unduh executable e terus jalanke iku &ndash; ora perlu di pasang.</p>
-		<p>Executable e wes di sign secoro digital karo tanda tangan kudu nyatakne:</p>
+		<h2>Usage</h2>
+		<p>Download the executable and run it &ndash; no installation is necessary.</p>
+		<p>The executable is digitally signed and the signature should state:</p>
 		<ul>
-			<li><i>"Akeo Consulting"</i> (v1.3.0 utowo lebih)</li>
-			<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 utowo sebelume)</li>
+			<li><i>"Akeo Consulting"</i> (v1.3.0 or later)</li>
+			<li><i>"Pete Batard - Open Source Developer"</i> (v1.2.0 or earlier)</li>
 		</ul>
-		<h4>Catetan nggo dukungan DOS:</h4>
-		<p>Nek Sampeyan nggawe drive bootable DOS gek nggunakne keyboard non-US, Rufus bakal milih toto letak keyboard sesuai kambi lokasi sisteme Sampeyan.</p>
-		<h4>Catetan nggo dukungan ISO:</h4>
-		<p>Kabeh versi Rufus kawet v1.1.0 mungkinke nggawe USB bootable teko <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">gambar ISO</a> (.iso).</p>
-		<p>Nggawe gambar ISO teko disk fisik utowo teko sak set file kui gampang, lewat aplikasi pembakaran CD, koyo to <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> or <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
+		<h4>Notes on DOS support:</h4>
+		<p>If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout according to the locale of your system.</p>
+		<h4>Notes on ISO Support:</h4>
+		<p>All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO image</a> (.iso).</p>
+		<p>Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a CD burning application, such as the freely available <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> or <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>.</p>
 	</section>
 	<section class="generic_section" id="FAQ">
-		<h2>Pertanyaan Seng Sering Ditekokne (FAQ)</h2>
-		<p>FAQ Rufus kesedia <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">NANG KENE</a></b>.<br/></p>
-		<p>Nek pengen ngekei masukan, lapor bug utowo njalok peningkatan, monggo gunakne GitHub  <a target="_blank" href="https://github.com/pbatard/rufus/issues">pelacak masalah</a>. Utowo Sampeyan iso <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">kirim surel</a>.</p>
+		<h2>Frequently Asked Questions (FAQ)</h2>
+		<p>A Rufus FAQ is available <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">HERE</a></b>.<br/></p>
+		<p>To provide feedback, report a bug or request an enhancement, please use the GitHub <a target="_blank" href="https://github.com/pbatard/rufus/issues">issue tracker</a>. Or you can <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">send an e-mail</a>.</p>
 	</section>
 	<section class="generic_section" id="license">
-		<h2>Lisensi</h2>
-		<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL) version 3</a> utowo lebih.<br />Sampeyan bebas nyebarke, modip, utowo malah ngedol piranti lunak iki, asalke Sampeyan hormati lisensi GPLv3.</p>
-		<p>Rufus diproduksi transparan 100%, teko <a target="_blank" href="https://github.com/pbatard/rufus">sumber publike</a>, nggunakne lingkungan <a target="_blank" href="http://mingw-w64.org">MinGW32</a>.</p>
+		<h2>License</h2>
+		<p><a target="_blank" href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL) version 3</a> or later.<br />You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license.</p>
+		<p>Rufus is produced in a 100% transparent manner, from its <a target="_blank" href="https://github.com/pbatard/rufus">public source</a>, using a <a target="_blank" href="http://mingw-w64.org">MinGW32</a> environment.</p>
 	</section>
 	<section class="generic_section" id="changelog">
-		<h2>Catetan perubahan</h2>
+		<h2>Changelog</h2>
 		<ul dir="ltr">
-			<li><b>Versi 4.14</b> (2026.04.30)<ul dir="ltr">
+			<li><b>Version 4.14</b> (2026.04.30)<ul dir="ltr">
 				<li><span dir="ltr">Windows User Experience improvements:</span></li>
 					<ul dir="ltr">
 						<li><span dir="ltr">Add a <i>Quality of Life</i> option, to disable Teams, Outlook, Copilot and other Microsoft forced nuisances</span></li>
@@ -458,27 +465,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				<li><span dir="ltr">Fix errors with local accounts that start or end with whitespaces</span></li>
 			</ul></li>
 			<br/>
-			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Versi liyane</a></b></li>
+			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Other versions</a></b></li>
 		</ul>
 	</section>
 	<section class="generic_section" id="source">
-		<h2>Kode sumber</h2>
+		<h2>Source Code</h2>
 		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.14.zip">Rufus 4.14</a> <span dir="ltr">(7.3 MB)</span></li>
-		<li>Sampeyan yo iso klon repositori <a target="_blank" href="http://git-scm.com">git</a> nganggo perintah iki:
+		<li>Alternatively, you can clone the <a target="_blank" href="http://git-scm.com">git</a> repository using:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
-		<li>Kanggo informasi luweh lengkap, tili'i <a target="_blank" href="https://github.com/pbatard/rufus">proyek GitHub</a>.</li></ul>
-		<p>Nek Sampeyan kui developer, Sampeyan dianjurke nggo ngutak-atek Rufus karo ngirim tambalan.</p>
+		<li>For more information, see the <a target="_blank" href="https://github.com/pbatard/rufus">GitHub project</a>.</li></ul>
+		<p>If you are a developer, you are very much encouraged to tinker with Rufus and submit patches.</p>
 	</section>
 	<section class="generic_section" id="donate">
-		<h2>Sumbangan</h2>
-		<p>Aku sering di tekoni perkoro sumbangan, tak tegeske neng halaman iki <b>ora</b> enek tombol sumbangan.</p>
-		<p>Alesan utamane kui korno aku ngeroso sistem donasi ora nggawe pengembangan priranti lunak luweh apik utowo luweh elek, malah iso ngekei roso bersalah kanggo pengguna seng ora nyumbang.</p>
-		<p>Nek Sampeyan tetep bersikeras, Sampeyan iso nyumbang neng <a target="_blank" href="http://www.fsf.org/">Free Software Foundation</a>, marai dekne kui alesan utomo ngopo piranti lunak koyo Rufus kui enek.</p>
-		<p>Aku bakal nganggo kesempatan iki nggo ngomong <i><u>matur suwun</u></i> kanggo dukungan karo antusiasme Sampeyan kambi program cilik iki: iki dihargai banget!</p>
-		<p>Tapi monggo teros nggunakne Rufus tanpo roso salah korno &dash; ora mesti kontribusi kui secoro finansial!</p>
+		<h2>Donations</h2>
+		<p>Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this page.</p>
+		<p>The main reason is that I feel that the donation system doesn't actually help software development and worse, can be guilt-inducing for users who choose not to donate.</p>
+		<p>If you really insist, you can always make a donation to the <a target="_blank" href="http://www.fsf.org/">Free Software Foundation</a>, as they are the main reason software like Rufus is possible.</p>
+		<p>At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm about this little program: it is much appreciated!</p>
+		<p>But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; you should never have to!</p>
 	</section>
 	<section class="generic_section" id="ref1">
-		<h2>(1) Daftar ISO seng kenek di enggo karo Rufus</h2>
+		<h2>(1) Non exhaustive list of ISOs Rufus is known to work with</h2>
 		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>
@@ -533,8 +540,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</section>
 	<div class="footer"><table align="center" dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2026&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
-		Di terjemahke neng Basa Jowo karo Septian Dwi Cahya<br/>		Ikon USB teko PC Unleashed<br/>
-		Hosting teko <a target="_blank" href="https://pages.github.com/">GitHub</a>
+				USB icon by PC Unleashed<br/>
+		Hosting by <a target="_blank" href="https://pages.github.com/">GitHub</a>
 		</div> 
 	</div>
 </body>

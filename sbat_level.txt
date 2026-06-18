@@ -5,4 +5,4 @@ grub,5
 grub.proxmox,2
 # The following is derived from Microsoft's DBXUpdateSVN.bin per
 # https://github.com/pbatard/rufus/issues/2244#issuecomment-2243661539
-BOOTMGRSECURITYVERSIONNUMBER,0x80000
+BOOTMGRSECURITYVERSIONNUMBER,0x70000

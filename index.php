@@ -10,8 +10,8 @@ $bugfix = false;
 $previous_version = "4.12";
 $previous_date = "2026.01.30";
 $beta = true;
-$beta_version = "4.15";
-$beta_date = "2026.06.17";
+$beta_version = "4.15_BETA2";
+$beta_date = "2026.06.19";
 $beta_size = 1.9;
 $lang1 = array('', 'Malaysian', 'Malaysia');
 $lang2 = array('', 'Vietnamese', 'Vietnam');
@@ -369,8 +369,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				</tr>
 <? if($beta):?>
 				<tr>
-					<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $beta_version . "_BETA/rufus-" . $beta_version . "_BETA.exe\">" . "<code>rufus-" . $beta_version . "_BETA.exe</code></a>";?></td>
-					<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/tag/v"  . $beta_version . "_BETA\">" .  _("BETA") . "</a>";?></td>
+					<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/download/v" . $beta_version . "/rufus-" . $beta_version . ".exe\">" . "<code>rufus-" . $beta_version . ".exe</code></a>";?></td>
+					<td class="item"><?= "<a href=\"https://github.com/pbatard/rufus/releases/tag/v"  . $beta_version . "\">" .  _("BETA") . "</a>";?></td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="<?= $dir;?>"><?= "" . $beta_size . " " . _("MB");?></span></td>
 					<td class="item"><?= $beta_date;?></td>

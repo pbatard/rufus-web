@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <?
-$latest_version = "4.14";
-$latest_date = "2026.04.30";
+$latest_version = "4.15";
+$latest_date = "2026.06.30";
 $x64_size = 1.9;
-$x86_size = 1.9;
-$arm64_size = 5.1;
-$src_size = 7.3;
+$x86_size = 1.8;
+$arm64_size = 5.2;
+$src_size = 7.5;
 $bugfix = false;
 $previous_version = "4.12";
 $previous_date = "2026.01.30";
@@ -457,22 +457,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<h2><?= /* You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English */ _("Changelog");?></h2>
 		<ul dir="<?= $dir;?>">
 			<li><?= $full_version;?><ul dir="<?= $dir;?>">
-				<li><span dir="ltr">Windows User Experience improvements:</span></li>
-					<ul dir="<?= $dir;?>">
-						<li><span dir="ltr">Add a <i>Quality of Life</i> option, to disable Teams, Outlook, Copilot and other Microsoft forced nuisances</span></li>
-						<li><span dir="ltr">Add a <i>Silent</i> installation option, that automatically, and <b>WITHOUT PROMPT</b>, installs Windows on the first detected disk</span></li>
-						<li><span dir="ltr">Add an option to copy <code>SkuSiPolicy.p7b</code> to the ESP on installation (please refer to <a target="_blank" href="https://support.microsoft.com/kb/5042562">KB5042562</a> for more info)</span></li>
-						<li><span dir="ltr">Add tooltips for all the dialog options</span></li>
-					</ul>
-				</li>
-				<li><span dir="ltr">Add limited support for <a target="_blank" href="http://wiki.osdev.org/El-Torito">El-Torito</a> UEFI image extraction (Mostly for Dell BIOS update ISOs)</span></li>
-				<li><span dir="ltr">Improve error report when the user tries to use an image that resides on the target drive</span></li>
-				<li><span dir="ltr">Improve the <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition label to make the install media more explicit during <i>Windows Setup</i> disk partitioning</span></li>
-				<li><span dir="ltr">Improve support for Bazzite and other Fedora derivatives that don't follow EFI conventions</span></li>
-				<li><span dir="ltr">Improve detection and exclusion of the new Bitdefender hidden VHDs</span></li>
-				<li><span dir="ltr">Improve reporting of GRUB and Isolinux MBRs</span></li>
-				<li><span dir="ltr">Fix potential errors during creation of <i>Windows To Go</i> media, due to the use of new versions of <code>bcdboot</code></span></li>
-				<li><span dir="ltr">Fix errors with local accounts that start or end with whitespaces</span></li>
+				<li><span dir="ltr">Add RISC-V 64 support to <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>.</span></li>
+				<li><span dir="ltr">Improve the guards for using the <i>"silent"</i> Windows installation option.</span></li>
+				<li><span dir="ltr">Improve the ability to cancel during write retries.</span></li>
+				<li><span dir="ltr">Improve progress reporting for compressed image extraction.</span></li>
+				<li><span dir="ltr">Fix unrestricted XML entity expansion and integer overflow in ezxml parser (courtesy of <b>Eric Sadowski</b>).</span></li>
+				<li><span dir="ltr">Fix <i>"silent"</i> Windows installation failing at 75% in most cases.</span></li>
+				<li><span dir="ltr">Fix a crash during boot when using <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> on Snapdragon X based ARM64 platforms.</span></li>
+				<li><span dir="ltr">Fix first WUE option always being checked by default.</span></li>
+				<li><span dir="ltr">Fix an infinite loop when using Windows ISOs that contain multiple WIMs.</span></li>
+				<li><span dir="ltr">Fix <i>"Enable runtime UEFI media validation"</i> checkbox not always being properly enabled.</span></li>
+				<li><span dir="ltr">Other WUE improvements/fixes for OneDrive removal and username validation (with thanks to <b>@christian8641</b>).</span></li>
 			</ul></li>
 			<br/>
 <? if($bugfix):?>

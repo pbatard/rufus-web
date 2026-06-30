@@ -332,32 +332,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					<th class="title" width=120>Datum</th>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14.exe"><code>rufus-4.14.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15.exe"><code>rufus-4.15.exe</code></a></td>
 					<td class="item">Standard</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="ltr">1.9 MB</span></td>
-					<td class="item">2026.04.30</td>
+					<td class="item">2026.06.30</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14p.exe"><code>rufus-4.14p.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15p.exe"><code>rufus-4.15p.exe</code></a></td>
 					<td class="item">Portabel</td>
 					<td class="item">Windows x64</td>
 					<td class="item"><span dir="ltr">1.9 MB</span></td>
-					<td class="item">2026.04.30</td>
+					<td class="item">2026.06.30</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14_x86.exe"><code>rufus-4.14_x86.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15_x86.exe"><code>rufus-4.15_x86.exe</code></a></td>
 					<td class="item">Standard</td>
 					<td class="item">Windows x86</td>
-					<td class="item"><span dir="ltr">1.9 MB</span></td>
-					<td class="item">2026.04.30</td>
+					<td class="item"><span dir="ltr">1.8 MB</span></td>
+					<td class="item">2026.06.30</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14_arm64.exe"><code>rufus-4.14_arm64.exe</code></a></td>
+					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15_arm64.exe"><code>rufus-4.15_arm64.exe</code></a></td>
 					<td class="item">Standard</td>
 					<td class="item">Windows ARM64</td>
-					<td class="item"><span dir="ltr">5.1 MB</span></td>
-					<td class="item">2026.04.30</td>
+					<td class="item"><span dir="ltr">5.2 MB</span></td>
+					<td class="item">2026.06.30</td>
 				</tr>
 				<tr>
 					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15_BETA2/rufus-4.15_BETA2.exe"><code>rufus-4.15_BETA2.exe</code></a></td>
@@ -446,23 +446,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<section class="generic_section" id="changelog">
 		<h2>Ändringslogg (endast på Engelska)</h2>
 		<ul dir="ltr">
-			<li><b>Version 4.14</b> (2026.04.30)<ul dir="ltr">
-				<li><span dir="ltr">Windows User Experience improvements:</span></li>
-					<ul dir="ltr">
-						<li><span dir="ltr">Add a <i>Quality of Life</i> option, to disable Teams, Outlook, Copilot and other Microsoft forced nuisances</span></li>
-						<li><span dir="ltr">Add a <i>Silent</i> installation option, that automatically, and <b>WITHOUT PROMPT</b>, installs Windows on the first detected disk</span></li>
-						<li><span dir="ltr">Add an option to copy <code>SkuSiPolicy.p7b</code> to the ESP on installation (please refer to <a target="_blank" href="https://support.microsoft.com/kb/5042562">KB5042562</a> for more info)</span></li>
-						<li><span dir="ltr">Add tooltips for all the dialog options</span></li>
-					</ul>
-				</li>
-				<li><span dir="ltr">Add limited support for <a target="_blank" href="http://wiki.osdev.org/El-Torito">El-Torito</a> UEFI image extraction (Mostly for Dell BIOS update ISOs)</span></li>
-				<li><span dir="ltr">Improve error report when the user tries to use an image that resides on the target drive</span></li>
-				<li><span dir="ltr">Improve the <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> partition label to make the install media more explicit during <i>Windows Setup</i> disk partitioning</span></li>
-				<li><span dir="ltr">Improve support for Bazzite and other Fedora derivatives that don't follow EFI conventions</span></li>
-				<li><span dir="ltr">Improve detection and exclusion of the new Bitdefender hidden VHDs</span></li>
-				<li><span dir="ltr">Improve reporting of GRUB and Isolinux MBRs</span></li>
-				<li><span dir="ltr">Fix potential errors during creation of <i>Windows To Go</i> media, due to the use of new versions of <code>bcdboot</code></span></li>
-				<li><span dir="ltr">Fix errors with local accounts that start or end with whitespaces</span></li>
+			<li><b>Version 4.15</b> (2026.06.30)<ul dir="ltr">
+				<li><span dir="ltr">Add RISC-V 64 support to <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>.</span></li>
+				<li><span dir="ltr">Improve the guards for using the <i>"silent"</i> Windows installation option.</span></li>
+				<li><span dir="ltr">Improve the ability to cancel during write retries.</span></li>
+				<li><span dir="ltr">Improve progress reporting for compressed image extraction.</span></li>
+				<li><span dir="ltr">Fix unrestricted XML entity expansion and integer overflow in ezxml parser (courtesy of <b>Eric Sadowski</b>).</span></li>
+				<li><span dir="ltr">Fix <i>"silent"</i> Windows installation failing at 75% in most cases.</span></li>
+				<li><span dir="ltr">Fix a crash during boot when using <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> on Snapdragon X based ARM64 platforms.</span></li>
+				<li><span dir="ltr">Fix first WUE option always being checked by default.</span></li>
+				<li><span dir="ltr">Fix an infinite loop when using Windows ISOs that contain multiple WIMs.</span></li>
+				<li><span dir="ltr">Fix <i>"Enable runtime UEFI media validation"</i> checkbox not always being properly enabled.</span></li>
+				<li><span dir="ltr">Other WUE improvements/fixes for OneDrive removal and username validation (with thanks to <b>@christian8641</b>).</span></li>
 			</ul></li>
 			<br/>
 			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">Andra versioner</a></b></li>
@@ -470,7 +465,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</section>
 	<section class="generic_section" id="source">
 		<h2>Källkod</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.14.zip">Rufus 4.14</a> <span dir="ltr">(7.3 MB)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.15.zip">Rufus 4.15</a> <span dir="ltr">(7.5 MB)</span></li>
 		<li>Som alternativ kan du klona <a target="_blank" href="http://git-scm.com">git</a>-förrådet med:
 		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
 		<li>För mer information, se <a target="_blank" href="https://github.com/pbatard/rufus">GitHub projekt</a>.</li></ul>

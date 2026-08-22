@@ -1,0 +1,335 @@
+# Rufus Homepage.
+# Copyright (C) 2026 Pete Batard
+# This file is distributed under the same license as the Rufus Homepage package.
+# Pete Batard <pete@akeo.ie>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Rufus Homepage 1.1\n"
+"Report-Msgid-Bugs-To: pete@akeo.ie\n"
+"POT-Creation-Date: 2026-06-30 12:22+0100\n"
+"PO-Revision-Date: 2026-08-23 12:06+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: mr_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#: index.php:116
+msgid "Version"
+msgstr "आवृत्ती"
+
+#: index.php:149 index.php:290
+msgid "Create bootable USB drives the easy way"
+msgstr "सोप्या पद्धतीने बूट करण्यायोग्य USB ड्राइव्ह तयार करा"
+
+#: index.php:234
+msgid "Change language:"
+msgstr "भाषा बदला:"
+
+#: index.php:243
+msgid "Want to improve this translation?"
+msgstr "या अनुवादात सुधारणा करायची आहे का?"
+
+#: index.php:279
+msgid "About"
+msgstr "बद्दल"
+
+#: index.php:280 index.php:332
+msgid "Download"
+msgstr "डाउनलोड"
+
+#: index.php:282 index.php:433
+msgid "Usage"
+msgstr "वापर"
+
+#: index.php:283
+msgid "FAQ"
+msgstr "वारंवार विचारले जाणारे प्रश्न"
+
+#: index.php:284 index.php:495
+msgid "Source Code"
+msgstr "स्त्रोत कोड"
+
+#: index.php:317
+msgid ""
+"Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory "
+"sticks, etc."
+msgstr ""
+"रुफस (Rufus) ही एक युटिलिटी आहे जी USB की/पेनड्राइव्ह, मेमरी स्टिक इत्यादींसारख्या बूट करण्यायोग्य USB फ्लॅश ड्राइव्हचे स्वरूपण व "
+"निर्मिती करण्यात मदत करते."
+
+#: index.php:318
+msgid "It can be especially useful for cases where:"
+msgstr "हे विशेषतः खालील प्रकरणांमध्ये उपयुक्त ठरू शकते:"
+
+#: index.php:320
+msgid "you need to create USB installation media from bootable ISOs (Windows, Linux, UEFI, etc.)"
+msgstr "तुम्हाला बूट करण्यायोग्य ISO (Windows, Linux, UEFI, इत्यादी) पासून USB इन्स्टॉलेशन मीडिया तयार करणे आवश्यक आहे."
+
+#: index.php:321
+msgid "you need to work on a system that doesn't have an OS installed"
+msgstr "तुम्हाला अशा प्रणालीवर काम करावे लागेल ज्यावर कोणतीही ऑपरेटिंग सिस्टम (OS) इन्स्टॉल केलेली नाही"
+
+#: index.php:322
+msgid "you need to flash a BIOS or other firmware from DOS"
+msgstr "तुम्हाला DOS मधून BIOS किंवा इतर फर्मवेअर फ्लॅश करावे लागेल"
+
+#: index.php:323
+msgid "you want to run a low-level utility"
+msgstr "तुम्हाला एखादे लो-लेव्हल युटिलिटी चालवायचे आहे"
+
+#: index.php:325
+msgid "Despite its small size, Rufus provides everything you need!"
+msgstr "आकाराने लहान असूनही, रुफस तुम्हाला आवश्यक असलेल्या सर्व गोष्टी पुरवतो!"
+
+#: index.php:326
+msgid "A non exhaustive list of Rufus supported ISOs is also provided at the bottom of this page."
+msgstr "या पृष्ठाच्या तळाशी रुफस द्वारे समर्थित ISOs ची एक अपूर्ण (सर्वसमावेशक नसलेली) यादी देखील दिली आहे."
+
+#: index.php:333
+msgid "Latest releases:"
+msgstr "अलीकडील प्रकाशने:"
+
+#: index.php:336
+msgid "Link"
+msgstr "लिंक"
+
+#: index.php:337
+msgid "Type"
+msgstr "प्रकार"
+
+#: index.php:338
+msgid "Platform"
+msgstr "प्लॅटफॉर्म"
+
+#: index.php:339
+msgid "Size"
+msgstr "आकार"
+
+#: index.php:340
+msgid "Date"
+msgstr "दिनांक"
+
+#: index.php:344 index.php:358 index.php:365
+msgid "Standard"
+msgstr "प्रमाणित"
+
+#. Abbreviation for MegaByte
+#: index.php:346 index.php:353 index.php:360 index.php:367 index.php:375 index.php:496
+msgid "MB"
+msgstr "MB"
+
+#: index.php:351
+msgid "Portable"
+msgstr "पोऱ्टेबल"
+
+#: index.php:373
+msgid "BETA"
+msgstr "बीटा"
+
+#: index.php:380 index.php:381 index.php:491
+msgid "Other versions"
+msgstr "इतर आवृत्त्या"
+
+#: index.php:382
+msgid "System Requirements:"
+msgstr "प्रणालीच्या आवश्यकता:"
+
+#: index.php:383
+msgid "Windows 8 or later."
+msgstr "Windows 8 किंवा त्यानंतरची आवृत्ती."
+
+#: index.php:383
+msgid "Once downloaded, the application is ready to use."
+msgstr "एकदा डाउनलोड केल्यानंतर, हे ॲप्लिकेशन वापरण्यासाठी तयार असते."
+
+#: index.php:384
+msgid "Supported Languages:"
+msgstr "समर्थित भाषा:"
+
+#: index.php:430
+msgid ""
+"I will take this opportunity to express my gratitude to the translators who made it possible for Rufus, as well "
+"as this webpage, to be translated in various languages. If you find that you can use Rufus in your own language, "
+"you should really thank them!"
+msgstr ""
+"ज्या अनुवादकांमुळे रुफस (Rufus) आणि हे वेबपेज विविध भाषांमध्ये अनुवादित करणे शक्य झाले, त्यांचे आभार मानण्याची ही संधी मी घेत आहे. जर "
+"तुम्हाला रुफस (Rufus) तुमच्या स्वतःच्या भाषेत वापरता येत असेल, तर तुम्ही नक्कीच त्यांचे आभार मानले पाहिजेत!"
+
+#: index.php:434
+msgid "Download the executable and run it &ndash; no installation is necessary."
+msgstr "एक्झिक्युटेबल डाउनलोड करा आणि ते चालवा &ndash; यासाठी इन्स्टॉलेशनची आवश्यकता नाही."
+
+#: index.php:435
+msgid "The executable is digitally signed and the signature should state:"
+msgstr "एक्झिक्युटेबलवर डिजिटल स्वाक्षरी केलेली आहे आणि त्या स्वाक्षरीमध्ये खालील गोष्टी नमूद केलेल्या असाव्यात:"
+
+#: index.php:437
+msgid "(v1.3.0 or later)"
+msgstr "(v1.3.0 किंवा त्यानंतरची आवृत्ती)"
+
+#: index.php:438
+msgid "(v1.2.0 or earlier)"
+msgstr "(v1.2.0 किंवा त्यापूर्वीची आवृत्ती)"
+
+#: index.php:440
+msgid "Notes on DOS support:"
+msgstr "DOS समर्थनाबाबतच्या नोंदी:"
+
+#: index.php:441
+msgid ""
+"If you create a DOS bootable drive and use a non-US keyboard, Rufus will attempt to select a keyboard layout "
+"according to the locale of your system."
+msgstr ""
+"जर तुम्ही DOS बूट करण्यायोग्य (bootable) ड्राइव्ह तयार केला आणि नॉन-यूएस (non-US) कीबोर्ड वापरला, तर रुफस (Rufus) तुमच्या "
+"सिस्टमच्या लोकेलनुसार (locale) कीबोर्ड लेआउट निवडण्याचा प्रयत्न करेल."
+
+#: index.php:442
+msgid "Notes on ISO Support:"
+msgstr "ISO समर्थनाबाबतच्या नोंदी:"
+
+#: index.php:443
+#, php-format
+msgid ""
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from an <a target=\"_blank\" %s>ISO "
+"image</a> (.iso)."
+msgstr ""
+"रुफस (Rufus) ची v1.1.0 आणि त्यानंतरच्या सर्व आवृत्त्या <a target=\"_blank\" %s>ISO इमेज</a> (.iso) वापरून बूट करण्यायोग्य USB "
+"तयार करण्याची सुविधा देतात."
+
+#: index.php:444
+#, php-format
+msgid ""
+"Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of "
+"a CD burning application, such as the freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
+"target=\"_blank\" %s>CDBurnerXP</a>."
+msgstr ""
+"भौतिक डिस्क किंवा फाइल्सच्या संचापासून ISO इमेज तयार करणे खूप सोपे आहे; यासाठी <a target=\"_blank\" %s>InfraRecorder</a> "
+"किंवा <a target=\"_blank\" %s>CDBurnerXP</a> सारख्या मोफत उपलब्ध असलेल्या CD बर्निंग ॲप्लिकेशनचा वापर करता येतो."
+
+#: index.php:447
+msgid "Frequently Asked Questions (FAQ)"
+msgstr "सतत विचारले जाणारे प्रश्न (FAQ)"
+
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:448
+#, php-format
+msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+msgstr "रुफस (Rufus) बाबत वारंवार विचारले जाणारे प्रश्न (FAQ) <b><a target=\"_blank\" %s>येथे</a></b> (इंग्रजीमध्ये) उपलब्ध आहेत."
+
+#: index.php:449
+#, php-format
+msgid ""
+"To provide feedback, report a bug or request an enhancement, please use the GitHub <a target=\"_blank\" %s>issue "
+"tracker</a>. Or you can <a target=\"_blank\" %s>send an e-mail</a>."
+msgstr ""
+"अभिप्राय देण्यासाठी, त्रुटी (bug) कळवण्यासाठी किंवा सुधारणेची विनंती करण्यासाठी, कृपया GitHub वरील <a target=\"_blank\" "
+"%s>issue tracker</a> चा वापर करा. किंवा तुम्ही <a target=\"_blank\" %s>ई-मेल पाठवू शकता</a>."
+
+#: index.php:452
+msgid "License"
+msgstr "परवाना"
+
+#: index.php:453
+#, php-format
+msgid "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or later."
+msgstr "<a target=\"_blank\" %s>GNU जनरल पब्लिक परवाना (GPL) आवृत्ती ३</a> किंवा त्यानंतरची आवृत्ती."
+
+#: index.php:453
+msgid "You are free to distribute, modify or even sell the software, insofar as you respect the GPLv3 license."
+msgstr ""
+"GPLv3 परवान्याचे पालन करण्याच्या अटीवर, तुम्ही हे सॉफ्टवेअर वितरित करण्यास, त्यात बदल करण्यास किंवा अगदी त्याची विक्री करण्यासही "
+"मुक्त आहात."
+
+#: index.php:454
+#, php-format
+msgid ""
+"Rufus is produced in a 100%% transparent manner, from its <a target=\"_blank\" %s>public source</a>, using a <a "
+"target=\"_blank\" %s>MinGW32</a> environment."
+msgstr ""
+"रुफस (Rufus) ची निर्मिती <a target=\"_blank\" %s>MinGW32</a> वातावरणाचा वापर करून, त्याच्या <a target=\"_blank\" "
+"%s>सार्वजनिक स्रोतापासून</a> पूर्णपणे पारदर्शक पद्धतीने केली जाते."
+
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:457
+msgid "Changelog"
+msgstr "बदलांची नोंद (इंग्रजीमध्ये)"
+
+#: index.php:497
+#, php-format
+msgid "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository using:"
+msgstr "पर्यायाने, तुम्ही खालील रिपॉझिटरी वापरून <a target=\"_blank\" %s>git</a> क्लोन करू शकता:"
+
+#: index.php:499
+#, php-format
+msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr "अधिक माहितीसाठी, <a target=\"_blank\" %s>GitHub प्रकल्प</a> पहा."
+
+#: index.php:500
+msgid "If you are a developer, you are very much encouraged to tinker with Rufus and submit patches."
+msgstr ""
+"जर तुम्ही डेव्हलपर असाल, तर तुम्हाला रुफस (Rufus) मध्ये प्रयोग करण्यास आणि पॅचेस (patches) सादर करण्यास नक्कीच प्रोत्साहित केले जाते."
+
+#: index.php:503
+msgid "Donations"
+msgstr "देणग्या"
+
+#: index.php:504
+msgid "Since I'm getting asked about this on regular basis, there is <b>no</b> donation button on this page."
+msgstr "मला याबद्दल वारंवार विचारले जात असल्याने, सांगू इच्छितो की या पृष्ठावर देणगीचे कोणतेही बटण <b>नाही</b>."
+
+#: index.php:505
+msgid ""
+"The main reason is that I feel that the donation system doesn't actually help software development and worse, can "
+"be guilt-inducing for users who choose not to donate."
+msgstr ""
+"याचे मुख्य कारण म्हणजे, मला असे वाटते की देणगीची पद्धत सॉफ्टवेअरच्या विकासाला खरोखर मदत करत नाही; आणि त्याहून वाईट म्हणजे, ज्या "
+"वापरकर्त्यांनी देणगी न देण्याचा निर्णय घेतला आहे, त्यांच्या मनात ती अपराधीपणाची भावना निर्माण करू शकते."
+
+#: index.php:508
+#, php-format
+msgid ""
+"If you really insist, you can always make a donation to the <a target=\"_blank\" %s>Free Software Foundation</a>, "
+"as they are the main reason software like Rufus is possible."
+msgstr ""
+"तुमचा खूपच आग्रह असेल, तर तुम्ही <a target=\"_blank\" %s>Free Software Foundation</a> ला देणगी देऊ शकता; कारण रुफस (Rufus) "
+"सारखे सॉफ्टवेअर शक्य होण्यामागे त्यांचाच मुख्य वाटा आहे."
+
+#: index.php:509
+msgid ""
+"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for your continuing support and enthusiasm "
+"about this little program: it is much appreciated!"
+msgstr ""
+"असो, या छोट्याशा उपक्रमाबद्दल तुम्ही दाखवत असलेला सातत्यपूर्ण पाठिंबा आणि उत्साह याबद्दल <i><u>आभार</u></i> मानण्याची ही संधी "
+"मी घेतो; तुमच्या या सहकार्याची मी मनापासून कदर करतो!"
+
+#: index.php:510
+msgid ""
+"But please continue to feel free to use Rufus without any guilt about not contributing for it financially &ndash; "
+"you should never have to!"
+msgstr ""
+"पण कृपया 'रुफस' (Rufus) वापरताना कोणत्याही प्रकारचा संकोच किंवा अपराधीपणाची भावना बाळगू नका &ndash; कारण त्यासाठी आर्थिक "
+"योगदान देण्याची तुम्हाला कधीच गरज पडणार नाही!"
+
+#: index.php:513
+msgid "Non exhaustive list of ISOs Rufus is known to work with"
+msgstr "रुफस (Rufus) ज्या ISO फाइल्ससोबत काम करते, त्यांची एक अपूर्ण (नमुनादाखल) यादी"
+
+#. Please insert your language and name here.
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
+#: index.php:570
+msgid "English translation by Pete Batard"
+msgstr "मराठी भाषांतर: <a href=\"mailto:pspparth1998@gmail.com\">पार्थ पुजारी</a>"
+
+#: index.php:571
+msgid "USB icon by"
+msgstr "USB चिन्ह -"
+
+#: index.php:572
+msgid "Hosting by"
+msgstr "होस्टिंग -"

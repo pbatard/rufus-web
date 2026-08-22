@@ -55,6 +55,7 @@ $langs = array(
 	'lv_LV' => array('lv', '🇱🇻 Latvian (Latviešu)'),
 	'lt_LT' => array('lt', '🇱🇹 Lithuanian (Lietuvių)'),
 	'mk_MK' => array('mk', '🇲🇰 Macedonian (Македонски)'),
+	'mr_IN' => array('mr', '🇮🇳 Marathi (मराठी)'),
 	'ms_MY' => array('ms', '🇲🇾 Malay (Bahasa Malaysia)'),
 	'mi_NZ' => array('mi', '🇳🇿 Maori (Māori)'),
 	'nb_NO' => array('nb', '🇳🇴 Norwegian (Norsk)'),

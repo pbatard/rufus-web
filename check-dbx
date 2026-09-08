@@ -16,10 +16,10 @@ get_commit_date() {
 }
 
 declare -A source=(
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/x86/DBXUpdate.bin']=1781077623
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/amd64/DBXUpdate.bin']=1781077623
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm/DBXUpdate.bin']=1740428422
-  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/DBX/arm64/DBXUpdate.bin']=1740428422
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/SignedByKEK2023/dbx_ia32.efiauth2']=1788300339
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/SignedByKEK2023/dbx_x64.efiauth2']=1788300339
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/SignedByKEK2023/dbx_arm.efiauth2']=1788300339
+  ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/SignedByKEK2023/dbx_aarch64.efiauth2']=1788300339
   ['https://api.github.com/repos/microsoft/secureboot_objects/contents/PostSignedObjects/Optional/DBX/DBXUpdateSVN.bin']=1781026739
 )
 

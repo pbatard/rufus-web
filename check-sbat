@@ -16,7 +16,7 @@ get_commit_date() {
 }
 
 declare -A source=(
-  ['https://api.github.com/repos/rhboot/shim/contents/SbatLevel_Variable.txt']=1753341234
+  ['https://api.github.com/repos/rhboot/shim/contents/SbatLevel_Variable.txt']=1763975073
 )
 
 for url in "${!source[@]}"; do

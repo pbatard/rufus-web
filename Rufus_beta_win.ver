@@ -1,21 +1,23 @@
-version = 4.15.2393
+version = 4.16.2434
 platform_min = 6.1
-download_url = https://github.com/pbatard/rufus/releases/download/v4.15_BETA2/rufus-4.15_BETA2.exe
+download_url = https://github.com/pbatard/rufus/releases/download/v4.16_BETA/rufus-4.16_BETA.exe
 release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Arial Unicode MS;}{\f2\fnil\fcharset2 Symbol;}}
 
-\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.15 BETA2 (2026.06.19)\fs10\b0\par\fs22\par
+\pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.16 BETA (2026.10.30)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16  Add RISC-V 64 support to UEFI:NTFS\par
-{\pntext\f2\'B7\tab}Improve the guards for using the "silent" option\par
-{\pntext\f2\'B7\tab}Improve the ability to cancel during write retries\par
-{\pntext\f2\'B7\tab}Improve progress reporting for compressed image extraction\par
-{\pntext\f2\'B7\tab}Fix unrestricted XML entity expansion and integer overflow in ezxml parser (courtesy of Eric Sadowski)\par
-{\pntext\f2\'B7\tab}Fix "silent" Windows installation failing at 75% in most cases\par
-{\pntext\f2\'B7\tab}Fix a crash during boot when using UEFI:NTFS on Snapdragon X based ARM64 platforms\par
-{\pntext\f2\'B7\tab}Fix the first WUE option always being checked by default\par
-{\pntext\f2\'B7\tab}Fix an infinite loop when using Windows ISOs that contain multiple WIMs\par
-{\pntext\f2\'B7\tab}Fix "Enable runtime UEFI media validation" checkbox not always being properly enabled\par
-{\pntext\f2\'B7\tab}Other WUE improvements/fixes for OneDrive removal and username validation (with thanks to @christian8641)\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16  Finally work around the AMI NTFS driver bug, so that runtime UEFI media validation can work on the millions of PCs that AMI screwed up\par
+{\pntext\f2\'B7\tab}Finally report USB 3.2+ devices\par
+{\pntext\f2\'B7\tab}Fix the CA 2023 updated files not being taken into account during runtime UEFI media validation\par
+{\pntext\f2\'B7\tab}Fix the "Silent" installation option being potentially applied even when all dependencies aren't met\par
+{\pntext\f2\'B7\tab}Fix a regression where "Write as ESP" used the whole drive, instead of the expected 1 GB partition\par
+{\pntext\f2\'B7\tab}Fix WUE timezone duplication for non English locales and reinstate the use of dots in local usernames\par
+{\pntext\f2\'B7\tab}Add classic right click context menu restoration to the QoL improvements option (courtesy of Frédéric Lachapelle)\par
+{\pntext\f2\'B7\tab}Drop the ever problematic use of Group Policies when disabling the "Do you want to format this drive?" prompt\par
+{\pntext\f2\'B7\tab}Improve raw image partition (re)mount (courtesy of Jared Hagel)\par
+{\pntext\f2\'B7\tab}Update embedded GRUB to version 2.16\par
+{\pntext\f2\'B7\tab}Update libcdio to latest\par
+{\pntext\f2\'B7\tab}Update the official DBX URLs, since they were changed by Microsoft\par
+{\pntext\f2\'B7\tab}Address multiple vulnerabilities, courtesy of @indep-arg, Andreas Fehlner, Adam Korczynski and Ramesh Adhikari\par
 
 \pard\ltrpar\sl276\slmult1\par
 \b\fs24 IF YOU ENCOUNTER ANY ISSUE WITH THIS BETA, \ul REPORT\ulnone  IT!\par

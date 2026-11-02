@@ -1,0 +1,395 @@
+# Rufus Homepage.
+# Copyright (C) 2026 Pete Batard
+# This file is distributed under the same license as the Rufus Homepage package.
+# Pete Batard <pete@akeo.ie>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Rufus Homepage 1.1\n"
+"Report-Msgid-Bugs-To: pete@akeo.ie\n"
+"POT-Creation-Date: 2026-06-30 12:22+0100\n"
+"PO-Revision-Date: 2026-11-03 10:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uz@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.10\n"
+
+#: index.php:116
+msgid "Version"
+msgstr "Versiya"
+
+#: index.php:149 index.php:290
+msgid "Create bootable USB drives the easy way"
+msgstr "Yuklanuvçi USB-disklarni yaratişning eng oson yöli"
+
+#: index.php:234
+msgid "Change language:"
+msgstr "Tilni özgartiriş:"
+
+#: index.php:243
+msgid "Want to improve this translation?"
+msgstr "Bu tarjimani yaxşilaşni xohlaysizmi?"
+
+#: index.php:279
+msgid "About"
+msgstr "Dastur haqida"
+
+#: index.php:280 index.php:332
+msgid "Download"
+msgstr "Yuklab oliş"
+
+#: index.php:282 index.php:433
+msgid "Usage"
+msgstr "Foydalaniş"
+
+#: index.php:283
+msgid "FAQ"
+msgstr "FAQ"
+
+#: index.php:284 index.php:495
+msgid "Source Code"
+msgstr "Dastur kodi"
+
+#: index.php:317
+msgid ""
+"Rufus is a utility that helps format and create bootable USB flash drives, "
+"such as USB keys/pendrives, memory sticks, etc."
+msgstr ""
+"Rufus — bu USB fleşkalar va xotira kartalarini formatlaş hamda ularni "
+"yuklanuvçi  diskka aylantiriş uçun möljallangan qulay dasturdir."
+
+#: index.php:318
+msgid "It can be especially useful for cases where:"
+msgstr "Rufus quyidagi holatlarda juda qöl keladi:"
+
+#: index.php:320
+msgid ""
+"you need to create USB installation media from bootable ISOs (Windows, "
+"Linux, UEFI, etc.)"
+msgstr ""
+"Yuklanuvçi ISO tasvirlaridan (Windows, Linux, UEFI va h.k.) örnatuvçi USB "
+"taşuvçilar yaratiş kerak bölganda"
+
+#: index.php:321
+msgid "you need to work on a system that doesn't have an OS installed"
+msgstr "Operatsion tizim örnatilmagan kompyuterda işlaşingiz kerak bölganda"
+
+#: index.php:322
+msgid "you need to flash a BIOS or other firmware from DOS"
+msgstr ""
+"DOS muhiti orqali BIOS yoki boşqa mikrodasturni yangilaş kerak bölganda"
+
+#: index.php:323
+msgid "you want to run a low-level utility"
+msgstr "Quyi darajali (low-level) tizim utilitalasini işlatmoqçi bölsangiz"
+
+#: index.php:325
+msgid "Despite its small size, Rufus provides everything you need!"
+msgstr ""
+"Hajmi kiçik bölişiga qaramay, Rufus sizga kerakli barça imkoniyatlarni "
+"taqdim etadi!"
+
+#: index.php:326
+msgid ""
+"A non exhaustive list of Rufus supported ISOs is also provided at the bottom "
+"of this page."
+msgstr ""
+"Uşbu sahifaning pastki qismida Rufus qöllab-quvvatlaydigan ISO "
+"tasvirlarining (barçasi bölmasa-da) asosiy röyxati keltirilgan."
+
+#: index.php:333
+msgid "Latest releases:"
+msgstr "Eng sönggi relizlar:"
+
+#: index.php:336
+msgid "Link"
+msgstr "Havola"
+
+#: index.php:337
+msgid "Type"
+msgstr "Turi"
+
+#: index.php:338
+msgid "Platform"
+msgstr "Platforma"
+
+#: index.php:339
+msgid "Size"
+msgstr "Hajmi"
+
+#: index.php:340
+msgid "Date"
+msgstr "Sana"
+
+#: index.php:344 index.php:358 index.php:365
+msgid "Standard"
+msgstr "Standart"
+
+#. Abbreviation for MegaByte
+#: index.php:346 index.php:353 index.php:360 index.php:367 index.php:375
+#: index.php:496
+msgid "MB"
+msgstr "MB"
+
+#: index.php:351
+msgid "Portable"
+msgstr "Portativ"
+
+#: index.php:373
+msgid "BETA"
+msgstr "BETA"
+
+#: index.php:380 index.php:381 index.php:491
+msgid "Other versions"
+msgstr "Boşqa versiyalar"
+
+#: index.php:382
+msgid "System Requirements:"
+msgstr "Tizim talablari:"
+
+#: index.php:383
+msgid "Windows 8 or later."
+msgstr "Windows 8 yoki undan yangiroq versiyalar."
+
+#: index.php:383
+msgid "Once downloaded, the application is ready to use."
+msgstr "Dastur yuklab olingaç, uni darhol işlatişingiz mumkin."
+
+#: index.php:384
+msgid "Supported Languages:"
+msgstr "Qöllab-quvvatlanadigan tillar:"
+
+#: index.php:430
+msgid ""
+"I will take this opportunity to express my gratitude to the translators who "
+"made it possible for Rufus, as well as this webpage, to be translated in "
+"various languages. If you find that you can use Rufus in your own language, "
+"you should really thank them!"
+msgstr ""
+"Fursatdan foydalanib, Rufus va uşbu veb-sahifaning turli tillarga tarjima "
+"qilinişiga munosib hissa qöşgan barça tarjimonlarga öz minnatdorçiligimni "
+"bildiraman. Agar Rufusʼdan öz ona tilingizda foydalanayotgan bölsangiz, bu "
+"birinçi navbatda ularning xizmatidir!"
+
+#: index.php:434
+msgid ""
+"Download the executable and run it &ndash; no installation is necessary."
+msgstr ""
+"Faylni yuklab oling va işga tuşiring — dasturni örnatiş talab etilmaydi."
+
+#: index.php:435
+msgid "The executable is digitally signed and the signature should state:"
+msgstr ""
+"Dasturning bajariladigan fayli (executable) raqamli imzolangan bölib, imzoda "
+"quyidagilar körsatilgan:"
+
+#: index.php:437
+msgid "(v1.3.0 or later)"
+msgstr "(v1.3.0 yoki undan keyingi)"
+
+#: index.php:438
+msgid "(v1.2.0 or earlier)"
+msgstr "(v1.2.0 yoki undan oldingi)"
+
+#: index.php:440
+msgid "Notes on DOS support:"
+msgstr "DOS qöllab-quvvatlanişi böyiça izohlar:"
+
+#: index.php:441
+msgid ""
+"If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
+"attempt to select a keyboard layout according to the locale of your system."
+msgstr ""
+"Agar siz DOS yuklanuvçi disk yaratsangiz va inglizça (AQŞ) bölmagan "
+"klaviaturadan foydalansangiz, Rufus tizimingiz lokaliga qarab klaviaturani "
+"tanlaşga urinib köradi."
+
+#: index.php:442
+msgid "Notes on ISO Support:"
+msgstr "ISO qöllab-quvvatlanişi böyiça izohlar:"
+
+#: index.php:443
+#, php-format
+msgid ""
+"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from "
+"an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+msgstr ""
+"Rufusʼning v1.1.0 versiyasidan boşlab barça versiyalari <a target=\"_blank\" "
+"%s>ISO tasvirlardan</a> (.iso) yuklanuvçi  USB-disk yaratiş imkonini beradi."
+
+#: index.php:444
+#, php-format
+msgid ""
+"Creating an ISO image from a physical disc or from a set of files is very "
+"easy to do however, through the use of a CD burning application, such as the "
+"freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
+"target=\"_blank\" %s>CDBurnerXP</a>."
+msgstr ""
+"Jismoniy diskdan yoki bir neçta fayllardan ISO tasvirini yaratiş judayam "
+"oson. Buning uçun mutlaqo bepul taqdim etiladigan <a target=\"_blank\" "
+"%s>InfraRecorder</a> yoki <a target=\"_blank\" %s>CDBurnerXP</a> kabi CD "
+"yoziş dasturlaridan foydalanişingiz mumkin."
+
+#: index.php:447
+msgid "Frequently Asked Questions (FAQ)"
+msgstr "Tez-tez söraladigan savollar (FAQ)"
+
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:448
+#, php-format
+msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+msgstr ""
+"Rufus haqida köp beriladigan savollar bilan <b><a target=\"_blank\" %s>BU "
+"YERDA</a></b> tanişişingiz mumkin."
+
+#: index.php:449
+#, php-format
+msgid ""
+"To provide feedback, report a bug or request an enhancement, please use the "
+"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
+"target=\"_blank\" %s>send an e-mail</a>."
+msgstr ""
+"Fikr bildiriş, xatoliklar haqida xabar beriş yoki yangi funksiya taklif "
+"qiliş uçun GitHubʼdagi <a target=\"_blank\" %s>muammolarni kuzatiş "
+"tizimidan</a> foydalaning. Şuningdek, <a target=\"_blank\" %s>elektron poçta "
+"yuborişingiz</a> ham mumkin."
+
+#: index.php:452
+msgid "License"
+msgstr "Litsenziya"
+
+#: index.php:453
+#, php-format
+msgid ""
+"<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
+"later."
+msgstr ""
+"<a target=\"_blank\" %s>GNU General Public License (GPL) 3-versiyasi</a> "
+"yoki undan keyingi."
+
+#: index.php:453
+msgid ""
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
+msgstr ""
+"GPLv3 litsenziyasiga rioya qilgan holda, dasturiy taʼminotni tarqatişingiz, "
+"özgartirişingiz yoki hatto sotişingiz ham mumkin."
+
+#: index.php:454
+#, php-format
+msgid ""
+"Rufus is produced in a 100%% transparent manner, from its <a "
+"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
+"%s>MinGW32</a> environment."
+msgstr ""
+"Rufus barça uçun <a target=\"_blank\" %s>oçiq manbali kod</a> va <a "
+"target=\"_blank\" %s>MinGW32</a> muhitidan foydalangan holda töliq (100%%) "
+"şaffof tarzda işlab çiqiladi."
+
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:457
+msgid "Changelog"
+msgstr "Özgarişlar röyxati"
+
+#: index.php:497
+#, php-format
+msgid ""
+"Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
+"using:"
+msgstr ""
+"Şuningdek, quyidagi buyruq orqali <a target=\"_blank\" %s>git</a> "
+"repozitoriysini klonlab olişingiz mumkin:"
+
+#: index.php:499
+#, php-format
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr ""
+"Qöşimça maʼlumot uçun <a target=\"_blank\" %s>GitHubʼdagi loyiha</a> "
+"sahifasiga qarang."
+
+#: index.php:500
+msgid ""
+"If you are a developer, you are very much encouraged to tinker with Rufus "
+"and submit patches."
+msgstr ""
+"Agar dasturçi bölsangiz, Rufus bilan tajriba qilib körişingiz va tuzatişlar "
+"yuborişingizni mamnuniyat bilan kutib qilamiz."
+
+#: index.php:503
+msgid "Donations"
+msgstr "Donat"
+
+#: index.php:504
+msgid ""
+"Since I'm getting asked about this on regular basis, there is <b>no</b> "
+"donation button on this page."
+msgstr ""
+"Bu haqida menga tez-tez savol berişgani uçun aytib ötay: bu sahifada heç "
+"qanday donat qiliş tugmasi <b>yöq</b>."
+
+#: index.php:505
+msgid ""
+"The main reason is that I feel that the donation system doesn't actually "
+"help software development and worse, can be guilt-inducing for users who "
+"choose not to donate."
+msgstr ""
+"Asosiy sababi şundaki, donat qiliş tizimi dastur rivojlanişiga amalda yordam "
+"bermaydi deb hisoblayman. Qolaversa, bu donat qilmaslikni afzal körgan "
+"foydalanuvçilarda noqulaylik yoki xijolatçilik tuğdirişi mumkin."
+
+#: index.php:508
+#, php-format
+msgid ""
+"If you really insist, you can always make a donation to the <a "
+"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
+"reason software like Rufus is possible."
+msgstr ""
+"Agar xohlasangiz, <a target=\"_blank\" %s>Free Software Foundation</a> "
+"fondiga donat qilişingiz mumkin — axir Rufus kabi dasturlarning mavjudligi "
+"aynan ularning xizmatidir."
+
+#: index.php:509
+msgid ""
+"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
+"your continuing support and enthusiasm about this little program: it is much "
+"appreciated!"
+msgstr ""
+"Nima bölganda ham, fursatdan foydalanib, uşbu kiçik dasturga körsatayotgan "
+"töxtovsiz qöllab-quvvatlovingiz va qiziqişingiz uçun taşakkur izhor etaman — "
+"bu men uçun juda qadrli!"
+
+#: index.php:510
+msgid ""
+"But please continue to feel free to use Rufus without any guilt about not "
+"contributing for it financially &ndash; you should never have to!"
+msgstr ""
+"Lekin xijolat bölmay, Rufus’dan bemalol foydalanavering — moddiy yordam "
+"bermaganingiz uçun mutlaqo taşvişlanmang, çunki bu haq tölanadigan dastur "
+"emas!"
+
+#: index.php:513
+msgid "Non exhaustive list of ISOs Rufus is known to work with"
+msgstr ""
+"Rufus aniq işlay oladigan ISO tasvirlarining (barçasi bölmasa-da) asosiy "
+"röyxati:"
+
+# GPT: “English translation” can mean either a translation into English or a translation from English; based on the context (you insert your language), I translated it as “translation into English.”
+#. Please insert your language and name here.
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete Batard</a>
+#: index.php:570
+msgid "English translation by Pete Batard"
+msgstr "Özbek tiliga tarjima qildi: Normöminov Bilolbek"
+
+#: index.php:571
+msgid "USB icon by"
+msgstr "USB rasmining muallifi:"
+
+#: index.php:572
+msgid "Hosting by"
+msgstr "Xosting:"

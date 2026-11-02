@@ -5,7 +5,7 @@ release_notes = {\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1024{\fonttbl{\f0\fn
 
 \pard\ltrpar\sl276\slmult1\b\f0\fs22\lang9\tab Rufus 4.16 BETA (2026.10.30)\fs10\b0\par\fs22\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16  Finally work around the AMI NTFS driver bug, so that runtime UEFI media validation can work on the millions of PCs that AMI screwed up\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li720\sl276\slmult1\fs16 Finally work around the AMI NTFS driver bug, so that runtime UEFI media validation can work on the millions of PCs that AMI screwed up\par
 {\pntext\f2\'B7\tab}Finally report USB 3.2+ devices\par
 {\pntext\f2\'B7\tab}Fix the CA 2023 updated files not being taken into account during runtime UEFI media validation\par
 {\pntext\f2\'B7\tab}Fix the "Silent" installation option being potentially applied even when all dependencies aren't met\par

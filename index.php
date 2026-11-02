@@ -80,6 +80,7 @@ $langs = array(
 	'uk_UA' => array('uk', '🇺🇦 Ukrainian (Українська)'),
 	'ur_PK' => array('ur', '🇵🇰 Urdu (اُردُو)'),
 	'ug_CN' => array('ug', '🏴 Uyghur (ئۇيغۇر تىلى)'),
+	'uz_UZ' => array('uz', '🇺🇿 Uzbek (Özbekça)'),
 	'vi_VN' => array('vi', '🇻🇳 Vietnamese (Tiếng Việt)'),
 	'cy_GB' => array('cy', '🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)'),
 );
